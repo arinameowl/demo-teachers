@@ -142,4 +142,4 @@ PRICES_FALLBACK = (
     "Со стоимостью занятий и способами оплаты можно ознакомиться на нашем сайте: https://theteachers.ru/payment"
 )
 
-CONTACT_TEMPLATE = "Пиши сюда напрямую, отвечаем обычно в течение дня: @{theteachers_manager}"
+CONTACT_TEMPLATE = "Пиши сюда напрямую, отвечаем обычно в течение дня: @theteachers_manager"

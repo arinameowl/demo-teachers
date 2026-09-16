@@ -118,6 +118,38 @@ async def users_due_for_followup(delay_hours: float, max_followups: int) -> list
         return [dict(r) for r in rows]
 
 
+async def get_funnel_stats() -> dict:
+    """Сводка по воронке для команды /stats: сколько людей на каждом этапе,
+    сколько заявок на пробный и в листе ожидания курса."""
+    async with aiosqlite.connect(DB_PATH) as db:
+        db.row_factory = aiosqlite.Row
+
+        cur = await db.execute("SELECT COUNT(*) AS c FROM users")
+        total = (await cur.fetchone())["c"]
+
+        cur = await db.execute("SELECT stage, COUNT(*) AS c FROM users GROUP BY stage")
+        by_stage = {r["stage"]: r["c"] for r in await cur.fetchall()}
+
+        cur = await db.execute("SELECT COUNT(*) AS c FROM users WHERE trial_requested = 1")
+        trials = (await cur.fetchone())["c"]
+
+        cur = await db.execute("SELECT COUNT(*) AS c FROM users WHERE waitlist_joined = 1")
+        waitlist = (await cur.fetchone())["c"]
+
+        cur = await db.execute(
+            "SELECT COUNT(*) AS c FROM users WHERE date(created_at) = date('now')"
+        )
+        today = (await cur.fetchone())["c"]
+
+    return {
+        "total": total,
+        "by_stage": by_stage,
+        "trials": trials,
+        "waitlist": waitlist,
+        "today": today,
+    }
+
+
 async def _users_due(stage: str, delay_hours: float) -> list[dict]:
     cutoff = (dt.datetime.utcnow() - dt.timedelta(hours=delay_hours)).isoformat()
     async with aiosqlite.connect(DB_PATH) as db:

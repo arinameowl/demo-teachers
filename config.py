@@ -5,11 +5,11 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", "ВАШ_ТОКЕН_ЛИД_БОТА")
 
 # Контакт менеджера/преподавателя — на него бот выведет кнопку "Написать нам"
 # и в него же продублирует заявки на пробный урок (просто username без @).
-MANAGER_USERNAME = os.environ.get("theteachers_manager", "your_manager")
-
+MANAGER_USERNAME = os.environ.get("MANAGER_USERNAME", "theteachers_manager")
+ 
 # Числовой user_id менеджера, чтобы бот мог присылать ему заявки автоматически.
 # Если не задан — заявки просто сохраняются в базе, менеджер сам их смотрит.
-MANAGER_CHAT_ID = os.environ.get("8552229424")
+MANAGER_CHAT_ID = os.environ.get("MANAGER_CHAT_ID")
 
 # user_id, которым разрешена команда /stats (через запятую, без пробелов).
 # Узнать свой id можно через @userinfobot. Без этой переменной /stats никому не ответит.

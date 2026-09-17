@@ -12,7 +12,7 @@ MANAGER_USERNAME = os.environ.get("theteachers_manager", "your_manager")
 MANAGER_CHAT_ID = os.environ.get("8552229424")
 
 # Ссылка на форму/лендинг с ценами. Если пусто — бот покажет цены текстом из texts.py.
-PRICES_URL = os.environ.get("PRICES_URL", “https://theteachers.ru/payment")
+PRICES_URL = os.environ.get("PRICES_URL", "https://theteachers.ru/payment")
 
 DB_PATH = os.environ.get("DB_PATH", os.path.join(os.path.dirname(__file__), "data", "leadbot.db"))
 MATERIALS_PATH = os.environ.get(

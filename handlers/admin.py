@@ -25,8 +25,11 @@ async def cmd_stats(message: Message):
     stats = await db.get_funnel_stats()
     by_stage = stats["by_stage"]
 
+    manager_status = "✅ задан" if config.MANAGER_CHAT_ID else "❌ НЕ задан (заявки менеджеру не уходят!)"
+
     lines = [
         f"👥 <b>Всего зашло в бота:</b> {stats['total']} (сегодня: {stats['today']})",
+        f"⚙️ <b>MANAGER_CHAT_ID:</b> {manager_status}",
         "",
         "<b>По этапам воронки:</b>",
     ]

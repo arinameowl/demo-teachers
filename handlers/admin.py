@@ -1,3 +1,5 @@
+import os
+
 from aiogram import Router
 from aiogram.filters import Command
 from aiogram.types import Message
@@ -25,11 +27,25 @@ async def cmd_stats(message: Message):
     stats = await db.get_funnel_stats()
     by_stage = stats["by_stage"]
 
-    manager_status = "✅ задан" if config.MANAGER_CHAT_ID else "❌ НЕ задан (заявки менеджеру не уходят!)"
+    raw = config.MANAGER_CHAT_ID
+    if not raw:
+        manager_status = "❌ НЕ задан (заявки менеджеру не уходят!)"
+    else:
+        # Показываем значение частично скрытым — чтобы свериться с тем,
+        # что реально введено в Railway, не спалив id целиком в чат.
+        masked = raw[:3] + "…" + raw[-2:] if len(raw) > 5 else raw
+        manager_status = f"✅ задан, значение: {masked} (длина: {len(raw)})"
+
+    # Диагностика на случай опечатки/лишнего пробела в имени переменной:
+    # показываем ВСЕ переменные окружения, в имени которых есть "MANAGER"
+    # (даже если config.py их не подхватил).
+    found_keys = [k for k in os.environ if "MANAGER" in k.upper()]
+    debug_line = f"🔍 Переменные с 'MANAGER' в имени: {found_keys or 'ни одной не найдено'}"
 
     lines = [
         f"👥 <b>Всего зашло в бота:</b> {stats['total']} (сегодня: {stats['today']})",
         f"⚙️ <b>MANAGER_CHAT_ID:</b> {manager_status}",
+        debug_line,
         "",
         "<b>По этапам воронки:</b>",
     ]

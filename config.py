@@ -11,6 +11,10 @@ MANAGER_USERNAME = os.environ.get("theteachers_manager", "your_manager")
 # Если не задан — заявки просто сохраняются в базе, менеджер сам их смотрит.
 MANAGER_CHAT_ID = os.environ.get("8552229424")
 
+AttributeError: module 'config' has no attribute 'ADMIN_IDS'
+File "/app/handlers/admin.py", line 21, in cmd_stats
+    if message.from_user.id not in config.ADMIN_IDS:
+
 # Ссылка на форму/лендинг с ценами. Если пусто — бот покажет цены текстом из texts.py.
 PRICES_URL = os.environ.get("PRICES_URL", "https://theteachers.ru/payment")
 

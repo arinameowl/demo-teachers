@@ -51,7 +51,7 @@ async def send_portion1(message: Message, user_id: int, level: str) -> None:
     user = await db.get_user(user_id)
     goal = user.get("goal") if user else None
     item = content.get_podcast(level)
-    await message.answer(_render_podcast(item, goal), reply_markup=kb.trial_cta_keyboard())
+    await message.answer(_render_podcast(item, goal), parse_mode="HTML", reply_markup=kb.trial_cta_keyboard())
     await message.answer(texts.MENU_HINT)
     await db.set_portion_sent(user_id, stage="portion1_sent", portions_sent=1)
 
@@ -74,22 +74,22 @@ async def send_all_unlocked(message: Message, user_id: int) -> None:
     """/materials — повторно показывает всё, что человеку уже открыто по воронке."""
     user = await db.get_user(user_id)
     if not user or not user.get("level"):
-        await message.answer("Сначала пройдём короткий онбординг — нажми /start 🙂")
+        await message.answer("Сначала пройдём короткий онбординг — нажми /start")
         return
 
     level = user["level"]
     goal = user.get("goal")
     portions_sent = user.get("portions_sent", 0)
 
-    await message.answer(_render_podcast(content.get_podcast(level), goal))
+    await message.answer(_render_podcast(content.get_podcast(level), goal), parse_mode="HTML")
     if portions_sent >= 2:
-        await message.answer(_render_book(content.get_book(level), goal))
+        await message.answer(_render_book(content.get_book(level), goal), parse_mode="HTML")
     if portions_sent >= 3:
-        await message.answer(_render_series(content.get_series(level), goal))
+        await message.answer(_render_series(content.get_series(level), goal), parse_mode="HTML")
     if portions_sent < 3:
         await message.answer(
             "Остальное пришлю по расписанию, чтобы не наваливать всё сразу — но если очень "
-            "хочется прямо сейчас, просто напиши об этом /contact 🙂"
+            "хочется прямо сейчас, просто напиши об этом /contact"
         )
 
 

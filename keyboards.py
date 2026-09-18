@@ -43,6 +43,40 @@ def main_menu_keyboard() -> InlineKeyboardMarkup:
         inline_keyboard=[
             [InlineKeyboardButton(text="📚 Материалы", callback_data="menu:materials")],
             [InlineKeyboardButton(text="🎯 Тест на уровень", callback_data="menu:quiz")],
+            [InlineKeyboardButton(text="💬 Бесплатный пробный урок", callback_data="menu:trial")],
+            [InlineKeyboardButton(text="💰 Цены и форматы", callback_data="menu:prices")],
+            [InlineKeyboardButton(text="👋 Написать нам", callback_data="menu:contact")],
+        ]
+    )
+
+
+def trial_cta_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[[InlineKeyboardButton(text="💬 Хочу на пробный урок", callback_data="menu:trial")]]
+    )
+def level_manual_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [InlineKeyboardButton(text=lvl, callback_data=f"levelset:{lvl}")]
+            for lvl in ("A1", "A2", "B1")
+        ]
+    )
+
+
+def quiz_options_keyboard(question_index: int, options: list[str]) -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [InlineKeyboardButton(text=opt, callback_data=f"quiz:{question_index}:{i}")]
+            for i, opt in enumerate(options)
+        ]
+    )
+
+
+def main_menu_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [InlineKeyboardButton(text="📚 Материалы", callback_data="menu:materials")],
+            [InlineKeyboardButton(text="🎯 Тест на уровень", callback_data="menu:quiz")],
             [InlineKeyboardButton(text="🎬 Курс по сериалам", callback_data="menu:course")],
             [InlineKeyboardButton(text="💬 Бесплатный пробный урок", callback_data="menu:trial")],
             [InlineKeyboardButton(text="💰 Цены и форматы", callback_data="menu:prices")],

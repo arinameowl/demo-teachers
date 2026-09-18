@@ -36,7 +36,7 @@ async def cmd_start(message: Message, state: FSMContext):
 async def choose_goal(callback: CallbackQuery, state: FSMContext):
     goal = callback.data.split(":")[1]
     await db.update_user(callback.from_user.id, goal=goal)
-    await callback.message.edit_text(f"{texts.GOAL_LABELS[goal]} — понял(а)!")
+    await callback.message.edit_text(f"{texts.GOAL_LABELS[goal]} — поняла!")
     await callback.message.answer(texts.LEVEL_CHOICE_QUESTION, reply_markup=kb.level_choice_keyboard())
     await callback.answer()
 

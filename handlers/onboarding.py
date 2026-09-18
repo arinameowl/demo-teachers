@@ -51,7 +51,7 @@ async def level_manual(callback: CallbackQuery):
 async def level_set(callback: CallbackQuery):
     level = callback.data.split(":")[1]
     await db.update_user(callback.from_user.id, level=level, level_source="manual")
-    await callback.message.edit_text(f"Записал(а) уровень: {level}.")
+    await callback.message.edit_text(f"Записала уровень: {level}.")
     await send_portion1(callback.message, callback.from_user.id, level)
     await callback.answer()
 

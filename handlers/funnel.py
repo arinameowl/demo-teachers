@@ -20,6 +20,11 @@ async def cmd_menu(message: Message):
     await message.answer("Меню:", reply_markup=kb.main_menu_keyboard())
 
 
+@router.message(Command("quiz"))
+async def cmd_quiz(message: Message):
+    await message.answer(texts.LEVEL_CHOICE_QUESTION, reply_markup=kb.level_choice_keyboard())
+
+
 @router.callback_query(F.data == "menu:quiz")
 async def cb_menu_quiz(callback: CallbackQuery):
     await callback.message.edit_text(texts.LEVEL_CHOICE_QUESTION, reply_markup=kb.level_choice_keyboard())
@@ -74,24 +79,6 @@ async def save_trial_contact(message: Message, bot: Bot):
             )
         except Exception:
             log.exception("Не удалось уведомить менеджера о заявке")
-
-
-# ---------- Лист ожидания курса по сериалам ----------
-
-async def _join_waitlist(target: Message, user_id: int):
-    await db.update_user(user_id, waitlist_joined=1)
-    await target.answer(texts.COURSE_WAITLIST_CONFIRM)
-
-
-@router.message(Command("course"))
-async def cmd_course(message: Message):
-    await _join_waitlist(message, message.from_user.id)
-
-
-@router.callback_query(F.data == "menu:course")
-async def cb_menu_course(callback: CallbackQuery):
-    await _join_waitlist(callback.message, callback.from_user.id)
-    await callback.answer()
 
 
 # ---------- Цены ----------

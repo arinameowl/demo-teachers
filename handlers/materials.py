@@ -44,8 +44,7 @@ def _render_series(series: dict, goal: str | None) -> str:
         parts.append(f"🔗 {ep['file_url']}")
     if ep.get("tasks_url"):
         parts.append(f"📝 Разбор лексики: {ep['tasks_url']}")
-    text = "\n\n".join(parts) + texts.PORTION3_COURSE_CTA
-    return text
+    return "\n\n".join(parts)
 
 
 async def send_portion1(message: Message, user_id: int, level: str) -> None:
@@ -67,9 +66,7 @@ async def send_portion2(bot: Bot, user_id: int, level: str, goal: str | None) ->
 async def send_portion3(bot: Bot, user_id: int, level: str, goal: str | None) -> None:
     series = content.get_series(level)
     await bot.send_message(user_id, texts.PORTION3_CHECKIN)
-    await bot.send_message(
-        user_id, _render_series(series, goal), parse_mode="HTML", reply_markup=kb.course_cta_keyboard()
-    )
+    await bot.send_message(user_id, _render_series(series, goal), parse_mode="HTML")
     await db.set_portion_sent(user_id, stage="portion3_sent", portions_sent=3)
 
 
@@ -88,7 +85,7 @@ async def send_all_unlocked(message: Message, user_id: int) -> None:
     if portions_sent >= 2:
         await message.answer(_render_book(content.get_book(level), goal))
     if portions_sent >= 3:
-        await message.answer(_render_series(content.get_series(level), goal), reply_markup=kb.course_cta_keyboard())
+        await message.answer(_render_series(content.get_series(level), goal))
     if portions_sent < 3:
         await message.answer(
             "Остальное пришлю по расписанию, чтобы не наваливать всё сразу — но если очень "
@@ -99,6 +96,12 @@ async def send_all_unlocked(message: Message, user_id: int) -> None:
 @router.message(F.text == "/materials")
 async def cmd_materials(message: Message):
     await send_all_unlocked(message, message.from_user.id)
+
+
+@router.callback_query(F.data == "menu:materials")
+async def cb_materials(callback: CallbackQuery):
+    await send_all_unlocked(callback.message, callback.from_user.id)
+    await callback.answer()
 
 
 @router.callback_query(F.data == "menu:materials")

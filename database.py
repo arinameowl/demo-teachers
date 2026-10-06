@@ -66,15 +66,17 @@ async def get_user(user_id: int) -> Optional[dict]:
         return dict(row) if row else None
 
 
-async def create_user_if_missing(user_id: int, username: str, first_name: str) -> dict:
+async def create_user_if_missing(user_id: int, username: str, first_name: str,
+                                 source: str = "direct") -> dict:
     user = await get_user(user_id)
     if user:
         return user
+    now = _now()
     async with aiosqlite.connect(DB_PATH) as db:
         await db.execute(
-            "INSERT INTO users (user_id, username, first_name, stage, created_at) "
-            "VALUES (?, ?, ?, 'new', ?)",
-            (user_id, username, first_name, _now()),
+            "INSERT INTO users (user_id, username, first_name, stage, created_at, source, last_active_at) "
+            "VALUES (?, ?, ?, 'new', ?, ?, ?)",
+            (user_id, username, first_name, now, source, now),
         )
         await db.commit()
     return await get_user(user_id)
@@ -120,8 +122,8 @@ async def users_due_for_followup(delay_hours: float, max_followups: int) -> list
         db.row_factory = aiosqlite.Row
         cur = await db.execute(
             "SELECT * FROM users WHERE stage IN ('portion3_sent', 'nurtured') "
-            "AND followups_sent < ? AND last_portion_at <= ?",
-            (max_followups, cutoff),
+            "AND followups_sent < ? AND last_portion_at <= ? AND COALESCE(blocked, 0) = 0",
+            "SELECT * FROM users WHERE stage = ? AND last_portion_at <= ? AND COALESCE(blocked, 0) = 0",
         )
         rows = await cur.fetchall()
         return [dict(r) for r in rows]
@@ -164,8 +166,9 @@ async def _users_due(stage: str, delay_hours: float) -> list[dict]:
     async with aiosqlite.connect(DB_PATH) as db:
         db.row_factory = aiosqlite.Row
         cur = await db.execute(
-            "SELECT * FROM users WHERE stage = ? AND last_portion_at <= ?",
-            (stage, cutoff),
+            "SELECT * FROM users WHERE stage IN ('portion3_sent', 'nurtured') "
+            "AND followups_sent < ? AND last_portion_at <= ? AND COALESCE(blocked, 0) = 0",
+            "SELECT * FROM users WHERE stage = ? AND last_portion_at <= ? AND COALESCE(blocked, 0) = 0",
         )
         rows = await cur.fetchall()
         return [dict(r) for r in rows]
@@ -189,3 +192,40 @@ async def get_daily_stats(days: int = 14) -> list[dict]:
             (f"-{days - 1} days",),
         )
         return [dict(r) for r in await cur.fetchall()]
+
+async def touch_user(user_id: int) -> None:
+    """Любое действие пользователя: обновляем активность и снимаем флаг блокировки."""
+    async with aiosqlite.connect(DB_PATH) as db:
+        await db.execute(
+            "UPDATE users SET last_active_at = ?, blocked = 0 WHERE user_id = ?",
+            (_now(), user_id),
+        )
+        await db.commit()
+
+
+async def get_source_stats() -> list[dict]:
+    async with aiosqlite.connect(DB_PATH) as db:
+        db.row_factory = aiosqlite.Row
+        cur = await db.execute(
+            """
+            SELECT COALESCE(source, 'до трекинга') AS src,
+                   COUNT(*) AS users,
+                   SUM(CASE WHEN portions_sent >= 1 THEN 1 ELSE 0 END) AS got_p1,
+                   COALESCE(SUM(trial_requested), 0) AS trials
+            FROM users GROUP BY src ORDER BY users DESC
+            """
+        )
+        return [dict(r) for r in await cur.fetchall()]
+
+
+async def get_activity_summary() -> dict:
+    async with aiosqlite.connect(DB_PATH) as db:
+        db.row_factory = aiosqlite.Row
+        cur = await db.execute(
+            """
+            SELECT COALESCE(SUM(CASE WHEN date(last_active_at) >= date('now','-7 days') THEN 1 ELSE 0 END), 0) AS active_7d,
+                   COALESCE(SUM(blocked), 0) AS blocked
+            FROM users
+            """
+        )
+        return dict(await cur.fetchone())

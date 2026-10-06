@@ -6,7 +6,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 
 import config
 import database as db
-from handlers import onboarding, materials, funnel, admin
+from handlers import onboarding, materials, funnel, admin, broadcast
 from scheduler import start_scheduler
 
 logging.basicConfig(level=logging.INFO)
@@ -36,6 +36,7 @@ dp.include_router(onboarding.router)
 dp.include_router(materials.router)
 dp.include_router(funnel.router)
 dp.include_router(admin.router)
+dp.include_router(broadcast.router)
 
 
 async def main():

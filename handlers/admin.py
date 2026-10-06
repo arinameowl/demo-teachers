@@ -1,7 +1,7 @@
 import os
 
 from aiogram import Router
-from aiogram.filters import Command
+from aiogram.filters import Command, CommandObject
 from aiogram.types import Message
 
 import config
@@ -58,4 +58,24 @@ async def cmd_stats(message: Message):
         f"🎬 <b>В листе ожидания курса:</b> {stats['waitlist']}",
     ]
 
+    await message.answer("\n".join(lines), parse_mode="HTML")
+
+@router.message(Command("days"))
+async def cmd_days(message: Message, command: CommandObject):
+    if message.from_user.id not in config.ADMIN_IDS:
+        return
+
+    days = int(command.args) if command.args and command.args.isdigit() else 14
+    days = min(days, 90)
+    rows = await db.get_daily_stats(days)
+
+    lines = [f"<b>Новые пользователи по дням (МСК), последние {days} дн.</b>", "<pre>",
+             "Дата        Новых  П1   П3  Проб"]
+    for r in rows:
+        lines.append(f"{r['day']} {r['new_users']:>6} {r['got_p1']:>4} {r['got_p3']:>4} {r['trials']:>5}")
+    lines.append(f"Итого      {sum(r['new_users'] for r in rows):>6} "
+                 f"{sum(r['got_p1'] for r in rows):>4} {sum(r['got_p3'] for r in rows):>4} "
+                 f"{sum(r['trials'] for r in rows):>5}")
+    lines.append("</pre>")
+    lines.append("Новых = нажали /start в этот день; П1/П3 = дошли до 1-й/3-й порции; Проб = оставили заявку на пробный (из тех, кто пришёл в этот день).")
     await message.answer("\n".join(lines), parse_mode="HTML")

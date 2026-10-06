@@ -45,7 +45,7 @@ def main_menu_keyboard() -> InlineKeyboardMarkup:
         inline_keyboard=[
             [InlineKeyboardButton(text="📚 Материалы", callback_data="menu:materials")],
             [InlineKeyboardButton(text="🎯 Тест на уровень", callback_data="menu:quiz")],
-            [InlineKeyboardButton(text="💬 Бесплатный первый урок", callback_data="menu:trial")],
+            [InlineKeyboardButton(text="💬 Записаться на разбор уровня", callback_data="menu:trial")],
             [InlineKeyboardButton(text="💰 Цены и форматы", callback_data="menu:prices")],
             [InlineKeyboardButton(text="👋 Написать нам", callback_data="menu:contact")],
         ]
@@ -54,7 +54,7 @@ def main_menu_keyboard() -> InlineKeyboardMarkup:
 
 def trial_cta_keyboard() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(
-        inline_keyboard=[[InlineKeyboardButton(text="💬 Хочу на первый урок", callback_data="menu:trial")]]
+        inline_keyboard=[[InlineKeyboardButton(text="💬Записаться на разбор уровня", callback_data="menu:trial")]]
     )
 def level_manual_keyboard() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(
@@ -79,7 +79,7 @@ def main_menu_keyboard() -> InlineKeyboardMarkup:
         inline_keyboard=[
             [InlineKeyboardButton(text="📚 Материалы", callback_data="menu:materials")],
             [InlineKeyboardButton(text="🎯 Тест на уровень", callback_data="menu:quiz")],
-            [InlineKeyboardButton(text="💬 Бесплатный первый урок", callback_data="menu:trial")],
+            [InlineKeyboardButton(text="💬 Записаться на разбор уровня", callback_data="menu:trial")],
             [InlineKeyboardButton(text="💰 Цены и форматы", callback_data="menu:prices")],
             [InlineKeyboardButton(text="👋 Написать нам", callback_data="menu:contact")],
         ]

@@ -39,24 +39,54 @@ CREATE TABLE IF NOT EXISTS users (
 );
 """
 
+# Колонки, добавленные позже. ALTER TABLE ADD COLUMN безопасно падает,
+# если колонка уже есть — эту ошибку просто игнорируем.
+_MIGRATIONS = (
+    "ALTER TABLE users ADD COLUMN awaiting_contact INTEGER DEFAULT 0",
+    "ALTER TABLE users ADD COLUMN source TEXT",
+    "ALTER TABLE users ADD COLUMN last_active_at TEXT",
+    "ALTER TABLE users ADD COLUMN trial_requested_at TEXT",
+    "ALTER TABLE users ADD COLUMN blocked INTEGER DEFAULT 0",
+    "ALTER TABLE users ADD COLUMN unsubscribed INTEGER DEFAULT 0",
+    "ALTER TABLE users ADD COLUMN last_broadcast_at TEXT",
+)
+
+_BROADCAST_SCHEMA = """
+CREATE TABLE IF NOT EXISTS broadcasts (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    created_at TEXT,
+    preview TEXT,
+    audience INTEGER DEFAULT 0,
+    sent INTEGER DEFAULT 0,
+    failed INTEGER DEFAULT 0
+);
+CREATE TABLE IF NOT EXISTS broadcast_log (
+    broadcast_id INTEGER,
+    user_id INTEGER,
+    clicked INTEGER DEFAULT 0,
+    unsubscribed INTEGER DEFAULT 0,
+    PRIMARY KEY (broadcast_id, user_id)
+);
+"""
+
 
 async def init_db() -> None:
-        for ddl in (
-            "ALTER TABLE users ADD COLUMN awaiting_contact INTEGER DEFAULT 0",
-            "ALTER TABLE users ADD COLUMN source TEXT",
-            "ALTER TABLE users ADD COLUMN last_active_at TEXT",
-            "ALTER TABLE users ADD COLUMN trial_requested_at TEXT",
-            "ALTER TABLE users ADD COLUMN blocked INTEGER DEFAULT 0",
-        ):
+    async with aiosqlite.connect(DB_PATH) as db:
+        await db.execute(_SCHEMA)
+        for ddl in _MIGRATIONS:
             try:
                 await db.execute(ddl)
             except Exception:
                 pass
+        await db.executescript(_BROADCAST_SCHEMA)
+        await db.commit()
 
 
 def _now() -> str:
     return dt.datetime.utcnow().isoformat()
 
+
+# ---------- Пользователи ----------
 
 async def get_user(user_id: int) -> Optional[dict]:
     async with aiosqlite.connect(DB_PATH) as db:
@@ -92,6 +122,16 @@ async def update_user(user_id: int, **fields) -> None:
         await db.commit()
 
 
+async def touch_user(user_id: int) -> None:
+    """Любое действие пользователя: обновляем активность и снимаем флаг блокировки."""
+    async with aiosqlite.connect(DB_PATH) as db:
+        await db.execute(
+            "UPDATE users SET last_active_at = ?, blocked = 0 WHERE user_id = ?",
+            (_now(), user_id),
+        )
+        await db.commit()
+
+
 async def set_portion_sent(user_id: int, stage: str, portions_sent: int) -> None:
     await update_user(
         user_id,
@@ -108,6 +148,8 @@ async def set_followup_sent(user_id: int, followups_sent: int, stage: str = None
     await update_user(user_id, **fields)
 
 
+# ---------- Планировщик воронки ----------
+
 async def users_due_for_portion2(delay_hours: float) -> list[dict]:
     return await _users_due("portion1_sent", delay_hours)
 
@@ -123,11 +165,25 @@ async def users_due_for_followup(delay_hours: float, max_followups: int) -> list
         cur = await db.execute(
             "SELECT * FROM users WHERE stage IN ('portion3_sent', 'nurtured') "
             "AND followups_sent < ? AND last_portion_at <= ? AND COALESCE(blocked, 0) = 0",
-            "SELECT * FROM users WHERE stage = ? AND last_portion_at <= ? AND COALESCE(blocked, 0) = 0",
+            (max_followups, cutoff),
         )
         rows = await cur.fetchall()
         return [dict(r) for r in rows]
 
+
+async def _users_due(stage: str, delay_hours: float) -> list[dict]:
+    cutoff = (dt.datetime.utcnow() - dt.timedelta(hours=delay_hours)).isoformat()
+    async with aiosqlite.connect(DB_PATH) as db:
+        db.row_factory = aiosqlite.Row
+        cur = await db.execute(
+            "SELECT * FROM users WHERE stage = ? AND last_portion_at <= ? AND COALESCE(blocked, 0) = 0",
+            (stage, cutoff),
+        )
+        rows = await cur.fetchall()
+        return [dict(r) for r in rows]
+
+
+# ---------- Статистика ----------
 
 async def get_funnel_stats() -> dict:
     """Сводка по воронке для команды /stats: сколько людей на каждом этапе,
@@ -161,18 +217,6 @@ async def get_funnel_stats() -> dict:
     }
 
 
-async def _users_due(stage: str, delay_hours: float) -> list[dict]:
-    cutoff = (dt.datetime.utcnow() - dt.timedelta(hours=delay_hours)).isoformat()
-    async with aiosqlite.connect(DB_PATH) as db:
-        db.row_factory = aiosqlite.Row
-        cur = await db.execute(
-            "SELECT * FROM users WHERE stage IN ('portion3_sent', 'nurtured') "
-            "AND followups_sent < ? AND last_portion_at <= ? AND COALESCE(blocked, 0) = 0",
-            "SELECT * FROM users WHERE stage = ? AND last_portion_at <= ? AND COALESCE(blocked, 0) = 0",
-        )
-        rows = await cur.fetchall()
-        return [dict(r) for r in rows]
-
 async def get_daily_stats(days: int = 14) -> list[dict]:
     """Новые пользователи по дням (МСК) + как далеко дошли."""
     async with aiosqlite.connect(DB_PATH) as db:
@@ -192,15 +236,6 @@ async def get_daily_stats(days: int = 14) -> list[dict]:
             (f"-{days - 1} days",),
         )
         return [dict(r) for r in await cur.fetchall()]
-
-async def touch_user(user_id: int) -> None:
-    """Любое действие пользователя: обновляем активность и снимаем флаг блокировки."""
-    async with aiosqlite.connect(DB_PATH) as db:
-        await db.execute(
-            "UPDATE users SET last_active_at = ?, blocked = 0 WHERE user_id = ?",
-            (_now(), user_id),
-        )
-        await db.commit()
 
 
 async def get_source_stats() -> list[dict]:
@@ -229,3 +264,84 @@ async def get_activity_summary() -> dict:
             """
         )
         return dict(await cur.fetchone())
+
+
+# ---------- Рассылки ----------
+
+async def broadcast_audience(goal=None, level=None, min_gap_days: int = 6,
+                             funnel_gap_hours: int = 48) -> list[int]:
+    """Кому можно слать рекламную рассылку прямо сейчас (мягкие ограничения)."""
+    now = dt.datetime.utcnow()
+    q = (
+        "SELECT user_id FROM users WHERE COALESCE(blocked,0)=0 "
+        "AND COALESCE(unsubscribed,0)=0 AND COALESCE(trial_requested,0)=0 "
+        "AND created_at <= ? "
+        "AND (last_broadcast_at IS NULL OR last_broadcast_at <= ?) "
+        "AND (last_portion_at IS NULL OR last_portion_at <= ?)"
+    )
+    params = [
+        (now - dt.timedelta(days=3)).isoformat(),
+        (now - dt.timedelta(days=min_gap_days)).isoformat(),
+        (now - dt.timedelta(hours=funnel_gap_hours)).isoformat(),
+    ]
+    if goal:
+        q += " AND goal = ?"
+        params.append(goal)
+    if level:
+        q += " AND level = ?"
+        params.append(level)
+    async with aiosqlite.connect(DB_PATH) as db:
+        cur = await db.execute(q, params)
+        return [r[0] for r in await cur.fetchall()]
+
+
+async def create_broadcast(preview: str, audience: int) -> int:
+    async with aiosqlite.connect(DB_PATH) as db:
+        cur = await db.execute(
+            "INSERT INTO broadcasts (created_at, preview, audience) VALUES (?,?,?)",
+            (_now(), preview[:80], audience),
+        )
+        await db.commit()
+        return cur.lastrowid
+
+
+async def log_broadcast_sent(bid: int, user_id: int) -> None:
+    async with aiosqlite.connect(DB_PATH) as db:
+        await db.execute(
+            "INSERT OR IGNORE INTO broadcast_log (broadcast_id, user_id) VALUES (?,?)", (bid, user_id)
+        )
+        await db.execute("UPDATE users SET last_broadcast_at = ? WHERE user_id = ?", (_now(), user_id))
+        await db.commit()
+
+
+async def finish_broadcast(bid: int, sent: int, failed: int) -> None:
+    async with aiosqlite.connect(DB_PATH) as db:
+        await db.execute("UPDATE broadcasts SET sent=?, failed=? WHERE id=?", (sent, failed, bid))
+        await db.commit()
+
+
+async def mark_broadcast_event(bid: int, user_id: int, field: str) -> None:
+    if field not in ("clicked", "unsubscribed"):
+        return
+    async with aiosqlite.connect(DB_PATH) as db:
+        await db.execute(
+            f"UPDATE broadcast_log SET {field} = 1 WHERE broadcast_id = ? AND user_id = ?",
+            (bid, user_id),
+        )
+        await db.commit()
+
+
+async def get_broadcast_report(limit: int = 5) -> list[dict]:
+    async with aiosqlite.connect(DB_PATH) as db:
+        db.row_factory = aiosqlite.Row
+        cur = await db.execute(
+            """
+            SELECT b.id, b.created_at, b.preview, b.sent, b.failed,
+                   COALESCE(SUM(l.clicked),0) AS clicks,
+                   COALESCE(SUM(l.unsubscribed),0) AS unsubs
+            FROM broadcasts b LEFT JOIN broadcast_log l ON l.broadcast_id = b.id
+            GROUP BY b.id ORDER BY b.id DESC LIMIT ?
+            """,
+            (limit,),
+        )
+        return [dict(r) for r in await cur.fetchall()]

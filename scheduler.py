@@ -13,6 +13,7 @@ import logging
 
 from aiogram import Bot
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from aiogram.exceptions import TelegramForbiddenError
 
 import config
 import database as db
@@ -33,6 +34,8 @@ async def _send_portion2_batch(bot: Bot) -> None:
     for user in users:
         try:
             await send_portion2(bot, user["user_id"], user["level"], user.get("goal"))
+                except TelegramForbiddenError:
+            await db.update_user(user["user_id"], blocked=1)
         except Exception:
             log.exception("Не удалось отправить порцию 2 пользователю %s", user["user_id"])
 
@@ -42,6 +45,8 @@ async def _send_portion3_batch(bot: Bot) -> None:
     for user in users:
         try:
             await send_portion3(bot, user["user_id"], user["level"], user.get("goal"))
+                except TelegramForbiddenError:
+            await db.update_user(user["user_id"], blocked=1)
         except Exception:
             log.exception("Не удалось отправить порцию 3 пользователю %s", user["user_id"])
 

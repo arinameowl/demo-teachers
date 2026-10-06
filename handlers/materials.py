@@ -74,7 +74,7 @@ async def send_all_unlocked(message: Message, user_id: int) -> None:
     """/materials — повторно показывает всё, что человеку уже открыто по воронке."""
     user = await db.get_user(user_id)
     if not user or not user.get("level"):
-        await message.answer("Сначала пройдём короткий онбординг — нажми /start")
+        await message.answer("Сначала пройдем короткий онбординг — нажми /start")
         return
 
     level = user["level"]

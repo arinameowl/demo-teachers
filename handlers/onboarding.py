@@ -1,4 +1,6 @@
 import logging
+import re
+from aiogram.filters import CommandStart, CommandObject
 
 from aiogram import Router, F
 from aiogram.filters import CommandStart
@@ -11,9 +13,6 @@ import keyboards as kb
 import quiz
 import texts
 from handlers.materials import send_portion1
-
-import re
-from aiogram.filters import CommandStart, CommandObject
 
 @router.message(CommandStart())
 async def cmd_start(message: Message, state: FSMContext, command: CommandObject):

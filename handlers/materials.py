@@ -32,7 +32,7 @@ def _render_book(item: dict, goal: str | None) -> str:
         parts.append(item["text"])
     if item.get("file_url"):
         parts.append(f"🔗 {item['file_url']}")
-    return "\n\n".join(parts)
+    return "\n\n".join(parts) + texts.PORTION2_SOFT_CTA
 
 
 def _render_series(series: dict, goal: str | None) -> str:
@@ -44,7 +44,7 @@ def _render_series(series: dict, goal: str | None) -> str:
         parts.append(f"🔗 {ep['file_url']}")
     if ep.get("tasks_url"):
         parts.append(f"📝 Разбор лексики: {ep['tasks_url']}")
-    return "\n\n".join(parts)
+    return "\n\n".join(parts) + texts.PORTION3_SOFT_CTA
 
 
 async def send_portion1(message: Message, user_id: int, level: str) -> None:

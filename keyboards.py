@@ -30,12 +30,14 @@ def level_manual_keyboard() -> InlineKeyboardMarkup:
 
 
 def quiz_options_keyboard(question_index: int, options: list[str]) -> InlineKeyboardMarkup:
-    return InlineKeyboardMarkup(
-        inline_keyboard=[
-            [InlineKeyboardButton(text=opt, callback_data=f"quiz:{question_index}:{i}")]
-            for i, opt in enumerate(options)
-        ]
-    )
+    rows = [
+        [InlineKeyboardButton(text=opt, callback_data=f"quiz:{question_index}:{i}")]
+        for i, opt in enumerate(options)
+    ]
+    # Кнопка пропуска на каждом вопросе. callback_data НЕ начинается с "quiz:",
+    # чтобы её не перехватил обработчик ответов на вопросы.
+    rows.append([InlineKeyboardButton(text="⏭ Пропустить тестирование", callback_data="quizskip")])
+    return InlineKeyboardMarkup(inline_keyboard=rows)
 
 
 def main_menu_keyboard() -> InlineKeyboardMarkup:
@@ -87,10 +89,4 @@ def main_menu_keyboard() -> InlineKeyboardMarkup:
 def trial_cta_keyboard() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(
         inline_keyboard=[[InlineKeyboardButton(text="💬 Хочу на пробный урок", callback_data="menu:trial")]]
-    )
-
-
-def course_cta_keyboard() -> InlineKeyboardMarkup:
-    return InlineKeyboardMarkup(
-        inline_keyboard=[[InlineKeyboardButton(text="🎬 В лист ожидания курса", callback_data="menu:course")]]
     )

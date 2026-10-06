@@ -1,9 +1,8 @@
 import logging
 import re
-from aiogram.filters import CommandStart, CommandObject
 
 from aiogram import Router, F
-from aiogram.filters import CommandStart
+from aiogram.filters import CommandStart, CommandObject
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import CallbackQuery, Message
@@ -14,26 +13,12 @@ import quiz
 import texts
 from handlers.materials import send_portion1
 
-@router.message(CommandStart())
-async def cmd_start(message: Message, state: FSMContext, command: CommandObject):
-    await state.clear()
-    source = re.sub(r"[^a-zA-Z0-9_-]", "", command.args or "")[:40].lower() or "direct"
-    await db.create_user_if_missing(
-        message.from_user.id,
-        message.from_user.username or "",
-        message.from_user.first_name or "",
-        source=source,
-    )
-    await message.answer(texts.WELCOME)
-    await message.answer(texts.GOAL_QUESTION, reply_markup=kb.goal_keyboard())
-
 router = Router()
 log = logging.getLogger(__name__)
 
 
 class Quiz(StatesGroup):
     in_progress = State()
-
 
 @router.message(CommandStart())
 async def cmd_start(message: Message, state: FSMContext):

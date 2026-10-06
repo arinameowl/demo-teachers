@@ -16,6 +16,14 @@ from handlers.materials import send_portion1
 router = Router()
 log = logging.getLogger(__name__)
 
+QUIZ_SKIP_TEXT = (
+    "Без проблем! Тогда выбери уровень сам. Если сомневаешься — бери уровень пониже, "
+    "так будет комфортнее\n\n"
+    "A1 — начинаю с нуля\n"
+    "A2 — понимаю простые фразы, говорить пока сложно\n"
+    "B1 — могу поддержать разговор на знакомые темы"
+)
+ 
 
 class Quiz(StatesGroup):
     in_progress = State()

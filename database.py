@@ -41,15 +41,17 @@ CREATE TABLE IF NOT EXISTS users (
 
 
 async def init_db() -> None:
-    async with aiosqlite.connect(DB_PATH) as db:
-        await db.execute(_SCHEMA)
-        # Миграция для баз, созданных до появления этого поля (ALTER TABLE ADD COLUMN
-        # безопасно падает, если колонка уже есть — просто игнорируем эту ошибку).
-        try:
-            await db.execute("ALTER TABLE users ADD COLUMN awaiting_contact INTEGER DEFAULT 0")
-        except Exception:
-            pass
-        await db.commit()
+        for ddl in (
+            "ALTER TABLE users ADD COLUMN awaiting_contact INTEGER DEFAULT 0",
+            "ALTER TABLE users ADD COLUMN source TEXT",
+            "ALTER TABLE users ADD COLUMN last_active_at TEXT",
+            "ALTER TABLE users ADD COLUMN trial_requested_at TEXT",
+            "ALTER TABLE users ADD COLUMN blocked INTEGER DEFAULT 0",
+        ):
+            try:
+                await db.execute(ddl)
+            except Exception:
+                pass
 
 
 def _now() -> str:

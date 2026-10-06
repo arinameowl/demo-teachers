@@ -79,3 +79,16 @@ async def cmd_days(message: Message, command: CommandObject):
     lines.append("</pre>")
     lines.append("Новых = нажали /start в этот день; П1/П3 = дошли до 1-й/3-й порции; Проб = оставили заявку на пробный (из тех, кто пришёл в этот день).")
     await message.answer("\n".join(lines), parse_mode="HTML")
+
+@router.message(Command("sources"))
+async def cmd_sources(message: Message):
+    if message.from_user.id not in config.ADMIN_IDS:
+        return
+    rows = await db.get_source_stats()
+    lines = ["<b>Источники трафика</b>", "<pre>", "Источник              Всего  П1  Проб"]
+    for r in rows:
+        lines.append(f"{r['src'][:20]:<20} {r['users']:>6} {r['got_p1']:>3} {r['trials']:>5}")
+    lines.append("</pre>")
+    a = await db.get_activity_summary()
+    lines.append(f"Активны за 7 дней: {a['active_7d']}\nЗаблокировали бота: {a['blocked']}")
+    await message.answer("\n".join(lines), parse_mode="HTML")

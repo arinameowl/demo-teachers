@@ -167,3 +167,23 @@ async def _users_due(stage: str, delay_hours: float) -> list[dict]:
         )
         rows = await cur.fetchall()
         return [dict(r) for r in rows]
+
+async def get_daily_stats(days: int = 14) -> list[dict]:
+    """Новые пользователи по дням (МСК) + как далеко дошли."""
+    async with aiosqlite.connect(DB_PATH) as db:
+        db.row_factory = aiosqlite.Row
+        cur = await db.execute(
+            """
+            SELECT date(created_at, '+3 hours') AS day,
+                   COUNT(*) AS new_users,
+                   SUM(CASE WHEN portions_sent >= 1 THEN 1 ELSE 0 END) AS got_p1,
+                   SUM(CASE WHEN portions_sent >= 3 THEN 1 ELSE 0 END) AS got_p3,
+                   COALESCE(SUM(trial_requested), 0) AS trials
+            FROM users
+            WHERE date(created_at, '+3 hours') >= date('now', '+3 hours', ?)
+            GROUP BY day
+            ORDER BY day DESC
+            """,
+            (f"-{days - 1} days",),
+        )
+        return [dict(r) for r in await cur.fetchall()]

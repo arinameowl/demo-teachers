@@ -24,6 +24,8 @@ log = logging.getLogger(__name__)
 
 
 async def _tick(bot: Bot) -> None:
+    if _is_quiet_hours():
+        return
     await _send_portion2_batch(bot)
     await _send_portion3_batch(bot)
     await _send_followup_batch(bot)
@@ -45,7 +47,7 @@ async def _send_portion3_batch(bot: Bot) -> None:
     for user in users:
         try:
             await send_portion3(bot, user["user_id"], user["level"], user.get("goal"))
-                except TelegramForbiddenError:
+        except TelegramForbiddenError:
             await db.update_user(user["user_id"], blocked=1)
         except Exception:
             log.exception("Не удалось отправить порцию 3 пользователю %s", user["user_id"])
@@ -63,6 +65,8 @@ async def _send_followup_batch(bot: Bot) -> None:
             if new_count >= config.MAX_FOLLOWUPS:
                 await bot.send_message(user["user_id"], texts.FUNNEL_SILENCE_NOTICE)
             await db.set_followup_sent(user["user_id"], new_count, stage=stage)
+        except TelegramForbiddenError:
+            await db.update_user(user["user_id"], blocked=1)
         except Exception:
             log.exception("Не удалось отправить чек-ин пользователю %s", user["user_id"])
 

@@ -22,8 +22,8 @@ def _is_admin(uid: int) -> bool:
 
 def promo_keyboard(bid: int) -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="💬 Записаться на пробный", callback_data=f"promo:trial:{bid}")],
-        [InlineKeyboardButton(text="🔕 Не присылать акции", callback_data=f"promo:stop:{bid}")],
+        [InlineKeyboardButton(text="💬 Записаться на разбор уровня", callback_data=f"promo:trial:{bid}")],
+        [InlineKeyboardButton(text="🔕 Не присылать акции и иные рассылки", callback_data=f"promo:stop:{bid}")],
     ])
 
 
@@ -133,7 +133,7 @@ async def promo_stop(callback: CallbackQuery):
     bid = int(callback.data.split(":")[2])
     await db.update_user(callback.from_user.id, unsubscribed=1)
     await db.mark_broadcast_event(bid, callback.from_user.id, "unsubscribed")
-    await callback.message.answer("Готово, акции больше не присылаю. Материалы и пробный урок — по-прежнему в /menu 🙂")
+    await callback.message.answer("Готово, акции больше не присылаю. Материалы и разбор уровня — по-прежнему в /menu 🙂")
     await callback.answer()
 
 

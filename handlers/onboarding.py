@@ -73,6 +73,14 @@ async def level_quiz_start(callback: CallbackQuery, state: FSMContext):
     await callback.message.answer(q["prompt"], reply_markup=kb.quiz_options_keyboard(0, q["options"]))
     await callback.answer()
 
+# Пропуск теста на любом вопросе. Без фильтра по состоянию FSM — так кнопка
+# работает и после перезапуска бота, когда состояние квиза уже потеряно.
+@router.callback_query(F.data == "quizskip")
+async def quiz_skip(callback: CallbackQuery, state: FSMContext):
+    await state.clear()
+    await callback.message.edit_text(QUIZ_SKIP_TEXT, reply_markup=kb.level_manual_keyboard())
+    await callback.answer()
+
 
 @router.callback_query(Quiz.in_progress, F.data.startswith("quiz:"))
 async def quiz_answer(callback: CallbackQuery, state: FSMContext):

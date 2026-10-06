@@ -5,6 +5,7 @@ from aiogram.filters import Command
 from aiogram.types import CallbackQuery, Message
 
 import config
+import datetime as dt
 import database as db
 import keyboards as kb
 import texts
@@ -65,7 +66,13 @@ async def _is_awaiting_contact(message: Message) -> bool:
 @router.message(_is_awaiting_contact)
 async def save_trial_contact(message: Message, bot: Bot):
     contact_text = message.text or message.contact and message.contact.phone_number or "—"
-    await db.update_user(message.from_user.id, trial_requested=1, awaiting_contact=0, contact_info=contact_text)
+        await db.update_user(
+        message.from_user.id,
+        trial_requested=1,
+        awaiting_contact=0,
+        contact_info=contact_text,
+        trial_requested_at=dt.datetime.utcnow().isoformat(),
+    )
     await message.answer(texts.TRIAL_THANKS)
 
     if config.MANAGER_CHAT_ID:

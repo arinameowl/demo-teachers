@@ -34,7 +34,7 @@ async def _send_portion2_batch(bot: Bot) -> None:
     for user in users:
         try:
             await send_portion2(bot, user["user_id"], user["level"], user.get("goal"))
-                except TelegramForbiddenError:
+        except TelegramForbiddenError:
             await db.update_user(user["user_id"], blocked=1)
         except Exception:
             log.exception("Не удалось отправить порцию 2 пользователю %s", user["user_id"])

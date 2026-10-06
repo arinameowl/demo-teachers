@@ -1,11 +1,11 @@
 import logging
+import datetime as dt
 
 from aiogram import Router, F, Bot
 from aiogram.filters import Command
 from aiogram.types import CallbackQuery, Message
 
 import config
-import datetime as dt
 import database as db
 import keyboards as kb
 import texts
@@ -66,7 +66,7 @@ async def _is_awaiting_contact(message: Message) -> bool:
 @router.message(_is_awaiting_contact)
 async def save_trial_contact(message: Message, bot: Bot):
     contact_text = message.text or message.contact and message.contact.phone_number or "—"
-        await db.update_user(
+    await db.update_user(
         message.from_user.id,
         trial_requested=1,
         awaiting_contact=0,

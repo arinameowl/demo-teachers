@@ -15,7 +15,7 @@ from handlers.materials import send_portion1
 import re
 from aiogram.filters import CommandStart, CommandObject
 
-@router.message(CommandStart())
+@Router.message(CommandStart())
 async def cmd_start(message: Message, state: FSMContext, command: CommandObject):
     await state.clear()
     source = re.sub(r"[^a-zA-Z0-9_-]", "", command.args or "")[:40].lower() or "direct"

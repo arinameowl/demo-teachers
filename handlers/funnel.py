@@ -1,13 +1,15 @@
 import logging
 import datetime as dt
+import html
 
 from aiogram import Router, F, Bot
 from aiogram.filters import Command
-from aiogram.types import CallbackQuery, Message
+from aiogram.types import CallbackQuery, Message, ReplyKeyboardRemove
 
 import config
 import database as db
 import keyboards as kb
+import sheets
 import texts
 
 router = Router()
@@ -44,7 +46,7 @@ async def cb_menu_quiz(callback: CallbackQuery):
 
 async def _ask_trial_contact(target: Message, user_id: int):
     await db.update_user(user_id, awaiting_contact=1)
-    await target.answer(texts.TRIAL_ASK_CONTACT)
+    await target.answer(texts.TRIAL_ASK_CONTACT, reply_markup=kb.contact_request_keyboard())
 
 
 @router.message(Command("trial"))
@@ -59,13 +61,30 @@ async def cb_menu_trial(callback: CallbackQuery):
 
 
 async def _is_awaiting_contact(message: Message) -> bool:
+    # Команды (/menu, /prices и т.д.) никогда не считаем контактом.
+    if message.text and message.text.startswith("/"):
+        return False
     user = await db.get_user(message.from_user.id)
     return bool(user and user.get("awaiting_contact"))
 
 
 @router.message(_is_awaiting_contact)
 async def save_trial_contact(message: Message, bot: Bot):
-    contact_text = message.text or message.contact and message.contact.phone_number or "—"
+    # Человек передумал
+    if message.text == texts.TRIAL_CANCEL_BUTTON:
+        await db.update_user(message.from_user.id, awaiting_contact=0)
+        await message.answer(texts.TRIAL_CANCELLED, reply_markup=ReplyKeyboardRemove())
+        return
+ 
+    if message.contact:
+        contact_text = message.contact.phone_number
+    else:
+        contact_text = (message.text or "").strip()
+ 
+    if not contact_text:
+        await message.answer(texts.TRIAL_CONTACT_RETRY, reply_markup=kb.contact_request_keyboard())
+        return
+ 
     await db.update_user(
         message.from_user.id,
         trial_requested=1,
@@ -73,19 +92,36 @@ async def save_trial_contact(message: Message, bot: Bot):
         contact_info=contact_text,
         trial_requested_at=dt.datetime.utcnow().isoformat(),
     )
-    await message.answer(texts.TRIAL_THANKS)
-
+    await message.answer(texts.TRIAL_THANKS, reply_markup=ReplyKeyboardRemove())
+ 
+    user = message.from_user
+    row = await db.get_user(user.id) or {}
+ 
     if config.MANAGER_CHAT_ID:
         try:
-            user = message.from_user
-            await bot.send_message(
-                int(config.MANAGER_CHAT_ID),
-                f"🔥 Новая заявка на пробный урок!\n"
-                f"Пользователь: @{user.username or '—'} (id {user.id})\n"
-                f"Контакт: {contact_text}",
+            text = (
+                "🔥 Новая заявка на пробный урок!\n"
+                f"Пользователь: {html.escape(user.full_name)} (@{user.username or '—'}, id {user.id})\n"
+                f"Контакт: {html.escape(contact_text)}\n"
+                f"Уровень: {row.get('level') or '—'} · цель: {row.get('goal') or '—'} · "
+                f"источник: {html.escape(row.get('source') or '—')}"
             )
+            await bot.send_message(int(config.MANAGER_CHAT_ID), text, parse_mode="HTML")
         except Exception:
             log.exception("Не удалось уведомить менеджера о заявке")
+ 
+    # Те же данные — новой строкой в Google-таблицу (если задан SHEETS_WEBHOOK_URL)
+    await sheets.append_trial_row(
+        name=user.full_name,
+        username=user.username,
+        user_id=user.id,
+        contact=contact_text,
+        level=row.get("level"),
+        goal=row.get("goal"),
+        source=row.get("source"),
+    )
+ 
+ 
 
 
 # ---------- Цены ----------

@@ -1,7 +1,11 @@
-from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from aiogram.types import (
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    KeyboardButton,
+    ReplyKeyboardMarkup,
+)
 
 from texts import GOAL_LABELS
-
 
 def goal_keyboard() -> InlineKeyboardMarkup:
     buttons = [
@@ -90,3 +94,15 @@ def trial_cta_keyboard() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(
         inline_keyboard=[[InlineKeyboardButton(text="💬 Хочу на пробный урок", callback_data="menu:trial")]]
     )
+
+def contact_request_keyboard() -> ReplyKeyboardMarkup:
+    """Кнопка «Поделиться номером» (отправляет контакт в одно касание) + отмена."""
+    return ReplyKeyboardMarkup(
+        keyboard=[
+            [KeyboardButton(text=TRIAL_SHARE_BUTTON, request_contact=True)],
+            [KeyboardButton(text=TRIAL_CANCEL_BUTTON)],
+        ],
+        resize_keyboard=True,
+        one_time_keyboard=True,
+    )
+ 

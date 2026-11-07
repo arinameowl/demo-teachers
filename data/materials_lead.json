@@ -2,7 +2,7 @@
   "A1": {
     "podcast": {
       "title": "Where are your friends from?",
-      "text": "Подкаст на 1 минуту, где девушка рассказывает с каких стран ее друзья  + упражнения",
+      "text": "Минутный подкаст: Джули рассказывает, из каких стран ее друзья. После прослушивания — интерактивные задания.",
       "file_url": "https://vimeo.com/1046107378?fl=pl&fe=sh",
       "tasks": "Упражнения к аудио с ключами: https://docs.google.com/document/d/1lpTY53igE_FstN1iGlbrCS7SYeYw5RKjLUvxPgmE6Uk/edit?usp=drive_link"
     },
@@ -23,7 +23,7 @@
   "A2": {
     "podcast": {
       "title": "My morning routine",
-      "text": "Подкаст на 5 минут, в котором обсуждаем утреннюю рутину  + упражнения",
+      "text": "Пятиминутный подкаст об утренних привычках с интерактивными заданиями на понимание речи и лексику.",
       "file_url": "https://youtu.be/sLSOuFTBaHM?si=yKH0-htdleo4OFj9",
       "tasks": "Лексика из подкаста + упражнения с ключами: https://docs.google.com/document/d/1uBqLSV6GAlSkstZpmsRoRgI1vT2QeYyDNAxv4rIvqTE/edit?usp=drive_link"
     },
@@ -32,31 +32,31 @@
       "file_url": "https://drive.google.com/file/d/1JAcpK64EyRyf330czzeYHgJ00bhIfhRg/view?usp=drive_link"
     },
     "series": {
-      "show": "The Good Place. Фэнтези, комедия",
+      "show": "Let’s Learn English · VOA Learning English",
       "episode": {
-        "title": "Season 1 Episode 1",
-        "file_url": "https://2sub.movie/series/the-good-place-2016/#watch-s1e1",
-        "tasks_url": "https://docs.google.com/document/d/1dZUu19NpVrYsk8-S7TMVMLikHUSlCoCPdJAPSC2aoDg/edit?usp=sharing"
+        "title": "Lesson 24 — Yesterday Was Amazing!",
+        "about": "Anna случайно находит Smithsonian Folklife Festival и знакомится с баскской культурой: традиционными танцами, едой, искусством и игрой pilota. Эпизод помогает услышать Past Simple в рассказе о прошедшем дне.",
+        "file_url": "https://www.youtube.com/watch?v=7BDjr0Oc6VM"
       }
     }
   },
   "B1": {
     "podcast": {
-      "title": "My First Day at Work",
-      "text": "Подкаст на 5 минут о первом рабочем дне",
-      "file_url": "https://youtu.be/YhANKrpXAtY?si=7H18Dzay3fKXPsim",
-      "tasks": "Лексика из подкаста + упражнения с ключами: https://docs.google.com/document/d/1JbOhKff-XxJuoxqAe86vHjERKRR4huRWijJ6_5Nj3p8/edit?usp=sharing"
+      "title": "Bank English Conversation",
+      "text": "Диалог в банке: банковская карта перестала работать, банк обнаружил подозрительные операции и предлагает выпустить новую карту. Практика аудирования и лексики по финансовой теме.",
+      "file_url": "https://www.youtube.com/watch?v=IdH61wICjYI",
+      "source_url": "https://5minuteenglish.net/episode/bank-english-conversation/"
     },
     "book": {
       "title": "O. Wilde - The Picture of Dorian Gray",
       "file_url": "https://drive.google.com/file/d/1k8UJjzBLAio-5EVKT6TJ5cQV5E9lo8Vb/view?usp=drive_link"
     },
     "series": {
-      "show": "How I met your mother. Комедия",
+      "show": "The Flatmates · BBC Learning English",
       "episode": {
-        "title": "Season 1 Episode 1",
-        "file_url": "https://met-mother.ru/?utm_referrer=https%3A%2F%2Fwww.google.com%2F",
-        "tasks_url": "https://docs.google.com/document/d/1k4mhw9U9PregbvMbksKB6rMcywyjSKuRU8FdRlbpBGk/edit?usp=sharing"
+        "title": "Episode 1 — Michal’s Here!",
+        "about": "Tim и Helen встречают в аэропорту Michal. По дороге домой они обсуждают его внешность и характер, а в конце замечают, что он плачет.",
+        "file_url": "https://www.youtube.com/watch?v=vAi1JlMIQVM"
       }
     }
   }

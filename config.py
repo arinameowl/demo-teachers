@@ -18,17 +18,22 @@ ADMIN_IDS = [int(x) for x in os.environ.get("ADMIN_IDS", "8552229424 , 712799610
 # Ссылка на форму/лендинг с ценами. Если пусто — бот покажет цены текстом из texts.py.
 PRICES_URL = os.environ.get("PRICES_URL", "https://theteachers.ru/payment")
 
-DB_PATH = os.environ.get("DB_PATH", os.path.join(os.path.dirname(__file__), "data", "leadbot.db"))
+DEFAULT_DB_PATH = "/data/leadbot.db" if os.path.isdir("/data") else os.path.join(os.path.dirname(__file__), "data", "leadbot.db")
+DB_PATH = os.environ.get("DB_PATH", DEFAULT_DB_PATH)
 MATERIALS_PATH = os.environ.get(
     "MATERIALS_PATH", os.path.join(os.path.dirname(__file__), "data", "materials_lead.json")
 )
 
-# --- Тайминги воронки (в часах). Меняйте под свой темп прогрева, ---
-# --- не трогая остальной код — это единственное место с "магическими числами". ---
-PORTION_2_DELAY_HOURS = float(os.environ.get("PORTION_2_DELAY_HOURS", 24))   # книга после подкаста
-PORTION_3_DELAY_HOURS = float(os.environ.get("PORTION_3_DELAY_HOURS", 48))   # сериал после книги
-FOLLOWUP_DELAY_HOURS = float(os.environ.get("FOLLOWUP_DELAY_HOURS", 96))     # чек-ины после 3-й порции
-MAX_FOLLOWUPS = int(os.environ.get("MAX_FOLLOWUPS", 2))                      # сколько чек-инов слать, потом бот замолкает
+# --- Контекстные follow-up сообщения воронки (часы после события) ---
+FOLLOWUP_NO_ACTIVITY_HOURS = float(os.environ.get("FOLLOWUP_NO_ACTIVITY_HOURS", 24))
+FOLLOWUP_AFTER_EXERCISE_HOURS = float(os.environ.get("FOLLOWUP_AFTER_EXERCISE_HOURS", 24))
+FOLLOWUP_AFTER_PRICES_HOURS = float(os.environ.get("FOLLOWUP_AFTER_PRICES_HOURS", 24))
 
 # Как часто планировщик проверяет базу на "кому пора слать следующую порцию" (минуты)
 SCHEDULER_INTERVAL_MINUTES = int(os.environ.get("SCHEDULER_INTERVAL_MINUTES", 30))
+
+# Публичный HTTPS URL Mini App (домен Amvera). Пустое значение скрывает кнопку.
+MINI_APP_URL = os.environ.get("MINI_APP_URL", "").strip()
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "learning_spacebot").lstrip("@")
+WEBAPP_HOST = os.environ.get("WEBAPP_HOST", "0.0.0.0")
+WEBAPP_PORT = int(os.environ.get("PORT", os.environ.get("WEBAPP_PORT", "80")))

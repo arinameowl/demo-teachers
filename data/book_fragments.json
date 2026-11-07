@@ -1,0 +1,35 @@
+{
+  "A1": {
+    "id": "book_a1",
+    "title": "The Snow Queen",
+    "author": "Hans Christian Andersen",
+    "pages": [
+      "One evening when little Kay was at home, he climbed on a chair and looked out the window. One of the snowflakes was larger than the others and it became larger and larger till at last it became the figure of a woman dressed in a long white dress. Her dress was made of a million little flakes. She was beautiful but made of ice, and her eyes were made of ice, too, and were shining like bright stars. She nodded toward the window and waved her hand. The little boy got afraid and ran from the window.",
+      "Then spring came and the children were again in the garden. Kay and Gerda held each other by the hand and kissed the roses. One day Kay and Gerda sat looking at the pictures of animals and birds in a big book. Suddenly Kay cried out, ‘Oh, there is something in my heart! I feel such a pain!’ and soon after that he said, ‘There is something in my eye.’",
+      "Gerda wanted to find Kay, so she began to travel. She asked people if they had seen a little boy. On her way, she met an old woman who lived in a small house near a river. The woman invited Gerda inside and gave her something to eat. She wanted Gerda to stay, because she was lonely. But Gerda could not forget her friend.",
+      "Gerda continued her journey and met many people who helped her. A little robber girl listened to her story and decided to help. She gave Gerda a warm coat and a reindeer to travel north. The road was long and cold, but Gerda did not stop. She wanted to find Kay and bring him home."
+    ]
+  },
+  "A2": {
+    "id": "book_a2",
+    "title": "Alice in Wonderland",
+    "author": "Lewis Carroll",
+    "pages": [
+      "Suddenly a white rabbit with pink eyes ran past her. ‘Oh, I shall be late!’ he cried. A rabbit that can talk! Alice did not think it very funny at first. But when the Rabbit took a watch out of its pocket, and looked at it, Alice jumped to her feet. She started after the Rabbit. It ran to a rabbit-hole in the ground and jumped into it. Alice went down after it at once.",
+      "But she did not go down the hole, she fell. She fell down, down, down. She was falling very slowly, so she had time to think, and to look about. At first she tried to look down and see what was in the hole. But it was too dark and she could see nothing. Then she looked at the walls and saw a lot of shelves on them. There were maps and pictures here and there. On one of the shelves she saw a jar. She took it from the shelf and read ‘Marmalade’.",
+      "Alice looked around the room. There were many doors, but they were all locked. She found a little gold key on a glass table. One door was very small, but behind it she could see a beautiful garden. Alice wanted to go outside, but she was too big to pass through the door. Then she noticed a bottle with a label that said ‘Drink me’.",
+      "Alice drank from the bottle and began to grow smaller. Soon she was small enough to enter the little door, but she had left the key on the table. She felt upset and started to cry. Her tears made a large pool on the floor. Just then, the White Rabbit hurried into the room again. Alice decided to follow him and see where he was going."
+    ]
+  },
+  "B1": {
+    "id": "book_b1",
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "pages": [
+      "The studio was filled with the rich smell of roses. The light summer wind touched the trees in the garden. The heavy smell of the lilac and the more delicate perfume of the pink thorn blossoms came through the open door. Lord Henry Wotton was lying on the sofa and smoking. He enjoyed the honey-sweet and honey-coloured blossoms.",
+      "In the centre of the room, near the upright easel, stood the full-length portrait of a young man of extraordinary personal beauty. In front of it, some little distance away, was sitting the artist himself, Basil Hallward. As the painter looked at the portrait, a smile of pleasure passed across his face. But he suddenly started up, and closing his eyes, placed his fingers upon them.",
+      "Lord Henry arrived at the studio and looked at the portrait with great interest. He asked Basil about the young man in the painting. Basil explained that the model was Dorian Gray, a person who had changed the way he saw art and beauty. He did not want to introduce Dorian to Lord Henry because he was afraid of Henry's influence.",
+      "When Dorian finally met Lord Henry, they began to talk about youth and beauty. Lord Henry argued that youth was the most valuable thing a person could have. Dorian listened carefully and started to think about his own appearance. Looking at the portrait, he wished that he could remain young while the picture grew old instead. This thought changed the way he looked at the painting."
+    ]
+  }
+}

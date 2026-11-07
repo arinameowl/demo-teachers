@@ -1,44 +1,56 @@
 # -*- coding: utf-8 -*-
 """
 Короткий тест на уровень — не заменяет полноценное тестирование школы,
-а нужен исключительно для того, чтобы выдать подходящую порцию лид-магнита
+а нужен исключительно для того, чтобы выдать подходящую подборку материалов
 и создать ощущение вовлечения ("бот меня протестировал, а не просто спросил").
 
 Каждый вопрос размечен уровнем сложности (A1/A2/B1). Итоговый уровень —
-самый сложный уровень, на котором пользователь ответил верно на оба вопроса
-этого уровня; если ни одного правильного на A2 — остаётся A1, и т.д.
+самый сложный уровень, для которого пользователь верно ответил на все вопросы
+этого и предыдущих уровней. Для A1/A2 предусмотрено по два вопроса, для B1 — три.
 Это грубая, но достаточная для лид-магнита эвристика.
 """
 
 QUESTIONS = [
     {
         "level": "A1",
-        "prompt": "1/5. Выбери правильный вариант: 'She ___ a teacher.'",
+        "prompt": "1/7. Выберите правильный вариант: 'She ___ a teacher.'",
         "options": ["is", "am", "are"],
         "correct": 0,
     },
     {
         "level": "A1",
-        "prompt": "2/5. Как будет 'Мне нравится кофе' по-английски?",
+        "prompt": "2/7. Как будет 'Мне нравится кофе' по-английски?",
         "options": ["I like coffee", "I likes coffee", "I am like coffee"],
         "correct": 0,
     },
     {
         "level": "A2",
-        "prompt": "3/5. 'I ___ to the gym every morning.'",
+        "prompt": "3/7. 'I ___ to the gym every morning.'",
         "options": ["go", "going", "am go"],
         "correct": 0,
     },
     {
         "level": "A2",
-        "prompt": "4/5. Выбери правильный вопрос: 'Куда ты ходил вчера вечером?'",
+        "prompt": "4/7. Выберите правильный вопрос: «Куда вы ходили вчера вечером?»",
         "options": ["Where did you go last night?", "Where you went last night?", "Where you go last night?"],
         "correct": 0,
     },
     {
         "level": "B1",
-        "prompt": "5/5. 'If I ___ more time, I would learn another language.'",
+        "prompt": "5/7. 'If I ___ more time, I would learn another language.'",
         "options": ["have", "had", "will have"],
+        "correct": 1,
+    },
+    {
+        "level": "B1",
+        "prompt": "6/7. 'The report ___ by the finance team last week.'",
+        "options": ["was prepared", "prepared", "has prepared"],
+        "correct": 0,
+    },
+    {
+        "level": "B1",
+        "prompt": "7/7. 'I wish I ___ more time to practise speaking.'",
+        "options": ["have", "had", "would have"],
         "correct": 1,
     },
 ]
@@ -52,8 +64,19 @@ def score_to_level(answers: dict[int, int]) -> str:
         if chosen is not None and chosen == q["correct"]:
             correct_by_level[q["level"]] += 1
 
-    if correct_by_level["B1"] >= 1 and correct_by_level["A2"] >= 1:
+    questions_by_level = {
+        level: sum(1 for q in QUESTIONS if q["level"] == level)
+        for level in correct_by_level
+    }
+
+    # Переход на следующий уровень возможен только после прохождения
+    # всех вопросов текущего и предыдущих уровней.
+    a1_complete = correct_by_level["A1"] == questions_by_level["A1"]
+    a2_complete = correct_by_level["A2"] == questions_by_level["A2"]
+    b1_complete = correct_by_level["B1"] == questions_by_level["B1"]
+
+    if a1_complete and a2_complete and b1_complete:
         return "B1"
-    if correct_by_level["A2"] >= 1:
+    if a1_complete and a2_complete:
         return "A2"
     return "A1"

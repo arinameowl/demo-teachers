@@ -10,11 +10,11 @@ import database as db
 router = Router()
 
 STAGE_LABELS = [
-    ("new", "Зашли, но не дошли до 1-й порции (застряли в онбординге/квизе)"),
-    ("portion1_sent", "Получили порцию 1 — подкаст"),
-    ("portion2_sent", "Получили порцию 2 — книга"),
-    ("portion3_sent", "Получили порцию 3 — сериал"),
-    ("nurtured", "Прошли все чек-ины (воронка отработала полностью)"),
+    ("new", "Начали знакомство с ботом"),
+    ("onboarded", "Определили уровень и получили подборку"),
+    ("learning_space_opened", "Открыли Learning Space"),
+    ("nurtured", "Получили follow-up после приложения"),
+    ("trial_requested", "Оставили заявку на первый урок"),
 ]
 
 
@@ -70,14 +70,13 @@ async def cmd_days(message: Message, command: CommandObject):
     rows = await db.get_daily_stats(days)
 
     lines = [f"<b>Новые пользователи по дням (МСК), последние {days} дн.</b>", "<pre>",
-             "Дата        Новых  П1   П3  Проб"]
+             "Дата        Новых  App  Упр  Проб"]
     for r in rows:
-        lines.append(f"{r['day']} {r['new_users']:>6} {r['got_p1']:>4} {r['got_p3']:>4} {r['trials']:>5}")
+        lines.append(f"{r['day']} {r['new_users']:>6} {r['app_opened']:>4} {r.get('exercised', 0):>4} {r['trials']:>5}")
     lines.append(f"Итого      {sum(r['new_users'] for r in rows):>6} "
-                 f"{sum(r['got_p1'] for r in rows):>4} {sum(r['got_p3'] for r in rows):>4} "
-                 f"{sum(r['trials'] for r in rows):>5}")
+                 f"{sum(r['app_opened'] for r in rows):>4} {sum(r.get('exercised', 0) for r in rows):>4} {sum(r['trials'] for r in rows):>5}")
     lines.append("</pre>")
-    lines.append("Новых = нажали /start в этот день; П1/П3 = дошли до 1-й/3-й порции; Проб = оставили заявку на пробный (из тех, кто пришёл в этот день).")
+    lines.append("Новых = /start; App = открыли Learning Space; Упр = завершили упражнение; Проб = оставили заявку.")
     await message.answer("\n".join(lines), parse_mode="HTML")
 
 @router.message(Command("sources"))
@@ -85,12 +84,95 @@ async def cmd_sources(message: Message):
     if message.from_user.id not in config.ADMIN_IDS:
         return
     rows = await db.get_source_stats()
-    lines = ["<b>Источники трафика</b>", "<pre>", "Источник              Всего  П1  Проб"]
+    lines = ["<b>Источники трафика</b>", "<pre>", "Источник              Всего App  Цены Проб"]
     for r in rows:
-        lines.append(f"{r['src'][:20]:<20} {r['users']:>6} {r['got_p1']:>3} {r['trials']:>5}")
+        lines.append(f"{r['src'][:20]:<20} {r['users']:>6} {r['app_opened']:>3} {r.get('prices_viewed', 0):>4} {r['trials']:>5}")
     lines.append("</pre>")
     a = await db.get_activity_summary()
     lines.append(f"Активны за 7 дней: {a['active_7d']}\nЗаблокировали бота: {a['blocked']}")
+    await message.answer("\n".join(lines), parse_mode="HTML")
+
+
+@router.message(Command("funnel"))
+async def cmd_funnel(message: Message, command: CommandObject):
+    """Подробная аналитика уникальных пользователей по событиям за период."""
+    if message.from_user.id not in config.ADMIN_IDS:
+        return
+    days = int(command.args) if command.args and command.args.isdigit() else 30
+    days = max(1, min(days, 90))
+    data = await db.get_funnel_conversion(days)
+    events = data["events"]
+    labels = [
+        ("start", "Запустили бота"),
+        ("goal_selected", "Выбрали цель"),
+        ("level_selected", "Определили уровень"),
+        ("school_info_viewed", "Изучили информацию о школе"),
+        ("prices_viewed", "Посмотрели цены"),
+        ("learning_space_opened", "Открыли Learning Space"),
+        ("material_opened", "Открыли материал"),
+        ("book_opened", "Открыли книгу"),
+        ("media_opened", "Открыли аудио или видео"),
+        ("exercise_started", "Начали упражнение"),
+        ("exercise_submitted", "Отправили ответы"),
+        ("miniapp_exercise_completed", "Завершили упражнение на 100%"),
+        ("trial_cta_clicked", "Нажали запись на первый урок"),
+        ("trial_contact_submitted", "Отправили контакт"),
+        ("trial_contact_cancelled", "Отменили до отправки контакта"),
+        ("trial_contact_abandoned", "Не завершили отправку контакта"),
+        ("trial_request_cancelled", "Отменили отправленную заявку"),
+        ("trial_recovery_1_sent", "Получили recovery №1"),
+        ("trial_recovery_2_sent", "Получили recovery №2"),
+        ("objections_menu_opened", "Открыли меню возражений"),
+        ("objection_selected", "Выбрали возражение"),
+        ("manager_contact_requested", "Запросили контакт менеджера"),
+    ]
+    lines = [f"<b>Воронка The Teachers · последние {days} дн.</b>", "<pre>", "Этап                         Людей"]
+    for key, label in labels:
+        count = events.get(key, {}).get("users", 0)
+        lines.append(f"{label[:27]:<27} {count:>6}")
+    lines.append("</pre>")
+    cohort = data["cohort"]
+    users = cohort.get("users") or 0
+    trials = cohort.get("trials") or 0
+    conversion = (trials / users * 100) if users else 0
+    lines.append(f"Новая когорта: {users} пользователей · заявок {trials} · конверсия {conversion:.1f}%")
+    lines.append(f"Отписались: {cohort.get('unsubscribed') or 0} · заблокировали: {cohort.get('blocked') or 0}")
+
+    objections = await db.get_objection_stats(days)
+    if objections:
+        objection_labels = {
+            "format": "Формат обучения",
+            "level": "Уровень",
+            "speaking": "Страх говорить",
+            "time": "Сроки обучения",
+            "teacher": "Знакомство с преподавателем",
+            "value": "Ценность индивидуальных занятий",
+        }
+        lines += ["", "<b>Какие возражения выбирают чаще:</b>"]
+        for item in objections:
+            label = objection_labels.get(item.get("objection"), item.get("objection") or "Не указано")
+            lines.append(f"• {label}: {item['users']} чел. · {item['events']} выборов")
+
+    lines.append("\nПоказатели — уникальные пользователи за период; повторные открытия не увеличивают число людей.")
+    await message.answer("\n".join(lines), parse_mode="HTML")
+
+
+@router.message(Command("materials_stats"))
+async def cmd_materials_stats(message: Message, command: CommandObject):
+    if message.from_user.id not in config.ADMIN_IDS:
+        return
+    days = int(command.args) if command.args and command.args.isdigit() else 30
+    days = max(1, min(days, 90))
+    rows = await db.get_material_stats(days)
+    if not rows:
+        await message.answer(f"За последние {days} дн. событий по материалам пока нет.")
+        return
+    labels = {"material_opened":"Открыли материал", "book_opened":"Открыли книгу", "media_opened":"Открыли аудио/видео", "exercise_started":"Начали упражнение", "exercise_submitted":"Отправили ответы", "miniapp_exercise_completed":"Завершили на 100%"}
+    lines = [f"<b>Вовлечённость в Learning Space · {days} дн.</b>", "<pre>", "Событие                 Детали          Людей"]
+    for row in rows:
+        lines.append(f"{labels.get(row['event_name'], row['event_name']):<23} {(row.get('event_data') or '—')[:14]:<14} {row['users']:>5}")
+    lines.append("</pre>")
+    lines.append("Учитываются уникальные пользователи в каждой комбинации события и материала.")
     await message.answer("\n".join(lines), parse_mode="HTML")
 
 @router.message(Command("dbcheck"))

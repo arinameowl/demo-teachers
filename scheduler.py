@@ -10,6 +10,8 @@
 """
 
 import logging
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 from aiogram import Bot
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
@@ -21,6 +23,11 @@ import texts
 from handlers.materials import send_portion2, send_portion3
 
 log = logging.getLogger(__name__)
+
+
+def _is_quiet_hours() -> bool:
+    hour = datetime.now(ZoneInfo("Europe/Moscow")).hour
+    return hour < 10 or hour >= 20
 
 
 async def _tick(bot: Bot) -> None:

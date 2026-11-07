@@ -2,11 +2,10 @@ import logging
 import datetime as dt
 import html
 import re
-from pathlib import Path
 
 from aiogram import Router, F, Bot
 from aiogram.filters import Command
-from aiogram.types import CallbackQuery, Message, ReplyKeyboardRemove, FSInputFile
+from aiogram.types import CallbackQuery, Message, ReplyKeyboardRemove, URLInputFile
 
 import config
 import database as db
@@ -273,9 +272,9 @@ async def cb_menu_teachers(callback: CallbackQuery):
 async def cb_menu_map_example(callback: CallbackQuery):
     await db.update_user(callback.from_user.id, awaiting_contact=0)
     await db.log_funnel_event(callback.from_user.id, "map_example_viewed")
-    image_path = Path(__file__).resolve().parent.parent / "assets" / "learning_map_example.png"
+    image_url = "https://raw.githubusercontent.com/arinameowl/learning-space/main/assets/learning_map_example.png"
     await callback.message.answer_photo(
-        photo=FSInputFile(image_path),
+        photo=URLInputFile(image_url, filename="learning_map_example.png"),
         caption=texts.SCHOOL_MAP_EXAMPLE_CAPTION,
         parse_mode="HTML",
         reply_markup=kb.school_detail_keyboard(),

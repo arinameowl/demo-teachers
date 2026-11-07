@@ -1,0 +1,449 @@
+{
+  "en_A1_podcast": [
+    {
+      "type": "choice",
+      "prompt": "Where are Julie’s friends from?",
+      "options": [
+        "America",
+        "Argentina"
+      ],
+      "answer": 1,
+      "explanation": "В аудио Джули говорит, что её друзья из Аргентины. Вопрос проверяет понимание страны происхождения."
+    },
+    {
+      "type": "choice",
+      "prompt": "What country does Julie mention?",
+      "options": [
+        "Spain",
+        "Mexico"
+      ],
+      "answer": 0,
+      "explanation": "В записи Джули упоминает Испанию. Здесь важно уловить название страны на слух."
+    },
+    {
+      "type": "choice",
+      "prompt": "What country do some of Julie’s friends come from?",
+      "options": [
+        "France",
+        "Venezuela"
+      ],
+      "answer": 1,
+      "explanation": "В аудио также названа Венесуэла — это деталь общего содержания."
+    },
+    {
+      "type": "choice",
+      "prompt": "Choose the correct word: “Hello, my ___ is Julie.”",
+      "options": [
+        "name",
+        "named"
+      ],
+      "answer": 0,
+      "explanation": "В конструкции “My name is…” используется существительное name: так представляются по-английски."
+    },
+    {
+      "type": "choice",
+      "prompt": "Choose the correct word: “My friends ___ from America.”",
+      "options": [
+        "is",
+        "are"
+      ],
+      "answer": 1,
+      "explanation": "Friends — существительное во множественном числе, поэтому с ним используется are."
+    },
+    {
+      "type": "choice",
+      "prompt": "Choose the correct word: “I don’t ___ friends from France.”",
+      "options": [
+        "has",
+        "have"
+      ],
+      "answer": 1,
+      "explanation": "После вспомогательного do в отрицании don’t ставится начальная форма глагола: have, а не has."
+    }
+  ],
+  "en_A2_podcast": [
+    {
+      "type": "choice",
+      "prompt": "What does “Wake up” mean?",
+      "options": [
+        "Stop sleeping in the morning",
+        "Straighten pillows and blankets",
+        "Put things into a bag"
+      ],
+      "answer": 0,
+      "explanation": "Wake up означает «проснуться»: действие, с которого начинается утро."
+    },
+    {
+      "type": "choice",
+      "prompt": "What does “Make the bed” mean?",
+      "options": [
+        "Straighten pillows and blankets",
+        "Stop sleeping in the morning",
+        "Put things into a bag"
+      ],
+      "answer": 0,
+      "explanation": "Make the bed — заправить кровать, то есть привести в порядок подушки и одеяло."
+    },
+    {
+      "type": "choice",
+      "prompt": "What does “Pack my bag” mean?",
+      "options": [
+        "Put things into a bag",
+        "Stop sleeping in the morning",
+        "Straighten pillows and blankets"
+      ],
+      "answer": 0,
+      "explanation": "Pack my bag — собрать сумку и положить в неё необходимые вещи."
+    },
+    {
+      "type": "choice",
+      "prompt": "What does “Double-check” mean?",
+      "options": [
+        "Check again to be sure",
+        "Stop sleeping in the morning",
+        "Straighten pillows and blankets"
+      ],
+      "answer": 0,
+      "explanation": "Double-check означает «перепроверить», чтобы убедиться, что всё сделано правильно."
+    },
+    {
+      "type": "choice",
+      "prompt": "What does “Take a quick shower” mean?",
+      "options": [
+        "Wash your body quickly",
+        "Stop sleeping in the morning",
+        "Straighten pillows and blankets"
+      ],
+      "answer": 0,
+      "explanation": "Take a quick shower — быстро принять душ."
+    },
+    {
+      "type": "choice",
+      "prompt": "What do you do to clean your teeth?",
+      "options": [
+        "Wash my face",
+        "Brush my teeth"
+      ],
+      "answer": 1,
+      "explanation": "Brush my teeth — устойчивое сочетание со значением «чистить зубы»."
+    },
+    {
+      "type": "choice",
+      "prompt": "When do you usually pack your bag?",
+      "options": [
+        "Before leaving home",
+        "Before going to sleep"
+      ],
+      "answer": 0,
+      "explanation": "В контексте утренних сборов сумку обычно собирают до выхода из дома."
+    },
+    {
+      "type": "choice",
+      "prompt": "What does “look tidy and presentable” mean?",
+      "options": [
+        "Looking sleepy",
+        "Looking clean and neat"
+      ],
+      "answer": 1,
+      "explanation": "Tidy and presentable означает «опрятный и аккуратный»: речь о внешнем виде."
+    }
+  ],
+  "en_B1_podcast": [
+    {
+      "type": "choice",
+      "prompt": "Why did Lisa go to the bank?",
+      "options": [
+        "Her salary did not arrive",
+        "Her bank card stopped working",
+        "She wanted to open a new account"
+      ],
+      "answer": 1,
+      "explanation": "Lisa пришла в банк, потому что её карта перестала работать накануне."
+    },
+    {
+      "type": "choice",
+      "prompt": "Where did Lisa first notice the problem with her card?",
+      "options": [
+        "At a supermarket",
+        "At a restaurant",
+        "At an airport"
+      ],
+      "answer": 0,
+      "explanation": "Она пыталась оплатить покупки в супермаркете рядом с домом."
+    },
+    {
+      "type": "choice",
+      "prompt": "What happened when Lisa tried to pay?",
+      "options": [
+        "The payment went through twice",
+        "The screen showed an error message",
+        "The card was swallowed by the machine"
+      ],
+      "answer": 1,
+      "explanation": "На экране появилось сообщение об ошибке, а платёж не прошёл."
+    },
+    {
+      "type": "choice",
+      "prompt": "Why did the bank automatically block the card?",
+      "options": [
+        "Lisa entered the wrong PIN",
+        "The account had no money",
+        "The system noticed unusual activity"
+      ],
+      "answer": 2,
+      "explanation": "Система обнаружила несколько попыток онлайн-платежей на иностранном сайте."
+    },
+    {
+      "type": "choice",
+      "prompt": "Did Lisa lose any money?",
+      "options": [
+        "Yes, the transactions were completed",
+        "No, the transactions were stopped",
+        "The bank could not check"
+      ],
+      "answer": 1,
+      "explanation": "Сотрудник банка подтвердил, что баланс в безопасности и деньги не списали."
+    },
+    {
+      "type": "choice",
+      "prompt": "What did the bank recommend?",
+      "options": [
+        "Unblocking the old card",
+        "Closing the bank account",
+        "Cancelling the old card and issuing a new one"
+      ],
+      "answer": 2,
+      "explanation": "По соображениям безопасности сотрудник рекомендовал выпустить новую карту."
+    },
+    {
+      "type": "choice",
+      "prompt": "How long will the new card usually take?",
+      "options": [
+        "One or two business days",
+        "Five to seven business days",
+        "Two weeks"
+      ],
+      "answer": 1,
+      "explanation": "В диалоге назван срок five to seven business days."
+    },
+    {
+      "type": "choice",
+      "prompt": "What remains active while the card is blocked?",
+      "options": [
+        "Only the card",
+        "Lisa’s bank account",
+        "Nothing"
+      ],
+      "answer": 1,
+      "explanation": "Заблокирована только карта; счёт остаётся активным."
+    },
+    {
+      "type": "text",
+      "prompt": "Complete the phrase: “The payment didn’t go ____.”",
+      "answer": "through",
+      "accepted": [
+        "through"
+      ],
+      "explanation": "Go through — пройти успешно; здесь речь о платеже, который не был принят."
+    },
+    {
+      "type": "text",
+      "prompt": "Complete the phrase: “Your card was automatically ____ last night.”",
+      "answer": "blocked",
+      "accepted": [
+        "blocked"
+      ],
+      "explanation": "Blocked означает «заблокирована»."
+    },
+    {
+      "type": "text",
+      "prompt": "What is the amount of money in a bank account called?",
+      "answer": "balance",
+      "accepted": [
+        "balance",
+        "account balance"
+      ],
+      "explanation": "Balance — остаток или сумма денег на счёте."
+    },
+    {
+      "type": "text",
+      "prompt": "Complete the phrase: “There is a small replacement ____.”",
+      "answer": "fee",
+      "accepted": [
+        "fee"
+      ],
+      "explanation": "Fee — плата или комиссия за услугу."
+    }
+  ],
+  "en_A1_series": [
+    {
+      "type": "choice",
+      "prompt": "Why can’t Peppa and George play outside at first?",
+      "options": [
+        "It is windy",
+        "It is raining",
+        "It is cold"
+      ],
+      "answer": 1,
+      "explanation": "В серии идёт дождь: “It is raining” — конструкция Present Continuous для действия, происходящего сейчас."
+    },
+    {
+      "type": "choice",
+      "prompt": "What must Peppa wear when jumping in muddy puddles?",
+      "options": [
+        "Shoes",
+        "Hat",
+        "Boots"
+      ],
+      "answer": 2,
+      "explanation": "В эпизоде мама просит детей надеть boots, прежде чем прыгать по лужам. Boots — резиновые сапоги."
+    },
+    {
+      "type": "choice",
+      "prompt": "Who likes jumping in muddy puddles too?",
+      "options": [
+        "Daddy Pig",
+        "George",
+        "Mommy Pig"
+      ],
+      "answer": 1,
+      "explanation": "Джордж тоже любит прыгать по грязным лужам. Это повторяющийся мотив эпизода."
+    },
+    {
+      "type": "choice",
+      "prompt": "What does George find?",
+      "options": [
+        "A bike",
+        "A little puddle",
+        "A big puddle"
+      ],
+      "answer": 2,
+      "explanation": "Джордж находит большую лужу — big puddle. Вопрос проверяет понимание конкретной детали серии."
+    },
+    {
+      "type": "choice",
+      "prompt": "What does “look after” mean?",
+      "options": [
+        "Watch",
+        "Take care of",
+        "Search for"
+      ],
+      "answer": 1,
+      "explanation": "Look after означает «заботиться о ком-то или чем-то»; близкий по смыслу вариант — take care of."
+    }
+  ],
+  "en_A2_series": [
+    {
+      "type": "choice",
+      "prompt": "What did Anna discover during her walk?",
+      "options": [
+        "A music concert",
+        "A festival",
+        "A new museum"
+      ],
+      "answer": 1,
+      "explanation": "В аудио Анна рассказывает, что во время прогулки увидела большой фестиваль. Вопрос проверяет понимание основной детали сюжета."
+    },
+    {
+      "type": "choice",
+      "prompt": "What was the name of the festival?",
+      "options": [
+        "The Smithsonian Folklife Festival",
+        "The Washington Music Festival",
+        "The Basque Art Festival"
+      ],
+      "answer": 0,
+      "explanation": "В эпизоде Анна прямо называет Smithsonian Folklife Festival. Это официальное название события."
+    },
+    {
+      "type": "choice",
+      "prompt": "Which culture was featured at the festival?",
+      "options": [
+        "Italian culture",
+        "Basque culture",
+        "Japanese culture"
+      ],
+      "answer": 1,
+      "explanation": "В рассказе говорится о баскской культуре. Обратите внимание на формулировку “one of the cultures was the Basque culture”."
+    },
+    {
+      "type": "choice",
+      "prompt": "What is pilota?",
+      "options": [
+        "A traditional dance",
+        "A type of food",
+        "A kind of handball"
+      ],
+      "answer": 2,
+      "explanation": "Анна объясняет, что pilota — игра с небольшим мячом, разновидность handball. Здесь ответ дан в самом диалоге."
+    },
+    {
+      "type": "choice",
+      "prompt": "Which activity did Anna do at the festival?",
+      "options": [
+        "She danced a traditional Basque dance.",
+        "She cooked traditional Basque food.",
+        "She played a football match."
+      ],
+      "answer": 0,
+      "explanation": "Анна говорит: “At the festival, I danced a traditional Basque dance”. После рассказа о прошедшем событии используется Past Simple: danced."
+    }
+  ],
+  "en_B1_series": [
+    {
+      "type": "choice",
+      "prompt": "Where are Tim and Helen at the beginning of the episode?",
+      "options": [
+        "At the airport",
+        "At a café",
+        "At the train station"
+      ],
+      "answer": 0,
+      "explanation": "В первой сцене Tim и Helen находятся в аэропорту и ждут Michal. Это прямо обозначено в описании эпизода и диалоге."
+    },
+    {
+      "type": "choice",
+      "prompt": "Who are Tim and Helen waiting for?",
+      "options": [
+        "Their colleague",
+        "Michal",
+        "Helen’s brother"
+      ],
+      "answer": 1,
+      "explanation": "Они приехали встретить Michal. Вопрос проверяет понимание того, кто должен прибыть."
+    },
+    {
+      "type": "choice",
+      "prompt": "Which description matches Michal?",
+      "options": [
+        "Short, with blue eyes and curly hair",
+        "Tall and well-built, with brown eyes and a shaved head",
+        "Tall, with blond hair and glasses"
+      ],
+      "answer": 1,
+      "explanation": "В диалоге перечислены детали внешности: tall, well-built, brown eyes и a shaved head. В английском описании внешности прилагательные обычно ставятся перед существительным."
+    },
+    {
+      "type": "choice",
+      "prompt": "What is Michal like?",
+      "options": [
+        "Quite shy",
+        "Very talkative",
+        "Angry and impatient"
+      ],
+      "answer": 0,
+      "explanation": "Helen говорит, что Michal is quite shy. Здесь вопрос What is he like? спрашивает о характере, а не о внешности."
+    },
+    {
+      "type": "choice",
+      "prompt": "What do Tim and Helen notice when Michal appears?",
+      "options": [
+        "He is laughing.",
+        "He is carrying a large suitcase.",
+        "He is crying."
+      ],
+      "answer": 2,
+      "explanation": "В конце сцены они видят, что Michal плачет, и задаются вопросом, что случилось. Crying — форма Present Continuous: действие происходит в момент наблюдения."
+    }
+  ]
+}

@@ -92,3 +92,64 @@ async def cmd_sources(message: Message):
     a = await db.get_activity_summary()
     lines.append(f"Активны за 7 дней: {a['active_7d']}\nЗаблокировали бота: {a['blocked']}")
     await message.answer("\n".join(lines), parse_mode="HTML")
+
+@router.message(Command("dbcheck"))
+async def cmd_dbcheck(message: Message):
+    """Read-only SQLite diagnostics for authorized admins."""
+    if message.from_user.id not in config.ADMIN_IDS:
+        return
+
+    from pathlib import Path
+    import sqlite3
+
+    db_path = Path(config.DB_PATH).expanduser().resolve()
+    if not db_path.is_file():
+        await message.answer(
+            "🗄 <b>Проверка базы данных</b>\n"
+            f"Путь: <code>{db_path}</code>\n"
+            "❌ Файл базы данных по этому пути не найден.\n"
+            "Проверка выполнена без создания или изменения файла.",
+            parse_mode="HTML",
+        )
+        return
+
+    try:
+        uri = db_path.as_uri() + "?mode=ro"
+        with sqlite3.connect(uri, uri=True, timeout=5) as conn:
+            conn.row_factory = sqlite3.Row
+            tables = {
+                row["name"]
+                for row in conn.execute(
+                    "SELECT name FROM sqlite_master WHERE type = 'table'"
+                )
+            }
+            counts = {}
+            for table in ("users", "broadcasts", "broadcast_log"):
+                if table in tables:
+                    counts[table] = conn.execute(
+                        f'SELECT COUNT(*) FROM "{table}"'
+                    ).fetchone()[0]
+            integrity = conn.execute("PRAGMA quick_check").fetchone()[0]
+
+        lines = [
+            "🗄 <b>Проверка базы данных</b>",
+            f"Путь: <code>{db_path}</code>",
+            f"Размер: {db_path.stat().st_size:,} байт",
+            f"Таблицы: {', '.join(sorted(tables)) or 'не найдены'}",
+            "",
+            "<b>Количество записей:</b>",
+            f"• users: {counts.get('users', 'таблица отсутствует')}",
+            f"• broadcasts: {counts.get('broadcasts', 'таблица отсутствует')}",
+            f"• broadcast_log: {counts.get('broadcast_log', 'таблица отсутствует')}",
+            "",
+            f"SQLite quick_check: <b>{integrity}</b>",
+            "Режим: только чтение, данные не изменялись.",
+        ]
+        await message.answer("\\n".join(lines), parse_mode="HTML")
+    except Exception:
+        import logging
+        logging.getLogger(__name__).exception("Database diagnostics failed")
+        await message.answer(
+            "❌ Не удалось прочитать базу данных. Подробности записаны в лог.",
+        )
+

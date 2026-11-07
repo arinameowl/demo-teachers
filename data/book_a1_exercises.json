@@ -1,0 +1,156 @@
+{
+  "id": "book_a1_exercises",
+  "level": "A1",
+  "category": "book",
+  "title": "The Snow Queen — Reading exercises",
+  "content": [
+    "THE SNOW QUEEN — READING WORKSHEET",
+    "Level: A1",
+    "Read the book and complete the tasks. You can answer in English.",
+    "",
+    "1. COMPREHENSION — Choose the correct answer.",
+    "1) Who are Kay and Gerda?",
+    "a) Friends",
+    "b) Brother and sister",
+    "c) Teacher and student",
+    "",
+    "2) What happens to Kay when a piece of the magic mirror gets into his eye and heart?",
+    "a) He becomes unkind and cruel.",
+    "b) He forgets how to read.",
+    "c) He becomes afraid of flowers.",
+    "",
+    "3) Who takes Kay away in a white sledge?",
+    "a) Gerda",
+    "b) The Snow Queen",
+    "c) A magician",
+    "",
+    "4) Why does Gerda begin her journey?",
+    "a) She wants to find a new home.",
+    "b) She wants to find Kay.",
+    "c) She wants to visit the palace.",
+    "",
+    "2. TRUE OR FALSE. Correct the false sentences.",
+    "1) Kay and Gerda love each other.",
+    "2) The magic mirror makes kind things look ugly.",
+    "3) The Snow Queen's kiss is warm.",
+    "4) Gerda gives up looking for Kay.",
+    "",
+    "3. VOCABULARY — Match the words with their meanings.",
+    "1) sledge",
+    "2) mirror",
+    "3) snowflake",
+    "4) evil",
+    "a) a small piece of snow",
+    "b) a vehicle for travelling over snow",
+    "c) very bad or cruel",
+    "d) a piece of glass that shows your face",
+    "",
+    "4. GRAMMAR — Choose the correct form.",
+    "1) Kay (is / are) Gerda's friend.",
+    "2) The Snow Queen (take / takes) Kay away.",
+    "3) Gerda (don't / doesn't) stop looking for Kay.",
+    "4) The roses (is / are) in the garden.",
+    "",
+    "5. SHORT ANSWERS.",
+    "1) Describe the Snow Queen in 2–3 sentences.",
+    "2) Name two things Gerda does to find Kay.",
+    "3) What does the story teach us about friendship?",
+    "",
+    "ANSWER KEY",
+    "1. Comprehension: 1-a, 2-a, 3-b, 4-b.",
+    "2. True or false: 1-True; 2-True; 3-False (the kiss is cold); 4-False (Gerda continues her journey).",
+    "3. Vocabulary: 1-b, 2-d, 3-a, 4-c.",
+    "4. Grammar: 1-is, 2-takes, 3-doesn't, 4-are.",
+    "5. Answers may vary. Check that the answer is based on events in the book."
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "prompt": "Who are Kay and Gerda?",
+      "options": [
+        "Friends",
+        "Brother and sister",
+        "Teacher and student"
+      ],
+      "answer": 0,
+      "explanation": "Kay and Gerda are close friends."
+    },
+    {
+      "type": "choice",
+      "prompt": "What happens to Kay after the mirror fragment gets into his eye and heart?",
+      "options": [
+        "He becomes unkind and cruel",
+        "He forgets how to read",
+        "He becomes afraid of flowers"
+      ],
+      "answer": 0,
+      "explanation": "The mirror changes how Kay sees the world and makes him cold and unkind."
+    },
+    {
+      "type": "choice",
+      "prompt": "Who takes Kay away in a white sledge?",
+      "options": [
+        "Gerda",
+        "The Snow Queen",
+        "A magician"
+      ],
+      "answer": 1,
+      "explanation": "The Snow Queen takes Kay away in her sledge."
+    },
+    {
+      "type": "choice",
+      "prompt": "Why does Gerda begin her journey?",
+      "options": [
+        "She wants to find a new home",
+        "She wants to find Kay",
+        "She wants to visit the palace"
+      ],
+      "answer": 1,
+      "explanation": "Gerda sets off because she wants to find and rescue Kay."
+    },
+    {
+      "type": "choice",
+      "prompt": "Choose the correct sentence.",
+      "options": [
+        "Kay are Gerda's friend.",
+        "Kay is Gerda's friend.",
+        "Kay am Gerda's friend."
+      ],
+      "answer": 1,
+      "explanation": "Kay is singular, so we use is."
+    },
+    {
+      "type": "choice",
+      "prompt": "Choose the correct form: “The Snow Queen ___ Kay away.”",
+      "options": [
+        "take",
+        "takes",
+        "taking"
+      ],
+      "answer": 1,
+      "explanation": "With the third-person singular subject, the Present Simple verb takes -s."
+    },
+    {
+      "type": "choice",
+      "prompt": "Choose the correct form: “Gerda ___ stop looking for Kay.”",
+      "options": [
+        "don't",
+        "doesn't",
+        "isn't"
+      ],
+      "answer": 1,
+      "explanation": "With Gerda, we use doesn't + the base form stop."
+    },
+    {
+      "type": "choice",
+      "prompt": "What does “sledge” mean?",
+      "options": [
+        "A vehicle for travelling over snow",
+        "A small piece of snow",
+        "A piece of glass"
+      ],
+      "answer": 0,
+      "explanation": "A sledge is a vehicle used to travel over snow."
+    }
+  ]
+}

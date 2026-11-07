@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#F5F1EB">
+  <title>The Teachers — Learning Space</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    :root{--cream:#F5F1EB;--paper:#fffdfa;--burgundy:#7A1E2C;--ink:#292522;--muted:#817a73;--line:#e8e0d7;--pink:#ead7d8}
+    *{box-sizing:border-box} body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:15px;line-height:1.5}
+    .wrap{max-width:680px;margin:0 auto;padding:24px 18px 44px}.eyebrow{font:11px Georgia,serif;letter-spacing:.18em;color:var(--burgundy);text-transform:uppercase}
+    h1{font:36px/1.05 Georgia,serif;font-weight:400;margin:12px 0 8px;letter-spacing:-.04em}.sub{color:var(--muted);margin:0 0 24px}
+    .section-title{font:24px Georgia,serif;font-weight:400;margin:30px 0 14px}.language-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}
+    .lang{border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--paper);text-align:left;color:var(--ink);font:inherit;min-height:68px}
+    .lang.active{border-color:var(--burgundy);background:#fbf4f1}.lang small{display:block;color:var(--muted);font-size:11px;margin-top:3px}
+    .profile{background:var(--burgundy);color:#fff;padding:18px 19px;border-radius:14px;margin:22px 0}.profile .eyebrow{color:#ead7d8}.profile strong{font:24px Georgia,serif;font-weight:400;display:block;margin:5px 0}.profile p{margin:0;color:#f0e3df;font-size:13px}
+    .notice{padding:12px 14px;border-left:2px solid var(--burgundy);background:#eee7df;color:#5e554e;font-size:13px;margin:18px 0}
+    .card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:17px;margin:10px 0}.card-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.tag{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--burgundy)}
+    h3{font:22px/1.2 Georgia,serif;font-weight:400;margin:8px 0}.desc{color:var(--muted);font-size:13px;margin:0 0 14px}.actions{display:flex;gap:8px;flex-wrap:wrap}
+    a.action,button.action{border:0;border-radius:999px;padding:10px 15px;background:var(--burgundy);color:white;text-decoration:none;font:inherit;font-size:13px;cursor:pointer}button.secondary,a.secondary{background:transparent;color:var(--burgundy);border:1px solid #c9aeb0}
+    .status{font-size:11px;color:var(--muted)}
+    #library>h3{font:24px Georgia,serif;font-weight:400;margin:26px 0 12px} #library .card h3{font-size:19px} #worksheet-content{font-size:14px;line-height:1.7} #worksheet-content p{padding:8px 10px;border-bottom:1px solid var(--line)}.empty{padding:20px;border:1px dashed #cbbdb4;border-radius:12px;color:var(--muted);font-size:13px}
+    footer{margin-top:34px;padding-top:16px;border-top:1px solid var(--line);font:12px Georgia,serif;letter-spacing:.12em;color:var(--muted)}
+    .loading{padding:42px 0;text-align:center;color:var(--muted)}.next-step{margin-top:26px;background:#f0e8e1}
+    .player{width:100%;aspect-ratio:16/9;border:0;border-radius:10px;background:#171717;margin:8px 0 12px}.quiz{position:fixed;inset:0;background:rgba(30,24,22,.55);z-index:20;display:none;overflow:auto;padding:18px}.quiz.open{display:block}.quiz-panel{max-width:640px;margin:20px auto;background:var(--cream);border-radius:16px;padding:20px}.quiz-head{display:flex;justify-content:space-between;align-items:center;gap:12px}.quiz-q{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0}.quiz-q p{margin:0 0 10px;font-weight:600}.quiz-q label{display:block;padding:7px 0;font-size:14px}.quiz-q input[type=text]{width:100%;padding:11px;border:1px solid var(--line);border-radius:8px;font:inherit;background:white}.result{padding:13px;background:#eee7df;border-radius:10px;margin:12px 0;font-size:14px}.answer-review{padding:10px 0;border-top:1px solid var(--line);font-size:13px}.answer-review.good{color:#286347}.answer-review.bad{color:#8b2935}.quiz-q:focus-within{border-color:var(--burgundy)}.quiz-q input:focus{outline:2px solid #c9aeb0;outline-offset:1px}
+  </style>
+</head>
+<body><main class="wrap">
+  <div class="eyebrow">The Teachers · Learning Space</div>
+  <h1>Ваш языковой маршрут</h1>
+  <p class="sub" id="greeting">Материалы, практика и ваш прогресс — в одном месте.</p>
+  <div id="profile"></div>
+  <h2 class="section-title">Выберите язык</h2>
+  <div class="language-grid" id="languages"></div>
+  <div class="notice" id="notice" hidden></div>
+  <h2 class="section-title">Материалы вашего уровня</h2>
+  <div id="materials" class="loading">Загружаем подкасты и видео…</div>
+  <div id="library" class="loading">Загружаем книгу и задания…</div>
+  <section class="card next-step" id="next-step">
+    <div class="tag">Следующий шаг</div>
+    <h3>Язык становится частью жизни — в практике и общении</h3>
+    <p class="desc">Когда будете готовы двигаться дальше, познакомьтесь с преподавателями The Teachers и узнайте, как строится персональный маршрут обучения.</p>
+    <div class="actions"><button class="action" id="return-to-bot" type="button">Продолжить в The Teachers</button></div>
+  </section>
+  <section class="quiz" id="reader"><div class="quiz-panel"><div class="quiz-head"><h2 class="section-title" id="reader-title" style="margin:0">Чтение</h2><button class="action secondary" id="reader-close" type="button">Закрыть</button></div><p class="desc" id="reader-author"></p><p class="desc">Фрагмент произведения</p><article class="quiz-q" id="reader-page" style="font:18px/1.8 Georgia,serif;white-space:pre-wrap;padding:24px 20px;min-height:260px"></article><div class="actions" style="justify-content:space-between;align-items:center"><button class="action secondary" id="reader-prev" type="button">Назад</button><span class="status" id="reader-counter"></span><button class="action" id="reader-next" type="button">Далее</button></div></div></section>
+  <section class="quiz" id="quiz"><div class="quiz-panel"><div class="quiz-head"><h2 class="section-title" id="quiz-title" style="margin:0">Упражнения</h2><button class="action secondary" id="quiz-close" type="button">Закрыть</button></div><div id="quiz-body"></div><div class="actions"><button class="action" id="quiz-submit" type="button">Проверить ответы</button></div><div id="quiz-result"></div></div></section>
+  <footer>LANGUAGE · CULTURE · NEW PERSPECTIVES</footer>
+</main>
+<script>
+(() => {
+  const tg = window.Telegram?.WebApp;
+  tg?.ready(); tg?.expand();
+  if (tg?.themeParams) { document.documentElement.style.setProperty('--tg-bg', tg.themeParams.bg_color || '#F5F1EB'); }
+  const headers = {'Authorization': 'tma ' + (tg?.initData || '')};
+  const defaultLanguages = {en:{name:'Английский',available:true},es:{name:'Испанский',available:false},zh:{name:'Китайский',available:false},ko:{name:'Корейский',available:false}};
+  let state = {languages:defaultLanguages, profile:{}, materials:[], progress:[], library:{books:[],worksheets:[]}, bot_username:'learning_spacebot'}, selectedLanguage = 'en';
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const languageNames = {en:'Английский',es:'Испанский',zh:'Китайский',ko:'Корейский'};
+  async function api(url, options={}) {
+    const method = (options.method || 'GET').toUpperCase();
+    const attempts = method === 'GET' ? 3 : 1;
+    let lastError;
+    for (let attempt = 0; attempt < attempts; attempt++) {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 12000);
+      try {
+        const response = await fetch(url, { ...options, signal: controller.signal, cache: 'no-store', headers: {...headers, ...(options.headers||{})} });
+        if (!response.ok) {
+          const err = await response.json().catch(()=>({}));
+          const failure = new Error(err.detail || (response.status >= 500 ? `Сервер временно не смог обработать запрос (HTTP ${response.status}).` : 'Не удалось загрузить данные'));
+          failure.status = response.status;
+          throw failure;
+        }
+        return await response.json();
+      } catch (error) {
+        lastError = error.name === 'AbortError' ? new Error('Превышено время ожидания ответа сервера') : error;
+        if (error.status && error.status < 500) break;
+        if (attempt + 1 < attempts) await new Promise(resolve => setTimeout(resolve, 500 * (attempt + 1)));
+      } finally { clearTimeout(timeout); }
+    }
+    throw lastError || new Error('Не удалось загрузить данные');
+  }
+  function trackEvent(event_name, event_data='') {
+    return api('/api/app/event', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({event_name,event_data})}).catch(()=>{});
+  }
+  function renderLanguages() {
+    const languages = state?.languages || defaultLanguages;
+    $('languages').innerHTML = Object.entries(languages).map(([code, item]) => `
+      <button class="lang ${selectedLanguage===code?'active':''}" data-lang="${code}" ${item.available?'':'aria-disabled="true"'}>
+        ${esc(item.name)}<small>${code==='en'?'Подборка доступна':'Задания в скором времени будут добавлены'}</small>
+      </button>`).join('');
+    document.querySelectorAll('[data-lang]').forEach(btn => btn.addEventListener('click', () => {
+      const code = btn.dataset.lang;
+      selectedLanguage = code; renderLanguages(); renderMaterials();
+    }));
+  }
+  function renderProfile() {
+    const p = state.profile || {};
+    $('greeting').textContent = p.first_name ? `${p.first_name}, здесь собраны материалы для самостоятельной практики.` : 'Материалы, практика и ваш прогресс — в одном месте.';
+    $('profile').innerHTML = `<section class="profile"><div class="eyebrow">Ваш текущий уровень</div><strong>${esc(p.level || 'Уровень не определён')}</strong><p>${p.level ? 'Подборка сформирована с учётом вашего уровня.' : 'Пройдите короткое определение уровня в боте — и подборка появится здесь.'}</p></section>`;
+    $('notice').textContent = state.notice || ''; $('notice').hidden = !state.notice;
+  }
+  function renderMaterials() {
+    $('materials').classList.remove('loading');
+    if (selectedLanguage !== 'en') {
+      $('materials').innerHTML = '<div class="empty">Задания в скором времени будут добавлены</div>';
+      renderLibrary();
+      return;
+    }
+    if (!state.materials?.length) { $('materials').innerHTML = '<div class="empty">Основная подборка пока не настроена. Ниже доступна библиотека материалов вашего уровня.</div>'; renderLibrary(); return; }
+    const progress = new Map((state.progress||[]).filter(x=>x.language===selectedLanguage).map(x=>[x.material_id,x.status]));
+    const typeNames = {audio:'Подкаст',book:'Чтение · книга',video:'Видео · сериал'};
+    $('materials').innerHTML = state.materials.map(m => {
+      const currentStatus = progress.get(m.id); const done = currentStatus==='completed';
+      const player = m.embed_url ? `<div class="player-wrap" data-player-material="${esc(m.id)}"><iframe class="player" src="${esc(m.embed_url)}" title="${esc(m.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>` : '';
+      const media = m.type === 'book' ? '' : (m.media_url ? `<a class="action secondary" data-media-open="${esc(m.id)}" href="${esc(m.media_url)}" target="_blank" rel="noopener">Открыть на источнике</a>` : '');
+      const exercise = m.has_exercises ? `<button class="action secondary" data-exercise="${esc(m.id)}">Перейти к упражнениям</button>` : '';
+      return `<article class="card"><div class="card-top"><span class="tag">${typeNames[m.type]||'Материал'}</span><span class="status">${done?'Пройдено':currentStatus==='started'?'В процессе':'В вашем маршруте'}</span></div><h3>${esc(m.title)}</h3>${m.description?`<p class="desc">${esc(m.description)}</p>`:''}${player}<div class="actions">${media}${exercise}<button class="action secondary" data-done="${esc(m.id)}">${done?'Отметить заново':'Отметить пройденным'}</button></div></article>`;
+    }).join('');
+    document.querySelectorAll('[data-done]').forEach(btn => btn.addEventListener('click', async () => {
+      btn.disabled = true;
+      try { await api('/api/app/progress', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({language:selectedLanguage,material_id:btn.dataset.done,status:'completed'})});
+        const item = state.progress.find(x=>x.language===selectedLanguage&&x.material_id===btn.dataset.done);
+        if(item) item.status='completed'; else state.progress.push({language:selectedLanguage,material_id:btn.dataset.done,status:'completed'});
+        renderMaterials(); tg?.HapticFeedback?.notificationOccurred('success');
+      } catch(e) { tg?.showAlert?.(e.message); btn.disabled=false; }
+    }));
+    document.querySelectorAll('[data-exercise]').forEach(btn => btn.addEventListener('click', () => openQuiz(btn.dataset.exercise)));
+    document.querySelectorAll('[data-media-open]').forEach(btn => btn.addEventListener('click', () => trackEvent('media_opened', btn.dataset.mediaOpen)));
+    document.querySelectorAll('[data-player-material]').forEach(el => { let sent=false; el.addEventListener('pointerdown', () => { if(!sent){sent=true; trackEvent('media_opened', el.dataset.playerMaterial); trackEvent('material_opened', el.dataset.playerMaterial);} }, {once:true}); });
+    renderLibrary();
+  }
+  function renderLibrary() {
+    $('library').classList.remove('loading');
+    const lib = state.library || {books:[]};
+    if (selectedLanguage !== 'en') { $('library').innerHTML = '<div class="empty">Библиотека этого языка пока не загружена.</div>'; return; }
+    if (lib.error) {
+      $('library').innerHTML = `<div class="empty">${esc(lib.error)}<br><br><button class="action secondary" id="retry-library" type="button">Повторить загрузку</button></div>`;
+      $('retry-library')?.addEventListener('click', async () => {
+        try { state.library = await api('/api/app/library'); }
+        catch(e) { state.library = {books:[], error:e.status===409 ? null : e.message}; }
+        renderLibrary();
+      });
+      return;
+    }
+    if (!lib.books?.length) { $('library').innerHTML = '<div class="empty">Сначала определите уровень в боте — после этого откроется книга вашего уровня.</div>'; return; }
+    const progress = new Map((state.progress||[]).filter(x=>x.language===selectedLanguage).map(x=>[x.material_id,x.status]));
+    const books = lib.books.map(b => {
+      const status = progress.get('book');
+      const statusLabel = status==='completed' ? 'Завершено' : status==='started' ? 'Начато' : 'В вашем маршруте';
+      return `<article class="card"><div class="card-top"><span class="tag">Книга · ${esc(b.level)}</span><span class="status">${statusLabel}</span></div><h3>${esc(b.title)}</h3><p class="desc">${esc(b.author)}</p><p class="desc">Фрагмент для чтения и 8 интерактивных заданий по содержанию книги</p><div class="actions"><button class="action" data-book-open="${esc(b.id)}" type="button">Читать фрагмент</button>${b.has_exercises?`<button class="action secondary" data-book-exercises="${esc(b.level)}" type="button">Пройти задания</button>`:''}</div></article>`;
+    }).join('');
+    $('library').innerHTML = books;
+    document.querySelectorAll('[data-book-open]').forEach(btn=>btn.addEventListener('click',()=>openBookReader(btn.dataset.bookOpen)));
+    document.querySelectorAll('[data-book-exercises]').forEach(btn=>btn.addEventListener('click',()=>openBookExercises(btn.dataset.bookExercises)));
+  }
+
+  async function saveBookProgress(status) {
+    await api('/api/app/progress', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({language:'en',material_id:'book',status})});
+    let item = state.progress.find(x=>x.language==='en' && x.material_id==='book');
+    if (!item) {
+      item = {language:'en',material_id:'book',status};
+      state.progress.push(item);
+    } else if (status==='completed' || item.status!=='completed') {
+      item.status = status;
+    }
+    renderLibrary();
+  }
+
+  async function openBookExercises(level) {
+    if (level !== state.profile?.level) {
+      tg?.showAlert?.('Можно открыть задания только к книге вашего уровня.');
+      return;
+    }
+    await openQuiz('book');
+  }
+  let activeBook = null, bookPage = 0;
+  async function openBookReader(bookId) {
+    try {
+      const level = state.profile?.level;
+      if (!level) throw new Error('Сначала определите уровень в боте.');
+      activeBook = await api('/api/app/books/' + encodeURIComponent(level));
+      if (bookId && activeBook.id !== bookId) throw new Error('Книга не совпадает с вашим уровнем.');
+      await saveBookProgress('started');
+      await trackEvent('book_opened', activeBook.id || level);
+      await trackEvent('material_opened', 'book');
+      bookPage = 0; renderBookPage(); $('reader').classList.add('open');
+    } catch(e) { tg?.showAlert?.(e.message); }
+  }
+  function renderBookPage() {
+    if (!activeBook) return;
+    $('reader-title').textContent = activeBook.title; $('reader-author').textContent = activeBook.author;
+    $('reader-page').textContent = activeBook.pages[bookPage];
+    $('reader-counter').textContent = `Страница ${bookPage+1} из ${activeBook.pages.length}`;
+    $('reader-prev').disabled = bookPage === 0; $('reader-next').disabled = bookPage === activeBook.pages.length-1;
+  }
+  $('reader-close').addEventListener('click', ()=>$('reader').classList.remove('open'));
+  $('reader-prev').addEventListener('click', ()=>{ if(bookPage>0){bookPage--;renderBookPage();} });
+  $('reader-next').addEventListener('click', ()=>{
+    if(activeBook && bookPage<activeBook.pages.length-1){
+      bookPage++; renderBookPage();
+      if(bookPage===activeBook.pages.length-1) saveBookProgress('completed').catch(e=>tg?.showAlert?.(e.message));
+    }
+  });
+  let activeQuiz = null;
+  async function openQuiz(materialId) {
+    try {
+      await trackEvent('material_opened', materialId);
+      await trackEvent('exercise_started', materialId);
+      await api('/api/app/progress', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({language:selectedLanguage,material_id:materialId,status:'started'})});
+      activeQuiz = {materialId, data: await api('/api/app/exercises/'+materialId), answers:[]};
+      const bookTitle = state.library?.books?.[0]?.title || 'книге вашего уровня';
+      const podcastTitle = state.materials.find(m=>m.id==='podcast')?.title;
+      const seriesTitle = state.materials.find(m=>m.id==='series')?.title;
+      $('quiz-title').textContent = materialId==='book' ? `Упражнения · ${bookTitle}` : materialId==='podcast' ? `Упражнения · ${podcastTitle || 'подкаст'}` : `Упражнения · ${seriesTitle || 'серия'}`;
+      $('quiz-result').innerHTML='';
+      $('quiz-body').innerHTML = activeQuiz.data.questions.map((q,i)=>`<div class="quiz-q"><p>${i+1}. ${esc(q.prompt)}</p>${q.type==='choice'?q.options.map((o,j)=>`<label><input type="radio" name="q${i}" value="${j}"> ${esc(o)}</label>`).join(''):`<input type="text" data-answer="${i}" placeholder="Ваш ответ">`}</div>`).join('');
+      $('quiz').classList.add('open');
+    } catch(e) { tg?.showAlert?.(e.message); }
+  }
+  $('quiz-close').addEventListener('click',()=>$('quiz').classList.remove('open'));
+  $('quiz-submit').addEventListener('click',async()=>{
+    if(!activeQuiz)return;
+    const qs=activeQuiz.data.questions;
+    const answers=qs.map((q,i)=>q.type==='choice'?(document.querySelector(`input[name="q${i}"]:checked`)?Number(document.querySelector(`input[name="q${i}"]:checked`).value):null):(document.querySelector(`[data-answer="${i}"]`)?.value||''));
+    const unanswered=answers.some((a)=>a===null||String(a).trim()==='');
+    if(unanswered){tg?.showAlert?.('Пожалуйста, ответьте на все задания.');return;}
+    try{
+      const result=await api('/api/app/exercises/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({material_id:activeQuiz.materialId,answers})});
+      const review = result.results.map((r,i)=>`<div class="answer-review ${r.correct?'good':'bad'}"><strong>${i+1}. ${r.correct?'Верно':'Пока неверно'}</strong>${r.correct?'':`<br>Правильный ответ: ${esc(r.expected)}`}${r.explanation?`<br><span class="desc">${esc(r.explanation)}</span>`:''}</div>`).join('');
+      $('quiz-result').innerHTML=`<div class="result"><strong>Результат: ${result.correct} из ${result.total}</strong><br>${result.completed?'Отлично! Материал отмечен как пройденный.':'Изучите комментарии к ответам и попробуйте ещё раз.'}${review}</div>`;
+      if(result.completed){const item=state.progress.find(x=>x.language==='en'&&x.material_id===activeQuiz.materialId);if(item)item.status='completed';else state.progress.push({language:'en',material_id:activeQuiz.materialId,status:'completed'});renderMaterials();}
+      tg?.HapticFeedback?.notificationOccurred(result.completed?'success':'warning');
+    }catch(e){tg?.showAlert?.(e.message)}
+  });
+  async function init() {
+    // Навигация не зависит от доступности API: языки видны сразу.
+    renderLanguages();
+    try {
+      state = await api('/api/app/bootstrap');
+      try { state.library = await api('/api/app/library'); }
+      catch (libraryError) { state.library = {books:[],worksheets:[],error:libraryError.status===409 ? null : libraryError.message}; }
+      renderProfile(); renderLanguages(); renderMaterials();
+    } catch(e) {
+      renderProfile(); renderLanguages();
+      $('materials').classList.remove('loading');
+      $('library').classList.remove('loading');
+      $('materials').innerHTML = `<div class="empty">${esc(e.message)}<br><br>Материалы и прогресс пока не удалось загрузить. Языки остаются доступны.<br><br><button class="action" id="retry-load" type="button">Повторить загрузку</button></div>`;
+      $('retry-load')?.addEventListener('click', () => { $('materials').textContent='Загружаем материалы…'; init(); });
+    }
+  }
+  $('return-to-bot').addEventListener('click', () => {
+    const username = state?.bot_username || 'learning_spacebot';
+    const url = `https://t.me/${encodeURIComponent(username)}?start=learning_space_return`;
+    if (tg?.openTelegramLink) tg.openTelegramLink(url); else window.location.href = url;
+  });
+  init();
+})();
+</script></body></html>

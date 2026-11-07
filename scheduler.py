@@ -1,26 +1,17 @@
-"""
-Планировщик — сердце "порционной выдачи" и "регулярности" из архитектуры.
-
-Почему не asyncio.sleep() по пользователю: бот может перезапускаться (деплой,
-падение процесса), а sleep() в таком случае просто пропадёт вместе с задачей.
-Вместо этого раз в SCHEDULER_INTERVAL_MINUTES бот сам спрашивает у базы
-"кому пора отправить следующий шаг" — это переживает любой рестарт, потому
-что вся нужная информация (last_portion_at, stage) лежит в SQLite, а не в
-памяти процесса.
-"""
+"""Contextual follow-ups and the three-day nurture sequence."""
 
 import logging
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
 from aiogram import Bot
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from aiogram.exceptions import TelegramForbiddenError
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 import config
 import database as db
+import keyboards as kb
 import texts
-from handlers.materials import send_portion2, send_portion3
 
 log = logging.getLogger(__name__)
 
@@ -30,62 +21,97 @@ def _is_quiet_hours() -> bool:
     return hour < 10 or hour >= 20
 
 
+async def _send_segment(bot: Bot, source_event: str, sent_event: str, delay: float, text: str,
+                        require_no_learning_activity: bool = False) -> None:
+    users = await db.users_due_for_segment_followup(
+        source_event, sent_event, delay, require_no_learning_activity
+    )
+    for user in users:
+        user_id = user["user_id"]
+        try:
+            await bot.send_message(user_id, text, reply_markup=kb.contextual_followup_keyboard())
+            await db.log_funnel_event(user_id, sent_event)
+            await db.update_user(user_id, stage="nurtured")
+            log.info("Follow-up %s sent to user %s", sent_event, user_id)
+        except TelegramForbiddenError:
+            await db.update_user(user_id, blocked=1)
+        except Exception:
+            log.exception("Не удалось отправить follow-up %s пользователю %s", sent_event, user_id)
+
+
+async def _send_nurture(bot: Bot) -> None:
+    actions = await db.get_due_nurture_actions()
+    messages = {
+        "day1": ("nurture_day1_sent", texts.NURTURE_DAY1, kb.nurture_learning_keyboard("Открыть Learning Space")),
+        "day2": ("nurture_day2_sent", texts.NURTURE_DAY2, kb.nurture_learning_keyboard("Продолжить практику")),
+        "day2_after_exercise": ("nurture_day2_sent", texts.NURTURE_DAY2_AFTER_EXERCISE, kb.nurture_exercise_keyboard()),
+        "day3": ("nurture_day3_sent", texts.NURTURE_DAY3, kb.nurture_day3_keyboard()),
+    }
+    for item in actions:
+        user_id = item["user_id"]
+        action = item["action"]
+        if action == "day1_skip":
+            await db.log_funnel_event(user_id, "nurture_day1_skipped")
+            log.info("Nurture day 1 skipped: user %s already opened Learning Space", user_id)
+            continue
+        sent_event, message_text, reply_markup = messages[action]
+        try:
+            await bot.send_message(user_id, message_text, reply_markup=reply_markup)
+            await db.log_funnel_event(user_id, sent_event)
+            await db.update_user(user_id, stage="nurtured")
+            log.info("Nurture %s sent to user %s", action, user_id)
+        except TelegramForbiddenError:
+            await db.update_user(user_id, blocked=1)
+        except Exception:
+            log.exception("Не удалось отправить nurture %s пользователю %s", action, user_id)
+
+
+async def _send_trial_recovery(bot: Bot) -> None:
+    actions = await db.get_due_trial_recovery_actions()
+    messages = {
+        "recovery_1": ("trial_recovery_1_sent", texts.TRIAL_RECOVERY_1),
+        "recovery_2": ("trial_recovery_2_sent", texts.TRIAL_RECOVERY_2),
+    }
+    for item in actions:
+        user_id = item["user_id"]
+        event_name, message_text = messages[item["action"]]
+        try:
+            await bot.send_message(user_id, message_text, reply_markup=kb.trial_recovery_keyboard())
+            await db.log_funnel_event(user_id, event_name)
+            log.info("Trial recovery %s sent to user %s", item["action"], user_id)
+        except TelegramForbiddenError:
+            await db.update_user(user_id, blocked=1)
+        except Exception:
+            log.exception("Не удалось отправить trial recovery %s пользователю %s", item["action"], user_id)
+
+
 async def _tick(bot: Bot) -> None:
     if _is_quiet_hours():
         return
-    await _send_portion2_batch(bot)
-    await _send_portion3_batch(bot)
-    await _send_followup_batch(bot)
-
-
-async def _send_portion2_batch(bot: Bot) -> None:
-    users = await db.users_due_for_portion2(config.PORTION_2_DELAY_HOURS)
-    for user in users:
-        try:
-            await send_portion2(bot, user["user_id"], user["level"], user.get("goal"))
-        except TelegramForbiddenError:
-            await db.update_user(user["user_id"], blocked=1)
-        except Exception:
-            log.exception("Не удалось отправить порцию 2 пользователю %s", user["user_id"])
-
-
-async def _send_portion3_batch(bot: Bot) -> None:
-    users = await db.users_due_for_portion3(config.PORTION_3_DELAY_HOURS)
-    for user in users:
-        try:
-            await send_portion3(bot, user["user_id"], user["level"], user.get("goal"))
-        except TelegramForbiddenError:
-            await db.update_user(user["user_id"], blocked=1)
-        except Exception:
-            log.exception("Не удалось отправить порцию 3 пользователю %s", user["user_id"])
-
-
-async def _send_followup_batch(bot: Bot) -> None:
-    users = await db.users_due_for_followup(config.FOLLOWUP_DELAY_HOURS, config.MAX_FOLLOWUPS)
-    for user in users:
-        followups_sent = user.get("followups_sent", 0)
-        try:
-            msg = texts.FOLLOWUP_MESSAGES[min(followups_sent, len(texts.FOLLOWUP_MESSAGES) - 1)]
-            await bot.send_message(user["user_id"], msg)
-            new_count = followups_sent + 1
-            stage = "nurtured" if new_count >= config.MAX_FOLLOWUPS else user["stage"]
-            if new_count >= config.MAX_FOLLOWUPS:
-                await bot.send_message(user["user_id"], texts.FUNNEL_SILENCE_NOTICE)
-            await db.set_followup_sent(user["user_id"], new_count, stage=stage)
-        except TelegramForbiddenError:
-            await db.update_user(user["user_id"], blocked=1)
-        except Exception:
-            log.exception("Не удалось отправить чек-ин пользователю %s", user["user_id"])
+    # Контекстные сценарии имеют приоритет; общий cooldown не даст отправить
+    # следом второе автоматическое маркетинговое сообщение в течение 24 часов.
+    await _send_segment(
+        bot, "learning_space_opened", "followup_no_activity_sent",
+        config.FOLLOWUP_NO_ACTIVITY_HOURS, texts.FOLLOWUP_NO_ACTIVITY,
+        require_no_learning_activity=True,
+    )
+    await _send_segment(
+        bot, "miniapp_exercise_completed", "followup_after_exercise_sent",
+        config.FOLLOWUP_AFTER_EXERCISE_HOURS, texts.FOLLOWUP_AFTER_EXERCISE,
+    )
+    await _send_segment(
+        bot, "prices_viewed", "followup_after_prices_sent",
+        config.FOLLOWUP_AFTER_PRICES_HOURS, texts.FOLLOWUP_AFTER_PRICES,
+    )
+    await _send_nurture(bot)
+    await _send_trial_recovery(bot)
 
 
 def start_scheduler(bot: Bot) -> AsyncIOScheduler:
     scheduler = AsyncIOScheduler()
     scheduler.add_job(
-        _tick,
-        "interval",
-        minutes=config.SCHEDULER_INTERVAL_MINUTES,
-        args=[bot],
-        id="funnel_tick",
+        _tick, "interval", minutes=config.SCHEDULER_INTERVAL_MINUTES,
+        args=[bot], id="funnel_tick", max_instances=1, coalesce=True,
     )
     scheduler.start()
     log.info("Планировщик воронки запущен (каждые %s мин.)", config.SCHEDULER_INTERVAL_MINUTES)

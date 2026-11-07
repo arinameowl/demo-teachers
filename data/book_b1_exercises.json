@@ -1,0 +1,156 @@
+{
+  "id": "book_b1_exercises",
+  "level": "B1",
+  "category": "book",
+  "title": "The Picture of Dorian Gray — Reading exercises",
+  "content": [
+    "THE PICTURE OF DORIAN GRAY — READING WORKSHEET",
+    "Level: B1",
+    "Read the adapted book and complete the tasks.",
+    "",
+    "1. COMPREHENSION — Choose the correct answer.",
+    "1) Who painted Dorian Gray's portrait?",
+    "a) Lord Henry Wotton",
+    "b) Basil Hallward",
+    "c) Dorian Gray",
+    "",
+    "2) Why does Basil hesitate to exhibit the portrait?",
+    "a) He thinks the painting is unfinished.",
+    "b) He believes it reveals too much of his own soul.",
+    "c) Lord Henry asks him not to show it.",
+    "",
+    "3) What does Lord Henry suggest about beauty and intellect?",
+    "a) They always improve each other.",
+    "b) Beauty is more important than kindness.",
+    "c) Intellectual expression can destroy the harmony of a face.",
+    "",
+    "4) How does Basil describe Dorian's influence on him?",
+    "a) It has deeply affected his feelings and art.",
+    "b) It has made him dislike painting.",
+    "c) It has no effect on him.",
+    "",
+    "2. TRUE OR FALSE. Correct the false statements.",
+    "1) Basil is the artist who painted Dorian's portrait.",
+    "2) Lord Henry immediately understands Basil's feelings.",
+    "3) Basil says that every portrait painted with feeling reveals something about the artist.",
+    "4) Basil is completely comfortable with the world seeing the portrait.",
+    "",
+    "3. VOCABULARY IN CONTEXT — Match the words with the closest meaning.",
+    "1) extraordinary",
+    "2) reveal",
+    "3) influence",
+    "4) reputation",
+    "a) the opinion people have about someone",
+    "b) to make something known or visible",
+    "c) unusual or remarkable",
+    "d) the power to affect someone or something",
+    "",
+    "4. LANGUAGE — Complete the sentences with the correct form.",
+    "1) Basil was afraid that the portrait (show) the secret of his soul.",
+    "2) Lord Henry (enjoy) looking at the portrait.",
+    "3) Dorian's personality had a strong influence ___ Basil.",
+    "4) Basil did not want the picture to be ___ (exhibit).",
+    "",
+    "5. DISCUSSION — Answer in 3–5 sentences.",
+    "1) Why might an artist see something personal in a portrait?",
+    "2) Do you agree with Lord Henry's ideas about beauty and intelligence? Explain.",
+    "3) At this point in the story, who seems to have more influence: Basil or Lord Henry? Support your opinion with details.",
+    "",
+    "ANSWER KEY",
+    "1. Comprehension: 1-b, 2-b, 3-c, 4-a.",
+    "2. True or false: 1-True; 2-False (Lord Henry questions and challenges Basil); 3-True; 4-False (Basil fears the public will understand his feelings).",
+    "3. Vocabulary: 1-c, 2-b, 3-d, 4-a.",
+    "4. Language: 1-would show / showed (depending on the intended reported meaning); 2-enjoys; 3-on; 4-exhibited.",
+    "5. Discussion: answers may vary. Require a clear opinion supported by details from the text."
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "prompt": "Who painted Dorian Gray's portrait?",
+      "options": [
+        "Lord Henry Wotton",
+        "Basil Hallward",
+        "Dorian Gray"
+      ],
+      "answer": 1,
+      "explanation": "Basil Hallward is the artist who paints Dorian's portrait."
+    },
+    {
+      "type": "choice",
+      "prompt": "Why does Basil hesitate to exhibit the portrait?",
+      "options": [
+        "He thinks the painting is unfinished",
+        "He believes it reveals too much of his own soul",
+        "Lord Henry asks him not to show it"
+      ],
+      "answer": 1,
+      "explanation": "Basil fears that the portrait reveals his own feelings and inner self."
+    },
+    {
+      "type": "choice",
+      "prompt": "What does Lord Henry suggest about beauty and intellect?",
+      "options": [
+        "They always improve each other",
+        "Beauty is more important than kindness",
+        "Intellectual expression can destroy the harmony of a face"
+      ],
+      "answer": 2,
+      "explanation": "Lord Henry suggests that thought and emotion can affect the harmony of a beautiful face."
+    },
+    {
+      "type": "choice",
+      "prompt": "How does Basil describe Dorian's influence on him?",
+      "options": [
+        "It has deeply affected his feelings and art",
+        "It has made him dislike painting",
+        "It has no effect on him"
+      ],
+      "answer": 0,
+      "explanation": "Basil says that Dorian has strongly influenced his feelings and artistic work."
+    },
+    {
+      "type": "choice",
+      "prompt": "What does “reveal” mean?",
+      "options": [
+        "To make something known or visible",
+        "To hide something carefully",
+        "To change something completely"
+      ],
+      "answer": 0,
+      "explanation": "To reveal something means to make it known or visible."
+    },
+    {
+      "type": "choice",
+      "prompt": "What is the closest meaning of “influence”?",
+      "options": [
+        "A public opinion about someone",
+        "The power to affect someone or something",
+        "A work of art"
+      ],
+      "answer": 1,
+      "explanation": "Influence is the power to affect a person, decision or situation."
+    },
+    {
+      "type": "choice",
+      "prompt": "Complete the phrase: “Dorian's personality had a strong influence ___ Basil.”",
+      "options": [
+        "at",
+        "on",
+        "for"
+      ],
+      "answer": 1,
+      "explanation": "The standard collocation is have an influence on someone."
+    },
+    {
+      "type": "choice",
+      "prompt": "Choose the correct passive form: “The portrait was ___ in the gallery.”",
+      "options": [
+        "exhibit",
+        "exhibiting",
+        "exhibited"
+      ],
+      "answer": 2,
+      "explanation": "In the passive voice, we use was/were + past participle: was exhibited."
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "id": "book_a2_exercises",
+  "level": "A2",
+  "category": "book",
+  "title": "Alice in Wonderland — Reading exercises",
+  "content": [
+    "ALICE IN WONDERLAND — READING WORKSHEET",
+    "Level: A2",
+    "Read the book and complete the tasks.",
+    "",
+    "1. COMPREHENSION — Choose the correct answer.",
+    "1) What does Alice see before she follows the Rabbit?",
+    "a) A white Rabbit with a watch",
+    "b) A talking cat",
+    "c) A large butterfly",
+    "",
+    "2) Where does Alice go after following the Rabbit?",
+    "a) Into a garden",
+    "b) Down a rabbit-hole",
+    "c) Into a castle",
+    "",
+    "3) What does Alice find on the little table in the large room?",
+    "a) A silver key",
+    "b) A little gold key",
+    "c) A bottle of milk",
+    "",
+    "4) Why can't Alice enter the beautiful garden at first?",
+    "a) The door is too small.",
+    "b) The garden is too far away.",
+    "c) The door is locked forever.",
+    "",
+    "2. PUT THE EVENTS IN ORDER (write 1–4).",
+    "___ Alice sees a long corridor.",
+    "___ The White Rabbit runs past Alice.",
+    "___ Alice falls down the rabbit-hole.",
+    "___ Alice finds a little gold key.",
+    "",
+    "3. VOCABULARY — Match the words with their opposites.",
+    "1) down",
+    "2) late",
+    "3) forget",
+    "4) quick",
+    "a) remember",
+    "b) slow",
+    "c) up",
+    "d) early",
+    "",
+    "4. GRAMMAR — Put the verbs in brackets into the Past Simple.",
+    "1) The Rabbit (take) a watch out of its pocket.",
+    "2) Alice (start) after the Rabbit.",
+    "3) She (fall) down the hole.",
+    "4) Alice (see) many shelves on the walls.",
+    "",
+    "5. READING AND THINKING.",
+    "1) Why does Alice follow the Rabbit?",
+    "2) What makes Wonderland unusual?",
+    "3) How does Alice feel when she cannot open the doors? Give one reason from the story.",
+    "",
+    "ANSWER KEY",
+    "1. Comprehension: 1-a, 2-b, 3-b, 4-a.",
+    "2. Order: 3, 1, 2, 4.",
+    "3. Vocabulary: 1-c, 2-d, 3-a, 4-b.",
+    "4. Grammar: 1-took, 2-started, 3-fell, 4-saw.",
+    "5. Answers may vary. Suggested ideas: she is curious about the unusual Rabbit; Wonderland contains talking animals and strange events; Alice feels confused or frustrated because the doors are locked or too small."
+  ],
+  "questions": [
+    {
+      "type": "choice",
+      "prompt": "What does Alice see before she follows the Rabbit?",
+      "options": [
+        "A white Rabbit with a watch",
+        "A talking cat",
+        "A large butterfly"
+      ],
+      "answer": 0,
+      "explanation": "The White Rabbit catches Alice's attention because he has a watch and seems unusual."
+    },
+    {
+      "type": "choice",
+      "prompt": "Where does Alice go after following the Rabbit?",
+      "options": [
+        "Into a garden",
+        "Down a rabbit-hole",
+        "Into a castle"
+      ],
+      "answer": 1,
+      "explanation": "Alice follows the Rabbit down the rabbit-hole."
+    },
+    {
+      "type": "choice",
+      "prompt": "What does Alice find on the little table?",
+      "options": [
+        "A silver key",
+        "A little gold key",
+        "A bottle of milk"
+      ],
+      "answer": 1,
+      "explanation": "She finds a little gold key on the table in the large room."
+    },
+    {
+      "type": "choice",
+      "prompt": "Why can't Alice enter the beautiful garden at first?",
+      "options": [
+        "The door is too small",
+        "The garden is too far away",
+        "The door is locked forever"
+      ],
+      "answer": 0,
+      "explanation": "Alice cannot get through the little door because she is too big."
+    },
+    {
+      "type": "choice",
+      "prompt": "Choose the Past Simple form: “The Rabbit ___ a watch out of its pocket.”",
+      "options": [
+        "taked",
+        "took",
+        "takes"
+      ],
+      "answer": 1,
+      "explanation": "The past form of the irregular verb take is took."
+    },
+    {
+      "type": "choice",
+      "prompt": "Choose the Past Simple form: “Alice ___ after the Rabbit.”",
+      "options": [
+        "start",
+        "started",
+        "starting"
+      ],
+      "answer": 1,
+      "explanation": "Start is a regular verb; its Past Simple form is started."
+    },
+    {
+      "type": "choice",
+      "prompt": "Choose the Past Simple form: “She ___ down the hole.”",
+      "options": [
+        "falled",
+        "fell",
+        "falls"
+      ],
+      "answer": 1,
+      "explanation": "The past form of the irregular verb fall is fell."
+    },
+    {
+      "type": "choice",
+      "prompt": "Choose the Past Simple form: “Alice ___ many shelves on the walls.”",
+      "options": [
+        "seed",
+        "saw",
+        "seen"
+      ],
+      "answer": 1,
+      "explanation": "The past form of see is saw."
+    }
+  ]
+}

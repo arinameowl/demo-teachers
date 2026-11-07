@@ -145,7 +145,7 @@ async def cmd_dbcheck(message: Message):
             f"SQLite quick_check: <b>{integrity}</b>",
             "Режим: только чтение, данные не изменялись.",
         ]
-        await message.answer("\\n".join(lines), parse_mode="HTML")
+        await message.answer("\n".join(lines), parse_mode="HTML")
     except Exception:
         import logging
         logging.getLogger(__name__).exception("Database diagnostics failed")

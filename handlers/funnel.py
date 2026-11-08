@@ -5,7 +5,7 @@ import re
 
 from aiogram import Router, F, Bot
 from aiogram.filters import Command
-from aiogram.types import CallbackQuery, Message, ReplyKeyboardRemove, URLInputFile
+from aiogram.types import CallbackQuery, Message, ReplyKeyboardRemove
 
 import config
 import database as db
@@ -270,16 +270,25 @@ async def cb_menu_teachers(callback: CallbackQuery):
 
 @router.callback_query(F.data == "menu:map_example")
 async def cb_menu_map_example(callback: CallbackQuery):
+    await callback.answer()
     await db.update_user(callback.from_user.id, awaiting_contact=0)
     await db.log_funnel_event(callback.from_user.id, "map_example_viewed")
     image_url = "https://raw.githubusercontent.com/arinameowl/learning-space/main/assets/learning_map_example.png"
-    await callback.message.answer_photo(
-        photo=URLInputFile(image_url, filename="learning_map_example.png"),
-        caption=texts.SCHOOL_MAP_EXAMPLE_CAPTION,
-        parse_mode="HTML",
-        reply_markup=kb.school_detail_keyboard(),
-    )
-    await callback.answer()
+    try:
+        # Передаем публичный URL Telegram напрямую: так бот не скачивает файл сам.
+        await callback.message.answer_photo(
+            photo=image_url,
+            caption=texts.SCHOOL_MAP_EXAMPLE_CAPTION,
+            parse_mode="HTML",
+            reply_markup=kb.school_detail_keyboard(),
+        )
+    except Exception:
+        log.exception("Не удалось отправить пример Your Learning Map")
+        await callback.message.answer(
+            texts.SCHOOL_MAP_EXAMPLE_CAPTION,
+            parse_mode="HTML",
+            reply_markup=kb.school_detail_keyboard(),
+        )
 
 
 

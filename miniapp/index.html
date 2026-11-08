@@ -53,7 +53,7 @@
   if (tg?.themeParams) { document.documentElement.style.setProperty('--tg-bg', tg.themeParams.bg_color || '#F5F1EB'); }
   const headers = {'Authorization': 'tma ' + (tg?.initData || '')};
   const defaultLanguages = {en:{name:'Английский',available:true},es:{name:'Испанский',available:false},zh:{name:'Китайский',available:false},ko:{name:'Корейский',available:false}};
-  let state = {languages:defaultLanguages, profile:{}, materials:[], progress:[], library:{books:[],worksheets:[]}, bot_username:'learning_spacebot'}, selectedLanguage = 'en';
+  let state = {languages:defaultLanguages, profile:{}, materials:[], progress:[], library:{books:[],worksheets:[]}, bot_username:'TheTeachersEng_bot'}, selectedLanguage = 'en';
   const $ = id => document.getElementById(id);
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const languageNames = {en:'Английский',es:'Испанский',zh:'Китайский',ko:'Корейский'};
@@ -251,7 +251,7 @@
     }
   }
   $('return-to-bot').addEventListener('click', () => {
-    const username = state?.bot_username || 'learning_spacebot';
+    const username = state?.bot_username || 'TheTeachersEng_bot';
     const url = `https://t.me/${encodeURIComponent(username)}?start=learning_space_return`;
     if (tg?.openTelegramLink) tg.openTelegramLink(url); else window.location.href = url;
   });

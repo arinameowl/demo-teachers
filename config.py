@@ -34,6 +34,6 @@ SCHEDULER_INTERVAL_MINUTES = int(os.environ.get("SCHEDULER_INTERVAL_MINUTES", 30
 
 # Публичный HTTPS URL Mini App (домен Amvera). Пустое значение скрывает кнопку.
 MINI_APP_URL = os.environ.get("MINI_APP_URL", "").strip()
-BOT_USERNAME = os.environ.get("BOT_USERNAME", "learning_spacebot").lstrip("@")
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "TheTeachersEng_bot").lstrip("@")
 WEBAPP_HOST = os.environ.get("WEBAPP_HOST", "0.0.0.0")
 WEBAPP_PORT = int(os.environ.get("PORT", os.environ.get("WEBAPP_PORT", "80")))

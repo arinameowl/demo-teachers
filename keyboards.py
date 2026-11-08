@@ -88,7 +88,8 @@ def objections_keyboard() -> InlineKeyboardMarkup:
         [InlineKeyboardButton(text=label, callback_data=f"objection:{key}")]
         for key, label in options
     ] + [
-        [InlineKeyboardButton(text="Связаться с менеджером", callback_data="menu:contact")]
+        [InlineKeyboardButton(text="Связаться с менеджером", callback_data="menu:contact")],
+        [InlineKeyboardButton(text="В главное меню", callback_data="menu:home")],
     ])
 
 
@@ -97,6 +98,7 @@ def objection_answer_keyboard() -> InlineKeyboardMarkup:
         [InlineKeyboardButton(text="Записаться на бесплатный первый урок", callback_data="menu:trial")],
         [InlineKeyboardButton(text="Другой вопрос", callback_data="objections:menu")],
         [InlineKeyboardButton(text="Связаться с менеджером", callback_data="menu:contact")],
+        [InlineKeyboardButton(text="В главное меню", callback_data="menu:home")],
     ])
 
 

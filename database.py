@@ -392,7 +392,14 @@ async def get_due_trial_recovery_actions(first_delay_minutes: int = 45) -> list[
             events = [dict(row) for row in await cur.fetchall()]
             names = [event["event_name"] for event in events]
 
-            if "trial_contact_submitted" in names or "manager_contact_requested" in names:
+            # Не напоминаем тем, кто явно отменил ввод контакта или уже
+            # отменил отправленную заявку: это осознанное действие, а не брошенная форма.
+            if any(name in names for name in (
+                "trial_contact_submitted",
+                "trial_contact_cancelled",
+                "trial_request_cancelled",
+                "manager_contact_requested",
+            )):
                 continue
 
             first_sent = [

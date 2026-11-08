@@ -2,10 +2,11 @@ import logging
 import datetime as dt
 import html
 import re
+from pathlib import Path
 
 from aiogram import Router, F, Bot
 from aiogram.filters import Command
-from aiogram.types import CallbackQuery, Message, ReplyKeyboardRemove
+from aiogram.types import CallbackQuery, Message, ReplyKeyboardRemove, FSInputFile
 
 import config
 import database as db
@@ -273,11 +274,12 @@ async def cb_menu_map_example(callback: CallbackQuery):
     await callback.answer()
     await db.update_user(callback.from_user.id, awaiting_contact=0)
     await db.log_funnel_event(callback.from_user.id, "map_example_viewed")
-    image_url = "https://raw.githubusercontent.com/arinameowl/learning-space/main/assets/learning_map_example.png"
+    image_path = Path(__file__).resolve().parent.parent / "assets" / "learning_map_example.jpg"
     try:
-        # Передаем публичный URL Telegram напрямую: так бот не скачивает файл сам.
+        if not image_path.is_file():
+            raise FileNotFoundError(f"Не найден файл примера карты: {image_path}")
         await callback.message.answer_photo(
-            photo=image_url,
+            photo=FSInputFile(image_path),
             caption=texts.SCHOOL_MAP_EXAMPLE_CAPTION,
             parse_mode="HTML",
             reply_markup=kb.school_detail_keyboard(),

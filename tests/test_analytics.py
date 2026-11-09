@@ -75,8 +75,16 @@ class AnalyticsQueriesTest(unittest.IsolatedAsyncioTestCase):
 
         result = await db.get_funnel_conversion(30)
         self.assertEqual(
-            [(step["from"], step["to"]) for step in result["steps"]],
-            [(2, 2), (2, 2), (2, 2), (2, 2), (2, 1), (1, 1)],
+            [(step["from"], step["to"]) for step in result["bot_steps"]],
+            [(2, 2), (2, 2), (2, 2)],
+        )
+        self.assertEqual(
+            [(step["from"], step["to"]) for step in result["learning_steps"]],
+            [(2, 2), (2, 0), (0, 0)],
+        )
+        self.assertEqual(
+            [(step["from"], step["to"]) for step in result["trial_steps"]],
+            [(2, 2)],
         )
 
     async def test_funnel_uses_next_valid_event_not_only_first_event_of_each_type(self):
@@ -93,9 +101,35 @@ class AnalyticsQueriesTest(unittest.IsolatedAsyncioTestCase):
             await self.add_event(3, name, minute)
         result = await db.get_funnel_conversion(30)
         self.assertEqual(
-            [(step["from"], step["to"]) for step in result["steps"]],
-            [(1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1)],
+            [(step["from"], step["to"]) for step in result["bot_steps"]],
+            [(1, 1), (1, 1), (1, 1)],
         )
+        self.assertEqual(
+            [(step["from"], step["to"]) for step in result["learning_steps"]],
+            [(1, 1), (1, 0), (0, 0)],
+        )
+        self.assertEqual(
+            [(step["from"], step["to"]) for step in result["trial_steps"]],
+            [(1, 1)],
+        )
+
+
+    async def test_tracking_coverage_separates_bot_starts_and_miniapp_accounts(self):
+        await self.add_user(1, "instagram")
+        await self.add_event(1, "start", 0)
+        await self.add_user(2, "miniapp")
+        await self.add_event(2, "learning_space_opened", 1)
+        await self.add_user(3, "instagram")
+
+        result = await db.get_funnel_conversion(30)
+        coverage = result["coverage"]
+        self.assertEqual(coverage["registered"], 3)
+        self.assertEqual(coverage["with_start_event"], 1)
+        self.assertEqual(coverage["with_any_event"], 2)
+        self.assertEqual(coverage["miniapp_created"], 1)
+        self.assertEqual(coverage["without_any_event"], 1)
+        self.assertAlmostEqual(coverage["start_rate"], 100 / 3)
+        self.assertAlmostEqual(coverage["any_event_rate"], 200 / 3)
 
     async def test_material_engagement_requires_open_before_start_and_completion(self):
         await self.add_user(1)

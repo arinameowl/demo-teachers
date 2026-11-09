@@ -39,6 +39,26 @@ async def _send_segment(bot: Bot, source_event: str, sent_event: str, delay: flo
             log.exception("Не удалось отправить follow-up %s пользователю %s", sent_event, user_id)
 
 
+async def _send_learning_space_feedback(bot: Bot) -> None:
+    users = await db.users_due_for_learning_space_feedback(
+        config.LEARNING_SPACE_FEEDBACK_HOURS
+    )
+    log.info("Learning Space feedback: eligible users=%s", len(users))
+    for user in users:
+        user_id = user["user_id"]
+        try:
+            await bot.send_message(
+                user_id,
+                texts.LEARNING_SPACE_FEEDBACK,
+                reply_markup=kb.contextual_followup_keyboard(),
+            )
+            await db.log_funnel_event(user_id, "learning_space_feedback_sent")
+            log.info("Learning Space feedback sent to user %s", user_id)
+        except TelegramForbiddenError:
+            await db.update_user(user_id, blocked=1)
+        except Exception:
+            log.exception("Не удалось отправить Learning Space feedback пользователю %s", user_id)
+
 async def _send_nurture(bot: Bot) -> None:
     actions = await db.get_due_nurture_actions()
     messages = {
@@ -87,28 +107,38 @@ async def _send_trial_recovery(bot: Bot) -> None:
 
 async def _tick(bot: Bot) -> None:
     if _is_quiet_hours():
+        log.info("Проверка воронки пропущена: тихие часы (20:00–10:00 МСК)")
         return
-    # Контекстные сценарии имеют приоритет; общий cooldown не даст отправить
-    # следом второе автоматическое маркетинговое сообщение в течение 24 часов.
-    await _send_segment(
-        bot, "learning_space_opened", "followup_no_activity_sent",
-        config.FOLLOWUP_NO_ACTIVITY_HOURS, texts.FOLLOWUP_NO_ACTIVITY,
-        require_no_learning_activity=True,
-    )
-    await _send_segment(
-        bot, "miniapp_exercise_completed", "followup_after_exercise_sent",
-        config.FOLLOWUP_AFTER_EXERCISE_HOURS, texts.FOLLOWUP_AFTER_EXERCISE,
-    )
-    await _send_segment(
-        bot, "prices_viewed", "followup_after_prices_sent",
-        config.FOLLOWUP_AFTER_PRICES_HOURS, texts.FOLLOWUP_AFTER_PRICES,
-    )
-    await _send_nurture(bot)
-    await _send_trial_recovery(bot)
 
+    jobs = (
+        ("Learning Space feedback", lambda: _send_learning_space_feedback(bot)),
+        ("follow-up без активности", lambda: _send_segment(
+            bot, "learning_space_opened", "followup_no_activity_sent",
+            config.FOLLOWUP_NO_ACTIVITY_HOURS, texts.FOLLOWUP_NO_ACTIVITY,
+            require_no_learning_activity=True,
+        )),
+        ("follow-up после упражнения", lambda: _send_segment(
+            bot, "miniapp_exercise_completed", "followup_after_exercise_sent",
+            config.FOLLOWUP_AFTER_EXERCISE_HOURS, texts.FOLLOWUP_AFTER_EXERCISE,
+        )),
+        ("follow-up после цен", lambda: _send_segment(
+            bot, "prices_viewed", "followup_after_prices_sent",
+            config.FOLLOWUP_AFTER_PRICES_HOURS, texts.FOLLOWUP_AFTER_PRICES,
+        )),
+        ("Day 1–3", lambda: _send_nurture(bot)),
+        ("восстановление записи", lambda: _send_trial_recovery(bot)),
+    )
+    for name, job in jobs:
+        try:
+            await job()
+        except Exception:
+            log.exception("Ошибка сценария планировщика: %s; остальные сценарии продолжат работу", name)
 
 def start_scheduler(bot: Bot) -> AsyncIOScheduler:
     scheduler = AsyncIOScheduler()
+    scheduler.add_job(
+        _tick, "date", args=[bot], id="funnel_initial_tick",
+    )
     scheduler.add_job(
         _tick, "interval", minutes=config.SCHEDULER_INTERVAL_MINUTES,
         args=[bot], id="funnel_tick", max_instances=1, coalesce=True,

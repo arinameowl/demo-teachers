@@ -28,6 +28,7 @@ MATERIALS_PATH = os.environ.get(
 FOLLOWUP_NO_ACTIVITY_HOURS = float(os.environ.get("FOLLOWUP_NO_ACTIVITY_HOURS", 24))
 FOLLOWUP_AFTER_EXERCISE_HOURS = float(os.environ.get("FOLLOWUP_AFTER_EXERCISE_HOURS", 24))
 FOLLOWUP_AFTER_PRICES_HOURS = float(os.environ.get("FOLLOWUP_AFTER_PRICES_HOURS", 24))
+LEARNING_SPACE_FEEDBACK_HOURS = float(os.environ.get("LEARNING_SPACE_FEEDBACK_HOURS", 3))
 
 # Как часто планировщик проверяет базу на "кому пора слать следующую порцию" (минуты)
 SCHEDULER_INTERVAL_MINUTES = int(os.environ.get("SCHEDULER_INTERVAL_MINUTES", 30))

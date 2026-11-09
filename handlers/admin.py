@@ -109,6 +109,7 @@ async def cmd_funnel(message: Message, command: CommandObject):
         ("school_info_viewed", "Изучили информацию о школе"),
         ("prices_viewed", "Посмотрели цены"),
         ("learning_space_opened", "Открыли Learning Space"),
+        ("learning_space_feedback_sent", "Получили вопрос о впечатлениях от Learning Space"),
         ("material_opened", "Открыли материал"),
         ("book_opened", "Открыли книгу"),
         ("media_opened", "Открыли аудио или видео"),

@@ -588,10 +588,11 @@ async def get_activity_summary() -> dict:
 # ---------- Расширенная аналитика воронки ----------
 
 async def get_funnel_conversion(days: int = 30) -> dict:
-    """События периода и строгий путь пользователя: для каждого шага ищется первое событие после предыдущего."""
+    """Separate sequential funnels for bot onboarding, Learning Space and trial requests."""
     cutoff = (dt.datetime.utcnow() - dt.timedelta(days=days)).isoformat()
     async with aiosqlite.connect(DB_PATH) as conn:
         conn.row_factory = aiosqlite.Row
+
         cur = await conn.execute(
             "SELECT event_name, COUNT(DISTINCT user_id) AS users, COUNT(*) AS events "
             "FROM funnel_events WHERE datetime(created_at) >= datetime(?) GROUP BY event_name",
@@ -599,6 +600,8 @@ async def get_funnel_conversion(days: int = 30) -> dict:
         )
         raw = {r["event_name"]: {"users": r["users"], "events": r["events"]} for r in await cur.fetchall()}
 
+        # Bot onboarding: a CTA is deliberately not part of this path; it can be
+        # reached from the bot menu, /trial, an automated message or Learning Space.
         cur = await conn.execute(
             """
             WITH starts AS (
@@ -630,45 +633,111 @@ async def get_funnel_conversion(days: int = 30) -> dict:
                           AND l.t_level IS NOT NULL
                           AND datetime(e.created_at)>=datetime(l.t_level)) AS t_app
                 FROM levels l
+            )
+            SELECT COUNT(*) AS starts,
+                   SUM(CASE WHEN t_goal IS NOT NULL THEN 1 ELSE 0 END) AS goals,
+                   SUM(CASE WHEN t_level IS NOT NULL THEN 1 ELSE 0 END) AS levels,
+                   SUM(CASE WHEN t_app IS NOT NULL THEN 1 ELSE 0 END) AS apps
+            FROM apps
+            """,
+            (cutoff,),
+        )
+        bot_row = dict(await cur.fetchone())
+
+        # Learning Space funnel starts at an actual app open and measures
+        # material -> exercise start -> answer submission in chronological order.
+        cur = await conn.execute(
+            """
+            WITH apps AS (
+                SELECT user_id, MIN(created_at) AS t_app
+                FROM funnel_events
+                WHERE datetime(created_at)>=datetime(?)
+                  AND event_name='learning_space_opened'
+                GROUP BY user_id
             ),
             materials AS (
                 SELECT a.*,
                        (SELECT MIN(e.created_at) FROM funnel_events e
                         WHERE e.user_id=a.user_id
                           AND e.event_name IN ('material_opened','book_opened','media_opened')
-                          AND a.t_app IS NOT NULL
                           AND datetime(e.created_at)>=datetime(a.t_app)) AS t_material
                 FROM apps a
             ),
-            ctas AS (
+            exercises AS (
                 SELECT m.*,
                        (SELECT MIN(e.created_at) FROM funnel_events e
-                        WHERE e.user_id=m.user_id AND e.event_name='trial_cta_clicked'
+                        WHERE e.user_id=m.user_id AND e.event_name='exercise_started'
                           AND m.t_material IS NOT NULL
-                          AND datetime(e.created_at)>=datetime(m.t_material)) AS t_cta
+                          AND datetime(e.created_at)>=datetime(m.t_material)) AS t_exercise
                 FROM materials m
             ),
-            trials AS (
-                SELECT c.*,
+            completions AS (
+                SELECT x.*,
                        (SELECT MIN(e.created_at) FROM funnel_events e
-                        WHERE e.user_id=c.user_id AND e.event_name='trial_contact_submitted'
-                          AND c.t_cta IS NOT NULL
-                          AND datetime(e.created_at)>=datetime(c.t_cta)) AS t_trial
-                FROM ctas c
+                        WHERE e.user_id=x.user_id
+                          AND e.event_name IN ('exercise_submitted','miniapp_exercise_completed')
+                          AND x.t_exercise IS NOT NULL
+                          AND datetime(e.created_at)>=datetime(x.t_exercise)) AS t_complete
+                FROM exercises x
             )
-            SELECT
-              COUNT(*) AS starts,
-              SUM(CASE WHEN t_goal IS NOT NULL THEN 1 ELSE 0 END) AS goals,
-              SUM(CASE WHEN t_level IS NOT NULL THEN 1 ELSE 0 END) AS levels,
-              SUM(CASE WHEN t_app IS NOT NULL THEN 1 ELSE 0 END) AS apps,
-              SUM(CASE WHEN t_material IS NOT NULL THEN 1 ELSE 0 END) AS materials,
-              SUM(CASE WHEN t_cta IS NOT NULL THEN 1 ELSE 0 END) AS ctas,
-              SUM(CASE WHEN t_trial IS NOT NULL THEN 1 ELSE 0 END) AS trials
-            FROM trials
+            SELECT COUNT(*) AS apps,
+                   SUM(CASE WHEN t_material IS NOT NULL THEN 1 ELSE 0 END) AS materials,
+                   SUM(CASE WHEN t_exercise IS NOT NULL THEN 1 ELSE 0 END) AS exercises,
+                   SUM(CASE WHEN t_complete IS NOT NULL THEN 1 ELSE 0 END) AS completed
+            FROM completions
             """,
             (cutoff,),
         )
-        step_row = dict(await cur.fetchone())
+        learning_row = dict(await cur.fetchone())
+
+        # Trial requests are their own conversion path. They are not required
+        # to originate in Learning Space.
+        cur = await conn.execute(
+            """
+            WITH ctas AS (
+                SELECT user_id, MIN(created_at) AS t_cta
+                FROM funnel_events
+                WHERE datetime(created_at)>=datetime(?)
+                  AND event_name='trial_cta_clicked'
+                GROUP BY user_id
+            )
+            SELECT COUNT(*) AS ctas,
+                   SUM(CASE WHEN EXISTS (
+                       SELECT 1 FROM funnel_events e
+                       WHERE e.user_id=c.user_id
+                         AND e.event_name='trial_contact_submitted'
+                         AND datetime(e.created_at)>=datetime(c.t_cta)
+                   ) THEN 1 ELSE 0 END) AS submitted
+            FROM ctas c
+            """,
+            (cutoff,),
+        )
+        trial_row = dict(await cur.fetchone())
+
+        # Coverage: registrations that have their expected /start event.
+        # Mini App-created accounts are reported separately because they may
+        # not pass through the bot's /start handler.
+        cur = await conn.execute(
+            """
+            SELECT COUNT(*) AS registered,
+                   SUM(CASE WHEN EXISTS (
+                       SELECT 1 FROM funnel_events e
+                       WHERE e.user_id=u.user_id
+                         AND e.event_name IN ('start','bot_started')
+                         AND datetime(e.created_at)>=datetime(u.created_at)
+                   ) THEN 1 ELSE 0 END) AS with_start_event,
+                   SUM(CASE WHEN EXISTS (
+                       SELECT 1 FROM funnel_events e
+                       WHERE e.user_id=u.user_id
+                         AND datetime(e.created_at)>=datetime(u.created_at)
+                   ) THEN 1 ELSE 0 END) AS with_any_event,
+                   SUM(CASE WHEN COALESCE(u.source,'')='miniapp' THEN 1 ELSE 0 END) AS miniapp_created
+            FROM users u
+            WHERE datetime(u.created_at)>=datetime(?)
+            """,
+            (cutoff,),
+        )
+        coverage = dict(await cur.fetchone())
 
         cur = await conn.execute(
             "SELECT COUNT(*) AS users, "
@@ -682,15 +751,45 @@ async def get_funnel_conversion(days: int = 30) -> dict:
         )
         cohort = dict(await cur.fetchone())
 
-    steps = [
-        {"label": "Запуск → цель", "from": step_row["starts"] or 0, "to": step_row["goals"] or 0},
-        {"label": "Цель → уровень", "from": step_row["goals"] or 0, "to": step_row["levels"] or 0},
-        {"label": "Уровень → Learning Space", "from": step_row["levels"] or 0, "to": step_row["apps"] or 0},
-        {"label": "Learning Space → материал", "from": step_row["apps"] or 0, "to": step_row["materials"] or 0},
-        {"label": "Материал → CTA пробного", "from": step_row["materials"] or 0, "to": step_row["ctas"] or 0},
-        {"label": "CTA → заявка", "from": step_row["ctas"] or 0, "to": step_row["trials"] or 0},
-    ]
-    return {"days": days, "events": raw, "cohort": cohort, "steps": steps}
+    def make_steps(items):
+        return [
+            {"label": label, "from": source or 0, "to": target or 0}
+            for label, source, target in items
+        ]
+
+    bot_steps = make_steps([
+        ("Запуск → цель", bot_row["starts"], bot_row["goals"]),
+        ("Цель → уровень", bot_row["goals"], bot_row["levels"]),
+        ("Уровень → Learning Space", bot_row["levels"], bot_row["apps"]),
+    ])
+    learning_steps = make_steps([
+        ("Открыли Learning Space → материал", learning_row["apps"], learning_row["materials"]),
+        ("Материал → упражнение", learning_row["materials"], learning_row["exercises"]),
+        ("Упражнение → отправка ответов", learning_row["exercises"], learning_row["completed"]),
+    ])
+    trial_steps = make_steps([
+        ("CTA пробного → заявка", trial_row["ctas"], trial_row["submitted"]),
+    ])
+    coverage = {key: value or 0 for key, value in coverage.items()}
+    coverage["without_any_event"] = max(0, coverage["registered"] - coverage["with_any_event"])
+    coverage["start_rate"] = (
+        coverage["with_start_event"] / coverage["registered"] * 100
+        if coverage["registered"] else 0
+    )
+    coverage["any_event_rate"] = (
+        coverage["with_any_event"] / coverage["registered"] * 100
+        if coverage["registered"] else 0
+    )
+
+    return {
+        "days": days,
+        "events": raw,
+        "cohort": cohort,
+        "bot_steps": bot_steps,
+        "learning_steps": learning_steps,
+        "trial_steps": trial_steps,
+        "coverage": coverage,
+    }
 
 
 async def get_material_engagement_summary(days: int = 30) -> dict:

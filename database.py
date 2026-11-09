@@ -498,55 +498,79 @@ async def get_due_trial_recovery_actions(first_delay_minutes: int = 45) -> list[
 # ---------- Статистика ----------
 
 async def get_funnel_stats() -> dict:
-    """Сводка по воронке для команды /stats: сколько людей на каждом этапе,
-    сколько заявок на пробный и в листе ожидания курса."""
+    """Сводка: пользователи, этапы и фактически отправленные заявки."""
     async with aiosqlite.connect(DB_PATH) as db:
         db.row_factory = aiosqlite.Row
-
         cur = await db.execute("SELECT COUNT(*) AS c FROM users")
         total = (await cur.fetchone())["c"]
-
         cur = await db.execute("SELECT stage, COUNT(*) AS c FROM users GROUP BY stage")
         by_stage = {r["stage"]: r["c"] for r in await cur.fetchall()}
-
-        cur = await db.execute("SELECT COUNT(*) AS c FROM users WHERE trial_requested = 1")
-        trials = (await cur.fetchone())["c"]
-
+        cur = await db.execute(
+            "SELECT COUNT(*) AS events, COUNT(DISTINCT user_id) AS people "
+            "FROM funnel_events WHERE event_name='trial_contact_submitted'"
+        )
+        trial_row = dict(await cur.fetchone())
+        cur = await db.execute(
+            "SELECT COUNT(*) AS events, COUNT(DISTINCT user_id) AS people "
+            "FROM funnel_events WHERE event_name='trial_contact_submitted' "
+            "AND date(created_at, '+3 hours') = date('now', '+3 hours')"
+        )
+        today_trial_row = dict(await cur.fetchone())
         cur = await db.execute("SELECT COUNT(*) AS c FROM users WHERE waitlist_joined = 1")
         waitlist = (await cur.fetchone())["c"]
-
         cur = await db.execute(
             "SELECT COUNT(*) AS c FROM users WHERE date(created_at, '+3 hours') = date('now', '+3 hours')"
         )
         today = (await cur.fetchone())["c"]
-
     return {
-        "total": total,
-        "by_stage": by_stage,
-        "trials": trials,
-        "waitlist": waitlist,
-        "today": today,
+        "total": total, "by_stage": by_stage,
+        "trials": trial_row["events"], "trial_people": trial_row["people"],
+        "trials_today": today_trial_row["events"], "trial_people_today": today_trial_row["people"],
+        "waitlist": waitlist, "today": today,
     }
 
-
 async def get_daily_stats(days: int = 14) -> list[dict]:
-    """Дневная когорта: новые пользователи, открытия приложения, упражнения и заявки (МСК)."""
+    """Ежедневная динамика новых пользователей и событий за календарный день (МСК)."""
     async with aiosqlite.connect(DB_PATH) as db:
         db.row_factory = aiosqlite.Row
         cur = await db.execute(
             """
-            SELECT date(u.created_at, '+3 hours') AS day,
-                   COUNT(*) AS new_users,
-                   SUM(CASE WHEN EXISTS (SELECT 1 FROM funnel_events e WHERE e.user_id=u.user_id AND e.event_name='learning_space_opened') THEN 1 ELSE 0 END) AS app_opened,
-                   SUM(CASE WHEN EXISTS (SELECT 1 FROM funnel_events e WHERE e.user_id=u.user_id AND e.event_name='miniapp_exercise_completed') THEN 1 ELSE 0 END) AS exercised,
-                   SUM(CASE WHEN u.trial_requested=1 THEN 1 ELSE 0 END) AS trials
-            FROM users u
-            WHERE date(u.created_at, '+3 hours') >= date('now', '+3 hours', ?)
-            GROUP BY day ORDER BY day DESC
-            """, (f"-{days - 1} days",)
+            WITH RECURSIVE calendar(day, n) AS (
+                SELECT date('now', '+3 hours', ?), 1
+                UNION ALL
+                SELECT date(day, '+1 day'), n + 1 FROM calendar WHERE n < ?
+            ),
+            daily_users AS (
+                SELECT date(created_at, '+3 hours') AS day, COUNT(*) AS new_users
+                FROM users
+                WHERE date(created_at, '+3 hours') >= date('now', '+3 hours', ?)
+                GROUP BY date(created_at, '+3 hours')
+            ),
+            daily_events AS (
+                SELECT date(created_at, '+3 hours') AS day,
+                       COUNT(DISTINCT CASE WHEN event_name='learning_space_opened' THEN user_id END) AS app_opened,
+                       COUNT(DISTINCT CASE WHEN event_name='miniapp_exercise_completed' THEN user_id END) AS exercised,
+                       COUNT(CASE WHEN event_name='trial_contact_submitted' THEN 1 END) AS trials,
+                       COUNT(DISTINCT CASE WHEN event_name='trial_contact_submitted' THEN user_id END) AS trial_people
+                FROM funnel_events
+                WHERE date(created_at, '+3 hours') >= date('now', '+3 hours', ?)
+                  AND event_name IN ('learning_space_opened','miniapp_exercise_completed','trial_contact_submitted')
+                GROUP BY date(created_at, '+3 hours')
+            )
+            SELECT calendar.day,
+                   COALESCE(daily_users.new_users, 0) AS new_users,
+                   COALESCE(daily_events.app_opened, 0) AS app_opened,
+                   COALESCE(daily_events.exercised, 0) AS exercised,
+                   COALESCE(daily_events.trials, 0) AS trials,
+                   COALESCE(daily_events.trial_people, 0) AS trial_people
+            FROM calendar
+            LEFT JOIN daily_users ON daily_users.day=calendar.day
+            LEFT JOIN daily_events ON daily_events.day=calendar.day
+            ORDER BY calendar.day DESC
+            """,
+            (f"-{days - 1} days", days, f"-{days - 1} days", f"-{days - 1} days"),
         )
         return [dict(r) for r in await cur.fetchall()]
-
 
 async def get_activity_summary() -> dict:
     async with aiosqlite.connect(DB_PATH) as db:
@@ -575,7 +599,7 @@ async def get_funnel_conversion(days: int = 30) -> dict:
         raw = {r["event_name"]: {"users": r["users"], "events": r["events"]} for r in await cur.fetchall()}
         cur = await conn.execute(
             "SELECT COUNT(*) AS users, "
-            "SUM(CASE WHEN trial_requested=1 THEN 1 ELSE 0 END) AS trials, "
+            "SUM(CASE WHEN EXISTS (SELECT 1 FROM funnel_events te WHERE te.user_id=users.user_id AND te.event_name='trial_contact_submitted' AND datetime(te.created_at)>=datetime(users.created_at)) THEN 1 ELSE 0 END) AS trials, "
             "SUM(CASE WHEN unsubscribed=1 THEN 1 ELSE 0 END) AS unsubscribed, "
             "SUM(CASE WHEN blocked=1 THEN 1 ELSE 0 END) AS blocked "
             "FROM users WHERE datetime(created_at) >= datetime(?)", (cutoff,)

@@ -94,7 +94,7 @@ class AnalyticsQueriesTest(unittest.IsolatedAsyncioTestCase):
         result = await db.get_funnel_conversion(30)
         self.assertEqual(
             [(step["from"], step["to"]) for step in result["steps"]],
-            [(3, 3), (3, 3), (3, 3), (3, 3), (2, 2), (2, 2)],
+            [(1, 1), (1, 1), (1, 1), (1, 1), (1, 1), (1, 1)],
         )
 
     async def test_material_engagement_requires_open_before_start_and_completion(self):

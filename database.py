@@ -742,6 +742,14 @@ async def get_source_stats() -> list[dict]:
                        SELECT 1 FROM funnel_events e WHERE e.user_id=u.user_id
                        AND e.event_name='trial_contact_submitted'
                    ) THEN 1 ELSE 0 END) AS trial_people,
+                   SUM(CASE WHEN EXISTS (
+                       SELECT 1 FROM funnel_events app
+                       JOIN funnel_events trial ON trial.user_id=app.user_id
+                       WHERE app.user_id=u.user_id
+                         AND app.event_name='learning_space_opened'
+                         AND trial.event_name='trial_contact_submitted'
+                         AND datetime(trial.created_at)>=datetime(app.created_at)
+                   ) THEN 1 ELSE 0 END) AS app_to_trial_people,
                    (SELECT COUNT(*) FROM funnel_events te JOIN users tu ON tu.user_id=te.user_id
                     WHERE COALESCE(tu.source, 'до трекинга')=COALESCE(u.source, 'до трекинга')
                     AND te.event_name='trial_contact_submitted') AS trial_events
@@ -754,7 +762,7 @@ async def get_source_stats() -> list[dict]:
     for row in rows:
         row["app_rate"] = row["app_opened"] / row["users"] * 100 if row["users"] else 0
         row["trial_rate"] = row["trial_people"] / row["users"] * 100 if row["users"] else 0
-        row["app_to_trial_rate"] = row["trial_people"] / row["app_opened"] * 100 if row["app_opened"] else 0
+        row["app_to_trial_rate"] = row["app_to_trial_people"] / row["app_opened"] * 100 if row["app_opened"] else 0
     return rows
 
 

@@ -677,7 +677,7 @@ async def get_source_stats() -> list[dict]:
 
 
 async def get_notification_stats(days: int = 30) -> dict:
-    """Отправки автоматических сообщений и последующие CTA/заявки в периоде."""
+    """Отправки автоматических сообщений и последующие действия до следующего авто-сообщения."""
     cutoff = (dt.datetime.utcnow() - dt.timedelta(days=days)).isoformat()
     sent_names = (
         "nurture_day1_sent", "nurture_day2_sent", "nurture_day3_sent",
@@ -696,26 +696,42 @@ async def get_notification_stats(days: int = 30) -> dict:
         )
         sent = {r["event_name"]: dict(r) for r in await cur.fetchall()}
         cur = await db.execute(
-            """
+            f"""
             SELECT s.event_name AS message_event,
                    COUNT(DISTINCT s.user_id) AS recipients,
-                   COUNT(DISTINCT CASE WHEN c.event_name='trial_cta_clicked'
-                       AND datetime(c.created_at)>=datetime(s.created_at) THEN s.user_id END) AS clicked,
-                   COUNT(DISTINCT CASE WHEN t.event_name='trial_contact_submitted'
-                       AND datetime(t.created_at)>=datetime(s.created_at) THEN s.user_id END) AS submitted
+                   COUNT(DISTINCT CASE WHEN EXISTS (
+                       SELECT 1 FROM funnel_events c
+                       WHERE c.user_id=s.user_id AND c.event_name='trial_cta_clicked'
+                         AND datetime(c.created_at)>=datetime(s.created_at)
+                         AND NOT EXISTS (
+                             SELECT 1 FROM funnel_events later
+                             WHERE later.user_id=s.user_id
+                               AND later.event_name IN ({placeholders})
+                               AND datetime(later.created_at)>datetime(s.created_at)
+                               AND datetime(later.created_at)<=datetime(c.created_at)
+                         )
+                   ) THEN s.user_id END) AS clicked,
+                   COUNT(DISTINCT CASE WHEN EXISTS (
+                       SELECT 1 FROM funnel_events t
+                       WHERE t.user_id=s.user_id AND t.event_name='trial_contact_submitted'
+                         AND datetime(t.created_at)>=datetime(s.created_at)
+                         AND NOT EXISTS (
+                             SELECT 1 FROM funnel_events later
+                             WHERE later.user_id=s.user_id
+                               AND later.event_name IN ({placeholders})
+                               AND datetime(later.created_at)>datetime(s.created_at)
+                               AND datetime(later.created_at)<=datetime(t.created_at)
+                         )
+                   ) THEN s.user_id END) AS submitted
             FROM funnel_events s
-            LEFT JOIN funnel_events c ON c.user_id=s.user_id
-            LEFT JOIN funnel_events t ON t.user_id=s.user_id
             WHERE datetime(s.created_at)>=datetime(?)
               AND s.event_name IN ({placeholders})
             GROUP BY s.event_name
             """,
-            (cutoff, *sent_names),
+            (*sent_names, *sent_names, cutoff, *sent_names),
         )
         conversion = {r["message_event"]: dict(r) for r in await cur.fetchall()}
     return {"days": days, "sent": sent, "conversion": conversion}
-
-
 async def get_material_engagement_summary(days: int = 30) -> dict:
     """Уникальные пользователи на ключевых этапах изучения материалов."""
     cutoff = (dt.datetime.utcnow() - dt.timedelta(days=days)).isoformat()

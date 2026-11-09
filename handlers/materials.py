@@ -16,7 +16,7 @@ LEARNING_SPACE_PROMPT = (
 
 
 async def _open_learning_space(target: Message, user_id: int) -> None:
-    await db.update_user(user_id, awaiting_contact=0)
+    await db.update_user(user_id, awaiting_contact=0, quiz_state=None)
     await target.answer(LEARNING_SPACE_PROMPT, reply_markup=kb.learning_app_keyboard())
 
 

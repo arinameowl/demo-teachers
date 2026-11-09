@@ -39,7 +39,7 @@ async def cmd_start(message: Message, state: FSMContext, command: CommandObject)
         source=start_source or "direct",
     )
     await db.log_funnel_event(message.from_user.id, "start", start_source or "direct")
-    await db.update_user(message.from_user.id, awaiting_contact=0)
+    await db.update_user(message.from_user.id, awaiting_contact=0, quiz_state=None)
     if command.args == "learning_space_return":
         await db.log_funnel_event(message.from_user.id, "learning_space_returned_to_bot")
         await message.answer(
@@ -54,7 +54,7 @@ async def cmd_start(message: Message, state: FSMContext, command: CommandObject)
 @router.callback_query(F.data == "start:materials")
 async def start_material_selection(callback: CallbackQuery, state: FSMContext):
     await state.clear()
-    await db.update_user(callback.from_user.id, awaiting_contact=0)
+    await db.update_user(callback.from_user.id, awaiting_contact=0, quiz_state=None)
     await callback.message.answer(texts.GOAL_QUESTION, reply_markup=kb.goal_keyboard())
     await callback.answer()
 
@@ -63,7 +63,7 @@ async def start_material_selection(callback: CallbackQuery, state: FSMContext):
 async def choose_goal(callback: CallbackQuery, state: FSMContext):
     await state.clear()
     goal = callback.data.split(":")[1]
-    await db.update_user(callback.from_user.id, goal=goal)
+    await db.update_user(callback.from_user.id, goal=goal, quiz_state=None)
     await db.log_funnel_event(callback.from_user.id, "goal_selected", goal)
     await callback.message.edit_text(f"Цель обучения: {texts.GOAL_LABELS[goal]}.")
     await callback.message.answer(texts.LEVEL_CHOICE_QUESTION, reply_markup=kb.level_choice_keyboard())
@@ -81,7 +81,7 @@ async def level_manual(callback: CallbackQuery, state: FSMContext):
 async def level_set(callback: CallbackQuery, state: FSMContext):
     await state.clear()
     level = callback.data.split(":")[1]
-    await db.update_user(callback.from_user.id, level=level, level_source="manual", stage="onboarded")
+    await db.update_user(callback.from_user.id, level=level, level_source="manual", stage="onboarded", quiz_state=None)
     await db.log_funnel_event(callback.from_user.id, "level_selected", f"manual:{level}")
     user = await db.get_user(callback.from_user.id) or {}
     await callback.message.edit_text(
@@ -99,6 +99,7 @@ async def level_b2_plus(callback: CallbackQuery, state: FSMContext):
         level=None,
         level_source="teacher_diagnostic",
         stage="b2plus",
+        quiz_state=None,
     )
     await db.log_funnel_event(callback.from_user.id, "b2plus_teacher_diagnostic_selected")
     await callback.message.edit_text(
@@ -110,8 +111,8 @@ async def level_b2_plus(callback: CallbackQuery, state: FSMContext):
 
 @router.callback_query(F.data == "levelmode:quiz")
 async def level_quiz_start(callback: CallbackQuery, state: FSMContext):
-    await state.set_state(Quiz.in_progress)
-    await state.update_data(answers={})
+    await state.clear()
+    await db.set_quiz_state(callback.from_user.id, {"current": 0, "answers": {}})
     await callback.message.edit_text(texts.QUIZ_INTRO)
     q = quiz.QUESTIONS[0]
     await callback.message.answer(q["prompt"], reply_markup=kb.quiz_options_keyboard(0, q["options"]))
@@ -122,12 +123,13 @@ async def level_quiz_start(callback: CallbackQuery, state: FSMContext):
 @router.callback_query(F.data == "quizskip")
 async def quiz_skip(callback: CallbackQuery, state: FSMContext):
     await state.clear()
+    await db.clear_quiz_state(callback.from_user.id)
     await callback.message.edit_text(texts.QUIZ_SKIP_TEXT, reply_markup=kb.level_manual_keyboard())
     await callback.answer()
 
 
-@router.callback_query(Quiz.in_progress, F.data.startswith("quiz:"))
-async def quiz_answer(callback: CallbackQuery, state: FSMContext):
+@router.callback_query(F.data.startswith("quiz:"))
+async def quiz_answer(callback: CallbackQuery):
     try:
         _, q_index_str, opt_index_str = callback.data.split(":")
         q_index, opt_index = int(q_index_str), int(opt_index_str)
@@ -138,21 +140,23 @@ async def quiz_answer(callback: CallbackQuery, state: FSMContext):
         await callback.answer("Этот вариант ответа больше не активен.", show_alert=True)
         return
 
-    data = await state.get_data()
-    answers = data.get("answers", {})
-    answers[q_index] = opt_index
-    await state.update_data(answers=answers)
+    saved = await db.get_quiz_state(callback.from_user.id)
+    if not saved or saved.get("current") != q_index:
+        await callback.answer("Этот вопрос уже неактивен. Начните тест заново.", show_alert=True)
+        return
 
+    answers = saved.get("answers", {})
+    answers[str(q_index)] = opt_index
     next_index = q_index + 1
     if next_index < len(quiz.QUESTIONS):
+        await db.set_quiz_state(callback.from_user.id, {"current": next_index, "answers": answers})
         q = quiz.QUESTIONS[next_index]
         await callback.message.edit_text(q["prompt"], reply_markup=kb.quiz_options_keyboard(next_index, q["options"]))
         await callback.answer()
         return
 
-    # Квиз закончен — считаем уровень
     level = quiz.score_to_level({int(k): v for k, v in answers.items()})
-    await state.clear()
+    await db.clear_quiz_state(callback.from_user.id)
     await db.update_user(callback.from_user.id, level=level, level_source="quiz", stage="onboarded")
     await db.log_funnel_event(callback.from_user.id, "level_selected", f"quiz:{level}")
     user = await db.get_user(callback.from_user.id) or {}

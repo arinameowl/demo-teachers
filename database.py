@@ -5,6 +5,7 @@ application restarts and deployments.
 """
 
 import datetime as dt
+import json
 from pathlib import Path
 from typing import Optional
 
@@ -42,6 +43,7 @@ _MIGRATIONS = (
     "ALTER TABLE users ADD COLUMN blocked INTEGER DEFAULT 0",
     "ALTER TABLE users ADD COLUMN unsubscribed INTEGER DEFAULT 0",
     "ALTER TABLE users ADD COLUMN last_broadcast_at TEXT",
+    "ALTER TABLE users ADD COLUMN quiz_state TEXT",
 )
 
 _BROADCAST_SCHEMA = """
@@ -109,6 +111,32 @@ async def get_user(user_id: int) -> Optional[dict]:
         cur = await db.execute("SELECT * FROM users WHERE user_id = ?", (user_id,))
         row = await cur.fetchone()
         return dict(row) if row else None
+
+
+async def get_quiz_state(user_id: int) -> Optional[dict]:
+    """Возвращает сохраненное состояние мини-теста или None."""
+    user = await get_user(user_id)
+    raw = user.get("quiz_state") if user else None
+    if not raw:
+        return None
+    try:
+        state = json.loads(raw)
+    except (TypeError, json.JSONDecodeError):
+        await clear_quiz_state(user_id)
+        return None
+    if not isinstance(state, dict):
+        await clear_quiz_state(user_id)
+        return None
+    return state
+
+
+async def set_quiz_state(user_id: int, state: dict | None) -> None:
+    """Сохраняет прогресс мини-теста в постоянной базе данных."""
+    await update_user(user_id, quiz_state=json.dumps(state, ensure_ascii=False) if state is not None else None)
+
+
+async def clear_quiz_state(user_id: int) -> None:
+    await update_user(user_id, quiz_state=None)
 
 
 async def create_user_if_missing(user_id: int, username: str, first_name: str,

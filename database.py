@@ -238,7 +238,8 @@ async def users_due_for_segment_followup(source_event: str, sent_event: str, del
                     'nurture_day2_sent',
                     'nurture_day3_sent',
                     'trial_recovery_1_sent',
-                    'trial_recovery_2_sent'
+                    'trial_recovery_2_sent',
+                    'learning_space_feedback_sent'
                 )
                 AND datetime(recent_followup.created_at) >= datetime(?)
           )
@@ -250,6 +251,52 @@ async def users_due_for_segment_followup(source_event: str, sent_event: str, del
         return [dict(row) for row in await cur.fetchall()]
 
 
+
+async def users_due_for_learning_space_feedback(delay_hours: float = 3) -> list[dict]:
+    """Users who opened Learning Space and are due a feedback check-in."""
+    cutoff = (dt.datetime.utcnow() - dt.timedelta(hours=delay_hours)).isoformat()
+    cooldown_cutoff = (dt.datetime.utcnow() - dt.timedelta(hours=24)).isoformat()
+    query = """
+        SELECT u.* FROM users u
+        JOIN funnel_events source ON source.user_id = u.user_id
+          AND source.event_name = 'learning_space_opened'
+        WHERE source.created_at = (
+            SELECT MAX(s.created_at) FROM funnel_events s
+            WHERE s.user_id = u.user_id AND s.event_name = 'learning_space_opened'
+        )
+          AND datetime(source.created_at) <= datetime(?)
+          AND COALESCE(u.trial_requested, 0) = 0
+          AND COALESCE(u.awaiting_contact, 0) = 0
+          AND COALESCE(u.unsubscribed, 0) = 0
+          AND COALESCE(u.blocked, 0) = 0
+          AND NOT EXISTS (
+              SELECT 1 FROM funnel_events intent
+              WHERE intent.user_id = u.user_id
+                AND intent.event_name IN ('trial_cta_clicked', 'trial_contact_submitted', 'manager_contact_requested')
+                AND datetime(intent.created_at) >= datetime(source.created_at)
+          )
+          AND NOT EXISTS (
+              SELECT 1 FROM funnel_events sent
+              WHERE sent.user_id = u.user_id
+                AND sent.event_name = 'learning_space_feedback_sent'
+                AND datetime(sent.created_at) >= datetime(source.created_at)
+          )
+          AND NOT EXISTS (
+              SELECT 1 FROM funnel_events recent_auto
+              WHERE recent_auto.user_id = u.user_id
+                AND recent_auto.event_name IN (
+                    'followup_no_activity_sent', 'followup_after_exercise_sent',
+                    'followup_after_prices_sent', 'learning_space_feedback_sent',
+                    'nurture_day1_sent', 'nurture_day2_sent', 'nurture_day3_sent',
+                    'trial_recovery_1_sent', 'trial_recovery_2_sent'
+                )
+                AND datetime(recent_auto.created_at) >= datetime(?)
+          )
+    """
+    async with aiosqlite.connect(DB_PATH) as conn:
+        conn.row_factory = aiosqlite.Row
+        cur = await conn.execute(query, (cutoff, cooldown_cutoff))
+        return [dict(row) for row in await cur.fetchall()]
 
 async def get_due_nurture_actions(day1_delay_hours: float = 4) -> list[dict]:
     """Return at most one due three-day nurture action per user."""
@@ -302,7 +349,7 @@ async def get_due_nurture_actions(day1_delay_hours: float = 4) -> list[dict]:
                 "SELECT created_at FROM funnel_events WHERE user_id=? "
                 "AND event_name IN ('followup_no_activity_sent','followup_after_exercise_sent',"
                 "'followup_after_prices_sent','nurture_day1_sent','nurture_day2_sent','nurture_day3_sent',"
-                "'trial_recovery_1_sent','trial_recovery_2_sent') "
+                "'trial_recovery_1_sent','trial_recovery_2_sent','learning_space_feedback_sent') "
                 "AND datetime(created_at)>=datetime(?)",
                 (user["user_id"], cooldown.isoformat()),
             )

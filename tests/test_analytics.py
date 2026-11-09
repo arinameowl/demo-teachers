@@ -178,3 +178,26 @@ class AnalyticsQueriesTest(unittest.IsolatedAsyncioTestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class QuizStatePersistenceTest(unittest.IsolatedAsyncioTestCase):
+    async def asyncSetUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.original_db_path = db.DB_PATH
+        db.DB_PATH = os.path.join(self.temp.name, "quiz-state.sqlite3")
+        await db.init_db()
+        await db.create_user_if_missing(101, "tester", "Test")
+
+    async def asyncTearDown(self):
+        db.DB_PATH = self.original_db_path
+        self.temp.cleanup()
+
+    async def test_quiz_state_survives_database_reopen(self):
+        expected = {"current": 3, "answers": {"0": 0, "1": 2, "2": 1}}
+        await db.set_quiz_state(101, expected)
+        self.assertEqual(await db.get_quiz_state(101), expected)
+
+    async def test_clearing_quiz_state_removes_saved_progress(self):
+        await db.set_quiz_state(101, {"current": 1, "answers": {"0": 0}})
+        await db.clear_quiz_state(101)
+        self.assertIsNone(await db.get_quiz_state(101))

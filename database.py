@@ -637,22 +637,104 @@ async def get_material_stats(days: int = 30) -> list[dict]:
 
 
 async def get_source_stats() -> list[dict]:
+    """Источники: пользователи и фактические события воронки, за всё время."""
     async with aiosqlite.connect(DB_PATH) as db:
         db.row_factory = aiosqlite.Row
         cur = await db.execute(
             """
             SELECT COALESCE(u.source, 'до трекинга') AS src,
                    COUNT(*) AS users,
-                   SUM(CASE WHEN EXISTS (SELECT 1 FROM funnel_events e WHERE e.user_id=u.user_id AND e.event_name='learning_space_opened') THEN 1 ELSE 0 END) AS app_opened,
-                   SUM(CASE WHEN EXISTS (SELECT 1 FROM funnel_events e WHERE e.user_id=u.user_id AND e.event_name='prices_viewed') THEN 1 ELSE 0 END) AS prices_viewed,
-                   SUM(CASE WHEN u.trial_requested=1 THEN 1 ELSE 0 END) AS trials
-            FROM users u GROUP BY src ORDER BY users DESC
+                   SUM(CASE WHEN EXISTS (
+                       SELECT 1 FROM funnel_events e WHERE e.user_id=u.user_id
+                       AND e.event_name='learning_space_opened'
+                   ) THEN 1 ELSE 0 END) AS app_opened,
+                   SUM(CASE WHEN EXISTS (
+                       SELECT 1 FROM funnel_events e WHERE e.user_id=u.user_id
+                       AND e.event_name='prices_viewed'
+                   ) THEN 1 ELSE 0 END) AS prices_viewed,
+                   SUM(CASE WHEN EXISTS (
+                       SELECT 1 FROM funnel_events e WHERE e.user_id=u.user_id
+                       AND e.event_name='trial_cta_clicked'
+                   ) THEN 1 ELSE 0 END) AS trial_clicked,
+                   SUM(CASE WHEN EXISTS (
+                       SELECT 1 FROM funnel_events e WHERE e.user_id=u.user_id
+                       AND e.event_name='trial_contact_submitted'
+                   ) THEN 1 ELSE 0 END) AS trial_people,
+                   (SELECT COUNT(*) FROM funnel_events te JOIN users tu ON tu.user_id=te.user_id
+                    WHERE COALESCE(tu.source, 'до трекинга')=COALESCE(u.source, 'до трекинга')
+                    AND te.event_name='trial_contact_submitted') AS trial_events
+            FROM users u
+            GROUP BY COALESCE(u.source, 'до трекинга')
+            ORDER BY users DESC
             """
         )
-        return [dict(r) for r in await cur.fetchall()]
+        rows = [dict(r) for r in await cur.fetchall()]
+    for row in rows:
+        row["app_rate"] = row["app_opened"] / row["users"] * 100 if row["users"] else 0
+        row["trial_rate"] = row["trial_people"] / row["users"] * 100 if row["users"] else 0
+        row["app_to_trial_rate"] = row["trial_people"] / row["app_opened"] * 100 if row["app_opened"] else 0
+    return rows
 
 
-# ---------- Рассылки ----------
+async def get_notification_stats(days: int = 30) -> dict:
+    """Отправки автоматических сообщений и последующие CTA/заявки в периоде."""
+    cutoff = (dt.datetime.utcnow() - dt.timedelta(days=days)).isoformat()
+    sent_names = (
+        "nurture_day1_sent", "nurture_day2_sent", "nurture_day3_sent",
+        "followup_no_activity_sent", "followup_after_exercise_sent",
+        "followup_after_prices_sent", "learning_space_feedback_sent",
+        "trial_recovery_1_sent", "trial_recovery_2_sent",
+    )
+    placeholders = ",".join("?" for _ in sent_names)
+    async with aiosqlite.connect(DB_PATH) as db:
+        db.row_factory = aiosqlite.Row
+        cur = await db.execute(
+            f"SELECT event_name, COUNT(DISTINCT user_id) AS users, COUNT(*) AS events "
+            f"FROM funnel_events WHERE datetime(created_at)>=datetime(?) "
+            f"AND event_name IN ({placeholders}) GROUP BY event_name",
+            (cutoff, *sent_names),
+        )
+        sent = {r["event_name"]: dict(r) for r in await cur.fetchall()}
+        cur = await db.execute(
+            """
+            SELECT s.event_name AS message_event,
+                   COUNT(DISTINCT s.user_id) AS recipients,
+                   COUNT(DISTINCT CASE WHEN c.event_name='trial_cta_clicked'
+                       AND datetime(c.created_at)>=datetime(s.created_at) THEN s.user_id END) AS clicked,
+                   COUNT(DISTINCT CASE WHEN t.event_name='trial_contact_submitted'
+                       AND datetime(t.created_at)>=datetime(s.created_at) THEN s.user_id END) AS submitted
+            FROM funnel_events s
+            LEFT JOIN funnel_events c ON c.user_id=s.user_id
+            LEFT JOIN funnel_events t ON t.user_id=s.user_id
+            WHERE datetime(s.created_at)>=datetime(?)
+              AND s.event_name IN ({placeholders})
+            GROUP BY s.event_name
+            """,
+            (cutoff, *sent_names),
+        )
+        conversion = {r["message_event"]: dict(r) for r in await cur.fetchall()}
+    return {"days": days, "sent": sent, "conversion": conversion}
+
+
+async def get_material_engagement_summary(days: int = 30) -> dict:
+    """Уникальные пользователи на ключевых этапах изучения материалов."""
+    cutoff = (dt.datetime.utcnow() - dt.timedelta(days=days)).isoformat()
+    async with aiosqlite.connect(DB_PATH) as db:
+        db.row_factory = aiosqlite.Row
+        cur = await db.execute(
+            """
+            SELECT
+              COUNT(DISTINCT CASE WHEN event_name IN ('material_opened','book_opened','media_opened') THEN user_id END) AS opened,
+              COUNT(DISTINCT CASE WHEN event_name='exercise_started' THEN user_id END) AS started,
+              COUNT(DISTINCT CASE WHEN event_name IN ('exercise_submitted','miniapp_exercise_completed') THEN user_id END) AS completed
+            FROM funnel_events
+            WHERE datetime(created_at)>=datetime(?)
+            """, (cutoff,)
+        )
+        row = dict(await cur.fetchone())
+    row["open_to_start"] = row["started"] / row["opened"] * 100 if row["opened"] else 0
+    row["start_to_complete"] = row["completed"] / row["started"] * 100 if row["started"] else 0
+    return row
 
 async def broadcast_audience(goal=None, level=None, min_gap_days: int = 6,
                              funnel_gap_hours: int = 48) -> list[int]:

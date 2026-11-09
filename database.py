@@ -844,25 +844,6 @@ async def get_notification_stats(days: int = 30) -> dict:
         )
         conversion = {r["message_event"]: dict(r) for r in await cur.fetchall()}
     return {"days": days, "sent": sent, "conversion": conversion}
-async def get_material_engagement_summary(days: int = 30) -> dict:
-    """Уникальные пользователи на ключевых этапах изучения материалов."""
-    cutoff = (dt.datetime.utcnow() - dt.timedelta(days=days)).isoformat()
-    async with aiosqlite.connect(DB_PATH) as db:
-        db.row_factory = aiosqlite.Row
-        cur = await db.execute(
-            """
-            SELECT
-              COUNT(DISTINCT CASE WHEN event_name IN ('material_opened','book_opened','media_opened') THEN user_id END) AS opened,
-              COUNT(DISTINCT CASE WHEN event_name='exercise_started' THEN user_id END) AS started,
-              COUNT(DISTINCT CASE WHEN event_name IN ('exercise_submitted','miniapp_exercise_completed') THEN user_id END) AS completed
-            FROM funnel_events
-            WHERE datetime(created_at)>=datetime(?)
-            """, (cutoff,)
-        )
-        row = dict(await cur.fetchone())
-    row["open_to_start"] = row["started"] / row["opened"] * 100 if row["opened"] else 0
-    row["start_to_complete"] = row["completed"] / row["started"] * 100 if row["started"] else 0
-    return row
 
 async def broadcast_audience(goal=None, level=None, min_gap_days: int = 6,
                              funnel_gap_hours: int = 48) -> list[int]:

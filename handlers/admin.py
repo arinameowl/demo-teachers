@@ -167,20 +167,12 @@ async def cmd_funnel(message: Message, command: CommandObject):
             lines.append(f"• {label}: {item['users']} чел. · {item['events']} выборов")
 
     # Конверсии соседних этапов считаем по уникальным пользователям периода.
-    funnel_steps = [
-        ("start", "goal_selected", "Запуск → цель"),
-        ("goal_selected", "level_selected", "Цель → уровень"),
-        ("level_selected", "learning_space_opened", "Уровень → Learning Space"),
-        ("learning_space_opened", "material_opened", "Learning Space → материал"),
-        ("material_opened", "trial_cta_clicked", "Материал → CTA пробного"),
-        ("trial_cta_clicked", "trial_contact_submitted", "CTA → заявка"),
-    ]
-    lines += ["", "<b>Конверсия между этапами:</b>"]
-    for source_key, target_key, label in funnel_steps:
-        source_users = events.get(source_key, {}).get("users", 0)
-        target_users = events.get(target_key, {}).get("users", 0)
+    lines += ["", "<b>Последовательная конверсия между этапами:</b>"]
+    for step in data["steps"]:
+        source_users = step["from"]
+        target_users = step["to"]
         rate = target_users / source_users * 100 if source_users else 0
-        lines.append(f"• {label}: {target_users}/{source_users} · {rate:.1f}%")
+        lines.append(f"• {step['label']}: {target_users}/{source_users} · {rate:.1f}%")
 
     material_summary = await db.get_material_engagement_summary(days)
     lines += [

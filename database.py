@@ -588,26 +588,108 @@ async def get_activity_summary() -> dict:
 # ---------- Расширенная аналитика воронки ----------
 
 async def get_funnel_conversion(days: int = 30) -> dict:
-    """Уникальные пользователи по ключевым событиям за период (МСК)."""
+    """События за период и последовательная конверсия по уникальным пользователям."""
     cutoff = (dt.datetime.utcnow() - dt.timedelta(days=days)).isoformat()
     async with aiosqlite.connect(DB_PATH) as conn:
         conn.row_factory = aiosqlite.Row
         cur = await conn.execute(
             "SELECT event_name, COUNT(DISTINCT user_id) AS users, COUNT(*) AS events "
-            "FROM funnel_events WHERE datetime(created_at) >= datetime(?) GROUP BY event_name", (cutoff,)
+            "FROM funnel_events WHERE datetime(created_at) >= datetime(?) GROUP BY event_name",
+            (cutoff,),
         )
         raw = {r["event_name"]: {"users": r["users"], "events": r["events"]} for r in await cur.fetchall()}
+
+        cur = await conn.execute(
+            """
+            WITH per_user AS (
+                SELECT user_id,
+                       MIN(CASE WHEN event_name IN ('start','bot_started') THEN created_at END) AS t_start,
+                       MIN(CASE WHEN event_name='goal_selected' THEN created_at END) AS t_goal,
+                       MIN(CASE WHEN event_name='level_selected' THEN created_at END) AS t_level,
+                       MIN(CASE WHEN event_name='learning_space_opened' THEN created_at END) AS t_app,
+                       MIN(CASE WHEN event_name IN ('material_opened','book_opened','media_opened') THEN created_at END) AS t_material,
+                       MIN(CASE WHEN event_name='trial_cta_clicked' THEN created_at END) AS t_cta,
+                       MIN(CASE WHEN event_name='trial_contact_submitted' THEN created_at END) AS t_trial
+                FROM funnel_events
+                WHERE datetime(created_at)>=datetime(?)
+                GROUP BY user_id
+            ),
+            ordered AS (
+                SELECT *,
+                       CASE WHEN t_start IS NOT NULL AND t_goal>=t_start THEN t_goal END AS goal_after_start,
+                       CASE WHEN t_start IS NOT NULL AND t_goal>=t_start AND t_level>=t_goal THEN t_level END AS level_after_goal,
+                       CASE WHEN t_start IS NOT NULL AND t_goal>=t_start AND t_level>=t_goal AND t_app>=t_level THEN t_app END AS app_after_level,
+                       CASE WHEN t_start IS NOT NULL AND t_goal>=t_start AND t_level>=t_goal AND t_app>=t_level AND t_material>=t_app THEN t_material END AS material_after_app,
+                       CASE WHEN t_start IS NOT NULL AND t_goal>=t_start AND t_level>=t_goal AND t_app>=t_level AND t_material>=t_app AND t_cta>=t_material THEN t_cta END AS cta_after_material,
+                       CASE WHEN t_start IS NOT NULL AND t_goal>=t_start AND t_level>=t_goal AND t_app>=t_level AND t_material>=t_app AND t_cta>=t_material AND t_trial>=t_cta THEN t_trial END AS trial_after_cta
+                FROM per_user
+            )
+            SELECT
+              SUM(CASE WHEN t_start IS NOT NULL THEN 1 ELSE 0 END) AS starts,
+              SUM(CASE WHEN goal_after_start IS NOT NULL THEN 1 ELSE 0 END) AS goals,
+              SUM(CASE WHEN level_after_goal IS NOT NULL THEN 1 ELSE 0 END) AS levels,
+              SUM(CASE WHEN app_after_level IS NOT NULL THEN 1 ELSE 0 END) AS apps,
+              SUM(CASE WHEN material_after_app IS NOT NULL THEN 1 ELSE 0 END) AS materials,
+              SUM(CASE WHEN cta_after_material IS NOT NULL THEN 1 ELSE 0 END) AS ctas,
+              SUM(CASE WHEN trial_after_cta IS NOT NULL THEN 1 ELSE 0 END) AS trials
+            FROM ordered
+            """,
+            (cutoff,),
+        )
+        step_row = dict(await cur.fetchone())
+
         cur = await conn.execute(
             "SELECT COUNT(*) AS users, "
-            "SUM(CASE WHEN EXISTS (SELECT 1 FROM funnel_events te WHERE te.user_id=users.user_id AND te.event_name='trial_contact_submitted' AND datetime(te.created_at)>=datetime(users.created_at)) THEN 1 ELSE 0 END) AS trials, "
+            "SUM(CASE WHEN EXISTS (SELECT 1 FROM funnel_events te WHERE te.user_id=users.user_id "
+            "AND te.event_name='trial_contact_submitted' AND datetime(te.created_at)>=datetime(users.created_at)) "
+            "THEN 1 ELSE 0 END) AS trials, "
             "SUM(CASE WHEN unsubscribed=1 THEN 1 ELSE 0 END) AS unsubscribed, "
             "SUM(CASE WHEN blocked=1 THEN 1 ELSE 0 END) AS blocked "
-            "FROM users WHERE datetime(created_at) >= datetime(?)", (cutoff,)
+            "FROM users WHERE datetime(created_at) >= datetime(?)",
+            (cutoff,),
         )
         cohort = dict(await cur.fetchone())
-    return {"days": days, "events": raw, "cohort": cohort}
+
+    steps = [
+        {"label": "Запуск → цель", "from": step_row["starts"] or 0, "to": step_row["goals"] or 0},
+        {"label": "Цель → уровень", "from": step_row["goals"] or 0, "to": step_row["levels"] or 0},
+        {"label": "Уровень → Learning Space", "from": step_row["levels"] or 0, "to": step_row["apps"] or 0},
+        {"label": "Learning Space → материал", "from": step_row["apps"] or 0, "to": step_row["materials"] or 0},
+        {"label": "Материал → CTA пробного", "from": step_row["materials"] or 0, "to": step_row["ctas"] or 0},
+        {"label": "CTA → заявка", "from": step_row["ctas"] or 0, "to": step_row["trials"] or 0},
+    ]
+    return {"days": days, "events": raw, "cohort": cohort, "steps": steps}
 
 
+async def get_material_engagement_summary(days: int = 30) -> dict:
+    """Конверсия в изучение материалов по последовательности событий пользователя."""
+    cutoff = (dt.datetime.utcnow() - dt.timedelta(days=days)).isoformat()
+    async with aiosqlite.connect(DB_PATH) as db:
+        db.row_factory = aiosqlite.Row
+        cur = await db.execute(
+            """
+            WITH per_user AS (
+                SELECT user_id,
+                       MIN(CASE WHEN event_name IN ('material_opened','book_opened','media_opened') THEN created_at END) AS opened_at,
+                       MIN(CASE WHEN event_name='exercise_started' THEN created_at END) AS started_at,
+                       MIN(CASE WHEN event_name IN ('exercise_submitted','miniapp_exercise_completed') THEN created_at END) AS completed_at
+                FROM funnel_events
+                WHERE datetime(created_at)>=datetime(?)
+                GROUP BY user_id
+            )
+            SELECT
+              SUM(CASE WHEN opened_at IS NOT NULL THEN 1 ELSE 0 END) AS opened,
+              SUM(CASE WHEN opened_at IS NOT NULL AND started_at>=opened_at THEN 1 ELSE 0 END) AS started,
+              SUM(CASE WHEN opened_at IS NOT NULL AND started_at>=opened_at
+                        AND completed_at>=started_at THEN 1 ELSE 0 END) AS completed
+            FROM per_user
+            """, (cutoff,)
+        )
+        row = dict(await cur.fetchone())
+    row = {key: value or 0 for key, value in row.items()}
+    row["open_to_start"] = row["started"] / row["opened"] * 100 if row["opened"] else 0
+    row["start_to_complete"] = row["completed"] / row["started"] * 100 if row["started"] else 0
+    return row
 async def get_objection_stats(days: int = 30) -> list[dict]:
     """Count objection selections by key for the requested period."""
     cutoff = (dt.datetime.utcnow() - dt.timedelta(days=days)).isoformat()

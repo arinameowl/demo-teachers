@@ -54,7 +54,8 @@ async def cmd_stats(message: Message):
 
     lines += [
         "",
-        f"💬 <b>Заявок на пробный урок:</b> {stats['trials']}",
+        f"💬 <b>Отправлено заявок на пробный:</b> {stats['trials']} (уникальных людей: {stats['trial_people']})",
+        f"📅 <b>Сегодня отправлено:</b> {stats['trials_today']} (уникальных людей: {stats['trial_people_today']})",
         f"🎬 <b>В листе ожидания курса:</b> {stats['waitlist']}",
     ]
 
@@ -70,13 +71,13 @@ async def cmd_days(message: Message, command: CommandObject):
     rows = await db.get_daily_stats(days)
 
     lines = [f"<b>Новые пользователи по дням (МСК), последние {days} дн.</b>", "<pre>",
-             "Дата        Новых  App  Упр  Проб"]
+             "Дата        Новых  App  Упр  Заявки"]
     for r in rows:
-        lines.append(f"{r['day']} {r['new_users']:>6} {r['app_opened']:>4} {r.get('exercised', 0):>4} {r['trials']:>5}")
+        lines.append(f"{r['day']} {r['new_users']:>6} {r['app_opened']:>4} {r.get('exercised', 0):>4} {r['trials']:>6}")
     lines.append(f"Итого      {sum(r['new_users'] for r in rows):>6} "
-                 f"{sum(r['app_opened'] for r in rows):>4} {sum(r.get('exercised', 0) for r in rows):>4} {sum(r['trials'] for r in rows):>5}")
+                 f"{sum(r['app_opened'] for r in rows):>4} {sum(r.get('exercised', 0) for r in rows):>4} {sum(r['trials'] for r in rows):>6}")
     lines.append("</pre>")
-    lines.append("Новых = /start; App = открыли Learning Space; Упр = завершили упражнение; Проб = оставили заявку.")
+    lines.append("Новых = /start; App = уникальные пользователи, открывшие Learning Space в этот день; Упр = уникальные пользователи, завершившие упражнение в этот день; Заявки = отправленные заявки в этот день.")
     await message.answer("\n".join(lines), parse_mode="HTML")
 
 @router.message(Command("sources"))
@@ -127,10 +128,11 @@ async def cmd_funnel(message: Message, command: CommandObject):
         ("objection_selected", "Выбрали возражение"),
         ("manager_contact_requested", "Запросили контакт менеджера"),
     ]
-    lines = [f"<b>Воронка The Teachers · последние {days} дн.</b>", "<pre>", "Этап                         Людей"]
+    lines = [f"<b>Воронка The Teachers · последние {days} дн.</b>", "<pre>", "Этап                         Людей  Событий"]
     for key, label in labels:
         count = events.get(key, {}).get("users", 0)
-        lines.append(f"{label[:27]:<27} {count:>6}")
+        event_count = events.get(key, {}).get("events", 0)
+        lines.append(f"{label[:27]:<27} {count:>6} {event_count:>8}")
     lines.append("</pre>")
     cohort = data["cohort"]
     users = cohort.get("users") or 0

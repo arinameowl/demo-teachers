@@ -21,7 +21,7 @@ async def unhandled_message(message: Message):
         source="direct",
     )
     if message.text and message.text.startswith("/"):
-        await db.update_user(message.from_user.id, awaiting_contact=0)
+        await db.update_user(message.from_user.id, awaiting_contact=0, quiz_state=None)
         reply = (
             "Не удалось распознать эту команду. Используйте меню ниже — "
             "там собраны основные разделы The Teachers."

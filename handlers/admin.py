@@ -47,7 +47,7 @@ async def cmd_stats(message: Message):
         f"⚙️ <b>MANAGER_CHAT_ID:</b> {manager_status}",
         debug_line,
         "",
-        "<b>По этапам воронки:</b>",
+        "<b>Текущее состояние пользователей (не последовательная воронка):</b>",
     ]
     for stage_key, label in STAGE_LABELS:
         lines.append(f"• {label}: {by_stage.get(stage_key, 0)}")
@@ -71,13 +71,14 @@ async def cmd_days(message: Message, command: CommandObject):
     rows = await db.get_daily_stats(days)
 
     lines = [f"<b>Новые пользователи по дням (МСК), последние {days} дн.</b>", "<pre>",
-             "Дата        Новых  App  Упр  Заявки"]
+             "Дата        Новых  App  Упр  Заяв. Люди"]
     for r in rows:
-        lines.append(f"{r['day']} {r['new_users']:>6} {r['app_opened']:>4} {r.get('exercised', 0):>4} {r['trials']:>6}")
+        lines.append(f"{r['day']} {r['new_users']:>6} {r['app_opened']:>4} {r.get('exercised', 0):>4} {r['trials']:>5} {r.get('trial_people', 0):>4}")
     lines.append(f"Итого      {sum(r['new_users'] for r in rows):>6} "
-                 f"{sum(r['app_opened'] for r in rows):>4} {sum(r.get('exercised', 0) for r in rows):>4} {sum(r['trials'] for r in rows):>6}")
+                 f"{sum(r['app_opened'] for r in rows):>4} {sum(r.get('exercised', 0) for r in rows):>4} "
+                 f"{sum(r['trials'] for r in rows):>5} {sum(r.get('trial_people', 0) for r in rows):>4}")
     lines.append("</pre>")
-    lines.append("Новых = /start; App = уникальные пользователи, открывшие Learning Space в этот день; Упр = уникальные пользователи, завершившие упражнение в этот день; Заявки = отправленные заявки в этот день.")
+    lines.append("Новых = /start; App = уникальные пользователи, открывшие Learning Space в этот день; Упр = уникальные пользователи, завершившие упражнение в этот день; Заяв. = все отправки контакта (события); Люди = уникальные пользователи, отправившие контакт в этот день.")
     await message.answer("\n".join(lines), parse_mode="HTML")
 
 @router.message(Command("sources"))
@@ -87,7 +88,7 @@ async def cmd_sources(message: Message):
     rows = await db.get_source_stats()
     lines = [
         "<b>Источники трафика · накопительно</b>", "<pre>",
-        "Источник           Люди  App  Цены  CTA  Заявки"
+        "Источник           Люди  App  Цены  CTA  Заяв.Люди"
     ]
     for r in rows:
         lines.append(
@@ -95,13 +96,13 @@ async def cmd_sources(message: Message):
             f"{r['prices_viewed']:>5} {r['trial_clicked']:>4} {r['trial_people']:>6}"
         )
         lines.append(
-            f"  Конв. в App {r['app_rate']:.1f}% · в заявку {r['trial_rate']:.1f}% "
-            f"· App → заявка {r['app_to_trial_rate']:.1f}% · событий заявок {r['trial_events']}"
+            f"  App/база {r['app_rate']:.1f}% · люди с заявкой/база {r['trial_rate']:.1f}% "
+            f"· App → заявка {r['app_to_trial_rate']:.1f}% · отправок контакта {r['trial_events']}"
         )
     lines.append("</pre>")
     activity = await db.get_activity_summary()
     lines.append(f"Активны за 7 дней: {activity['active_7d']} · заблокировали бота: {activity['blocked']}")
-    lines.append("Заявки считаются по событию отправки контакта; источники без метки объединены в «до трекинга».")
+    lines.append("Накопительно за всё время. Люди = уникальные пользователи; CTA = уникальные нажавшие; Заяв.Люди = уникальные отправившие контакт; отправок контакта может быть больше из-за повторных заявок. App → заявка учитывает отправку контакта после открытия Learning Space. Источники без метки объединены в «до трекинга».")
     await message.answer("\n".join(lines), parse_mode="HTML")
 
 @router.message(Command("funnel"))
@@ -148,7 +149,7 @@ async def cmd_funnel(message: Message, command: CommandObject):
     users = cohort.get("users") or 0
     trials = cohort.get("trials") or 0
     conversion = (trials / users * 100) if users else 0
-    lines.append(f"Новая когорта: {users} пользователей · заявок {trials} · конверсия {conversion:.1f}%")
+    lines.append(f"Когорта новых пользователей (регистрация за период): {users} · отправили контакт: {trials} · конверсия в отправку: {conversion:.1f}%")
     lines.append(f"Отписались: {cohort.get('unsubscribed') or 0} · заблокировали: {cohort.get('blocked') or 0}")
 
     objections = await db.get_objection_stats(days)
@@ -196,7 +197,7 @@ async def cmd_funnel(message: Message, command: CommandObject):
         if metric:
             rate = metric["clicked"] / metric["recipients"] * 100 if metric["recipients"] else 0
             lines.append(f"• {label}: получили {metric['recipients']} · CTA {metric['clicked']} ({rate:.1f}%) · заявки {metric['submitted']}")
-    lines.append("\nЛюдей — уникальные пользователи за период; событий — все срабатывания. Конверсии сообщений учитывают CTA/заявки после отправки сообщения, но не доказывают причинную связь.")
+    lines.append("\nТаблица событий: люди — уникальные пользователи, события — все срабатывания. Последовательная воронка учитывает только события в правильном порядке. Когорта — пользователи, зарегистрировавшиеся за период; заявки — уникальные люди, отправившие контакт. Конверсии сообщений учитывают последующие действия до следующего автоматического сообщения, но не доказывают причинную связь.")
     await message.answer("\n".join(lines), parse_mode="HTML")
 
 

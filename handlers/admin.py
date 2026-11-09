@@ -197,6 +197,7 @@ async def cmd_funnel(message: Message, command: CommandObject):
             rate = metric["clicked"] / metric["recipients"] * 100 if metric["recipients"] else 0
             lines.append(f"• {label}: получили {metric['recipients']} · CTA {metric['clicked']} ({rate:.1f}%) · заявки {metric['submitted']}")
     lines.append("\nЛюдей — уникальные пользователи за период; событий — все срабатывания. Конверсии сообщений учитывают CTA/заявки после отправки сообщения, но не доказывают причинную связь.")
+    await message.answer("\n".join(lines), parse_mode="HTML")
 
 
 @router.message(Command("materials_stats"))

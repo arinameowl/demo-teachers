@@ -22,24 +22,26 @@ log = logging.getLogger(__name__)
 
 @router.message(Command("menu"))
 async def cmd_menu(message: Message):
-    await db.update_user(message.from_user.id, awaiting_contact=0)
+    await db.update_user(message.from_user.id, awaiting_contact=0, quiz_state=None)
     await message.answer("The Teachers · Learning Space\n\nВыберите, с чего хотите продолжить:", reply_markup=kb.main_menu_keyboard())
 
 
 @router.callback_query(F.data == "menu:home")
 async def cb_menu_home(callback: CallbackQuery):
-    await db.update_user(callback.from_user.id, awaiting_contact=0)
+    await db.update_user(callback.from_user.id, awaiting_contact=0, quiz_state=None)
     await callback.message.answer("The Teachers · Learning Space\n\nВыберите, с чего хотите продолжить:", reply_markup=kb.main_menu_keyboard())
     await callback.answer()
 
 
 @router.message(Command("quiz"))
 async def cmd_quiz(message: Message):
+    await db.update_user(message.from_user.id, awaiting_contact=0, quiz_state=None)
     await message.answer(texts.LEVEL_CHOICE_QUESTION, reply_markup=kb.level_choice_keyboard())
 
 
 @router.callback_query(F.data == "menu:quiz")
 async def cb_menu_quiz(callback: CallbackQuery):
+    await db.update_user(callback.from_user.id, awaiting_contact=0, quiz_state=None)
     await callback.message.edit_text(texts.LEVEL_CHOICE_QUESTION, reply_markup=kb.level_choice_keyboard())
     await callback.answer()
 
@@ -62,7 +64,7 @@ async def _ask_trial_contact(target: Message, user_id: int):
             reply_markup=kb.trial_submitted_keyboard(),
         )
         return
-    await db.update_user(user_id, awaiting_contact=1)
+    await db.update_user(user_id, awaiting_contact=1, quiz_state=None)
     await db.log_funnel_event(user_id, "trial_cta_clicked")
     await target.answer(texts.TRIAL_ASK_CONTACT, parse_mode="HTML", reply_markup=kb.contact_request_keyboard())
 
@@ -214,7 +216,7 @@ async def cb_cancel_submitted_trial(callback: CallbackQuery, bot: Bot):
 
 async def _show_prices(target: Message, user_id: int):
     # Просмотр цен — самостоятельное событие, а не заявка. Снимаем ожидание контакта.
-    await db.update_user(user_id, awaiting_contact=0)
+    await db.update_user(user_id, awaiting_contact=0, quiz_state=None)
     await db.log_funnel_event(user_id, "prices_viewed")
     await target.answer(
         texts.PRICES_FALLBACK,
@@ -239,7 +241,7 @@ async def cb_menu_prices(callback: CallbackQuery):
 
 @router.callback_query(F.data == "menu:school")
 async def cb_menu_school(callback: CallbackQuery):
-    await db.update_user(callback.from_user.id, awaiting_contact=0)
+    await db.update_user(callback.from_user.id, awaiting_contact=0, quiz_state=None)
     await db.log_funnel_event(callback.from_user.id, "school_info_viewed")
     await callback.message.answer(texts.SCHOOL_INTRO, parse_mode="HTML", reply_markup=kb.school_keyboard())
     await callback.answer()
@@ -247,7 +249,7 @@ async def cb_menu_school(callback: CallbackQuery):
 
 @router.callback_query(F.data == "menu:method")
 async def cb_menu_method(callback: CallbackQuery):
-    await db.update_user(callback.from_user.id, awaiting_contact=0)
+    await db.update_user(callback.from_user.id, awaiting_contact=0, quiz_state=None)
     await db.log_funnel_event(callback.from_user.id, "method_viewed")
     await callback.message.answer(
         texts.SCHOOL_METHOD,
@@ -259,7 +261,7 @@ async def cb_menu_method(callback: CallbackQuery):
 
 @router.callback_query(F.data == "menu:teachers")
 async def cb_menu_teachers(callback: CallbackQuery):
-    await db.update_user(callback.from_user.id, awaiting_contact=0)
+    await db.update_user(callback.from_user.id, awaiting_contact=0, quiz_state=None)
     await db.log_funnel_event(callback.from_user.id, "teachers_viewed")
     await callback.message.answer(
         texts.SCHOOL_TEACHERS_INTRO + "\n\n" + texts.SCHOOL_TEACHERS,
@@ -272,7 +274,7 @@ async def cb_menu_teachers(callback: CallbackQuery):
 @router.callback_query(F.data == "menu:map_example")
 async def cb_menu_map_example(callback: CallbackQuery):
     await callback.answer()
-    await db.update_user(callback.from_user.id, awaiting_contact=0)
+    await db.update_user(callback.from_user.id, awaiting_contact=0, quiz_state=None)
     await db.log_funnel_event(callback.from_user.id, "map_example_viewed")
     image_path = Path(__file__).resolve().parent.parent / "assets" / "learning_map_example.jpg"
     try:
@@ -318,7 +320,7 @@ async def cb_objection_answer(callback: CallbackQuery):
 # ---------- Контакт с человеком ----------
 
 async def _show_contact(target: Message, user_id: int):
-    await db.update_user(user_id, awaiting_contact=0)
+    await db.update_user(user_id, awaiting_contact=0, quiz_state=None)
     await db.log_funnel_event(user_id, "manager_contact_requested")
     await target.answer(texts.CONTACT_TEMPLATE.format(username=config.MANAGER_USERNAME))
 

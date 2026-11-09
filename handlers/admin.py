@@ -167,13 +167,27 @@ async def cmd_funnel(message: Message, command: CommandObject):
             label = objection_labels.get(item.get("objection"), item.get("objection") or "Не указано")
             lines.append(f"• {label}: {item['users']} чел. · {item['events']} выборов")
 
-    # Конверсии соседних этапов считаем по уникальным пользователям периода.
-    lines += ["", "<b>Последовательная конверсия между этапами:</b>"]
-    for step in data["steps"]:
-        source_users = step["from"]
-        target_users = step["to"]
-        rate = target_users / source_users * 100 if source_users else 0
-        lines.append(f"• {step['label']}: {target_users}/{source_users} · {rate:.1f}%")
+    def append_conversion_section(title, steps):
+        lines.extend(["", f"<b>{title}</b>"])
+        for step in steps:
+            source_users = step["from"]
+            target_users = step["to"]
+            rate = target_users / source_users * 100 if source_users else 0
+            lines.append(f"• {step['label']}: {target_users}/{source_users} · {rate:.1f}%")
+
+    append_conversion_section("Воронка бота · последовательный путь", data["bot_steps"])
+    append_conversion_section("Learning Space · последовательный путь", data["learning_steps"])
+    append_conversion_section("Пробный урок · из любых точек входа", data["trial_steps"])
+
+    coverage = data["coverage"]
+    lines += [
+        "",
+        "<b>Покрытие трекингом новых регистраций:</b>",
+        f"Регистраций за период: {coverage['registered']}",
+        f"Есть событие /start: {coverage['with_start_event']} ({coverage['start_rate']:.1f}%)",
+        f"Есть любое событие после регистрации: {coverage['with_any_event']} ({coverage['any_event_rate']:.1f}%)",
+        f"Созданы через Mini App: {coverage['miniapp_created']} · без событий после регистрации: {coverage['without_any_event']}",
+    ]
 
     material_summary = await db.get_material_engagement_summary(days)
     lines += [

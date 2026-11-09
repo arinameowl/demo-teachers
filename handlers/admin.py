@@ -85,14 +85,24 @@ async def cmd_sources(message: Message):
     if message.from_user.id not in config.ADMIN_IDS:
         return
     rows = await db.get_source_stats()
-    lines = ["<b>Источники трафика</b>", "<pre>", "Источник              Всего App  Цены Проб"]
+    lines = [
+        "<b>Источники трафика · накопительно</b>", "<pre>",
+        "Источник           Люди  App  Цены  CTA  Заявки"
+    ]
     for r in rows:
-        lines.append(f"{r['src'][:20]:<20} {r['users']:>6} {r['app_opened']:>3} {r.get('prices_viewed', 0):>4} {r['trials']:>5}")
+        lines.append(
+            f"{r['src'][:18]:<18} {r['users']:>5} {r['app_opened']:>4} "
+            f"{r['prices_viewed']:>5} {r['trial_clicked']:>4} {r['trial_people']:>6}"
+        )
+        lines.append(
+            f"  Конв. в App {r['app_rate']:.1f}% · в заявку {r['trial_rate']:.1f}% "
+            f"· App → заявка {r['app_to_trial_rate']:.1f}% · событий заявок {r['trial_events']}"
+        )
     lines.append("</pre>")
-    a = await db.get_activity_summary()
-    lines.append(f"Активны за 7 дней: {a['active_7d']}\nЗаблокировали бота: {a['blocked']}")
+    activity = await db.get_activity_summary()
+    lines.append(f"Активны за 7 дней: {activity['active_7d']} · заблокировали бота: {activity['blocked']}")
+    lines.append("Заявки считаются по событию отправки контакта; источники без метки объединены в «до трекинга».")
     await message.answer("\n".join(lines), parse_mode="HTML")
-
 
 @router.message(Command("funnel"))
 async def cmd_funnel(message: Message, command: CommandObject):
@@ -156,8 +166,45 @@ async def cmd_funnel(message: Message, command: CommandObject):
             label = objection_labels.get(item.get("objection"), item.get("objection") or "Не указано")
             lines.append(f"• {label}: {item['users']} чел. · {item['events']} выборов")
 
-    lines.append("\nПоказатели — уникальные пользователи за период; повторные открытия не увеличивают число людей.")
-    await message.answer("\n".join(lines), parse_mode="HTML")
+    # Конверсии соседних этапов считаем по уникальным пользователям периода.
+    funnel_steps = [
+        ("start", "goal_selected", "Запуск → цель"),
+        ("goal_selected", "level_selected", "Цель → уровень"),
+        ("level_selected", "learning_space_opened", "Уровень → Learning Space"),
+        ("learning_space_opened", "material_opened", "Learning Space → материал"),
+        ("material_opened", "trial_cta_clicked", "Материал → CTA пробного"),
+        ("trial_cta_clicked", "trial_contact_submitted", "CTA → заявка"),
+    ]
+    lines += ["", "<b>Конверсия между этапами:</b>"]
+    for source_key, target_key, label in funnel_steps:
+        source_users = events.get(source_key, {}).get("users", 0)
+        target_users = events.get(target_key, {}).get("users", 0)
+        rate = target_users / source_users * 100 if source_users else 0
+        lines.append(f"• {label}: {target_users}/{source_users} · {rate:.1f}%")
+
+    material_summary = await db.get_material_engagement_summary(days)
+    lines += [
+        "", "<b>Learning Space:</b>",
+        f"Открыли материалы: {material_summary['opened']} · начали упражнения: {material_summary['started']}",
+        f"Завершили/отправили ответы: {material_summary['completed']}",
+        f"Материал → упражнение: {material_summary['open_to_start']:.1f}% · начало → завершение: {material_summary['start_to_complete']:.1f}%",
+    ]
+
+    notification_stats = await db.get_notification_stats(days)
+    lines += ["", "<b>Автоматические сообщения и конверсия:</b>"]
+    notification_labels = {
+        "nurture_day1_sent": "Прогрев Day 1", "nurture_day2_sent": "Прогрев Day 2",
+        "nurture_day3_sent": "Прогрев Day 3", "learning_space_feedback_sent": "Дожим после Learning Space",
+        "trial_recovery_1_sent": "Recovery №1", "trial_recovery_2_sent": "Recovery №2",
+        "followup_no_activity_sent": "Нет активности", "followup_after_exercise_sent": "После упражнения",
+        "followup_after_prices_sent": "После просмотра цен",
+    }
+    for key, label in notification_labels.items():
+        metric = notification_stats["conversion"].get(key)
+        if metric:
+            rate = metric["clicked"] / metric["recipients"] * 100 if metric["recipients"] else 0
+            lines.append(f"• {label}: получили {metric['recipients']} · CTA {metric['clicked']} ({rate:.1f}%) · заявки {metric['submitted']}")
+    lines.append("\nЛюдей — уникальные пользователи за период; событий — все срабатывания. Конверсии сообщений учитывают CTA/заявки после отправки сообщения, но не доказывают причинную связь.")
 
 
 @router.message(Command("materials_stats"))

@@ -228,6 +228,12 @@ async def users_due_for_segment_followup(source_event: str, sent_event: str, del
                 AND datetime(sent.created_at) >= datetime(source.created_at)
           )
           AND NOT EXISTS (
+              SELECT 1 FROM funnel_events feedback
+              WHERE feedback.user_id = u.user_id
+                AND feedback.event_name = 'learning_space_feedback_sent'
+                AND datetime(feedback.created_at) >= datetime(source.created_at)
+          )
+          AND NOT EXISTS (
               SELECT 1 FROM funnel_events recent_followup
               WHERE recent_followup.user_id = u.user_id
                 AND recent_followup.event_name IN (

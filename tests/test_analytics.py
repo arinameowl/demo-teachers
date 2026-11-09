@@ -79,6 +79,24 @@ class AnalyticsQueriesTest(unittest.IsolatedAsyncioTestCase):
             [(2, 2), (2, 2), (2, 2), (2, 2), (2, 1), (1, 1)],
         )
 
+    async def test_funnel_uses_next_valid_event_not_only_first_event_of_each_type(self):
+        await self.add_user(3)
+        # Earlier out-of-order events must not hide a later valid sequence.
+        events = [
+            ("goal_selected", -2), ("level_selected", -1),
+            ("start", 0), ("goal_selected", 1),
+            ("level_selected", 2), ("learning_space_opened", 3),
+            ("material_opened", 4), ("trial_cta_clicked", 5),
+            ("trial_contact_submitted", 6),
+        ]
+        for name, minute in events:
+            await self.add_event(3, name, minute)
+        result = await db.get_funnel_conversion(30)
+        self.assertEqual(
+            [(step["from"], step["to"]) for step in result["steps"]],
+            [(3, 3), (3, 3), (3, 3), (3, 3), (2, 2), (2, 2)],
+        )
+
     async def test_material_engagement_requires_open_before_start_and_completion(self):
         await self.add_user(1)
         await self.add_event(1, "material_opened", 0)

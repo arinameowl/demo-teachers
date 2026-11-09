@@ -662,34 +662,56 @@ async def get_funnel_conversion(days: int = 30) -> dict:
 
 
 async def get_material_engagement_summary(days: int = 30) -> dict:
-    """Конверсия в изучение материалов по последовательности событий пользователя."""
+    """Конверсия в изучение материалов: каждое следующее событие должно идти после предыдущего."""
     cutoff = (dt.datetime.utcnow() - dt.timedelta(days=days)).isoformat()
     async with aiosqlite.connect(DB_PATH) as db:
         db.row_factory = aiosqlite.Row
         cur = await db.execute(
             """
-            WITH per_user AS (
-                SELECT user_id,
-                       MIN(CASE WHEN event_name IN ('material_opened','book_opened','media_opened') THEN created_at END) AS opened_at,
-                       MIN(CASE WHEN event_name='exercise_started' THEN created_at END) AS started_at,
-                       MIN(CASE WHEN event_name IN ('exercise_submitted','miniapp_exercise_completed') THEN created_at END) AS completed_at
+            WITH opens AS (
+                SELECT user_id, MIN(created_at) AS opened_at
                 FROM funnel_events
                 WHERE datetime(created_at)>=datetime(?)
+                  AND event_name IN ('material_opened','book_opened','media_opened')
                 GROUP BY user_id
+            ),
+            starts AS (
+                SELECT o.user_id, o.opened_at,
+                       MIN(e.created_at) AS started_at
+                FROM opens o
+                LEFT JOIN funnel_events e
+                  ON e.user_id=o.user_id
+                 AND e.event_name='exercise_started'
+                 AND datetime(e.created_at)>=datetime(o.opened_at)
+                 AND datetime(e.created_at)>=datetime(?)
+                GROUP BY o.user_id, o.opened_at
+            ),
+            completions AS (
+                SELECT s.user_id, s.opened_at, s.started_at,
+                       MIN(e.created_at) AS completed_at
+                FROM starts s
+                LEFT JOIN funnel_events e
+                  ON e.user_id=s.user_id
+                 AND e.event_name IN ('exercise_submitted','miniapp_exercise_completed')
+                 AND s.started_at IS NOT NULL
+                 AND datetime(e.created_at)>=datetime(s.started_at)
+                 AND datetime(e.created_at)>=datetime(?)
+                GROUP BY s.user_id, s.opened_at, s.started_at
             )
             SELECT
-              SUM(CASE WHEN opened_at IS NOT NULL THEN 1 ELSE 0 END) AS opened,
-              SUM(CASE WHEN opened_at IS NOT NULL AND started_at>=opened_at THEN 1 ELSE 0 END) AS started,
-              SUM(CASE WHEN opened_at IS NOT NULL AND started_at>=opened_at
-                        AND completed_at>=started_at THEN 1 ELSE 0 END) AS completed
-            FROM per_user
-            """, (cutoff,)
+              COUNT(*) AS opened,
+              SUM(CASE WHEN started_at IS NOT NULL THEN 1 ELSE 0 END) AS started,
+              SUM(CASE WHEN completed_at IS NOT NULL THEN 1 ELSE 0 END) AS completed
+            FROM completions
+            """,
+            (cutoff, cutoff, cutoff),
         )
         row = dict(await cur.fetchone())
     row = {key: value or 0 for key, value in row.items()}
     row["open_to_start"] = row["started"] / row["opened"] * 100 if row["opened"] else 0
     row["start_to_complete"] = row["completed"] / row["started"] * 100 if row["started"] else 0
     return row
+
 async def get_objection_stats(days: int = 30) -> list[dict]:
     """Count objection selections by key for the requested period."""
     cutoff = (dt.datetime.utcnow() - dt.timedelta(days=days)).isoformat()

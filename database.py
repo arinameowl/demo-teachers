@@ -588,7 +588,7 @@ async def get_activity_summary() -> dict:
 # ---------- Расширенная аналитика воронки ----------
 
 async def get_funnel_conversion(days: int = 30) -> dict:
-    """События за период и последовательная конверсия по уникальным пользователям."""
+    """События периода и строгий путь пользователя: для каждого шага ищется первое событие после предыдущего."""
     cutoff = (dt.datetime.utcnow() - dt.timedelta(days=days)).isoformat()
     async with aiosqlite.connect(DB_PATH) as conn:
         conn.row_factory = aiosqlite.Row
@@ -601,38 +601,70 @@ async def get_funnel_conversion(days: int = 30) -> dict:
 
         cur = await conn.execute(
             """
-            WITH per_user AS (
-                SELECT user_id,
-                       MIN(CASE WHEN event_name IN ('start','bot_started') THEN created_at END) AS t_start,
-                       MIN(CASE WHEN event_name='goal_selected' THEN created_at END) AS t_goal,
-                       MIN(CASE WHEN event_name='level_selected' THEN created_at END) AS t_level,
-                       MIN(CASE WHEN event_name='learning_space_opened' THEN created_at END) AS t_app,
-                       MIN(CASE WHEN event_name IN ('material_opened','book_opened','media_opened') THEN created_at END) AS t_material,
-                       MIN(CASE WHEN event_name='trial_cta_clicked' THEN created_at END) AS t_cta,
-                       MIN(CASE WHEN event_name='trial_contact_submitted' THEN created_at END) AS t_trial
+            WITH starts AS (
+                SELECT user_id, MIN(created_at) AS t_start
                 FROM funnel_events
                 WHERE datetime(created_at)>=datetime(?)
+                  AND event_name IN ('start','bot_started')
                 GROUP BY user_id
             ),
-            ordered AS (
-                SELECT *,
-                       CASE WHEN t_start IS NOT NULL AND t_goal>=t_start THEN t_goal END AS goal_after_start,
-                       CASE WHEN t_start IS NOT NULL AND t_goal>=t_start AND t_level>=t_goal THEN t_level END AS level_after_goal,
-                       CASE WHEN t_start IS NOT NULL AND t_goal>=t_start AND t_level>=t_goal AND t_app>=t_level THEN t_app END AS app_after_level,
-                       CASE WHEN t_start IS NOT NULL AND t_goal>=t_start AND t_level>=t_goal AND t_app>=t_level AND t_material>=t_app THEN t_material END AS material_after_app,
-                       CASE WHEN t_start IS NOT NULL AND t_goal>=t_start AND t_level>=t_goal AND t_app>=t_level AND t_material>=t_app AND t_cta>=t_material THEN t_cta END AS cta_after_material,
-                       CASE WHEN t_start IS NOT NULL AND t_goal>=t_start AND t_level>=t_goal AND t_app>=t_level AND t_material>=t_app AND t_cta>=t_material AND t_trial>=t_cta THEN t_trial END AS trial_after_cta
-                FROM per_user
+            goals AS (
+                SELECT s.*,
+                       (SELECT MIN(e.created_at) FROM funnel_events e
+                        WHERE e.user_id=s.user_id AND e.event_name='goal_selected'
+                          AND datetime(e.created_at)>=datetime(s.t_start)) AS t_goal
+                FROM starts s
+            ),
+            levels AS (
+                SELECT g.*,
+                       (SELECT MIN(e.created_at) FROM funnel_events e
+                        WHERE e.user_id=g.user_id AND e.event_name='level_selected'
+                          AND g.t_goal IS NOT NULL
+                          AND datetime(e.created_at)>=datetime(g.t_goal)) AS t_level
+                FROM goals g
+            ),
+            apps AS (
+                SELECT l.*,
+                       (SELECT MIN(e.created_at) FROM funnel_events e
+                        WHERE e.user_id=l.user_id AND e.event_name='learning_space_opened'
+                          AND l.t_level IS NOT NULL
+                          AND datetime(e.created_at)>=datetime(l.t_level)) AS t_app
+                FROM levels l
+            ),
+            materials AS (
+                SELECT a.*,
+                       (SELECT MIN(e.created_at) FROM funnel_events e
+                        WHERE e.user_id=a.user_id
+                          AND e.event_name IN ('material_opened','book_opened','media_opened')
+                          AND a.t_app IS NOT NULL
+                          AND datetime(e.created_at)>=datetime(a.t_app)) AS t_material
+                FROM apps a
+            ),
+            ctas AS (
+                SELECT m.*,
+                       (SELECT MIN(e.created_at) FROM funnel_events e
+                        WHERE e.user_id=m.user_id AND e.event_name='trial_cta_clicked'
+                          AND m.t_material IS NOT NULL
+                          AND datetime(e.created_at)>=datetime(m.t_material)) AS t_cta
+                FROM materials m
+            ),
+            trials AS (
+                SELECT c.*,
+                       (SELECT MIN(e.created_at) FROM funnel_events e
+                        WHERE e.user_id=c.user_id AND e.event_name='trial_contact_submitted'
+                          AND c.t_cta IS NOT NULL
+                          AND datetime(e.created_at)>=datetime(c.t_cta)) AS t_trial
+                FROM ctas c
             )
             SELECT
-              SUM(CASE WHEN t_start IS NOT NULL THEN 1 ELSE 0 END) AS starts,
-              SUM(CASE WHEN goal_after_start IS NOT NULL THEN 1 ELSE 0 END) AS goals,
-              SUM(CASE WHEN level_after_goal IS NOT NULL THEN 1 ELSE 0 END) AS levels,
-              SUM(CASE WHEN app_after_level IS NOT NULL THEN 1 ELSE 0 END) AS apps,
-              SUM(CASE WHEN material_after_app IS NOT NULL THEN 1 ELSE 0 END) AS materials,
-              SUM(CASE WHEN cta_after_material IS NOT NULL THEN 1 ELSE 0 END) AS ctas,
-              SUM(CASE WHEN trial_after_cta IS NOT NULL THEN 1 ELSE 0 END) AS trials
-            FROM ordered
+              COUNT(*) AS starts,
+              SUM(CASE WHEN t_goal IS NOT NULL THEN 1 ELSE 0 END) AS goals,
+              SUM(CASE WHEN t_level IS NOT NULL THEN 1 ELSE 0 END) AS levels,
+              SUM(CASE WHEN t_app IS NOT NULL THEN 1 ELSE 0 END) AS apps,
+              SUM(CASE WHEN t_material IS NOT NULL THEN 1 ELSE 0 END) AS materials,
+              SUM(CASE WHEN t_cta IS NOT NULL THEN 1 ELSE 0 END) AS ctas,
+              SUM(CASE WHEN t_trial IS NOT NULL THEN 1 ELSE 0 END) AS trials
+            FROM trials
             """,
             (cutoff,),
         )

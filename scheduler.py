@@ -18,7 +18,7 @@ log = logging.getLogger(__name__)
 
 def _is_quiet_hours() -> bool:
     hour = datetime.now(ZoneInfo("Europe/Moscow")).hour
-    return hour < 10 or hour >= 20
+    return hour < 9 or hour >= 23
 
 
 async def _send_segment(bot: Bot, source_event: str, sent_event: str, delay: float, text: str,
@@ -107,7 +107,7 @@ async def _send_trial_recovery(bot: Bot) -> None:
 
 async def _tick(bot: Bot) -> None:
     if _is_quiet_hours():
-        log.info("Проверка воронки пропущена: тихие часы (20:00–10:00 МСК)")
+        log.info("Проверка воронки пропущена: тихие часы (23:00–09:00 МСК)")
         return
 
     jobs = (

@@ -153,7 +153,24 @@ async def index():
 
 @app.get("/health")
 async def health():
-    return {"status": "ok"}
+    """Readiness probe: report healthy only when the persistent DB is reachable."""
+    try:
+        async with aiosqlite.connect(config.DB_PATH, timeout=3) as conn:
+            cur = await conn.execute("SELECT 1")
+            await cur.fetchone()
+            cur = await conn.execute(
+                "SELECT COUNT(*) FROM sqlite_master WHERE type='table' "
+                "AND name IN ('users', 'funnel_events', 'learning_progress')"
+            )
+            required_tables = (await cur.fetchone())[0]
+        if required_tables != 3:
+            raise HTTPException(status_code=503, detail="Database schema is not ready")
+    except HTTPException:
+        raise
+    except Exception:
+        log.exception("Readiness check failed: database unavailable")
+        raise HTTPException(status_code=503, detail="Database unavailable")
+    return {"status": "ok", "database": "ok"}
 
 
 @app.get("/api/app/bootstrap")

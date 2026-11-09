@@ -49,7 +49,7 @@ async def _send_learning_space_feedback(bot: Bot) -> None:
         try:
             await bot.send_message(
                 user_id,
-                texts.LEARNING_SPACE_FEEDBACK,
+                texts.LEARNING_SPACE_TRIAL_FOLLOWUP,
                 reply_markup=kb.contextual_followup_keyboard(),
             )
             await db.log_funnel_event(user_id, "learning_space_feedback_sent")

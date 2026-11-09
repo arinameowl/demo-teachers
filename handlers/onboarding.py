@@ -73,6 +73,7 @@ async def choose_goal(callback: CallbackQuery, state: FSMContext):
 @router.callback_query(F.data == "levelmode:manual")
 async def level_manual(callback: CallbackQuery, state: FSMContext):
     await state.clear()
+    await db.clear_quiz_state(callback.from_user.id)
     await callback.message.edit_text(texts.LEVEL_MANUAL_QUESTION, reply_markup=kb.level_manual_keyboard())
     await callback.answer()
 

@@ -161,11 +161,6 @@ async def save_trial_contact(message: Message, bot: Bot):
     await sheets.append_trial_row(
         name=user.full_name,
         username=user.username,
-        user_id=user.id,
-        contact=contact_text,
-        level=row.get("level"),
-        goal=row.get("goal"),
-        source=row.get("source"),
     )
  
  

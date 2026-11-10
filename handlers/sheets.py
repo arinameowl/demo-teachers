@@ -1,16 +1,14 @@
 """
 Дублирование заявок на пробный урок в Google-таблицу.
 
-Работает через веб-приложение Google Apps Script (без сервисных аккаунтов и
-дополнительных библиотек: aiohttp уже входит в зависимости aiogram).
+Порядок столбцов фиксирован под таблицу заявок:
+A — дата, B — источник ("Бот"), C — имя, D — Telegram username,
+E — язык (пока пусто до внедрения выбора языка), F-H — данные пробного урока,
+I — статус ("В работе"), J — комментарий.
 
 Настройки — переменные окружения (в Амвере):
   SHEETS_WEBHOOK_URL — адрес веб-приложения (заканчивается на /exec)
   SHEETS_SECRET      — тот же пароль, что указан в скрипте таблицы
-
-Если SHEETS_WEBHOOK_URL не задан, функция просто ничего не делает.
-Любая ошибка только логируется: заявка всё равно сохраняется в базе
-и уходит менеджеру.
 """
 
 import datetime as dt
@@ -18,8 +16,6 @@ import logging
 import os
 
 import aiohttp
-
-import texts
 
 log = logging.getLogger(__name__)
 
@@ -31,40 +27,39 @@ def _msk_now() -> str:
     return (dt.datetime.utcnow() + dt.timedelta(hours=3)).strftime("%d.%m.%Y %H:%M")
 
 
-async def append_trial_row(
-    *,
-    name: str,
-    username: str | None,
-    user_id: int,
-    contact: str,
-    level: str | None,
-    goal: str | None,
-    source: str | None,
-) -> bool:
-    """Добавляет новую строку в таблицу. Возвращает True, если запись прошла."""
+def _build_trial_row(*, name: str, username: str | None) -> list[str]:
+    """Формирует строку строго по колонкам A:J текущей Google-таблицы."""
+    return [
+        _msk_now(),                         # A: Дата
+        "Бот",                              # B: Источник
+        name or "—",                        # C: Имя
+        f"@{username}" if username else "—",# D: Ник ТГ
+        "",                                 # E: Язык — подключим после выбора языка в боте
+        "",                                 # F: Пробный
+        "",                                 # G: Дата пробного
+        "",                                 # H: Преподаватель
+        "В работе",                         # I: Статус
+        "",                                 # J: Комментарий
+    ]
+
+
+async def append_trial_row(*, name: str, username: str | None) -> bool:
+    """Добавляет заявку в Google-таблицу. Возвращает True, если запись прошла."""
     if not WEBHOOK_URL:
+        log.warning("Google-таблица не настроена: SHEETS_WEBHOOK_URL не задан")
         return False
 
-    row = [
-        _msk_now(),
-        name or "—",
-        f"@{username}" if username else "—",
-        str(user_id),
-        contact or "—",
-        level or "—",
-        texts.GOAL_LABELS.get(goal, "—") if goal else "—",
-        source or "—",
-    ]
-    payload = {"secret": SECRET, "row": row}
+    payload = {"secret": SECRET, "row": _build_trial_row(name=name, username=username)}
 
     try:
         timeout = aiohttp.ClientTimeout(total=20)
         async with aiohttp.ClientSession(timeout=timeout) as session:
             async with session.post(WEBHOOK_URL, json=payload) as resp:
                 body = await resp.text()
+                status = resp.status
         compact = body.replace(" ", "")
-        if resp.status != 200 or '"ok":true' not in compact:
-            log.error("Google-таблица не приняла заявку: HTTP %s, ответ: %s", resp.status, body[:300])
+        if status != 200 or '"ok":true' not in compact:
+            log.error("Google-таблица не приняла заявку: HTTP %s, ответ: %s", status, body[:300])
             return False
         return True
     except Exception:

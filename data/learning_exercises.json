@@ -38,7 +38,7 @@
         "named"
       ],
       "answer": 0,
-      "explanation": "В конструкции “My name is…” используется существительное name: так представляются по-английски."
+      "explanation": "В конструкции “My name is…” name — существительное «имя». Так представляются по-английски: “My name is Julie” — «Меня зовут Джули»."
     },
     {
       "type": "choice",
@@ -48,7 +48,7 @@
         "are"
       ],
       "answer": 1,
-      "explanation": "Friends — существительное во множественном числе, поэтому с ним используется are."
+      "explanation": "Friends — существительное во множественном числе, поэтому используется are: “My friends are…”. В единственном числе было бы “My friend is…”."
     },
     {
       "type": "choice",
@@ -58,7 +58,7 @@
         "have"
       ],
       "answer": 1,
-      "explanation": "После вспомогательного do в отрицании don’t ставится начальная форма глагола: have, а не has."
+      "explanation": "После do not / don’t используется начальная форма глагола. Поэтому правильно “I don’t have”, а не “I don’t has”: окончание -s здесь не ставится."
     }
   ],
   "en_A2_podcast": [
@@ -129,13 +129,14 @@
     },
     {
       "type": "choice",
-      "prompt": "When do you usually pack your bag?",
+      "prompt": "What does “pack my bag before leaving home” mean?",
       "options": [
-        "Before leaving home",
-        "Before going to sleep"
+        "Put everything I need into my bag before I go out",
+        "Take everything out of my bag",
+        "Buy a new bag before going out"
       ],
       "answer": 0,
-      "explanation": "В контексте утренних сборов сумку обычно собирают до выхода из дома."
+      "explanation": "Pack my bag означает положить в сумку все необходимые вещи. Это выражение часто используют, когда собираются выйти из дома, пойти на занятия или отправиться в поездку."
     },
     {
       "type": "choice",
@@ -145,7 +146,7 @@
         "Looking clean and neat"
       ],
       "answer": 1,
-      "explanation": "Tidy and presentable означает «опрятный и аккуратный»: речь о внешнем виде."
+      "explanation": "Tidy означает «аккуратный, опрятный», а presentable — «имеющий опрятный и уместный внешний вид». Вместе tidy and presentable описывает человека, который выглядит чисто и аккуратно."
     }
   ],
   "en_B1_podcast": [
@@ -253,7 +254,7 @@
       "accepted": [
         "blocked"
       ],
-      "explanation": "Blocked означает «заблокирована»."
+      "explanation": "Blocked — форма причастия прошедшего времени (Past Participle) глагола block — «блокировать». В конструкции was + третья форма глагола используется Passive Voice: “Your card was blocked” — «Ваша карта была заблокирована»."
     },
     {
       "type": "text",
@@ -263,7 +264,7 @@
         "balance",
         "account balance"
       ],
-      "explanation": "Balance — остаток или сумма денег на счёте."
+      "explanation": "Balance — сумма денег, которая находится на банковском счёте в данный момент. Account balance означает «остаток на счёте». Например: “Your account balance is £500” — «На вашем счёте 500 фунтов»."
     },
     {
       "type": "text",
@@ -272,7 +273,7 @@
       "accepted": [
         "fee"
       ],
-      "explanation": "Fee — плата или комиссия за услугу."
+      "explanation": "Fee — плата за услугу или операцию. В диалоге replacement fee — комиссия за выпуск карты взамен старой. Fee — именно плата за услугу, а не стоимость самого товара."
     }
   ],
   "en_A1_series": [
@@ -342,7 +343,7 @@
         "A new museum"
       ],
       "answer": 1,
-      "explanation": "В аудио Анна рассказывает, что во время прогулки увидела большой фестиваль. Вопрос проверяет понимание основной детали сюжета."
+      "explanation": "Анна рассказывает: “Then, I saw something! It was a festival”. Во время прогулки она случайно обнаружила фестиваль. Discover в вопросе означает «обнаружить», а saw в ответе Анны — «увидела»."
     },
     {
       "type": "choice",
@@ -353,7 +354,7 @@
         "The Basque Art Festival"
       ],
       "answer": 0,
-      "explanation": "В эпизоде Анна прямо называет Smithsonian Folklife Festival. Это официальное название события."
+      "explanation": "Анна называет событие Smithsonian Folklife Festival. Обратите внимание на конструкцию “What was the name…?” — так спрашивают о названии чего-либо в прошедшем времени."
     },
     {
       "type": "choice",
@@ -364,7 +365,7 @@
         "Japanese culture"
       ],
       "answer": 1,
-      "explanation": "В рассказе говорится о баскской культуре. Обратите внимание на формулировку “one of the cultures was the Basque culture”."
+      "explanation": "В аудио Анна говорит: “This year one of the cultures was the Basque culture”. Basque — прилагательное «баскский», а culture — «культура». Вместе Basque culture означает «баскская культура»."
     },
     {
       "type": "choice",
@@ -375,7 +376,7 @@
         "A kind of handball"
       ],
       "answer": 2,
-      "explanation": "Анна объясняет, что pilota — игра с небольшим мячом, разновидность handball. Здесь ответ дан в самом диалоге."
+      "explanation": "Анна описывает pilota как игру с небольшим мячом, в которую играют руками. Она говорит: “It’s a kind of handball”. Конструкция “a kind of” используется, чтобы объяснить, к какому типу относится предмет или явление."
     },
     {
       "type": "choice",
@@ -386,7 +387,7 @@
         "She played a football match."
       ],
       "answer": 0,
-      "explanation": "Анна говорит: “At the festival, I danced a traditional Basque dance”. После рассказа о прошедшем событии используется Past Simple: danced."
+      "explanation": "Анна говорит: “At the festival, I danced a traditional Basque dance”. Danced — форма Past Simple глагола dance. У правильных глаголов прошедшее время обычно образуется добавлением окончания -ed: dance → danced."
     }
   ],
   "en_B1_series": [
@@ -421,7 +422,7 @@
         "Tall, with blond hair and glasses"
       ],
       "answer": 1,
-      "explanation": "В диалоге перечислены детали внешности: tall, well-built, brown eyes и a shaved head. В английском описании внешности прилагательные обычно ставятся перед существительным."
+      "explanation": "Tall и well-built описывают рост и телосложение. Brown eyes и a shaved head — конструкции для описания глаз и прически. Описывая человека, можно последовательно назвать его рост (height), телосложение (build), глаза (eyes) и волосы (hair)."
     },
     {
       "type": "choice",
@@ -432,7 +433,7 @@
         "Angry and impatient"
       ],
       "answer": 0,
-      "explanation": "Helen говорит, что Michal is quite shy. Здесь вопрос What is he like? спрашивает о характере, а не о внешности."
+      "explanation": "Helen говорит, что Michal is quite shy — «довольно застенчивый». Важно различать два вопроса: “What is he like?” спрашивает о характере, а “What does he look like?” — о внешности."
     },
     {
       "type": "choice",
@@ -443,7 +444,7 @@
         "He is crying."
       ],
       "answer": 2,
-      "explanation": "В конце сцены они видят, что Michal плачет, и задаются вопросом, что случилось. Crying — форма Present Continuous: действие происходит в момент наблюдения."
+      "explanation": "В конце сцены они видят, что Michal плачет. Crying — форма с окончанием -ing; в сочетании “is crying” это Present Continuous, который описывает действие, происходящее в момент наблюдения."
     }
   ]
 }

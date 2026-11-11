@@ -301,7 +301,7 @@
   $('quiz-submit').addEventListener('click',async()=>{
     if(!activeQuiz)return;
     const qs=activeQuiz.data.questions;
-    const answers=qs.map((q,i)=>q.type==='choice'?(document.querySelector(`input[name="q${i}"]:checked`)?Number(document.querySelector(`input[name="q${i}"]:checked`).value):null):(document.querySelector(`[data-answer="${i}"]`)?.value||''));
+    const answers=qs.map((q,i)=>Array.isArray(q.options)?(document.querySelector(`input[name="q${i}"]:checked`)?Number(document.querySelector(`input[name="q${i}"]:checked`).value):null):(document.querySelector(`[data-answer="${i}"]`)?.value||''));
     const unanswered=answers.some((a)=>a===null||String(a).trim()==='');
     if(unanswered){tg?.showAlert?.('Пожалуйста, ответьте на все задания.');return;}
     try{

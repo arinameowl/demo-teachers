@@ -94,14 +94,14 @@
           "id": "es_es_b1_u5_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cómo organizó la responsable el trabajo?",
+          "prompt": "¿Cuál es la idea principal del texto?",
           "options": [
-            "Pidió que todos cambiaran de departamento.",
-            "Asignó una tarea a cada persona.",
-            "Canceló el proyecto."
+            "Un equipo organiza un proyecto, distribuye tareas y ajusta el calendario cuando necesita más información.",
+            "La responsable cancela el proyecto porque el plazo es demasiado corto.",
+            "El departamento financiero asume todas las tareas del equipo."
           ],
-          "answer": 1,
-          "explanation": "La lectura indica que la responsable asignó tareas individuales."
+          "answer": 0,
+          "explanation": "El texto muestra cómo se coordinan las tareas y se adapta el plan de trabajo."
         },
         {
           "id": "es_es_b1_u5_e2",
@@ -213,14 +213,14 @@
           "id": "es_mx_b1_u5_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cómo organizó la responsable el trabajo?",
+          "prompt": "¿Cuál es la idea principal del texto?",
           "options": [
-            "Pidió que todos cambiaran de departamento.",
-            "Asignó una tarea a cada persona.",
-            "Canceló el proyecto."
+            "El equipo distribuye responsabilidades y reorganiza el trabajo cuando surgen nuevas necesidades de información.",
+            "El área de finanzas decide trabajar sin colaborar con el resto del equipo.",
+            "La responsable elimina el calendario para evitar reuniones."
           ],
-          "answer": 1,
-          "explanation": "La lectura indica que la responsable asignó tareas individuales."
+          "answer": 0,
+          "explanation": "El texto trata de la coordinación y adaptación de un proyecto compartido."
         },
         {
           "id": "es_mx_b1_u5_e2",

@@ -54,48 +54,6 @@
     {
       "id": "es_es",
       "name": "Español de España",
-      "vocabulary": [
-        {
-          "es": "despertarse",
-          "ru": "просыпаться"
-        },
-        {
-          "es": "levantarse",
-          "ru": "вставать"
-        },
-        {
-          "es": "ducharse",
-          "ru": "принимать душ"
-        },
-        {
-          "es": "desayunar",
-          "ru": "завтракать"
-        },
-        {
-          "es": "coger el autobús",
-          "ru": "садиться на автобус"
-        },
-        {
-          "es": "ordenador",
-          "ru": "компьютер"
-        },
-        {
-          "es": "comer",
-          "ru": "обедать / есть"
-        },
-        {
-          "es": "merendar",
-          "ru": "полдничать, перекусывать во второй половине дня"
-        },
-        {
-          "es": "acostarse",
-          "ru": "ложиться спать"
-        },
-        {
-          "es": "entre semana",
-          "ru": "в будние дни"
-        }
-      ],
       "dialogue": [
         {
           "speaker": "Lucía",
@@ -127,7 +85,7 @@
         },
         {
           "speaker": "Pablo",
-          "text": "A veces voy al gimnasio. Después vuelvo a casa, preparo la cena y leo un poco."
+          "text": "A veces voy al gimnasio. Antes, meriendo algo; después vuelvo a casa, preparo la cena y leo un poco."
         },
         {
           "speaker": "Lucía",
@@ -176,7 +134,7 @@
             "Ужинать поздно ночью"
           ],
           "answer": 1,
-          "explanation": "Merendar — съесть небольшой перекус во второй половине дня, между обедом и ужином."
+          "explanation": "Merendar — перекусить во второй половине дня; в диалоге Pablo говорит, что иногда делает это перед ужином."
         },
         {
           "id": "es_es_u3_e4",
@@ -209,48 +167,6 @@
     {
       "id": "es_mx",
       "name": "Español de México",
-      "vocabulary": [
-        {
-          "es": "despertarse",
-          "ru": "просыпаться"
-        },
-        {
-          "es": "levantarse",
-          "ru": "вставать"
-        },
-        {
-          "es": "bañarse",
-          "ru": "принимать душ / мыться"
-        },
-        {
-          "es": "desayunar",
-          "ru": "завтракать"
-        },
-        {
-          "es": "tomar el camión",
-          "ru": "ехать на автобусе (разговорное, регионально)"
-        },
-        {
-          "es": "computadora",
-          "ru": "компьютер"
-        },
-        {
-          "es": "comer",
-          "ru": "обедать / есть"
-        },
-        {
-          "es": "hacer ejercicio",
-          "ru": "заниматься физическими упражнениями"
-        },
-        {
-          "es": "acostarse",
-          "ru": "ложиться спать"
-        },
-        {
-          "es": "entre semana",
-          "ru": "в будние дни"
-        }
-      ],
       "dialogue": [
         {
           "speaker": "Valeria",

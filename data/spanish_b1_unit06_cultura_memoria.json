@@ -6,33 +6,93 @@
   "unit_id": "es_b1_u06_cultura_memoria",
   "title": "Cultura, memoria e identidad",
   "learning_goals": [
-    "Рассказывать о культурных событиях и воспоминаниях",
-    "Объяснять отношение к традициям и изменениям",
-    "Использовать subjuntivo после эмоций и оценок, aunque + indicativo/subjuntivo"
+    "Relatar recuerdos personales y explicar cómo influyen en la identidad",
+    "Comparar prácticas culturales sin generalizar sobre una comunidad",
+    "Expresar emociones y valoraciones mediante el subjuntivo",
+    "Distinguir entre aunque + indicativo y aunque + subjuntivo según la perspectiva del hablante",
+    "Organizar relatos y reflexiones con marcadores temporales y discursivos"
   ],
+  "editorial_intro": {
+    "title": "Lo que recordamos también nos define",
+    "text": "Una canción, una receta, una celebración o una expresión familiar pueden conservar recuerdos que no aparecen en los libros. Sin embargo, la cultura no permanece inmóvil: las personas reinterpretan las costumbres, incorporan nuevas ideas y deciden qué desean transmitir. Hablar de identidad implica reconocer experiencias personales y, al mismo tiempo, escuchar otras perspectivas. En este material vas a explorar cómo se construye la memoria compartida, cómo cambian las tradiciones y cómo expresar una valoración sin convertir una experiencia particular en una regla general.",
+    "opening_question": "¿Hay una costumbre, una historia o un objeto de tu familia que te ayude a entender de dónde vienes?",
+    "objective": "Al terminar, podrás narrar un recuerdo, explicar el valor de una práctica cultural y debatir cómo puede transformarse sin perder todo su significado.",
+    "estimated_time": "45–55 minutos",
+    "route": [
+      "Lee una conversación sobre una tradición que cambia",
+      "Observa cómo se expresan emociones y valoraciones",
+      "Compara hechos conocidos y situaciones posibles con aunque",
+      "Construye un relato personal y una reflexión cultural"
+    ]
+  },
   "grammar": [
     {
       "topic": "subjuntivo_emocion_valoracion",
-      "explanation_ru": "После выражений эмоции и оценки часто используется subjuntivo: Me alegra que…, Es importante que…, Es una pena que….",
+      "title": "Subjuntivo después de emociones y valoraciones",
+      "explanation_ru": "После выражений эмоции и оценки часто используется subjuntivo, если далее идет отдельное подлежащее: Me alegra que conservemos esta tradición; Es importante que las nuevas generaciones conozcan su historia; Me sorprende que haya cambiado tanto. Если подлежащее одно и то же, обычно используется инфинитив: Me alegra participar; Es importante conservar la memoria. Сравните: Creo que la tradición sigue viva (мнение/утверждение) и Me alegra que siga viva (эмоциональная оценка).",
       "examples": [
-        "Me alegra que vengas.",
-        "Es importante que conozcamos la historia."
+        "Me alegra que mi familia comparta estas historias.",
+        "Es importante que conozcamos distintas perspectivas.",
+        "Nos sorprendió que la celebración cambiara de lugar.",
+        "Me gusta escuchar los recuerdos de mis abuelos."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Me alegra que la tradición sigue viva.",
+          "correct": "Me alegra que la tradición siga viva.",
+          "explanation": "После me alegra que выражается эмоция по поводу отдельного действия или состояния; нужен subjuntivo."
+        },
+        {
+          "incorrect": "Es importante que conservar la memoria.",
+          "correct": "Es importante conservar la memoria. / Es importante que conservemos la memoria.",
+          "explanation": "Если подлежащее общее, используется инфинитив; если выражено отдельное подлежащее, que + subjuntivo."
+        }
       ]
     },
     {
       "topic": "aunque_indicativo_subjuntivo",
-      "explanation_ru": "Aunque + indicativo обычно вводит известный факт; aunque + subjuntivo — возможный, предполагаемый или несущественный для говорящего факт.",
+      "title": "Aunque: факт или уступительная возможность",
+      "explanation_ru": "Aunque + indicativo обычно вводит факт, который говорящий представляет как реальный или известный: Aunque la fiesta ha cambiado, sigue reuniendo a la gente. Aunque + subjuntivo часто используется, когда обстоятельство гипотетическое, неизвестное или несущественное для основного утверждения: Aunque la fiesta cambie, seguirá reuniendo a la gente; Aunque no conozcas la historia, puedes participar. Разница не только во времени, но и в том, как говорящий представляет информацию. Важно не учить это как абсолютное противопоставление: контекст и намерение определяют выбор.",
       "examples": [
-        "Aunque está lloviendo, saldremos.",
-        "Aunque llueva, saldremos."
+        "Aunque la celebración es distinta, conserva algunos elementos antiguos.",
+        "Aunque no conozcas todos los detalles, puedes preguntar.",
+        "Aunque haya nuevas propuestas, algunas familias prefieren mantener ciertos rituales.",
+        "Aunque llueva, el encuentro se celebrará."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Aunque la tradición ha cambiado, seguirá siendo importante. (если изменение представлено как mera posibilidad)",
+          "correct": "Aunque la tradición cambie, seguirá siendo importante.",
+          "explanation": "Subjuntivo подходит, если изменение не утверждается как факт, а рассматривается как возможное."
+        },
+        {
+          "incorrect": "Aunque sea una costumbre antigua, todavía se practica. (если antigüedad es un hecho conocido)",
+          "correct": "Aunque es una costumbre antigua, todavía se practica.",
+          "explanation": "Indicativo представляет возраст традиции как установленный факт."
+        }
       ]
     },
     {
-      "topic": "marcadores_relato",
-      "explanation_ru": "Для связного рассказа используйте al principio, con el tiempo, mientras tanto, años después, desde entonces. Они помогают выстроить последовательность и показать изменение.",
+      "topic": "marcadores_relato_y_memoria",
+      "title": "Marcadores para narrar recuerdos y cambios",
+      "explanation_ru": "Для последовательности используйте al principio, más tarde, años después, desde entonces. Для фона — mientras, en aquella época, de pequeño/a. Для изменения — con el tiempo, poco a poco, hasta que. Для объяснения значения воспоминания — por eso, de ahí que (subjuntivo), gracias a ello. Маркеры помогают различать фон, событие и последующую оценку: De pequeño iba con mi abuelo; un día me enseñó la receta; desde entonces la preparo cada año.",
       "examples": [
-        "Al principio no entendía la tradición.",
-        "Con el tiempo empezó a participar."
+        "De pequeña acompañaba a mi abuela al mercado.",
+        "Años después entendí por qué guardaba aquellas cartas.",
+        "Con el tiempo, la celebración incorporó nuevas actividades.",
+        "Desde entonces, intento reunir a la familia una vez al año."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Años después, entendía por qué había guardado las cartas. (если речь о конкретном моменте осознания)",
+          "correct": "Años después, entendí por qué había guardado las cartas.",
+          "explanation": "Indefinido обозначает завершенное событие осознания; pluscuamperfecto — более раннее действие."
+        },
+        {
+          "incorrect": "Desde entonces preparo la receta una vez. (если действие повторяется каждый год)",
+          "correct": "Desde entonces preparo la receta cada año.",
+          "explanation": "Для повторяющегося действия после определенного момента используйте подходящий маркер частотности."
+        }
       ]
     }
   ],
@@ -40,240 +100,490 @@
     {
       "id": "es_es",
       "name": "Español de España",
-      "pronunciation_note": "Лексика и речевые модели Испании.",
+      "pronunciation_note": "Practica la entonación al expresar recuerdos y valoraciones; presta atención a barrio, conservar y reinterpretar.",
       "dialogue": [
         {
-          "speaker": "Lucía",
-          "text": "¿Vas a participar en la fiesta del barrio este año?"
+          "speaker": "Inés",
+          "text": "¿Has decidido si vas a participar otra vez en la fiesta del barrio?"
         },
         {
-          "speaker": "Mateo",
-          "text": "Sí. Me alegra que se mantengan estas celebraciones."
+          "speaker": "Gabriel",
+          "text": "Sí. Mi abuelo me llevaba cuando era pequeño y me gustaría que mis sobrinos también la conocieran."
         },
         {
-          "speaker": "Lucía",
-          "text": "¿Tu familia también participa?"
+          "speaker": "Inés",
+          "text": "¿Se celebra exactamente igual que antes?"
         },
         {
-          "speaker": "Mateo",
-          "text": "Antes mi abuela organizaba la comida. Ahora todos asumimos una parte."
+          "speaker": "Gabriel",
+          "text": "No. Aunque conserva algunos elementos, ahora hay talleres y actividades para gente que acaba de llegar al barrio."
         },
         {
-          "speaker": "Lucía",
-          "text": "¿Crees que las tradiciones deberían cambiar?"
+          "speaker": "Inés",
+          "text": "A algunas personas les cuesta aceptar esos cambios."
         },
         {
-          "speaker": "Mateo",
-          "text": "Algunas sí, aunque es importante que no pierdan su significado."
+          "speaker": "Gabriel",
+          "text": "Lo entiendo. Mi abuela decía que era importante que se mantuvieran las canciones tradicionales."
         },
         {
-          "speaker": "Lucía",
-          "text": "La gente joven también puede aportar ideas."
+          "speaker": "Inés",
+          "text": "¿Y tú qué opinas?"
         },
         {
-          "speaker": "Mateo",
-          "text": "Aunque no todos conozcan la historia, pueden interesarse por ella."
+          "speaker": "Gabriel",
+          "text": "Me parece bien que se incorporen ideas nuevas, siempre que se explique de dónde viene la celebración."
         },
         {
-          "speaker": "Lucía",
-          "text": "¿Qué es lo que más te gusta?"
+          "speaker": "Inés",
+          "text": "Aunque no conozcas toda la historia, ¿crees que puedes sentirte parte de ella?"
         },
         {
-          "speaker": "Mateo",
-          "text": "Que nos reunamos y recordemos de dónde venimos."
+          "speaker": "Gabriel",
+          "text": "Claro. Participar también es una forma de aprender. Además, cada familia recuerda la fiesta de una manera distinta."
+        },
+        {
+          "speaker": "Inés",
+          "text": "Mi madre guarda fotografías y programas antiguos. Gracias a ellos entendemos cómo ha cambiado."
+        },
+        {
+          "speaker": "Gabriel",
+          "text": "Qué bien. Estaría genial que organizarais una pequeña exposición para compartir esos recuerdos."
         }
       ],
-      "context_note": "В Испании местные праздники часто связаны с историей конкретного города или района. Они могут включать музыку, уличные мероприятия, религиозные элементы или гастрономические традиции; содержание различается по регионам.",
-      "reading": {
-        "title": "Una tradición compartida",
-        "text": "Durante muchos años, la fiesta del barrio se celebró casi de la misma manera. Las familias preparaban comida, los músicos tocaban en la plaza y los niños participaban en juegos. Con el tiempo llegaron nuevos vecinos y propusieron actividades diferentes. Algunas personas pensaban que la celebración podía perder su carácter, pero otras defendían la idea de que las tradiciones también evolucionan. Hoy se combinan elementos antiguos y nuevos, y la fiesta sigue siendo un punto de encuentro."
+      "context_note": "En España, las fiestas locales, los archivos municipales, las asociaciones culturales y los centros cívicos pueden conservar y compartir memorias de un lugar. Las prácticas varían mucho entre comunidades y localidades; no existe una única tradición que represente a todo el país.",
+      "vocabulary_in_context": [
+        {
+          "term": "memoria compartida",
+          "meaning": "recuerdos que un grupo conserva y transmite",
+          "example": "El archivo reúne recuerdos que forman parte de la memoria compartida."
+        },
+        {
+          "term": "testimonio",
+          "meaning": "relato de una persona sobre una experiencia o un hecho",
+          "example": "Cada vecino aportó un testimonio sobre el barrio."
+        },
+        {
+          "term": "patrimonio",
+          "meaning": "bienes, prácticas y expresiones que una comunidad considera valiosos y transmite",
+          "example": "La receta forma parte del patrimonio familiar."
+        },
+        {
+          "term": "transmitir",
+          "meaning": "comunicar o enseñar algo a otras personas o generaciones",
+          "example": "Quieren transmitir las canciones a los más jóvenes."
+        },
+        {
+          "term": "reinterpretar",
+          "meaning": "dar un significado o uso nuevo a algo conocido",
+          "example": "Las nuevas generaciones pueden reinterpretar una tradición."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          {
+            "expression": "Me trae muchos recuerdos.",
+            "function": "Expresar que algo despierta recuerdos personales."
+          },
+          {
+            "expression": "Forma parte de cómo somos.",
+            "function": "Relacionar una práctica o experiencia con la identidad."
+          },
+          {
+            "expression": "No tiene por qué hacerse siempre igual.",
+            "function": "Defender que una tradición puede cambiar."
+          },
+          {
+            "expression": "Conviene conocer el contexto.",
+            "function": "Recordar que una práctica debe entenderse dentro de su historia."
+          }
+        ],
+        "regional_note": "En España, barrio y centro cívico son términos habituales en contextos de vida local. Las celebraciones y prácticas culturales varían entre comunidades autónomas y localidades; evita generalizar a partir de un solo ejemplo."
+      },
+      "guided_practice": {
+        "notice": {
+          "instruction": "Relee la conversación y observa cómo los personajes conectan recuerdos personales con cambios culturales.",
+          "tasks": [
+            "Localiza dos expresiones de emoción o valoración seguidas de subjuntivo y explica qué se está valorando.",
+            "Compara las dos frases con aunque del diálogo: ¿presentan un hecho conocido o una situación posible/no determinante?",
+            "Identifica los marcadores temporales que muestran cómo ha cambiado la celebración y qué recuerdos se conservan."
+          ]
+        },
+        "practice": {
+          "instruction": "Completa las frases atendiendo a la perspectiva del hablante y a la secuencia temporal.",
+          "tasks": [
+            "Me alegra que mis sobrinos ___ (conocer) esta historia.",
+            "Aunque la celebración ___ (cambiar) con los años, conserva algunos elementos.",
+            "Aunque no ___ (saber) todos los detalles, puedes participar.",
+            "De pequeño, mi abuelo me ___ (contar) historias y, años después, yo ___ (empezar) a escribirlas."
+          ],
+          "answers": [
+            "conozcan",
+            "ha cambiado",
+            "sepas",
+            "contaba; empecé"
+          ]
+        },
+        "communicate": {
+          "instruction": "En parejas, conversad sobre una práctica, celebración, canción o relato que tenga significado para una familia o comunidad.",
+          "tasks": [
+            "Explica de dónde viene la práctica y quién te la presentó.",
+            "Cuenta un recuerdo concreto usando imperfecto e indefinido.",
+            "Expresa qué valor tiene para ti con una estructura de emoción o valoración + subjuntivo.",
+            "Comenta cómo podría cambiar en el futuro sin perder necesariamente su significado."
+          ]
+        }
+      },
+      "personal_application": {
+        "scenario": "Te invitan a colaborar en una pequeña exposición sobre la memoria de tu barrio o familia.",
+        "task": "Prepara un texto o audio de 8–10 frases sobre un objeto, una fotografía, una receta, una canción o una celebración. Explica qué recuerdo conserva, quién te lo transmitió, cómo ha cambiado su significado y por qué te parece importante compartirlo. Incluye dos estructuras con subjuntivo y dos marcadores temporales.",
+        "support": [
+          "Cuando era pequeño/a…",
+          "Me acuerdo de que…",
+          "Me alegra que…",
+          "Aunque…, …",
+          "Con el tiempo…",
+          "Desde entonces…"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "La entonación al narrar recuerdos y expresar emociones; la pronunciación clara de formas frecuentes del presente de subjuntivo.",
+        "steps": [
+          "Lee en voz alta: «Me alegra que conservemos estas historias» y «Aunque la celebración ha cambiado, sigue reuniendo a la gente».",
+          "Compara las formas «conserva» y «conserve», «conocen» y «conozcan»; marca la sílaba tónica.",
+          "Graba un recuerdo de 30–40 segundos y comprueba que se distinguen el contexto pasado, el acontecimiento principal y tu valoración actual."
+        ],
+        "audio_model_status": "pending"
+      },
+      "reflection": {
+        "can_do": [
+          "Puedo contar un recuerdo y explicar por qué es significativo para mí o para otras personas.",
+          "Puedo describir cómo una práctica cultural ha cambiado con el tiempo.",
+          "Puedo expresar emociones y valoraciones usando subjuntivo.",
+          "Puedo distinguir entre un hecho presentado como real y una posibilidad introducida con aunque.",
+          "Puedo hablar de una tradición sin asumir que todas las personas la viven de la misma manera."
+        ]
       },
       "exercises": [
         {
           "id": "es_es_b1_u6_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cuál es la idea principal del texto?",
+          "prompt": "¿Cuál es el propósito principal del archivo comunitario?",
           "options": [
-            "Una fiesta local incorpora nuevas propuestas y mantiene su función como espacio de encuentro.",
-            "La llegada de nuevos vecinos hace que desaparezcan todas las tradiciones.",
-            "La comunidad decide celebrar únicamente actividades antiguas."
+            "Reunir recuerdos y testimonios diversos para construir una memoria compartida.",
+            "Demostrar que solo los documentos antiguos tienen valor.",
+            "Elegir una única versión oficial de la historia del barrio."
           ],
           "answer": 0,
-          "explanation": "El texto explica cómo una tradición puede evolucionar sin perder su función comunitaria."
+          "explanation": "El proyecto reúne materiales y relatos de personas con experiencias distintas."
         },
         {
           "id": "es_es_b1_u6_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué es lo que más valora Mateo de la fiesta?",
+          "prompt": "¿Qué cambio propusieron algunas personas para ampliar el archivo?",
           "options": [
-            "Que no participe gente joven.",
-            "Que la celebración nunca cambie.",
-            "Que las personas se reúnan y recuerden sus orígenes."
+            "Dejar de aceptar fotografías.",
+            "Incluir testimonios de quienes habían llegado recientemente.",
+            "Guardar únicamente documentos administrativos."
           ],
-          "answer": 2,
-          "explanation": "Mateo destaca el encuentro y la memoria compartida."
+          "answer": 1,
+          "explanation": "El texto explica que se propuso incluir a nuevos vecinos."
         },
         {
           "id": "es_es_b1_u6_e3",
           "type": "choice",
-          "skill": "grammar",
-          "prompt": "Completa: «Me alegra que estas celebraciones se ___».",
+          "skill": "vocabulary",
+          "prompt": "En el texto, ¿qué significa «testimonio»?",
           "options": [
-            "mantengan",
-            "mantienen",
-            "mantuvieron"
+            "Una norma que deben cumplir los visitantes.",
+            "Un objeto antiguo sin información adicional.",
+            "El relato de una persona sobre una experiencia o un hecho."
           ],
-          "answer": 0,
-          "explanation": "Después de me alegra que se usa subjuntivo."
+          "answer": 2,
+          "explanation": "Un testimonio es una narración basada en la experiencia o conocimiento de alguien."
         },
         {
           "id": "es_es_b1_u6_e4",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Completa la frase con subjuntivo: «Aunque no ___ fácil organizar la fiesta, queremos mantenerla».",
+          "prompt": "Completa: «Me alegra que las nuevas generaciones ___ estas historias».",
           "options": [
-            "sea",
-            "es",
-            "será"
+            "conocen",
+            "conozcan",
+            "conocieron"
           ],
-          "answer": 0,
-          "explanation": "El hablante presenta la dificultad como una posibilidad o condición no afirmada: aunque + subjuntivo."
+          "answer": 1,
+          "explanation": "Me alegra que expresa una valoración y requiere subjuntivo cuando introduce otro sujeto."
         },
         {
           "id": "es_es_b1_u6_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "Según la nota cultural de España, ¿qué afirmación sobre las fiestas locales es adecuada?",
+          "prompt": "Según la nota contextual, ¿qué afirmación sobre las tradiciones de España es adecuada?",
           "options": [
-            "Se celebran siempre de la misma manera en todo el país.",
-            "Pueden incluir música, actividades en la calle y gastronomía, y varían según la región.",
-            "Solo tienen lugar en grandes ciudades."
+            "Las prácticas culturales varían entre comunidades y localidades.",
+            "Existe una única celebración que representa por igual a todo el país.",
+            "Las asociaciones culturales no participan en la conservación de la memoria."
           ],
-          "answer": 1,
-          "explanation": "La nota explica que las fiestas locales pueden tener formatos distintos según la historia y las costumbres de cada región."
+          "answer": 0,
+          "explanation": "La nota destaca la diversidad local y los espacios que pueden conservar memorias."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Un archivo de recuerdos cotidianos",
+        "text": "En un centro cultural de Valencia, un grupo de vecinos empezó a reunir fotografías, recetas y relatos sobre la vida del barrio. Al principio, algunas personas pensaban que solo debían conservarse documentos antiguos. Sin embargo, otras propusieron incluir testimonios de quienes habían llegado recientemente. Con el tiempo, el archivo se convirtió en un proyecto abierto: cada participante explica qué objeto ha elegido y qué historia guarda. Aunque la colección sigue creciendo, el equipo intenta registrar quién aporta cada material y en qué contexto se utilizaba. Así, los recuerdos personales ayudan a construir una memoria común sin presentar una sola versión del pasado."
+      }
     },
     {
       "id": "es_mx",
       "name": "Español de México",
-      "pronunciation_note": "Мексиканский вариант как основа латиноамериканского маршрута.",
+      "pronunciation_note": "Practica la entonación al expresar recuerdos y valoraciones; presta atención a colonia, niño, conservar y reinterpretar.",
       "dialogue": [
         {
-          "speaker": "Lucía",
-          "text": "¿Vas a participar en la fiesta de la colonia este año?"
+          "speaker": "Inés",
+          "text": "¿Ya decidiste si vas a participar otra vez en la fiesta de la colonia?"
         },
         {
-          "speaker": "Mateo",
-          "text": "Sí. Me da gusto que se mantengan estas celebraciones."
+          "speaker": "Gabriel",
+          "text": "Sí. Mi abuelo me llevaba cuando era niño y me gustaría que mis sobrinos también la conocieran."
         },
         {
-          "speaker": "Lucía",
-          "text": "¿Tu familia también participa?"
+          "speaker": "Inés",
+          "text": "¿Se celebra exactamente igual que antes?"
         },
         {
-          "speaker": "Mateo",
-          "text": "Antes mi abuela organizaba la comida. Ahora todos asumimos una parte."
+          "speaker": "Gabriel",
+          "text": "No. Aunque conserva algunos elementos, ahora hay talleres y actividades para quienes acaban de llegar a la colonia."
         },
         {
-          "speaker": "Lucía",
-          "text": "¿Crees que las tradiciones deberían cambiar?"
+          "speaker": "Inés",
+          "text": "A algunas personas les cuesta aceptar esos cambios."
         },
         {
-          "speaker": "Mateo",
-          "text": "Algunas sí, aunque es importante que no pierdan su significado."
+          "speaker": "Gabriel",
+          "text": "Lo entiendo. Mi abuela decía que era importante que se conservaran las canciones tradicionales."
         },
         {
-          "speaker": "Lucía",
-          "text": "La gente joven también puede aportar ideas."
+          "speaker": "Inés",
+          "text": "¿Y tú qué opinas?"
         },
         {
-          "speaker": "Mateo",
-          "text": "Aunque no todos conozcan la historia, pueden interesarse por ella."
+          "speaker": "Gabriel",
+          "text": "Me parece bien que se incorporen ideas nuevas, siempre que se explique de dónde viene la celebración."
         },
         {
-          "speaker": "Lucía",
-          "text": "¿Qué es lo que más te gusta?"
+          "speaker": "Inés",
+          "text": "Aunque no conozcas toda la historia, ¿crees que puedes sentirte parte de ella?"
         },
         {
-          "speaker": "Mateo",
-          "text": "Que nos reunamos y recordemos de dónde venimos."
+          "speaker": "Gabriel",
+          "text": "Claro. Participar también es una forma de aprender. Además, cada familia recuerda la fiesta de una manera distinta."
+        },
+        {
+          "speaker": "Inés",
+          "text": "Mi mamá guarda fotografías y programas antiguos. Gracias a ellos entendemos cómo ha cambiado."
+        },
+        {
+          "speaker": "Gabriel",
+          "text": "Qué bien. Estaría muy bien que organizaran una pequeña exposición para compartir esos recuerdos."
         }
       ],
-      "context_note": "В Мексике традиции часто соединяют семейную память, местную историю, музыку и еду. Día de Muertos — узнаваемый пример, но практики и символы различаются между регионами и семьями.",
-      "reading": {
-        "title": "Una tradición compartida",
-        "text": "Durante muchos años, la celebración de la comunidad se realizó casi de la misma manera. Las familias preparaban comida, los músicos tocaban en la plaza y los niños participaban en juegos. Con el tiempo llegaron nuevos vecinos y propusieron actividades diferentes. Algunas personas pensaban que la fiesta podía perder su carácter, pero otras defendían la idea de que las tradiciones también evolucionan. Hoy se combinan elementos antiguos y nuevos, y la celebración sigue siendo un punto de encuentro."
+      "context_note": "En México, la memoria cultural puede transmitirse mediante relatos familiares, celebraciones comunitarias, archivos locales, música y prácticas artesanales. Las expresiones varían entre regiones, pueblos y familias; una tradición conocida nacionalmente tampoco se vive de una sola manera.",
+      "vocabulary_in_context": [
+        {
+          "term": "memoria colectiva",
+          "meaning": "recuerdos y relatos que un grupo conserva y transmite",
+          "example": "El archivo reúne historias que forman parte de la memoria colectiva."
+        },
+        {
+          "term": "testimonio",
+          "meaning": "relato de una persona sobre una experiencia o un hecho",
+          "example": "Cada vecino aportó un testimonio sobre la colonia."
+        },
+        {
+          "term": "patrimonio",
+          "meaning": "bienes, prácticas y expresiones que una comunidad considera valiosos y transmite",
+          "example": "La receta forma parte del patrimonio familiar."
+        },
+        {
+          "term": "transmitir",
+          "meaning": "comunicar o enseñar algo a otras personas o generaciones",
+          "example": "Quieren transmitir las canciones a los más jóvenes."
+        },
+        {
+          "term": "reinterpretar",
+          "meaning": "dar un significado o uso nuevo a algo conocido",
+          "example": "Las nuevas generaciones pueden reinterpretar una tradición."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          {
+            "expression": "Me trae muchos recuerdos.",
+            "function": "Expresar que algo despierta recuerdos personales."
+          },
+          {
+            "expression": "Forma parte de nuestra historia.",
+            "function": "Relacionar una práctica o experiencia con la identidad colectiva."
+          },
+          {
+            "expression": "No tiene que hacerse siempre igual.",
+            "function": "Defender que una tradición puede cambiar."
+          },
+          {
+            "expression": "Vale la pena conocer el contexto.",
+            "function": "Recordar que una práctica debe entenderse dentro de su historia."
+          }
+        ],
+        "regional_note": "En México, colonia es frecuente para referirse a una zona urbana; las celebraciones y prácticas culturales cambian mucho entre estados, comunidades y familias. Evita presentar una costumbre local como si fuera universal."
+      },
+      "guided_practice": {
+        "notice": {
+          "instruction": "Relee la conversación y observa cómo los personajes conectan recuerdos personales con cambios culturales.",
+          "tasks": [
+            "Localiza dos expresiones de emoción o valoración seguidas de subjuntivo y explica qué se está valorando.",
+            "Compara las dos frases con aunque del diálogo: ¿presentan un hecho conocido o una situación posible/no determinante?",
+            "Identifica los marcadores temporales que muestran cómo ha cambiado la celebración y qué recuerdos se conservan."
+          ]
+        },
+        "practice": {
+          "instruction": "Completa las frases atendiendo a la perspectiva del hablante y a la secuencia temporal.",
+          "tasks": [
+            "Me alegra que mis sobrinos ___ (conocer) esta historia.",
+            "Aunque la celebración ___ (cambiar) con los años, conserva algunos elementos.",
+            "Aunque no ___ (saber) todos los detalles, puedes participar.",
+            "De pequeño, mi abuelo me ___ (contar) historias y, años después, yo ___ (empezar) a escribirlas."
+          ],
+          "answers": [
+            "conozcan",
+            "ha cambiado",
+            "sepas",
+            "contaba; empecé"
+          ]
+        },
+        "communicate": {
+          "instruction": "En parejas, conversen sobre una práctica, celebración, canción o relato que tenga significado para una familia o comunidad.",
+          "tasks": [
+            "Explica de dónde viene la práctica y quién te la presentó.",
+            "Cuenta un recuerdo concreto usando imperfecto e indefinido.",
+            "Expresa qué valor tiene para ti con una estructura de emoción o valoración + subjuntivo.",
+            "Comenta cómo podría cambiar en el futuro sin perder necesariamente su significado."
+          ]
+        }
+      },
+      "personal_application": {
+        "scenario": "Te invitan a colaborar en una pequeña exposición sobre la memoria de tu colonia o familia.",
+        "task": "Prepara un texto o audio de 8–10 frases sobre un objeto, una fotografía, una receta, una canción o una celebración. Explica qué recuerdo conserva, quién te lo transmitió, cómo ha cambiado su significado y por qué te parece importante compartirlo. Incluye dos estructuras con subjuntivo y dos marcadores temporales.",
+        "support": [
+          "Cuando era pequeño/a…",
+          "Me acuerdo de que…",
+          "Me alegra que…",
+          "Aunque…, …",
+          "Con el tiempo…",
+          "Desde entonces…"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "La entonación al narrar recuerdos y expresar emociones; la pronunciación clara de formas frecuentes del presente de subjuntivo.",
+        "steps": [
+          "Lee en voz alta: «Me alegra que conservemos estas historias» y «Aunque la celebración ha cambiado, sigue reuniendo a la gente».",
+          "Compara las formas «conserva» y «conserve», «conocen» y «conozcan»; marca la sílaba tónica.",
+          "Graba un recuerdo de 30–40 segundos y comprueba que se distinguen el contexto pasado, el acontecimiento principal y tu valoración actual."
+        ],
+        "audio_model_status": "pending"
+      },
+      "reflection": {
+        "can_do": [
+          "Puedo contar un recuerdo y explicar por qué es significativo para mí o para otras personas.",
+          "Puedo describir cómo una práctica cultural ha cambiado con el tiempo.",
+          "Puedo expresar emociones y valoraciones usando subjuntivo.",
+          "Puedo distinguir entre un hecho presentado como real y una posibilidad introducida con aunque.",
+          "Puedo hablar de una tradición sin asumir que todas las personas la viven de la misma manera."
+        ]
       },
       "exercises": [
         {
           "id": "es_mx_b1_u6_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cuál es la idea principal del texto?",
+          "prompt": "¿Cuál es el propósito principal del archivo comunitario?",
           "options": [
-            "Una celebración comunitaria cambia con la llegada de nuevos vecinos, pero sigue reuniendo a las personas.",
-            "La comunidad cancela la celebración para evitar nuevas ideas.",
-            "Las familias dejan de participar en las actividades tradicionales."
+            "Reunir recuerdos y testimonios diversos para construir una memoria compartida.",
+            "Demostrar que solo los documentos antiguos tienen valor.",
+            "Elegir una única versión oficial de la historia del barrio."
           ],
           "answer": 0,
-          "explanation": "El texto presenta la evolución de una celebración y su continuidad como punto de encuentro."
+          "explanation": "El proyecto reúne materiales y relatos de personas con experiencias distintas."
         },
         {
           "id": "es_mx_b1_u6_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué valora Mateo de la celebración?",
+          "prompt": "¿Qué cambio propusieron algunas personas para ampliar el archivo?",
           "options": [
-            "Que no haya cambios ni nuevas ideas.",
-            "Que solo participen los mayores.",
-            "Que las personas se reúnan y recuerden sus orígenes."
+            "Dejar de aceptar fotografías.",
+            "Incluir testimonios de quienes habían llegado recientemente.",
+            "Guardar únicamente documentos administrativos."
           ],
-          "answer": 2,
-          "explanation": "Mateo destaca el encuentro y la memoria compartida."
+          "answer": 1,
+          "explanation": "El texto explica que se propuso incluir a nuevos vecinos."
         },
         {
           "id": "es_mx_b1_u6_e3",
           "type": "choice",
-          "skill": "grammar",
-          "prompt": "Completa: «Me da gusto que estas celebraciones se ___».",
+          "skill": "vocabulary",
+          "prompt": "En el texto, ¿qué significa «testimonio»?",
           "options": [
-            "mantengan",
-            "mantienen",
-            "mantuvieron"
+            "Una norma que deben cumplir los visitantes.",
+            "Un objeto antiguo sin información adicional.",
+            "El relato de una persona sobre una experiencia o un hecho."
           ],
-          "answer": 0,
-          "explanation": "Después de me da gusto que se usa subjuntivo."
+          "answer": 2,
+          "explanation": "Un testimonio es una narración basada en la experiencia o conocimiento de alguien."
         },
         {
           "id": "es_mx_b1_u6_e4",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Completa la frase con subjuntivo: «Aunque no ___ fácil organizar la fiesta, queremos mantenerla».",
+          "prompt": "Completa: «Me alegra que las nuevas generaciones ___ estas historias».",
           "options": [
-            "sea",
-            "es",
-            "será"
+            "conocen",
+            "conozcan",
+            "conocieron"
           ],
-          "answer": 0,
-          "explanation": "El hablante presenta la dificultad como una posibilidad o condición no afirmada: aunque + subjuntivo."
+          "answer": 1,
+          "explanation": "Me alegra que expresa una valoración y requiere subjuntivo cuando introduce otro sujeto."
         },
         {
           "id": "es_mx_b1_u6_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "Según la nota cultural, ¿qué afirmación sobre Día de Muertos es adecuada?",
+          "prompt": "Según la nota contextual, ¿qué afirmación sobre las expresiones culturales de México es adecuada?",
           "options": [
-            "Todas las familias lo celebran exactamente igual.",
-            "Las prácticas y los símbolos varían entre regiones y familias.",
-            "Es la única tradición cultural del país."
+            "Las prácticas varían entre regiones, pueblos y familias.",
+            "Todas las familias celebran las tradiciones de la misma manera.",
+            "La memoria cultural solo se transmite mediante documentos oficiales."
           ],
-          "answer": 1,
-          "explanation": "La nota destaca la diversidad regional y familiar."
+          "answer": 0,
+          "explanation": "La nota subraya la diversidad regional y familiar de las prácticas culturales."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Un archivo de recuerdos cotidianos",
+        "text": "En un centro cultural de Puebla, un grupo de vecinos empezó a reunir fotografías, recetas y relatos sobre la vida de la colonia. Al principio, algunas personas pensaban que solo debían conservarse documentos antiguos. Sin embargo, otras propusieron incluir testimonios de quienes habían llegado recientemente. Con el tiempo, el archivo se convirtió en un proyecto abierto: cada participante explica qué objeto eligió y qué historia guarda. Aunque la colección sigue creciendo, el equipo intenta registrar quién aporta cada material y en qué contexto se utilizaba. Así, los recuerdos personales ayudan a construir una memoria común sin presentar una sola versión del pasado."
+      }
     }
+  ],
+  "teacher_notes": [
+    "No añadir una sección independiente de Vocabulary: el léxico se presenta en diálogo, lectura y tareas.",
+    "Evitar esencializar culturas nacionales; distinguir entre prácticas locales, experiencias familiares y diversidad regional.",
+    "El subjuntivo tras expresiones de emoción y valoración depende de que haya una subordinada con sujeto propio; comparar con infinitivo cuando el sujeto coincide.",
+    "Aunque + indicativo presenta normalmente una información como real o conocida; aunque + subjuntivo puede presentar una posibilidad o un dato no afirmado. La elección depende del contexto discursivo.",
+    "Los marcadores temporales deben ayudar a distinguir el fondo, el acontecimiento y la reflexión actual; evitar listas descontextualizadas.",
+    "Las tareas abiertas pertenecen a guided practice y personal application; exercises contiene cinco preguntas cerradas por variante.",
+    "Las diferencias léxicas entre España y México son orientativas y no exclusivas.",
+    "No integrar hasta completar la revisión de todo el catálogo español."
   ]
 }

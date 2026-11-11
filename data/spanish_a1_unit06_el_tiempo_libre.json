@@ -1,0 +1,355 @@
+{
+  "schema_version": 1,
+  "level": "A1",
+  "category": "lesson",
+  "language": "es",
+  "unit_id": "es_a1_u06_el_tiempo_libre",
+  "title": "El tiempo libre",
+  "learning_goals": [
+    "Назвать распространенные хобби и занятия в свободное время",
+    "Сказать, что нравится и что не нравится",
+    "Предложить совместный план и ответить на приглашение",
+    "Назвать дни недели и время встречи",
+    "Использовать gustar, encantar, ir a + infinitivo и простые конструкции предпочтения"
+  ],
+  "grammar": [
+    {
+      "topic": "gustar_encantar",
+      "explanation_ru": "Gustar и encantar строятся с косвенным местоимением: me, te, le, nos, os, les. Форма глагола зависит от того, что нравится: gusta/encanta для единственного числа или инфинитива; gustan/encantan для множественного.",
+      "examples": [
+        "Me gusta leer.",
+        "Nos encanta viajar.",
+        "A Pablo le gustan las películas."
+      ]
+    },
+    {
+      "topic": "ir_a_infinitive",
+      "explanation_ru": "Конструкция ir a + infinitivo используется для ближайших планов и намерений.",
+      "examples": [
+        "Voy a visitar un museo.",
+        "Vamos a cenar fuera.",
+        "¿Qué vas a hacer el sábado?"
+      ]
+    },
+    {
+      "topic": "days_and_time",
+      "explanation_ru": "Для дней недели используем el для конкретного дня и los для повторяющегося действия: el sábado, los sábados. Для времени встречи — a las…",
+      "examples": [
+        "El viernes voy al cine.",
+        "Los domingos leo.",
+        "Quedamos a las seis."
+      ]
+    },
+    {
+      "topic": "inviting_and_responding",
+      "explanation_ru": "Для предложения плана используем ¿Quieres…?, ¿Te apetece…? (особенно характерно для Испании), ¿Vamos a…?; согласие — ¡Claro!, ¡Vale!, ¡Me parece bien!; отказ — Lo siento, no puedo.",
+      "examples": [
+        "¿Quieres ir al cine?",
+        "¡Claro!",
+        "Lo siento, no puedo."
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "vocabulary": [
+        {
+          "es": "quedar",
+          "ru": "договариваться о встрече"
+        },
+        {
+          "es": "cine",
+          "ru": "кинотеатр; кино"
+        },
+        {
+          "es": "senderismo",
+          "ru": "пеший туризм"
+        },
+        {
+          "es": "pasear",
+          "ru": "гулять"
+        },
+        {
+          "es": "leer",
+          "ru": "читать"
+        },
+        {
+          "es": "quedar con amigos",
+          "ru": "встречаться с друзьями"
+        },
+        {
+          "es": "te apetece…",
+          "ru": "тебе хочется…?"
+        },
+        {
+          "es": "vale",
+          "ru": "ладно; хорошо"
+        },
+        {
+          "es": "fin de semana",
+          "ru": "выходные"
+        },
+        {
+          "es": "entrada",
+          "ru": "билет; входной билет"
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "Marta",
+          "text": "¿Qué te apetece hacer este sábado, Pablo?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Me gustaría ir al cine. Hay una película nueva."
+        },
+        {
+          "speaker": "Marta",
+          "text": "¡Qué bien! ¿A qué hora empieza?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "A las seis y media."
+        },
+        {
+          "speaker": "Marta",
+          "text": "Vale. Antes podemos tomar un café."
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Perfecto. ¿Quedamos a las cinco?"
+        },
+        {
+          "speaker": "Marta",
+          "text": "Sí, nos vemos delante del cine."
+        },
+        {
+          "speaker": "Pablo",
+          "text": "¡Hasta el sábado!"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "es_es_u6_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿Qué planes hacen Marta y Pablo?",
+          "options": [
+            "Ir al cine y tomar un café",
+            "Ir de compras",
+            "Hacer senderismo"
+          ],
+          "answer": 0,
+          "explanation": "Deciden ver una película y tomar un café antes."
+        },
+        {
+          "id": "es_es_u6_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿A qué hora quedan?",
+          "options": [
+            "A las cuatro",
+            "A las cinco",
+            "A las seis y media"
+          ],
+          "answer": 1,
+          "explanation": "Quedan a las cinco; la película empieza a las seis y media."
+        },
+        {
+          "id": "es_es_u6_e3",
+          "skill": "vocabulary",
+          "type": "choice",
+          "prompt": "В Испании «¿Te apetece…?» означает…",
+          "options": [
+            "Тебе хочется…? / Не хочешь…?",
+            "Сколько это стоит?",
+            "Где ты живешь?"
+          ],
+          "answer": 0,
+          "explanation": "Te apetece? — естественный способ предложить занятие или спросить о желании."
+        },
+        {
+          "id": "es_es_u6_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «Este domingo nosotros ___ visitar un museo».",
+          "options": [
+            "vamos a",
+            "van a",
+            "voy a"
+          ],
+          "answer": 0,
+          "explanation": "С nosotros используется vamos: vamos a visitar."
+        },
+        {
+          "id": "es_es_u6_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "Что означает «quedar» в выражении «quedar con amigos»?",
+          "options": [
+            "Встречаться по договоренности",
+            "Оставаться дома",
+            "Покупать билеты"
+          ],
+          "answer": 0,
+          "explanation": "Quedar con amigos — договориться о встрече и увидеться с друзьями."
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "vocabulary": [
+        {
+          "es": "salir",
+          "ru": "выходить; куда-либо идти"
+        },
+        {
+          "es": "cine",
+          "ru": "кинотеатр; кино"
+        },
+        {
+          "es": "hacer ejercicio",
+          "ru": "заниматься физическими упражнениями"
+        },
+        {
+          "es": "pasear",
+          "ru": "гулять"
+        },
+        {
+          "es": "leer",
+          "ru": "читать"
+        },
+        {
+          "es": "juntarse con amigos",
+          "ru": "собираться с друзьями"
+        },
+        {
+          "es": "¿Te late…?",
+          "ru": "Как тебе идея…? (разговорное)"
+        },
+        {
+          "es": "órale",
+          "ru": "вот это да; давай; хорошо (разговорное, по контексту)"
+        },
+        {
+          "es": "fin de semana",
+          "ru": "выходные"
+        },
+        {
+          "es": "boleto",
+          "ru": "билет"
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "Ana",
+          "text": "¿Qué vas a hacer este sábado, Luis?"
+        },
+        {
+          "speaker": "Luis",
+          "text": "Quiero ir al cine. Hay una película de acción."
+        },
+        {
+          "speaker": "Ana",
+          "text": "¡Suena bien! ¿A qué hora?"
+        },
+        {
+          "speaker": "Luis",
+          "text": "A las siete."
+        },
+        {
+          "speaker": "Ana",
+          "text": "¿Te late si cenamos algo después?"
+        },
+        {
+          "speaker": "Luis",
+          "text": "¡Claro! Podemos ir por unos tacos."
+        },
+        {
+          "speaker": "Ana",
+          "text": "Va. Nos vemos afuera del cine a las seis y media."
+        },
+        {
+          "speaker": "Luis",
+          "text": "¡Sale! Hasta el sábado."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "es_mx_u6_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿Qué planes hacen Ana y Luis?",
+          "options": [
+            "Ir al cine y cenar tacos",
+            "Ir a un museo",
+            "Quedarse en casa"
+          ],
+          "answer": 0,
+          "explanation": "Quieren ver una película y después ir a comer tacos."
+        },
+        {
+          "id": "es_mx_u6_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿A qué hora se encuentran?",
+          "options": [
+            "A las seis",
+            "A las seis y media",
+            "A las siete"
+          ],
+          "answer": 1,
+          "explanation": "Ana propone encontrarse afuera del cine a las seis y media."
+        },
+        {
+          "id": "es_mx_u6_e3",
+          "skill": "vocabulary",
+          "type": "choice",
+          "prompt": "В разговорном мексиканском испанском «¿Te late…?» означает…",
+          "options": [
+            "Тебе нравится идея…? / Как тебе…?",
+            "Ты опоздал?",
+            "Ты голоден?"
+          ],
+          "answer": 0,
+          "explanation": "Te late? — неформальный способ спросить, нравится ли собеседнику предложение. Выражение не является формальным."
+        },
+        {
+          "id": "es_mx_u6_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «Mañana yo ___ salir con mis amigos».",
+          "options": [
+            "vas a",
+            "voy a",
+            "va a"
+          ],
+          "answer": 1,
+          "explanation": "С yo используется voy: voy a salir."
+        },
+        {
+          "id": "es_mx_u6_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "В диалоге Luis отвечает «¡Sale!». Как понять это разговорное выражение в данном контексте?",
+          "options": [
+            "Договорились! / Хорошо!",
+            "Уходи!",
+            "Сколько стоит?"
+          ],
+          "answer": 0,
+          "explanation": "В разговорной мексиканской речи sale может выражать согласие или подтверждение договоренности. Значение зависит от контекста."
+        }
+      ]
+    }
+  ],
+  "teacher_notes": [
+    "Не представлять te apetece как исключительно испанскую форму: она понятна и за пределами Испании, но особенно характерна для повседневной речи Испании.",
+    "Te late, va и sale — разговорные мексиканские выражения; давать их как контекстные дополнения, а не как обязательную формальную речь.",
+    "В испанском варианте boleto может быть понятно, но entrada или billete уместнее в зависимости от типа билета; в Мексике boleto распространено.",
+    "Диалоги и задания оригинальные."
+  ]
+}

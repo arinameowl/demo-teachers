@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "level": "A2",
+  "category": "lesson",
+  "language": "es",
+  "unit_id": "es_a2_u02_la_vida_en_casa",
+  "title": "La vida en casa",
+  "learning_goals": [
+    "Describir una vivienda y sus características principales",
+    "Hablar de las tareas domésticas y repartir responsabilidades",
+    "Explicar problemas sencillos en casa y pedir que alguien haga algo",
+    "Usar tener que, hay que y deber para expresar obligación y necesidad",
+    "Comparar viviendas y espacios con más, menos, tan… como"
+  ],
+  "grammar": [
+    {
+      "topic": "obligations_tener_que_hay_que_deber",
+      "explanation_ru": "Tener que + infinitivo выражает необходимость для конкретного человека: Tengo que limpiar. Hay que + infinitivo обозначает общую необходимость без указания исполнителя: Hay que ahorrar agua. Deber + infinitivo часто используется для совета или обязанности: Debes llamar al propietario.",
+      "examples": [
+        "Tengo que limpiar la cocina.",
+        "En este edificio hay que separar la basura.",
+        "Debes avisar al propietario."
+      ]
+    },
+    {
+      "topic": "comparatives",
+      "explanation_ru": "Для сравнения используем más… que (более…), menos… que (менее…), tan… como (такой же… как). Прилагательное согласуется с существительным: una habitación más luminosa; dos pisos más pequeños.",
+      "examples": [
+        "Este piso es más luminoso que el anterior.",
+        "Mi habitación es tan grande como la tuya.",
+        "La cocina es menos amplia que el salón."
+      ]
+    },
+    {
+      "topic": "household_tasks",
+      "explanation_ru": "Для домашних обязанностей часто используются конструкции limpiar, ordenar, hacer la compra, sacar la basura и poner la lavadora. Чтобы сказать, кому нужно выполнить действие, используйте личную форму tener que.",
+      "examples": [
+        "Tengo que sacar la basura.",
+        "Tenemos que hacer la compra.",
+        "Hoy debes poner la lavadora."
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "dialogue": [
+        {
+          "speaker": "Marta",
+          "text": "¿Qué tal el piso nuevo, Sergio?"
+        },
+        {
+          "speaker": "Sergio",
+          "text": "Bastante bien. Es más luminoso que el anterior y está cerca del trabajo."
+        },
+        {
+          "speaker": "Marta",
+          "text": "¿Cuántas habitaciones tiene?"
+        },
+        {
+          "speaker": "Sergio",
+          "text": "Dos dormitorios, un salón pequeño y una cocina bastante amplia."
+        },
+        {
+          "speaker": "Marta",
+          "text": "¿Y compartes el piso con alguien?"
+        },
+        {
+          "speaker": "Sergio",
+          "text": "Sí, con un compañero. Tenemos que repartir las tareas de casa."
+        },
+        {
+          "speaker": "Marta",
+          "text": "Claro. ¿Quién se ocupa de la compra?"
+        },
+        {
+          "speaker": "Sergio",
+          "text": "Normalmente la hago yo, y él saca la basura. Pero hoy tenemos que poner la lavadora."
+        },
+        {
+          "speaker": "Marta",
+          "text": "¿Hay algún problema en el piso?"
+        },
+        {
+          "speaker": "Sergio",
+          "text": "El grifo de la cocina pierde agua. Debemos avisar al propietario."
+        }
+      ],
+      "context_note": "En España es habitual hablar de alquilar un piso y de contactar con el propietario o la agencia cuando hay una avería. En los anuncios, piso suele referirse a una vivienda o apartamento.",
+      "exercises": [
+        {
+          "id": "es_es_a2_u2_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿Qué cuenta Sergio?",
+          "options": [
+            "Cómo es su nuevo piso y cómo organizan las tareas",
+            "Cómo ha cambiado de trabajo",
+            "Cómo prepara una cena"
+          ],
+          "answer": 0,
+          "explanation": "Sergio describe la vivienda y explica cómo comparte las tareas domésticas."
+        },
+        {
+          "id": "es_es_a2_u2_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Qué problema tiene la cocina?",
+          "options": [
+            "La lavadora no funciona",
+            "El grifo pierde agua",
+            "No hay electricidad"
+          ],
+          "answer": 1,
+          "explanation": "Sergio dice que el grifo de la cocina pierde agua."
+        },
+        {
+          "id": "es_es_a2_u2_e3",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «En casa nosotros ___ repartir las tareas».",
+          "options": [
+            "tenemos que",
+            "hay que",
+            "debe"
+          ],
+          "answer": 0,
+          "explanation": "El sujeto es nosotros, por eso usamos tenemos que + infinitivo."
+        },
+        {
+          "id": "es_es_a2_u2_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Elige la frase que compara correctamente dos viviendas.",
+          "options": [
+            "Este piso es más luminoso que el anterior.",
+            "Este piso es más luminoso como el anterior.",
+            "Este piso es tan luminoso que el anterior."
+          ],
+          "answer": 0,
+          "explanation": "Para expresar «более… чем» usamos más + adjetivo + que."
+        },
+        {
+          "id": "es_es_a2_u2_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "En España, ¿qué suele significar «piso» en un anuncio inmobiliario?",
+          "options": [
+            "Una vivienda o apartamento",
+            "Una planta de un edificio exclusivamente",
+            "Una habitación de hotel"
+          ],
+          "answer": 0,
+          "explanation": "Piso es una palabra habitual en España para referirse a una vivienda en un edificio."
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "dialogue": [
+        {
+          "speaker": "Paola",
+          "text": "¿Qué tal tu departamento nuevo, Iván?"
+        },
+        {
+          "speaker": "Iván",
+          "text": "Me gusta mucho. Es más grande que el anterior y tiene un balcón."
+        },
+        {
+          "speaker": "Paola",
+          "text": "¡Qué bien! ¿Vives solo?"
+        },
+        {
+          "speaker": "Iván",
+          "text": "No, vivo con mi primo. Tenemos que organizarnos con los quehaceres."
+        },
+        {
+          "speaker": "Paola",
+          "text": "¿Cómo se reparten las tareas?"
+        },
+        {
+          "speaker": "Iván",
+          "text": "Yo preparo la comida y él lava los trastes. Los sábados hacemos la limpieza juntos."
+        },
+        {
+          "speaker": "Paola",
+          "text": "¿Y todo funciona bien en el departamento?"
+        },
+        {
+          "speaker": "Iván",
+          "text": "Casi todo. La llave del lavabo gotea desde ayer."
+        },
+        {
+          "speaker": "Paola",
+          "text": "Entonces hay que llamar al dueño."
+        },
+        {
+          "speaker": "Iván",
+          "text": "Sí, tienes razón. También debo revisar el contrato."
+        }
+      ],
+      "context_note": "En México se usa departamento para un apartamento y trastes para los platos y utensilios de cocina. En una vivienda rentada, el dueño o arrendador es la persona que la alquila.",
+      "exercises": [
+        {
+          "id": "es_mx_a2_u2_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿De qué hablan Paola e Iván?",
+          "options": [
+            "Del departamento de Iván y las tareas de casa",
+            "De un viaje familiar",
+            "De una fiesta en la oficina"
+          ],
+          "answer": 0,
+          "explanation": "La conversación trata del nuevo departamento y de cómo se organizan sus habitantes."
+        },
+        {
+          "id": "es_mx_a2_u2_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Qué tarea hace Iván?",
+          "options": [
+            "Lava los trastes",
+            "Prepara la comida",
+            "Limpia el baño todos los días"
+          ],
+          "answer": 1,
+          "explanation": "Iván explica que él prepara la comida y su primo lava los trastes."
+        },
+        {
+          "id": "es_mx_a2_u2_e3",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «Nosotros ___ organizarnos con los quehaceres».",
+          "options": [
+            "tenemos que",
+            "hay que",
+            "tiene que"
+          ],
+          "answer": 0,
+          "explanation": "Con nosotros, tener que se conjuga tenemos que."
+        },
+        {
+          "id": "es_mx_a2_u2_e4",
+          "skill": "vocabulary_in_context",
+          "type": "choice",
+          "prompt": "En México, ¿qué significa «los trastes» en este diálogo?",
+          "options": [
+            "Los platos y utensilios de cocina",
+            "Los muebles del dormitorio",
+            "Las herramientas para reparar una llave"
+          ],
+          "answer": 0,
+          "explanation": "Trastes se usa en México para hablar de platos, vasos y otros utensilios de cocina."
+        },
+        {
+          "id": "es_mx_a2_u2_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "En el contexto de una vivienda rentada en México, ¿quién es «el dueño»?",
+          "options": [
+            "La persona propietaria de la vivienda",
+            "El vecino del departamento",
+            "El administrador del supermercado"
+          ],
+          "answer": 0,
+          "explanation": "El dueño es la persona que posee la vivienda; también puede decirse propietario."
+        }
+      ]
+    }
+  ],
+  "teacher_notes": [
+    "Не добавлять отдельный раздел Vocabulary: лексика вводится в контексте.",
+    "В испанском варианте использовать piso, grifo, lavadora и sacar la basura; в мексиканском — departamento, llave, trastes и quehaceres.",
+    "Hay que выражает общую необходимость, tener que — обязанность конкретного лица; не смешивать эти конструкции в объяснениях.",
+    "Материал — часть лид-магнита, не полноценный курс A2. Не интегрировать до завершения всего испанского каталога."
+  ]
+}

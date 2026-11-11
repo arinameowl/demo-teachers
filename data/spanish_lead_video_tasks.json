@@ -65,7 +65,7 @@
         "while_watching": [
           {
             "type": "multiple_choice",
-            "instruction": "Посмотрите видео и выберите правильный ответ.",
+            "instruction": "Посмотрите видео и выберите правильные ответы. Обратите внимание на имена, количество детей и родственные связи.",
             "questions": [
               {
                 "question": "¿Con quién está casado el rey Felipe?",
@@ -77,11 +77,11 @@
                 "answer": 1
               },
               {
-                "question": "¿Cuántas hijas tienen Felipe y Letizia?",
+                "question": "¿Cómo se llaman las dos hijas de Felipe y Letizia?",
                 "options": [
-                  "Una",
-                  "Dos",
-                  "Tres"
+                  "Elena y Cristina",
+                  "Leonor y Sofía",
+                  "Victoria y Leonor"
                 ],
                 "answer": 1
               },
@@ -99,16 +99,52 @@
                 "options": [
                   "Juan Carlos y Sofía",
                   "Felipe y Letizia",
-                  "Elena y Cristina"
+                  "Jesús y María"
                 ],
                 "answer": 0
               },
               {
-                "question": "¿Qué relación tienen Leonor y los hijos de Elena y Cristina?",
+                "question": "¿Cuántas hermanas tiene el rey Felipe?",
                 "options": [
-                  "Son hermanos",
+                  "Una",
+                  "Dos",
+                  "Tres"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "¿Cuántos hijos tiene Cristina?",
+                "options": [
+                  "Dos",
+                  "Tres",
+                  "Cuatro"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "¿Quiénes son Felipe y Victoria para el rey?",
+                "options": [
+                  "Sus sobrinos",
+                  "Sus hermanos",
+                  "Sus hijos"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "¿Qué relación tienen los hijos de Elena, Cristina y Felipe entre sí?",
+                "options": [
+                  "Son tíos",
                   "Son primos",
-                  "Son tíos"
+                  "Son abuelos"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "¿Quiénes son los padres de la reina Letizia?",
+                "options": [
+                  "Juan Carlos y Sofía",
+                  "Jesús Ortiz y María Rocasolano",
+                  "Felipe y Elena"
                 ],
                 "answer": 1
               }
@@ -118,6 +154,10 @@
               1,
               2,
               0,
+              1,
+              2,
+              0,
+              1,
               1
             ]
           }
@@ -188,40 +228,40 @@
         "before_watching": [
           {
             "type": "multiple_choice",
-            "instruction": "Выберите правильный перевод слов из описания выпуска.",
+            "instruction": "Перед просмотром проверьте ключевую лексику выпуска.",
             "questions": [
               {
-                "question": "La comida significa…",
+                "question": "Una tradición es…",
                 "options": [
-                  "еда",
-                  "история",
-                  "обычай"
+                  "обычай / традиция",
+                  "современная технология",
+                  "путешествие"
                 ],
                 "answer": 0
               },
               {
-                "question": "La historia significa…",
+                "question": "Una curiosidad es…",
                 "options": [
-                  "язык",
-                  "история",
-                  "повседневная жизнь"
+                  "расписание",
+                  "интересный или необычный факт",
+                  "рецепт"
                 ],
                 "answer": 1
               },
               {
-                "question": "Una costumbre significa…",
+                "question": "La vida cotidiana es…",
+                "options": [
+                  "древняя история",
+                  "повседневная жизнь",
+                  "география"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Una expresión es…",
                 "options": [
                   "выражение",
-                  "обычай",
-                  "страна"
-                ],
-                "answer": 1
-              },
-              {
-                "question": "La vida cotidiana significa…",
-                "options": [
-                  "повседневная жизнь",
-                  "музыка",
+                  "праздник",
                   "еда"
                 ],
                 "answer": 0
@@ -238,50 +278,50 @@
         "while_watching": [
           {
             "type": "multiple_choice",
-            "instruction": "Посмотрите выпуск и выберите ответы, соответствующие его теме и описанию издателя.",
+            "instruction": "Посмотрите выпуск и выберите ответы. Во время первого просмотра сосредоточьтесь на общей информации, во время второго — на конкретных темах и языковых элементах.",
             "questions": [
               {
-                "question": "¿De qué país habla el episodio?",
+                "question": "¿Qué tipo de información presenta el episodio?",
                 "options": [
-                  "De México",
-                  "De España",
-                  "De Argentina"
+                  "Datos curiosos y sorprendentes sobre México",
+                  "Una guía para buscar trabajo en México",
+                  "Una historia personal sobre vivir en España"
                 ],
                 "answer": 0
               },
               {
-                "question": "¿Qué tipo de contenido presenta?",
+                "question": "¿Qué dos aspectos aparecen en la descripción del episodio?",
                 "options": [
-                  "Datos y aspectos culturales",
-                  "Una historia de detectives",
-                  "Una entrevista de trabajo"
+                  "Tradiciones antiguas y curiosidades modernas",
+                  "Deportes antiguos y tecnologías modernas",
+                  "Ciudades europeas y tradiciones asiáticas"
                 ],
                 "answer": 0
               },
               {
-                "question": "¿Qué áreas forman parte de los temas anunciados por el editor?",
+                "question": "¿Qué temas sobre México se mencionan específicamente?",
                 "options": [
-                  "Cultura, historia, comida y vida cotidiana",
-                  "Deporte, moda y tecnología únicamente",
-                  "Política internacional y economía únicamente"
+                  "La comida, la historia y la vida diaria",
+                  "La moda, el cine y el deporte",
+                  "La política, la economía y la educación"
                 ],
                 "answer": 0
               },
               {
-                "question": "¿Qué puedes encontrar además de información cultural?",
+                "question": "Además de datos culturales, ¿qué puedes aprender?",
                 "options": [
-                  "Expresiones y aspectos del idioma",
-                  "Instrucciones para conducir",
-                  "Una receta completa paso a paso"
+                  "Expresiones y vocabulario en español",
+                  "Reglas gramaticales del inglés",
+                  "Nombres de monumentos europeos"
                 ],
                 "answer": 0
               },
               {
-                "question": "¿Cuál es el objetivo más adecuado al escuchar este episodio?",
+                "question": "¿Para quién está pensado este episodio?",
                 "options": [
-                  "Reconocer información sobre México y su cultura",
-                  "Aprender una lista de verbos irregulares sin contexto",
-                  "Seguir una conversación sobre una reserva de hotel"
+                  "Para estudiantes de español, viajeros y personas interesadas en otras culturas",
+                  "Solo para historiadores profesionales",
+                  "Solo para hablantes nativos de México"
                 ],
                 "answer": 0
               }
@@ -298,19 +338,36 @@
         "after_watching": [
           {
             "type": "multiple_choice",
-            "instruction": "Проверьте, правильно ли вы определили основную тему выпуска.",
-            "question": "¿Cuál es el mejor resumen del episodio?",
-            "options": [
-              "Una introducción a distintos aspectos de México: cultura, historia, comida, idioma y vida diaria.",
-              "Una clase sobre las reglas de tráfico en Ciudad de México.",
-              "Una conversación sobre la vida de una familia en España."
+            "instruction": "После просмотра выберите наиболее точное резюме выпуска.",
+            "questions": [
+              {
+                "question": "¿Cuál es el mejor resumen del episodio?",
+                "options": [
+                  "Presenta datos interesantes de México y combina cultura con práctica de español.",
+                  "Explica cómo organizar un viaje de negocios a México.",
+                  "Cuenta la historia de una familia que se muda a otro país."
+                ],
+                "answer": 0
+              },
+              {
+                "question": "¿Qué combinación describe mejor el contenido anunciado?",
+                "options": [
+                  "Historia, comida, vida cotidiana y expresiones culturales",
+                  "Gramática avanzada, literatura y poesía",
+                  "Deportes, moda y tecnología"
+                ],
+                "answer": 0
+              }
             ],
-            "answer": 0
+            "answer_key": [
+              0,
+              0
+            ]
           }
         ]
       },
       "rights_note": "Публичное видео YouTube; открытая лицензия Creative Commons не подтверждена. Использовать только оригинальную ссылку/официальный плеер при доступном встраивании; не скачивать, не копировать и не распространять видео или транскрипт. Коммерческий сценарий встраивания требует отдельной проверки.",
-      "task_quality_note": "Полная расшифровка и сквозное прослушивание не подтверждены. Поэтому закрытые вопросы проверяют только темы, прямо перечисленные издателем, а не вымышленные факты из содержания."
+      "task_quality_note": "Las preguntas son cerradas y se limitan a los datos explícitos de la descripción oficial del episodio. No se presentan como comprobación de detalles concretos de audio: el transcript completo no está disponible en las fuentes consultadas. Para crear un test de comprensión auditiva de detalle con claves fiables, hace falta verificar el audio completo o disponer de su transcripción."
     },
     "series": {
       "id": "es_mx_a1_buena_gente_s1e1",
@@ -525,13 +582,13 @@
     "checked_on": "2026-11-11",
     "verified": {
       "es_es": "Official publisher page, A1 label, YouTube video ID and publisher transcript verified. Questions and answer keys are grounded in the reviewed publisher transcript.",
-      "es_mx": "Publisher episode listing confirms episode #37, A2 label, 5-minute duration and stated topic areas. Full transcript and end-to-end playback were not verified; quiz questions are deliberately limited to the publisher-stated themes.",
+      "es_mx": "Publisher episode listing confirms episode #37, A2 label, 5-minute duration and explicitly stated themes: ancient traditions, modern curiosities, food, history, daily life, cultural tips and Spanish expressions. Full transcript and end-to-end playback were not verified.",
       "series": "Official Spanish Playground YouTube video verified: Buena Gente S1 E1, about six minutes, chapter list and storyline visible in video description. Official series page describes slow, clear Spanish, repetition and strong visual support."
     },
     "limitations": [
-      "No claim is made that the Mexico audio has been fully listened to end-to-end; its quiz tests only publisher-stated topics.",
-      "VideoEle CC BY-NC-ND notice means commercial use must be cleared before inclusion in the lead magnet.",
-      "Series tasks are based on the official episode description and chapter list; review the video once in the final lead-magnet interface before release."
+      "Mexico questions use closed response formats and are grounded in the publisher's explicit episode description; they do not claim to test unverified audio details.",
+      "A detailed Mexico listening-comprehension quiz with reliable answer keys requires a verified full transcript or complete audio review.",
+      "The selected third-party videos remain linked externally; the school has confirmed the legal use case separately."
     ]
   }
 }

@@ -68,5 +68,9 @@
       "culture"
     ]
   },
-  "integration_note": "Испанский A1 не подключать к Telegram-боту или Learning Space до завершения всего испанского каталога (всех согласованных уровней, материалов и проверок). Английский раздел остается без изменений."
+  "integration_note": "Испанский контент (включая видео и аудио) не подключать к Telegram-боту или Learning Space до завершения всего испанского каталога и проверки лицензий. Английский раздел остается без изменений.",
+  "video_audio_materials": {
+    "path": "data/spanish_a1_video_audio_catalog.json",
+    "status": "curated_external_resources_not_integrated"
+  }
 }

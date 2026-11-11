@@ -5,7 +5,7 @@
     "A2",
     "B1"
   ],
-  "status": "research_candidates_not_approved",
+  "status": "audited_metadata_and_transcripts_not_cleared_for_commercial_integration",
   "policy": {
     "user_requirement": "Только бесплатные материалы на YouTube; не покупать курсы, подписки, DVD или платные учебные пакеты.",
     "selection": "Сначала сверять точный ролик, содержание, транскрипт, скорость речи, лексику, грамматику и регион; задания создавать только после проверки.",
@@ -27,21 +27,23 @@
       "candidates": [
         {
           "title": "¿Qué has hecho este verano?",
-          "fit": "Поездка, места, впечатления и действия в pretérito perfecto; есть отдельная Latino-версия с indefinido.",
-          "source": "https://videoele.com/menu-contenidos-A2.html",
-          "status": "candidate_page_link_to_confirm"
+          "level": "A2",
+          "region": "Spain version; separate Latino version exists, country unspecified",
+          "youtube": "https://www.youtube.com/watch?v=D89ku_SXF0s",
+          "publisher_page": "https://www.videoele.com/A2-Que-has-hecho-este-verano.html",
+          "fit": "Туристические места Галисии, досуг, паломники Camino de Santiago; pretérito perfecto. Хорошее тематическое совпадение с поездками и впечатлениями.",
+          "transcript": "available",
+          "status": "content_metadata_verified_audio_preview_pending"
         },
         {
           "title": "Un viaje en avión",
-          "fit": "Покупка авиабилетов, аэропорт, планы и обязательства; точное тематическое совпадение.",
-          "source": "https://videoele.com/menu-contenidos-A2.html",
-          "status": "candidate_page_link_to_confirm"
-        },
-        {
-          "title": "Una casa rural",
-          "fit": "Жилье и туристические поездки; дополнительный вариант.",
-          "source": "https://videoele.com/menu-contenidos-A2.html",
-          "status": "candidate_page_link_to_confirm"
+          "level": "A2",
+          "region": "Spain version; Latino version not confirmed",
+          "youtube": null,
+          "publisher_page": "https://www.videoele.com/menu-A2.html",
+          "fit": "Покупка авиабилетов, аэропорт, планы и обязанности. Точное тематическое совпадение.",
+          "transcript": "listed_on_publisher_page",
+          "status": "exact_video_page_and_youtube_id_not_yet_verified"
         }
       ]
     },
@@ -51,15 +53,23 @@
       "candidates": [
         {
           "title": "Sola en casa",
-          "fit": "Домашние дела и повседневные действия; pretérito perfecto, ya/todavía no.",
-          "source": "https://videoele.com/menu-contenidos-A2.html",
-          "status": "candidate_page_link_to_confirm"
+          "level": "A2",
+          "region": "Spain",
+          "youtube": "https://www.youtube.com/watch?v=paD8XUFaFE4",
+          "publisher_page": "https://www.videoele.com/A2-Sola-en-casa.html",
+          "fit": "Домашние дела и повседневные обязанности; pretérito perfecto, ya/todavía no. Текст короткий, конкретный, с визуально понятными действиями.",
+          "transcript": "reviewed",
+          "status": "content_metadata_and_transcript_verified_audio_preview_pending"
         },
         {
           "title": "Sube a mi casa",
-          "fit": "Жилье, комнаты и предметы дома; hay/estar и приглашение.",
-          "source": "https://videoele.com/menu-contenidos-A2.html",
-          "status": "candidate_page_link_to_confirm"
+          "level": "A2",
+          "region": "Spain; Latino answer key exists, audio version needs confirmation",
+          "youtube": null,
+          "publisher_page": "https://www.videoele.com/menu-A2.html",
+          "fit": "Части жилья и предметы дома; hay/estar, описание и приглашение. Более прямое совпадение с жильем.",
+          "transcript": "listed_on_publisher_page",
+          "status": "exact_video_page_and_youtube_id_not_yet_verified"
         }
       ]
     },
@@ -68,22 +78,34 @@
       "topic": "Compras y servicios",
       "candidates": [
         {
-          "title": "A comprar",
-          "fit": "Магазины, товары, услуги и цены; есть отдельная Latino-версия.",
-          "source": "https://videoele.com/A2-A-comprar.html",
-          "status": "page_verified"
+          "title": "En el mercado",
+          "level": "A2",
+          "region": "Spain; separate Latino version available",
+          "youtube": "https://www.youtube.com/watch?v=etd0-GwJJ0Y",
+          "publisher_page": "https://www.videoele.com/A2-En-el-mercado.html",
+          "fit": "Покупка фруктов и овощей, вопросы о цене, настоящее время с изменением корневой гласной. Очень точное тематическое совпадение.",
+          "transcript": "available",
+          "status": "content_metadata_verified_audio_preview_pending"
         },
         {
-          "title": "En el mercado",
-          "fit": "Продукты, рынок, покупки и цены; есть отдельная Latino-версия.",
-          "source": "https://videoele.com/menu-contenidos-A2.html",
-          "status": "candidate_page_link_to_confirm"
+          "title": "A comprar",
+          "level": "A2",
+          "region": "Spain; separate Latino version available",
+          "youtube": null,
+          "publisher_page": "https://www.videoele.com/menu-contenidos-A2.html",
+          "fit": "Магазины, товары, услуги и цены. Точное совпадение.",
+          "transcript": "listed_on_publisher_page",
+          "status": "exact_video_page_and_youtube_id_not_yet_verified"
         },
         {
           "title": "Envases, medidas y etiquetas",
-          "fit": "Упаковки, количество, единицы измерения и продукты; опубликована Latino-транскрипция с лексикой Мексики/Латинской Америки (carro, jugo, departamento).",
-          "source": "https://videoele.com/menu-contenidos-A2.html",
-          "status": "candidate_regional_version_to_preview"
+          "level": "A2",
+          "region": "Spain; separate Latino version available",
+          "youtube": null,
+          "publisher_page": "https://www.videoele.com/menu-contenidos-A2.html",
+          "fit": "Упаковки, единицы измерения, продукты и этикетки. Хороший дополнительный материал для покупок и услуг.",
+          "transcript": "listed_on_publisher_page",
+          "status": "exact_video_page_and_youtube_id_not_yet_verified"
         }
       ]
     },
@@ -93,9 +115,13 @@
       "candidates": [
         {
           "title": "¿Qué le duele?",
-          "fit": "Части тела, болезни, недомогания и глагол doler; точное совпадение по теме.",
-          "source": "https://videoele.com/menu-contenidos-A2.html",
-          "status": "candidate_page_link_to_confirm"
+          "level": "A2",
+          "region": "Spain",
+          "youtube": "https://www.youtube.com/watch?v=RuUATVB-0rY",
+          "publisher_page": "https://www.videoele.com/A2-Que-le-duele.html",
+          "fit": "Части тела, заболевания и недомогания, doler, no...nada. Точное совпадение.",
+          "transcript": "reviewed",
+          "status": "content_metadata_and_transcript_verified_audio_preview_pending"
         }
       ]
     },
@@ -105,15 +131,23 @@
       "candidates": [
         {
           "title": "Ir al trabajo",
-          "fit": "Рабочий день, расписание, дорога на работу и транспорт; уровень A2 подтвержден.",
-          "source": "https://videoele.com/A2-Ir-al-trabajo.html",
-          "status": "page_verified"
+          "level": "A2",
+          "region": "Spain (Barcelona)",
+          "youtube": "https://www.youtube.com/watch?v=uhTt1Caw2wM",
+          "publisher_page": "https://www.videoele.com/A2-Ir-al-trabajo.html",
+          "fit": "Рабочие и школьные расписания, дорога на работу, транспорт, метро и городская пресса. Содержательно подходит; транскрипт содержит сложные императивы vosotros и насыщенную лексику транспорта — использовать как дополнительное видео с подготовкой, не как легкое аудирование.",
+          "transcript": "reviewed",
+          "status": "content_metadata_and_transcript_verified_audio_preview_pending"
         },
         {
           "title": "Utilizar el ordenador",
-          "fit": "Компьютер, приложения и цифровые действия; может дополнить тему учебы/работы.",
-          "source": "https://videoele.com/menu-contenidos-A2.html",
-          "status": "candidate_page_link_to_confirm"
+          "level": "A2",
+          "region": "Spain version; Latino answer key exists, audio version needs confirmation",
+          "youtube": null,
+          "publisher_page": "https://www.videoele.com/menu-A2.html",
+          "fit": "Компьютер, приложения и цифровые действия; хорошее дополнение к теме учебы/работы.",
+          "transcript": "listed_on_publisher_page",
+          "status": "exact_video_page_and_youtube_id_not_yet_verified"
         }
       ]
     },
@@ -122,16 +156,50 @@
       "topic": "Historias y celebraciones",
       "candidates": [
         {
-          "title": "Cuando era pequeña...",
-          "fit": "Воспоминания о прошлом и привычки в детстве; imperfecto.",
-          "source": "https://videoele.com/menu-contenidos-A2.html",
-          "status": "candidate_page_link_to_confirm"
+          "title": "El fin de semana pasado",
+          "level": "A2",
+          "region": "Spain",
+          "youtube": "https://www.youtube.com/watch?v=_Bt5l0zCnkM",
+          "publisher_page": "https://www.videoele.com/A2-El-fin-desemana.html",
+          "fit": "Короткое повествование о прошедших событиях и местах Мадрида; pretérito indefinido. Подходит для историй, но не покрывает традиции и праздники.",
+          "transcript": "available",
+          "status": "content_metadata_verified_audio_preview_pending"
         },
         {
-          "title": "El fin de semana pasado",
-          "fit": "Рассказ о недавних событиях и местах; pretérito indefinido.",
-          "source": "https://videoele.com/menu-contenidos-A2.html",
-          "status": "candidate_page_link_to_confirm"
+          "title": "Cuando era pequeña...",
+          "level": "A2",
+          "region": "Spain; separate Latino audio version available",
+          "youtube": "https://www.youtube.com/watch?v=3pmwWsqYiIA",
+          "publisher_page": "https://www.videoele.com/A2-Cuando-era-pequena.html",
+          "fit": "Воспоминания о детстве, жизни в деревне, семейных каникулах и природе; imperfecto. Хорошее совпадение для историй/памяти, не для праздников.",
+          "transcript": "reviewed",
+          "status": "content_metadata_and_transcript_verified_audio_preview_pending"
+        },
+        {
+          "title": "¡Enhorabuena!",
+          "level": "A2",
+          "region": "Spain version; Latino version not confirmed",
+          "youtube": null,
+          "publisher_page": "https://www.videoele.com/menu-A2.html",
+          "fit": "Социальные выражения для поздравлений и общения; потенциально полезно для темы праздников, но точный контент надо проверить.",
+          "transcript": "listed_on_publisher_page",
+          "status": "exact_video_page_and_youtube_id_not_yet_verified"
+        }
+      ]
+    },
+    {
+      "unit": "es_a2_u06_el_tiempo_libre",
+      "topic": "Leisure crossover",
+      "candidates": [
+        {
+          "title": "Salir fuera",
+          "level": "A2",
+          "region": "Spain; separate Latino version available",
+          "youtube": "https://www.youtube.com/watch?v=RNlYBbjBlgA",
+          "publisher_page": "https://www.videoele.com/A2-Salir-fuera.html",
+          "fit": "Досуг вне дома, развлечения, мероприятия, предложения совместных занятий и покупка билетов. Это A2-кандидат для досуга, а не для A2 unit06 stories.",
+          "transcript": "available",
+          "status": "content_metadata_verified_audio_preview_pending"
         }
       ]
     }
@@ -143,15 +211,33 @@
       "candidates": [
         {
           "title": "¿Qué harías en Bilbao?",
-          "fit": "Советы, гипотетические решения и условное наклонение; городской контекст.",
-          "source": "https://www.videoele.com/menu-B1.html",
-          "status": "candidate_page_link_to_confirm"
+          "level": "B1",
+          "region": "Spain (Bilbao)",
+          "youtube": "https://www.youtube.com/watch?v=cYRZAhGcc4w",
+          "publisher_page": "https://www.videoele.com/B1-Que-harias-bilbao.html",
+          "fit": "Советы и гипотетические планы поездки, condicional simple, достопримечательности и гастрономия Бильбао. Хороший вариант для принятия решений в путешествии.",
+          "transcript": "reviewed",
+          "status": "content_metadata_and_transcript_verified_audio_preview_pending"
+        },
+        {
+          "title": "Cuando vayas a Madrid",
+          "level": "B1",
+          "region": "Spain (Madrid); Latino version exists in catalogue",
+          "youtube": null,
+          "publisher_page": "https://www.videoele.com/menu-B1.html",
+          "fit": "Предложения и планы поездки, cuando + subjuntivo и condicional. Лучше подходит к теме планов, чем абстрактные советы.",
+          "transcript": "listed_on_publisher_page",
+          "status": "exact_video_page_and_youtube_id_not_yet_verified"
         },
         {
           "title": "Consejos para ser feliz",
-          "fit": "Советы и рекомендации, отрицательный императив; bienestar emocional.",
-          "source": "https://www.videoele.com/menu-B1.html",
-          "status": "candidate_page_link_to_confirm"
+          "level": "B1",
+          "region": "Spain; Latino version available",
+          "youtube": null,
+          "publisher_page": "https://www.videoele.com/menu-B1.html",
+          "fit": "Советы и imperativo negativo. Полезно для речевой функции советовать, но тематически не про планы; оставить как резерв.",
+          "transcript": "listed_on_publisher_page",
+          "status": "exact_video_page_and_youtube_id_not_yet_verified"
         }
       ]
     },
@@ -161,15 +247,23 @@
       "candidates": [
         {
           "title": "Antes y ahora",
-          "fit": "Изменения с течением времени, сравнения и perífrasis verbales.",
-          "source": "https://www.videoele.com/menu-B1.html",
-          "status": "candidate_page_link_to_confirm"
+          "level": "B1",
+          "region": "Spain",
+          "youtube": "https://www.youtube.com/watch?v=56glDGiydaI",
+          "publisher_page": "https://www.videoele.com/B1-Antes-ahora.html",
+          "fit": "Изменения между прошлым и настоящим, imperfecto, seguir + gerundio, dejar de + infinitivo, aunque/sin embargo. Точное совпадение.",
+          "transcript": "available",
+          "status": "content_metadata_verified_audio_preview_pending"
         },
         {
           "title": "Algo inesperado",
-          "fit": "Рассказ о неожиданном событии, связное повествование и прошедшие времена.",
-          "source": "https://www.videoele.com/menu-B1.html",
-          "status": "candidate_page_link_to_confirm"
+          "level": "B1",
+          "region": "Spain; separate Latino version available",
+          "youtube": "https://www.youtube.com/watch?v=5DKOWgZPgxg",
+          "publisher_page": "https://www.videoele.com/B1-Algo-inesperado.html",
+          "fit": "Личный рассказ о неожиданном событии, организация повествования, contraste indefinido/imperfecto и pluscuamperfecto. Подходит как опыт/история, но не про жизненные перемены.",
+          "transcript": "reviewed",
+          "status": "content_metadata_and_transcript_verified_audio_preview_pending"
         }
       ]
     },
@@ -179,15 +273,23 @@
       "candidates": [
         {
           "title": "Supersticiones y suerte",
-          "fit": "Выражение мнения и сомнения с subjuntivo; социальные убеждения.",
-          "source": "https://www.videoele.com/menu-B1.html",
-          "status": "candidate_page_link_to_confirm"
+          "level": "B1",
+          "region": "Spain",
+          "youtube": "https://www.youtube.com/watch?v=e81MioaR89s",
+          "publisher_page": "https://www.videoele.com/B1-Supersticiones-suerte.html",
+          "fit": "Выражение мнения и сомнения с subjuntivo; традиции, приметы, пословицы. Хорошо для opinion/culture, но не для медиа и информации.",
+          "transcript": "reviewed",
+          "status": "content_metadata_and_transcript_verified_audio_preview_pending"
         },
         {
           "title": "Me relaja... pero me preocupa...",
-          "fit": "Выражение обеспокоенности, отношения и оценки; экологические и социальные проблемы.",
-          "source": "https://www.videoele.com/menu-B1.html",
-          "status": "candidate_page_link_to_confirm"
+          "level": "B1",
+          "region": "Spain",
+          "youtube": null,
+          "publisher_page": "https://www.videoele.com/B1-me-relaja-me-preocupa.html",
+          "fit": "Выражение отношения и обеспокоенности; экология, переработка, изменение климата, старение населения. Содержательно ближе к общественным проблемам и opinion, не к media literacy.",
+          "transcript": "reviewed",
+          "status": "content_metadata_and_transcript_verified_audio_preview_pending"
         }
       ]
     },
@@ -197,15 +299,23 @@
       "candidates": [
         {
           "title": "Sin palabras",
-          "fit": "Невербальная коммуникация и значение жестов в испаноязычном общении.",
-          "source": "https://www.videoele.com/menu-B1.html",
-          "status": "candidate_page_link_to_confirm"
+          "level": "B1",
+          "region": "Spain; separate Latino answer key exists, audio version needs confirmation",
+          "youtube": null,
+          "publisher_page": "https://www.videoele.com/menu-B1.html",
+          "fit": "Невербальная коммуникация и значение жестов; точное совпадение с социальным взаимодействием.",
+          "transcript": "listed_on_publisher_page",
+          "status": "exact_video_page_and_youtube_id_not_yet_verified"
         },
         {
           "title": "Me da vergüenza... me da igual...",
-          "fit": "Выражение эмоций, отношения и безразличия; социальные ситуации.",
-          "source": "https://www.videoele.com/menu-B1.html",
-          "status": "candidate_page_link_to_confirm"
+          "level": "B1",
+          "region": "Spain",
+          "youtube": null,
+          "publisher_page": "https://www.videoele.com/B1-Me-da-verguenza-me-da-igual.html",
+          "fit": "Выражение чувств, страха, интереса и безразличия; социальные ситуации и Carnaval. Подходит как дополнительный материал.",
+          "transcript": "listed_on_publisher_page",
+          "status": "page_verified_audio_preview_pending"
         }
       ]
     },
@@ -215,9 +325,13 @@
       "candidates": [
         {
           "title": "¿Cuánto tiempo llevan?",
-          "fit": "Опыт работы и биографии; duración con llevar + gerundio.",
-          "source": "https://videoele.com/B1-Cuanto-tiempo-llevan.html",
-          "status": "page_verified"
+          "level": "B1",
+          "region": "Mixed Spanish-speaking countries: Spain, Colombia, Panama, Costa Rica, etc.",
+          "youtube": "https://www.youtube.com/watch?v=EsY6hLzNv24",
+          "publisher_page": "https://www.videoele.com/B1-Cuanto-tiempo-llevan.html",
+          "fit": "Биографии преподавателей, профессиональный опыт и продолжительность работы; llevar + gerundio, desde/hace. Хорошо подходит для карьеры и опыта, но не для проектного сотрудничества.",
+          "transcript": "reviewed",
+          "status": "content_metadata_and_transcript_verified_audio_preview_pending"
         }
       ]
     },
@@ -227,49 +341,71 @@
       "candidates": [
         {
           "title": "Me trajo este recuerdo",
-          "fit": "Воспоминания, культура и традиция Las Fallas; pretérito indefinido; есть Latino-версия.",
-          "source": "https://www.videoele.com/B1-Me-trajo-este-recuerdo.html",
-          "status": "page_verified"
+          "level": "B1",
+          "region": "Spain (Valencia); separate Latino version exists but country unspecified",
+          "youtube": null,
+          "publisher_page": "https://www.videoele.com/B1-Me-trajo-este-recuerdo.html",
+          "fit": "Повествование о Las Fallas, воспоминания и культура Валенсии; indefinido irregular. Сильное тематическое совпадение.",
+          "transcript": "reviewed",
+          "status": "content_metadata_and_transcript_verified_audio_preview_pending"
         },
         {
           "title": "¡Vaya memoria!",
-          "fit": "Поездка по Севилье и Кордове, воспоминания и выражение удивления.",
-          "source": "https://videoele.com/B1-Vaya-memoria.html",
-          "status": "page_verified"
-        },
-        {
-          "title": "Las Fallas de Valencia",
-          "fit": "Традиции, культурная память и участие в празднике.",
-          "source": "https://www.videoele.com/menu-B1.html",
-          "status": "candidate_page_link_to_confirm"
+          "level": "B1",
+          "region": "Spain (Andalucía)",
+          "youtube": "https://www.youtube.com/watch?v=...",
+          "publisher_page": "https://www.videoele.com/B1-Vaya-memoria.html",
+          "fit": "Воспоминания о поездке по Севилье и Кордове, культурные места, гастрономия, исправление ошибочной памяти. Сильное тематическое совпадение.",
+          "transcript": "reviewed",
+          "status": "content_metadata_and_transcript_verified_youtube_id_pending"
         }
       ]
     }
   ],
   "mexican_sources_for_screening": [
     {
-      "title": "Spanish Playground",
+      "title": "Spanish Playground — beginner videos",
       "url": "https://www.youtube.com/@SpanishPlayground",
-      "region": "Mexico (Guanajuato) for selected series",
-      "note": "Отбирать только конкретные видео с подтвержденным мексиканским контекстом и взрослой тематикой; часть контента детская."
+      "evidence": "Yabla's Spanish Playground series labels the selected clips as México and Principiante; examples include Presentaciones y saludos (1:36) and Buena Gente S1E1. Transcripts are available on Yabla, but the series is fragmented into short parts and some supporting materials may require Yabla access.",
+      "source": "https://espanol.yabla.com/Spanish-Playground-series-4811",
+      "status": "region_confirmed_beginner_level_confirmed_individual_youtube_ids_and_free_youtube_access_pending",
+      "note": "Do not assume all channel content is adult-oriented or A2/B1. Buena Gente S1E1 is a beginner story about siblings moving into an apartment; potentially suitable but requires individual review."
     },
     {
-      "title": "Spanish with CJ",
-      "url": "https://spanishwithcj.com/",
-      "region": "Multiple Latin American countries including Mexico",
-      "note": "Есть интервью с реальными говорящими и транскрипты; для es_mx нужно выбирать только интервью с мексиканскими участниками. Уровень и доступность каждого видео проверять отдельно."
-    },
-    {
-      "title": "Spring Spanish",
-      "url": "https://www.youtube.com/@SpringSpanish",
-      "region": "Mexican / mixed Latin American",
-      "note": "Кандидат для разговорных конструкций и реальных сценариев; подтверждать мексиканский вариант на уровне каждого видео."
+      "title": "VideoEle Latino",
+      "url": "https://www.videoele.com/youtube.html",
+      "evidence": "Publisher confirms Latino playlist is voice-over by a speaker from an unspecified Spanish-speaking American country.",
+      "status": "not_mexico_specific",
+      "note": "Do not use as Mexican Spanish without confirming speaker's country."
     }
   ],
   "next_actions": [
-    "Подтвердить точные YouTube URL для каждого кандидата A2/B1 и просмотреть/проверить транскрипты.",
-    "Проверить мексиканские источники отдельно, не подменяя es_mx общим Latino.",
-    "Исключить материалы с платным доступом к обязательному содержанию.",
-    "Не создавать упражнения к видео до проверки самого видео и транскрипта."
+    "Find YouTube sources whose licence or written permission allows commercial educational use, or obtain free written permission from creators.",
+    "Continue Mexican-specific search with verified Mexican speakers, avoiding generic Latino labels.",
+    "Do not build comprehension exercises until exact video has been listened to and transcript checked.",
+    "Use VideoEle only for internal research / candidate evaluation unless written commercial permission is obtained."
+  ],
+  "audit": {
+    "checked_on": "2026-11-11",
+    "method": "Сверены официальные каталоги VideoEle, отдельные страницы видео, заявленные CEFR-цели и доступные транскрипты. Прослушивание самих видеодорожек не подтверждено: YouTube embed блокирует автоматическое воспроизведение в среде проверки. Поэтому аудиотемп, интонация и качество произношения остаются pending.",
+    "key_finding": "VideoEle бесплатно предоставляет видео и учебные PDF, но официальная лицензия запрещает коммерческое использование и распространение производных материалов. Для платного продукта The Teachers нельзя включать эти видео/транскрипты/задания без отдельного письменного разрешения.",
+    "license_source": "https://videoele.com/legal.html",
+    "license_summary": "CC BY-NC-ND 4.0: требуется атрибуция; запрещено коммерческое использование; запрещено распространять адаптированные/производные материалы.",
+    "youtube_source": "https://www.videoele.com/youtube.html",
+    "youtube_source_note": "Официальный канал содержит отдельные плейлисты A1, A2, B1, B2 и Latino. Автор описывает Latino как голос диктора из одной из испаноязычных стран Америки, не обязательно Мексика.",
+    "review_statuses": {
+      "metadata_and_transcript": "verified where transcript link was available",
+      "audio_playback": "not_verified",
+      "commercial_license": "not_cleared",
+      "paid_access": "free_to_watch_and_download_study_PDFs_on_publisher_site"
+    }
+  },
+  "removed_or_corrected": [
+    "Removed claim that VideoEle video catalogue is cleared for use in The Teachers paid product: NC-ND licence explicitly prohibits commercial use and derivative redistribution.",
+    "Removed false candidate title 'En el mercado' as a B1 video; it is A2.",
+    "Removed 'El fin de semana pasado' from A2 unit06 stories as a traditions match; it is a past-tense city narrative about Madrid, only a partial stories fit.",
+    "Removed 'Cuando era pequeña...' as a celebrations resource; it is a childhood memory/nature story.",
+    "Removed 'Me relaja... pero me preocupa...' and 'Supersticiones y suerte' as direct matches for media literacy; both concern opinions/feelings and social topics, not news/media.",
+    "Marked all audio preview statuses pending because actual sound playback was blocked during this check; transcript and publisher metadata are not a substitute for listening."
   ]
 }

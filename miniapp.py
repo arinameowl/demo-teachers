@@ -15,6 +15,8 @@ from fastapi import FastAPI, Header, HTTPException, Depends
 from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
+from spanish_lead_content import load_spanish_lead, questions_for, strip_answers
+
 import config
 import database as db
 
@@ -27,7 +29,7 @@ app = FastAPI(title="The Teachers Learning App", docs_url=None, redoc_url=None)
 
 LANGUAGES = {
     "en": {"name": "Английский", "available": True},
-    "es": {"name": "Испанский", "available": False},
+    "es": {"name": "Испанский", "available": True},
     "zh": {"name": "Китайский", "available": False},
     "ko": {"name": "Корейский", "available": False},
 }
@@ -41,6 +43,13 @@ class ProgressUpdate(BaseModel):
 class QuizSubmission(BaseModel):
     material_id: str = Field(pattern="^(podcast|book|series)$")
     answers: list = Field(default_factory=list, max_length=20)
+
+
+class SpanishQuizSubmission(BaseModel):
+    variant: str = Field(pattern="^(es_es|es_mx)$")
+    resource_id: str = Field(pattern="^(book|video|series)$")
+    section: str = Field(pattern="^(before_watching|while_watching|after_watching)$")
+    answers: list = Field(default_factory=list, max_length=30)
 
 
 class AppEvent(BaseModel):
@@ -216,6 +225,71 @@ async def track_app_event(payload: AppEvent, user: dict = Depends(authorized_use
     return {"ok": True}
 
 
+@app.get("/api/app/spanish-lead/{variant}")
+async def get_spanish_lead(variant: str, user: dict = Depends(authorized_user)):
+    """Return the selected Spanish variant without exposing answer keys."""
+    try:
+        data = load_spanish_lead(variant)
+    except (ValueError, OSError, json.JSONDecodeError):
+        raise HTTPException(status_code=404, detail="Материалы испанского варианта не найдены")
+    book = data["book"]["books"][0]
+    video = data["video"]
+    series = data["series"]
+    return {
+        "variant": variant,
+        "book": strip_answers(book),
+        "video": strip_answers(video),
+        "series": strip_answers(series),
+        "level_note": "Видео из Мексики помечено уровнем A2; остальные материалы подборки — A1.",
+    }
+
+
+@app.post("/api/app/spanish-lead/submit")
+async def submit_spanish_lead(payload: SpanishQuizSubmission, user: dict = Depends(authorized_user)):
+    try:
+        data = load_spanish_lead(payload.variant)
+    except (ValueError, OSError, json.JSONDecodeError):
+        raise HTTPException(status_code=404, detail="Материалы испанского варианта не найдены")
+
+    if payload.resource_id == "book":
+        questions = data["book"]["books"][0].get("questions", [])
+    else:
+        resource = data["video"] if payload.resource_id == "video" else data["series"]
+        questions = questions_for(resource, payload.section)
+
+    if not questions:
+        raise HTTPException(status_code=404, detail="В этом разделе пока нет заданий с проверкой")
+    if len(payload.answers) != len(questions):
+        raise HTTPException(status_code=422, detail="Ответьте на все задания")
+
+    results = []
+    correct = 0
+    for index, (question, given) in enumerate(zip(questions, payload.answers)):
+        expected = question.get("answer")
+        ok = isinstance(given, int) and not isinstance(given, bool) and given == expected
+        correct += int(ok)
+        options = question.get("options", [])
+        results.append({
+            "index": index,
+            "correct": ok,
+            "expected": options[expected] if isinstance(expected, int) and 0 <= expected < len(options) else "",
+            "explanation": question.get("explanation", ""),
+        })
+
+    total = len(questions)
+    event_data = f"es:{payload.variant}:{payload.resource_id}:{payload.section}:{correct}/{total}"
+    await db.log_funnel_event(user["id"], "exercise_submitted", event_data)
+    if correct == total:
+        async with aiosqlite.connect(config.DB_PATH) as conn:
+            await conn.execute(
+                "INSERT INTO learning_progress (user_id, language, material_id, status, updated_at) VALUES (?, 'es', ?, 'completed', datetime('now')) "
+                "ON CONFLICT(user_id, language, material_id) DO UPDATE SET status='completed', updated_at=datetime('now')",
+                (user["id"], f"{payload.variant}_{payload.resource_id}"),
+            )
+            await conn.commit()
+    return {"correct": correct, "total": total, "results": results, "completed": correct == total}
+
+
 @app.get("/api/app/books/{level}")
 async def get_book_fragment(level: str, user: dict = Depends(authorized_user)):
     if level not in {"A1", "A2", "B1"}:
@@ -376,7 +450,7 @@ async def submit_exercises(payload: QuizSubmission, user: dict = Depends(authori
 
 @app.post("/api/app/progress")
 async def save_progress(payload: ProgressUpdate, user: dict = Depends(authorized_user)):
-    if payload.language != "en":
+    if payload.language not in {"en", "es"}:
         raise HTTPException(status_code=409, detail="Материалы этого языка ещё не загружены")
     async with aiosqlite.connect(config.DB_PATH) as conn:
         await conn.execute(

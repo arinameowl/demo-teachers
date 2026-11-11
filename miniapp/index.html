@@ -53,7 +53,7 @@
   tg?.ready(); tg?.expand();
   if (tg?.themeParams) { document.documentElement.style.setProperty('--tg-bg', tg.themeParams.bg_color || '#F5F1EB'); }
   const defaultLanguages = {en:{name:'Английский',available:true},es:{name:'Испанский',available:true},zh:{name:'Китайский',available:false},ko:{name:'Корейский',available:false}};
-  let state = {languages:defaultLanguages, profile:{}, materials:[], progress:[], library:{books:[],worksheets:[]}, bot_username:'TheTeachersEng_bot', spanishLead:null}, selectedLanguage = 'en', selectedSpanishVariant = 'es_es';
+  let state = {languages:defaultLanguages, profile:{}, materials:[], progress:[], library:{books:[],worksheets:[]}, bot_username:'TheTeachersEng_bot', spanishLead:null,spanishLibrary:null}, selectedLanguage = 'en', selectedSpanishVariant = 'es_es';
   const $ = id => document.getElementById(id);
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const languageNames = {en:'Английский',es:'Испанский',zh:'Китайский',ko:'Корейский'};
@@ -139,9 +139,13 @@
     $('materials').innerHTML = '<div class="loading">Загружаем материалы по испанскому…</div>';
     $('library').innerHTML = '';
     try {
-      const data = await api('/api/app/spanish-lead/' + variant);
+      const [data, library] = await Promise.all([
+        api('/api/app/spanish-lead/' + variant),
+        api('/api/app/spanish-library/' + variant)
+      ]);
       if (requestId !== spanishLoadId || selectedLanguage !== 'es' || variant !== selectedSpanishVariant) return;
       state.spanishLead = data;
+      state.spanishLibrary = library;
       renderSpanishMaterials();
     } catch(e) {
       if (requestId !== spanishLoadId || selectedLanguage !== 'es') return;
@@ -150,27 +154,48 @@
     }
   }
   function renderSpanishMaterials() {
-    const d = state.spanishLead;
-    if (!d) return;
+    const d = state.spanishLead, library = state.spanishLibrary;
+    if (!d || !library) return;
+    const level = library.level;
+    const units = library.units || [];
+    const unitCards = units.map(unit => {
+      const v = unit.variant || {};
+      const goals = (unit.learning_goals || []).slice(0,4).map(x => '<li>' + esc(x) + '</li>').join('');
+      const grammar = (unit.grammar || []).map(g => '<p><strong>' + esc(g.title_ru || g.topic || '') + '</strong><br>' + esc(g.explanation_ru || '') + '</p>').join('');
+      const dialogue = (v.dialogue || []).map(line => '<p><strong>' + esc(line.speaker || '') + ':</strong> ' + esc(line.text || '') + '</p>').join('');
+      const reading = v.reading ? '<details class="quiz-q"><summary>Текст для чтения</summary><p>' + esc(v.reading.title || '') + '</p><p>' + esc(v.reading.text || v.reading.content || '') + '</p></details>' : '';
+      const exercises = v.exercises || [];
+      return '<article class="card"><div class="card-top"><span class="tag">Урок · ' + esc(level) + '</span><span class="status">' + esc(v.name || '') + '</span></div><h3>' + esc(unit.title) + '</h3>' +
+        (goals ? '<p class="desc">После урока вы сможете:</p><ul>' + goals + '</ul>' : '') +
+        (grammar ? '<details class="quiz-q"><summary>Грамматика и примеры</summary>' + grammar + '</details>' : '') +
+        (dialogue ? '<details class="quiz-q"><summary>Диалог</summary>' + dialogue + '</details>' : '') +
+        reading + '<div class="actions"><button class="action" data-spanish-unit="' + esc(unit.id) + '">Пройти упражнения (' + exercises.length + ')</button></div></article>';
+    }).join('');
     const book = d.book, video = d.video, series = d.series;
-    const videoId = (video.youtube_url.match(/[?&]v=([^&]+)/) || [,''])[1];
-    const seriesId = (series.youtube_url.match(/[?&]v=([^&]+)/) || [,''])[1];
-    const videoPlayer = videoId ? '<iframe class="player" src="https://www.youtube-nocookie.com/embed/' + esc(videoId) + '?playsinline=1&rel=0" title="' + esc(video.title) + '" allowfullscreen loading="lazy"></iframe>' : '';
-    const seriesPlayer = seriesId ? '<iframe class="player" src="https://www.youtube-nocookie.com/embed/' + esc(seriesId) + '?playsinline=1&rel=0" title="' + esc(series.title) + '" allowfullscreen loading="lazy"></iframe>' : '';
-    $('materials').innerHTML =
-      '<article class="card"><div class="tag">Чтение · A1</div><h3>' + esc(book.title) + '</h3><p class="desc">' + esc(d.variant === 'es_es' ? 'Испанский Испании' : 'Испанский Мексики') + '</p><div class="actions"><button class="action" id="spanish-read" type="button">Читать книгу</button></div>' +
-      spanishSection('book', book, 'after_watching', 'Проверка понимания текста') + '</article>' +
-      '<article class="card"><div class="tag">Видео · ' + esc(video.level) + '</div><h3>' + esc(video.title) + '</h3><p class="desc">' + esc(video.content_summary || '') + '</p>' + videoPlayer +
-      '<div class="actions"><a class="action secondary" href="' + esc(video.youtube_url) + '" target="_blank" rel="noopener">Открыть на YouTube</a></div>' +
-      spanishSection('video', video, 'before_watching', 'Перед просмотром') +
-      spanishSection('video', video, 'while_watching', 'Во время просмотра') +
-      spanishSection('video', video, 'after_watching', 'После просмотра') + '</article>' +
-      '<article class="card"><div class="tag">Сериал · ' + esc(series.level) + '</div><h3>' + esc(series.title) + '</h3><p class="desc">' + esc(series.content_summary || '') + '</p>' + seriesPlayer +
-      '<div class="actions"><a class="action secondary" href="' + esc(series.youtube_url) + '" target="_blank" rel="noopener">Открыть на YouTube</a></div>' +
-      spanishSection('series', series, 'before_watching', 'Перед просмотром') +
-      spanishSection('series', series, 'while_watching', 'Во время просмотра') +
-      spanishSection('series', series, 'after_watching', 'После просмотра') + '</article>' +
-      '<div class="notice">' + esc(d.level_note || '') + '</div>';
+    const videoLevel = String(video.level || '').match(/A[12]|B1/)?.[0] || '';
+    const extra = [];
+    if (level === 'A1') {
+      const bookTitle = book.books?.[0]?.title || book.title || 'Книга';
+      extra.push('<article class="card"><div class="card-top"><span class="tag">Чтение · A1</span><span class="status">Дополнительный материал</span></div><h3>' + esc(bookTitle) + '</h3><p class="desc">' + esc(d.variant === 'es_es' ? 'Испанский Испании' : 'Испанский Мексики') + '</p><div class="actions"><button class="action secondary" id="spanish-read" type="button">Читать книгу</button></div>' + spanishSection('book', book, 'after_watching', 'Проверка понимания текста') + '</article>');
+    }
+    if (videoLevel === level) {
+      const videoId = (video.youtube_url.match(/[?&]v=([^&]+)/) || [,''])[1];
+      const videoPlayer = videoId ? '<iframe class="player" src="https://www.youtube-nocookie.com/embed/' + esc(videoId) + '?playsinline=1&rel=0" title="' + esc(video.title) + '" allowfullscreen loading="lazy"></iframe>' : '';
+      extra.push('<article class="card"><div class="card-top"><span class="tag">Видео · ' + esc(videoLevel) + '</span><span class="status">Дополнительный материал</span></div><h3>' + esc(video.title) + '</h3><p class="desc">' + esc(video.content_summary || '') + '</p>' +
+        spanishSection('video', video, 'before_watching', 'Лексика перед просмотром') + videoPlayer +
+        '<div class="actions"><a class="action secondary" href="' + esc(video.youtube_url) + '" target="_blank" rel="noopener">Открыть на YouTube</a></div>' +
+        spanishSection('video', video, 'while_watching', 'Во время просмотра') + spanishSection('video', video, 'after_watching', 'После просмотра') + '</article>');
+    }
+    if (level === 'A1' && String(series.level || '').includes('A1')) {
+      const seriesId = (series.youtube_url.match(/[?&]v=([^&]+)/) || [,''])[1];
+      const seriesPlayer = seriesId ? '<iframe class="player" src="https://www.youtube-nocookie.com/embed/' + esc(seriesId) + '?playsinline=1&rel=0" title="' + esc(series.title) + '" allowfullscreen loading="lazy"></iframe>' : '';
+      extra.push('<article class="card"><div class="card-top"><span class="tag">Сериал · A1</span><span class="status">Дополнительный материал</span></div><h3>' + esc(series.title) + '</h3><p class="desc">' + esc(series.content_summary || '') + '</p>' +
+        spanishSection('series', series, 'before_watching', 'Лексика перед просмотром') + seriesPlayer +
+        '<div class="actions"><a class="action secondary" href="' + esc(series.youtube_url) + '" target="_blank" rel="noopener">Открыть на YouTube</a></div>' +
+        spanishSection('series', series, 'while_watching', 'Во время просмотра') + spanishSection('series', series, 'after_watching', 'После просмотра') + '</article>');
+    }
+    $('materials').innerHTML = '<div class="tag">Основная программа · ' + esc(level) + '</div>' + unitCards +
+      (extra.length ? '<h3>Дополнительные материалы</h3>' + extra.join('') : '');
     $('library').innerHTML = '';
     $('spanish-read')?.addEventListener('click', () => {
       activeBook = book; bookPage = 0; renderBookPage(); $('reader').classList.add('open');
@@ -178,9 +203,20 @@
     document.querySelectorAll('[data-spanish-quiz]').forEach(btn => btn.addEventListener('click', () => {
       const resourceId = btn.dataset.spanishQuiz, section = btn.dataset.section;
       const resource = resourceId === 'book' ? book : resourceId === 'video' ? video : series;
-      const questions = resourceId === 'book' ? resource.questions : flattenSpanishTasks(resource, section);
+      const questions = resourceId === 'book' ? resource.books?.[0]?.questions || [] : flattenSpanishTasks(resource, section);
       openSpanishQuiz(resourceId, section, questions);
     }));
+    document.querySelectorAll('[data-spanish-unit]').forEach(btn => btn.addEventListener('click', () => openSpanishUnitQuiz(btn.dataset.spanishUnit)));
+  }
+  async function openSpanishUnitQuiz(unitId) {
+    const unit = state.spanishLibrary?.units?.find(x => x.id === unitId);
+    const questions = unit?.variant?.exercises || [];
+    if (!questions.length) return;
+    activeQuiz = {materialId:unitId, spanishUnit:true, variant:selectedSpanishVariant, data:{questions}};
+    $('quiz-title').textContent = 'Испанский · ' + unit.title;
+    $('quiz-result').innerHTML = '';
+    $('quiz-body').innerHTML = questions.map((q,i)=>'<div class="quiz-q"><p>'+(i+1)+'. '+esc(q.prompt || '')+'</p>'+q.options.map((o,j)=>'<label><input type="radio" name="q'+i+'" value="'+j+'"> '+esc(o)+'</label>').join('')+'</div>').join('');
+    $('quiz').classList.add('open');
   }
   async function openSpanishQuiz(resourceId, section, questions) {
     if (!questions?.length) return;

@@ -6,45 +6,133 @@
   "unit_id": "es_a1_u01_presentaciones",
   "title": "Primeros contactos",
   "learning_goals": [
-    "Saludar y despedirse en situaciones cotidianas",
-    "Presentarse y dar información personal básica",
-    "Preguntar por el nombre, la edad, la profesión y el lugar de residencia",
-    "Usar ser, llamarse y tener en presente"
+    "Поздороваться и попрощаться в повседневной ситуации",
+    "Представиться и спросить имя собеседника",
+    "Сказать, откуда вы, где живете и чем занимаетесь",
+    "Назвать возраст и спросить возраст собеседника в подходящей ситуации",
+    "Задать простые вопросы о происхождении, месте жительства и работе",
+    "Использовать ser, llamarse и tener в настоящем времени",
+    "Различать неформальное tú и вежливое usted",
+    "Поддержать короткий разговор при первом знакомстве"
   ],
   "grammar": [
     {
       "topic": "ser",
-      "explanation_ru": "Используем ser для имени, национальности и профессии.",
+      "title_ru": "Ser: кто вы и откуда вы",
+      "explanation_ru": "Ser используется, чтобы назвать имя, происхождение, национальность и профессию. Для первого знакомства особенно полезны формы soy (я), eres (ты) и es (он/она/Вы). Когда говорим о происхождении, используем ser de + место: Soy de Madrid. Когда говорим о текущем месте жительства, используем vivir en: Vivo en Madrid.",
+      "forms": [
+        {
+          "form": "soy",
+          "meaning": "я есть / я являюсь"
+        },
+        {
+          "form": "eres",
+          "meaning": "ты есть / являешься"
+        },
+        {
+          "form": "es",
+          "meaning": "он / она / Вы есть"
+        }
+      ],
       "examples": [
         "Soy Laura.",
-        "Soy mexicana.",
-        "Soy diseñadora."
-      ]
+        "Soy de México.",
+        "Soy profesora.",
+        "¿Eres de aquí?",
+        "Vivo en Valencia."
+      ],
+      "common_mistake_ru": "Не путайте происхождение и место жительства: Soy de Puebla, pero vivo en Ciudad de México."
     },
     {
       "topic": "llamarse",
-      "explanation_ru": "Возвратный глагол llamarse — «называться». Форма зависит от лица.",
+      "title_ru": "Llamarse: как вас зовут",
+      "explanation_ru": "Llamarse — возвратный глагол «называться». В разговоре о себе используйте me llamo, с собеседником на tú — te llamas, о другом человеке или при обращении на usted — se llama.",
+      "forms": [
+        {
+          "form": "me llamo",
+          "meaning": "меня зовут"
+        },
+        {
+          "form": "te llamas",
+          "meaning": "тебя зовут"
+        },
+        {
+          "form": "se llama",
+          "meaning": "его / ее / Вас зовут"
+        }
+      ],
       "examples": [
-        "Me llamo Laura.",
+        "Me llamo Clara.",
         "¿Cómo te llamas?",
-        "Se llama Pablo."
-      ]
+        "¿Cómo se llama usted?",
+        "Se llama Diego."
+      ],
+      "common_mistake_ru": "В вопросе ¿Cómo te llamas? местоимение te относится к собеседнику. Для usted используйте se: ¿Cómo se llama?"
     },
     {
-      "topic": "tener",
-      "explanation_ru": "Используем tener, чтобы назвать возраст. По-испански возраст буквально выражается как «иметь лет».",
+      "topic": "tener_age",
+      "title_ru": "Tener: сколько вам лет",
+      "explanation_ru": "Возраст в испанском выражается через tener — буквально «иметь» определенное количество лет. Используйте tengo для себя и tienes, чтобы спросить собеседника на tú. Для usted: ¿Cuántos años tiene?",
+      "forms": [
+        {
+          "form": "tengo",
+          "meaning": "мне ... лет"
+        },
+        {
+          "form": "tienes",
+          "meaning": "тебе ... лет"
+        },
+        {
+          "form": "tiene",
+          "meaning": "ему / ей / Вам ... лет"
+        }
+      ],
       "examples": [
-        "Tengo 27 años.",
-        "¿Cuántos años tienes?"
-      ]
+        "Tengo veintiséis años.",
+        "¿Cuántos años tienes?",
+        "Mi hermano tiene treinta años."
+      ],
+      "common_mistake_ru": "Не используйте ser для возраста: правильно tengo veinte años, а не soy veinte años."
     },
     {
-      "topic": "presentaciones",
-      "explanation_ru": "В неформальной беседе обычно используют tú; в более формальной — usted.",
+      "topic": "questions_for_introductions",
+      "title_ru": "Вопросы для первого знакомства",
+      "explanation_ru": "Чтобы поддержать беседу, используйте несколько частотных вопросов. Обратите внимание: в испанском вопросительные слова qué, cómo, dónde, de dónde и cuántos имеют ударение на письме.",
       "examples": [
-        "¿Cómo te llamas?",
-        "¿Cómo se llama usted?"
-      ]
+        "¿Cómo te llamas? — Me llamo Ana.",
+        "¿De dónde eres? — Soy de Chile.",
+        "¿Dónde vives? — Vivo en Madrid.",
+        "¿A qué te dedicas? — Trabajo en una oficina.",
+        "¿Cuántos años tienes? — Tengo veintiséis años."
+      ],
+      "note_ru": "Вопрос ¿A qué te dedicas? — естественный способ спросить о занятии или профессии. На A1 можно отвечать простой конструкцией trabajo en… или soy…"
+    },
+    {
+      "topic": "tú_and_usted",
+      "title_ru": "Tú и usted: как обратиться к человеку",
+      "explanation_ru": "Tú — неформальное обращение к одному человеку. Usted — более формальное или уважительное обращение; грамматически оно сочетается с формой глагола для él/ella: ¿Cómo se llama usted? Выбор зависит от ситуации, возраста, отношений и региональных привычек.",
+      "examples": [
+        "¡Hola! ¿Cómo te llamas?",
+        "Buenos días. ¿Cómo se llama usted?",
+        "¿De dónde eres?",
+        "¿De dónde es usted?"
+      ],
+      "note_ru": "В первом знакомстве с ровесником обычно подойдет tú. В официальной ситуации, при общении с незнакомым человеком или в сервисном контексте может быть уместно usted."
+    },
+    {
+      "topic": "greetings_and_farewells",
+      "title_ru": "Приветствия и прощания",
+      "explanation_ru": "Hola подходит для нейтрального приветствия в большинстве повседневных ситуаций. Buenos días, buenas tardes и buenas noches помогают учитывать время суток и степень формальности. Для прощания подойдут hasta luego, hasta pronto и nos vemos.",
+      "examples": [
+        "¡Hola!",
+        "Buenos días.",
+        "Buenas tardes.",
+        "Encantado / Encantada.",
+        "Mucho gusto.",
+        "¡Hasta luego!",
+        "¡Nos vemos!"
+      ],
+      "note_ru": "Encantado/encantada согласуется с тем, кто говорит. Mucho gusto — нейтральная формула, широко понятная в испаноязычном мире."
     }
   ],
   "variants": [
@@ -76,6 +164,14 @@
         {
           "speaker": "Diego",
           "text": "¡Qué interesante! Yo trabajo en una empresa de tecnología."
+        },
+        {
+          "speaker": "Clara",
+          "text": "¿Tienes móvil? Podemos intercambiar números."
+        },
+        {
+          "speaker": "Diego",
+          "text": "Sí, claro. ¡Me alegro de conocerte!"
         },
         {
           "speaker": "Clara",
@@ -124,7 +220,7 @@
             "Computadora"
           ],
           "answer": 1,
-          "explanation": "Móvil es la palabra habitual en España. Celular se usa en México y en otros países."
+          "explanation": "Móvil es la palabra habitual en España para el teléfono celular; Clara la utiliza en el diálogo al proponer intercambiar números."
         },
         {
           "id": "es_es_u1_e4",
@@ -185,6 +281,14 @@
         },
         {
           "speaker": "Mariana",
+          "text": "¿Tienes celular? Podemos intercambiar números."
+        },
+        {
+          "speaker": "Luis",
+          "text": "Sí, claro. ¡Qué gusto conocerte!"
+        },
+        {
+          "speaker": "Mariana",
           "text": "Oye, Luis, ya me voy. ¡Nos vemos!"
         },
         {
@@ -230,7 +334,7 @@
             "Celular"
           ],
           "answer": 2,
-          "explanation": "Celular es la palabra habitual en México. Móvil se usa comúnmente en España."
+          "explanation": "Celular es la palabra habitual en México para el teléfono móvil; Mariana la utiliza en el diálogo al proponer intercambiar números."
         },
         {
           "id": "es_mx_u1_e4",
@@ -263,8 +367,329 @@
   ],
   "teacher_notes": [
     "Не вводить vosotros в мексиканском маршруте; во множественном числе использовать ustedes.",
-    "В испанском маршруте форму vosotros можно вводить позже отдельным блоком, не перегружая первый урок.",
+    "В испанском маршруте форму vosotros можно вводить позже отдельным блоком, не перегружая первый материал.",
     "Не представлять разговорные выражения ¿Qué onda? как нейтральный универсальный приветственный шаблон: это неформальная мексиканская речь.",
-    "Все диалоги и задания оригинальные и созданы для The Teachers School."
-  ]
+    "Móvil — типичное слово для Испании; celular — типичное слово для Мексики и многих других стран Латинской Америки.",
+    "Soy de указывает на происхождение, vivo en — на место проживания. Не смешивать эти значения.",
+    "Возраст выражается через tener: tengo veinte años, а не soy veinte años.",
+    "Encantado/encantada согласуется с говорящим; mucho gusto — нейтральная широко понятная формула.",
+    "Tú — неформальное обращение, usted — более формальное; выбор зависит от ситуации и региональных привычек.",
+    "Не требовать от учащихся раскрывать реальные персональные данные. Можно использовать вымышленный профиль.",
+    "Все диалоги и задания оригинальные и созданы для The Teachers School.",
+    "Материал требует финальной вычитки носителями испанского Испании и Мексики; текстовые подсказки по произношению не заменяют аудиомодель."
+  ],
+  "editorial_intro": {
+    "headline": "Todo empieza con un hola",
+    "hook": "Первое знакомство редко начинается со сложных разговоров. Достаточно поздороваться, назвать свое имя, спросить, откуда человек, и поддержать короткую беседу. Но именно эти первые фразы помогают почувствовать себя увереннее в новой языковой среде.",
+    "opening_question": "Как бы вы представились человеку, с которым только что познакомились?",
+    "purpose": "Вы научитесь начинать и завершать короткое знакомство, рассказывать базовую информацию о себе и задавать собеседнику простые вопросы.",
+    "estimated_time_minutes": 35,
+    "route": [
+      "Прочитайте два знакомства и обратите внимание на приветствия и прощания.",
+      "Разберите ser, llamarse, tener и вопросы о личной информации.",
+      "Сравните несколько выражений, характерных для Испании и Мексики.",
+      "Подготовьте собственное короткое знакомство и попробуйте произнести его без подсказки."
+    ]
+  },
+  "vocabulary_in_context": {
+    "greetings": [
+      {
+        "es": "¡Hola!",
+        "ru": "Привет! / Здравствуйте!"
+      },
+      {
+        "es": "Buenos días",
+        "ru": "Доброе утро / Добрый день"
+      },
+      {
+        "es": "Buenas tardes",
+        "ru": "Добрый день / Добрый вечер"
+      },
+      {
+        "es": "Buenas noches",
+        "ru": "Добрый вечер / Спокойной ночи"
+      },
+      {
+        "es": "Encantado/a",
+        "ru": "Приятно познакомиться"
+      },
+      {
+        "es": "Mucho gusto",
+        "ru": "Очень приятно"
+      },
+      {
+        "es": "Igualmente",
+        "ru": "Взаимно"
+      },
+      {
+        "es": "¡Hasta luego!",
+        "ru": "До скорого!"
+      },
+      {
+        "es": "¡Nos vemos!",
+        "ru": "Увидимся!"
+      }
+    ],
+    "personal_information": [
+      {
+        "es": "el nombre",
+        "ru": "имя"
+      },
+      {
+        "es": "el apellido",
+        "ru": "фамилия"
+      },
+      {
+        "es": "la edad",
+        "ru": "возраст"
+      },
+      {
+        "es": "el lugar de origen",
+        "ru": "место происхождения"
+      },
+      {
+        "es": "la ciudad",
+        "ru": "город"
+      },
+      {
+        "es": "el trabajo",
+        "ru": "работа"
+      },
+      {
+        "es": "la profesión",
+        "ru": "профессия"
+      },
+      {
+        "es": "el número de teléfono",
+        "ru": "номер телефона"
+      },
+      {
+        "es": "el móvil / el celular",
+        "ru": "мобильный телефон"
+      }
+    ],
+    "useful_chunks": [
+      {
+        "es": "Me llamo…",
+        "ru": "Меня зовут…"
+      },
+      {
+        "es": "Soy de…",
+        "ru": "Я из…"
+      },
+      {
+        "es": "Vivo en…",
+        "ru": "Я живу в…"
+      },
+      {
+        "es": "Trabajo en…",
+        "ru": "Я работаю в…"
+      },
+      {
+        "es": "¿Y tú?",
+        "ru": "А ты?"
+      },
+      {
+        "es": "¿A qué te dedicas?",
+        "ru": "Чем ты занимаешься?"
+      },
+      {
+        "es": "Tengo que irme",
+        "ru": "Мне нужно идти"
+      },
+      {
+        "es": "Que vaya bien",
+        "ru": "Хорошего дня / Всего хорошего"
+      }
+    ],
+    "usage_note_ru": "Необязательно сообщать малознакомому человеку возраст, номер телефона или другие личные данные. В диалоге это учебные примеры; в реальном общении вы сами выбираете, чем делиться."
+  },
+  "language_in_real_life": {
+    "es_es": {
+      "title": "Conocer a alguien en España",
+      "items": [
+        {
+          "expression": "móvil",
+          "meaning_ru": "мобильный телефон",
+          "context": "¿Tienes móvil? Podemos intercambiar números.",
+          "note_ru": "Обычное слово в Испании; в Мексике чаще говорят celular."
+        },
+        {
+          "expression": "¡Que vaya bien!",
+          "meaning_ru": "Всего хорошего! / Пусть все пройдет хорошо!",
+          "context": "¡Hasta luego! ¡Que vaya bien!",
+          "note_ru": "Естественное дружелюбное прощание. В письме que здесь без ударения."
+        },
+        {
+          "expression": "encantado / encantada",
+          "meaning_ru": "приятно познакомиться",
+          "context": "Encantado.",
+          "note_ru": "Форма зависит от пола говорящего; igualmente — удобный ответ."
+        }
+      ],
+      "listening_tip_ru": "В примере используется центрально-испанское произношение: c перед e/i и z могут произноситься как /θ/. Это не единственный вариант произношения в Испании."
+    },
+    "es_mx": {
+      "title": "Conocer a alguien en México",
+      "items": [
+        {
+          "expression": "celular",
+          "meaning_ru": "мобильный телефон",
+          "context": "¿Tienes celular? Podemos intercambiar números.",
+          "note_ru": "Обычное слово в Мексике; в Испании чаще говорят móvil."
+        },
+        {
+          "expression": "Oye",
+          "meaning_ru": "Слушай",
+          "context": "Oye, Luis, ya me voy.",
+          "note_ru": "Неформальное обращение, чтобы привлечь внимание собеседника. Уместность зависит от отношений и интонации."
+        },
+        {
+          "expression": "¡Nos vemos!",
+          "meaning_ru": "Увидимся!",
+          "context": "¡Nos vemos! ¡Hasta pronto!",
+          "note_ru": "Распространенное повседневное прощание в Мексике и других испаноязычных странах."
+        },
+        {
+          "expression": "Mucho gusto",
+          "meaning_ru": "Очень приятно",
+          "context": "Me llamo Luis. Mucho gusto.",
+          "note_ru": "Широко понятная формула знакомства."
+        }
+      ],
+      "listening_tip_ru": "В центральномексиканском варианте z и c перед e/i произносятся как /s/. В Испании можно услышать /θ/ в ряде регионов; латиноамериканское произношение не следует считать менее правильным."
+    }
+  },
+  "guided_practice": [
+    {
+      "stage": "notice",
+      "title": "1. Заметьте, как начинается знакомство",
+      "instruction_ru": "Перечитайте диалоги и найдите выражения, которые помогают познакомиться, обменяться информацией и завершить разговор.",
+      "tasks": [
+        {
+          "prompt_ru": "Найдите в каждом диалоге приветствие, представление и прощание.",
+          "hint_ru": "Сравните ¡Hola!, Me llamo…, Hasta luego и Nos vemos."
+        },
+        {
+          "prompt_ru": "Найдите фразы, в которых герои говорят, откуда они и где живут. Чем отличаются эти две конструкции?",
+          "hint_ru": "Soy de… говорит о происхождении, vivo en… — о месте жительства."
+        },
+        {
+          "prompt_ru": "Найдите формы llamarse и tener. Кто говорит о себе, а кто задает вопрос?",
+          "hint_ru": "Me llamo / te llamas; tengo / tienes."
+        },
+        {
+          "prompt_ru": "Сравните слова móvil и celular. Какой вариант использует каждый собеседник?",
+          "hint_ru": "Оба слова обозначают мобильный телефон, но типичны для разных регионов."
+        }
+      ],
+      "check_ru": "Вы должны уметь понять, кто говорит, откуда он или она, где живет и чем занимается."
+    },
+    {
+      "stage": "practice",
+      "title": "2. Подготовьте ответы о себе",
+      "instruction_ru": "Заполните фразы своими данными или придумайте персонажа. Не используйте личную информацию, которой не хотите делиться.",
+      "tasks": [
+        {
+          "prompt": "¡Hola! Me llamo ____.",
+          "focus_ru": "Имя"
+        },
+        {
+          "prompt": "Soy de ____ y vivo en ____.",
+          "focus_ru": "Происхождение и место жительства"
+        },
+        {
+          "prompt": "Tengo ____ años.",
+          "focus_ru": "Возраст — реальный или вымышленный"
+        },
+        {
+          "prompt": "Trabajo en ____ / Soy ____.",
+          "focus_ru": "Работа или профессия"
+        },
+        {
+          "prompt": "Mucho gusto. ¿Y tú?",
+          "focus_ru": "Передайте инициативу собеседнику"
+        }
+      ],
+      "model_answers_after_attempt": [
+        "¡Hola! Me llamo Elena.",
+        "Soy de Kazán y vivo en Moscú.",
+        "Tengo veinticuatro años.",
+        "Trabajo en una empresa.",
+        "Mucho gusto. ¿Y tú?"
+      ]
+    },
+    {
+      "stage": "communicate",
+      "title": "3. Познакомьтесь за одну минуту",
+      "instruction_ru": "Представьте, что вы встретили нового коллегу, однокурсника или участника мероприятия. Проведите короткий разговор, задавая вопросы по очереди.",
+      "prompts": [
+        "Saluda y pregunta cómo se llama la otra persona.",
+        "Di de dónde eres y pregunta de dónde es la otra persona.",
+        "Pregunta dónde vive y a qué se dedica.",
+        "Comparte una o dos informaciones sobre ti.",
+        "Despídete de manera natural."
+      ],
+      "success_criteria_ru": "В разговоре есть приветствие, представление, минимум два вопроса, две фразы о себе и естественное прощание."
+    }
+  ],
+  "personal_application": {
+    "title": "Mucho gusto: preséntate",
+    "scenario_ru": "Вы приходите на языковое мероприятие или знакомитесь с новым коллегой. Нужно представиться, обменяться базовой информацией и поддержать разговор.",
+    "task_ru": "Подготовьте устное представление на 6–8 реплик. Затем разыграйте разговор с воображаемым собеседником или партнером.",
+    "include": [
+      "Приветствие",
+      "Имя и место происхождения",
+      "Город, в котором вы живете",
+      "Работа, учеба или профессия",
+      "Один вопрос собеседнику",
+      "Формула завершения разговора"
+    ],
+    "stretch_task_ru": "Добавьте вежливую версию одного вопроса с usted. Например, преобразуйте ¿Cómo te llamas? в ¿Cómo se llama usted?",
+    "self_check_ru": [
+      "Я могу представиться без чтения готового текста",
+      "Я правильно использую soy de и vivo en",
+      "Я не путаю me llamo и te llamas",
+      "Я использую tener, когда говорю о возрасте",
+      "Я могу задать хотя бы два вопроса",
+      "Я выбираю подходящее приветствие и прощание"
+    ]
+  },
+  "pronunciation_practice": {
+    "status": "text_based_practice_audio_model_pending",
+    "instruction_ru": "Прочитайте реплики вслух, запишите себя и прослушайте. Важно не ускоряться: сначала добейтесь четкого произношения и естественной интонации.",
+    "phrases": [
+      {
+        "text": "¡Hola! Me llamo Clara. ¿Y tú?",
+        "focus_ru": "Интонация приветствия и вопроса; не теряйте ударение в llamo."
+      },
+      {
+        "text": "¿De dónde eres? Soy de Zaragoza.",
+        "focus_ru": "Обратите внимание на ударение в dónde и плавное соединение слов."
+      },
+      {
+        "text": "Tengo veintiséis años.",
+        "focus_ru": "Произнесите число и años четко, не пропуская звук ñ."
+      },
+      {
+        "text": "Mucho gusto. ¡Hasta luego!",
+        "focus_ru": "Отработайте дружелюбную интонацию знакомства и прощания."
+      }
+    ],
+    "reflection_ru": "Какая фраза получается наиболее естественно? Какую вы пока произносите с паузами? Повторите ее три раза."
+  },
+  "reflection": {
+    "title": "Lo que ya puedes hacer",
+    "instruction_ru": "Отметьте только те действия, которые можете выполнить самостоятельно.",
+    "can_do": [
+      "Я могу поздороваться и попрощаться",
+      "Я могу назвать свое имя и спросить имя собеседника",
+      "Я могу сказать, откуда я и где живу",
+      "Я могу рассказать о работе или учебе простой фразой",
+      "Я могу назвать возраст, используя tener",
+      "Я могу задать простые вопросы при знакомстве",
+      "Я понимаю разницу между tú и usted в базовых формулах"
+    ],
+    "next_step_ru": "Если пока сложно вести разговор, потренируйте три связки: Me llamo… / Soy de… / Vivo en… Затем добавьте один вопрос собеседнику и одну фразу прощания."
+  }
 }

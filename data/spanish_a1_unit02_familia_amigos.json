@@ -6,49 +6,119 @@
   "unit_id": "es_a1_u02_familia_amigos",
   "title": "La familia y los amigos",
   "learning_goals": [
-    "Назвать основных членов семьи и близких людей",
-    "Рассказать о семье и друзьях простыми предложениями",
-    "Описать человека по внешности и характеру",
-    "Задавать вопросы о родственниках и отношениях",
-    "Использовать притяжательные прилагательные и согласовывать прилагательные по роду и числу"
+    "Назвать основных членов семьи и людей из своего близкого круга",
+    "Представить родственника или друга и рассказать, кто он/она",
+    "Описать внешность и характер человека простыми фразами",
+    "Сказать, с кем вы живете и как часто видитесь с близкими",
+    "Использовать mi/mis, tu/tus, su/sus и согласовывать прилагательные по роду и числу",
+    "Различать базовые модели ser и tener при описании человека"
   ],
   "grammar": [
     {
       "topic": "possessives",
-      "explanation_ru": "Притяжательные прилагательные согласуются с существительным по числу. Формы mi/tu/su используются с существительными в единственном числе, mis/tus/sus — во множественном.",
+      "title_ru": "Притяжательные слова: чей это человек?",
+      "explanation_ru": "Перед существительным mi, tu и su показывают, кому кто-то или что-то принадлежит или с кем связан. Форма зависит от числа существительного, а не от пола владельца: mi hermano / mi hermana, mis hermanos / mis hermanas. Su может означать «его», «ее», «Ваш» или «их» — значение понятно из контекста.",
+      "forms": [
+        {
+          "form": "mi / mis",
+          "meaning": "мой, моя / мои",
+          "examples": [
+            "mi madre",
+            "mis amigos"
+          ]
+        },
+        {
+          "form": "tu / tus",
+          "meaning": "твой, твоя / твои",
+          "examples": [
+            "tu hermano",
+            "tus primas"
+          ]
+        },
+        {
+          "form": "su / sus",
+          "meaning": "его, ее, Ваш, их / их",
+          "examples": [
+            "su padre",
+            "sus hijos"
+          ]
+        }
+      ],
       "examples": [
-        "mi hermana",
-        "mis amigos",
-        "tu padre",
-        "sus primas"
-      ]
+        "Mi hermana vive en Madrid.",
+        "¿Cómo se llaman tus amigos?",
+        "Su familia es muy grande."
+      ],
+      "common_mistake_ru": "Не выбирайте mis только потому, что владельцев несколько: mi/mis согласуется с существительным после него."
     },
     {
       "topic": "adjective_agreement",
-      "explanation_ru": "Прилагательное обычно согласуется с существительным в роде и числе. У многих прилагательных есть формы на -o/-a и множественное число на -s.",
+      "title_ru": "Согласование прилагательных",
+      "explanation_ru": "Прилагательное обычно согласуется с человеком или людьми, которых описывает. Многие прилагательные имеют формы на -o/-a и множественное число на -s. Некоторые формы не меняются по роду: например, inteligente.",
       "examples": [
         "un hermano alto",
         "una hermana alta",
         "dos amigos simpáticos",
-        "dos amigas simpáticas"
-      ]
+        "dos amigas simpáticas",
+        "un amigo inteligente / una amiga inteligente"
+      ],
+      "common_mistake_ru": "Смотрите на существительное, которое описываете: una hermana alta, но dos hermanas altas."
     },
     {
       "topic": "ser_description",
-      "explanation_ru": "Глагол ser используется для устойчивых характеристик и описания внешности или характера.",
+      "title_ru": "Ser: характер и описание",
+      "explanation_ru": "Ser помогает назвать качества человека и дать общее описание: как он выглядит или какой у него характер. Для этого материала достаточно форм es (он/она) и son (они), а также soy (я).",
+      "forms": [
+        {
+          "form": "soy",
+          "meaning": "я"
+        },
+        {
+          "form": "es",
+          "meaning": "он / она"
+        },
+        {
+          "form": "son",
+          "meaning": "они"
+        }
+      ],
       "examples": [
         "Mi madre es paciente.",
-        "Mis amigos son divertidos.",
-        "Mi hermano es alto."
+        "Mi amigo es divertido.",
+        "Mis hermanas son simpáticas."
       ]
     },
     {
       "topic": "tener_description",
-      "explanation_ru": "Глагол tener используется для возраста и некоторых характеристик внешности, например tener el pelo…",
+      "title_ru": "Tener: возраст и внешность",
+      "explanation_ru": "Tener используют, когда говорят о возрасте и некоторых деталях внешности. По-испански возраст буквально выражается конструкцией «иметь ... лет»: tengo veinte años. Для волос часто используют tener el pelo / el cabello + прилагательное.",
+      "forms": [
+        {
+          "form": "tengo",
+          "meaning": "мне ... лет / у меня есть"
+        },
+        {
+          "form": "tiene",
+          "meaning": "ему / ей ... лет; у него / нее есть"
+        }
+      ],
       "examples": [
         "Tengo veinte años.",
+        "Mi hermano tiene treinta años.",
         "Tiene el pelo largo.",
         "Mi abuelo tiene los ojos marrones."
+      ],
+      "note_ru": "Pelo — обычное слово для «волос» в Испании и широко понятно в других странах. Cabello также означает «волосы» и особенно обычно в ряде стран Латинской Америки."
+    },
+    {
+      "topic": "family_and_relationships",
+      "title_ru": "Как сказать, с кем вы живете и как часто видитесь",
+      "explanation_ru": "Для простого рассказа о семье полезны три модели: vivir con alguien — жить с кем-то; vivir cerca/lejos — жить близко/далеко; ver a alguien — видеться с кем-то. Частоту можно обозначить словами a veces (иногда), a menudo (часто) и los domingos (по воскресеньям).",
+      "examples": [
+        "Vivo con mi madre.",
+        "Mi hermano vive cerca.",
+        "Veo a mis amigos los sábados.",
+        "A veces quedamos después del trabajo."
       ]
     }
   ],
@@ -79,7 +149,7 @@
         },
         {
           "speaker": "Marcos",
-          "text": "No, vive en Bilbao. Pero nos vemos algunos fines de semana."
+          "text": "No, vive en Bilbao. Pero quedamos algunos fines de semana y nos vemos."
         },
         {
           "speaker": "Elena",
@@ -132,7 +202,7 @@
             "Работать с друзьями"
           ],
           "answer": 1,
-          "explanation": "Quedar con alguien significa договориться о встрече и встретиться с этим человеком."
+          "explanation": "Quedar con alguien significa договориться о встрече и встретиться с этим человеком. В диалоге Marcos говорит, что они с сестрой иногда встречаются по выходным."
         },
         {
           "id": "es_es_u2_e4",
@@ -269,10 +339,311 @@
     }
   ],
   "teacher_notes": [
-    "В испанском варианте используется преимущественно нейтральная общеупотребительная лексика Испании.",
-    "В мексиканском варианте добавлены platicar, cabello, buena onda и qué padre как региональные примеры; объяснять их как разговорные, а не универсальные формальные выражения.",
+    "В испанском варианте используется преимущественно нейтральная общеупотребительная лексика Испании; выражение quedar con alguien показано в естественном контексте.",
+    "В мексиканском варианте используются platicar, cabello, buena onda, qué padre, papás и cabello chino. Объяснять их как региональные или разговорные примеры, а не как универсальные формальные выражения.",
     "Не представлять diminutivos abuelito/abuelita как обязательную форму: это ласкательные варианты, степень употребления зависит от семьи и ситуации.",
     "Слово pareja не сводить к браку; оно может обозначать партнера или партнершу.",
-    "Все диалоги и упражнения оригинальные и созданы для The Teachers School."
-  ]
+    "Su/sus может относиться к él, ella, usted или ellos/ellas; не создавать впечатление, что форма однозначна без контекста.",
+    "Возраст выражается конструкцией tener + число + años, а не ser.",
+    "В Мексике cabello chino в данном контексте означает кудрявые волосы; пояснить, что значение определяется региональным употреблением и контекстом.",
+    "Все диалоги и упражнения оригинальные и созданы для The Teachers School.",
+    "Материал требует финальной вычитки носителями испанского Испании и Мексики; текстовые подсказки по произношению не заменяют аудиомодель."
+  ],
+  "editorial_intro": {
+    "headline": "Las personas que forman parte de tu vida",
+    "hook": "Cuando conoces a alguien, tarde o temprano aparece una pregunta sencilla: ¿cómo es tu familia? Y quizá quieras contar también quiénes son tus amigos, con quién vives y a quién te pareces.",
+    "opening_question": "¿Qué persona de tu familia o de tu círculo cercano te gustaría presentar en español?",
+    "purpose": "En este material aprenderás a presentar a las personas cercanas, describir su aspecto y carácter, y hablar de tus relaciones con frases sencillas.",
+    "estimated_time_minutes": 35,
+    "route": [
+      "Primero escucha o lee los dos diálogos y observa cómo se presenta a cada persona.",
+      "Después descubre cómo funcionan los posesivos, ser y tener.",
+      "Practica con expresiones reales de España y México.",
+      "Al final, presenta a una persona importante para ti."
+    ]
+  },
+  "vocabulary_in_context": {
+    "people": [
+      {
+        "es": "la madre / el padre",
+        "ru": "мама / папа"
+      },
+      {
+        "es": "los padres",
+        "ru": "родители"
+      },
+      {
+        "es": "el hermano / la hermana",
+        "ru": "брат / сестра"
+      },
+      {
+        "es": "el abuelo / la abuela",
+        "ru": "дедушка / бабушка"
+      },
+      {
+        "es": "el hijo / la hija",
+        "ru": "сын / дочь"
+      },
+      {
+        "es": "el amigo / la amiga",
+        "ru": "друг / подруга"
+      },
+      {
+        "es": "la pareja",
+        "ru": "партнер / партнерша"
+      },
+      {
+        "es": "los familiares",
+        "ru": "родственники"
+      }
+    ],
+    "describing_people": [
+      {
+        "es": "alto/a",
+        "ru": "высокий / высокая"
+      },
+      {
+        "es": "bajo/a",
+        "ru": "невысокий / невысокая"
+      },
+      {
+        "es": "joven",
+        "ru": "молодой / молодая"
+      },
+      {
+        "es": "mayor",
+        "ru": "старший / старшая; пожилой / пожилая — по контексту"
+      },
+      {
+        "es": "simpático/a",
+        "ru": "приятный / приятная"
+      },
+      {
+        "es": "divertido/a",
+        "ru": "веселый / веселая"
+      },
+      {
+        "es": "tranquilo/a",
+        "ru": "спокойный / спокойная"
+      },
+      {
+        "es": "cariñoso/a",
+        "ru": "ласковый / заботливый"
+      }
+    ],
+    "useful_chunks": [
+      {
+        "es": "¿Cómo es?",
+        "ru": "Какой он / какая она?"
+      },
+      {
+        "es": "¿Cómo se llama?",
+        "ru": "Как его / ее зовут?"
+      },
+      {
+        "es": "Se llama…",
+        "ru": "Его / ее зовут…"
+      },
+      {
+        "es": "Vivo con…",
+        "ru": "Я живу с…"
+      },
+      {
+        "es": "Nos vemos…",
+        "ru": "Мы видимся…"
+      },
+      {
+        "es": "Quedar con alguien",
+        "ru": "Договориться о встрече и встретиться с кем-то"
+      }
+    ],
+    "usage_note_ru": "Сначала учите слова внутри коротких фраз: так проще запомнить, с какими глаголами и предлогами они употребляются."
+  },
+  "language_in_real_life": {
+    "es_es": {
+      "title": "Así se habla en España",
+      "items": [
+        {
+          "expression": "quedar con alguien",
+          "meaning_ru": "встретиться с кем-то, договориться о встрече",
+          "context": "Quedamos el sábado con unos amigos.",
+          "note_ru": "Очень обычная разговорная модель в Испании. В других регионах могут чаще использовать другие глаголы."
+        },
+        {
+          "expression": "el pelo",
+          "meaning_ru": "волосы",
+          "context": "Tiene el pelo castaño.",
+          "note_ru": "Естественное и широко употребительное слово."
+        },
+        {
+          "expression": "mi pareja",
+          "meaning_ru": "мой партнер / моя партнерша",
+          "context": "Vivo con mi pareja.",
+          "note_ru": "Нейтральное обозначение партнера; не означает автоматически, что люди женаты."
+        }
+      ],
+      "listening_tip_ru": "Обратите внимание на связную речь в вопросах ¿Cómo es? и ¿Tienes hermanos? Не пытайтесь произносить каждое слово отдельно."
+    },
+    "es_mx": {
+      "title": "Así se habla en México",
+      "items": [
+        {
+          "expression": "platicar",
+          "meaning_ru": "разговаривать, беседовать",
+          "context": "Siempre platicamos después de cenar.",
+          "note_ru": "Распространенный глагол в Мексике; в Испании чаще услышите hablar."
+        },
+        {
+          "expression": "el cabello",
+          "meaning_ru": "волосы",
+          "context": "Tiene el cabello corto.",
+          "note_ru": "Обычный вариант в мексиканском испанском; pelo также понятно."
+        },
+        {
+          "expression": "¡Qué padre!",
+          "meaning_ru": "Как здорово! / Классно!",
+          "context": "¡Qué padre! Mi abuela también es muy buena onda.",
+          "note_ru": "Разговорное мексиканское выражение. Не переводите padre буквально как «отец» в этом контексте."
+        },
+        {
+          "expression": "buena onda",
+          "meaning_ru": "приятный, классный; хорошая атмосфера",
+          "context": "Mi abuela es muy buena onda.",
+          "note_ru": "Неформальная характеристика человека или атмосферы."
+        },
+        {
+          "expression": "papás",
+          "meaning_ru": "родители",
+          "context": "Viven con mis papás.",
+          "note_ru": "В Мексике papás очень обычно означает «мама и папа», то есть родители."
+        },
+        {
+          "expression": "chino/a",
+          "meaning_ru": "кудрявый / кудрявая (о волосах)",
+          "context": "Tiene el cabello chino.",
+          "note_ru": "В этом контексте мексиканское cabello chino означает кудрявые волосы, а не национальность человека."
+        }
+      ],
+      "listening_tip_ru": "В мексиканском диалоге отметьте слова papás, platicar и qué padre: по контексту можно понять значение, даже если вы встречаете их впервые."
+    }
+  },
+  "guided_practice": [
+    {
+      "stage": "notice",
+      "title": "1. Заметьте языковые модели",
+      "instruction_ru": "Вернитесь к диалогам и найдите примеры. Сначала попробуйте ответить самостоятельно, затем сверьтесь с подсказками.",
+      "tasks": [
+        {
+          "prompt_ru": "Найдите в диалоге три формы притяжательных слов. Какое существительное стоит после каждой формы?",
+          "hint_ru": "Например: mi hermana, mis papás, su familia."
+        },
+        {
+          "prompt_ru": "Найдите одну фразу с ser и одну с tener. Что именно описывает каждый глагол?",
+          "hint_ru": "Ser — качество или описание; tener — возраст и некоторые детали внешности."
+        },
+        {
+          "prompt_ru": "Найдите прилагательные, которые меняют окончание в зависимости от рода или числа.",
+          "hint_ru": "Сравните alto / alta и divertido / divertida."
+        }
+      ],
+      "check_ru": "Проверьте, что вы можете объяснить не только перевод, но и почему выбрана именно эта форма."
+    },
+    {
+      "stage": "practice",
+      "title": "2. Соберите свои фразы",
+      "instruction_ru": "Дополните предложения информацией о реальном или вымышленном человеке. Не открывайте образец, пока не попробуете составить свои варианты.",
+      "tasks": [
+        {
+          "prompt": "Mi ____ se llama ____.",
+          "focus_ru": "Член семьи или близкий человек + имя"
+        },
+        {
+          "prompt": "Es ____ y _____.",
+          "focus_ru": "Два качества характера или внешности"
+        },
+        {
+          "prompt": "Tiene el pelo / el cabello _____.",
+          "focus_ru": "Одна деталь внешности"
+        },
+        {
+          "prompt": "Vivo con ____ / Veo a ____ los ____.",
+          "focus_ru": "Отношения и частота встреч"
+        }
+      ],
+      "model_answers_after_attempt": [
+        "Mi hermana se llama Laura.",
+        "Es tranquila y divertida.",
+        "Tiene el pelo largo.",
+        "Veo a mis amigos los sábados."
+      ]
+    },
+    {
+      "stage": "communicate",
+      "title": "3. Поддержите разговор",
+      "instruction_ru": "Представьте, что новый знакомый спрашивает вас о близких. Ответьте на вопросы полными, но короткими фразами.",
+      "prompts": [
+        "¿Tienes hermanos?",
+        "¿Cómo es tu mejor amigo/a?",
+        "¿Con quién vives?",
+        "¿Cuándo ves a tu familia o a tus amigos?"
+      ],
+      "success_criteria_ru": "В ответах есть минимум один притяжательный элемент, одна форма ser или tener и одно выражение о совместной жизни или встречах."
+    }
+  ],
+  "personal_application": {
+    "title": "Presenta a alguien importante para ti",
+    "scenario_ru": "Вы знакомитесь с новым человеком и рассказываете ему о ком-то, кто занимает важное место в вашей жизни. Это может быть родственник, друг, партнер или другой близкий человек.",
+    "task_ru": "Подготовьте короткое представление из 6–8 предложений на испанском.",
+    "include": [
+      "Кто этот человек и как его / ее зовут",
+      "Как вы связаны",
+      "Два качества характера или внешности",
+      "Одна деталь о возрасте, волосах или глазах",
+      "С кем он / она живет или где живет",
+      "Как часто вы видитесь или что любите делать вместе"
+    ],
+    "stretch_task_ru": "Добавьте одну фразу о том, на кого этот человек похож или чем вы похожи. Используйте только те конструкции, которые уже знаете; если новая грамматика мешает выразить мысль, сформулируйте ее проще.",
+    "self_check_ru": [
+      "Я использовал(а) mi/mis, tu/tus или su/sus правильно",
+      "Прилагательные согласуются с человеком, которого я описываю",
+      "Я не путаю ser и tener",
+      "Мой рассказ понятен без перевода каждого слова"
+    ]
+  },
+  "pronunciation_practice": {
+    "status": "text_based_practice_audio_model_pending",
+    "instruction_ru": "Прочитайте фразы вслух, затем запишите себя на диктофон. Прослушайте запись и отметьте, где слова сливаются в естественной речи.",
+    "phrases": [
+      {
+        "text": "¿Tienes hermanos?",
+        "focus_ru": "Не разделяйте вопрос на отдельные слова; произнесите его как одну интонационную группу."
+      },
+      {
+        "text": "Mi hermana es muy divertida.",
+        "focus_ru": "Следите за плавным переходом между hermana и es."
+      },
+      {
+        "text": "Vivo con mis amigos.",
+        "focus_ru": "Сохраните четкое произношение s в mis amigos."
+      },
+      {
+        "text": "¿Cómo se llama?",
+        "focus_ru": "Обратите внимание на ударение в cómo и llama."
+      }
+    ],
+    "reflection_ru": "После записи ответьте себе: понятно ли звучит вопросительная интонация и можете ли вы произнести каждую фразу без долгих пауз?"
+  },
+  "reflection": {
+    "title": "Lo que ya puedes hacer",
+    "instruction_ru": "Отметьте только те действия, которые вы действительно можете выполнить без подсказки.",
+    "can_do": [
+      "Я могу назвать нескольких членов семьи и близких людей",
+      "Я могу представить человека и сказать, как его / ее зовут",
+      "Я могу описать внешность или характер простыми предложениями",
+      "Я могу сказать, с кем живу и как часто вижусь с близкими",
+      "Я могу выбрать mi/mis, tu/tus и su/sus по числу существительного",
+      "Я могу использовать ser и tener в простом описании"
+    ],
+    "next_step_ru": "Если пока сложно представить человека целиком, попробуйте еще раз выполнить задание Presenta a alguien importante para ti, опираясь на свои фразы из guided practice."
+  }
 }

@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "level": "A1",
+  "category": "book",
+  "language": "es",
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "books": [
+        {
+          "id": "book_es_es_a1_un_dia_en_madrid",
+          "title": "Un día en Madrid",
+          "author": "The Teachers School",
+          "level": "A1",
+          "pages": [
+            "Me llamo Ana. Tengo veinticuatro años y vivo en Madrid. Hoy es sábado. Me levanto a las ocho y media. Hace sol. Primero, me ducho y después desayuno en casa. Como una tostada y bebo café con leche.",
+            "Después del desayuno, Ana sale de casa. Va a una cafetería cerca de su calle. Pide un zumo de naranja y una tostada con tomate. La camarera dice: «¡Buenos días!». Ana responde: «¡Buenos días! Gracias».",
+            "A las once, Ana queda con su amiga Lucía en el parque del Retiro. Lucía llega en metro. Las amigas pasean por el parque y hablan de sus planes. «¿Qué tal, Ana?». «¡Muy bien! ¿Y tú?». «Bien, gracias».",
+            "Por la tarde, Ana y Lucía comen juntas. Piden una tortilla de patatas y una ensalada. Después, Ana vuelve a casa en metro. Está un poco cansada, pero está contenta. Por la noche, lee un libro y escucha música."
+          ],
+          "questions": [
+            {
+              "type": "choice",
+              "prompt": "¿Dónde vive Ana?",
+              "options": [
+                "En Madrid",
+                "En Sevilla",
+                "En Valencia"
+              ],
+              "answer": 0,
+              "explanation": "Ana dice: «vivo en Madrid». La historia tiene lugar en Madrid."
+            },
+            {
+              "type": "choice",
+              "prompt": "¿Qué desayuna Ana en casa?",
+              "options": [
+                "Huevos y fruta",
+                "Una tostada y café con leche",
+                "Un croissant y té"
+              ],
+              "answer": 1,
+              "explanation": "Ana come una tostada y bebe café con leche en casa."
+            },
+            {
+              "type": "choice",
+              "prompt": "¿Dónde queda Ana con Lucía?",
+              "options": [
+                "En el parque del Retiro",
+                "En una estación",
+                "En el supermercado"
+              ],
+              "answer": 0,
+              "explanation": "Las amigas quedan en el parque del Retiro y pasean allí."
+            },
+            {
+              "type": "choice",
+              "prompt": "Elige la forma correcta: «Ana ___ en Madrid».",
+              "options": [
+                "vivo",
+                "vives",
+                "vive"
+              ],
+              "answer": 2,
+              "explanation": "Con Ana, la tercera persona singular, usamos vive: Ana vive."
+            },
+            {
+              "type": "choice",
+              "prompt": "¿Qué es una tortilla de patatas?",
+              "options": [
+                "Una bebida de frutas",
+                "Un plato de huevos y patatas",
+                "Un postre con chocolate"
+              ],
+              "answer": 1,
+              "explanation": "La tortilla de patatas es un plato español hecho principalmente con huevos y patatas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "books": [
+        {
+          "id": "book_es_mx_a1_un_dia_en_ciudad_de_mexico",
+          "title": "Un día en Ciudad de México",
+          "author": "The Teachers School",
+          "level": "A1",
+          "pages": [
+            "Me llamo Sofía. Tengo veintidós años y vivo en Ciudad de México. Vivo con mi mamá y mi hermano. Hoy es sábado. Me despierto a las siete y media. Voy a la cocina. Mi mamá prepara el desayuno. Comemos huevos con tortillas de maíz.",
+            "Después del desayuno, Sofía va al mercado con su mamá. Compran tomates, aguacates, cebollas y mangos. Hay muchas frutas y verduras. Sofía compra también un jugo de naranja. El vendedor dice: «¡Buenos días! ¿Qué va a llevar?».",
+            "A las doce, Sofía se encuentra con su amiga Valeria. Van a una cafetería. Valeria dice: «¡Hola, Sofi! ¿Qué onda?». Sofía responde: «¡Hola! Muy bien, ¿y tú?». Sofía pide un agua de jamaica. Las amigas hablan y miran fotos en sus celulares.",
+            "Por la tarde, Sofía vuelve a casa. Su hermano prepara tacos para la cena. Hay tortillas, pollo, tomate y aguacate. La familia cena junta. Después, Sofía escucha música y ve una serie en su computadora."
+          ],
+          "questions": [
+            {
+              "type": "choice",
+              "prompt": "¿Con quién vive Sofía?",
+              "options": [
+                "Con su amiga",
+                "Con su mamá y su hermano",
+                "Con su abuela"
+              ],
+              "answer": 1,
+              "explanation": "Sofía dice que vive con su mamá y su hermano."
+            },
+            {
+              "type": "choice",
+              "prompt": "¿Dónde compra Sofía frutas y verduras?",
+              "options": [
+                "En el mercado",
+                "En la escuela",
+                "En el parque"
+              ],
+              "answer": 0,
+              "explanation": "Sofía va al mercado con su mamá y allí compran frutas y verduras."
+            },
+            {
+              "type": "choice",
+              "prompt": "¿Qué pide Sofía en la cafetería?",
+              "options": [
+                "Un café",
+                "Un jugo de manzana",
+                "Un agua de jamaica"
+              ],
+              "answer": 2,
+              "explanation": "Sofía pide un agua de jamaica, una bebida preparada con flor de jamaica."
+            },
+            {
+              "type": "choice",
+              "prompt": "Elige la forma correcta: «Sofía ___ en Ciudad de México».",
+              "options": [
+                "vivo",
+                "vives",
+                "vive"
+              ],
+              "answer": 2,
+              "explanation": "Con Sofía, la tercera persona singular, usamos vive: Sofía vive."
+            },
+            {
+              "type": "choice",
+              "prompt": "En esta conversación, ¿qué significa «¿Qué onda?»?",
+              "options": [
+                "¿Cómo estás? / ¿Qué hay de nuevo?",
+                "¿Cuánto cuesta?",
+                "¿Dónde está el mercado?"
+              ],
+              "answer": 0,
+              "explanation": "¿Qué onda? es un saludo informal muy usado en México para preguntar cómo está alguien o qué hay de nuevo."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

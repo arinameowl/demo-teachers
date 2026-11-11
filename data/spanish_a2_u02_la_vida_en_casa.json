@@ -6,38 +6,51 @@
   "unit_id": "es_a2_u02_la_vida_en_casa",
   "title": "La vida en casa",
   "learning_goals": [
-    "Describir una vivienda y sus características principales",
-    "Hablar de las tareas domésticas y repartir responsabilidades",
-    "Explicar problemas sencillos en casa y pedir que alguien haga algo",
-    "Usar tener que, hay que y deber para expresar obligación y necesidad",
-    "Comparar viviendas y espacios con más, menos, tan… como"
+    "Describir una vivienda, sus espacios y sus características",
+    "Hablar de las tareas domésticas y negociar un reparto de responsabilidades",
+    "Explicar problemas cotidianos de una vivienda y pedir ayuda de forma clara y cortés",
+    "Expresar obligaciones y necesidades con tener que, hay que y deber",
+    "Comparar viviendas, habitaciones y hábitos domésticos"
   ],
   "grammar": [
     {
-      "topic": "obligations_tener_que_hay_que_deber",
-      "explanation_ru": "Tener que + infinitivo выражает необходимость для конкретного человека: Tengo que limpiar. Hay que + infinitivo обозначает общую необходимость без указания исполнителя: Hay que ahorrar agua. Deber + infinitivo часто используется для совета или обязанности: Debes llamar al propietario.",
+      "topic": "obligación_necesidad_y_consejo",
+      "explanation_ru": "Tener que + infinitivo выражает необходимость для конкретного человека: Tengo que limpiar la cocina; Tenemos que hablar con el propietario. Hay que + infinitivo обозначает общую необходимость без указания исполнителя: Hay que ahorrar agua. Deber + infinitivo часто выражает совет или обязанность: Debes avisar al propietario. Формы tener que изменяются по лицам, hay que остается неизменной.",
       "examples": [
         "Tengo que limpiar la cocina.",
         "En este edificio hay que separar la basura.",
-        "Debes avisar al propietario."
+        "Debes avisar al propietario.",
+        "Tenemos que repartir las tareas."
       ]
     },
     {
-      "topic": "comparatives",
-      "explanation_ru": "Для сравнения используем más… que (более…), menos… que (менее…), tan… como (такой же… как). Прилагательное согласуется с существительным: una habitación más luminosa; dos pisos más pequeños.",
+      "topic": "comparativos",
+      "explanation_ru": "Для сравнения используем más + прилагательное/наречие + que (более…), menos… que (менее…), tan + прилагательное/наречие + como (такой же…). С существительными: más/menos + sustantivo + que; tanto/a/os/as + sustantivo + como. Прилагательное согласуется с существительным: una habitación más luminosa; dos pisos más pequeños.",
       "examples": [
         "Este piso es más luminoso que el anterior.",
         "Mi habitación es tan grande como la tuya.",
-        "La cocina es menos amplia que el salón."
+        "Tenemos menos espacio que antes.",
+        "Hay tantas ventanas como puertas."
       ]
     },
     {
-      "topic": "household_tasks",
-      "explanation_ru": "Для домашних обязанностей часто используются конструкции limpiar, ordenar, hacer la compra, sacar la basura и poner la lavadora. Чтобы сказать, кому нужно выполнить действие, используйте личную форму tener que.",
+      "topic": "peticiones_y_favores",
+      "explanation_ru": "Чтобы попросить о помощи или распределить обязанности, используйте ¿Puedes + infinitivo? (можешь?), ¿Podrías + infinitivo? (не мог(ла) бы ты? — более вежливо), ¿Te importa + infinitivo? (ты не против?). Ответ можно смягчить: Claro, ahora lo hago; Lo siento, ¿puede ser después? В просьбе сохраняйте инфинитив после puedes/podrías.",
       "examples": [
-        "Tengo que sacar la basura.",
-        "Tenemos que hacer la compra.",
-        "Hoy debes poner la lavadora."
+        "¿Puedes sacar la basura, por favor?",
+        "¿Podrías llamar al propietario?",
+        "¿Te importa limpiar la mesa?",
+        "Claro, ahora lo hago."
+      ]
+    },
+    {
+      "topic": "tareas_domésticas_y_averías",
+      "explanation_ru": "Для домашних дел часто используются устойчивые сочетания: hacer la compra, poner la lavadora, tender la ropa, limpiar el baño, sacar la basura. Чтобы описать неисправность: el grifo gotea, la calefacción no funciona, hay una fuga, la puerta no cierra bien. Для просьбы о ремонте можно сказать: ¿Podría venir alguien a revisarlo?",
+      "examples": [
+        "Hoy me toca poner la lavadora.",
+        "La llave del lavabo gotea.",
+        "La calefacción no funciona.",
+        "¿Podría venir alguien a revisar la fuga?"
       ]
     }
   ],
@@ -48,117 +61,245 @@
       "dialogue": [
         {
           "speaker": "Marta",
-          "text": "¿Qué tal el piso nuevo, Sergio?"
+          "text": "¿Qué tal el piso nuevo, Sergio? ¿Ya te has instalado?"
         },
         {
           "speaker": "Sergio",
-          "text": "Bastante bien. Es más luminoso que el anterior y está cerca del trabajo."
+          "text": "Casi. Es más luminoso que el anterior y está bastante cerca del trabajo."
         },
         {
           "speaker": "Marta",
-          "text": "¿Cuántas habitaciones tiene?"
+          "text": "¡Qué bien! ¿Cuántas habitaciones tiene?"
         },
         {
           "speaker": "Sergio",
-          "text": "Dos dormitorios, un salón pequeño y una cocina bastante amplia."
+          "text": "Dos dormitorios, un salón pequeño y una cocina amplia. Mi habitación es más pequeña que la de mi compañero, pero tiene un armario enorme."
         },
         {
           "speaker": "Marta",
-          "text": "¿Y compartes el piso con alguien?"
+          "text": "¿Compartís el piso? ¿Cómo os organizáis con las tareas?"
         },
         {
           "speaker": "Sergio",
-          "text": "Sí, con un compañero. Tenemos que repartir las tareas de casa."
+          "text": "Sí. Tenemos que repartirlas. Yo suelo hacer la compra y él limpia el baño. Los domingos ponemos la lavadora y ordenamos el salón."
         },
         {
           "speaker": "Marta",
-          "text": "Claro. ¿Quién se ocupa de la compra?"
+          "text": "¿Y sacáis la basura por turnos?"
         },
         {
           "speaker": "Sergio",
-          "text": "Normalmente la hago yo, y él saca la basura. Pero hoy tenemos que poner la lavadora."
+          "text": "Sí, aunque esta semana me toca a mí. Oye, ¿podrías recordarme que la saque esta noche?"
         },
         {
           "speaker": "Marta",
-          "text": "¿Hay algún problema en el piso?"
+          "text": "¡Claro! ¿Hay algún problema en el piso?"
         },
         {
           "speaker": "Sergio",
-          "text": "El grifo de la cocina pierde agua. Debemos avisar al propietario."
+          "text": "El grifo de la cocina gotea desde ayer. Tenemos que avisar al propietario; además, hay que arreglarlo pronto para no desperdiciar agua."
+        },
+        {
+          "speaker": "Marta",
+          "text": "Sí, deberíais escribirle hoy. ¿Por lo demás estáis contentos?"
+        },
+        {
+          "speaker": "Sergio",
+          "text": "Mucho. El piso es más pequeño que el de antes, pero está mejor situado y pagamos menos."
         }
       ],
-      "context_note": "En España es habitual hablar de alquilar un piso y de contactar con el propietario o la agencia cuando hay una avería. En los anuncios, piso suele referirse a una vivienda o apartamento.",
+      "context_note": "En España es habitual hablar de alquilar un piso y contactar con el propietario o la agencia cuando hay una avería. En anuncios inmobiliarios, piso suele referirse a una vivienda o apartamento; las tareas compartidas pueden organizarse por turnos.",
       "exercises": [
         {
           "id": "es_es_a2_u2_e1",
           "skill": "gist",
           "type": "choice",
-          "prompt": "¿Qué cuenta Sergio?",
+          "prompt": "¿De qué hablan principalmente Marta y Sergio?",
           "options": [
-            "Cómo es su nuevo piso y cómo organizan las tareas",
-            "Cómo ha cambiado de trabajo",
-            "Cómo prepara una cena"
+            "De su vivienda, el reparto de tareas y una avería",
+            "De un viaje que quieren organizar",
+            "De cómo buscar un nuevo trabajo"
           ],
           "answer": 0,
-          "explanation": "Sergio describe la vivienda y explica cómo comparte las tareas domésticas."
+          "explanation": "La conversación trata del piso compartido, las tareas domésticas y el grifo que gotea."
         },
         {
           "id": "es_es_a2_u2_e2",
           "skill": "detail",
           "type": "choice",
-          "prompt": "¿Qué problema tiene la cocina?",
+          "prompt": "¿Qué tarea le toca a Sergio esta semana?",
           "options": [
-            "La lavadora no funciona",
-            "El grifo pierde agua",
-            "No hay electricidad"
+            "Limpiar el baño",
+            "Sacar la basura",
+            "Hacer la compra"
           ],
           "answer": 1,
-          "explanation": "Sergio dice que el grifo de la cocina pierde agua."
+          "explanation": "Sergio dice que esta semana le toca sacar la basura."
         },
         {
           "id": "es_es_a2_u2_e3",
-          "skill": "grammar",
+          "skill": "vocabulary",
           "type": "choice",
-          "prompt": "Completa: «En casa nosotros ___ repartir las tareas».",
+          "prompt": "¿Qué significa «el grifo gotea»?",
           "options": [
-            "tenemos que",
-            "hay que",
-            "debe"
+            "El grifo pierde agua gota a gota",
+            "El grifo no tiene agua caliente",
+            "El grifo está muy limpio"
           ],
           "answer": 0,
-          "explanation": "El sujeto es nosotros, por eso usamos tenemos que + infinitivo."
+          "explanation": "Gotear significa dejar caer gotas de líquido."
         },
         {
           "id": "es_es_a2_u2_e4",
           "skill": "grammar",
           "type": "choice",
-          "prompt": "Elige la frase que compara correctamente dos viviendas.",
+          "prompt": "¿Qué frase expresa una necesidad general, sin indicar quién debe hacerlo?",
           "options": [
-            "Este piso es más luminoso que el anterior.",
-            "Este piso es más luminoso como el anterior.",
-            "Este piso es tan luminoso que el anterior."
+            "Tenemos que limpiar el salón",
+            "Hay que arreglar el grifo",
+            "Sergio debe llamar al propietario"
           ],
-          "answer": 0,
-          "explanation": "Para expresar «более… чем» usamos más + adjetivo + que."
+          "answer": 1,
+          "explanation": "Hay que + infinitivo expresa una necesidad general sin sujeto concreto."
         },
         {
           "id": "es_es_a2_u2_e5",
           "skill": "culture",
           "type": "choice",
-          "prompt": "En España, ¿qué suele significar «piso» en un anuncio inmobiliario?",
+          "prompt": "En un anuncio inmobiliario de España, ¿qué suele significar «piso»?",
           "options": [
             "Una vivienda o apartamento",
-            "Una planta de un edificio exclusivamente",
-            "Una habitación de hotel"
+            "Una habitación de hotel",
+            "Un edificio de oficinas"
           ],
           "answer": 0,
-          "explanation": "Piso es una palabra habitual en España para referirse a una vivienda en un edificio."
+          "explanation": "En España, piso es una palabra habitual para referirse a una vivienda o apartamento."
         }
       ],
       "reading": {
-        "title": "Compartir piso",
-        "text": "Lucía comparte piso con dos compañeras en Valencia. Cada una tiene su habitación, pero comparten la cocina y el salón. Los domingos suelen organizar las tareas de casa: una limpia el baño, otra pone la lavadora y Lucía hace la compra. Este mes han decidido ahorrar agua y electricidad. También han hablado con el propietario porque una ventana no cierra bien. El piso no es muy grande, pero está bien situado y todas están contentas."
-      }
+        "title": "Compartir piso en Valencia",
+        "text": "Lucía comparte piso con dos compañeras en Valencia. Cada una tiene su habitación, pero comparten la cocina y el salón. Los domingos organizan las tareas: una limpia el baño, otra pone la lavadora y Lucía hace la compra. Para ahorrar agua, han decidido ducharse en menos tiempo y avisar si algún grifo gotea. Hace unos días, una ventana no cerraba bien y escribieron al propietario. El piso no es muy grande, pero está bien situado y las tres están contentas."
+      },
+      "editorial_introduction": {
+        "hook": "Compartir una vivienda significa mucho más que dividir el alquiler: también hay que organizar los espacios, repartir las tareas y resolver pequeños problemas del día a día",
+        "opening_question": "¿Qué hace que una casa sea cómoda para vivir: la ubicación, la luz, el espacio o la organización?",
+        "purpose": "Aprenderás a describir una vivienda, hablar de responsabilidades domésticas, comparar espacios y pedir ayuda cuando algo no funciona",
+        "estimated_time_minutes": 45,
+        "route": [
+          "Lee cómo dos personas organizan su vida en casa",
+          "Observa las formas de expresar obligaciones y hacer peticiones",
+          "Practica comparaciones y vocabulario doméstico",
+          "Describe tu vivienda ideal y negocia una tarea cotidiana"
+        ],
+        "local_context": "Dos amigos hablan del piso que Sergio comparte con un compañero, del reparto de tareas y de una pequeña avería"
+      },
+      "vocabulary_in_context": [
+        {
+          "term": "instalarse",
+          "meaning_ru": "обустроиться, поселиться",
+          "example": "¿Ya te has instalado en el piso nuevo?"
+        },
+        {
+          "term": "repartir las tareas",
+          "meaning_ru": "распределить обязанности",
+          "example": "Tenemos que repartir las tareas de casa."
+        },
+        {
+          "term": "hacer la compra",
+          "meaning_ru": "покупать продукты",
+          "example": "Los domingos hago la compra."
+        },
+        {
+          "term": "poner la lavadora",
+          "meaning_ru": "запустить стиральную машину",
+          "example": "Hoy tenemos que poner la lavadora."
+        },
+        {
+          "term": "sacar la basura",
+          "meaning_ru": "выносить мусор",
+          "example": "Esta noche me toca sacar la basura."
+        },
+        {
+          "term": "gote(ar)",
+          "meaning_ru": "капать",
+          "example": "El grifo de la cocina gotea."
+        },
+        {
+          "term": "por turnos",
+          "meaning_ru": "по очереди",
+          "example": "Limpiamos el salón por turnos."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          "¿Ya te has instalado? — Ты уже обустроился?",
+          "Me toca a mí — Теперь моя очередь / Мне это делать",
+          "¿Podrías…? — Не мог(ла) бы ты…?",
+          "Por lo demás… — В остальном…"
+        ],
+        "regional_note": "В Испании piso — квартира, grifo — кран, lavadora — стиральная машина. Для бытовых обязанностей часто говорят hacer la compra, poner la lavadora и sacar la basura. В неформальном общении просьбы можно смягчить с помощью ¿Podrías…? или ¿Te importa…?."
+      },
+      "guided_practice": [
+        {
+          "stage": "notice",
+          "title": "Заметьте закономерность",
+          "instruction": "Найдите в диалоге конструкции обязанности и просьбы. Сравните Tenemos que repartirlas, hay que arreglarlo и ¿podrías recordarme…? Кто выполняет действие в каждом случае?",
+          "tasks": [
+            "Найдите примеры tener que, hay que и deber и определите, кто должен выполнить действие",
+            "Найдите просьбу с puedes/podrías и объясните, насколько она вежлива",
+            "Выпишите сравнение двух помещений или жилищ"
+          ]
+        },
+        {
+          "stage": "practice",
+          "title": "Потренируйтесь самостоятельно",
+          "instruction": "Вставьте tener que, hay que или deber в правильной форме: Yo ___ hacer la compra; En casa ___ ahorrar agua; Tú ___ avisar al propietario; Nosotros ___ limpiar el salón; ¿___ ayudarme con la lavadora?",
+          "tasks": [
+            "Преобразуйте общую необходимость в личную обязанность и наоборот",
+            "Составьте два сравнения своей комнаты с другой",
+            "Сформулируйте вежливую просьбу о помощи по дому"
+          ]
+        },
+        {
+          "stage": "communicate",
+          "title": "Используйте язык в разговоре",
+          "instruction": "Представьте, что вы делите квартиру с соседом. Обсудите, кто покупает продукты, убирает кухню и выносит мусор. Затем попросите соседа помочь с неисправностью, используя ¿Puedes…? или ¿Podrías…?.",
+          "tasks": [
+            "Опишите собеседнику свое жилье и сравните его с предыдущим",
+            "Договоритесь, кто выполняет две домашние обязанности",
+            "Объясните бытовую неисправность и попросите о помощи"
+          ]
+        }
+      ],
+      "personal_application": {
+        "scenario": "Вы ищете соседа по квартире или обсуждаете правила совместного проживания. Опишите жилье, договоритесь о домашних обязанностях и сообщите о небольшой неисправности.",
+        "deliverable": "Подготовьте диалог из 10–12 реплик или запишите голосовое сообщение на 60–90 секунд.",
+        "prompts": [
+          "¿Cómo es la vivienda y qué habitaciones tiene?",
+          "¿Qué tareas prefieres hacer y cuáles no?",
+          "¿Cómo vais a repartir las responsabilidades?",
+          "¿Qué problema hay en casa y a quién hay que avisar?",
+          "¿Qué podrías pedirle a tu compañero/a?"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "Интонация вежливых просьб и четкое произношение сочетаний tener que, hay que, deberías. В разговорной речи просьба звучит мягче, если произнести ее без резкого ударения.",
+        "steps": [
+          "Прочитайте вслух ¿Podrías llamar al propietario, por favor?",
+          "Сравните интонацию ¿Puedes ayudarme? и ¿Podrías ayudarme?",
+          "Запишите короткую просьбу и переслушайте: звучит ли она естественно и вежливо?"
+        ]
+      },
+      "reflection": {
+        "can_do": [
+          "Я могу описать квартиру и сравнить ее с другой",
+          "Я могу рассказать, какие домашние обязанности выполняю",
+          "Я могу договориться о распределении дел",
+          "Я могу описать бытовую неисправность и вежливо попросить о помощи"
+        ],
+        "self_check": "Отметьте, что уже получается самостоятельно, а что требует дополнительной практики."
+      },
+      "pronunciation_note": "В испанском варианте используются слова piso, grifo, lavadora и sacar la basura. Обратите внимание на интонацию вежливых просьб с ¿Podrías…? и на связное произношение tener que / hay que."
     },
     {
       "id": "es_mx",
@@ -166,19 +307,19 @@
       "dialogue": [
         {
           "speaker": "Paola",
-          "text": "¿Qué tal tu departamento nuevo, Iván?"
+          "text": "¿Qué tal tu departamento nuevo, Iván? ¿Ya terminaste de acomodar tus cosas?"
         },
         {
           "speaker": "Iván",
-          "text": "Me gusta mucho. Es más grande que el anterior y tiene un balcón."
+          "text": "Casi. Me gusta mucho: es más grande que el anterior y tiene un balcón. Además, la cocina es tan amplia como la sala de mi antiguo departamento."
         },
         {
           "speaker": "Paola",
-          "text": "¡Qué bien! ¿Vives solo?"
+          "text": "¡Qué bien! ¿Vives solo o compartes?"
         },
         {
           "speaker": "Iván",
-          "text": "No, vivo con mi primo. Tenemos que organizarnos con los quehaceres."
+          "text": "Vivo con mi primo. Tenemos que organizarnos con los quehaceres para que no los haga siempre la misma persona."
         },
         {
           "speaker": "Paola",
@@ -186,103 +327,234 @@
         },
         {
           "speaker": "Iván",
-          "text": "Yo preparo la comida y él lava los trastes. Los sábados hacemos la limpieza juntos."
+          "text": "Yo preparo la comida y él lava los trastes. Los sábados hacemos la limpieza juntos y nos turnamos para sacar la basura."
         },
         {
           "speaker": "Paola",
-          "text": "¿Y todo funciona bien en el departamento?"
+          "text": "Suena justo. ¿Y todo funciona bien en el departamento?"
         },
         {
           "speaker": "Iván",
-          "text": "Casi todo. La llave del lavabo gotea desde ayer."
+          "text": "Casi todo. La llave del lavabo gotea desde ayer y la regadera tiene poca presión."
         },
         {
           "speaker": "Paola",
-          "text": "Entonces hay que llamar al dueño."
+          "text": "Entonces hay que avisarle al dueño. ¿Ya le escribiste?"
         },
         {
           "speaker": "Iván",
-          "text": "Sí, tienes razón. También debo revisar el contrato."
+          "text": "Todavía no. ¿Podrías ayudarme a redactar el mensaje? No quiero sonar demasiado exigente."
+        },
+        {
+          "speaker": "Paola",
+          "text": "Claro. Puedes explicarle qué pasa y preguntarle cuándo podría mandar a alguien a revisarlo."
+        },
+        {
+          "speaker": "Iván",
+          "text": "Buena idea. También debo revisar el contrato para saber qué reparaciones le corresponden."
         }
       ],
-      "context_note": "En México se usa departamento para un apartamento y trastes para los platos y utensilios de cocina. En una vivienda rentada, el dueño o arrendador es la persona que la alquila.",
+      "context_note": "En México se usa departamento para apartamento, recámara para dormitorio, trastes para platos y utensilios de cocina, y regadera para ducha. En una vivienda rentada se puede hablar con el dueño o arrendador para comunicar una avería; las responsabilidades de reparación dependen del contrato y de la situación.",
       "exercises": [
         {
           "id": "es_mx_a2_u2_e1",
           "skill": "gist",
           "type": "choice",
-          "prompt": "¿De qué hablan Paola e Iván?",
+          "prompt": "¿Cuál es el tema principal de la conversación?",
           "options": [
-            "Del departamento de Iván y las tareas de casa",
-            "De un viaje familiar",
-            "De una fiesta en la oficina"
+            "El departamento de Iván, los quehaceres y una reparación",
+            "La búsqueda de un departamento para Paola",
+            "La preparación de una fiesta familiar"
           ],
           "answer": 0,
-          "explanation": "La conversación trata del nuevo departamento y de cómo se organizan sus habitantes."
+          "explanation": "Los amigos hablan del nuevo departamento, el reparto de tareas y dos problemas domésticos."
         },
         {
           "id": "es_mx_a2_u2_e2",
           "skill": "detail",
           "type": "choice",
-          "prompt": "¿Qué tarea hace Iván?",
+          "prompt": "¿Qué tarea hace el primo de Iván?",
           "options": [
-            "Lava los trastes",
             "Prepara la comida",
-            "Limpia el baño todos los días"
+            "Lava los trastes",
+            "Escribe al dueño"
           ],
           "answer": 1,
           "explanation": "Iván explica que él prepara la comida y su primo lava los trastes."
         },
         {
           "id": "es_mx_a2_u2_e3",
-          "skill": "grammar",
+          "skill": "vocabulary",
           "type": "choice",
-          "prompt": "Completa: «Nosotros ___ organizarnos con los quehaceres».",
+          "prompt": "En México, ¿qué es «la regadera»?",
           "options": [
-            "tenemos que",
-            "hay que",
-            "tiene que"
+            "La ducha",
+            "El fregadero de la cocina",
+            "La lavadora"
           ],
           "answer": 0,
-          "explanation": "Con nosotros, tener que se conjuga tenemos que."
+          "explanation": "Regadera es la ducha o el dispositivo por donde sale el agua para bañarse."
         },
         {
           "id": "es_mx_a2_u2_e4",
-          "skill": "vocabulary_in_context",
+          "skill": "grammar",
           "type": "choice",
-          "prompt": "En México, ¿qué significa «los trastes» en este diálogo?",
+          "prompt": "¿Cuál es la forma más cortés de pedir ayuda a un compañero?",
           "options": [
-            "Los platos y utensilios de cocina",
-            "Los muebles del dormitorio",
-            "Las herramientas para reparar una llave"
+            "Ayúdame ahora",
+            "¿Podrías ayudarme, por favor?",
+            "Tienes que ayudarme"
           ],
-          "answer": 0,
-          "explanation": "Trastes se usa en México para hablar de platos, vasos y otros utensilios de cocina."
+          "answer": 1,
+          "explanation": "¿Podrías…? formula una petición cortés; el condicional suaviza la solicitud."
         },
         {
           "id": "es_mx_a2_u2_e5",
           "skill": "culture",
           "type": "choice",
-          "prompt": "En el contexto de una vivienda rentada en México, ¿quién es «el dueño»?",
+          "prompt": "En México, ¿qué palabra se usa habitualmente para referirse a un apartamento?",
           "options": [
-            "La persona propietaria de la vivienda",
-            "El vecino del departamento",
-            "El administrador del supermercado"
+            "Departamento",
+            "Piso",
+            "Chalet"
           ],
           "answer": 0,
-          "explanation": "El dueño es la persona que posee la vivienda; también puede decirse propietario."
+          "explanation": "Departamento es el término habitual en México para un apartamento."
         }
       ],
       "reading": {
         "title": "Un departamento para compartir",
-        "text": "Mariana vive con una amiga en un departamento de Guadalajara. El lugar tiene dos recámaras, una cocina y un balcón pequeño. Para mantener todo en orden, las dos se reparten los quehaceres. Mariana cocina entre semana y su amiga limpia la sala. Los sábados hacen el súper y después descansan. Hace poco, una llave empezó a gotear, así que hablaron con el dueño para pedir una reparación."
-      }
+        "text": "Mariana vive con una amiga en un departamento de Guadalajara. El lugar tiene dos recámaras, una cocina y un balcón pequeño. Para mantener todo en orden, se reparten los quehaceres: Mariana cocina entre semana y su amiga limpia la sala. Los sábados hacen el súper y después descansan. Hace poco, una llave empezó a gotear, así que le escribieron al dueño para pedir una reparación. El departamento no es muy grande, pero está cerca del transporte público."
+      },
+      "editorial_introduction": {
+        "hook": "Compartir una vivienda significa mucho más que dividir el alquiler: también hay que organizar los espacios, repartir las tareas y resolver pequeños problemas del día a día",
+        "opening_question": "¿Qué hace que una casa sea cómoda para vivir: la ubicación, la luz, el espacio o la organización?",
+        "purpose": "Aprenderás a describir una vivienda, hablar de responsabilidades domésticas, comparar espacios y pedir ayuda cuando algo no funciona",
+        "estimated_time_minutes": 45,
+        "route": [
+          "Lee cómo dos personas organizan su vida en casa",
+          "Observa las formas de expresar obligaciones y hacer peticiones",
+          "Practica comparaciones y vocabulario doméstico",
+          "Describe tu vivienda ideal y negocia una tarea cotidiana"
+        ],
+        "local_context": "Dos amigos hablan del departamento de Iván, de cómo comparte los quehaceres con su primo y de una reparación pendiente"
+      },
+      "vocabulary_in_context": [
+        {
+          "term": "acomodar las cosas",
+          "meaning_ru": "разложить вещи, обустроиться",
+          "example": "Todavía tengo que acomodar mis cosas."
+        },
+        {
+          "term": "quehaceres",
+          "meaning_ru": "домашние дела, обязанности",
+          "example": "Nos organizamos con los quehaceres."
+        },
+        {
+          "term": "lavar los trastes",
+          "meaning_ru": "мыть посуду",
+          "example": "Mi primo lava los trastes."
+        },
+        {
+          "term": "sacar la basura",
+          "meaning_ru": "выносить мусор",
+          "example": "Nos turnamos para sacar la basura."
+        },
+        {
+          "term": "la llave gotea",
+          "meaning_ru": "кран протекает / капает",
+          "example": "La llave del lavabo gotea."
+        },
+        {
+          "term": "la regadera",
+          "meaning_ru": "душ, душевая лейка",
+          "example": "La regadera tiene poca presión."
+        },
+        {
+          "term": "el dueño",
+          "meaning_ru": "владелец жилья",
+          "example": "Hay que avisarle al dueño."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          "¿Qué tal tu departamento? — Ну как твоя квартира?",
+          "Nos turnamos — Мы делаем по очереди",
+          "¿Podrías ayudarme…? — Не мог(ла) бы ты мне помочь…?",
+          "No quiero sonar demasiado exigente — Не хочу показаться слишком требовательным"
+        ],
+        "regional_note": "В Мексике обычно говорят departamento, recámara, trastes и regadera. Для домашних обязанностей часто используется слово quehaceres. В повседневной речи просьбу можно сформулировать с ¿Puedes…? или более мягко с ¿Podrías…?."
+      },
+      "guided_practice": [
+        {
+          "stage": "notice",
+          "title": "Заметьте закономерность",
+          "instruction": "Найдите в диалоге способы говорить об обязанностях и просьбах. Обратите внимание, что hay que avisarle al dueño выражает общую необходимость, а ¿podrías ayudarme? — вежливую просьбу к конкретному человеку.",
+          "tasks": [
+            "Найдите примеры tener que, hay que и deber и определите, кто должен выполнить действие",
+            "Найдите просьбу с puedes/podrías и объясните, насколько она вежлива",
+            "Выпишите сравнение двух помещений или жилищ"
+          ]
+        },
+        {
+          "stage": "practice",
+          "title": "Потренируйтесь самостоятельно",
+          "instruction": "Выберите конструкцию: Nosotros ___ organizarnos; En este edificio ___ cuidar el agua; Tú ___ revisar el contrato; ¿___ ayudarme con el mensaje?; Mi primo ___ lavar los trastes hoy.",
+          "tasks": [
+            "Преобразуйте общую необходимость в личную обязанность и наоборот",
+            "Составьте два сравнения своей комнаты с другой",
+            "Сформулируйте вежливую просьбу о помощи по дому"
+          ]
+        },
+        {
+          "stage": "communicate",
+          "title": "Используйте язык в разговоре",
+          "instruction": "Представьте, что вы живете с родственником или соседом. Договоритесь о домашних обязанностях, объясните проблему с краном или душем и попросите помочь написать сообщение владельцу.",
+          "tasks": [
+            "Опишите собеседнику свое жилье и сравните его с предыдущим",
+            "Договоритесь, кто выполняет две домашние обязанности",
+            "Объясните бытовую неисправность и попросите о помощи"
+          ]
+        }
+      ],
+      "personal_application": {
+        "scenario": "Вы делите квартиру с родственником или соседом. Нужно договориться о бытовых обязанностях и сообщить владельцу жилья о неисправности.",
+        "deliverable": "Подготовьте диалог из 10–12 реплик или запишите голосовое сообщение на 60–90 секунд.",
+        "prompts": [
+          "¿Cómo es tu departamento?",
+          "¿Qué quehaceres haces normalmente?",
+          "¿Cómo se reparten las tareas?",
+          "¿Qué problema hay en la vivienda?",
+          "¿Cómo le pedirías ayuda a tu compañero o al dueño?"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "Интонация вежливых просьб с ¿Podrías…? и произношение мексиканской бытовой лексики: departamento, recámara, regadera, trastes.",
+        "steps": [
+          "Прочитайте вслух ¿Podrías ayudarme a redactar el mensaje?",
+          "Произнесите три слова: recámara, regadera, quehaceres",
+          "Запишите короткое сообщение владельцу жилья и проверьте, звучит ли просьба вежливо и понятно"
+        ]
+      },
+      "reflection": {
+        "can_do": [
+          "Я могу описать квартиру и сравнить ее с другой",
+          "Я могу рассказать о домашних обязанностях и договориться об их распределении",
+          "Я могу объяснить бытовую неисправность",
+          "Я могу вежливо попросить соседа или владельца жилья о помощи"
+        ],
+        "self_check": "Отметьте, что уже получается самостоятельно, а что требует дополнительной практики."
+      },
+      "pronunciation_note": "В мексиканском варианте используются departamento, recámara, trastes, regadera и quehaceres. Обратите внимание на вежливую интонацию просьб с ¿Podrías…?."
     }
   ],
   "teacher_notes": [
-    "Не добавлять отдельный раздел Vocabulary: лексика вводится в контексте.",
-    "В испанском варианте использовать piso, grifo, lavadora и sacar la basura; в мексиканском — departamento, llave, trastes и quehaceres.",
-    "Hay que выражает общую необходимость, tener que — обязанность конкретного лица; не смешивать эти конструкции в объяснениях.",
-    "Материал — часть лид-магнита, не полноценный курс A2. Не интегрировать до завершения всего испанского каталога."
+    "Не добавлять отдельный раздел Vocabulary: лексику вводить в контексте диалогов, пояснений и упражнений.",
+    "В испанском варианте использовать piso, grifo, lavadora, fregadero и sacar la basura; в мексиканском — departamento, recámara, llave, trastes, regadera и quehaceres.",
+    "Tener que выражает необходимость для конкретного лица, hay que — общую необходимость, deber — совет или обязанность. Не смешивать эти конструкции в объяснениях.",
+    "Для вежливых просьб использовать ¿Puedes…?, ¿Podrías…? и ¿Te importa…? с учетом регистра общения.",
+    "Сравнительные конструкции должны включать más/menos… que, tan… como и согласование прилагательных; формы tanto/a/os/as + sustantivo + como могут вводиться как расширение.",
+    "Материал — часть лид-магнита, не полноценный курс A2. Не интегрировать до завершения всего испанского каталога.",
+    "Внешние аудио- и видеоматериалы требуют отдельной проверки доступности, соответствия CEFR и прав использования; задания к ним создавать только после просмотра или прослушивания."
   ]
 }

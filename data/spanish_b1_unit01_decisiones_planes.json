@@ -131,15 +131,15 @@
         {
           "id": "es_es_b1_u1_e4",
           "type": "choice",
-          "skill": "vocabulary",
-          "prompt": "Elige el conector de consecuencia: «No consigue la beca; ___, tendrá que trabajar unos meses más».",
+          "skill": "grammar",
+          "prompt": "Completa la condición real: «Si termino los documentos esta semana, ___ la solicitud el lunes».",
           "options": [
-            "aunque",
-            "por un lado",
-            "por eso"
+            "presentaré",
+            "presentaría",
+            "presentara"
           ],
-          "answer": 2,
-          "explanation": "Por eso introduce una consecuencia."
+          "answer": 0,
+          "explanation": "En una condición real o posible se usa si + presente y futuro en la oración principal."
         },
         {
           "id": "es_es_b1_u1_e5",
@@ -250,15 +250,15 @@
         {
           "id": "es_mx_b1_u1_e4",
           "type": "choice",
-          "skill": "vocabulary",
-          "prompt": "Elige el conector de consecuencia: «No consigue la beca; ___, tendrá que trabajar unos meses más».",
+          "skill": "grammar",
+          "prompt": "Completa la condición real: «Si termino los documentos esta semana, ___ la solicitud el lunes».",
           "options": [
-            "aunque",
-            "por un lado",
-            "por eso"
+            "presentaré",
+            "presentaría",
+            "presentara"
           ],
-          "answer": 2,
-          "explanation": "Por eso introduce una consecuencia."
+          "answer": 0,
+          "explanation": "En una condición real o posible se usa si + presente y futuro en la oración principal."
         },
         {
           "id": "es_mx_b1_u1_e5",

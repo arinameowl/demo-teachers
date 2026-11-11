@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "level": "B1",
+  "category": "lesson",
+  "language": "es",
+  "unit_id": "es_b1_u06_cultura_memoria",
+  "title": "Cultura, memoria e identidad",
+  "learning_goals": [
+    "Рассказывать о культурных событиях и воспоминаниях",
+    "Объяснять отношение к традициям и изменениям",
+    "Использовать subjuntivo после эмоций и оценок, aunque + indicativo/subjuntivo"
+  ],
+  "grammar": [
+    {
+      "topic": "subjuntivo_emocion_valoracion",
+      "explanation_ru": "После выражений эмоции и оценки часто используется subjuntivo: Me alegra que…, Es importante que…, Es una pena que….",
+      "examples": [
+        "Me alegra que vengas.",
+        "Es importante que conozcamos la historia."
+      ]
+    },
+    {
+      "topic": "aunque_indicativo_subjuntivo",
+      "explanation_ru": "Aunque + indicativo обычно вводит известный факт; aunque + subjuntivo — возможный, предполагаемый или несущественный для говорящего факт.",
+      "examples": [
+        "Aunque llueve, saldremos.",
+        "Aunque llueva, saldremos."
+      ]
+    },
+    {
+      "topic": "marcadores_relato",
+      "explanation_ru": "Для связного рассказа используйте al principio, con el tiempo, mientras tanto, años después, desde entonces. Они помогают выстроить последовательность и показать изменение.",
+      "examples": [
+        "Al principio no entendía la tradición.",
+        "Con el tiempo empezó a participar."
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "pronunciation_note": "Лексика и речевые модели Испании.",
+      "dialogue": [
+        {
+          "speaker": "Lucía",
+          "text": "¿Vas a participar en la fiesta del barrio este año?"
+        },
+        {
+          "speaker": "Mateo",
+          "text": "Sí. Me alegra que se mantengan estas celebraciones."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "¿Tu familia también participa?"
+        },
+        {
+          "speaker": "Mateo",
+          "text": "Antes mi abuela organizaba la comida. Ahora todos asumimos una parte."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "¿Crees que las tradiciones deberían cambiar?"
+        },
+        {
+          "speaker": "Mateo",
+          "text": "Algunas sí, aunque es importante que no pierdan su significado."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "La gente joven también puede aportar ideas."
+        },
+        {
+          "speaker": "Mateo",
+          "text": "Aunque no todos conozcan la historia, pueden interesarse por ella."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "¿Qué es lo que más te gusta?"
+        },
+        {
+          "speaker": "Mateo",
+          "text": "Que nos reunamos y recordemos de dónde venimos."
+        }
+      ],
+      "context_note": "В Испании местные праздники часто связаны с историей конкретного города или района. Они могут включать музыку, уличные мероприятия, религиозные элементы или гастрономические традиции; содержание различается по регионам.",
+      "reading": {
+        "title": "Una tradición compartida",
+        "text": "Durante muchos años, la fiesta del barrio se celebró casi de la misma manera. Las familias preparaban comida, los músicos tocaban en la plaza y los niños participaban en juegos. Con el tiempo llegaron nuevos vecinos y propusieron actividades diferentes. Algunas personas temían que la celebración perdiera su carácter, pero otras defendían que las tradiciones también pueden evolucionar. Hoy se combinan elementos antiguos y nuevos, y la fiesta sigue siendo un punto de encuentro."
+      },
+      "exercises": [
+        {
+          "id": "es_es_b1_u6_e1",
+          "type": "choice",
+          "skill": "gist",
+          "prompt": "¿Qué temían algunas personas?",
+          "options": [
+            "Que la celebración perdiera su carácter.",
+            "Que la actividad se canceló sin explicación",
+            "Que todos rechazaron la propuesta"
+          ],
+          "answer": 0,
+          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+        },
+        {
+          "id": "es_es_b1_u6_e2",
+          "type": "choice",
+          "skill": "detail",
+          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "options": [
+            "El texto presenta una situación relacionada con el tema y sus matices",
+            "El texto afirma que todas las situaciones son idénticas",
+            "El texto no ofrece información concreta"
+          ],
+          "answer": 0,
+          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+        },
+        {
+          "id": "es_es_b1_u6_e3",
+          "type": "choice",
+          "skill": "grammar",
+          "prompt": "Me alegra que todos ___.",
+          "options": [
+            "participen",
+            "participan",
+            "participaron"
+          ],
+          "answer": 0,
+          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+        },
+        {
+          "id": "es_es_b1_u6_e4",
+          "type": "choice",
+          "skill": "vocabulary",
+          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "options": [
+            "Sin embargo",
+            "Por la mañana",
+            "Al lado de"
+          ],
+          "answer": 0,
+          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+        },
+        {
+          "id": "es_es_b1_u6_e5",
+          "type": "choice",
+          "skill": "culture",
+          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "options": [
+            "Que puede variar según la región y las familias",
+            "Que se practica igual en todos los lugares",
+            "Que nunca cambia con el tiempo"
+          ],
+          "answer": 0,
+          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "pronunciation_note": "Мексиканский вариант как основа латиноамериканского маршрута.",
+      "dialogue": [
+        {
+          "speaker": "Lucía",
+          "text": "¿Vas a participar en la fiesta de la colonia este año?"
+        },
+        {
+          "speaker": "Mateo",
+          "text": "Sí. Me da gusto que se mantengan estas celebraciones."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "¿Tu familia también participa?"
+        },
+        {
+          "speaker": "Mateo",
+          "text": "Antes mi abuela organizaba la comida. Ahora todos asumimos una parte."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "¿Crees que las tradiciones deberían cambiar?"
+        },
+        {
+          "speaker": "Mateo",
+          "text": "Algunas sí, aunque es importante que no pierdan su significado."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "La gente joven también puede aportar ideas."
+        },
+        {
+          "speaker": "Mateo",
+          "text": "Aunque no todos conozcan la historia, pueden interesarse por ella."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "¿Qué es lo que más te gusta?"
+        },
+        {
+          "speaker": "Mateo",
+          "text": "Que nos reunamos y recordemos de dónde venimos."
+        }
+      ],
+      "context_note": "В Мексике традиции часто соединяют семейную память, местную историю, музыку и еду. Día de Muertos — узнаваемый пример, но практики и символы различаются между регионами и семьями.",
+      "reading": {
+        "title": "Una tradición compartida",
+        "text": "Durante muchos años, la celebración de la comunidad se realizó casi de la misma manera. Las familias preparaban comida, los músicos tocaban en la plaza y los niños participaban en juegos. Con el tiempo llegaron nuevos vecinos y propusieron actividades diferentes. Algunas personas temían que la fiesta perdiera su carácter, pero otras defendían que las tradiciones también pueden evolucionar. Hoy se combinan elementos antiguos y nuevos, y la celebración sigue siendo un punto de encuentro."
+      },
+      "exercises": [
+        {
+          "id": "es_mx_b1_u6_e1",
+          "type": "choice",
+          "skill": "gist",
+          "prompt": "¿Qué cambió con la llegada de nuevos vecinos?",
+          "options": [
+            "Propusieron actividades diferentes.",
+            "Que la actividad se canceló sin explicación",
+            "Que todos rechazaron la propuesta"
+          ],
+          "answer": 0,
+          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+        },
+        {
+          "id": "es_mx_b1_u6_e2",
+          "type": "choice",
+          "skill": "detail",
+          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "options": [
+            "El texto presenta una situación relacionada con el tema y sus matices",
+            "El texto afirma que todas las situaciones son idénticas",
+            "El texto no ofrece información concreta"
+          ],
+          "answer": 0,
+          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+        },
+        {
+          "id": "es_mx_b1_u6_e3",
+          "type": "choice",
+          "skill": "grammar",
+          "prompt": "Me alegra que todos ___.",
+          "options": [
+            "participen",
+            "participan",
+            "participaron"
+          ],
+          "answer": 0,
+          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+        },
+        {
+          "id": "es_mx_b1_u6_e4",
+          "type": "choice",
+          "skill": "vocabulary",
+          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "options": [
+            "Sin embargo",
+            "Por la mañana",
+            "Al lado de"
+          ],
+          "answer": 0,
+          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+        },
+        {
+          "id": "es_mx_b1_u6_e5",
+          "type": "choice",
+          "skill": "culture",
+          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "options": [
+            "Que puede variar según la región y las familias",
+            "Que se practica igual en todos los lugares",
+            "Que nunca cambia con el tiempo"
+          ],
+          "answer": 0,
+          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+        }
+      ]
+    }
+  ]
+}

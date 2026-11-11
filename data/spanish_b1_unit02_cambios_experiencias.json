@@ -93,14 +93,14 @@
           "id": "es_es_b1_u2_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué había hecho Elena antes de trasladarse a Bilbao?",
+          "prompt": "¿Cuál es la idea principal del texto?",
           "options": [
-            "Había trabajado en el extranjero.",
-            "Había vivido siempre en un pueblo pequeño.",
-            "Había estudiado en Valencia."
+            "Elena se adapta poco a poco a una nueva ciudad, aunque mantiene el vínculo con su pueblo.",
+            "Elena decide regresar a su pueblo porque no consigue adaptarse a Bilbao.",
+            "Elena descubre que vivir en una ciudad pequeña es siempre más fácil."
           ],
-          "answer": 1,
-          "explanation": "El primer enunciado de la lectura sitúa su vida antes del traslado."
+          "answer": 0,
+          "explanation": "El texto describe un proceso de adaptación y el vínculo con el lugar de origen."
         },
         {
           "id": "es_es_b1_u2_e2",
@@ -212,14 +212,14 @@
           "id": "es_mx_b1_u2_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué había hecho Elena antes de mudarse a Guadalajara?",
+          "prompt": "¿Cuál es la idea principal del texto?",
           "options": [
-            "Había estudiado en la capital.",
-            "Había vivido siempre en un pueblo pequeño.",
-            "Había trabajado en otro país."
+            "Elena construye una nueva vida en Guadalajara sin perder el vínculo con su lugar de origen.",
+            "Elena decide regresar inmediatamente porque no se adapta a Guadalajara.",
+            "Elena deja de visitar a su familia después de mudarse."
           ],
-          "answer": 1,
-          "explanation": "La lectura presenta su vida anterior en un pueblo."
+          "answer": 0,
+          "explanation": "El texto describe su adaptación gradual a la nueva ciudad."
         },
         {
           "id": "es_mx_b1_u2_e2",

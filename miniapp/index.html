@@ -32,6 +32,7 @@
   <div id="profile"></div>
   <h2 class="section-title">Выберите язык</h2>
   <div class="language-grid" id="languages"></div>
+  <div class="language-grid" id="spanish-variant" hidden style="margin-top:10px"><button class="lang active" data-variant="es_es" type="button">Испанский · Испания<small>Европейский вариант</small></button><button class="lang" data-variant="es_mx" type="button">Испанский · Мексика<small>Латиноамериканский вариант</small></button></div>
   <div class="notice" id="notice" hidden></div>
   <h2 class="section-title">Материалы вашего уровня</h2>
   <div id="materials" class="loading">Загружаем подкасты и видео…</div>
@@ -52,8 +53,8 @@
   tg?.ready(); tg?.expand();
   if (tg?.themeParams) { document.documentElement.style.setProperty('--tg-bg', tg.themeParams.bg_color || '#F5F1EB'); }
   const headers = {'Authorization': 'tma ' + (tg?.initData || '')};
-  const defaultLanguages = {en:{name:'Английский',available:true},es:{name:'Испанский',available:false},zh:{name:'Китайский',available:false},ko:{name:'Корейский',available:false}};
-  let state = {languages:defaultLanguages, profile:{}, materials:[], progress:[], library:{books:[],worksheets:[]}, bot_username:'TheTeachersEng_bot'}, selectedLanguage = 'en';
+  const defaultLanguages = {en:{name:'Английский',available:true},es:{name:'Испанский',available:true},zh:{name:'Китайский',available:false},ko:{name:'Корейский',available:false}};
+  let state = {languages:defaultLanguages, profile:{}, materials:[], progress:[], library:{books:[],worksheets:[]}, bot_username:'TheTeachersEng_bot', spanishLead:null}, selectedLanguage = 'en', selectedSpanishVariant = 'es_es';
   const $ = id => document.getElementById(id);
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const languageNames = {en:'Английский',es:'Испанский',zh:'Китайский',ko:'Корейский'};
@@ -88,12 +89,87 @@
     const languages = state?.languages || defaultLanguages;
     $('languages').innerHTML = Object.entries(languages).map(([code, item]) => `
       <button class="lang ${selectedLanguage===code?'active':''}" data-lang="${code}" ${item.available?'':'aria-disabled="true"'}>
-        ${esc(item.name)}<small>${code==='en'?'Подборка доступна':'Задания в скором времени будут добавлены'}</small>
+        ${esc(item.name)}<small>${item.available?'Подборка доступна':'Задания в скором времени будут добавлены'}</small>
       </button>`).join('');
     document.querySelectorAll('[data-lang]').forEach(btn => btn.addEventListener('click', () => {
       const code = btn.dataset.lang;
-      selectedLanguage = code; renderLanguages(); renderMaterials();
+      selectedLanguage = code; renderLanguages(); $('spanish-variant').hidden = code !== 'es'; if(code === 'es') loadSpanishLead(); else renderMaterials();
     }));
+  }
+  document.querySelectorAll('[data-variant]').forEach(btn => btn.addEventListener('click', () => {
+    selectedSpanishVariant = btn.dataset.variant;
+    document.querySelectorAll('[data-variant]').forEach(x => x.classList.toggle('active', x.dataset.variant === selectedSpanishVariant));
+    loadSpanishLead();
+  }));
+  function flattenSpanishTasks(resource, section) {
+    const tasks = resource?.tasks?.[section] || [];
+    return tasks.flatMap(task => {
+      if (Array.isArray(task.questions)) return task.questions.filter(q => Array.isArray(q.options));
+      return task.options ? [task] : [];
+    });
+  }
+  function spanishSection(resourceId, resource, section, label) {
+    const questions = resourceId === 'book' ? (resource.questions || []) : flattenSpanishTasks(resource, section);
+    const tasks = resource?.tasks?.[section] || [];
+    const vocab = tasks.filter(t => t.type === 'matching' && Array.isArray(t.pairs)).map(t =>
+      '<div class="desc">' + t.pairs.map(p => '<p><strong>' + esc(p.spanish) + '</strong> — ' + esc(p.russian) + '</p>').join('') + '</div>'
+    ).join('');
+    if (!questions.length && !vocab) return '';
+    const button = questions.length ? '<button class="action secondary" data-spanish-quiz="' + esc(resourceId) + '" data-section="' + esc(section) + '">Выполнить задания (' + questions.length + ')</button>' : '';
+    return '<div class="quiz-q"><strong>' + esc(label) + '</strong>' + vocab + '<div class="actions">' + button + '</div></div>';
+  }
+  async function loadSpanishLead() {
+    $('spanish-variant').hidden = false;
+    $('materials').classList.remove('loading'); $('library').classList.remove('loading');
+    $('materials').innerHTML = '<div class="loading">Загружаем материалы по испанскому…</div>';
+    $('library').innerHTML = '';
+    try {
+      state.spanishLead = await api('/api/app/spanish-lead/' + selectedSpanishVariant);
+      renderSpanishMaterials();
+    } catch(e) {
+      $('materials').innerHTML = '<div class="empty">' + esc(e.message) + '</div>';
+    }
+  }
+  function renderSpanishMaterials() {
+    const d = state.spanishLead;
+    if (!d) return;
+    const book = d.book, video = d.video, series = d.series;
+    const videoId = (video.youtube_url.match(/[?&]v=([^&]+)/) || [,''])[1];
+    const seriesId = (series.youtube_url.match(/[?&]v=([^&]+)/) || [,''])[1];
+    const videoPlayer = videoId ? '<iframe class="player" src="https://www.youtube-nocookie.com/embed/' + esc(videoId) + '?playsinline=1&rel=0" title="' + esc(video.title) + '" allowfullscreen loading="lazy"></iframe>' : '';
+    const seriesPlayer = seriesId ? '<iframe class="player" src="https://www.youtube-nocookie.com/embed/' + esc(seriesId) + '?playsinline=1&rel=0" title="' + esc(series.title) + '" allowfullscreen loading="lazy"></iframe>' : '';
+    $('materials').innerHTML =
+      '<article class="card"><div class="tag">Чтение · A1</div><h3>' + esc(book.title) + '</h3><p class="desc">' + esc(d.variant === 'es_es' ? 'Испанский Испании' : 'Испанский Мексики') + '</p><div class="actions"><button class="action" id="spanish-read" type="button">Читать книгу</button></div>' +
+      spanishSection('book', book, 'book', 'Проверка понимания текста') + '</article>' +
+      '<article class="card"><div class="tag">Видео · ' + esc(video.level) + '</div><h3>' + esc(video.title) + '</h3><p class="desc">' + esc(video.content_summary || '') + '</p>' + videoPlayer +
+      '<div class="actions"><a class="action secondary" href="' + esc(video.youtube_url) + '" target="_blank" rel="noopener">Открыть на YouTube</a></div>' +
+      spanishSection('video', video, 'before_watching', 'Перед просмотром') +
+      spanishSection('video', video, 'while_watching', 'Во время просмотра') +
+      spanishSection('video', video, 'after_watching', 'После просмотра') + '</article>' +
+      '<article class="card"><div class="tag">Сериал · ' + esc(series.level) + '</div><h3>' + esc(series.title) + '</h3><p class="desc">' + esc(series.content_summary || '') + '</p>' + seriesPlayer +
+      '<div class="actions"><a class="action secondary" href="' + esc(series.youtube_url) + '" target="_blank" rel="noopener">Открыть на YouTube</a></div>' +
+      spanishSection('series', series, 'before_watching', 'Перед просмотром') +
+      spanishSection('series', series, 'while_watching', 'Во время просмотра') +
+      spanishSection('series', series, 'after_watching', 'После просмотра') + '</article>' +
+      '<div class="notice">' + esc(d.level_note || '') + '</div>';
+    $('library').innerHTML = '';
+    $('spanish-read')?.addEventListener('click', () => {
+      activeBook = book; bookPage = 0; renderBookPage(); $('reader').classList.add('open');
+    });
+    document.querySelectorAll('[data-spanish-quiz]').forEach(btn => btn.addEventListener('click', () => {
+      const resourceId = btn.dataset.spanishQuiz, section = btn.dataset.section;
+      const resource = resourceId === 'book' ? book : resourceId === 'video' ? video : series;
+      const questions = resourceId === 'book' ? resource.questions : flattenSpanishTasks(resource, section);
+      openSpanishQuiz(resourceId, section, questions);
+    }));
+  }
+  async function openSpanishQuiz(resourceId, section, questions) {
+    if (!questions?.length) return;
+    activeQuiz = {materialId:resourceId, spanish:true, variant:selectedSpanishVariant, section, data:{questions}, answers:[]};
+    $('quiz-title').textContent = 'Испанский · ' + (resourceId === 'book' ? 'книга' : resourceId === 'video' ? 'видео' : 'сериал');
+    $('quiz-result').innerHTML = '';
+    $('quiz-body').innerHTML = questions.map((q,i)=>'<div class="quiz-q"><p>'+(i+1)+'. '+esc(q.prompt || q.question || '')+'</p>'+q.options.map((o,j)=>'<label><input type="radio" name="q'+i+'" value="'+j+'"> '+esc(o)+'</label>').join('')+'</div>').join('');
+    $('quiz').classList.add('open');
   }
   function renderProfile() {
     const p = state.profile || {};
@@ -103,6 +179,7 @@
   }
   function renderMaterials() {
     $('materials').classList.remove('loading');
+    if (selectedLanguage === 'es') { renderSpanishMaterials(); return; }
     if (selectedLanguage !== 'en') {
       $('materials').innerHTML = '<div class="empty">Задания в скором времени будут добавлены</div>';
       renderLibrary();
@@ -133,6 +210,7 @@
   }
   function renderLibrary() {
     $('library').classList.remove('loading');
+    if (selectedLanguage === 'es') { $('library').innerHTML = ''; return; }
     const lib = state.library || {books:[]};
     if (selectedLanguage !== 'en') { $('library').innerHTML = '<div class="empty">Библиотека этого языка пока не загружена.</div>'; return; }
     if (lib.error) {
@@ -227,6 +305,13 @@
     const unanswered=answers.some((a)=>a===null||String(a).trim()==='');
     if(unanswered){tg?.showAlert?.('Пожалуйста, ответьте на все задания.');return;}
     try{
+      if(activeQuiz.spanish){
+        const result=await api('/api/app/spanish-lead/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({variant:activeQuiz.variant,resource_id:activeQuiz.materialId,section:activeQuiz.section,answers})});
+        const review=result.results.map((r,i)=>'<div class="answer-review '+(r.correct?'good':'bad')+'"><strong>'+(i+1)+'. '+(r.correct?'Верно':'Пока неверно')+'</strong>'+(r.correct?'':'<br>Правильный ответ: '+esc(r.expected))+'</div>').join('');
+        $('quiz-result').innerHTML='<div class="result"><strong>Результат: '+result.correct+' из '+result.total+'</strong><br>'+(result.completed?'Отлично! Все ответы верны.':'Посмотрите правильные ответы и попробуйте ещё раз.')+review+'</div>';
+        tg?.HapticFeedback?.notificationOccurred(result.completed?'success':'warning');
+        return;
+      }
       const result=await api('/api/app/exercises/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({material_id:activeQuiz.materialId,answers})});
       const review = result.results.map((r,i)=>`<div class="answer-review ${r.correct?'good':'bad'}"><strong>${i+1}. ${r.correct?'Верно':'Пока неверно'}</strong>${r.correct?'':`<br>Правильный ответ: ${esc(r.expected)}`}${r.explanation?`<br><span class="desc">${esc(r.explanation)}</span>`:''}</div>`).join('');
       $('quiz-result').innerHTML=`<div class="result"><strong>Результат: ${result.correct} из ${result.total}</strong><br>${result.completed?'Отлично! Материал отмечен как пройденный.':'Изучите комментарии к ответам и попробуйте ещё раз.'}${review}</div>`;

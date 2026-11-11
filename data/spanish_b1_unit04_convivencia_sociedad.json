@@ -93,66 +93,66 @@
           "id": "es_es_b1_u4_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué pidió la responsable al equipo en la primera reunión?",
+          "prompt": "¿Qué se ha creado para que los vecinos comuniquen problemas?",
           "options": [
-            "Que cada persona definiera sus tareas.",
-            "Que todos cambiaran de departamento.",
-            "Que se cancelara el proyecto."
+            "Una plataforma.",
+            "Una nueva línea de tren.",
+            "Una oficina de turismo."
           ],
           "answer": 0,
-          "explanation": "La lectura explica que la responsable pidió definir las tareas individuales."
+          "explanation": "La lectura menciona una plataforma vecinal."
         },
         {
           "id": "es_es_b1_u4_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué dato adicional necesitaba el departamento financiero?",
+          "prompt": "¿Qué problema sigue pendiente en el barrio?",
           "options": [
-            "Datos adicionales para preparar la propuesta.",
-            "Una nueva oficina para el equipo.",
-            "Una lista de vacaciones."
+            "Algunas calles necesitan reparaciones y se pide mejorar el transporte.",
+            "No hay ningún espacio público.",
+            "Se han cerrado todos los centros deportivos."
           ],
           "answer": 0,
-          "explanation": "El texto indica que finanzas necesitaba información adicional."
+          "explanation": "La lectura señala reparaciones y transporte como asuntos pendientes."
         },
         {
           "id": "es_es_b1_u4_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Pasa al estilo indirecto: «El proveedor dijo: “Enviaré la oferta mañana”».",
+          "prompt": "Completa: «En esta zona ___ actividades para distintas edades».",
           "options": [
-            "El proveedor dijo que enviaría la oferta al día siguiente.",
-            "El proveedor dijo que envía la oferta ayer.",
-            "El proveedor dijo que enviará la oferta mañana."
+            "se organizan",
+            "se organiza",
+            "organiza se"
           ],
           "answer": 0,
-          "explanation": "Al trasladar al pasado, futuro pasa normalmente a condicional y mañana a al día siguiente."
+          "explanation": "En la pasiva refleja el verbo concuerda con el sujeto plural actividades."
         },
         {
           "id": "es_es_b1_u4_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué petición suena más cortés en un contexto profesional?",
+          "prompt": "¿Qué significa «poner en marcha un proyecto»?",
           "options": [
-            "¿Podrías revisar esta versión, por favor?",
-            "Revisa esto ahora mismo.",
-            "Tienes que hacerlo ya."
+            "Iniciarlo o hacerlo comenzar.",
+            "Cancelarlo definitivamente.",
+            "Evaluarlo sin llevarlo a cabo."
           ],
           "answer": 0,
-          "explanation": "Podrías suaviza la petición."
+          "explanation": "Poner en marcha significa iniciar o implementar."
         },
         {
           "id": "es_es_b1_u4_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "Según la nota cultural, ¿qué influye en el estilo de comunicación laboral?",
+          "prompt": "¿Qué nivel administrativo se menciona en la nota sobre España?",
           "options": [
-            "La empresa, el sector y la relación entre interlocutores.",
-            "Una regla idéntica para todas las empresas.",
-            "Solo la edad de los trabajadores."
+            "El municipio.",
+            "La Unión Europea como única autoridad local.",
+            "La administración de otro país."
           ],
           "answer": 0,
-          "explanation": "La nota destaca que el registro depende del contexto profesional."
+          "explanation": "La nota sitúa muchos servicios locales en el ámbito municipal."
         }
       ]
     },
@@ -212,66 +212,66 @@
           "id": "es_mx_b1_u4_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué pidió la responsable al equipo en la primera reunión?",
+          "prompt": "¿Qué se creó para que los vecinos reporten problemas?",
           "options": [
-            "Que cada persona definiera sus tareas.",
-            "Que todos cambiaran de área.",
-            "Que se suspendiera el proyecto."
+            "Una plataforma.",
+            "Una estación de autobuses.",
+            "Una asociación deportiva privada."
           ],
           "answer": 0,
-          "explanation": "La lectura explica que la responsable pidió definir las tareas."
+          "explanation": "La lectura menciona una plataforma para reportar problemas."
         },
         {
           "id": "es_mx_b1_u4_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué necesitaba el área de finanzas?",
+          "prompt": "¿Qué necesidad sigue pendiente en la colonia?",
           "options": [
-            "Datos adicionales.",
-            "Un nuevo edificio.",
-            "Un cambio de proveedor."
+            "Reparar algunas calles y mejorar el transporte.",
+            "Eliminar todas las áreas verdes.",
+            "Cerrar los espacios comunitarios."
           ],
           "answer": 0,
-          "explanation": "El texto señala que finanzas necesitaba datos adicionales."
+          "explanation": "La lectura señala calles y transporte como asuntos por mejorar."
         },
         {
           "id": "es_mx_b1_u4_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Pasa al estilo indirecto: «El proveedor dijo: “Enviaré la cotización mañana”».",
+          "prompt": "Completa: «En esta colonia ___ actividades para distintas edades».",
           "options": [
-            "El proveedor dijo que enviaría la cotización al día siguiente.",
-            "El proveedor dijo que envía la cotización ayer.",
-            "El proveedor dijo que enviará la cotización mañana."
+            "se organizan",
+            "se organiza",
+            "organiza se"
           ],
           "answer": 0,
-          "explanation": "El futuro en estilo directo suele pasar a condicional al depender de un verbo introductorio pasado."
+          "explanation": "El verbo concuerda en plural con actividades."
         },
         {
           "id": "es_mx_b1_u4_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué petición suena más cortés en un contexto profesional?",
+          "prompt": "¿Qué significa «poner en marcha un proyecto»?",
           "options": [
-            "¿Podrías revisar esta versión, por favor?",
-            "Revisa esto ahora mismo.",
-            "Hazlo de una vez."
+            "Iniciarlo o hacerlo comenzar.",
+            "Cancelarlo definitivamente.",
+            "Dejarlo sin planificación."
           ],
           "answer": 0,
-          "explanation": "Podrías suaviza la petición."
+          "explanation": "La expresión significa iniciar o implementar un proyecto."
         },
         {
           "id": "es_mx_b1_u4_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "Según la nota cultural, ¿qué influye en el estilo de comunicación laboral?",
+          "prompt": "¿Qué término administrativo se menciona para la Ciudad de México?",
           "options": [
-            "La empresa, el sector y la relación entre interlocutores.",
-            "Una regla idéntica para todas las empresas.",
-            "Solo el cargo de la persona."
+            "Alcaldía.",
+            "Comunidad autónoma.",
+            "Diputación provincial."
           ],
           "answer": 0,
-          "explanation": "El registro depende de la cultura de empresa y de la situación."
+          "explanation": "Alcaldía se usa en el contexto de la CDMX."
         }
       ]
     }

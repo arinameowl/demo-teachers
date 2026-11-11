@@ -95,11 +95,11 @@
           "skill": "gist",
           "prompt": "¿Por qué los especialistas recomendaron consultar la metodología?",
           "options": [
-            "Porque el estudio se hizo con un grupo reducido de una sola universidad.",
             "Porque el informe no tenía fecha.",
+            "Porque el estudio se hizo con un grupo reducido de una sola universidad.",
             "Porque la encuesta se realizó en varios países."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "Una muestra limitada no permite generalizar los resultados."
         },
         {
@@ -108,11 +108,11 @@
           "skill": "detail",
           "prompt": "¿Qué propone Álvaro hacer si comparte la noticia?",
           "options": [
-            "Añadir una nota sobre las limitaciones del estudio.",
             "Eliminar todos los datos del artículo.",
-            "Presentarla como una conclusión definitiva."
+            "Presentarla como una conclusión definitiva.",
+            "Añadir una nota sobre las limitaciones del estudio."
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "Álvaro propone contextualizar la noticia."
         },
         {
@@ -134,11 +134,11 @@
           "skill": "vocabulary",
           "prompt": "¿Qué conector introduce una objeción o contraste?",
           "options": [
-            "Sin embargo",
             "Además",
-            "Por eso"
+            "Por eso",
+            "Sin embargo"
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "Sin embargo introduce contraste."
         },
         {
@@ -147,11 +147,11 @@
           "skill": "culture",
           "prompt": "¿Qué conviene comprobar antes de compartir una noticia?",
           "options": [
-            "La fuente original, la fecha y la metodología.",
             "Solo el número de veces que se ha compartido.",
+            "La fuente original, la fecha y la metodología.",
             "Únicamente la imagen del titular."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "La verificación requiere revisar el origen y el contexto."
         }
       ]
@@ -214,11 +214,11 @@
           "skill": "gist",
           "prompt": "¿Por qué los especialistas recomendaron revisar la metodología?",
           "options": [
-            "Porque el estudio se hizo con un grupo pequeño de una sola universidad.",
             "Porque la noticia no tenía título.",
+            "Porque el estudio se hizo con un grupo pequeño de una sola universidad.",
             "Porque participaron personas de todos los estados."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "La muestra limitada no representa necesariamente a toda la población."
         },
         {
@@ -227,11 +227,11 @@
           "skill": "detail",
           "prompt": "¿Qué haría Álvaro al compartir la noticia?",
           "options": [
-            "Agregaría una nota sobre las limitaciones.",
             "Cambiaría los resultados de la encuesta.",
-            "Afirmaría que la conclusión es universal."
+            "Afirmaría que la conclusión es universal.",
+            "Agregaría una nota sobre las limitaciones."
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "Álvaro quiere explicar los límites de la investigación."
         },
         {
@@ -253,11 +253,11 @@
           "skill": "vocabulary",
           "prompt": "¿Qué conector introduce una objeción o contraste?",
           "options": [
-            "Sin embargo",
             "Además",
-            "Por eso"
+            "Por eso",
+            "Sin embargo"
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "Sin embargo introduce contraste."
         },
         {
@@ -266,11 +266,11 @@
           "skill": "culture",
           "prompt": "¿Qué conviene comprobar antes de compartir una noticia?",
           "options": [
-            "La fuente original, la fecha y la metodología.",
             "Solo el número de reacciones.",
+            "La fuente original, la fecha y la metodología.",
             "Únicamente el titular."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "La verificación exige localizar el origen y el contexto."
         }
       ]

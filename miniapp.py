@@ -356,7 +356,7 @@ async def submit_spanish_lead(payload: SpanishQuizSubmission, user: dict = Depen
             "index": index,
             "correct": ok,
             "expected": expected_text,
-            "given": given if isinstance(given, int) and 0 <= given < len(options) else "",
+            "given": options[given] if isinstance(given, int) and not isinstance(given, bool) and 0 <= given < len(options) else "",
             "explanation": explanation,
         })
 

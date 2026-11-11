@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "language": "es",
+  "level": "B1",
+  "title": "Spanish B1 — The Teachers School",
+  "status": "content_prepared_not_integrated",
+  "dialects": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "description": "Вариант испанского, ориентированный на употребление в Испании."
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "description": "Мексиканский вариант как основа латиноамериканского маршрута."
+    }
+  ],
+  "units": [
+    {
+      "order": 1,
+      "id": "es_b1_u01_decisiones_planes",
+      "title": "Decisiones y nuevos planes",
+      "path": "data/spanish_b1_unit01_decisiones_planes.json"
+    },
+    {
+      "order": 2,
+      "id": "es_b1_u02_cambios_experiencias",
+      "title": "Cambios y experiencias personales",
+      "path": "data/spanish_b1_unit02_cambios_experiencias.json"
+    },
+    {
+      "order": 3,
+      "id": "es_b1_u03_medios_opinion",
+      "title": "Medios, información y opinión",
+      "path": "data/spanish_b1_unit03_medios_opinion.json"
+    },
+    {
+      "order": 4,
+      "id": "es_b1_u04_convivencia_sociedad",
+      "title": "Convivencia y vida en sociedad",
+      "path": "data/spanish_b1_unit04_convivencia_sociedad.json"
+    },
+    {
+      "order": 5,
+      "id": "es_b1_u05_trabajo_proyectos",
+      "title": "Trabajo, colaboración y proyectos",
+      "path": "data/spanish_b1_unit05_trabajo_proyectos.json"
+    },
+    {
+      "order": 6,
+      "id": "es_b1_u06_cultura_memoria",
+      "title": "Cultura, memoria e identidad",
+      "path": "data/spanish_b1_unit06_cultura_memoria.json"
+    }
+  ],
+  "content_standard": {
+    "per_unit_per_dialect": {
+      "grammar_topics": 3,
+      "dialogue_lines": 10,
+      "original_reading_texts": 1,
+      "closed_choice_exercises": 5
+    },
+    "vocabulary_policy": "No separate vocabulary section. Vocabulary is introduced in dialogues, reading texts, explanations and exercises.",
+    "exercise_policy": "Closed-choice exercises only. No open-ended written-response tasks.",
+    "pedagogical_note": "B1 materials develop connected discourse, opinions, argumentation, narration and contextual grammar. They are designed as a lead-magnet sample, not a complete B1 course."
+  },
+  "integration_note": "Испанский контент не подключать к Telegram-боту или Learning Space до завершения всего испанского каталога и общего аудита. Английский раздел остается без изменений."
+}

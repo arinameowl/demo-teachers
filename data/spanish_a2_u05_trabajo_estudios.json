@@ -6,37 +6,86 @@
   "unit_id": "es_a2_u05_trabajo_estudios",
   "title": "Trabajo y estudios",
   "learning_goals": [
-    "Рассказывать о завершенных рабочих и учебных событиях",
-    "Описывать, что произошло на встрече, занятии или собеседовании",
-    "Уточнять последовательность событий и задавать вопросы о прошлом",
-    "Образовывать и употреблять pretérito indefinido правильных и частотных неправильных глаголов"
+    "Describir las tareas y responsabilidades de un trabajo o de unos estudios",
+    "Contar experiencias recientes y acontecimientos terminados en el trabajo o en clase",
+    "Explicar qué ocurrió primero y qué pasó después",
+    "Preguntar y responder sobre experiencias, reuniones, cursos y proyectos",
+    "Usar el pretérito indefinido regular e irregular en situaciones cotidianas"
   ],
+  "editorial_intro": {
+    "title": "Un paso más en tu vida profesional",
+    "text": "Un primer día en una empresa, una presentación en clase o una conversación sobre un proyecto: en estas situaciones no basta con decir dónde trabajas o qué estudias. También necesitas explicar qué haces, qué aprendiste y cómo fue una experiencia. En este material vas a practicar cómo hablar de tu vida profesional y académica con más detalle.",
+    "opening_question": "¿Qué experiencia de trabajo o de estudios recuerdas especialmente? ¿Qué pasó?",
+    "objective": "Al terminar, podrás describir responsabilidades y contar una experiencia pasada siguiendo un orden claro.",
+    "estimated_time": "35–45 minutos",
+    "route": [
+      "Observa el lenguaje en contexto",
+      "Repasa tres recursos gramaticales",
+      "Practica con situaciones reales",
+      "Cuenta una experiencia propia"
+    ]
+  },
   "grammar": [
     {
-      "topic": "preterito_indefinido_regular",
-      "explanation_ru": "Pretérito indefinido используется для завершенных событий в прошлом, часто с указанием конкретного времени. У правильных глаголов окончания зависят от группы: -ar (hablé, hablaste, habló…) и -er/-ir (comí, viviste, escribieron…).",
+      "topic": "pretérito_indefinido_regular",
+      "title": "Pretérito indefinido: acciones terminadas",
+      "explanation_ru": "Используйте pretérito indefinido, чтобы рассказать о завершенном событии в прошлом, особенно если период времени уже закончен или назван конкретно: ayer, el lunes, la semana pasada, en 2024. У глаголов на -ar окончания: -é, -aste, -ó, -amos, -asteis, -aron. У глаголов на -er и -ir: -í, -iste, -ió, -imos, -isteis, -ieron. Важно различать habl é / hablé и comí / viví.",
       "examples": [
         "Ayer terminé un informe.",
-        "El lunes asistimos a una reunión.",
-        "La semana pasada aprendí una herramienta nueva."
+        "El martes asistimos a una reunión.",
+        "La semana pasada aprendí a usar un programa nuevo."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Ayer trabajo desde casa.",
+          "correct": "Ayer trabajé desde casa.",
+          "explanation": "Ayer sitúa la acción en un momento terminado."
+        },
+        {
+          "incorrect": "El lunes nosotros aprendieron mucho.",
+          "correct": "El lunes nosotros aprendimos mucho.",
+          "explanation": "La terminación de nosotros para -er/-ir es -imos."
+        }
       ]
     },
     {
-      "topic": "preterito_indefinido_irregular",
-      "explanation_ru": "У частотных глаголов есть неправильные формы: tener → tuve, estar → estuve, hacer → hice, ir/ser → fui, poder → pude. Их нужно запоминать как отдельные формы.",
+      "topic": "pretérito_indefinido_irregular",
+      "title": "Formas frecuentes e irregulares",
+      "explanation_ru": "Некоторые частотные глаголы имеют особую основу или форму в pretérito indefinido. Запомните, например: tener → tuve, estar → estuve, hacer → hice, poder → pude, poner → puse, venir → vine, ir/ser → fui. У большинства глаголов с основами tuv-, estuv-, pud-, pus-, vin- окончания одинаковые: -e, -iste, -o, -imos, -isteis, -ieron. У этих форм обычно нет письменного ударения.",
       "examples": [
-        "Tuve una entrevista ayer.",
-        "Hice una presentación.",
-        "Fui a la universidad."
+        "Tuve una entrevista el jueves.",
+        "Hice una presentación para mi clase.",
+        "Fuimos a una feria de empleo.",
+        "No pude asistir a la reunión."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Ayer tení una reunión.",
+          "correct": "Ayer tuve una reunión.",
+          "explanation": "Tener es irregular en pretérito indefinido."
+        },
+        {
+          "incorrect": "El viernes hací un examen.",
+          "correct": "El viernes hice un examen.",
+          "explanation": "La forma de yo de hacer es hice."
+        }
       ]
     },
     {
       "topic": "sequence_markers_past",
-      "explanation_ru": "Чтобы рассказать о последовательности событий, используйте primero, después, luego, más tarde и al final. Эти слова помогают сделать рассказ понятным.",
+      "title": "Как выстроить рассказ",
+      "explanation_ru": "Чтобы собеседнику было легко следить за событиями, обозначайте их порядок: primero (сначала), después / luego (затем), más tarde (позже), mientras tanto (тем временем), al final / finalmente (в конце). Эти маркеры не заменяют глагольное время, а связывают отдельные действия в последовательный рассказ.",
       "examples": [
-        "Primero revisé los datos.",
-        "Después hablé con mi equipo.",
+        "Primero revisé los datos y después hablé con mi equipo.",
+        "Más tarde tuvimos una reunión.",
         "Al final envié el informe."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Primero después hablé con mi tutora.",
+          "correct": "Primero revisé el texto y después hablé con mi tutora.",
+          "explanation": "Используйте маркеры в логичной последовательности."
+        }
       ]
     }
   ],
@@ -46,112 +95,224 @@
       "name": "Español de España",
       "dialogue": [
         {
-          "speaker": "Clara",
-          "text": "¿Qué tal te fue la entrevista de ayer, Pablo?"
+          "speaker": "Lucía",
+          "text": "¿Qué tal te fue la entrevista de trabajo, Marcos?"
         },
         {
-          "speaker": "Pablo",
-          "text": "Bastante bien. Llegué a la oficina a las nueve y hablé con la responsable del equipo."
+          "speaker": "Marcos",
+          "text": "Bastante bien. Llegué a la oficina a las nueve y hablé con la responsable del departamento."
         },
         {
-          "speaker": "Clara",
-          "text": "¿Te preguntaron por tu experiencia?"
+          "speaker": "Lucía",
+          "text": "¿Te preguntó por tu experiencia?"
         },
         {
-          "speaker": "Pablo",
-          "text": "Sí. Les conté que trabajé dos años en una empresa pequeña y que coordiné varios proyectos."
+          "speaker": "Marcos",
+          "text": "Sí. Le conté que trabajé dos años en una empresa pequeña y que llevé varios proyectos."
         },
         {
-          "speaker": "Clara",
+          "speaker": "Lucía",
+          "text": "¿Y qué tareas tenías allí?"
+        },
+        {
+          "speaker": "Marcos",
+          "text": "Preparaba informes, hablaba con clientes y organizaba reuniones."
+        },
+        {
+          "speaker": "Lucía",
           "text": "¿Tuviste que hacer alguna prueba?"
         },
         {
-          "speaker": "Pablo",
-          "text": "Sí, preparé una presentación breve y después respondí a unas preguntas."
+          "speaker": "Marcos",
+          "text": "Sí, hice una presentación breve y después respondí a unas preguntas."
         },
         {
-          "speaker": "Clara",
-          "text": "¿Y qué te pareció el ambiente?"
+          "speaker": "Lucía",
+          "text": "¿Qué te pareció el ambiente?"
         },
         {
-          "speaker": "Pablo",
-          "text": "Muy profesional. También conocí a dos personas del departamento."
+          "speaker": "Marcos",
+          "text": "Muy profesional. También conocí a dos personas del equipo."
         },
         {
-          "speaker": "Clara",
+          "speaker": "Lucía",
           "text": "¿Cuándo te darán una respuesta?"
         },
         {
-          "speaker": "Pablo",
+          "speaker": "Marcos",
           "text": "Me dijeron que decidirán la próxima semana. Ahora toca esperar."
         }
       ],
-      "context_note": "En España es habitual llamar entrevista de trabajo al proceso de selección y departamento a un área de la empresa. En muchos procesos se combina una conversación con una prueba o presentación.",
+      "context_note": "En España son habituales expresiones como entrevista de trabajo, departamento, hacer una presentación y dar una respuesta. En una conversación informal, también se pregunta «¿Qué tal te fue?» para saber cómo salió una experiencia.",
+      "vocabulary_in_context": [
+        {
+          "term": "entrevista de trabajo",
+          "meaning": "conversación para conocer a una persona candidata a un puesto",
+          "example": "Ayer tuve una entrevista de trabajo."
+        },
+        {
+          "term": "responsable",
+          "meaning": "persona que dirige o coordina una tarea o un equipo",
+          "example": "Hablé con la responsable del departamento."
+        },
+        {
+          "term": "llevar un proyecto",
+          "meaning": "coordinar o encargarse de un proyecto",
+          "example": "Llevé varios proyectos pequeños."
+        },
+        {
+          "term": "informe",
+          "meaning": "documento que presenta información o resultados",
+          "example": "Preparaba informes para el equipo."
+        },
+        {
+          "term": "ambiente",
+          "meaning": "sensación o clima de un lugar o grupo",
+          "example": "El ambiente de la oficina era tranquilo."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          {
+            "expression": "¿Qué tal te fue?",
+            "function": "Preguntar de manera natural cómo salió una experiencia."
+          },
+          {
+            "expression": "Me encargaba de…",
+            "function": "Explicar una responsabilidad habitual en un trabajo anterior."
+          },
+          {
+            "expression": "Ahora toca esperar.",
+            "function": "Comentar que el siguiente paso depende de otra persona o entidad."
+          }
+        ],
+        "regional_note": "En España se usa con frecuencia «departamento» para hablar de un área de una empresa. «Entrevista de trabajo» es una expresión común para el proceso de selección."
+      },
+      "guided_practice": {
+        "notice": {
+          "instruction": "Lee el diálogo y localiza las formas del pasado. Después, identifica qué expresiones describen responsabilidades habituales y cuáles cuentan acciones concretas de la entrevista.",
+          "tasks": [
+            "Encuentra tres formas de pretérito indefinido en las respuestas de Marcos.",
+            "Busca dos verbos en imperfecto que describen sus tareas habituales en el trabajo anterior.",
+            "Subraya los marcadores que ordenan los acontecimientos."
+          ]
+        },
+        "practice": {
+          "instruction": "Completa las frases con la forma correcta. Fíjate en el marcador temporal y en el sujeto.",
+          "tasks": [
+            "Ayer yo ___ (tener) una entrevista.",
+            "El martes nosotros ___ (preparar) un informe.",
+            "Primero ___ (hablar, yo) con el equipo y después ___ (hacer, yo) una presentación.",
+            "La semana pasada mis compañeros ___ (asistir) a un curso."
+          ],
+          "answers": [
+            "tuve",
+            "preparamos",
+            "hablé; hice",
+            "asistieron"
+          ]
+        },
+        "communicate": {
+          "instruction": "En parejas, simulad una conversación después de una entrevista o una reunión. Una persona pregunta y la otra cuenta qué ocurrió.",
+          "tasks": [
+            "Pregunta dónde fue, con quién habló la persona y qué le preguntaron.",
+            "Cuenta al menos tres acciones en pretérito indefinido.",
+            "Explica qué tareas realizaba normalmente en su trabajo o estudios anteriores."
+          ]
+        }
+      },
+      "personal_application": {
+        "scenario": "Has terminado una entrevista, una presentación o una reunión importante. Un amigo te pregunta cómo fue.",
+        "task": "Cuenta la experiencia en 6–8 frases. Incluye dónde estabas, con quién hablaste, qué hiciste, qué ocurrió primero y cómo terminó.",
+        "support": [
+          "Ayer / La semana pasada…",
+          "Primero…, después…",
+          "Me preguntaron por…",
+          "Al final…"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "La acentuación de las formas regulares del pretérito indefinido: hablé, llegó, aprendí, terminó.",
+        "steps": [
+          "Lee las formas en voz alta y marca la sílaba tónica.",
+          "Compara hablo / habló y termino / terminó: el acento cambia el significado y la persona.",
+          "Graba un relato breve y comprueba que las terminaciones se oyen con claridad."
+        ],
+        "audio_model_status": "pending"
+      },
+      "reflection": {
+        "can_do": [
+          "Puedo describir tareas y responsabilidades de un trabajo o unos estudios.",
+          "Puedo contar una experiencia terminada usando el pretérito indefinido.",
+          "Puedo ordenar acontecimientos con primero, después y al final.",
+          "Puedo hacer y responder preguntas sencillas sobre una entrevista o una reunión."
+        ]
+      },
       "exercises": [
         {
           "id": "es_es_a2_u5_e1",
           "skill": "gist",
           "type": "choice",
-          "prompt": "¿Qué cuenta Pablo?",
+          "prompt": "¿De qué habla Marcos con Lucía?",
           "options": [
-            "Cómo fue una entrevista de trabajo",
-            "Cómo organizó unas vacaciones",
-            "Cómo cambió de universidad"
+            "De una entrevista de trabajo",
+            "De un viaje de vacaciones",
+            "De un examen de conducir"
           ],
           "answer": 0,
-          "explanation": "Pablo describe su entrevista de trabajo del día anterior."
+          "explanation": "Marcos cuenta cómo fue su entrevista de trabajo."
         },
         {
           "id": "es_es_a2_u5_e2",
           "skill": "detail",
           "type": "choice",
-          "prompt": "¿Qué hizo Pablo durante la entrevista?",
+          "prompt": "¿Qué hizo Marcos durante la entrevista?",
           "options": [
             "Preparó una presentación y respondió preguntas",
             "Firmó un contrato inmediatamente",
-            "Visitó tres oficinas"
+            "Visitó varias universidades"
           ],
           "answer": 0,
-          "explanation": "Pablo preparó una presentación breve y después respondió a unas preguntas."
+          "explanation": "Marcos hizo una presentación breve y respondió a unas preguntas."
         },
         {
           "id": "es_es_a2_u5_e3",
-          "skill": "grammar",
+          "skill": "vocabulary",
           "type": "choice",
-          "prompt": "Completa: «Ayer yo ___ a la oficina a las nueve».",
+          "prompt": "En el diálogo, ¿qué significa «llevar varios proyectos»?",
           "options": [
-            "llegué",
-            "llego",
-            "llegaba"
+            "Coordinar o encargarse de varios proyectos",
+            "Transportar documentos a otro edificio",
+            "Estudiar varios proyectos en una clase"
           ],
           "answer": 0,
-          "explanation": "Ayer señala un momento terminado; usamos pretérito indefinido: llegué."
+          "explanation": "«Llevar un proyecto» significa encargarse de su coordinación o desarrollo."
         },
         {
           "id": "es_es_a2_u5_e4",
           "skill": "grammar",
           "type": "choice",
-          "prompt": "Elige la forma correcta de tener en pretérito indefinido: «Yo ___ una entrevista».",
+          "prompt": "Completa: «Ayer yo ___ una entrevista»",
           "options": [
-            "tenía",
             "tuve",
-            "tengo"
+            "tengo",
+            "tenía"
           ],
-          "answer": 1,
-          "explanation": "La forma de yo del pretérito indefinido de tener es tuve."
+          "answer": 0,
+          "explanation": "Tener es irregular: la forma de yo en pretérito indefinido es tuve."
         },
         {
           "id": "es_es_a2_u5_e5",
           "skill": "culture",
           "type": "choice",
-          "prompt": "En el contexto laboral, ¿qué significa «departamento»?",
+          "prompt": "En una empresa, ¿qué es un «departamento»?",
           "options": [
-            "Un área o división de una empresa",
-            "Un apartamento",
-            "Una oficina de correos"
+            "Un área de la organización con funciones específicas",
+            "Una vivienda dentro de un edificio",
+            "Un documento para solicitar vacaciones"
           ],
           "answer": 0,
-          "explanation": "En una empresa, departamento es un área con funciones específicas, por ejemplo, recursos humanos."
+          "explanation": "Un departamento es un área de una empresa, por ejemplo, marketing o recursos humanos."
         }
       ],
       "reading": {
@@ -181,7 +342,15 @@
         },
         {
           "speaker": "Sofía",
-          "text": "¿Tuviste mucho trabajo?"
+          "text": "¿Cuáles son tus responsabilidades?"
+        },
+        {
+          "speaker": "Mateo",
+          "text": "Reviso los pedidos, actualizo los datos y apoyo al equipo de ventas."
+        },
+        {
+          "speaker": "Sofía",
+          "text": "¿Tuviste mucho trabajo esta semana?"
         },
         {
           "speaker": "Mateo",
@@ -189,7 +358,7 @@
         },
         {
           "speaker": "Sofía",
-          "text": "¿Te explicaron tus responsabilidades?"
+          "text": "¿Te explicaron cómo funciona el equipo?"
         },
         {
           "speaker": "Mateo",
@@ -197,14 +366,119 @@
         },
         {
           "speaker": "Sofía",
-          "text": "¡Qué bueno! ¿Te gustó el equipo?"
+          "text": "¿Y qué te pareció tu primera semana?"
         },
         {
           "speaker": "Mateo",
-          "text": "Sí, todos fueron muy amables y me ayudaron bastante."
+          "text": "Me gustó mucho. Todos fueron amables y me ayudaron bastante."
         }
       ],
-      "context_note": "En México se usa capacitación para formación relacionada con el trabajo y reporte para un informe o documento de resultados. Supervisora es una forma habitual de referirse a la persona que coordina el trabajo de un equipo.",
+      "context_note": "En México se usan con frecuencia capacitación para la formación relacionada con el trabajo, reporte para un documento de resultados y supervisora para la persona que coordina o revisa el trabajo. Estas palabras pueden entenderse también en otros países, aunque la frecuencia y las alternativas varían.",
+      "vocabulary_in_context": [
+        {
+          "term": "capacitación",
+          "meaning": "formación para aprender tareas o desarrollar habilidades",
+          "example": "El martes tuve una capacitación."
+        },
+        {
+          "term": "reporte",
+          "meaning": "documento con información o resultados",
+          "example": "Preparé mi primer reporte."
+        },
+        {
+          "term": "supervisora",
+          "meaning": "persona que coordina o revisa el trabajo",
+          "example": "Fui a una reunión con mi supervisora."
+        },
+        {
+          "term": "pedido",
+          "meaning": "solicitud de un producto o servicio",
+          "example": "Reviso los pedidos de los clientes."
+        },
+        {
+          "term": "resolver dudas",
+          "meaning": "encontrar respuestas a preguntas o problemas",
+          "example": "Resolví algunas dudas con mi equipo."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          {
+            "expression": "¿Cómo te fue?",
+            "function": "Preguntar de manera natural cómo salió una experiencia."
+          },
+          {
+            "expression": "Apoyo al equipo de…",
+            "function": "Explicar una responsabilidad laboral."
+          },
+          {
+            "expression": "Me dieron una lista de tareas.",
+            "function": "Contar qué instrucciones recibiste al empezar una actividad."
+          }
+        ],
+        "regional_note": "En México son muy frecuentes «capacitación» y «reporte» en contextos laborales. «Supervisora» puede referirse a la persona que acompaña y revisa el trabajo de un equipo."
+      },
+      "guided_practice": {
+        "notice": {
+          "instruction": "Observa cómo Mateo combina acciones terminadas con descripciones de sus responsabilidades actuales.",
+          "tasks": [
+            "Encuentra tres formas de pretérito indefinido en el diálogo.",
+            "Localiza dos verbos en presente que describen sus responsabilidades actuales.",
+            "Identifica una expresión que indica apoyo o colaboración en el trabajo."
+          ]
+        },
+        "practice": {
+          "instruction": "Completa las frases con la forma correcta. Presta atención al sujeto y al tiempo.",
+          "tasks": [
+            "El lunes yo ___ (conocer) al equipo.",
+            "Ayer nosotros ___ (tener) una reunión.",
+            "Primero ___ (revisar, yo) los pedidos y después ___ (preparar, yo) un reporte.",
+            "La semana pasada mis compañeras ___ (hacer) una capacitación."
+          ],
+          "answers": [
+            "conocí",
+            "tuvimos",
+            "revisé; preparé",
+            "hicieron"
+          ]
+        },
+        "communicate": {
+          "instruction": "En parejas, imaginad que una persona acaba de empezar un trabajo o un curso. Entrevistadla sobre su primera semana.",
+          "tasks": [
+            "Pregunta qué aprendió y qué actividades realizó.",
+            "Pregunta cuáles son sus responsabilidades actuales.",
+            "Cuenta los acontecimientos en orden usando primero, después y al final."
+          ]
+        }
+      },
+      "personal_application": {
+        "scenario": "Una persona conocida quiere saber cómo fue tu primer día en un trabajo, curso o programa de estudios.",
+        "task": "Describe la experiencia en 6–8 frases. Explica qué hiciste, qué aprendiste, con quién hablaste y cómo te sentiste.",
+        "support": [
+          "El primer día…",
+          "Conocí a…",
+          "Aprendí a…",
+          "Después…",
+          "Al final…"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "La diferencia entre las formas de pretérito indefinido con acento final: hablé, llegó, aprendí, terminó.",
+        "steps": [
+          "Lee las formas en voz alta y marca la sílaba tónica.",
+          "Compara trabajo / trabajó y termino / terminó.",
+          "Graba tu relato y comprueba que se distingue claramente la forma verbal."
+        ],
+        "audio_model_status": "pending"
+      },
+      "reflection": {
+        "can_do": [
+          "Puedo explicar qué tareas realizo en el trabajo o en mis estudios.",
+          "Puedo contar qué hice durante una experiencia pasada.",
+          "Puedo usar formas frecuentes e irregulares del pretérito indefinido.",
+          "Puedo preguntar a otra persona por su experiencia laboral o académica."
+        ]
+      },
       "exercises": [
         {
           "id": "es_mx_a2_u5_e1",
@@ -234,29 +508,29 @@
         },
         {
           "id": "es_mx_a2_u5_e3",
+          "skill": "vocabulary",
+          "type": "choice",
+          "prompt": "En el contexto laboral, ¿qué significa «capacitación»?",
+          "options": [
+            "Formación para aprender tareas o habilidades",
+            "Una reunión para celebrar un cumpleaños",
+            "Un permiso para salir temprano"
+          ],
+          "answer": 0,
+          "explanation": "Capacitación es formación para desarrollar conocimientos y habilidades, especialmente en el trabajo."
+        },
+        {
+          "id": "es_mx_a2_u5_e4",
           "skill": "grammar",
           "type": "choice",
-          "prompt": "Completa: «El martes yo ___ una capacitación».",
+          "prompt": "Completa: «El martes yo ___ una capacitación»",
           "options": [
             "tuve",
             "tengo",
             "tenía"
           ],
           "answer": 0,
-          "explanation": "El martes se presenta como un evento terminado; la forma de indefinido es tuve."
-        },
-        {
-          "id": "es_mx_a2_u5_e4",
-          "skill": "vocabulary_in_context",
-          "type": "choice",
-          "prompt": "En México, ¿qué significa «capacitación» en el diálogo?",
-          "options": [
-            "Formación para aprender tareas o habilidades del trabajo",
-            "Una reunión para celebrar un cumpleaños",
-            "Un permiso para salir temprano"
-          ],
-          "answer": 0,
-          "explanation": "Capacitación es formación para desarrollar conocimientos y habilidades, especialmente en el trabajo."
+          "explanation": "Tener es irregular; la forma de yo en pretérito indefinido es tuve."
         },
         {
           "id": "es_mx_a2_u5_e5",
@@ -279,9 +553,11 @@
     }
   ],
   "teacher_notes": [
-    "Не добавлять отдельный раздел Vocabulary.",
-    "Pretérito indefinido вводится для завершенных событий с временными маркерами: ayer, el lunes, la semana pasada.",
-    "В мексиканском диалоге использовать capacitación и reporte; в испанском — entrevista de trabajo, departamento. Это различия частотности, а не жесткие запреты.",
-    "Материал — часть лид-магнита. Не интегрировать до завершения всего испанского каталога."
+    "No añadir una sección independiente de Vocabulary: introducir el léxico dentro del contexto, los diálogos y las tareas.",
+    "El pretérito indefinido se trabaja con acontecimientos terminados y marcadores temporales claros; el presente se usa para describir responsabilidades actuales y el imperfecto aparece de forma receptiva para hablar de tareas habituales anteriores.",
+    "En la variante de España se priorizan entrevista de trabajo, departamento e informe; en México, capacitación, reporte y supervisora. Son preferencias de uso, no fronteras absolutas.",
+    "Las tareas abiertas pertenecen a guided practice y personal application; exercises contiene cinco preguntas de opción múltiple por variante.",
+    "El material practica lengua y comunicación profesional cotidiana; no presupone conocimientos especializados de recursos humanos ni de gestión.",
+    "No integrar hasta completar la revisión de todo el catálogo español."
   ]
 }

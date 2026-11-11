@@ -251,14 +251,14 @@
           "id": "es_mx_b1_u2_e4",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Completa: «Elena se ha adaptado a Bilbao y ___ considera la ciudad parte de su vida».",
+          "prompt": "Completa: «Antes de mudarse a Guadalajara, Elena ___ siempre en un pueblo pequeño».",
           "options": [
-            "ya",
-            "todavía no",
-            "aún no"
+            "había vivido",
+            "ha vivido",
+            "viviría"
           ],
           "answer": 0,
-          "explanation": "Ya indica que el cambio o resultado esperado se ha producido."
+          "explanation": "El pluscuamperfecto expresa una situación anterior al momento pasado de la mudanza."
         },
         {
           "id": "es_mx_b1_u2_e5",

@@ -37,54 +37,6 @@
     {
       "id": "es_es",
       "name": "Español de España",
-      "primary_video_series": {
-        "id": "spanish_sitcom_a1",
-        "title": "Spanish Sitcom — A1",
-        "publisher": "Habla con Eñe",
-        "url": "https://www.hablaconene.com/producto/spanish-sitcom-nivel-a1/",
-        "format": "15 episodes, Spanish subtitles, downloadable video, companion PDF and dialogue transcripts",
-        "price_checked_eur": "29.90",
-        "access": "Paid",
-        "suitability": "Designed specifically around A1 CEFR content with progressive sequence",
-        "licensing_note": "Do not redistribute the videos or transcripts. Confirm commercial classroom/app license before embedding in The Teachers School.",
-        "topic_mapping": [
-          {
-            "episode": 1,
-            "unit": "es_a1_u01_presentaciones",
-            "topic": "Introductions, greetings and farewells"
-          },
-          {
-            "episode": 4,
-            "unit": "es_a1_u02_familia_amigos",
-            "topic": "Family members and descriptions"
-          },
-          {
-            "episode": 8,
-            "unit": "es_a1_u03_un_dia_normal",
-            "topic": "Time and daily schedules"
-          },
-          {
-            "episode": 13,
-            "unit": "es_a1_u04_la_alimentacion",
-            "topic": "Food and food shops, meals, prices"
-          },
-          {
-            "episode": 14,
-            "unit": "es_a1_u04_la_alimentacion",
-            "topic": "Restaurant food and drink, expressing preferences"
-          },
-          {
-            "episode": 11,
-            "unit": "es_a1_u05_la_ciudad_transporte",
-            "topic": "Weather, transport and preferences"
-          },
-          {
-            "episode": 9,
-            "unit": "es_a1_u06_el_tiempo_libre",
-            "topic": "Plans, obligations and leisure"
-          }
-        ]
-      },
       "audio_collection": {
         "id": "podcasts_in_spanish_level1",
         "title": "Podcasts in Spanish — Level 1",
@@ -152,6 +104,76 @@
           "Is this table free?",
           "Are there any sandwiches?",
           "Where is the metro?"
+        ]
+      },
+      "excluded_paid_resources": [
+        {
+          "id": "spanish_sitcom_a1",
+          "title": "Spanish Sitcom — A1",
+          "publisher": "Habla con Eñe",
+          "url": "https://www.hablaconene.com/producto/spanish-sitcom-nivel-a1/",
+          "reason": "Исключено по правилу проекта: платный продукт, не использовать и не предлагать к покупке."
+        }
+      ],
+      "youtube_library": {
+        "id": "videoele_a1",
+        "title": "VideoEle — vídeos A1",
+        "publisher": "Agustín Iruela / VideoEle",
+        "source_page": "https://www.videoele.com/menu-A1.html",
+        "youtube_channel_page": "https://videoele.com/youtube.html",
+        "access": "Бесплатные видео на YouTube; на сайте доступны транскрипты и методические материалы для личного использования.",
+        "dialect": "Основная версия — Испания; у части роликов есть отдельная Latino-версия. Latino не следует автоматически маркировать как мексиканский.",
+        "license": "Creative Commons BY-NC-ND 4.0 для материалов VideoEle: не копировать и не перерабатывать сами видео; использовать оригинальную ссылку/разрешенный embed. Коммерческое использование и включение в платный продукт требует отдельной проверки условий.",
+        "candidates": [
+          {
+            "title": "¿Cómo se llama?",
+            "url": "https://www.videoele.com/A1-Como-se-llama.html",
+            "unit": "es_a1_u01_presentaciones",
+            "fit": "Приветствия, представление, имена; кандидат по теме.",
+            "status": "preview_required"
+          },
+          {
+            "title": "La familia del Rey",
+            "url": "https://www.videoele.com/A1-La-familia-rey.html",
+            "unit": "es_a1_u02_familia_amigos",
+            "fit": "Родственные отношения и притяжательные su/sus; культурный сюжет об испанской королевской семье.",
+            "status": "preview_required"
+          },
+          {
+            "title": "Mi casa",
+            "url": "https://www.videoele.com/A1-Mi-casa.html",
+            "unit": "es_a1_u03_un_dia_normal",
+            "fit": "Дом и повседневные действия; может быть дополнительным контекстом, не полное совпадение с распорядком дня.",
+            "status": "preview_required"
+          },
+          {
+            "title": "La comida",
+            "url": "https://www.videoele.com/A1-La-comida.html",
+            "unit": "es_a1_u04_la_alimentacion",
+            "fit": "Продукты, haber/tener, кухня Испании.",
+            "status": "preview_required"
+          },
+          {
+            "title": "En mi barrio hay...",
+            "url": "https://www.videoele.com/A1-En-mi-barrio-hay.html",
+            "unit": "es_a1_u05_la_ciudad_transporte",
+            "fit": "Городские места, haber/tener; тематически подходит для части о городе, не обязательно охватывает транспорт.",
+            "status": "preview_required"
+          },
+          {
+            "title": "Medios de transporte",
+            "url": "https://www.videoele.com/A1-Medios-transporte.html",
+            "unit": "es_a1_u05_la_ciudad_transporte",
+            "fit": "Транспорт, ir/volver/llevar; точное совпадение с темой.",
+            "status": "preview_required"
+          },
+          {
+            "title": "¡Buen fin de semana!",
+            "url": "https://www.videoele.com/A1-Buen-fin-de-semana.html",
+            "unit": "es_a1_u06_el_tiempo_libre",
+            "fit": "Досуг и выражения частотности; точное тематическое совпадение.",
+            "status": "preview_required"
+          }
         ]
       }
     },
@@ -254,7 +276,8 @@
         "level_label": "A1–A2 according to publisher",
         "format": "Mexican cultural stories, legends and everyday topics, slow-paced",
         "caution": "Do not assign all episodes automatically to A1: episode lengths and vocabulary vary, and transcripts may require Patreon. Preview individual episodes first."
-      }
+      },
+      "youtube_policy": "Для мексиканского варианта использовать только ролики с подтвержденным мексиканским говорящим/контекстом. Общая метка Latino не равна México; аргентинский, колумбийский и другие акценты не маркировать как мексиканские."
     }
   ],
   "unit_resource_status": [

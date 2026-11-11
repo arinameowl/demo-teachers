@@ -184,7 +184,7 @@
         },
         {
           "id": "es_es_u6_e5",
-          "skill": "language_in_context",
+          "skill": "culture",
           "type": "choice",
           "prompt": "В выражении «quedar con amigos» глагол quedar означает…",
           "options": [
@@ -331,7 +331,7 @@
         },
         {
           "id": "es_mx_u6_e5",
-          "skill": "language_in_context",
+          "skill": "culture",
           "type": "choice",
           "prompt": "Luis responde «¡Sale!». Как понять это разговорное выражение в данном контексте?",
           "options": [

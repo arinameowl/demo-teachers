@@ -56,10 +56,45 @@ QUESTIONS = [
 ]
 
 
-def score_to_level(answers: dict[int, int]) -> str:
+def spanish_questions(variant: str = "es_es") -> list[dict]:
+    """Build a six-question placement test from approved A1–B1 unit exercises."""
+    if variant not in {"es_es", "es_mx"}:
+        variant = "es_es"
+    root = Path(__file__).resolve().parent / "data"
+    questions = []
+    for level in ("A1", "A2", "B1"):
+        catalog = json.loads((root / f"spanish_{level.lower()}_catalog.json").read_text(encoding="utf-8"))
+        units = sorted(catalog.get("units", []), key=lambda item: item.get("order", 0))
+        level_questions = []
+        for unit in units:
+            data = json.loads((Path(__file__).resolve().parent / unit["path"]).read_text(encoding="utf-8"))
+            dialect = next((item for item in data.get("variants", []) if item.get("id") == variant), None)
+            if not dialect:
+                continue
+            for item in dialect.get("exercises", []):
+                if item.get("type") == "choice" and len(item.get("options", [])) >= 2 and isinstance(item.get("answer"), int):
+                    level_questions.append({
+                        "level": level,
+                        "prompt": item["prompt"],
+                        "options": item["options"],
+                        "correct": item["answer"],
+                        "explanation": item.get("explanation", ""),
+                    })
+        # Two items per CEFR band, selected from different units where possible.
+        if level_questions:
+            questions.extend(level_questions[:1])
+            if len(level_questions) > 1:
+                questions.append(level_questions[min(5, len(level_questions)-1)])
+    for index, question in enumerate(questions, 1):
+        question["prompt"] = f"{index}/{len(questions)}. {question['prompt']}"
+    return questions
+
+
+def score_to_level(answers: dict[int, int], questions: list[dict] | None = None) -> str:
     """answers: {question_index: chosen_option_index}. Возвращает 'A1' | 'A2' | 'B1'."""
+    questions = questions or QUESTIONS
     correct_by_level: dict[str, int] = {"A1": 0, "A2": 0, "B1": 0}
-    for idx, q in enumerate(QUESTIONS):
+    for idx, q in enumerate(questions):
         chosen = answers.get(idx)
         if chosen is not None and chosen == q["correct"]:
             correct_by_level[q["level"]] += 1

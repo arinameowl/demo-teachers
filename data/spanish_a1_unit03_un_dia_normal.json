@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "level": "A1",
+  "category": "lesson",
+  "language": "es",
+  "unit_id": "es_a1_u03_un_dia_normal",
+  "title": "Un día normal",
+  "learning_goals": [
+    "Рассказать о своем обычном распорядке дня",
+    "Назвать время и указать, когда происходят повседневные действия",
+    "Описать утренние, дневные и вечерние привычки",
+    "Использовать возвратные глаголы в настоящем времени",
+    "Различать выражения частотности и временные маркеры"
+  ],
+  "grammar": [
+    {
+      "topic": "reflexive_verbs",
+      "explanation_ru": "Возвратные глаголы описывают действия, которые человек совершает с собой или в отношении себя. Перед глаголом ставится возвратное местоимение: me, te, se, nos, os, se.",
+      "examples": [
+        "Me levanto a las siete.",
+        "Te duchas por la mañana.",
+        "Se acuesta a las once."
+      ]
+    },
+    {
+      "topic": "present_tense_routine",
+      "explanation_ru": "Для описания привычек используем настоящее время. Важно согласовывать форму глагола с подлежащим.",
+      "examples": [
+        "Trabajo de lunes a viernes.",
+        "Desayunamos en casa.",
+        "Mis amigos salen por la noche."
+      ]
+    },
+    {
+      "topic": "time_expressions",
+      "explanation_ru": "Для указания времени используем a la una и a las dos/tres/etc. Для частей дня — por la mañana, por la tarde, por la noche.",
+      "examples": [
+        "Me despierto a las siete.",
+        "Estudio por la tarde.",
+        "Ceno a las nueve."
+      ]
+    },
+    {
+      "topic": "frequency_adverbs",
+      "explanation_ru": "Наречия частотности помогают описывать привычки: siempre, normalmente, a veces, casi nunca, nunca.",
+      "examples": [
+        "Siempre desayuno.",
+        "A veces camino al trabajo.",
+        "Nunca tomo café por la noche."
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "vocabulary": [
+        {
+          "es": "despertarse",
+          "ru": "просыпаться"
+        },
+        {
+          "es": "levantarse",
+          "ru": "вставать"
+        },
+        {
+          "es": "ducharse",
+          "ru": "принимать душ"
+        },
+        {
+          "es": "desayunar",
+          "ru": "завтракать"
+        },
+        {
+          "es": "coger el autobús",
+          "ru": "садиться на автобус"
+        },
+        {
+          "es": "ordenador",
+          "ru": "компьютер"
+        },
+        {
+          "es": "comer",
+          "ru": "обедать / есть"
+        },
+        {
+          "es": "merendar",
+          "ru": "полдничать, перекусывать во второй половине дня"
+        },
+        {
+          "es": "acostarse",
+          "ru": "ложиться спать"
+        },
+        {
+          "es": "entre semana",
+          "ru": "в будние дни"
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "Lucía",
+          "text": "¿A qué hora te levantas entre semana, Pablo?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Normalmente me levanto a las siete. Me ducho y desayuno en casa."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "¿Cómo vas al trabajo?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Cojo el autobús a las ocho menos cuarto. Trabajo en una oficina."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "¿Y a qué hora comes?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Como a las dos. Por la tarde termino de trabajar a las seis."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "¿Qué haces después?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "A veces voy al gimnasio. Después vuelvo a casa, preparo la cena y leo un poco."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "¿A qué hora te acuestas?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Casi siempre me acuesto a las once. ¡Necesito dormir!"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "es_es_u3_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿De qué hablan Lucía y Pablo?",
+          "options": [
+            "De la rutina diaria de Pablo",
+            "De un viaje de trabajo",
+            "De sus planes para las vacaciones"
+          ],
+          "answer": 0,
+          "explanation": "Pablo cuenta cómo es un día normal: cuándo se levanta, trabaja, come y se acuesta."
+        },
+        {
+          "id": "es_es_u3_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Cómo va Pablo al trabajo?",
+          "options": [
+            "En metro",
+            "En autobús",
+            "En bicicleta"
+          ],
+          "answer": 1,
+          "explanation": "Pablo dice: «Cojo el autobús a las ocho menos cuarto»."
+        },
+        {
+          "id": "es_es_u3_e3",
+          "skill": "vocabulary",
+          "type": "choice",
+          "prompt": "В Испании «merendar» обычно означает…",
+          "options": [
+            "Завтракать",
+            "Перекусывать во второй половине дня",
+            "Ужинать поздно ночью"
+          ],
+          "answer": 1,
+          "explanation": "Merendar — съесть небольшой перекус во второй половине дня, между обедом и ужином."
+        },
+        {
+          "id": "es_es_u3_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «Yo ___ a las siete y después ___».",
+          "options": [
+            "me levanto / me ducho",
+            "se levanta / se ducha",
+            "te levantas / te duchas"
+          ],
+          "answer": 0,
+          "explanation": "С местоимением yo используем me: me levanto, me ducho."
+        },
+        {
+          "id": "es_es_u3_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "¿Qué significa «las ocho menos cuarto»?",
+          "options": [
+            "Восемь пятнадцать",
+            "Без четверти восемь, 7:45",
+            "Без четверти девять, 8:45"
+          ],
+          "answer": 1,
+          "explanation": "В испанском времени las ocho menos cuarto означает 7:45 — четверть часа до восьми."
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "vocabulary": [
+        {
+          "es": "despertarse",
+          "ru": "просыпаться"
+        },
+        {
+          "es": "levantarse",
+          "ru": "вставать"
+        },
+        {
+          "es": "bañarse",
+          "ru": "принимать душ / мыться"
+        },
+        {
+          "es": "desayunar",
+          "ru": "завтракать"
+        },
+        {
+          "es": "tomar el camión",
+          "ru": "ехать на автобусе (разговорное, регионально)"
+        },
+        {
+          "es": "computadora",
+          "ru": "компьютер"
+        },
+        {
+          "es": "comer",
+          "ru": "обедать / есть"
+        },
+        {
+          "es": "hacer ejercicio",
+          "ru": "заниматься физическими упражнениями"
+        },
+        {
+          "es": "acostarse",
+          "ru": "ложиться спать"
+        },
+        {
+          "es": "entre semana",
+          "ru": "в будние дни"
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "Valeria",
+          "text": "¿A qué hora te despiertas, Andrés?"
+        },
+        {
+          "speaker": "Andrés",
+          "text": "Me despierto a las seis y media, pero me levanto a las siete."
+        },
+        {
+          "speaker": "Valeria",
+          "text": "¿Qué haces después?"
+        },
+        {
+          "speaker": "Andrés",
+          "text": "Me baño, desayuno y preparo mi mochila. A las ocho salgo de casa."
+        },
+        {
+          "speaker": "Valeria",
+          "text": "¿Cómo llegas a la universidad?"
+        },
+        {
+          "speaker": "Andrés",
+          "text": "Tomo el camión y después camino diez minutos."
+        },
+        {
+          "speaker": "Valeria",
+          "text": "¿Y por la tarde?"
+        },
+        {
+          "speaker": "Andrés",
+          "text": "Como con mis amigos. Después estudio en la biblioteca y a veces hago ejercicio."
+        },
+        {
+          "speaker": "Valeria",
+          "text": "¿A qué hora te duermes?"
+        },
+        {
+          "speaker": "Andrés",
+          "text": "Normalmente me acuesto a las diez y media."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "es_mx_u3_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿De qué habla Andrés?",
+          "options": [
+            "De su rutina diaria",
+            "De su familia",
+            "De su último viaje"
+          ],
+          "answer": 0,
+          "explanation": "Andrés describe sus actividades habituales desde que se despierta hasta que se acuesta."
+        },
+        {
+          "id": "es_mx_u3_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Cómo llega Andrés a la universidad?",
+          "options": [
+            "En coche",
+            "En camión y después a pie",
+            "En bicicleta"
+          ],
+          "answer": 1,
+          "explanation": "Andrés toma el camión y luego camina diez minutos."
+        },
+        {
+          "id": "es_mx_u3_e3",
+          "skill": "vocabulary",
+          "type": "choice",
+          "prompt": "В мексиканском диалоге «camión» в этом контексте — это…",
+          "options": [
+            "Грузовик",
+            "Автобус",
+            "Метро"
+          ],
+          "answer": 1,
+          "explanation": "В Мексике camión во многих регионах используется в значении городского или междугороднего автобуса. Значение зависит от региона и контекста."
+        },
+        {
+          "id": "es_mx_u3_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «Ella ___ a las seis y ___ a las diez».",
+          "options": [
+            "me despierto / me acuesto",
+            "se despierta / se acuesta",
+            "te despiertas / te acuestas"
+          ],
+          "answer": 1,
+          "explanation": "С ella используется возвратное местоимение se: se despierta, se acuesta."
+        },
+        {
+          "id": "es_mx_u3_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "¿Qué expresión se usa en México para hablar de tomar el autobús en el diálogo?",
+          "options": [
+            "Coger el autobús",
+            "Tomar el camión",
+            "Pillar el bus"
+          ],
+          "answer": 1,
+          "explanation": "Tomar el camión — распространенная мексиканская разговорная формулировка. Coger el autobús типично для Испании; в Мексике coger может иметь другое разговорное значение."
+        }
+      ]
+    }
+  ],
+  "teacher_notes": [
+    "Не преподавать распорядок дня как универсальный график: время подъема, обеда и ужина зависит от человека, работы и региона.",
+    "В испанском варианте использовать coger el autobús как нейтральный пример для Испании; объяснить, что в Мексике это слово может восприниматься иначе в разговорной речи.",
+    "В мексиканском варианте tomar el camión — регионально распространенная форма; в других регионах и ситуациях могут употребляться tomar el autobús или tomar el transporte público.",
+    "Bañarse в Мексике может обозначать мытье/принятие душа; ducharse также понятно и употребляется.",
+    "Форму vosotros не включать в мексиканский маршрут; в обращении к нескольким людям использовать ustedes.",
+    "Все диалоги и упражнения оригинальные и созданы для The Teachers School."
+  ]
+}

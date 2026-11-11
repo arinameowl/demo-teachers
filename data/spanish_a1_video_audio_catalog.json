@@ -130,49 +130,49 @@
             "url": "https://www.videoele.com/A1-Como-se-llama.html",
             "unit": "es_a1_u01_presentaciones",
             "fit": "Приветствия, представление, имена; кандидат по теме.",
-            "status": "preview_required"
+            "status": "page_and_level_metadata_verified_audio_preview_pending"
           },
           {
             "title": "La familia del Rey",
             "url": "https://www.videoele.com/A1-La-familia-rey.html",
             "unit": "es_a1_u02_familia_amigos",
             "fit": "Родственные отношения и притяжательные su/sus; культурный сюжет об испанской королевской семье.",
-            "status": "preview_required"
+            "status": "page_and_level_metadata_verified_audio_preview_pending"
           },
           {
             "title": "Mi casa",
             "url": "https://www.videoele.com/A1-Mi-casa.html",
             "unit": "es_a1_u03_un_dia_normal",
             "fit": "Дом и повседневные действия; может быть дополнительным контекстом, не полное совпадение с распорядком дня.",
-            "status": "preview_required"
+            "status": "page_and_level_metadata_verified_audio_preview_pending"
           },
           {
             "title": "La comida",
             "url": "https://www.videoele.com/A1-La-comida.html",
             "unit": "es_a1_u04_la_alimentacion",
             "fit": "Продукты, haber/tener, кухня Испании.",
-            "status": "preview_required"
+            "status": "page_and_level_metadata_verified_audio_preview_pending"
           },
           {
             "title": "En mi barrio hay...",
             "url": "https://www.videoele.com/A1-En-mi-barrio-hay.html",
             "unit": "es_a1_u05_la_ciudad_transporte",
             "fit": "Городские места, haber/tener; тематически подходит для части о городе, не обязательно охватывает транспорт.",
-            "status": "preview_required"
+            "status": "page_and_level_metadata_verified_audio_preview_pending"
           },
           {
             "title": "Medios de transporte",
             "url": "https://www.videoele.com/A1-Medios-transporte.html",
             "unit": "es_a1_u05_la_ciudad_transporte",
             "fit": "Транспорт, ir/volver/llevar; точное совпадение с темой.",
-            "status": "preview_required"
+            "status": "page_and_level_metadata_verified_audio_preview_pending"
           },
           {
             "title": "¡Buen fin de semana!",
-            "url": "https://www.videoele.com/A1-Buen-fin-de-semana.html",
+            "url": "https://www.videoele.com/A1-Buen-fin-semana.html",
             "unit": "es_a1_u06_el_tiempo_libre",
             "fit": "Досуг и выражения частотности; точное тематическое совпадение.",
-            "status": "preview_required"
+            "status": "page_and_level_metadata_verified_audio_preview_pending"
           }
         ]
       }

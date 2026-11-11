@@ -107,7 +107,6 @@
       renderMaterials();
     }
   });
-  }
   document.querySelectorAll('[data-variant]').forEach(btn => btn.addEventListener('click', () => {
     selectedSpanishVariant = btn.dataset.variant;
     document.querySelectorAll('[data-variant]').forEach(x => x.classList.toggle('active', x.dataset.variant === selectedSpanishVariant));

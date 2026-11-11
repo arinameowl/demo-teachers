@@ -198,7 +198,7 @@
       (extra.length ? '<h3>Дополнительные материалы</h3>' + extra.join('') : '');
     $('library').innerHTML = '';
     $('spanish-read')?.addEventListener('click', () => {
-      activeBook = book; bookPage = 0; renderBookPage(); $('reader').classList.add('open');
+      activeBook = book.books?.[0] || book; bookPage = 0; renderBookPage(); $('reader').classList.add('open');
     });
     document.querySelectorAll('[data-spanish-quiz]').forEach(btn => btn.addEventListener('click', () => {
       const resourceId = btn.dataset.spanishQuiz, section = btn.dataset.section;

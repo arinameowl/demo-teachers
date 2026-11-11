@@ -68,7 +68,7 @@
         },
         {
           "speaker": "Irene",
-          "text": "La muestra quizá no represente a toda la población."
+          "text": "La muestra puede no representar a toda la población."
         },
         {
           "speaker": "Álvaro",
@@ -93,66 +93,66 @@
           "id": "es_es_b1_u3_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué limitación tenía el estudio?",
+          "prompt": "¿Qué se ha creado para que los vecinos comuniquen problemas?",
           "options": [
-            "Se había realizado con un grupo reducido de estudiantes de una sola universidad.",
-            "Que la actividad se canceló sin explicación",
-            "Que todos rechazaron la propuesta"
+            "Una plataforma.",
+            "Una nueva línea de tren.",
+            "Una oficina de turismo."
           ],
           "answer": 0,
-          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+          "explanation": "La lectura menciona una plataforma vecinal."
         },
         {
           "id": "es_es_b1_u3_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "prompt": "¿Qué problema sigue pendiente en el barrio?",
           "options": [
-            "El texto presenta una situación relacionada con el tema y sus matices",
-            "El texto afirma que todas las situaciones son idénticas",
-            "El texto no ofrece información concreta"
+            "Algunas calles necesitan reparaciones y se pide mejorar el transporte.",
+            "No hay ningún espacio público.",
+            "Se han cerrado todos los centros deportivos."
           ],
           "answer": 0,
-          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+          "explanation": "La lectura señala reparaciones y transporte como asuntos pendientes."
         },
         {
           "id": "es_es_b1_u3_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "No creo que esa información ___ completa.",
+          "prompt": "Completa: «En esta zona ___ actividades para distintas edades».",
           "options": [
-            "sea",
-            "es",
-            "será"
+            "se organizan",
+            "se organiza",
+            "organiza se"
           ],
           "answer": 0,
-          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+          "explanation": "En la pasiva refleja el verbo concuerda con el sujeto plural: actividades."
         },
         {
           "id": "es_es_b1_u3_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "prompt": "¿Qué significa «poner en marcha un proyecto»?",
           "options": [
-            "Sin embargo",
-            "Por la mañana",
-            "Al lado de"
+            "Iniciarlo o hacerlo comenzar.",
+            "Cancelarlo definitivamente.",
+            "Evaluarlo sin llevarlo a cabo."
           ],
           "answer": 0,
-          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+          "explanation": "Poner en marcha significa iniciar o implementar."
         },
         {
           "id": "es_es_b1_u3_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "prompt": "¿Qué nivel administrativo se menciona en la nota sobre España?",
           "options": [
-            "Que puede variar según la región y las familias",
-            "Que se practica igual en todos los lugares",
-            "Que nunca cambia con el tiempo"
+            "El municipio.",
+            "La Unión Europea como única autoridad local.",
+            "La administración de otro país."
           ],
           "answer": 0,
-          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+          "explanation": "La nota sitúa muchos servicios locales en el ámbito municipal."
         }
       ]
     },
@@ -187,7 +187,7 @@
         },
         {
           "speaker": "Irene",
-          "text": "La muestra quizá no represente a toda la población."
+          "text": "La muestra puede no representar a toda la población."
         },
         {
           "speaker": "Álvaro",
@@ -212,66 +212,66 @@
           "id": "es_mx_b1_u3_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué recomendaron los especialistas?",
+          "prompt": "¿Qué se creó para que los vecinos reporten problemas?",
           "options": [
-            "Revisar la metodología antes de generalizar los resultados.",
-            "Que la actividad se canceló sin explicación",
-            "Que todos rechazaron la propuesta"
+            "Una plataforma.",
+            "Una estación de autobuses.",
+            "Una asociación deportiva privada."
           ],
           "answer": 0,
-          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+          "explanation": "La lectura menciona una plataforma para reportar problemas."
         },
         {
           "id": "es_mx_b1_u3_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "prompt": "¿Qué necesidad sigue pendiente en la colonia?",
           "options": [
-            "El texto presenta una situación relacionada con el tema y sus matices",
-            "El texto afirma que todas las situaciones son idénticas",
-            "El texto no ofrece información concreta"
+            "Reparar algunas calles y mejorar el transporte.",
+            "Eliminar todas las áreas verdes.",
+            "Cerrar los espacios comunitarios."
           ],
           "answer": 0,
-          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+          "explanation": "La lectura señala calles y transporte como asuntos por mejorar."
         },
         {
           "id": "es_mx_b1_u3_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "No creo que esa información ___ completa.",
+          "prompt": "Completa: «En esta colonia ___ actividades para distintas edades».",
           "options": [
-            "sea",
-            "es",
-            "será"
+            "se organizan",
+            "se organiza",
+            "organiza se"
           ],
           "answer": 0,
-          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+          "explanation": "El verbo concuerda en plural con actividades."
         },
         {
           "id": "es_mx_b1_u3_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "prompt": "¿Qué significa «poner en marcha un proyecto»?",
           "options": [
-            "Sin embargo",
-            "Por la mañana",
-            "Al lado de"
+            "Iniciarlo o hacerlo comenzar.",
+            "Cancelarlo definitivamente.",
+            "Dejarlo sin planificación."
           ],
           "answer": 0,
-          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+          "explanation": "La expresión significa iniciar o implementar un proyecto."
         },
         {
           "id": "es_mx_b1_u3_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "prompt": "¿Qué término administrativo se menciona para la Ciudad de México?",
           "options": [
-            "Que puede variar según la región y las familias",
-            "Que se practica igual en todos los lugares",
-            "Que nunca cambia con el tiempo"
+            "Alcaldía.",
+            "Comunidad autónoma.",
+            "Diputación provincial."
           ],
           "answer": 0,
-          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+          "explanation": "La nota explica que alcaldía se usa en el contexto de la CDMX."
         }
       ]
     }

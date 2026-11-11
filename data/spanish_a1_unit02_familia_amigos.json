@@ -56,48 +56,6 @@
     {
       "id": "es_es",
       "name": "Español de España",
-      "vocabulary": [
-        {
-          "es": "madre / padre",
-          "ru": "мать / отец"
-        },
-        {
-          "es": "hermano / hermana",
-          "ru": "брат / сестра"
-        },
-        {
-          "es": "abuelo / abuela",
-          "ru": "дедушка / бабушка"
-        },
-        {
-          "es": "primo / prima",
-          "ru": "двоюродный брат / двоюродная сестра"
-        },
-        {
-          "es": "pareja",
-          "ru": "партнер / партнерша"
-        },
-        {
-          "es": "pelo",
-          "ru": "волосы"
-        },
-        {
-          "es": "castaño/a",
-          "ru": "каштановый / каштановая"
-        },
-        {
-          "es": "simpático/a",
-          "ru": "приятный в общении"
-        },
-        {
-          "es": "cariñoso/a",
-          "ru": "ласковый / заботливый"
-        },
-        {
-          "es": "quedar con amigos",
-          "ru": "встречаться с друзьями"
-        }
-      ],
       "dialogue": [
         {
           "speaker": "Elena",
@@ -180,14 +138,14 @@
           "id": "es_es_u2_e4",
           "skill": "grammar",
           "type": "choice",
-          "prompt": "Completa: «Marcos tiene dos hermanas. ___ hermanas viven en Bilbao».",
+          "prompt": "Completa: «Marcos tiene una hermana. ___ hermana vive en Bilbao».",
           "options": [
             "Su",
             "Sus",
             "Mi"
           ],
           "answer": 1,
-          "explanation": "Перед существительным во множественном числе используем sus: sus hermanas."
+          "explanation": "Перед существительным в единственном числе используем su: su hermana."
         },
         {
           "id": "es_es_u2_e5",
@@ -207,48 +165,6 @@
     {
       "id": "es_mx",
       "name": "Español de México",
-      "vocabulary": [
-        {
-          "es": "mamá / papá",
-          "ru": "мама / папа"
-        },
-        {
-          "es": "hermano / hermana",
-          "ru": "брат / сестра"
-        },
-        {
-          "es": "abuelito / abuelita",
-          "ru": "дедушка / бабушка (ласкательно)"
-        },
-        {
-          "es": "primo / prima",
-          "ru": "двоюродный брат / двоюродная сестра"
-        },
-        {
-          "es": "pareja",
-          "ru": "партнер / партнерша"
-        },
-        {
-          "es": "cabello",
-          "ru": "волосы"
-        },
-        {
-          "es": "chino/a",
-          "ru": "кудрявый / кудрявая (о волосах)"
-        },
-        {
-          "es": "buena onda",
-          "ru": "приятный, дружелюбный (разговорное)"
-        },
-        {
-          "es": "platicar",
-          "ru": "разговаривать, беседовать"
-        },
-        {
-          "es": "pasar tiempo juntos",
-          "ru": "проводить время вместе"
-        }
-      ],
       "dialogue": [
         {
           "speaker": "Sofía",

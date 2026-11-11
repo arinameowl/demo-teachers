@@ -93,66 +93,66 @@
           "id": "es_es_b1_u3_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué se ha creado para que los vecinos comuniquen problemas?",
+          "prompt": "¿Por qué los especialistas recomendaron consultar la metodología?",
           "options": [
-            "Una plataforma.",
-            "Una nueva línea de tren.",
-            "Una oficina de turismo."
+            "Porque el estudio se hizo con un grupo reducido de una sola universidad.",
+            "Porque el informe no tenía fecha.",
+            "Porque la encuesta se realizó en varios países."
           ],
           "answer": 0,
-          "explanation": "La lectura menciona una plataforma vecinal."
+          "explanation": "Una muestra limitada no permite generalizar los resultados."
         },
         {
           "id": "es_es_b1_u3_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué problema sigue pendiente en el barrio?",
+          "prompt": "¿Qué propone Álvaro hacer si comparte la noticia?",
           "options": [
-            "Algunas calles necesitan reparaciones y se pide mejorar el transporte.",
-            "No hay ningún espacio público.",
-            "Se han cerrado todos los centros deportivos."
+            "Añadir una nota sobre las limitaciones del estudio.",
+            "Eliminar todos los datos del artículo.",
+            "Presentarla como una conclusión definitiva."
           ],
           "answer": 0,
-          "explanation": "La lectura señala reparaciones y transporte como asuntos pendientes."
+          "explanation": "Álvaro propone contextualizar la noticia."
         },
         {
           "id": "es_es_b1_u3_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Completa: «En esta zona ___ actividades para distintas edades».",
+          "prompt": "Completa: «No creo que esta fuente ___ fiable».",
           "options": [
-            "se organizan",
-            "se organiza",
-            "organiza se"
+            "sea",
+            "es",
+            "será"
           ],
           "answer": 0,
-          "explanation": "En la pasiva refleja el verbo concuerda con el sujeto plural: actividades."
+          "explanation": "Después de no creo que se usa subjuntivo."
         },
         {
           "id": "es_es_b1_u3_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué significa «poner en marcha un proyecto»?",
+          "prompt": "¿Qué conector introduce una objeción o contraste?",
           "options": [
-            "Iniciarlo o hacerlo comenzar.",
-            "Cancelarlo definitivamente.",
-            "Evaluarlo sin llevarlo a cabo."
+            "Sin embargo",
+            "Además",
+            "Por eso"
           ],
           "answer": 0,
-          "explanation": "Poner en marcha significa iniciar o implementar."
+          "explanation": "Sin embargo introduce contraste."
         },
         {
           "id": "es_es_b1_u3_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué nivel administrativo se menciona en la nota sobre España?",
+          "prompt": "¿Qué conviene comprobar antes de compartir una noticia?",
           "options": [
-            "El municipio.",
-            "La Unión Europea como única autoridad local.",
-            "La administración de otro país."
+            "La fuente original, la fecha y la metodología.",
+            "Solo el número de veces que se ha compartido.",
+            "Únicamente la imagen del titular."
           ],
           "answer": 0,
-          "explanation": "La nota sitúa muchos servicios locales en el ámbito municipal."
+          "explanation": "La verificación requiere revisar el origen y el contexto."
         }
       ]
     },
@@ -212,66 +212,66 @@
           "id": "es_mx_b1_u3_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué se creó para que los vecinos reporten problemas?",
+          "prompt": "¿Por qué los especialistas recomendaron revisar la metodología?",
           "options": [
-            "Una plataforma.",
-            "Una estación de autobuses.",
-            "Una asociación deportiva privada."
+            "Porque el estudio se hizo con un grupo pequeño de una sola universidad.",
+            "Porque la noticia no tenía título.",
+            "Porque participaron personas de todos los estados."
           ],
           "answer": 0,
-          "explanation": "La lectura menciona una plataforma para reportar problemas."
+          "explanation": "La muestra limitada no representa necesariamente a toda la población."
         },
         {
           "id": "es_mx_b1_u3_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué necesidad sigue pendiente en la colonia?",
+          "prompt": "¿Qué haría Álvaro al compartir la noticia?",
           "options": [
-            "Reparar algunas calles y mejorar el transporte.",
-            "Eliminar todas las áreas verdes.",
-            "Cerrar los espacios comunitarios."
+            "Agregaría una nota sobre las limitaciones.",
+            "Cambiaría los resultados de la encuesta.",
+            "Afirmaría que la conclusión es universal."
           ],
           "answer": 0,
-          "explanation": "La lectura señala calles y transporte como asuntos por mejorar."
+          "explanation": "Álvaro quiere explicar los límites de la investigación."
         },
         {
           "id": "es_mx_b1_u3_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Completa: «En esta colonia ___ actividades para distintas edades».",
+          "prompt": "Completa: «No creo que esta fuente ___ fiable».",
           "options": [
-            "se organizan",
-            "se organiza",
-            "organiza se"
+            "sea",
+            "es",
+            "será"
           ],
           "answer": 0,
-          "explanation": "El verbo concuerda en plural con actividades."
+          "explanation": "Después de no creo que se usa subjuntivo."
         },
         {
           "id": "es_mx_b1_u3_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué significa «poner en marcha un proyecto»?",
+          "prompt": "¿Qué conector introduce una objeción o contraste?",
           "options": [
-            "Iniciarlo o hacerlo comenzar.",
-            "Cancelarlo definitivamente.",
-            "Dejarlo sin planificación."
+            "Sin embargo",
+            "Además",
+            "Por eso"
           ],
           "answer": 0,
-          "explanation": "La expresión significa iniciar o implementar un proyecto."
+          "explanation": "Sin embargo introduce contraste."
         },
         {
           "id": "es_mx_b1_u3_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué término administrativo se menciona para la Ciudad de México?",
+          "prompt": "¿Qué conviene comprobar antes de compartir una noticia?",
           "options": [
-            "Alcaldía.",
-            "Comunidad autónoma.",
-            "Diputación provincial."
+            "La fuente original, la fecha y la metodología.",
+            "Solo el número de reacciones.",
+            "Únicamente el titular."
           ],
           "answer": 0,
-          "explanation": "La nota explica que alcaldía se usa en el contexto de la CDMX."
+          "explanation": "La verificación exige localizar el origen y el contexto."
         }
       ]
     }

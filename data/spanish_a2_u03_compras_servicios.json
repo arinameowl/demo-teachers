@@ -153,7 +153,11 @@
           "answer": 0,
           "explanation": "El tique es el comprobante que se entrega después de pagar."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Una compra necesaria",
+        "text": "El sábado, Isabel fue al centro para buscar un abrigo. Primero entró en una tienda pequeña y se probó dos modelos. El abrigo azul era más ligero, pero el gris le quedaba mejor. La dependienta le explicó que podía cambiarlo si conservaba el tique y la etiqueta. Isabel decidió comprar el gris porque era cómodo y tenía un precio razonable. Antes de salir, guardó el recibo en su bolso."
+      }
     },
     {
       "id": "es_mx",
@@ -267,7 +271,11 @@
           "answer": 0,
           "explanation": "En México se usa recibo para el comprobante de compra; también puede decirse ticket."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Elegir unos tenis",
+        "text": "El viernes, Fernanda fue a una plaza comercial porque necesitaba unos tenis para caminar. Vio varios modelos y comparó los precios. Unos eran muy bonitos, pero le apretaban; otros eran más cómodos y costaban un poco menos. El vendedor le mostró otro color y Fernanda se probó el nuevo par. Al final, los compró y pidió el recibo por si necesitaba hacer un cambio."
+      }
     }
   ],
   "teacher_notes": [

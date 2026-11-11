@@ -158,7 +158,7 @@
       ],
       "reading": {
         "title": "Un fin de semana en Granada",
-        "text": "El mes pasado, Irene ha pasado un fin de semana en Granada con su hermana. Han llegado en tren el viernes por la tarde y se han alojado en un hotel cerca del centro. El sábado han visitado la Alhambra y han paseado por el Albaicín. Había mucha gente, pero el día ha sido muy agradable. Por la noche han cenado en un restaurante pequeño y han probado platos típicos. Irene ha vuelto a casa cansada, pero muy contenta con el viaje."
+        "text": "Este mes, Irene ha pasado un fin de semana en Granada con su hermana. Han llegado en tren el viernes por la tarde y se han alojado en un hotel cerca del centro. El sábado han visitado la Alhambra y han paseado por el Albaicín. Había mucha gente, pero el día ha sido muy agradable. Por la noche han cenado en un restaurante pequeño y han probado platos típicos. Irene ha vuelto a casa cansada, pero muy contenta con el viaje."
       }
     },
     {
@@ -180,15 +180,15 @@
         },
         {
           "speaker": "Diego",
-          "text": "En un hotelito en el centro. Hemos caminado mucho por la ciudad."
+          "text": "En un hotelito en el centro. Caminamos mucho por la ciudad."
         },
         {
           "speaker": "Valeria",
-          "text": "¿Han visitado Monte Albán?"
+          "text": "¿Visitaron Monte Albán?"
         },
         {
           "speaker": "Diego",
-          "text": "Sí. Hemos comprado los boletos por internet para evitar las filas."
+          "text": "Sí. Compramos los boletos por internet para evitar las filas."
         },
         {
           "speaker": "Valeria",
@@ -196,7 +196,7 @@
         },
         {
           "speaker": "Diego",
-          "text": "Bien, aunque el autobús ha tenido una hora de retraso."
+          "text": "Bien, aunque el autobús tuvo una hora de retraso."
         },
         {
           "speaker": "Valeria",
@@ -204,10 +204,10 @@
         },
         {
           "speaker": "Diego",
-          "text": "Muchísimo. He probado el mole y he comprado unas artesanías para mi familia."
+          "text": "Muchísimo. Probé el mole y compré unas artesanías para mi familia."
         }
       ],
-      "context_note": "Oaxaca es conocida por su patrimonio cultural, sus mercados, su gastronomía y sus tradiciones artesanales. Monte Albán es un importante sitio arqueológico de la región. En México son habituales palabras como boleto y hospedarse en contextos de viaje.",
+      "context_note": "Oaxaca es conocida por su patrimonio cultural, sus mercados, su gastronomía y sus tradiciones artesanales. Monte Albán es un importante sitio arqueológico de la región. En México son habituales palabras como boleto y hospedarse en contextos de viaje. В мексиканском варианте pretérito indefinido часто используется для завершенных событий с конкретным временем, тогда как pretérito perfecto также встречается при описании жизненного опыта.",
       "exercises": [
         {
           "id": "es_mx_a2_u1_e1",
@@ -233,7 +233,7 @@
             "Unos libros de cocina"
           ],
           "answer": 1,
-          "explanation": "Al final del diálogo, Diego dice que ha comprado artesanías para su familia."
+          "explanation": "Al final del diálogo, Diego dice que compró artesanías para su familia."
         },
         {
           "id": "es_mx_a2_u1_e3",

@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "level": "A2",
+  "category": "lesson",
+  "language": "es",
+  "unit_id": "es_a2_u03_compras_servicios",
+  "title": "Compras y servicios",
+  "learning_goals": [
+    "Покупать одежду и повседневные товары, уточняя размер, цвет и цену",
+    "Сравнивать товары и объяснять, почему один вариант подходит лучше",
+    "Попросить обменять или вернуть товар и описать проблему",
+    "Использовать прямые местоимения lo, la, los, las в простых ситуациях"
+  ],
+  "grammar": [
+    {
+      "topic": "direct_object_pronouns",
+      "explanation_ru": "Прямые местоимения lo, la, los, las заменяют уже упомянутое прямое дополнение и обычно ставятся перед спрягаемым глаголом: ¿Tienes la talla? Sí, la tengo. ¿Compras los zapatos? Sí, los compro.",
+      "examples": [
+        "¿Tienes la camisa azul? Sí, la tengo.",
+        "Los zapatos son bonitos; me los pruebo.",
+        "No lo necesito."
+      ]
+    },
+    {
+      "topic": "comparatives_superlatives",
+      "explanation_ru": "Для сравнения используем más/menos… que и tan… como. Чтобы выделить самый подходящий предмет в группе, можно использовать el/la más + прилагательное: Es la opción más cómoda.",
+      "examples": [
+        "Este abrigo es más barato que aquel.",
+        "La falda es tan cómoda como el vestido.",
+        "Es el modelo más práctico."
+      ]
+    },
+    {
+      "topic": "polite_requests",
+      "explanation_ru": "В магазине просьбы часто формулируют через ¿Podría…? (вежливо, usted), ¿Me puede…? и Quisiera… . Эти формы помогают звучать естественно и вежливо.",
+      "examples": [
+        "¿Me puede traer otra talla?",
+        "Quisiera cambiar esta camisa.",
+        "¿Podría darme el recibo?"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "dialogue": [
+        {
+          "speaker": "Dependienta",
+          "text": "Buenas tardes. ¿Buscas algo en particular?"
+        },
+        {
+          "speaker": "Nuria",
+          "text": "Sí, necesito unos zapatos cómodos para caminar."
+        },
+        {
+          "speaker": "Dependienta",
+          "text": "Tenemos estos modelos. Los negros son más ligeros que los marrones."
+        },
+        {
+          "speaker": "Nuria",
+          "text": "Me gustan los negros. ¿Los tienes en el treinta y ocho?"
+        },
+        {
+          "speaker": "Dependienta",
+          "text": "Sí, aquí los tienes. ¿Quieres probártelos?"
+        },
+        {
+          "speaker": "Nuria",
+          "text": "Sí, gracias. Me quedan un poco grandes. ¿Hay medio número menos?"
+        },
+        {
+          "speaker": "Dependienta",
+          "text": "Lo siento, no tenemos ese número. Puedes probarte estos."
+        },
+        {
+          "speaker": "Nuria",
+          "text": "Estos son más cómodos. Me los llevo."
+        },
+        {
+          "speaker": "Dependienta",
+          "text": "Perfecto. ¿Necesitas el tique?"
+        },
+        {
+          "speaker": "Nuria",
+          "text": "Sí, por favor. ¿Puedo cambiarlos si no me quedan bien?"
+        }
+      ],
+      "context_note": "En España se usa tique o ticket para el comprobante de compra; también es frecuente recibo. Las políticas de cambio y devolución dependen de la tienda y de las condiciones de compra.",
+      "exercises": [
+        {
+          "id": "es_es_a2_u3_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿Qué busca Nuria?",
+          "options": [
+            "Unos zapatos cómodos para caminar",
+            "Un vestido para una boda",
+            "Una mochila para el trabajo"
+          ],
+          "answer": 0,
+          "explanation": "Nuria explica que necesita zapatos cómodos para caminar."
+        },
+        {
+          "id": "es_es_a2_u3_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Por qué no compra el primer par?",
+          "options": [
+            "Es demasiado caro",
+            "Le queda un poco grande",
+            "No le gusta el color"
+          ],
+          "answer": 1,
+          "explanation": "Nuria dice que los zapatos le quedan un poco grandes."
+        },
+        {
+          "id": "es_es_a2_u3_e3",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «¿Tienes los zapatos negros? Sí, ___ tengo».",
+          "options": [
+            "los",
+            "la",
+            "lo"
+          ],
+          "answer": 0,
+          "explanation": "Zapatos es masculino plural, por eso se sustituye por los."
+        },
+        {
+          "id": "es_es_a2_u3_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Elige la petición más cortés.",
+          "options": [
+            "¿Podría darme el tique, por favor?",
+            "Dame el tique ahora.",
+            "Tú das el tique."
+          ],
+          "answer": 0,
+          "explanation": "¿Podría…? es una fórmula de petición cortés."
+        },
+        {
+          "id": "es_es_a2_u3_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "En una tienda de España, ¿qué suele ser «el tique»?",
+          "options": [
+            "El comprobante de compra",
+            "La etiqueta con la talla",
+            "La tarjeta de fidelidad"
+          ],
+          "answer": 0,
+          "explanation": "El tique es el comprobante que se entrega después de pagar."
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "dialogue": [
+        {
+          "speaker": "Vendedor",
+          "text": "Buenas tardes. ¿En qué le puedo ayudar?"
+        },
+        {
+          "speaker": "Camila",
+          "text": "Busco unos tenis para caminar. Estos me gustan, pero quiero ver otros."
+        },
+        {
+          "speaker": "Vendedor",
+          "text": "Claro. Los blancos son más ligeros y estos grises tienen mejor soporte."
+        },
+        {
+          "speaker": "Camila",
+          "text": "¿Los tiene en talla veinticuatro?"
+        },
+        {
+          "speaker": "Vendedor",
+          "text": "Sí, aquí están. ¿Se los quiere probar?"
+        },
+        {
+          "speaker": "Camila",
+          "text": "Sí. Me quedan un poco apretados."
+        },
+        {
+          "speaker": "Vendedor",
+          "text": "Tenemos medio número más. Se los traigo."
+        },
+        {
+          "speaker": "Camila",
+          "text": "Estos sí me quedan bien. ¿Cuánto cuestan?"
+        },
+        {
+          "speaker": "Vendedor",
+          "text": "Cuestan mil doscientos pesos."
+        },
+        {
+          "speaker": "Camila",
+          "text": "Perfecto, me los llevo. ¿Me da el recibo, por favor?"
+        }
+      ],
+      "context_note": "En México es común llamar tenis al calzado deportivo y usar talla para indicar el número. Los precios en pesos mexicanos suelen expresarse con la palabra pesos en conversaciones cotidianas.",
+      "exercises": [
+        {
+          "id": "es_mx_a2_u3_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿Qué quiere comprar Camila?",
+          "options": [
+            "Unos tenis para caminar",
+            "Unos zapatos de fiesta",
+            "Una chamarra para la lluvia"
+          ],
+          "answer": 0,
+          "explanation": "Camila busca tenis cómodos para caminar."
+        },
+        {
+          "id": "es_mx_a2_u3_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Qué problema tiene el primer par que se prueba?",
+          "options": [
+            "Le queda apretado",
+            "Es demasiado ligero",
+            "Cuesta demasiado"
+          ],
+          "answer": 0,
+          "explanation": "Camila dice que los tenis le quedan un poco apretados."
+        },
+        {
+          "id": "es_mx_a2_u3_e3",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «¿Tienes los tenis grises? Sí, ___ tengo».",
+          "options": [
+            "los",
+            "la",
+            "lo"
+          ],
+          "answer": 0,
+          "explanation": "Tenis se usa aquí en plural masculino; el pronombre correspondiente es los."
+        },
+        {
+          "id": "es_mx_a2_u3_e4",
+          "skill": "vocabulary_in_context",
+          "type": "choice",
+          "prompt": "En México, ¿qué significa «tenis» en esta conversación?",
+          "options": [
+            "Calzado deportivo",
+            "Un juego de mesa",
+            "Una camiseta"
+          ],
+          "answer": 0,
+          "explanation": "En México, tenis es una palabra habitual para el calzado deportivo."
+        },
+        {
+          "id": "es_mx_a2_u3_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "¿Qué palabra usa Camila para pedir el comprobante de compra?",
+          "options": [
+            "Recibo",
+            "Tique",
+            "Billete"
+          ],
+          "answer": 0,
+          "explanation": "En México se usa recibo para el comprobante de compra; también puede decirse ticket."
+        }
+      ]
+    }
+  ],
+  "teacher_notes": [
+    "Не добавлять отдельный раздел Vocabulary.",
+    "Прямые местоимения lo/la/los/las в этом блоке заменяют предмет, а не человека; пока не вводить косвенные местоимения.",
+    "Лексические различия: España — zapatos, tique; México — tenis, recibo. Не представлять их как единственно возможные слова во всех регионах.",
+    "Материал — часть лид-магнита. Не интегрировать до завершения всего испанского каталога."
+  ]
+}

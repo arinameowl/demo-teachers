@@ -305,14 +305,14 @@
           "id": "es_es_a2_u6_e5",
           "skill": "culture",
           "type": "choice",
-          "prompt": "Según el texto, ¿dónde se organizan muchas actividades de las fiestas locales?",
+          "prompt": "¿Qué espacio público aparece como punto de encuentro durante la fiesta?",
           "options": [
-            "En la plaza del pueblo",
-            "En una estación de metro",
-            "En un aeropuerto"
+            "La plaza del pueblo",
+            "Una estación de metro",
+            "Un aeropuerto"
           ],
           "answer": 0,
-          "explanation": "La plaza suele ser un espacio de encuentro para actividades locales, aunque las costumbres varían."
+          "explanation": "La conversación sitúa a los participantes en la plaza del pueblo, llena de gente durante la fiesta."
         }
       ],
       "reading": {

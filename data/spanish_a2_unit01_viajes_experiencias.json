@@ -53,7 +53,7 @@
         },
         {
           "speaker": "Andrés",
-          "text": "Sí, he estado allí este año. Fui con dos amigos durante un puente."
+          "text": "Sí, he estado allí este año. He viajado con dos amigos durante un puente."
         },
         {
           "speaker": "Lucía",
@@ -69,7 +69,7 @@
         },
         {
           "speaker": "Andrés",
-          "text": "Sí, pero tuvimos que reservar las entradas con antelación. Había mucha gente."
+          "text": "Sí, hemos tenido que reservar las entradas con antelación. Ha habido mucha gente."
         },
         {
           "speaker": "Lucía",
@@ -107,14 +107,14 @@
           "id": "es_es_a2_u1_e2",
           "skill": "detail",
           "type": "choice",
-          "prompt": "¿Qué problema tuvo Andrés durante el viaje?",
+          "prompt": "¿Qué problema ha tenido Andrés durante el viaje?",
           "options": [
             "Perdió la reserva del hotel",
             "El tren llegó con retraso",
             "No pudo visitar la Alhambra"
           ],
           "answer": 1,
-          "explanation": "Andrés explica que el tren llegó con media hora de retraso."
+          "explanation": "Andrés explica que el tren ha llegado con media hora de retraso."
         },
         {
           "id": "es_es_a2_u1_e3",
@@ -168,7 +168,7 @@
         },
         {
           "speaker": "Diego",
-          "text": "Sí, he estado allí dos veces. La última vez fui con mi hermana."
+          "text": "Sí, he estado allí dos veces. En una ocasión he viajado con mi hermana."
         },
         {
           "speaker": "Valeria",
@@ -184,7 +184,7 @@
         },
         {
           "speaker": "Diego",
-          "text": "Sí. Compramos los boletos por internet porque había bastante gente."
+          "text": "Sí. Hemos comprado los boletos por internet porque ha habido bastante gente."
         },
         {
           "speaker": "Valeria",
@@ -192,7 +192,7 @@
         },
         {
           "speaker": "Diego",
-          "text": "Bien, aunque el autobús salió con una hora de retraso."
+          "text": "Bien, aunque el autobús ha salido con una hora de retraso."
         },
         {
           "speaker": "Valeria",

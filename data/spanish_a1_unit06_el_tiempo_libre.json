@@ -42,11 +42,13 @@
     },
     {
       "topic": "inviting_and_responding",
-      "explanation_ru": "Для предложения плана используем ¿Quieres…?, ¿Te apetece…? (особенно характерно для Испании), ¿Vamos a…?; согласие — ¡Claro!, ¡Vale!, ¡Me parece bien!; отказ — Lo siento, no puedo.",
+      "explanation_ru": "Для предложения плана используем ¿Quieres…?, ¿Te apetece…? (особенно характерно для Испании), ¿Vamos a…?; согласие — ¡Claro!, ¡Vale!, ¡Me parece bien!; отказ — Lo siento, no puedo. В мексиканском разговорном варианте также встречается «¿Te late…?» — неформальный способ спросить, нравится ли собеседнику идея; в нейтральной ситуации можно сказать «¿Te parece bien…?».",
       "examples": [
         "¿Quieres ir al cine?",
         "¡Claro!",
-        "Lo siento, no puedo."
+        "Lo siento, no puedo.",
+        "¿Te parece bien ir al cine?",
+        "¿Te late si cenamos algo después? (разговорное, Мексика)"
       ]
     }
   ],
@@ -54,56 +56,14 @@
     {
       "id": "es_es",
       "name": "Español de España",
-      "vocabulary": [
-        {
-          "es": "quedar",
-          "ru": "договариваться о встрече"
-        },
-        {
-          "es": "cine",
-          "ru": "кинотеатр; кино"
-        },
-        {
-          "es": "senderismo",
-          "ru": "пеший туризм"
-        },
-        {
-          "es": "pasear",
-          "ru": "гулять"
-        },
-        {
-          "es": "leer",
-          "ru": "читать"
-        },
-        {
-          "es": "quedar con amigos",
-          "ru": "встречаться с друзьями"
-        },
-        {
-          "es": "te apetece…",
-          "ru": "тебе хочется…?"
-        },
-        {
-          "es": "vale",
-          "ru": "ладно; хорошо"
-        },
-        {
-          "es": "fin de semana",
-          "ru": "выходные"
-        },
-        {
-          "es": "entrada",
-          "ru": "билет; входной билет"
-        }
-      ],
       "dialogue": [
         {
           "speaker": "Marta",
-          "text": "¿Qué te apetece hacer este sábado, Pablo?"
+          "text": "¿Qué quieres hacer este sábado, Pablo?"
         },
         {
           "speaker": "Pablo",
-          "text": "Me gustaría ir al cine. Hay una película nueva."
+          "text": "Quiero ir al cine. Hay una película nueva."
         },
         {
           "speaker": "Marta",
@@ -201,48 +161,6 @@
     {
       "id": "es_mx",
       "name": "Español de México",
-      "vocabulary": [
-        {
-          "es": "salir",
-          "ru": "выходить; куда-либо идти"
-        },
-        {
-          "es": "cine",
-          "ru": "кинотеатр; кино"
-        },
-        {
-          "es": "hacer ejercicio",
-          "ru": "заниматься физическими упражнениями"
-        },
-        {
-          "es": "pasear",
-          "ru": "гулять"
-        },
-        {
-          "es": "leer",
-          "ru": "читать"
-        },
-        {
-          "es": "juntarse con amigos",
-          "ru": "собираться с друзьями"
-        },
-        {
-          "es": "¿Te late…?",
-          "ru": "Как тебе идея…? (разговорное)"
-        },
-        {
-          "es": "órale",
-          "ru": "вот это да; давай; хорошо (разговорное, по контексту)"
-        },
-        {
-          "es": "fin de semana",
-          "ru": "выходные"
-        },
-        {
-          "es": "boleto",
-          "ru": "билет"
-        }
-      ],
       "dialogue": [
         {
           "speaker": "Ana",
@@ -270,11 +188,11 @@
         },
         {
           "speaker": "Ana",
-          "text": "Va. Nos vemos afuera del cine a las seis y media."
+          "text": "De acuerdo. Nos vemos afuera del cine a las seis y media."
         },
         {
           "speaker": "Luis",
-          "text": "¡Sale! Hasta el sábado."
+          "text": "¡Hasta el sábado!"
         }
       ],
       "exercises": [

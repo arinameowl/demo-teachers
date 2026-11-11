@@ -29,7 +29,7 @@
     {
       "topic": "pretérito_indefinido_regular",
       "title": "Pretérito indefinido: acciones terminadas",
-      "explanation_ru": "Используйте pretérito indefinido, чтобы рассказать о завершенном событии в прошлом, особенно если период времени уже закончен или назван конкретно: ayer, el lunes, la semana pasada, en 2024. У глаголов на -ar окончания: -é, -aste, -ó, -amos, -asteis, -aron. У глаголов на -er и -ir: -í, -iste, -ió, -imos, -isteis, -ieron. Важно различать habl é / hablé и comí / viví.",
+      "explanation_ru": "Используйте pretérito indefinido, чтобы рассказать о завершенном событии в прошлом, особенно если период времени уже закончен или назван конкретно: ayer, el lunes, la semana pasada, en 2024. У глаголов на -ar окончания: -é, -aste, -ó, -amos, -asteis, -aron. У глаголов на -er и -ir: -í, -iste, -ió, -imos, -isteis, -ieron. Обратите внимание на письменное ударение в формах hablé и comí.",
       "examples": [
         "Ayer terminé un informe.",
         "El martes asistimos a una reunión.",
@@ -112,11 +112,11 @@
         },
         {
           "speaker": "Lucía",
-          "text": "¿Y qué tareas tenías allí?"
+          "text": "¿Y qué tareas hiciste allí?"
         },
         {
           "speaker": "Marcos",
-          "text": "Preparaba informes, hablaba con clientes y organizaba reuniones."
+          "text": "Preparé informes, hablé con clientes y organicé reuniones."
         },
         {
           "speaker": "Lucía",

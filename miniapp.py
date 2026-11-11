@@ -342,11 +342,22 @@ async def submit_spanish_lead(payload: SpanishQuizSubmission, user: dict = Depen
         ok = isinstance(given, int) and not isinstance(given, bool) and given == expected
         correct += int(ok)
         options = question.get("options", [])
+        expected_text = options[expected] if isinstance(expected, int) and 0 <= expected < len(options) else ""
+        explanation = question.get("explanation") or ""
+        if not explanation and expected_text:
+            prompt = question.get("question") or question.get("prompt") or "задание"
+            if "Su" in options and "Sus" in options:
+                explanation = "Su используется с существительным в единственном числе, а sus — во множественном. Здесь далее говорится о нескольких hijas, поэтому нужна форма sus."
+            elif "¿Cuál es correcta?" in prompt:
+                explanation = "Подлежащее Leonor стоит в единственном числе, поэтому нужна форма es; существительное hija также употребляется в единственном числе."
+            else:
+                explanation = "Вопрос «" + prompt + "» проверяет понимание содержания материала. Вариант «" + expected_text + "» соответствует факту или смыслу, который требуется определить; остальные варианты не подтверждаются формулировкой задания."
         results.append({
             "index": index,
             "correct": ok,
-            "expected": options[expected] if isinstance(expected, int) and 0 <= expected < len(options) else "",
-            "explanation": question.get("explanation", ""),
+            "expected": expected_text,
+            "given": given if isinstance(given, int) and 0 <= given < len(options) else "",
+            "explanation": explanation,
         })
 
     total = len(questions)

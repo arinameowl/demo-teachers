@@ -269,40 +269,40 @@
           "id": "es_es_b1_u6_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cuál es el propósito principal del archivo comunitario?",
+          "prompt": "¿Qué tema central comentan Inés y Gabriel?",
           "options": [
-            "Reunir recuerdos y testimonios diversos para construir una memoria compartida.",
-            "Demostrar que solo los documentos antiguos tienen valor.",
-            "Elegir una única versión oficial de la historia del barrio."
+            "Cómo una celebración local puede conservar elementos tradicionales e incorporar cambios.",
+            "Cómo organizar un archivo administrativo del barrio.",
+            "Por qué todas las familias deben celebrar de la misma manera."
           ],
           "answer": 0,
-          "explanation": "El proyecto reúne materiales y relatos de personas con experiencias distintas."
+          "explanation": "La conversación trata de la continuidad y transformación de una fiesta local, así como de la memoria familiar."
         },
         {
           "id": "es_es_b1_u6_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué cambio propusieron algunas personas para ampliar el archivo?",
+          "prompt": "¿Qué hacía el abuelo de Gabriel cuando Gabriel era pequeño?",
           "options": [
-            "Dejar de aceptar fotografías.",
-            "Incluir testimonios de quienes habían llegado recientemente.",
-            "Guardar únicamente documentos administrativos."
+            "Lo llevaba a la celebración del barrio o de la colonia.",
+            "Organizaba una exposición de documentos oficiales.",
+            "Le enseñaba a preparar una receta en cada fiesta."
           ],
-          "answer": 1,
-          "explanation": "El texto explica que se propuso incluir a nuevos vecinos."
+          "answer": 0,
+          "explanation": "Gabriel recuerda que su abuelo lo llevaba a la fiesta cuando era pequeño."
         },
         {
           "id": "es_es_b1_u6_e3",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "En el texto, ¿qué significa «testimonio»?",
+          "prompt": "En la conversación, ¿qué significa «incorporar ideas nuevas»?",
           "options": [
-            "Una norma que deben cumplir los visitantes.",
-            "Un objeto antiguo sin información adicional.",
-            "El relato de una persona sobre una experiencia o un hecho."
+            "Integrar propuestas o elementos nuevos en una actividad o tradición.",
+            "Eliminar todos los elementos anteriores.",
+            "Evitar que otras personas participen."
           ],
-          "answer": 2,
-          "explanation": "Un testimonio es una narración basada en la experiencia o conocimiento de alguien."
+          "answer": 0,
+          "explanation": "Incorporar ideas nuevas significa añadirlas o integrarlas sin que necesariamente desaparezca lo que ya existía."
         },
         {
           "id": "es_es_b1_u6_e4",
@@ -508,40 +508,40 @@
           "id": "es_mx_b1_u6_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cuál es el propósito principal del archivo comunitario?",
+          "prompt": "¿Qué tema central comentan Inés y Gabriel?",
           "options": [
-            "Reunir recuerdos y testimonios diversos para construir una memoria compartida.",
-            "Demostrar que solo los documentos antiguos tienen valor.",
-            "Elegir una única versión oficial de la historia del barrio."
+            "Cómo una celebración local puede conservar elementos tradicionales e incorporar cambios.",
+            "Cómo organizar un archivo administrativo del barrio.",
+            "Por qué todas las familias deben celebrar de la misma manera."
           ],
           "answer": 0,
-          "explanation": "El proyecto reúne materiales y relatos de personas con experiencias distintas."
+          "explanation": "La conversación trata de la continuidad y transformación de una fiesta local, así como de la memoria familiar."
         },
         {
           "id": "es_mx_b1_u6_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué cambio propusieron algunas personas para ampliar el archivo?",
+          "prompt": "¿Qué hacía el abuelo de Gabriel cuando Gabriel era pequeño?",
           "options": [
-            "Dejar de aceptar fotografías.",
-            "Incluir testimonios de quienes habían llegado recientemente.",
-            "Guardar únicamente documentos administrativos."
+            "Lo llevaba a la celebración del barrio o de la colonia.",
+            "Organizaba una exposición de documentos oficiales.",
+            "Le enseñaba a preparar una receta en cada fiesta."
           ],
-          "answer": 1,
-          "explanation": "El texto explica que se propuso incluir a nuevos vecinos."
+          "answer": 0,
+          "explanation": "Gabriel recuerda que su abuelo lo llevaba a la fiesta cuando era pequeño."
         },
         {
           "id": "es_mx_b1_u6_e3",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "En el texto, ¿qué significa «testimonio»?",
+          "prompt": "En la conversación, ¿qué significa «incorporar ideas nuevas»?",
           "options": [
-            "Una norma que deben cumplir los visitantes.",
-            "Un objeto antiguo sin información adicional.",
-            "El relato de una persona sobre una experiencia o un hecho."
+            "Integrar propuestas o elementos nuevos en una actividad o tradición.",
+            "Eliminar todos los elementos anteriores.",
+            "Evitar que otras personas participen."
           ],
-          "answer": 2,
-          "explanation": "Un testimonio es una narración basada en la experiencia o conocimiento de alguien."
+          "answer": 0,
+          "explanation": "Incorporar ideas nuevas significa añadirlas o integrarlas sin que necesariamente desaparezca lo que ya existía."
         },
         {
           "id": "es_mx_b1_u6_e4",

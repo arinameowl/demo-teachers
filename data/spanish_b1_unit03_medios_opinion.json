@@ -267,27 +267,27 @@
           "id": "es_es_b1_u3_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cuál es la idea principal del texto?",
+          "prompt": "¿Cuál es la idea principal de la conversación?",
           "options": [
-            "Una cifra puede inducir a error si se presenta sin explicar cómo se obtuvo.",
-            "Las encuestas no sirven para estudiar hábitos de lectura.",
-            "Los jóvenes han dejado de consultar cualquier medio de comunicación."
+            "Conviene evaluar los resultados de un estudio teniendo en cuenta su muestra, metodología y contexto.",
+            "Cualquier estudio sobre móviles demuestra que siempre perjudican el aprendizaje.",
+            "Los centros educativos no deberían analizar los resultados de investigaciones."
           ],
           "answer": 0,
-          "explanation": "El texto explica que el dato necesitaba contexto sobre la muestra y la pregunta."
+          "explanation": "Lucía y Diego coinciden en que el estudio puede ser útil, pero sus resultados deben interpretarse con cautela y sin generalizar."
         },
         {
           "id": "es_es_b1_u3_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué limitación tenía la encuesta?",
+          "prompt": "¿Dónde y durante cuánto tiempo se realizó el estudio mencionado en la conversación?",
           "options": [
-            "Se realizó en varios países y durante diez años.",
-            "Se hizo en una sola ciudad y preguntaba por el uso diario.",
-            "No incluía ninguna pregunta sobre medios digitales."
+            "En cuatro centros y durante un trimestre.",
+            "En una sola ciudad y durante diez años.",
+            "En varios países y durante un curso completo."
           ],
-          "answer": 1,
-          "explanation": "El texto menciona una sola ciudad y una pregunta sobre la frecuencia diaria."
+          "answer": 0,
+          "explanation": "Diego explica que el estudio se hizo en cuatro centros y durante un trimestre."
         },
         {
           "id": "es_es_b1_u3_e3",
@@ -504,27 +504,27 @@
           "id": "es_mx_b1_u3_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cuál es la idea principal del texto?",
+          "prompt": "¿Cuál es la idea principal de la conversación?",
           "options": [
-            "Una cifra puede inducir a error si se presenta sin explicar cómo se obtuvo.",
-            "Las encuestas no sirven para estudiar hábitos de lectura.",
-            "Los jóvenes han dejado de consultar cualquier medio de comunicación."
+            "Conviene evaluar los resultados de un estudio teniendo en cuenta su muestra, metodología y contexto.",
+            "Cualquier estudio sobre móviles demuestra que siempre perjudican el aprendizaje.",
+            "Los centros educativos no deberían analizar los resultados de investigaciones."
           ],
           "answer": 0,
-          "explanation": "El texto explica que el dato necesitaba contexto sobre la muestra y la pregunta."
+          "explanation": "Lucía y Diego coinciden en que el estudio puede ser útil, pero sus resultados deben interpretarse con cautela y sin generalizar."
         },
         {
           "id": "es_mx_b1_u3_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué limitación tenía la encuesta?",
+          "prompt": "¿Dónde y durante cuánto tiempo se realizó el estudio mencionado en la conversación?",
           "options": [
-            "Se realizó en varios países y durante diez años.",
-            "Se hizo en una sola ciudad y preguntaba por el uso diario.",
-            "No incluía ninguna pregunta sobre medios digitales."
+            "En cuatro centros y durante un trimestre.",
+            "En una sola ciudad y durante diez años.",
+            "En varios países y durante un curso completo."
           ],
-          "answer": 1,
-          "explanation": "El texto menciona una sola ciudad y una pregunta sobre la frecuencia diaria."
+          "answer": 0,
+          "explanation": "Diego explica que el estudio se hizo en cuatro centros y durante un trimestre."
         },
         {
           "id": "es_mx_b1_u3_e3",

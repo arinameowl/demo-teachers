@@ -153,7 +153,11 @@
           "answer": 0,
           "explanation": "La tarjeta sanitaria identifica al usuario dentro del sistema público de salud."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Un día de descanso",
+        "text": "La semana pasada, Pablo se sintió muy cansado después de varios días de trabajo. Le dolía la cabeza y tenía los ojos irritados porque pasaba muchas horas delante del ordenador. Decidió pedir una cita en el centro de salud. El médico le recomendó descansar, beber agua y hacer pausas durante la jornada. Pablo siguió las recomendaciones y, después de unos días, se encontró mucho mejor."
+      }
     },
     {
       "id": "es_mx",
@@ -267,7 +271,11 @@
           "answer": 0,
           "explanation": "La recepcionista le pide una identificación y, si tiene, estudios anteriores."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Cuidarse un poco más",
+        "text": "A Laura le dolía la espalda porque trabajaba muchas horas sentada. Un día decidió consultar a una doctora. Después de escucharla, la doctora le recomendó levantarse de vez en cuando, caminar un poco y cuidar su postura. Laura también empezó a dormir más horas. No cambió todos sus hábitos de un día para otro, pero poco a poco se sintió con más energía."
+      }
     }
   ],
   "teacher_notes": [

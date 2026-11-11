@@ -93,66 +93,66 @@
           "id": "es_es_b1_u2_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Por qué los especialistas recomendaron consultar la metodología?",
+          "prompt": "¿Qué había hecho Elena antes de trasladarse a Bilbao?",
           "options": [
-            "Porque el estudio se hizo con un grupo reducido de una sola universidad.",
-            "Porque el informe no tenía fecha de publicación.",
-            "Porque la encuesta se realizó en varios países."
+            "Había vivido siempre en un pueblo pequeño.",
+            "Había trabajado en el extranjero.",
+            "Había estudiado en Valencia."
           ],
           "answer": 0,
-          "explanation": "La muestra limitada no permite generalizar los resultados a toda la población."
+          "explanation": "El primer enunciado de la lectura sitúa su vida antes del traslado."
         },
         {
           "id": "es_es_b1_u2_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué propone Álvaro hacer si comparte la noticia?",
+          "prompt": "¿Qué le resultó difícil al principio?",
           "options": [
-            "Añadir una nota sobre las limitaciones del estudio.",
-            "Eliminar todos los datos del artículo.",
-            "Presentarla como una conclusión definitiva."
+            "No conocía las calles y echaba de menos a su familia.",
+            "No encontraba trabajo en el extranjero.",
+            "No podía usar el transporte público."
           ],
           "answer": 0,
-          "explanation": "Álvaro propone contextualizar la noticia."
+          "explanation": "La lectura menciona las calles y la distancia de su familia."
         },
         {
           "id": "es_es_b1_u2_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Completa: «No creo que esta fuente ___ fiable».",
+          "prompt": "Completa: «Cuando llegué, la reunión ya ___».",
           "options": [
-            "sea",
-            "es",
-            "será"
+            "había empezado",
+            "ha empezado",
+            "empezaría"
           ],
           "answer": 0,
-          "explanation": "Después de no creo que se usa subjuntivo para expresar duda o rechazo de la afirmación."
+          "explanation": "Pluscuamperfecto marca la acción anterior a otro momento pasado."
         },
         {
           "id": "es_es_b1_u2_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué conector introduce una objeción o contraste?",
+          "prompt": "¿Qué expresa «Llevo dos años viviendo allí»?",
           "options": [
-            "Sin embargo",
-            "Además",
-            "Por eso"
+            "La duración de una situación que continúa.",
+            "Una acción que ocurrirá en el futuro.",
+            "Una acción terminada ayer."
           ],
           "answer": 0,
-          "explanation": "Sin embargo introduce contraste; además añade información y por eso expresa consecuencia."
+          "explanation": "Llevar + periodo + gerundio expresa duración."
         },
         {
           "id": "es_es_b1_u2_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué conviene comprobar antes de compartir una noticia?",
+          "prompt": "¿Qué refleja la nota cultural sobre los idiomas en algunas comunidades de España?",
           "options": [
-            "La fuente original, la fecha y la metodología.",
-            "Solo el número de veces que se ha compartido.",
-            "Únicamente la imagen que acompaña el titular."
+            "Además del español, pueden utilizarse otras lenguas oficiales.",
+            "En todas las comunidades se habla únicamente una lengua.",
+            "Las lenguas regionales solo se usan en documentos antiguos."
           ],
           "answer": 0,
-          "explanation": "La verificación requiere revisar el origen y el contexto de los datos."
+          "explanation": "La situación lingüística varía entre comunidades."
         }
       ]
     },
@@ -212,66 +212,66 @@
           "id": "es_mx_b1_u2_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Por qué los especialistas recomendaron revisar la metodología?",
+          "prompt": "¿Qué había hecho Elena antes de mudarse a Guadalajara?",
           "options": [
-            "Porque el estudio se hizo con un grupo pequeño de una sola universidad.",
-            "Porque la noticia no tenía título.",
-            "Porque participaron personas de todos los estados."
+            "Había vivido siempre en un pueblo pequeño.",
+            "Había estudiado en la capital.",
+            "Había trabajado en otro país."
           ],
           "answer": 0,
-          "explanation": "La muestra limitada no representa necesariamente a toda la población."
+          "explanation": "La lectura presenta su vida anterior en un pueblo."
         },
         {
           "id": "es_mx_b1_u2_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué haría Álvaro al compartir la noticia?",
+          "prompt": "¿Qué echaba de menos durante los primeros meses?",
           "options": [
-            "Agregaría una nota sobre las limitaciones.",
-            "Cambiaría los resultados de la encuesta.",
-            "Afirmaría que la conclusión es universal."
+            "A su familia.",
+            "Su antiguo trabajo en una universidad.",
+            "El clima de la costa."
           ],
           "answer": 0,
-          "explanation": "Álvaro quiere explicar los límites de la investigación."
+          "explanation": "La lectura dice que extrañaba a su familia."
         },
         {
           "id": "es_mx_b1_u2_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Completa: «No creo que esta fuente ___ fiable».",
+          "prompt": "Completa: «Cuando llegué, la reunión ya ___».",
           "options": [
-            "sea",
-            "es",
-            "será"
+            "había empezado",
+            "ha empezado",
+            "empezaría"
           ],
           "answer": 0,
-          "explanation": "Después de no creo que se usa subjuntivo."
+          "explanation": "Pluscuamperfecto expresa la acción anterior a otro momento pasado."
         },
         {
           "id": "es_mx_b1_u2_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué conector introduce una objeción o contraste?",
+          "prompt": "¿Qué expresa «Llevo dos años viviendo allí»?",
           "options": [
-            "Sin embargo",
-            "Además",
-            "Por eso"
+            "La duración de una situación que continúa.",
+            "Una acción futura ya planificada.",
+            "Una acción terminada ayer."
           ],
           "answer": 0,
-          "explanation": "Sin embargo introduce contraste."
+          "explanation": "Llevar + periodo + gerundio expresa duración."
         },
         {
           "id": "es_mx_b1_u2_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué conviene comprobar antes de compartir una noticia?",
+          "prompt": "Según la nota cultural, ¿qué puede cambiar al mudarse a otro estado de México?",
           "options": [
-            "La fuente original, la fecha y la metodología.",
-            "Solo el número de reacciones.",
-            "Únicamente el titular."
+            "El clima, la comida y las expresiones locales.",
+            "La lengua oficial de todo el país.",
+            "Las fronteras nacionales."
           ],
           "answer": 0,
-          "explanation": "La verificación exige localizar el origen y el contexto de los datos."
+          "explanation": "La experiencia puede variar según el estado y la ciudad."
         }
       ]
     }

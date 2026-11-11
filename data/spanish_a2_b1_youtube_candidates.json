@@ -97,15 +97,18 @@
       "candidates": [
         {
           "title": "¿Qué le duele?",
-          "level": "A2",
+          "creator": "VideoEle — Agustín Iruela",
+          "level": "A2 (publisher-labelled)",
           "region": "Spain",
           "youtube": "https://www.youtube.com/watch?v=RuUATVB-0rY",
           "publisher_page": "https://www.videoele.com/A2-Que-le-duele.html",
-          "fit": "Части тела, заболевания и недомогания, doler, no...nada. Точное совпадение.",
-          "transcript": "reviewed",
-          "status": "content_metadata_and_transcript_verified_audio_preview_pending"
+          "fit": "Точное совпадение с темой Salud y bienestar: описание недомоганий, части тела, verbo doler и отрицание no...nada. Официальная страница подтверждает уровень A2 и содержание.",
+          "transcript": "available_on_publisher_page",
+          "status": "selected_single_video_page_level_topic_and_youtube_id_verified_audio_preview_pending",
+          "rights": "VideoEle CC BY-NC-ND 4.0. Бесплатный просмотр на YouTube; лицензия запрещает коммерческое использование и распространение производных материалов. Не включать в коммерческий лид-магнит без отдельного письменного разрешения; не копировать видео или транскрипт."
         }
-      ]
+      ],
+      "selection_note": "Выбран один ролик с точным совпадением темы и уровня. Коммерческое использование ограничено лицензией CC BY-NC-ND; до разрешения не считать допущенным к коммерческому лид-магниту."
     },
     {
       "unit": "es_a2_u05_trabajo_estudios",
@@ -395,7 +398,7 @@
       "Mextalki #139 Gentrificación 2.0 and #145 Los Niños Héroes are excluded from the core learner path after reviewing official glossaries containing extensive strong vulgar/sexual expressions. #118 Periódicos mexicanos is excluded because publisher marks it NSFW and discusses nota roja."
     ],
     "last_unit_selection_update": "2026-11-11",
-    "last_unit_selection_note": "Для A2 Compras y servicios выбран один мексиканский YouTube-ролик Español con Ali. Проверены автор, тема, регион и частичный текстовый фрагмент; полное прослушивание не подтверждено."
+    "last_unit_selection_note": "Для A2 Salud y bienestar выбран VideoEle ¿Qué le duele? Страница издателя подтверждает A2, тему doler/части тела/недомогания, ссылку на YouTube и транскрипт. Лицензия CC BY-NC-ND исключает коммерческое использование без отдельного разрешения. Прослушивание остается pending."
   },
   "removed_or_corrected": [
     "Removed claim that VideoEle video catalogue is cleared for use in The Teachers paid product: NC-ND licence explicitly prohibits commercial use and derivative redistribution.",

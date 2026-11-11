@@ -173,7 +173,7 @@
           "id": "es_es_u4_e4",
           "skill": "grammar",
           "type": "choice",
-          "prompt": "Completa: «A Clara ___ las ensaladas».",
+          "prompt": "Completa: «A Clara le ___ las ensaladas».",
           "options": [
             "gusta",
             "gustan",

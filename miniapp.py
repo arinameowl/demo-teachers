@@ -240,7 +240,7 @@ async def get_spanish_lead(variant: str, user: dict = Depends(authorized_user)):
         "book": strip_answers(book),
         "video": strip_answers(video),
         "series": strip_answers(series),
-        "level_note": "Видео из Мексики помечено уровнем A2; остальные материалы подборки — A1.",
+        "level_note": ("Видео на мексиканском испанском рассчитано на A2; книга и сериал — A1." if variant == "es_mx" else "Книга, видео и сериал в этой подборке рассчитаны на A1."),
     }
 
 

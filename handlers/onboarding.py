@@ -55,6 +55,20 @@ async def cmd_start(message: Message, state: FSMContext, command: CommandObject)
 async def start_material_selection(callback: CallbackQuery, state: FSMContext):
     await state.clear()
     await db.update_user(callback.from_user.id, awaiting_contact=0, quiz_state=None)
+    await callback.message.answer(texts.LANGUAGE_QUESTION, reply_markup=kb.language_keyboard())
+    await callback.answer()
+
+
+@router.callback_query(F.data.startswith("language:"))
+async def choose_language(callback: CallbackQuery, state: FSMContext):
+    await state.clear()
+    language = callback.data.split(":", 1)[1]
+    if language not in {"en", "es"}:
+        await callback.answer("Этот язык пока недоступен.", show_alert=True)
+        return
+    await db.update_user(callback.from_user.id, language=language, goal=None, level=None, level_source=None, quiz_state=None)
+    await db.log_funnel_event(callback.from_user.id, "language_selected", language)
+    await callback.message.edit_text("Язык для подборки: " + ("английский" if language == "en" else "испанский") + ".")
     await callback.message.answer(texts.GOAL_QUESTION, reply_markup=kb.goal_keyboard())
     await callback.answer()
 
@@ -82,7 +96,7 @@ async def level_manual(callback: CallbackQuery, state: FSMContext):
 async def level_set(callback: CallbackQuery, state: FSMContext):
     await state.clear()
     level = callback.data.split(":")[1]
-    await db.update_user(callback.from_user.id, level=level, level_source="manual", stage="onboarded", quiz_state=None)
+    user_before = await db.get_user(callback.from_user.id) or {}\n    language = user_before.get("language") or "en"\n    await db.update_user(callback.from_user.id, level=level, language=language, level_source="manual", stage="onboarded", quiz_state=None)
     await db.log_funnel_event(callback.from_user.id, "level_selected", f"manual:{level}")
     user = await db.get_user(callback.from_user.id) or {}
     await callback.message.edit_text(
@@ -137,7 +151,7 @@ async def quiz_answer(callback: CallbackQuery):
     except (ValueError, TypeError):
         await callback.answer("Этот вариант ответа больше не активен.", show_alert=True)
         return
-    if not 0 <= q_index < len(quiz.QUESTIONS) or not 0 <= opt_index < len(quiz.QUESTIONS[q_index]["options"]):
+    saved = await db.get_quiz_state(callback.from_user.id)\n    questions = saved.get("questions") if saved else None\n    if not questions:\n        questions = quiz.QUESTIONS\n    if not 0 <= q_index < len(questions) or not 0 <= opt_index < len(questions[q_index]["options"]):
         await callback.answer("Этот вариант ответа больше не активен.", show_alert=True)
         return
 

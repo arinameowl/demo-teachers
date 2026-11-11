@@ -380,11 +380,11 @@
     }
   ],
   "next_actions": [
-    "Find YouTube sources whose licence or written permission allows commercial educational use, or obtain free written permission from creators.",
-    "Continue Mexican-specific search with verified Mexican speakers, avoiding generic Latino labels.",
-    "Do not build comprehension exercises until exact video has been listened to and transcript checked.",
-    "Use VideoEle only for internal research / candidate evaluation unless written commercial permission is obtained.",
-    "Для es_mx искать не просто Latino: требуется страна говорящего (México) и подходящий уровень каждого конкретного ролика."
+    "Select a short list of exact Spanish-with-CJ interviews featuring a confirmed Mexican speaker; verify speaker, level, duration and transcript.",
+    "Check individual Mextalki and Easy Spanish video captions/transcripts and screen full content, including the NSFW flag on Mextalki #118.",
+    "Where the clip is too long, define a time-bounded listening segment but keep playback in the original YouTube player; do not cut or redistribute the clip.",
+    "Only after the actual content is reviewed, write original The Teachers pre-listening, gist, detail, vocabulary and post-listening tasks; do not reproduce provider worksheets.",
+    "Obtain permission or legal clearance for any third-party media that will be embedded as part of the paid course; otherwise create original recorded audio for that unit."
   ],
   "audit": {
     "checked_on": "2026-11-11",
@@ -399,7 +399,12 @@
       "audio_playback": "not_verified",
       "commercial_license": "not_cleared",
       "paid_access": "free_to_watch_and_download_study_PDFs_on_publisher_site"
-    }
+    },
+    "latest_round": "2026-11-11",
+    "new_mexican_candidates": "Added one Easy Spanish Mexico City street-interview candidate and three Mextalki Mexico episodes. Exact video IDs and topical metadata were identified; no claim of end-to-end audio preview.",
+    "level_method": "Channel-level or third-party subtitle difficulty scores are screening signals only, not CEFR certification. All added Mextalki levels remain provisional and must be checked against the full clip/transcript before lesson tasks are written.",
+    "commercial_use": "A public YouTube URL or enabled embed is not treated as a blanket commercial license. Candidate status remains conditional pending review of embedding, platform terms and the paid-course context.",
+    "audio_integrity": "No audio candidate is marked listened-to unless actual playback was completed. Metadata, descriptions and subtitle-score summaries do not verify accent quality, speed, intonation or sound quality."
   },
   "removed_or_corrected": [
     "Removed claim that VideoEle video catalogue is cleared for use in The Teachers paid product: NC-ND licence explicitly prohibits commercial use and derivative redistribution.",
@@ -445,6 +450,54 @@
         "publisher_page": "https://espanol.yabla.com/Spanish-Playground-series-4811",
         "fit": "Yabla подтверждает мексиканский вариант и beginner-level у отдельных роликов, включая Presentaciones y saludos и Buena Gente S1E1. Это полезно для начального мексиканского аудирования, но не следует маркировать как A2/B1 без проверки конкретного видео.",
         "status": "region_and_beginner_level_verified_access_and_adult_suitability_pending"
+      },
+      {
+        "unit": "es_b1_unit03_medios_opinion",
+        "title": "Easy Spanish — What do Mexicans think about the film ROMA?",
+        "level": "B1+ provisional; authentic street interviews, exact CEFR level not assigned by publisher",
+        "speaker_region": "Mexico City, Mexico",
+        "youtube": "https://www.youtube.com/watch?v=5NOqd_OUO3E",
+        "publisher_page": "https://www.youtube.com/watch?v=5NOqd_OUO3E",
+        "fit": "Mexican street interviews about the film ROMA, its significance and relevance to Mexican culture and society. Direct thematic fit for expressing opinions about media and cultural representation. Authentic unscripted speech; use as stretch listening with staged gist/detail tasks rather than claiming it is easy B1.",
+        "transcript": "Video description includes a correction at 03:21; full transcript availability not confirmed",
+        "status": "video_identity_topic_and_mexico_location_verified_audio_preview_and_caption_check_pending",
+        "rights": "YouTube standard terms; use only via original YouTube player if embedding is enabled. No permission to download, copy, edit or redistribute. Commercial course integration requires separate legal review."
+      },
+      {
+        "unit": "es_b1_unit03_medios_opinion",
+        "title": "Mextalki — Podcast #118: Periódicos mexicanos",
+        "level": "B1–C1 provisional; Linglass score 44, vocabulary band B1–C1; publisher CEFR label not stated",
+        "speaker_region": "Mexico",
+        "youtube": "https://www.youtube.com/watch?v=Em7nTmUUwP0",
+        "publisher_page": "https://www.youtube.com/watch?v=Em7nTmUUwP0",
+        "fit": "Explicitly about Mexican newspapers; highly relevant to the media/information unit. The source flags the episode NSFW and the estimated vocabulary range is high, so do not use in the core B1 path unless the full content is screened and suitability confirmed.",
+        "transcript": "Human-written subtitles reported for 75% of the channel's videos overall; availability on this episode not individually confirmed",
+        "status": "exact_video_and_topic_verified_content_safety_and_audio_preview_pending",
+        "rights": "YouTube standard terms; embed permission and commercial course context require separate review. Do not copy or redistribute."
+      },
+      {
+        "unit": "es_b1_unit04_convivencia_sociedad",
+        "title": "Mextalki — Podcast #139: La gentrificación 2.0",
+        "level": "B1 provisional / B1–C1 estimated vocabulary band; 42 minutes, medium pace",
+        "speaker_region": "Mexico",
+        "youtube": "https://www.youtube.com/watch?v=cMJcPXTlJw4",
+        "publisher_page": "https://www.youtube.com/watch?v=cMJcPXTlJw4",
+        "fit": "Discussion of gentrification in Mexico; strong thematic fit for urban change, coexistence and social issues. Long-form authentic input; consider only as a selected listening extract with a clear time range after preview, while keeping the original player intact.",
+        "transcript": "Subtitle availability not individually confirmed",
+        "status": "exact_video_and_topic_verified_audio_preview_and_transcript_check_pending",
+        "rights": "YouTube standard terms; do not download, edit or redistribute. Commercial integration and embedding to be reviewed."
+      },
+      {
+        "unit": "es_b1_unit06_cultura_memoria",
+        "title": "Mextalki — Podcast #145: Los Niños Héroes",
+        "level": "B1 provisional / B1–B2 estimated vocabulary band; 47 minutes, medium pace",
+        "speaker_region": "Mexico",
+        "youtube": "https://www.youtube.com/watch?v=Tt8UtL4j3XA",
+        "publisher_page": "https://www.youtube.com/watch?v=Tt8UtL4j3XA",
+        "fit": "Mexican historical memory and national narrative; potentially relevant to culture and collective memory. Long and likely lexically dense, so reserve for an optional B1+ extension, not the core unit.",
+        "transcript": "Subtitle availability not individually confirmed",
+        "status": "exact_video_and_topic_verified_audio_preview_and_transcript_check_pending",
+        "rights": "YouTube standard terms; do not download, edit or redistribute. Commercial integration and embedding to be reviewed."
       }
     ]
   },
@@ -478,6 +531,15 @@
         "evidence": "The site offers more than 400 short videos by speakers from Spanish-speaking countries, with speaker country, beginner/intermediate/advanced labels, transcript, quiz and vocabulary. Individual pages show Vimeo embeds and site copyright notice.",
         "decision": "not_selected_pending_permission",
         "reason": "Strong pedagogical fit and explicit Mexican speakers are available, but it is not YouTube and no commercial reuse license was identified. Do not copy, embed or integrate without permission."
+      },
+      {
+        "source": "YouTube standard embeddable player — platform permission framework",
+        "url": "https://www.youtube.com/t/terms",
+        "platform": "Official YouTube embed player",
+        "license": "Platform terms; not a Creative Commons license for the underlying video",
+        "evidence": "YouTube Terms distinguish personal/non-commercial viewing from showing videos through the embeddable player; Help explains how to embed and notes that API Terms apply. YouTube also says it may enforce terms against sites that primarily aggregate embedded videos to generate ad revenue.",
+        "decision": "conditional_embed_only_not_blanket_commercial_license",
+        "reason": "A paid language course with original authored exercises is not automatically cleared merely because a YouTube video is public or embeddable. Check per-video embed availability and get legal review of the actual commercial course context. Never download, rehost, alter or copy video/audio/transcript."
       }
     ],
     "current_conclusion": "В этой проверке не найден новый источник YouTube с подтвержденной лицензией, допускающей коммерческое использование. Источники с NC исключены. Открытая CC BY коллекция UT Austin заслуживает отдельной проверки как резерв вне YouTube, но не добавляется в основной видеопул без изменения требования платформы. Для текущей библиотеки продолжаем проверять конкретные YouTube-ролики и используем только оригинальные ссылки/официальный embed без копирования чужих файлов и транскриптов; юридический режим коммерческого использования конкретных роликов проверяется отдельно."

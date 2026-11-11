@@ -140,7 +140,7 @@
     const seriesPlayer = seriesId ? '<iframe class="player" src="https://www.youtube-nocookie.com/embed/' + esc(seriesId) + '?playsinline=1&rel=0" title="' + esc(series.title) + '" allowfullscreen loading="lazy"></iframe>' : '';
     $('materials').innerHTML =
       '<article class="card"><div class="tag">Чтение · A1</div><h3>' + esc(book.title) + '</h3><p class="desc">' + esc(d.variant === 'es_es' ? 'Испанский Испании' : 'Испанский Мексики') + '</p><div class="actions"><button class="action" id="spanish-read" type="button">Читать книгу</button></div>' +
-      spanishSection('book', book, 'book', 'Проверка понимания текста') + '</article>' +
+      spanishSection('book', book, 'after_watching', 'Проверка понимания текста') + '</article>' +
       '<article class="card"><div class="tag">Видео · ' + esc(video.level) + '</div><h3>' + esc(video.title) + '</h3><p class="desc">' + esc(video.content_summary || '') + '</p>' + videoPlayer +
       '<div class="actions"><a class="action secondary" href="' + esc(video.youtube_url) + '" target="_blank" rel="noopener">Открыть на YouTube</a></div>' +
       spanishSection('video', video, 'before_watching', 'Перед просмотром') +

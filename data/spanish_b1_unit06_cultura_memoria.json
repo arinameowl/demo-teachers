@@ -86,73 +86,73 @@
       "context_note": "В Испании местные праздники часто связаны с историей конкретного города или района. Они могут включать музыку, уличные мероприятия, религиозные элементы или гастрономические традиции; содержание различается по регионам.",
       "reading": {
         "title": "Una tradición compartida",
-        "text": "Durante muchos años, la fiesta del barrio se celebró casi de la misma manera. Las familias preparaban comida, los músicos tocaban en la plaza y los niños participaban en juegos. Con el tiempo llegaron nuevos vecinos y propusieron actividades diferentes. Algunas personas temían que la celebración perdiera su carácter, pero otras defendían que las tradiciones también pueden evolucionar. Hoy se combinan elementos antiguos y nuevos, y la fiesta sigue siendo un punto de encuentro."
+        "text": "Durante muchos años, la fiesta del barrio se celebró casi de la misma manera. Las familias preparaban comida, los músicos tocaban en la plaza y los niños participaban en juegos. Con el tiempo llegaron nuevos vecinos y propusieron actividades diferentes. Algunas personas temían que la celebración perdiera su carácter, pero otras defendían la idea de que las tradiciones también evolucionan. Hoy se combinan elementos antiguos y nuevos, y la fiesta sigue siendo un punto de encuentro."
       },
       "exercises": [
         {
           "id": "es_es_b1_u6_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué temían algunas personas?",
+          "prompt": "¿Qué cambió cuando llegaron nuevos vecinos?",
           "options": [
-            "Que la celebración perdiera su carácter.",
-            "Que la actividad se canceló sin explicación",
-            "Que todos rechazaron la propuesta"
+            "Propusieron actividades diferentes para la fiesta.",
+            "La celebración dejó de existir inmediatamente.",
+            "Las familias dejaron de reunirse."
           ],
           "answer": 0,
-          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+          "explanation": "La lectura cuenta que los nuevos vecinos aportaron otras actividades."
         },
         {
           "id": "es_es_b1_u6_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "prompt": "¿Qué es lo que más valora Mateo de la fiesta?",
           "options": [
-            "El texto presenta una situación relacionada con el tema y sus matices",
-            "El texto afirma que todas las situaciones son idénticas",
-            "El texto no ofrece información concreta"
+            "Que las personas se reúnan y recuerden sus orígenes.",
+            "Que no participe gente joven.",
+            "Que la celebración nunca cambie."
           ],
           "answer": 0,
-          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+          "explanation": "Mateo destaca el encuentro y la memoria compartida."
         },
         {
           "id": "es_es_b1_u6_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Me alegra que todos ___.",
+          "prompt": "Completa: «Me alegra que estas celebraciones se ___».",
           "options": [
-            "participen",
-            "participan",
-            "participaron"
+            "mantengan",
+            "mantienen",
+            "mantuvieron"
           ],
           "answer": 0,
-          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+          "explanation": "Después de me alegra que se usa subjuntivo."
         },
         {
           "id": "es_es_b1_u6_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "prompt": "¿Qué expresión sirve para hablar de una evolución gradual?",
           "options": [
-            "Sin embargo",
-            "Por la mañana",
-            "Al lado de"
+            "Con el tiempo",
+            "De repente, sin relación",
+            "A pesar de ayer"
           ],
           "answer": 0,
-          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+          "explanation": "Con el tiempo presenta un cambio progresivo."
         },
         {
           "id": "es_es_b1_u6_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "prompt": "Según la nota cultural de México, ¿qué afirmación sobre Día de Muertos es adecuada?",
           "options": [
-            "Que puede variar según la región y las familias",
-            "Que se practica igual en todos los lugares",
-            "Que nunca cambia con el tiempo"
+            "Las prácticas y los símbolos varían entre regiones y familias.",
+            "Todas las familias lo celebran exactamente igual.",
+            "Es la única tradición cultural del país."
           ],
           "answer": 0,
-          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+          "explanation": "La nota evita generalizar una celebración diversa."
         }
       ]
     },
@@ -205,73 +205,73 @@
       "context_note": "В Мексике традиции часто соединяют семейную память, местную историю, музыку и еду. Día de Muertos — узнаваемый пример, но практики и символы различаются между регионами и семьями.",
       "reading": {
         "title": "Una tradición compartida",
-        "text": "Durante muchos años, la celebración de la comunidad se realizó casi de la misma manera. Las familias preparaban comida, los músicos tocaban en la plaza y los niños participaban en juegos. Con el tiempo llegaron nuevos vecinos y propusieron actividades diferentes. Algunas personas temían que la fiesta perdiera su carácter, pero otras defendían que las tradiciones también pueden evolucionar. Hoy se combinan elementos antiguos y nuevos, y la celebración sigue siendo un punto de encuentro."
+        "text": "Durante muchos años, la celebración de la comunidad se realizó casi de la misma manera. Las familias preparaban comida, los músicos tocaban en la plaza y los niños participaban en juegos. Con el tiempo llegaron nuevos vecinos y propusieron actividades diferentes. Algunas personas temían que la fiesta perdiera su carácter, pero otras defendían la idea de que las tradiciones también evolucionan. Hoy se combinan elementos antiguos y nuevos, y la celebración sigue siendo un punto de encuentro."
       },
       "exercises": [
         {
           "id": "es_mx_b1_u6_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué cambió con la llegada de nuevos vecinos?",
+          "prompt": "¿Qué cambió cuando llegaron nuevos vecinos?",
           "options": [
-            "Propusieron actividades diferentes.",
-            "Que la actividad se canceló sin explicación",
-            "Que todos rechazaron la propuesta"
+            "Propusieron actividades diferentes para la celebración.",
+            "La fiesta se canceló para siempre.",
+            "Dejaron de organizarse actividades."
           ],
           "answer": 0,
-          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+          "explanation": "La lectura indica que los nuevos vecinos propusieron otras actividades."
         },
         {
           "id": "es_mx_b1_u6_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "prompt": "¿Qué valora Mateo de la celebración?",
           "options": [
-            "El texto presenta una situación relacionada con el tema y sus matices",
-            "El texto afirma que todas las situaciones son idénticas",
-            "El texto no ofrece información concreta"
+            "Que las personas se reúnan y recuerden sus orígenes.",
+            "Que no haya cambios ni nuevas ideas.",
+            "Que solo participen los mayores."
           ],
           "answer": 0,
-          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+          "explanation": "Mateo destaca el encuentro y la memoria compartida."
         },
         {
           "id": "es_mx_b1_u6_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Me alegra que todos ___.",
+          "prompt": "Completa: «Me da gusto que estas celebraciones se ___».",
           "options": [
-            "participen",
-            "participan",
-            "participaron"
+            "mantengan",
+            "mantienen",
+            "mantuvieron"
           ],
           "answer": 0,
-          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+          "explanation": "Después de me da gusto que se usa subjuntivo."
         },
         {
           "id": "es_mx_b1_u6_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "prompt": "¿Qué expresión sirve para hablar de una evolución gradual?",
           "options": [
-            "Sin embargo",
-            "Por la mañana",
-            "Al lado de"
+            "Con el tiempo",
+            "De repente, sin relación",
+            "A pesar de ayer"
           ],
           "answer": 0,
-          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+          "explanation": "Con el tiempo presenta un cambio progresivo."
         },
         {
           "id": "es_mx_b1_u6_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "prompt": "Según la nota cultural, ¿qué afirmación sobre Día de Muertos es adecuada?",
           "options": [
-            "Que puede variar según la región y las familias",
-            "Que se practica igual en todos los lugares",
-            "Que nunca cambia con el tiempo"
+            "Las prácticas y los símbolos varían entre regiones y familias.",
+            "Todas las familias lo celebran exactamente igual.",
+            "Es la única tradición cultural del país."
           ],
           "answer": 0,
-          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+          "explanation": "La nota destaca la diversidad regional y familiar."
         }
       ]
     }

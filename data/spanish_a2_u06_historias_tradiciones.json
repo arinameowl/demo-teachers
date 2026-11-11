@@ -6,37 +6,85 @@
   "unit_id": "es_a2_u06_historias_tradiciones",
   "title": "Historias y celebraciones",
   "learning_goals": [
-    "Рассказывать о событии в прошлом и описывать обстановку",
-    "Различать завершенные действия и фоновые или повторяющиеся ситуации в прошлом",
-    "Рассказывать о семейных праздниках и традициях",
-    "Использовать pretérito indefinido и imperfecto в простом повествовании"
+    "Describir cómo eran los lugares, las personas y las costumbres en el pasado",
+    "Contar acontecimientos terminados y ordenar los hechos de una historia",
+    "Explicar qué estaba pasando cuando ocurrió algo",
+    "Hablar de celebraciones familiares y tradiciones de distintas comunidades",
+    "Distinguir y utilizar el pretérito imperfecto y el pretérito indefinido en relatos sencillos"
   ],
+  "editorial_intro": {
+    "title": "Las historias que compartimos",
+    "text": "Una celebración puede quedarse en la memoria por sus sonidos, las personas que estaban allí o algo inesperado que ocurrió. Para contarla, necesitamos dos perspectivas: describir cómo era el ambiente y explicar qué pasó. En este material vas a descubrir cómo combinar el imperfecto y el indefinido para contar recuerdos y hablar de tradiciones.",
+    "opening_question": "¿Qué celebración recuerdas de tu infancia? ¿Cómo era y qué pasó aquel día?",
+    "objective": "Al terminar, podrás describir el contexto de una celebración y contar sus acontecimientos principales con una secuencia clara.",
+    "estimated_time": "35–45 minutos",
+    "route": [
+      "Observa dos recuerdos en contexto",
+      "Compara imperfecto e indefinido",
+      "Practica cómo construir una historia",
+      "Cuenta un recuerdo propio"
+    ]
+  },
   "grammar": [
     {
       "topic": "imperfecto_regular",
-      "explanation_ru": "Pretérito imperfecto используется для описания фона, привычек и повторяющихся действий в прошлом. Для глаголов на -ar окончания: -aba, -abas, -aba, -ábamos, -abais, -aban; для -er/-ir: -ía, -ías, -ía, -íamos, -íais, -ían.",
+      "title": "Pretérito imperfecto: el escenario y las costumbres",
+      "explanation_ru": "Используйте imperfecto, чтобы описывать обстановку, возраст, состояния, погоду и привычные или повторяющиеся действия в прошлом. Для глаголов на -ar окончания: -aba, -abas, -aba, -ábamos, -abais, -aban. Для -er/-ir: -ía, -ías, -ía, -íamos, -íais, -ían. Это время помогает ответить на вопросы «каким было?» и «что обычно происходило?».",
       "examples": [
-        "Cuando era pequeña, visitaba a mis abuelos.",
-        "La casa tenía un jardín grande.",
-        "Todos los veranos pasábamos una semana allí."
+        "Cuando era pequeña, visitaba a mis abuelos cada verano.",
+        "La plaza estaba llena y hacía calor.",
+        "Todos los años preparábamos una comida especial."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Cuando fui pequeño, jugaba en esa plaza.",
+          "correct": "Cuando era pequeño, jugaba en esa plaza.",
+          "explanation": "Для возраста и описания состояния обычно используется ser в imperfecto: era."
+        },
+        {
+          "incorrect": "Antes, cada domingo comí con mis abuelos.",
+          "correct": "Antes, cada domingo comía con mis abuelos.",
+          "explanation": "Повторяющаяся привычка в прошлом выражается imperfecto."
+        }
       ]
     },
     {
       "topic": "imperfecto_irregular",
-      "explanation_ru": "Три особенно частотных неправильных глагола в imperfecto: ser → era, ir → iba, ver → veía. Остальные формы этого времени в рамках блока строятся по регулярным моделям.",
+      "title": "Три частотных неправильных глагола",
+      "explanation_ru": "В imperfecto только три основных неправильных глагола: ser → era, ir → iba, ver → veía. Остальные глаголы образуют это время по регулярным моделям. Обратите внимание на ударение в veía и других формах на -ía.",
       "examples": [
-        "Era una fiesta familiar.",
-        "Íbamos al pueblo cada año.",
-        "Veía a mis primos todos los veranos."
+        "La fiesta era en casa de mis abuelos.",
+        "De pequeños íbamos al mismo pueblo.",
+        "Cada año veía a mis primos durante las vacaciones."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "De niña fui al pueblo todos los veranos.",
+          "correct": "De niña iba al pueblo todos los veranos.",
+          "explanation": "Повторяющееся действие в прошлом обычно требует imperfecto: iba."
+        }
       ]
     },
     {
       "topic": "indefinido_vs_imperfecto",
-      "explanation_ru": "Indefinido передает завершенное событие, которое продвигает рассказ: llegó, empezó, conocí. Imperfecto описывает фон, состояние или привычку: hacía buen tiempo, la música sonaba, vivíamos allí. В одном рассказе времена часто используются вместе.",
+      "title": "Dos perspectivas: qué pasaba y qué pasó",
+      "explanation_ru": "Imperfecto описывает фон, состояние или действие в процессе: hacía frío, la música sonaba, la gente bailaba. Indefinido обозначает конкретное завершенное событие: llegó mi familia, empezó el concierto, conocí a alguien. Эти времена часто сочетаются: Cuando llegué, todos bailaban. Действие в imperfecto уже происходило, когда случилось событие в indefinido.",
       "examples": [
-        "Cuando llegué, todos bailaban.",
-        "Hacía frío y llovía cuando empezó la fiesta.",
-        "De pequeña iba al pueblo y un día conocí a mi mejor amiga."
+        "Cuando llegamos, la celebración ya empezaba.",
+        "Mientras preparábamos la cena, llegaron nuestros primos.",
+        "La música sonaba cuando empezó a llover."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Cuando llegaba, todos bailaron.",
+          "correct": "Cuando llegué, todos bailaban.",
+          "explanation": "В этой ситуации llegada — отдельное завершенное событие, а bailar — фон, уже происходивший в тот момент."
+        },
+        {
+          "incorrect": "Ayer hacía una tarta y la llevé a casa de mi abuela.",
+          "correct": "Ayer hice una tarta y la llevé a casa de mi abuela.",
+          "explanation": "При рассказе о двух завершенных действиях используйте indefinido."
+        }
       ]
     }
   ],
@@ -47,19 +95,19 @@
       "dialogue": [
         {
           "speaker": "Marta",
-          "text": "¿Cómo fue la fiesta del pueblo el verano pasado?"
+          "text": "¿Qué tal fue la fiesta del pueblo el verano pasado?"
         },
         {
           "speaker": "Álvaro",
-          "text": "Fue muy bonita. Cuando llegamos, la plaza estaba llena de gente."
+          "text": "¡Muy bien! Cuando llegamos, la plaza estaba llena de gente."
         },
         {
           "speaker": "Marta",
-          "text": "¿Había música?"
+          "text": "¿Había música en directo?"
         },
         {
           "speaker": "Álvaro",
-          "text": "Sí, un grupo tocaba música tradicional y muchas personas bailaban."
+          "text": "Sí, un grupo tocaba canciones tradicionales y muchas personas bailaban."
         },
         {
           "speaker": "Marta",
@@ -71,22 +119,135 @@
         },
         {
           "speaker": "Marta",
-          "text": "¿Qué pasó cuando empezó el concierto?"
+          "text": "¿Y qué pasó durante el concierto?"
         },
         {
           "speaker": "Álvaro",
-          "text": "De repente, empezó a llover. La gente buscó refugio, pero la música continuó."
+          "text": "De repente empezó a llover. La gente buscó refugio, pero el grupo siguió tocando."
         },
         {
           "speaker": "Marta",
-          "text": "¡Vaya! ¿Al final lo pasasteis bien?"
+          "text": "¡Qué sorpresa! ¿Se terminó pronto la fiesta?"
         },
         {
           "speaker": "Álvaro",
-          "text": "Muchísimo. La lluvia paró y terminamos la noche bailando en la plaza."
+          "text": "No. La lluvia paró después de un rato y volvimos a la plaza."
+        },
+        {
+          "speaker": "Marta",
+          "text": "¿Y cómo acabó la noche?"
+        },
+        {
+          "speaker": "Álvaro",
+          "text": "Cenamos con mis abuelos y terminamos bailando todos juntos."
         }
       ],
-      "context_note": "En muchos pueblos de España se celebran fiestas locales durante el verano, a menudo con música, actividades en la plaza y encuentros de vecinos y familiares. Las costumbres concretas cambian según la región.",
+      "context_note": "En muchos pueblos de España se organizan fiestas locales, a menudo en verano. Puede haber música, actividades en la plaza y comidas compartidas. Las fechas, los actos y las costumbres dependen de cada localidad y región.",
+      "vocabulary_in_context": [
+        {
+          "term": "fiesta del pueblo",
+          "meaning": "celebración organizada por una localidad",
+          "example": "Fuimos a la fiesta del pueblo en agosto."
+        },
+        {
+          "term": "plaza",
+          "meaning": "espacio público abierto que suele ser un punto de encuentro",
+          "example": "La plaza estaba llena de gente."
+        },
+        {
+          "term": "música en directo",
+          "meaning": "música interpretada en ese momento, delante del público",
+          "example": "Un grupo tocaba música en directo."
+        },
+        {
+          "term": "buscar refugio",
+          "meaning": "ir a un lugar protegido del mal tiempo o de un peligro",
+          "example": "Cuando empezó a llover, buscamos refugio."
+        },
+        {
+          "term": "seguir + gerundio",
+          "meaning": "continuar haciendo algo",
+          "example": "El grupo siguió tocando a pesar de la lluvia."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          {
+            "expression": "¡Qué tal fue…?",
+            "function": "Preguntar cómo salió una celebración o una experiencia."
+          },
+          {
+            "expression": "De pequeño/a…",
+            "function": "Introducir una costumbre o un recuerdo de la infancia."
+          },
+          {
+            "expression": "De repente…",
+            "function": "Presentar un acontecimiento inesperado."
+          }
+        ],
+        "regional_note": "«Fiestas del pueblo» y «fiestas locales» son expresiones habituales para celebraciones de una localidad. No existe un único modelo de fiesta: las tradiciones cambian de un lugar a otro."
+      },
+      "guided_practice": {
+        "notice": {
+          "instruction": "Lee el diálogo y observa cómo se alternan las descripciones del ambiente y los acontecimientos concretos.",
+          "tasks": [
+            "Encuentra tres formas de imperfecto que describen el ambiente o acciones en desarrollo.",
+            "Localiza tres formas de indefinido que cuentan lo que ocurrió.",
+            "Busca la expresión que introduce un acontecimiento inesperado."
+          ]
+        },
+        "practice": {
+          "instruction": "Completa las frases con imperfecto o indefinido. Decide si la frase describe el contexto o cuenta un hecho terminado.",
+          "tasks": [
+            "Cuando nosotros ___ (llegar), la plaza ___ (estar) llena.",
+            "De pequeño, Álvaro ___ (ir) a la fiesta cada verano.",
+            "Mientras la gente ___ (bailar), empezó a llover.",
+            "Ayer mis primos ___ (venir) y todos ___ (cenar) juntos."
+          ],
+          "answers": [
+            "llegamos; estaba",
+            "iba",
+            "bailaba",
+            "vinieron; cenamos"
+          ]
+        },
+        "communicate": {
+          "instruction": "En parejas, contad una celebración imaginaria en la que ocurre algo inesperado. Una persona describe el ambiente y la otra pregunta por los acontecimientos.",
+          "tasks": [
+            "Describid el lugar, el tiempo y lo que hacía la gente usando imperfecto.",
+            "Contad dos o tres acontecimientos terminados usando indefinido.",
+            "Incluid una sorpresa con «de repente» y explicad cómo terminó la celebración."
+          ]
+        }
+      },
+      "personal_application": {
+        "scenario": "Un amigo te pregunta por una fiesta local, una reunión familiar o una celebración que recuerdas de pequeño/a.",
+        "task": "Cuenta el recuerdo en 7–9 frases. Describe cómo era el lugar y qué solía pasar; después explica qué ocurrió en una ocasión concreta y cómo terminó.",
+        "support": [
+          "Cuando era pequeño/a…",
+          "Todos los años…",
+          "La gente estaba…",
+          "De repente…",
+          "Al final…"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "La pronunciación y la acentuación de las formas de imperfecto en -ía y de indefinido en -ó / -é.",
+        "steps": [
+          "Lee en voz alta: tenía, hacía, veía; después: llegó, empezó, terminé.",
+          "Compara «bailaba» y «bailó»: comprueba que las terminaciones se distinguen claramente.",
+          "Graba cuatro frases sobre una celebración y escucha si se entiende qué era el contexto y qué ocurrió."
+        ],
+        "audio_model_status": "pending"
+      },
+      "reflection": {
+        "can_do": [
+          "Puedo describir cómo era un lugar o una celebración en el pasado.",
+          "Puedo hablar de costumbres y acciones repetidas usando imperfecto.",
+          "Puedo contar acontecimientos terminados usando indefinido.",
+          "Puedo combinar los dos tiempos para contar un recuerdo sencillo."
+        ]
+      },
       "exercises": [
         {
           "id": "es_es_a2_u6_e1",
@@ -94,9 +255,9 @@
           "type": "choice",
           "prompt": "¿Qué recuerda Álvaro?",
           "options": [
-            "Una fiesta del pueblo del verano pasado",
-            "Su primer día en una oficina",
-            "Un viaje en tren a la costa"
+            "Una fiesta local del verano pasado",
+            "Un examen en la universidad",
+            "Un viaje de trabajo"
           ],
           "answer": 0,
           "explanation": "Álvaro cuenta cómo fue la fiesta del pueblo a la que asistió el verano pasado."
@@ -108,55 +269,55 @@
           "prompt": "¿Qué ocurrió durante el concierto?",
           "options": [
             "Empezó a llover",
-            "Se fue la luz",
-            "El grupo dejó de tocar"
+            "Se apagaron todas las luces",
+            "El grupo se marchó inmediatamente"
           ],
           "answer": 0,
-          "explanation": "Álvaro dice que empezó a llover, pero la música continuó."
+          "explanation": "Empezó a llover, pero el grupo siguió tocando."
         },
         {
           "id": "es_es_a2_u6_e3",
+          "skill": "vocabulary",
+          "type": "choice",
+          "prompt": "¿Qué significa «música en directo»?",
+          "options": [
+            "Música interpretada delante del público en ese momento",
+            "Música que solo se escucha en la radio",
+            "Música grabada hace muchos años"
+          ],
+          "answer": 0,
+          "explanation": "La música en directo se interpreta en vivo, por ejemplo, durante un concierto."
+        },
+        {
+          "id": "es_es_a2_u6_e4",
           "skill": "grammar",
           "type": "choice",
-          "prompt": "Completa: «Cuando llegamos, muchas personas ___».",
+          "prompt": "Completa: «Cuando llegamos, muchas personas ___»",
           "options": [
             "bailaban",
             "bailaron",
             "bailan"
           ],
           "answer": 0,
-          "explanation": "Bailaban describe una acción en desarrollo que forma parte del contexto cuando llegaron."
-        },
-        {
-          "id": "es_es_a2_u6_e4",
-          "skill": "grammar",
-          "type": "choice",
-          "prompt": "Elige la combinación correcta: «De repente, ___ a llover y la gente ___ refugio».",
-          "options": [
-            "empezó / buscó",
-            "empezaba / buscaba",
-            "empieza / busca"
-          ],
-          "answer": 0,
-          "explanation": "Los dos hechos se presentan como acciones concretas y completas que hacen avanzar la historia: empezó y buscó."
+          "explanation": "Bailaban describe una acción que ya estaba en desarrollo cuando llegamos."
         },
         {
           "id": "es_es_a2_u6_e5",
           "skill": "culture",
           "type": "choice",
-          "prompt": "¿Dónde se celebran muchas actividades de las fiestas locales en los pueblos españoles?",
+          "prompt": "Según el texto, ¿dónde se organizan muchas actividades de las fiestas locales?",
           "options": [
             "En la plaza del pueblo",
             "En una estación de metro",
-            "En un centro comercial"
+            "En un aeropuerto"
           ],
           "answer": 0,
-          "explanation": "La plaza suele ser un punto de encuentro para actividades y celebraciones locales."
+          "explanation": "La plaza suele ser un espacio de encuentro para actividades locales, aunque las costumbres varían."
         }
       ],
       "reading": {
-        "title": "La fiesta de siempre",
-        "text": "Cuando Elena era niña, pasaba todos los veranos en el pueblo de sus abuelos. Por las tardes, los vecinos se reunían en la plaza y los niños jugaban cerca de la fuente. Un año, durante la fiesta local, empezó a llover justo antes del concierto. Al principio todos buscaron un lugar para protegerse, pero después la lluvia paró. La música volvió a sonar y la celebración continuó hasta tarde."
+        "title": "Una noche en el pueblo",
+        "text": "Cuando Elena era niña, pasaba los veranos en el pueblo de sus abuelos. Por las tardes, los vecinos se reunían en la plaza y los niños jugaban cerca de la fuente. El año pasado, Elena volvió para la fiesta local. La plaza estaba decorada y un grupo tocaba música cuando empezó a llover. Al principio, todos buscaron un lugar cubierto. Después salió el sol, la música continuó y la celebración terminó muy tarde."
       }
     },
     {
@@ -173,19 +334,19 @@
         },
         {
           "speaker": "Mariana",
-          "text": "¿Prepararon una ofrenda?"
+          "text": "¿Prepararon una ofrenda entre todos?"
         },
         {
           "speaker": "Jorge",
-          "text": "Sí. Mientras mi abuela colocaba las fotos, nosotros poníamos velas y comida."
+          "text": "Sí. Mi abuela colocaba las fotografías y nosotros poníamos las velas y la fruta."
         },
         {
           "speaker": "Mariana",
-          "text": "¿Qué pusieron en la ofrenda?"
+          "text": "¿Qué pusieron este año en la ofrenda?"
         },
         {
           "speaker": "Jorge",
-          "text": "Pan de muerto, fruta y algunos platos que le gustaban a mi abuelo."
+          "text": "Pan de muerto y algunos platillos que le gustaban a mi abuelo."
         },
         {
           "speaker": "Mariana",
@@ -193,18 +354,131 @@
         },
         {
           "speaker": "Jorge",
-          "text": "Casi todos. Mi tía llegó más tarde porque trabajaba esa tarde."
+          "text": "Casi todos. Mi tía llegó más tarde porque trabajó por la mañana."
         },
         {
           "speaker": "Mariana",
-          "text": "¿Y cómo terminó la noche?"
+          "text": "¿Qué hicieron después de preparar la ofrenda?"
         },
         {
           "speaker": "Jorge",
           "text": "Cenamos juntos y mi abuela nos contó historias de cuando era joven."
+        },
+        {
+          "speaker": "Mariana",
+          "text": "¿Te gustó pasar ese día con tu familia?"
+        },
+        {
+          "speaker": "Jorge",
+          "text": "Mucho. Mientras escuchábamos a mi abuela, todos mirábamos las fotografías."
         }
       ],
-      "context_note": "El Día de Muertos se conmemora en México con prácticas diversas según la región y la familia. Muchas ofrendas incluyen fotografías, flores de cempasúchil, velas y alimentos; el pan de muerto es un alimento tradicional asociado a estas fechas.",
+      "context_note": "El Día de Muertos se conmemora en México de maneras diversas. En muchas familias se prepara una ofrenda con fotografías, flores de cempasúchil, velas y alimentos; los elementos y las prácticas varían según la región y la familia. El pan de muerto es un alimento tradicional asociado a estas fechas.",
+      "vocabulary_in_context": [
+        {
+          "term": "Día de Muertos",
+          "meaning": "conmemoración en la que muchas personas recuerdan a familiares y seres queridos fallecidos",
+          "example": "La familia se reunió para el Día de Muertos."
+        },
+        {
+          "term": "ofrenda",
+          "meaning": "conjunto de objetos, alimentos y recuerdos colocados para honrar a los difuntos",
+          "example": "Preparamos una ofrenda en casa de mi abuela."
+        },
+        {
+          "term": "cempasúchil",
+          "meaning": "flor de color anaranjado muy asociada a muchas ofrendas",
+          "example": "El patio estaba lleno de flores de cempasúchil."
+        },
+        {
+          "term": "pan de muerto",
+          "meaning": "pan tradicional que se prepara para estas fechas",
+          "example": "Compartimos pan de muerto después de la cena."
+        },
+        {
+          "term": "acordarse de",
+          "meaning": "recordar a una persona o un acontecimiento",
+          "example": "¿Te acuerdas de la celebración del año pasado?"
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          {
+            "expression": "¿Te acuerdas de…?",
+            "function": "Preguntar si alguien recuerda una experiencia o un momento."
+          },
+          {
+            "expression": "Entre todos",
+            "function": "Indicar que varias personas colaboraron en una actividad."
+          },
+          {
+            "expression": "Cuando era joven",
+            "function": "Introducir recuerdos o experiencias de una etapa anterior de la vida."
+          }
+        ],
+        "regional_note": "En México, «Día de Muertos» es el nombre habitual de esta conmemoración. Las ofrendas pueden tener elementos compartidos, pero no todas las familias ni todas las comunidades la celebran de la misma manera."
+      },
+      "guided_practice": {
+        "notice": {
+          "instruction": "Observa qué formas describen las costumbres de la familia y cuáles cuentan lo que hicieron en una ocasión concreta.",
+          "tasks": [
+            "Encuentra dos formas de imperfecto que describen cómo se preparaba la ofrenda.",
+            "Localiza cuatro acciones terminadas en pretérito indefinido.",
+            "Identifica una frase que muestra que dos acciones ocurrían al mismo tiempo."
+          ]
+        },
+        "practice": {
+          "instruction": "Completa las frases con imperfecto o indefinido. Piensa si se trata de una costumbre, una descripción o un hecho concreto.",
+          "tasks": [
+            "Cuando yo ___ (ser) pequeño, mi familia ___ (reunirse) en casa de mi abuela.",
+            "El año pasado nosotros ___ (preparar) una ofrenda.",
+            "Mientras mi abuela ___ (contar) una historia, todos la escuchábamos.",
+            "Mis primos ___ (llegar) por la tarde y después ___ (cenar) juntos."
+          ],
+          "answers": [
+            "era; se reunía",
+            "preparamos",
+            "contaba",
+            "llegaron; cenamos"
+          ]
+        },
+        "communicate": {
+          "instruction": "En parejas, imaginad que habláis sobre una celebración familiar. Una persona cuenta cómo era la celebración habitualmente y la otra pregunta qué ocurrió el año pasado.",
+          "tasks": [
+            "Describe dos elementos de la celebración usando imperfecto.",
+            "Cuenta tres acciones concretas del año pasado usando indefinido.",
+            "Explica qué hacían varias personas al mismo tiempo usando «mientras»."
+          ]
+        }
+      },
+      "personal_application": {
+        "scenario": "Alguien quiere conocer una tradición de tu familia o una celebración importante de tu comunidad.",
+        "task": "Escribe o cuenta 7–9 frases. Describe cómo se celebra normalmente y después explica qué pasó en una ocasión concreta.",
+        "support": [
+          "En mi familia…",
+          "Normalmente…",
+          "El año pasado…",
+          "Mientras…",
+          "Al final…"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "La acentuación de las formas frecuentes: era, tenía, poníamos, llegó, preparó.",
+        "steps": [
+          "Lee las formas en voz alta y marca la sílaba tónica.",
+          "Compara «preparaba» y «preparó»: una forma describe una acción habitual y la otra cuenta un hecho terminado.",
+          "Graba una descripción y un acontecimiento concreto; escucha si las formas verbales se distinguen."
+        ],
+        "audio_model_status": "pending"
+      },
+      "reflection": {
+        "can_do": [
+          "Puedo describir una tradición familiar o comunitaria.",
+          "Puedo explicar qué se hacía habitualmente en una celebración.",
+          "Puedo contar qué ocurrió en una ocasión concreta.",
+          "Puedo usar imperfecto e indefinido para combinar contexto y acontecimientos."
+        ]
+      },
       "exercises": [
         {
           "id": "es_mx_a2_u6_e1",
@@ -212,76 +486,78 @@
           "type": "choice",
           "prompt": "¿Qué recuerda Jorge?",
           "options": [
-            "La celebración del Día de Muertos en casa de su abuela",
-            "Una graduación universitaria",
+            "Una celebración del Día de Muertos en casa de su abuela",
+            "Una fiesta de graduación",
             "Un viaje a la playa"
           ],
           "answer": 0,
-          "explanation": "Jorge recuerda la celebración familiar del Día de Muertos del año pasado."
+          "explanation": "Jorge recuerda cómo celebró el Día de Muertos con su familia."
         },
         {
           "id": "es_mx_a2_u6_e2",
           "skill": "detail",
           "type": "choice",
-          "prompt": "¿Qué colocaba la abuela en la ofrenda?",
+          "prompt": "¿Qué flores había en el patio?",
           "options": [
-            "Las fotografías",
-            "Los boletos del viaje",
-            "Los regalos de cumpleaños"
+            "Flores de cempasúchil",
+            "Rosas blancas",
+            "Girasoles"
           ],
           "answer": 0,
-          "explanation": "Jorge cuenta que su abuela colocaba las fotos mientras los demás ponían velas y comida."
+          "explanation": "Jorge dice que el patio estaba lleno de flores de cempasúchil."
         },
         {
           "id": "es_mx_a2_u6_e3",
+          "skill": "vocabulary",
+          "type": "choice",
+          "prompt": "En este contexto, ¿qué es una «ofrenda»?",
+          "options": [
+            "Un conjunto de objetos y alimentos para honrar a los difuntos",
+            "Un regalo de cumpleaños",
+            "Una comida que se sirve en un restaurante"
+          ],
+          "answer": 0,
+          "explanation": "La ofrenda reúne fotografías, alimentos y otros elementos para recordar a los seres queridos fallecidos."
+        },
+        {
+          "id": "es_mx_a2_u6_e4",
           "skill": "grammar",
           "type": "choice",
-          "prompt": "Completa: «Mientras mi abuela ___ las fotos, nosotros poníamos velas».",
+          "prompt": "Completa: «Mientras mi abuela ___ las fotografías, nosotros poníamos las velas»",
           "options": [
             "colocaba",
             "colocó",
             "coloca"
           ],
           "answer": 0,
-          "explanation": "Colocaba describe una acción en desarrollo que ocurre al mismo tiempo que otra acción habitual o en curso."
-        },
-        {
-          "id": "es_mx_a2_u6_e4",
-          "skill": "vocabulary_in_context",
-          "type": "choice",
-          "prompt": "¿Qué es una «ofrenda» en el contexto del Día de Muertos?",
-          "options": [
-            "Un altar con objetos y alimentos para recordar a los difuntos",
-            "Un regalo de cumpleaños",
-            "Una comida que se sirve en un restaurante"
-          ],
-          "answer": 0,
-          "explanation": "La ofrenda es un elemento central de muchas celebraciones del Día de Muertos y puede incluir fotos, flores, velas y alimentos."
+          "explanation": "Colocaba presenta una acción en desarrollo que ocurre al mismo tiempo que otra."
         },
         {
           "id": "es_mx_a2_u6_e5",
           "skill": "culture",
           "type": "choice",
-          "prompt": "¿Qué flor menciona Jorge?",
+          "prompt": "¿Cuál de estas afirmaciones sobre el Día de Muertos es correcta?",
           "options": [
-            "Cempasúchil",
-            "Rosa blanca",
-            "Girasol"
+            "Las prácticas pueden variar entre regiones y familias",
+            "Todas las familias preparan exactamente la misma ofrenda",
+            "La celebración solo consiste en compartir pan"
           ],
           "answer": 0,
-          "explanation": "El cempasúchil es una flor muy asociada a las ofrendas del Día de Muertos en México."
+          "explanation": "Las formas de conmemorar el Día de Muertos son diversas; los elementos y las costumbres cambian según la comunidad y la familia."
         }
       ],
       "reading": {
-        "title": "Una ofrenda familiar",
-        "text": "Cuando Luis era pequeño, su familia se reunía en casa de su abuela para preparar la ofrenda del Día de Muertos. Su abuela colocaba las fotografías y las flores de cempasúchil, mientras los nietos ponían velas y fruta. El año pasado, Luis llegó temprano y ayudó a preparar todo. Más tarde llegaron sus primos y compartieron pan de muerto. La familia recordó historias y pasó la tarde junta."
+        "title": "Una tarde para recordar",
+        "text": "Cuando Luis era pequeño, su familia se reunía en casa de su abuela para preparar la ofrenda del Día de Muertos. Su abuela colocaba las fotografías y las flores de cempasúchil, mientras los nietos ponían velas y fruta. El año pasado, Luis llegó temprano y ayudó a preparar todo. Más tarde llegaron sus primos y compartieron pan de muerto. Después de cenar, la familia recordó historias y pasó la tarde junta."
       }
     }
   ],
   "teacher_notes": [
-    "Не добавлять отдельный раздел Vocabulary.",
-    "Imperfecto вводить как фон, привычку и описание; indefinido — как завершенное событие, продвигающее рассказ.",
-    "Не утверждать, что Día de Muertos отмечается одинаково во всей Мексике: традиции различаются по регионам и семьям.",
-    "Материал — часть лид-магнита. Не интегрировать до завершения всего испанского каталога."
+    "No añadir una sección independiente de Vocabulary: introducir el léxico en diálogos, lecturas y tareas.",
+    "El imperfecto se presenta como marco, descripción y hábito; el indefinido como acontecimiento terminado que hace avanzar el relato.",
+    "Día de Muertos se aborda desde un ejemplo familiar mexicano, sin generalizar una única forma de celebración para todo el país.",
+    "Las tareas abiertas pertenecen a guided practice y personal application; exercises contiene cinco preguntas de opción múltiple por variante.",
+    "Los elementos culturales son ejemplos contextualizados, no una descripción exhaustiva de todas las tradiciones regionales.",
+    "No integrar hasta completar la revisión de todo el catálogo español."
   ]
 }

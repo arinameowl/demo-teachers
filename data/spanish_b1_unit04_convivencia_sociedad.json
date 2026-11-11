@@ -95,11 +95,11 @@
           "skill": "gist",
           "prompt": "¿Qué se ha creado para comunicar problemas?",
           "options": [
-            "Una plataforma.",
             "Una nueva línea de tren.",
+            "Una plataforma.",
             "Una oficina de turismo."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "La lectura menciona una plataforma vecinal."
         },
         {
@@ -108,11 +108,11 @@
           "skill": "detail",
           "prompt": "¿Qué problema sigue pendiente en el barrio?",
           "options": [
-            "Algunas calles necesitan reparaciones y se pide mejorar el transporte.",
             "No hay ningún espacio público.",
-            "Se han cerrado todos los centros deportivos."
+            "Se han cerrado todos los centros deportivos.",
+            "Algunas calles necesitan reparaciones y se pide mejorar el transporte."
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "La lectura señala reparaciones y transporte como asuntos pendientes."
         },
         {
@@ -134,11 +134,11 @@
           "skill": "vocabulary",
           "prompt": "¿Qué significa «poner en marcha un proyecto»?",
           "options": [
-            "Iniciarlo o hacerlo comenzar.",
             "Cancelarlo definitivamente.",
-            "Evaluarlo sin llevarlo a cabo."
+            "Evaluarlo sin llevarlo a cabo.",
+            "Iniciarlo o hacerlo comenzar."
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "Poner en marcha significa iniciar o implementar."
         },
         {
@@ -147,11 +147,11 @@
           "skill": "culture",
           "prompt": "¿Qué nivel administrativo se menciona en la nota sobre España?",
           "options": [
-            "El municipio.",
             "La Unión Europea como única autoridad local.",
+            "El municipio.",
             "La administración de otro país."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "La nota sitúa muchos servicios locales en el ámbito municipal."
         }
       ]
@@ -214,11 +214,11 @@
           "skill": "gist",
           "prompt": "¿Qué se ha creado para comunicar problemas?",
           "options": [
-            "Una plataforma.",
             "Una estación de autobuses.",
+            "Una plataforma.",
             "Una asociación deportiva privada."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "La lectura menciona una plataforma para reportar problemas."
         },
         {
@@ -227,11 +227,11 @@
           "skill": "detail",
           "prompt": "¿Qué necesidad sigue pendiente en la colonia?",
           "options": [
-            "Reparar algunas calles y mejorar el transporte.",
             "Eliminar todas las áreas verdes.",
-            "Cerrar los espacios comunitarios."
+            "Cerrar los espacios comunitarios.",
+            "Reparar algunas calles y mejorar el transporte."
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "La lectura señala calles y transporte como asuntos por mejorar."
         },
         {
@@ -253,11 +253,11 @@
           "skill": "vocabulary",
           "prompt": "¿Qué significa «poner en marcha un proyecto»?",
           "options": [
-            "Iniciarlo o hacerlo comenzar.",
             "Cancelarlo definitivamente.",
-            "Dejarlo sin planificación."
+            "Dejarlo sin planificación.",
+            "Iniciarlo o hacerlo comenzar."
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "La expresión significa iniciar o implementar un proyecto."
         },
         {
@@ -266,11 +266,11 @@
           "skill": "culture",
           "prompt": "¿Qué término administrativo se menciona para la Ciudad de México?",
           "options": [
-            "Alcaldía.",
             "Comunidad autónoma.",
+            "Alcaldía.",
             "Diputación provincial."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "Alcaldía se usa en el contexto de la CDMX."
         }
       ]

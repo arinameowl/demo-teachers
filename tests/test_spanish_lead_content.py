@@ -59,5 +59,62 @@ class SpanishLeadContentTest(unittest.TestCase):
                 self.assertEqual(len(questions_for(data[resource], section)), count)
 
 
+class SpanishCurriculumTest(unittest.TestCase):
+    def test_each_cefr_level_loads_separately_for_both_variants(self):
+        from spanish_lead_content import load_spanish_level_units
+
+        for level in ("A1", "A2", "B1"):
+            for variant in ("es_es", "es_mx"):
+                with self.subTest(level=level, variant=variant):
+                    units = load_spanish_level_units(level, variant)
+                    self.assertTrue(units, f"No units found for {level}/{variant}")
+                    self.assertTrue(all(unit["level"] == level for unit in units))
+                    self.assertEqual(len({unit["id"] for unit in units}), len(units))
+
+    def test_curriculum_choice_exercises_have_valid_answer_keys(self):
+        from spanish_lead_content import load_spanish_level_units
+
+        for level in ("A1", "A2", "B1"):
+            for variant in ("es_es", "es_mx"):
+                with self.subTest(level=level, variant=variant):
+                    units = load_spanish_level_units(level, variant)
+                    for unit in units:
+                        exercises = unit["variant"].get("exercises", [])
+                        for exercise in exercises:
+                            if exercise.get("type") != "choice":
+                                continue
+                            self.assertGreaterEqual(len(exercise.get("options", [])), 2)
+                            self.assertIsInstance(exercise.get("answer"), int)
+                            self.assertGreaterEqual(exercise["answer"], 0)
+                            self.assertLess(exercise["answer"], len(exercise["options"]))
+                            self.assertTrue(exercise.get("explanation"))
+
+    def test_spanish_placement_quiz_covers_all_three_levels(self):
+        import quiz
+
+        for variant in ("es_es", "es_mx"):
+            with self.subTest(variant=variant):
+                questions = quiz.spanish_questions(variant)
+                self.assertEqual(len(questions), 6)
+                self.assertEqual([q["level"] for q in questions], ["A1", "A1", "A2", "A2", "B1", "B1"])
+                for question in questions:
+                    self.assertGreaterEqual(len(question["options"]), 2)
+                    self.assertIsInstance(question["correct"], int)
+                    self.assertGreaterEqual(question["correct"], 0)
+                    self.assertLess(question["correct"], len(question["options"]))
+                    self.assertTrue(question["explanation"])
+
+    def test_spanish_placement_scoring_uses_passed_question_bank(self):
+        import quiz
+
+        questions = quiz.spanish_questions("es_es")
+        answers = {index: question["correct"] for index, question in enumerate(questions)}
+        self.assertEqual(quiz.score_to_level(answers, questions), "B1")
+        answers.pop(5)
+        self.assertEqual(quiz.score_to_level(answers, questions), "A2")
+        answers.pop(3)
+        self.assertEqual(quiz.score_to_level(answers, questions), "A1")
+
+
 if __name__ == "__main__":
     unittest.main()

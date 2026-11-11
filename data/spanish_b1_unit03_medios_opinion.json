@@ -131,15 +131,15 @@
         {
           "id": "es_es_b1_u3_e4",
           "type": "choice",
-          "skill": "vocabulary",
-          "prompt": "¿Qué conector introduce una objeción o contraste?",
+          "skill": "grammar",
+          "prompt": "Elige el conector adecuado: «El estudio tiene una muestra pequeña; ___, sus resultados deben interpretarse con cautela».",
           "options": [
-            "Además",
-            "Por eso",
-            "Sin embargo"
+            "sin embargo",
+            "por eso",
+            "además"
           ],
-          "answer": 2,
-          "explanation": "Sin embargo introduce contraste."
+          "answer": 1,
+          "explanation": "Por eso introduce la consecuencia lógica: la muestra es pequeña, por lo que los resultados deben interpretarse con cautela."
         },
         {
           "id": "es_es_b1_u3_e5",
@@ -250,15 +250,15 @@
         {
           "id": "es_mx_b1_u3_e4",
           "type": "choice",
-          "skill": "vocabulary",
-          "prompt": "¿Qué conector introduce una objeción o contraste?",
+          "skill": "grammar",
+          "prompt": "Elige el conector adecuado: «El estudio tiene una muestra pequeña; ___, sus resultados deben interpretarse con cautela».",
           "options": [
-            "Además",
-            "Por eso",
-            "Sin embargo"
+            "sin embargo",
+            "por eso",
+            "además"
           ],
-          "answer": 2,
-          "explanation": "Sin embargo introduce contraste."
+          "answer": 1,
+          "explanation": "Por eso introduce la consecuencia lógica: la muestra es pequeña, por lo que los resultados deben interpretarse con cautela."
         },
         {
           "id": "es_mx_b1_u3_e5",

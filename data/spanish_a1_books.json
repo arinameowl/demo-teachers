@@ -15,9 +15,9 @@
           "level": "A1",
           "pages": [
             "Me llamo Ana. Tengo veinticuatro años y vivo en Madrid. Hoy es sábado. Me levanto a las ocho y media. Hace sol. Primero, me ducho y después desayuno en casa. Como una tostada y bebo café con leche.",
-            "Después del desayuno, Ana sale de casa. Va a una cafetería cerca de su calle. Pide un zumo de naranja y una tostada con tomate. La camarera dice: «¡Buenos días!». Ana responde: «¡Buenos días! Gracias».",
-            "A las once, Ana queda con su amiga Lucía en el parque del Retiro. Lucía llega en metro. Las amigas pasean por el parque y hablan de sus planes. «¿Qué tal, Ana?». «¡Muy bien! ¿Y tú?». «Bien, gracias».",
-            "Por la tarde, Ana y Lucía comen juntas. Piden una tortilla de patatas y una ensalada. Después, Ana vuelve a casa en metro. Está un poco cansada, pero está contenta. Por la noche, lee un libro y escucha música."
+            "Después del desayuno, salgo de casa. Voy a una cafetería cerca de mi calle. Pido un zumo de naranja y una tostada con tomate. La camarera dice: «¡Buenos días!». Respondo: «¡Buenos días! Gracias».",
+            "A las once, quedo con mi amiga Lucía en el parque del Retiro. Lucía llega en metro. Paseamos por el parque y hablamos de nuestros planes. Lucía me pregunta: «¿Qué tal, Ana?». Respondo: «¡Muy bien! ¿Y tú?». Ella dice: «Bien, gracias».",
+            "Por la tarde, Lucía y yo comemos juntas. Pedimos una tortilla de patatas y una ensalada. Después, vuelvo a casa en metro. Estoy un poco cansada, pero estoy contenta. Por la noche, leo un libro y escucho música."
           ],
           "questions": [
             {
@@ -29,7 +29,7 @@
                 "En Valencia"
               ],
               "answer": 0,
-              "explanation": "Ana dice: «vivo en Madrid». La historia tiene lugar en Madrid."
+              "explanation": "Ana vive en Madrid."
             },
             {
               "type": "choice",
@@ -40,7 +40,7 @@
                 "Un croissant y té"
               ],
               "answer": 1,
-              "explanation": "Ana come una tostada y bebe café con leche en casa."
+              "explanation": "Ana come una tostada y bebe café con leche."
             },
             {
               "type": "choice",
@@ -51,7 +51,7 @@
                 "En el supermercado"
               ],
               "answer": 0,
-              "explanation": "Las amigas quedan en el parque del Retiro y pasean allí."
+              "explanation": "Quedan en el parque del Retiro."
             },
             {
               "type": "choice",
@@ -62,7 +62,7 @@
                 "vive"
               ],
               "answer": 2,
-              "explanation": "Con Ana, la tercera persona singular, usamos vive: Ana vive."
+              "explanation": "Con Ana usamos la tercera persona: vive."
             },
             {
               "type": "choice",
@@ -73,7 +73,7 @@
                 "Un postre con chocolate"
               ],
               "answer": 1,
-              "explanation": "La tortilla de patatas es un plato español hecho principalmente con huevos y patatas."
+              "explanation": "Es un plato español hecho principalmente con huevos y patatas."
             }
           ]
         }
@@ -90,9 +90,9 @@
           "level": "A1",
           "pages": [
             "Me llamo Sofía. Tengo veintidós años y vivo en Ciudad de México. Vivo con mi mamá y mi hermano. Hoy es sábado. Me despierto a las siete y media. Voy a la cocina. Mi mamá prepara el desayuno. Comemos huevos con tortillas de maíz.",
-            "Después del desayuno, Sofía va al mercado con su mamá. Compran tomates, aguacates, cebollas y mangos. Hay muchas frutas y verduras. Sofía compra también un jugo de naranja. El vendedor dice: «¡Buenos días! ¿Qué va a llevar?».",
-            "A las doce, Sofía se encuentra con su amiga Valeria. Van a una cafetería. Valeria dice: «¡Hola, Sofi! ¿Qué onda?». Sofía responde: «¡Hola! Muy bien, ¿y tú?». Sofía pide un agua de jamaica. Las amigas hablan y miran fotos en sus celulares.",
-            "Por la tarde, Sofía vuelve a casa. Su hermano prepara tacos para la cena. Hay tortillas, pollo, tomate y aguacate. La familia cena junta. Después, Sofía escucha música y ve una serie en su computadora."
+            "Después del desayuno, voy al mercado con mi mamá. Compramos tomates, aguacates, cebollas y mangos. Hay muchas frutas y verduras. También compro un jugo de naranja. El vendedor dice: «¡Buenos días! ¿Qué va a llevar?».",
+            "A las doce, me encuentro con mi amiga Valeria. Vamos a una cafetería. Valeria dice: «¡Hola, Sofi! ¿Qué onda?». Respondo: «¡Hola! Muy bien, ¿y tú?». Pido un agua de jamaica. Hablamos y miramos fotos en nuestros celulares.",
+            "Por la tarde, vuelvo a casa. Mi hermano prepara tacos para la cena. Hay tortillas, pollo, tomate y aguacate. Cenamos juntos en familia. Después, escucho música y veo una serie en mi computadora."
           ],
           "questions": [
             {
@@ -104,7 +104,7 @@
                 "Con su abuela"
               ],
               "answer": 1,
-              "explanation": "Sofía dice que vive con su mamá y su hermano."
+              "explanation": "Sofía vive con su mamá y su hermano."
             },
             {
               "type": "choice",
@@ -115,7 +115,7 @@
                 "En el parque"
               ],
               "answer": 0,
-              "explanation": "Sofía va al mercado con su mamá y allí compran frutas y verduras."
+              "explanation": "Va al mercado con su mamá."
             },
             {
               "type": "choice",
@@ -126,7 +126,7 @@
                 "Un agua de jamaica"
               ],
               "answer": 2,
-              "explanation": "Sofía pide un agua de jamaica, una bebida preparada con flor de jamaica."
+              "explanation": "Sofía pide un agua de jamaica."
             },
             {
               "type": "choice",
@@ -137,7 +137,7 @@
                 "vive"
               ],
               "answer": 2,
-              "explanation": "Con Sofía, la tercera persona singular, usamos vive: Sofía vive."
+              "explanation": "Con Sofía usamos la tercera persona: vive."
             },
             {
               "type": "choice",
@@ -148,7 +148,7 @@
                 "¿Dónde está el mercado?"
               ],
               "answer": 0,
-              "explanation": "¿Qué onda? es un saludo informal muy usado en México para preguntar cómo está alguien o qué hay de nuevo."
+              "explanation": "Es un saludo informal muy usado en México."
             }
           ]
         }

@@ -93,14 +93,14 @@
           "id": "es_es_b1_u1_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué hará Marina si no consigue la beca?",
+          "prompt": "¿Cuál es la idea principal del texto?",
           "options": [
-            "Abandonará sus estudios definitivamente.",
-            "Trabajará unos meses más y volverá a intentarlo.",
-            "Se mudará antes de presentar la solicitud."
+            "Marina compara opciones para estudiar un máster en el extranjero y prepara un plan según consiga o no una beca.",
+            "Marina ya ha decidido quedarse en su país y descarta estudiar fuera.",
+            "Marina busca un empleo permanente sin intención de continuar sus estudios."
           ],
-          "answer": 1,
-          "explanation": "La lectura explica el plan alternativo de Marina."
+          "answer": 0,
+          "explanation": "El texto se centra en la planificación de estudios en el extranjero y las alternativas económicas."
         },
         {
           "id": "es_es_b1_u1_e2",
@@ -212,14 +212,14 @@
           "id": "es_mx_b1_u1_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué hará Mariana si no consigue la beca?",
+          "prompt": "¿Cuál es la idea principal del texto?",
           "options": [
-            "Cancelará todos sus planes de estudio.",
-            "Trabajará unos meses más y volverá a intentarlo.",
-            "Se irá sin comparar programas."
+            "Mariana compara opciones para estudiar un posgrado en el extranjero y prepara un plan alternativo si no consigue la beca.",
+            "Mariana ya decidió abandonar sus estudios y buscar empleo permanente.",
+            "Mariana viaja al extranjero sin comparar programas ni gastos."
           ],
-          "answer": 1,
-          "explanation": "La lectura presenta esta alternativa."
+          "answer": 0,
+          "explanation": "El texto presenta su planificación y las alternativas en función de la beca."
         },
         {
           "id": "es_mx_b1_u1_e2",

@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "level": "B1",
+  "category": "lesson",
+  "language": "es",
+  "unit_id": "es_b1_u01_decisiones_planes",
+  "title": "Decisiones y nuevos planes",
+  "learning_goals": [
+    "Обсуждать планы и возможные последствия решений",
+    "Формулировать условия и гипотезы",
+    "Использовать condicional simple и si + presente"
+  ],
+  "grammar": [
+    {
+      "topic": "condicional_simple",
+      "explanation_ru": "Condicional simple образуется от инфинитива с окончаниями -ía, -ías, -ía, -íamos, -íais, -ían. Используется для гипотетических ситуаций, вежливых просьб и советов.",
+      "examples": [
+        "Me gustaría estudiar fuera.",
+        "¿Podrías ayudarme?"
+      ]
+    },
+    {
+      "topic": "si_presente_futuro",
+      "explanation_ru": "Для реального или возможного условия используется si + presente, а в главной части — presente, futuro или imperativo. В таком условии после si не ставится futuro.",
+      "examples": [
+        "Si consigo una beca, estudiaré en Madrid.",
+        "Si tienes tiempo, podemos hablar."
+      ]
+    },
+    {
+      "topic": "hipotesis_consecuencias",
+      "explanation_ru": "Для обсуждения последствий используйте depender de, en ese caso, por eso, de lo contrario. Связывайте условие и результат логически.",
+      "examples": [
+        "Si el alquiler sube, buscaré otra opción.",
+        "En ese caso, cambiaría de ciudad."
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "pronunciation_note": "Лексика и речевые модели Испании.",
+      "dialogue": [
+        {
+          "speaker": "Clara",
+          "text": "Estoy pensando en pedir una beca para estudiar fuera."
+        },
+        {
+          "speaker": "Diego",
+          "text": "¡Qué buena idea! ¿A qué país te irías?"
+        },
+        {
+          "speaker": "Clara",
+          "text": "Me gustaría vivir en Portugal, aunque también consideraría Alemania."
+        },
+        {
+          "speaker": "Diego",
+          "text": "¿Y qué harías si no consiguieras la beca?"
+        },
+        {
+          "speaker": "Clara",
+          "text": "Buscaría un trabajo a tiempo parcial y ahorraría durante un año."
+        },
+        {
+          "speaker": "Diego",
+          "text": "Si organizas bien el presupuesto, quizá puedas hacerlo."
+        },
+        {
+          "speaker": "Clara",
+          "text": "Sí, pero tendría que reducir algunos gastos."
+        },
+        {
+          "speaker": "Diego",
+          "text": "Podrías compartir piso al principio."
+        },
+        {
+          "speaker": "Clara",
+          "text": "No estaría mal. Además, conocería a gente de otros países."
+        },
+        {
+          "speaker": "Diego",
+          "text": "¿Cuándo presentarás la solicitud?"
+        }
+      ],
+      "context_note": "В Испании стипендии могут предоставлять университеты, государственные учреждения и частные фонды. Условия различаются: одни покрывают обучение, другие также помогают с жильем и повседневными расходами.",
+      "reading": {
+        "title": "Una decisión importante",
+        "text": "Marina lleva meses pensando en estudiar un máster en el extranjero. Le atrae conocer otro sistema educativo, pero sabe que tendrá que planificar los gastos. Si consigue una beca, se marchará el próximo otoño. Si no la consigue, trabajará unos meses más y volverá a intentarlo. Está comparando programas, ciudades y posibilidades de alojamiento."
+      },
+      "exercises": [
+        {
+          "id": "es_es_b1_u1_e1",
+          "type": "choice",
+          "skill": "gist",
+          "prompt": "¿Qué haría Marina si no consiguiera la beca?",
+          "options": [
+            "Trabajaría unos meses más y volvería a intentarlo.",
+            "Que la actividad se canceló sin explicación",
+            "Que todos rechazaron la propuesta"
+          ],
+          "answer": 0,
+          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+        },
+        {
+          "id": "es_es_b1_u1_e2",
+          "type": "choice",
+          "skill": "detail",
+          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "options": [
+            "El texto presenta una situación relacionada con el tema y sus matices",
+            "El texto afirma que todas las situaciones son idénticas",
+            "El texto no ofrece información concreta"
+          ],
+          "answer": 0,
+          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+        },
+        {
+          "id": "es_es_b1_u1_e3",
+          "type": "choice",
+          "skill": "grammar",
+          "prompt": "Si consigo una beca, ___ en Madrid.",
+          "options": [
+            "estudiaré",
+            "estudiaría",
+            "estudié"
+          ],
+          "answer": 0,
+          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+        },
+        {
+          "id": "es_es_b1_u1_e4",
+          "type": "choice",
+          "skill": "vocabulary",
+          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "options": [
+            "Sin embargo",
+            "Por la mañana",
+            "Al lado de"
+          ],
+          "answer": 0,
+          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+        },
+        {
+          "id": "es_es_b1_u1_e5",
+          "type": "choice",
+          "skill": "culture",
+          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "options": [
+            "Que puede variar según la región y las familias",
+            "Que se practica igual en todos los lugares",
+            "Que nunca cambia con el tiempo"
+          ],
+          "answer": 0,
+          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "pronunciation_note": "Мексиканский вариант как основа латиноамериканского маршрута.",
+      "dialogue": [
+        {
+          "speaker": "Sofía",
+          "text": "Estoy pensando en solicitar una beca para estudiar fuera."
+        },
+        {
+          "speaker": "Luis",
+          "text": "¡Qué buena idea! ¿A dónde te gustaría ir?"
+        },
+        {
+          "speaker": "Sofía",
+          "text": "Me gustaría vivir en España, aunque también consideraría Chile."
+        },
+        {
+          "speaker": "Luis",
+          "text": "¿Y qué harías si no te dieran la beca?"
+        },
+        {
+          "speaker": "Sofía",
+          "text": "Buscaría un trabajo de medio tiempo y ahorraría durante un año."
+        },
+        {
+          "speaker": "Luis",
+          "text": "Si organizas bien tu presupuesto, quizá lo puedas lograr."
+        },
+        {
+          "speaker": "Sofía",
+          "text": "Sí, pero tendría que reducir algunos gastos."
+        },
+        {
+          "speaker": "Luis",
+          "text": "Podrías compartir departamento al principio."
+        },
+        {
+          "speaker": "Sofía",
+          "text": "No estaría mal. Además, conocería a personas de otros países."
+        },
+        {
+          "speaker": "Luis",
+          "text": "¿Cuándo vas a mandar la solicitud?"
+        }
+      ],
+      "context_note": "В Мексике поддержку для учебы можно искать через государственные программы, университеты и частные фонды. Нужно проверять, покрывает ли стипендия только обучение или также проживание.",
+      "reading": {
+        "title": "Una decisión importante",
+        "text": "Mariana lleva meses pensando en estudiar un posgrado en el extranjero. Le interesa conocer otro sistema educativo, pero sabe que tendrá que planear sus gastos. Si consigue una beca, se irá el próximo otoño. Si no la consigue, trabajará unos meses más y volverá a intentarlo. Está comparando programas, ciudades y opciones de alojamiento."
+      },
+      "exercises": [
+        {
+          "id": "es_mx_b1_u1_e1",
+          "type": "choice",
+          "skill": "gist",
+          "prompt": "¿Qué hará Mariana si no consigue la beca?",
+          "options": [
+            "Trabajará unos meses más y volverá a intentarlo.",
+            "Que la actividad se canceló sin explicación",
+            "Que todos rechazaron la propuesta"
+          ],
+          "answer": 0,
+          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+        },
+        {
+          "id": "es_mx_b1_u1_e2",
+          "type": "choice",
+          "skill": "detail",
+          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "options": [
+            "El texto presenta una situación relacionada con el tema y sus matices",
+            "El texto afirma que todas las situaciones son idénticas",
+            "El texto no ofrece información concreta"
+          ],
+          "answer": 0,
+          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+        },
+        {
+          "id": "es_mx_b1_u1_e3",
+          "type": "choice",
+          "skill": "grammar",
+          "prompt": "Si consigo una beca, ___ en Madrid.",
+          "options": [
+            "estudiaré",
+            "estudiaría",
+            "estudié"
+          ],
+          "answer": 0,
+          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+        },
+        {
+          "id": "es_mx_b1_u1_e4",
+          "type": "choice",
+          "skill": "vocabulary",
+          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "options": [
+            "Sin embargo",
+            "Por la mañana",
+            "Al lado de"
+          ],
+          "answer": 0,
+          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+        },
+        {
+          "id": "es_mx_b1_u1_e5",
+          "type": "choice",
+          "skill": "culture",
+          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "options": [
+            "Que puede variar según la región y las familias",
+            "Que se practica igual en todos los lugares",
+            "Que nunca cambia con el tiempo"
+          ],
+          "answer": 0,
+          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+        }
+      ]
+    }
+  ]
+}

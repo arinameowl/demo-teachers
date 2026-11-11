@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+
+import json
+from pathlib import Path
 """
 Короткий тест на уровень — не заменяет полноценное тестирование школы,
 а нужен исключительно для того, чтобы выдать подходящую подборку материалов
@@ -67,7 +70,7 @@ def spanish_questions(variant: str = "es_es") -> list[dict]:
         units = sorted(catalog.get("units", []), key=lambda item: item.get("order", 0))
         level_questions = []
         for unit in units:
-            data = json.loads((Path(__file__).resolve().parent / unit["path"]).read_text(encoding="utf-8"))
+            data = json.loads((root / Path(unit["path"]).name).read_text(encoding="utf-8"))
             dialect = next((item for item in data.get("variants", []) if item.get("id") == variant), None)
             if not dialect:
                 continue

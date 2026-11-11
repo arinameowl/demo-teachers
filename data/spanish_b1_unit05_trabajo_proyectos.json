@@ -6,34 +6,92 @@
   "unit_id": "es_b1_u05_trabajo_proyectos",
   "title": "Trabajo, colaboración y proyectos",
   "learning_goals": [
-    "Рассказывать о рабочих задачах и результатах",
-    "Передавать чужие слова в простых ситуациях",
-    "Использовать косвенную речь и вежливые просьбы"
+    "Explicar el estado de un proyecto, sus avances y los obstáculos que surgen",
+    "Transmitir acuerdos, instrucciones y cambios comunicados por otras personas",
+    "Usar el estilo indirecto y reconocer los cambios de tiempo y de referencias temporales",
+    "Formular peticiones, propuestas y desacuerdos de manera cortés",
+    "Negociar prioridades, distribuir responsabilidades y acordar próximos pasos"
   ],
+  "editorial_intro": {
+    "title": "Un proyecto no avanza por casualidad",
+    "text": "Una buena idea necesita algo más que entusiasmo: hace falta definir objetivos, repartir responsabilidades, coordinar plazos y comunicar los cambios a tiempo. En un equipo aparecen imprevistos, prioridades distintas y conversaciones que después hay que resumir con precisión. En este material vas a seguir una reunión de trabajo, reconstruir lo que dijo cada persona y practicar cómo pedir, proponer y negociar sin perder claridad.",
+    "opening_question": "Piensa en un proyecto en el que hayas colaborado. ¿Qué ayudó al equipo a avanzar y qué lo retrasó?",
+    "objective": "Al terminar, podrás informar sobre una reunión, transmitir acuerdos y negociar tareas y plazos con un registro profesional adecuado.",
+    "estimated_time": "45–55 minutos",
+    "route": [
+      "Lee una conversación de coordinación de proyecto",
+      "Observa cómo se transmite lo que otras personas dijeron",
+      "Practica cambios en el estilo indirecto y peticiones corteses",
+      "Negocia un plan de trabajo y resume los acuerdos"
+    ]
+  },
   "grammar": [
     {
-      "topic": "estilo_indirecto_presente",
-      "explanation_ru": "При передаче чужих слов после decir, explicar, comentar используется que. Если вводный глагол стоит в настоящем времени, время обычно сохраняется.",
+      "topic": "estilo_indirecto_presente_pasado",
+      "title": "Estilo indirecto: transmitir mensajes y acuerdos",
+      "explanation_ru": "Для передачи чужих слов используйте decir, comentar, explicar, señalar, confirmar + que. Если вводный глагол в настоящем времени, время обычно сохраняется: La coordinadora dice: «Necesitamos más tiempo» → La coordinadora dice que necesitan más tiempo. Если вводный глагол в прошедшем, часто происходит согласование времен: presente → imperfecto (necesitamos → necesitaban), perfecto → pluscuamperfecto (hemos enviado → habían enviado), futuro → condicional (enviaremos → enviarían). Это согласование зависит от временной перспективы и не является механическим: если информация по-прежнему актуальна, настоящее может сохраняться.",
       "examples": [
-        "Mi jefa dice que el plazo es flexible.",
-        "El equipo explica que necesita tiempo."
+        "La responsable explica que el plazo es flexible.",
+        "Ayer nos dijeron que necesitaban otra versión.",
+        "El proveedor confirmó que había recibido el pedido.",
+        "La coordinadora anunció que publicarían el calendario el lunes."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Ayer dijo que mañana enviará el documento.",
+          "correct": "Ayer dijo que al día siguiente enviaría el documento.",
+          "explanation": "При переносе временной точки отсчета mañana обычно становится al día siguiente, а futuro — condicional."
+        },
+        {
+          "incorrect": "Comentaron que han terminado la primera fase. (если завершение предшествовало прошлому сообщению)",
+          "correct": "Comentaron que habían terminado la primera fase.",
+          "explanation": "Pluscuamperfecto показывает, что завершение произошло до момента сообщения."
+        }
       ]
     },
     {
-      "topic": "estilo_indirecto_pasado",
-      "explanation_ru": "Если вводный глагол стоит в прошедшем времени, время часто сдвигается назад: presente → imperfecto, pretérito perfecto → pluscuamperfecto, futuro → condicional. Временные указатели также меняются: mañana → al día siguiente.",
+      "topic": "cambios_referencias_temporales_y_deicticas",
+      "title": "Согласование временных и указательных слов",
+      "explanation_ru": "При пересказе из другой временной точки меняются не только времена глаголов. Сегодня → ese día; вчера → el día anterior; завтра → al día siguiente; на следующей неделе → la semana siguiente; здесь → allí; этот → ese/aquel — если контекст требует смены точки отсчета. Если пересказ происходит в тот же день и местоименные ориентиры остаются актуальными, изменение необязательно. Важно передать исходный смысл, а не заменять слова автоматически.",
       "examples": [
-        "Dijo que estaba ocupado.",
-        "Comentaron que ya habían enviado el informe.",
-        "El proveedor dijo que enviaría la oferta al día siguiente."
+        "«Entregaré el informe mañana» → Dijo que entregaría el informe al día siguiente.",
+        "«Aquí tenemos una reunión» → Comentó que allí tenían una reunión.",
+        "«Hoy no puedo asistir» → Explicó que ese día no podía asistir."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Dijo que lo enviaría mañana al día siguiente.",
+          "correct": "Dijo que lo enviaría al día siguiente.",
+          "explanation": "Не следует одновременно сохранять mañana и добавлять al día siguiente, если речь идет об одной временной точке."
+        },
+        {
+          "incorrect": "Afirmó que este documento era urgente. (если документ уже не находится в текущем контексте)",
+          "correct": "Afirmó que ese documento era urgente.",
+          "explanation": "Ese может отражать смену точки отсчета; выбор зависит от того, остается ли предмет актуально близким."
+        }
       ]
     },
     {
-      "topic": "peticiones_formales",
-      "explanation_ru": "Для вежливых просьб используйте ¿Podrías…?, ¿Te importaría…? и ¿Sería posible…? Эти формы смягчают просьбу и подходят для рабочих ситуаций.",
+      "topic": "peticiones_propuestas_y_condicional",
+      "title": "Peticiones corteses y propuestas negociables",
+      "explanation_ru": "Для вежливых просьб используйте ¿Podrías + infinitivo?, ¿Te importaría + infinitivo? и ¿Sería posible + infinitivo? В более формальном обращении — ¿Podría enviarme…? Для предложения решения подойдут podríamos + infinitivo, convendría + infinitivo, sería mejor + infinitivo. После ¿Te importaría…? используется инфинитив, а после ¿Te importaría que…? — imperfecto de subjuntivo: ¿Te importaría que revisáramos el calendario? Уточняйте срок и ожидаемый результат, чтобы просьба была выполнимой.",
       "examples": [
-        "¿Podrías revisar este documento?",
-        "¿Te importaría enviarme la versión final?"
+        "¿Podrías compartir la versión actualizada antes del jueves?",
+        "¿Te importaría que revisáramos las prioridades?",
+        "Sería conveniente confirmar el presupuesto antes de empezar.",
+        "Podríamos dividir la tarea en dos fases."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "¿Te importaría que revisamos el presupuesto?",
+          "correct": "¿Te importaría que revisáramos el presupuesto?",
+          "explanation": "После ¿Te importaría que…? используется imperfecto de subjuntivo."
+        },
+        {
+          "incorrect": "¿Podrías que me envías el archivo?",
+          "correct": "¿Podrías enviarme el archivo?",
+          "explanation": "После poder en condicional используется инфинитив без que."
+        }
       ]
     }
   ],
@@ -41,240 +99,487 @@
     {
       "id": "es_es",
       "name": "Español de España",
-      "pronunciation_note": "Лексика и речевые модели Испании.",
+      "pronunciation_note": "Practica la entonación de peticiones y acuerdos; presta atención a presupuesto, planificación y plazo.",
       "dialogue": [
         {
-          "speaker": "Elena",
-          "text": "¿Cómo fue la reunión con el equipo?"
+          "speaker": "Clara",
+          "text": "¿Podemos revisar cómo va el proyecto antes de la reunión con el cliente?"
         },
         {
-          "speaker": "Raúl",
-          "text": "La directora dijo que el proyecto avanzaba según lo previsto."
+          "speaker": "Marcos",
+          "text": "Claro. La semana pasada la directora explicó que teníamos que cerrar el presupuesto antes del jueves."
         },
         {
-          "speaker": "Elena",
-          "text": "¿Mencionó algún problema?"
+          "speaker": "Clara",
+          "text": "¿Y qué dijo el equipo financiero?"
         },
         {
-          "speaker": "Raúl",
-          "text": "Sí, comentó que necesitábamos revisar el presupuesto."
+          "speaker": "Marcos",
+          "text": "Confirmaron que habían revisado los costes, pero que necesitaban una previsión actualizada."
         },
         {
-          "speaker": "Elena",
-          "text": "¿Ya habían recibido todas las propuestas?"
+          "speaker": "Clara",
+          "text": "Entonces no podremos enviar la propuesta en la fecha inicial."
         },
         {
-          "speaker": "Raúl",
-          "text": "No. Dos proveedores dijeron que enviarían sus ofertas al día siguiente."
+          "speaker": "Marcos",
+          "text": "Eso parece. El proveedor también comentó que entregaría los datos el miércoles."
         },
         {
-          "speaker": "Elena",
-          "text": "Entonces habrá que actualizar el calendario."
+          "speaker": "Clara",
+          "text": "¿Podrías pedirle que confirme la hora? Sin esa información no podemos terminar el informe."
         },
         {
-          "speaker": "Raúl",
-          "text": "¿Podrías revisar la nueva versión esta tarde?"
+          "speaker": "Marcos",
+          "text": "Sí. ¿Te importaría revisar mientras tanto la parte de planificación?"
         },
         {
-          "speaker": "Elena",
-          "text": "Claro. ¿Podrías enviármela antes de las tres?"
+          "speaker": "Clara",
+          "text": "No hay problema, aunque preferiría que acordáramos primero qué tareas son prioritarias."
         },
         {
-          "speaker": "Raúl",
-          "text": "Sí, te la mandaré antes de las tres."
+          "speaker": "Marcos",
+          "text": "Tiene sentido. Podríamos dividir el trabajo: tú revisas el calendario y yo actualizo los costes."
+        },
+        {
+          "speaker": "Clara",
+          "text": "De acuerdo. ¿Sería posible reunirnos el jueves por la mañana para comprobar los avances?"
+        },
+        {
+          "speaker": "Marcos",
+          "text": "Perfecto. Le diré a la directora que tendremos una versión revisada para esa reunión."
         }
       ],
-      "context_note": "В испанских компаниях формат коммуникации зависит от отрасли и корпоративной культуры. Во внешней переписке часто используют нейтральные вежливые формулировки, даже если внутри команды общаются менее формально.",
-      "reading": {
-        "title": "Un proyecto compartido",
-        "text": "El equipo recibió el encargo de preparar una propuesta para un cliente nuevo. En la primera reunión, la responsable explicó que el plazo era de tres semanas y asignó una tarea a cada persona. Dos días después, el departamento financiero comunicó que necesitaba datos adicionales. El equipo reorganizó el calendario y acordó revisar los avances cada viernes. La claridad en las responsabilidades evitó duplicar trabajo."
+      "context_note": "En España, el vocabulario de oficina varía según el sector y la empresa. Son habituales encargo, presupuesto, calendario, planificación y departamento. En equipos internacionales puede combinarse el trato de tú con fórmulas corteses, mientras que en comunicaciones externas se suele cuidar más el registro.",
+      "vocabulary_in_context": [
+        {
+          "term": "plazo",
+          "meaning": "fecha o periodo límite para completar una tarea",
+          "example": "El plazo para entregar el informe termina el jueves."
+        },
+        {
+          "term": "previsión",
+          "meaning": "estimación de una situación o resultado futuro",
+          "example": "Necesitamos una previsión actualizada de los costes."
+        },
+        {
+          "term": "asignar una tarea",
+          "meaning": "encargar una actividad concreta a una persona",
+          "example": "La coordinadora asignó una tarea a cada área."
+        },
+        {
+          "term": "obstáculo",
+          "meaning": "circunstancia que dificulta avanzar",
+          "example": "La falta de datos se convirtió en un obstáculo."
+        },
+        {
+          "term": "hacer seguimiento",
+          "meaning": "comprobar periódicamente el avance de una actividad",
+          "example": "Haremos seguimiento de los acuerdos cada semana."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          {
+            "expression": "¿Cómo vamos de tiempo?",
+            "function": "Comprobar si el equipo puede cumplir el plazo."
+          },
+          {
+            "expression": "Dejar algo cerrado",
+            "function": "Acordar o finalizar un asunto para que no quede pendiente."
+          },
+          {
+            "expression": "Quedarse pendiente",
+            "function": "Indicar que una tarea todavía no está resuelta."
+          },
+          {
+            "expression": "Por mi parte, me encargo de…",
+            "function": "Asumir explícitamente una responsabilidad."
+          }
+        ],
+        "regional_note": "En España son frecuentes plazo, presupuesto y planificación. El registro cambia según la empresa y el interlocutor; tutear no impide formular peticiones corteses."
+      },
+      "guided_practice": {
+        "notice": {
+          "instruction": "Relee la conversación y observa cómo el equipo transmite información de la reunión anterior y convierte los problemas en acuerdos concretos.",
+          "tasks": [
+            "Localiza dos ejemplos de estilo indirecto con verbo introductor en pasado e identifica el cambio de tiempo verbal.",
+            "Encuentra una referencia temporal que cambia al transmitir un mensaje desde otro momento.",
+            "Identifica dos peticiones corteses y explica qué diferencia de tono hay entre pedir algo directamente y proponerlo con condicional."
+          ]
+        },
+        "practice": {
+          "instruction": "Transforma los mensajes y completa las peticiones manteniendo el sentido y el registro profesional.",
+          "tasks": [
+            "La directora dijo: «Tenemos que revisar el calendario». → La directora dijo que ___ que revisar el calendario.",
+            "El proveedor comentó: «Enviaré los datos mañana». → El proveedor comentó que ___ los datos al día siguiente.",
+            "¿Te importaría que ___ (revisar, nosotros) las prioridades?",
+            "¿___ posible confirmar la nueva fecha antes del viernes?"
+          ],
+          "answers": [
+            "tenían",
+            "enviaría",
+            "revisáramos",
+            "Sería"
+          ]
+        },
+        "communicate": {
+          "instruction": "En parejas, organizad un proyecto breve para una actividad comunitaria o laboral. Una persona coordina y otra comunica un imprevisto.",
+          "tasks": [
+            "Definan el objetivo, el plazo y tres tareas con responsables.",
+            "Una persona comunica un cambio de fecha o una dificultad usando estilo indirecto.",
+            "Negocien una nueva distribución de tareas con al menos dos peticiones corteses.",
+            "Cierren la conversación resumiendo acuerdos, responsables y fechas."
+          ]
+        }
+      },
+      "personal_application": {
+        "scenario": "Tu equipo debe entregar una propuesta a un cliente, pero un departamento todavía no comparte la información que prometió.",
+        "task": "Prepara un mensaje oral o escrito de 8–10 frases para informar a tu responsable. Explica qué se había acordado, qué comunicó el otro equipo, cómo afecta al plazo y qué propones hacer. Incluye estilo indirecto, una petición cortés y un resumen de próximos pasos.",
+        "support": [
+          "En la última reunión se acordó que…",
+          "El equipo comentó que…",
+          "El plazo inicial era…",
+          "¿Sería posible…?",
+          "Propongo que…",
+          "Por mi parte, me encargo de…"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "La entonación cortés en preguntas con condicional y la claridad al transmitir mensajes largos en estilo indirecto.",
+        "steps": [
+          "Lee en voz alta: «¿Te importaría que revisáramos las prioridades?» y «¿Sería posible confirmar la fecha?».",
+          "Practica el ritmo de una frase larga: «La responsable explicó que el equipo necesitaba más tiempo porque faltaban algunos datos».",
+          "Graba un resumen de una reunión de 30–40 segundos y comprueba que se distinguen las palabras de otras personas de tus propias propuestas."
+        ],
+        "audio_model_status": "pending"
+      },
+      "reflection": {
+        "can_do": [
+          "Puedo explicar el estado de un proyecto y señalar qué está retrasando el trabajo.",
+          "Puedo transmitir acuerdos y mensajes de otras personas usando el estilo indirecto.",
+          "Puedo adaptar tiempos y referencias temporales al cambiar el punto de vista.",
+          "Puedo formular peticiones corteses, negociar prioridades y resumir próximos pasos."
+        ]
       },
       "exercises": [
         {
           "id": "es_es_b1_u5_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cuál es la idea principal del texto?",
+          "prompt": "¿Qué problema obliga al equipo a revisar el plan?",
           "options": [
-            "Un equipo organiza un proyecto, distribuye tareas y ajusta el calendario cuando necesita más información.",
-            "La responsable cancela el proyecto porque el plazo es demasiado corto.",
-            "El departamento financiero asume todas las tareas del equipo."
+            "Falta una previsión actualizada y el proveedor aún debe entregar datos.",
+            "El cliente ha cancelado definitivamente el proyecto.",
+            "La directora ha decidido cambiar a todo el equipo."
           ],
           "answer": 0,
-          "explanation": "El texto muestra cómo se coordinan las tareas y se adapta el plan de trabajo."
+          "explanation": "La conversación indica que falta información para cerrar el informe y la propuesta."
         },
         {
           "id": "es_es_b1_u5_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué dato adicional necesitaba el departamento financiero?",
+          "prompt": "¿Qué tareas acuerdan repartirse Clara y Marcos?",
           "options": [
-            "Una nueva oficina para el equipo.",
-            "Una lista de vacaciones.",
-            "Datos adicionales para preparar la propuesta."
+            "Clara actualizará los costes y Marcos revisará el calendario.",
+            "Clara revisará el calendario y Marcos actualizará los costes.",
+            "Ambos dejarán todas las tareas para el proveedor."
           ],
-          "answer": 2,
-          "explanation": "El texto indica que finanzas necesitaba información adicional."
+          "answer": 1,
+          "explanation": "Clara se ocupa del calendario y Marcos de los costes."
         },
         {
           "id": "es_es_b1_u5_e3",
           "type": "choice",
-          "skill": "grammar",
-          "prompt": "Pasa al estilo indirecto: «El proveedor dijo: “Enviaré la oferta mañana”».",
+          "skill": "vocabulary",
+          "prompt": "En el diálogo, ¿qué significa «cerrar el presupuesto»?",
           "options": [
-            "El proveedor dijo que enviaría la oferta al día siguiente.",
-            "El proveedor dijo que envía la oferta ayer.",
-            "El proveedor dijo que enviará la oferta mañana."
+            "Acordar y dejar definida la previsión económica del proyecto.",
+            "Cancelar todos los gastos sin revisarlos.",
+            "Enviar una factura al cliente final."
           ],
           "answer": 0,
-          "explanation": "El futuro pasa normalmente a condicional y mañana a al día siguiente."
+          "explanation": "Cerrar el presupuesto significa completar su revisión y dejarlo acordado."
         },
         {
           "id": "es_es_b1_u5_e4",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Elige la petición más adecuada para un correo profesional: «___ enviarme el informe antes del viernes?»",
+          "prompt": "Pasa al estilo indirecto: «La directora dijo: “Necesitamos más tiempo”».",
           "options": [
-            "¿Te importaría",
-            "¿Te importa que",
-            "¿Importas"
+            "La directora dijo que necesitan más tiempo.",
+            "La directora dijo que necesitarían más tiempo.",
+            "La directora dijo que necesitaban más tiempo."
           ],
-          "answer": 0,
-          "explanation": "¿Te importaría + infinitivo? es una fórmula cortés para hacer una petición."
+          "answer": 2,
+          "explanation": "Con un verbo introductor en pasado, el presente suele pasar a imperfecto si se mantiene esa perspectiva temporal."
         },
         {
           "id": "es_es_b1_u5_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué influye en el estilo de comunicación laboral?",
+          "prompt": "Según la nota contextual, ¿qué puede influir en el registro de una comunicación profesional en España?",
           "options": [
-            "Una regla idéntica para todas las empresas.",
-            "La empresa, el sector y la relación entre interlocutores.",
-            "Solo la edad de los trabajadores."
+            "Solo la edad de quien escribe.",
+            "El sector, la empresa y la relación entre interlocutores.",
+            "Una norma idéntica para todas las organizaciones."
           ],
           "answer": 1,
-          "explanation": "El registro depende del contexto profesional."
+          "explanation": "La nota subraya que el registro depende del contexto y de la relación profesional."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Coordinar sin perder de vista el objetivo",
+        "text": "Una consultora recibió el encargo de preparar un plan de mejora para una empresa. En la reunión inicial, la responsable explicó que el equipo disponía de un mes y pidió que cada área identificara dos prioridades. A mitad del proyecto, el departamento técnico comunicó que necesitaba más tiempo porque habían aparecido problemas con los datos. En lugar de mantener el calendario sin cambios, el equipo acordó entregar primero un diagnóstico y presentar las recomendaciones una semana después. La coordinadora envió un resumen con las tareas, las personas responsables y las nuevas fechas. Así, todos podían comprobar qué se había decidido y avisar si surgía otro obstáculo."
+      }
     },
     {
       "id": "es_mx",
       "name": "Español de México",
-      "pronunciation_note": "Мексиканский вариант как основа латиноамериканского маршрута.",
+      "pronunciation_note": "Practica la entonación de peticiones y acuerdos; presta atención a costos, planeación y fecha límite.",
       "dialogue": [
         {
-          "speaker": "Elena",
-          "text": "¿Cómo estuvo la reunión con el equipo?"
+          "speaker": "Clara",
+          "text": "¿Podemos revisar cómo va el proyecto antes de la reunión con el cliente?"
         },
         {
-          "speaker": "Raúl",
-          "text": "La directora dijo que el proyecto avanzaba según lo planeado."
+          "speaker": "Marcos",
+          "text": "Claro. La semana pasada la directora explicó que teníamos que cerrar el presupuesto antes del jueves."
         },
         {
-          "speaker": "Elena",
-          "text": "¿Mencionó algún problema?"
+          "speaker": "Clara",
+          "text": "¿Y qué dijo el equipo de finanzas?"
         },
         {
-          "speaker": "Raúl",
-          "text": "Sí, comentó que necesitábamos revisar el presupuesto."
+          "speaker": "Marcos",
+          "text": "Confirmaron que habían revisado los costos, pero que necesitaban una proyección actualizada."
         },
         {
-          "speaker": "Elena",
-          "text": "¿Ya habían recibido todas las propuestas?"
+          "speaker": "Clara",
+          "text": "Entonces no podremos enviar la propuesta en la fecha inicial."
         },
         {
-          "speaker": "Raúl",
-          "text": "No. Dos proveedores dijeron que mandarían sus cotizaciones al día siguiente."
+          "speaker": "Marcos",
+          "text": "Eso parece. El proveedor también comentó que entregaría los datos el miércoles."
         },
         {
-          "speaker": "Elena",
-          "text": "Entonces habrá que actualizar el calendario."
+          "speaker": "Clara",
+          "text": "¿Podrías pedirle que confirme la hora? Sin esa información no podemos terminar el informe."
         },
         {
-          "speaker": "Raúl",
-          "text": "¿Podrías revisar la nueva versión esta tarde?"
+          "speaker": "Marcos",
+          "text": "Sí. ¿Te importaría revisar mientras tanto la parte de planeación?"
         },
         {
-          "speaker": "Elena",
-          "text": "Claro. ¿Podrías mandármela antes de las tres?"
+          "speaker": "Clara",
+          "text": "No hay problema, aunque preferiría que acordáramos primero qué tareas son prioritarias."
         },
         {
-          "speaker": "Raúl",
-          "text": "Sí, te la envío antes de las tres."
+          "speaker": "Marcos",
+          "text": "Tiene sentido. Podríamos dividir el trabajo: tú revisas el calendario y yo actualizo los costos."
+        },
+        {
+          "speaker": "Clara",
+          "text": "¿Sería posible reunirnos el jueves por la mañana para revisar los avances?"
+        },
+        {
+          "speaker": "Marcos",
+          "text": "Perfecto. Le diré a la directora que tendremos una versión revisada para esa reunión."
         }
       ],
-      "context_note": "В мексиканских рабочих командах стиль общения зависит от отрасли и корпоративной культуры. Внешняя переписка часто начинается с приветствия и короткого контекста, а просьбы смягчаются формами вроде ¿Podrías…? и ¿Sería posible…?",
-      "reading": {
-        "title": "Un proyecto compartido",
-        "text": "El equipo recibió el encargo de preparar una propuesta para un cliente nuevo. En la primera reunión, la responsable explicó que el plazo era de tres semanas y asignó una tarea a cada persona. Dos días después, el área de finanzas comunicó que necesitaba datos adicionales. El equipo reorganizó el calendario y acordó revisar los avances cada viernes. La claridad en las responsabilidades evitó repetir trabajo."
+      "context_note": "En México, el vocabulario profesional puede incluir cotización, costos, planeación y área de finanzas. El uso de tú o usted depende de la empresa, la relación entre interlocutores y la situación; las fórmulas corteses ayudan a dejar claras las peticiones sin imponerlas.",
+      "vocabulary_in_context": [
+        {
+          "term": "fecha límite",
+          "meaning": "día o momento máximo para completar una tarea",
+          "example": "La fecha límite para entregar el informe es el jueves."
+        },
+        {
+          "term": "proyección",
+          "meaning": "estimación de una situación o resultado futuro",
+          "example": "Necesitamos una proyección actualizada de los costos."
+        },
+        {
+          "term": "asignar una tarea",
+          "meaning": "encargar una actividad concreta a una persona",
+          "example": "La coordinadora asignó una tarea a cada área."
+        },
+        {
+          "term": "obstáculo",
+          "meaning": "circunstancia que dificulta avanzar",
+          "example": "La falta de datos se convirtió en un obstáculo."
+        },
+        {
+          "term": "dar seguimiento",
+          "meaning": "comprobar periódicamente el avance de una actividad",
+          "example": "Daremos seguimiento a los acuerdos cada semana."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          {
+            "expression": "¿Cómo vamos con los tiempos?",
+            "function": "Comprobar si el equipo puede cumplir la fecha límite."
+          },
+          {
+            "expression": "Dejar algo definido",
+            "function": "Acordar o finalizar un asunto para que no quede pendiente."
+          },
+          {
+            "expression": "Quedar pendiente",
+            "function": "Indicar que una tarea todavía no está resuelta."
+          },
+          {
+            "expression": "Por mi parte, me encargo de…",
+            "function": "Asumir explícitamente una responsabilidad."
+          }
+        ],
+        "regional_note": "En México son frecuentes costos, cotización y planeación en contextos profesionales. El uso de tú y usted depende del vínculo y de la cultura de cada organización; no hay una única fórmula válida para todas las empresas."
+      },
+      "guided_practice": {
+        "notice": {
+          "instruction": "Relee la conversación y observa cómo el equipo transmite información de la reunión anterior y convierte los problemas en acuerdos concretos.",
+          "tasks": [
+            "Localiza dos ejemplos de estilo indirecto con verbo introductor en pasado e identifica el cambio de tiempo verbal.",
+            "Encuentra una referencia temporal que cambia al transmitir un mensaje desde otro momento.",
+            "Identifica dos peticiones corteses y explica qué diferencia de tono hay entre pedir algo directamente y proponerlo con condicional."
+          ]
+        },
+        "practice": {
+          "instruction": "Transforma los mensajes y completa las peticiones manteniendo el sentido y el registro profesional.",
+          "tasks": [
+            "La directora dijo: «Tenemos que revisar el calendario». → La directora dijo que ___ que revisar el calendario.",
+            "El proveedor comentó: «Enviaré los datos mañana». → El proveedor comentó que ___ los datos al día siguiente.",
+            "¿Te importaría que ___ (revisar, nosotros) las prioridades?",
+            "¿___ posible confirmar la nueva fecha antes del viernes?"
+          ],
+          "answers": [
+            "tenían",
+            "enviaría",
+            "revisáramos",
+            "Sería"
+          ]
+        },
+        "communicate": {
+          "instruction": "En parejas, organicen un proyecto breve para una actividad comunitaria o laboral. Una persona coordina y otra comunica un imprevisto.",
+          "tasks": [
+            "Definan el objetivo, el plazo y tres tareas con responsables.",
+            "Una persona comunica un cambio de fecha o una dificultad usando estilo indirecto.",
+            "Negocien una nueva distribución de tareas con al menos dos peticiones corteses.",
+            "Cierren la conversación resumiendo acuerdos, responsables y fechas."
+          ]
+        }
+      },
+      "personal_application": {
+        "scenario": "Tu equipo debe entregar una propuesta a un cliente, pero un área todavía no comparte la información que prometió.",
+        "task": "Prepara un mensaje oral o escrito de 8–10 frases para informar a tu responsable. Explica qué se había acordado, qué comunicó el otro equipo, cómo afecta al plazo y qué propones hacer. Incluye estilo indirecto, una petición cortés y un resumen de próximos pasos.",
+        "support": [
+          "En la última reunión se acordó que…",
+          "El equipo comentó que…",
+          "El plazo inicial era…",
+          "¿Sería posible…?",
+          "Propongo que…",
+          "Por mi parte, me encargo de…"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "La entonación cortés en preguntas con condicional y la claridad al transmitir mensajes largos en estilo indirecto.",
+        "steps": [
+          "Lee en voz alta: «¿Te importaría que revisáramos las prioridades?» y «¿Sería posible confirmar la fecha?».",
+          "Practica el ritmo de una frase larga: «La responsable explicó que el equipo necesitaba más tiempo porque faltaban algunos datos».",
+          "Graba un resumen de una reunión de 30–40 segundos y comprueba que se distinguen las palabras de otras personas de tus propias propuestas."
+        ],
+        "audio_model_status": "pending"
+      },
+      "reflection": {
+        "can_do": [
+          "Puedo explicar el estado de un proyecto y señalar qué está retrasando el trabajo.",
+          "Puedo transmitir acuerdos y mensajes de otras personas usando el estilo indirecto.",
+          "Puedo adaptar tiempos y referencias temporales al cambiar el punto de vista.",
+          "Puedo formular peticiones corteses, negociar prioridades y resumir próximos pasos."
+        ]
       },
       "exercises": [
         {
           "id": "es_mx_b1_u5_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cuál es la idea principal del texto?",
+          "prompt": "¿Qué problema obliga al equipo a revisar el plan?",
           "options": [
-            "El equipo distribuye responsabilidades y reorganiza el trabajo cuando surgen nuevas necesidades de información.",
-            "El área de finanzas decide trabajar sin colaborar con el resto del equipo.",
-            "La responsable elimina el calendario para evitar reuniones."
+            "Falta una previsión actualizada y el proveedor aún debe entregar datos.",
+            "El cliente ha cancelado definitivamente el proyecto.",
+            "La directora ha decidido cambiar a todo el equipo."
           ],
           "answer": 0,
-          "explanation": "El texto trata de la coordinación y adaptación de un proyecto compartido."
+          "explanation": "La conversación indica que falta información para cerrar el informe y la propuesta."
         },
         {
           "id": "es_mx_b1_u5_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué necesitaba el área de finanzas?",
+          "prompt": "¿Qué tareas acuerdan repartirse Clara y Marcos?",
           "options": [
-            "Un nuevo edificio.",
-            "Un cambio de proveedor.",
-            "Datos adicionales."
+            "Clara actualizará los costes y Marcos revisará el calendario.",
+            "Clara revisará el calendario y Marcos actualizará los costes.",
+            "Ambos dejarán todas las tareas para el proveedor."
           ],
-          "answer": 2,
-          "explanation": "El texto señala que finanzas necesitaba datos adicionales."
+          "answer": 1,
+          "explanation": "Clara se ocupa del calendario y Marcos de los costes."
         },
         {
           "id": "es_mx_b1_u5_e3",
           "type": "choice",
-          "skill": "grammar",
-          "prompt": "Pasa al estilo indirecto: «El proveedor dijo: “Enviaré la cotización mañana”».",
+          "skill": "vocabulary",
+          "prompt": "En el diálogo, ¿qué significa «cerrar el presupuesto»?",
           "options": [
-            "El proveedor dijo que enviaría la cotización al día siguiente.",
-            "El proveedor dijo que envía la cotización ayer.",
-            "El proveedor dijo que enviará la cotización mañana."
+            "Acordar y dejar definida la previsión económica del proyecto.",
+            "Cancelar todos los gastos sin revisarlos.",
+            "Enviar una factura al cliente final."
           ],
           "answer": 0,
-          "explanation": "El futuro en estilo directo suele pasar a condicional al depender de un verbo pasado."
+          "explanation": "Cerrar el presupuesto significa completar su revisión y dejarlo acordado."
         },
         {
           "id": "es_mx_b1_u5_e4",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Elige la petición más adecuada para un correo profesional: «___ enviarme el informe antes del viernes?»",
+          "prompt": "Pasa al estilo indirecto: «La directora dijo: “Necesitamos más tiempo”».",
           "options": [
-            "¿Te importaría",
-            "¿Te importa que",
-            "¿Importas"
+            "La directora dijo que necesitan más tiempo.",
+            "La directora dijo que necesitarían más tiempo.",
+            "La directora dijo que necesitaban más tiempo."
           ],
-          "answer": 0,
-          "explanation": "¿Te importaría + infinitivo? es una fórmula cortés para hacer una petición."
+          "answer": 2,
+          "explanation": "Con un verbo introductor en pasado, el presente suele pasar a imperfecto si se mantiene esa perspectiva temporal."
         },
         {
           "id": "es_mx_b1_u5_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué influye en el estilo de comunicación laboral?",
+          "prompt": "Según la nota contextual, ¿qué puede influir en el registro de una comunicación profesional en México?",
           "options": [
-            "Una regla idéntica para todas las empresas.",
-            "La empresa, el sector y la relación entre interlocutores.",
-            "Solo el cargo de la persona."
+            "Solo la edad de quien escribe.",
+            "El sector, la empresa y la relación entre interlocutores.",
+            "Una norma idéntica para todas las organizaciones."
           ],
           "answer": 1,
-          "explanation": "El registro depende de la cultura de empresa y de la situación."
+          "explanation": "La nota subraya que el registro depende del contexto y de la relación profesional."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Coordinar sin perder de vista el objetivo",
+        "text": "Una consultora recibió el encargo de preparar un plan de mejora para una empresa. En la reunión inicial, la responsable explicó que el equipo tenía un mes y pidió que cada área identificara dos prioridades. A mitad del proyecto, el área técnica comunicó que necesitaba más tiempo porque habían surgido problemas con los datos. En lugar de mantener el calendario sin cambios, el equipo acordó entregar primero un diagnóstico y presentar las recomendaciones una semana después. La coordinadora envió un resumen con las tareas, las personas responsables y las nuevas fechas. Así, todos podían revisar qué se había acordado y avisar si surgía otro obstáculo."
+      }
     }
+  ],
+  "teacher_notes": [
+    "No añadir una sección independiente de Vocabulary: el léxico se presenta en diálogos, lecturas y tareas.",
+    "El estilo indirecto requiere atender al punto temporal desde el que se informa; los cambios de tiempo y deícticos no son automáticos si la referencia sigue vigente.",
+    "Distinguir ¿Te importaría + infinitivo? de ¿Te importaría que + imperfecto de subjuntivo? y practicar peticiones con condicional.",
+    "El registro profesional depende de la empresa, el sector, la relación y el canal; no presentar una única norma cultural para España o México.",
+    "Las tareas abiertas pertenecen a guided practice y personal application; exercises contiene cinco preguntas cerradas por variante.",
+    "Las diferencias léxicas entre España y México son orientativas y no exclusivas.",
+    "No integrar hasta completar la revisión de todo el catálogo español."
   ]
 }

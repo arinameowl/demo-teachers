@@ -1,0 +1,355 @@
+{
+  "schema_version": 1,
+  "level": "A1",
+  "category": "lesson",
+  "language": "es",
+  "unit_id": "es_a1_u04_la_alimentacion",
+  "title": "La alimentación",
+  "learning_goals": [
+    "Назвать основные продукты, блюда и напитки",
+    "Сделать заказ в кафе или ресторане",
+    "Спросить цену и купить продукты",
+    "Выразить простые предпочтения в еде",
+    "Использовать конструкции querer, preferir, gustar и артикли с исчисляемыми и неисчисляемыми существительными"
+  ],
+  "grammar": [
+    {
+      "topic": "gustar",
+      "explanation_ru": "С конструкцией gustar предмет или действие нравится человеку. Используем me/te/le/nos/os/les + gusta для единственного числа или инфинитива и gustan для множественного числа.",
+      "examples": [
+        "Me gusta el café.",
+        "Me gustan las frutas.",
+        "A Ana le gusta cocinar."
+      ]
+    },
+    {
+      "topic": "querer_and_preferir",
+      "explanation_ru": "Querer и preferir помогают выразить желание и предпочтение. Оба глагола имеют изменение корневой гласной в некоторых формах.",
+      "examples": [
+        "Quiero una ensalada.",
+        "Prefiero agua.",
+        "¿Qué quieres comer?"
+      ]
+    },
+    {
+      "topic": "articles_and_food",
+      "explanation_ru": "Артикль зависит от контекста: el pan — хлеб как продукт, un bocadillo — один конкретный бутерброд. При заказе часто используют un/una или просто название продукта.",
+      "examples": [
+        "Quiero un café.",
+        "Compro pan y tomates.",
+        "La sopa está caliente."
+      ]
+    },
+    {
+      "topic": "polite_requests",
+      "explanation_ru": "Для простого вежливого заказа подойдут «Quisiera…» и «¿Me pone…?» в Испании; «¿Me da…?» и «Quisiera…» употребляются в Мексике. На A1 достаточно освоить одну-две формулы.",
+      "examples": [
+        "Quisiera un té, por favor.",
+        "¿Me pone una tostada?"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "vocabulary": [
+        {
+          "es": "desayuno",
+          "ru": "завтрак"
+        },
+        {
+          "es": "comida",
+          "ru": "обед; еда"
+        },
+        {
+          "es": "cena",
+          "ru": "ужин"
+        },
+        {
+          "es": "zumo",
+          "ru": "сок"
+        },
+        {
+          "es": "tostada",
+          "ru": "тост; поджаренный хлеб"
+        },
+        {
+          "es": "bocadillo",
+          "ru": "сэндвич в багете"
+        },
+        {
+          "es": "patatas",
+          "ru": "картофель"
+        },
+        {
+          "es": "gambas",
+          "ru": "креветки"
+        },
+        {
+          "es": "la cuenta",
+          "ru": "счет"
+        },
+        {
+          "es": "¿Me pone…?",
+          "ru": "Не могли бы вы мне…? (заказ)"
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "Camarera",
+          "text": "¡Buenas tardes! ¿Qué vais a tomar?"
+        },
+        {
+          "speaker": "Clara",
+          "text": "Para mí, una ensalada y agua, por favor."
+        },
+        {
+          "speaker": "Javier",
+          "text": "Yo quiero un bocadillo de tortilla y un zumo de naranja."
+        },
+        {
+          "speaker": "Camarera",
+          "text": "Muy bien. ¿Algo más?"
+        },
+        {
+          "speaker": "Clara",
+          "text": "¿Me pone también un café con leche para después?"
+        },
+        {
+          "speaker": "Camarera",
+          "text": "Claro. ¿Queréis compartir algo de postre?"
+        },
+        {
+          "speaker": "Javier",
+          "text": "No, gracias. ¿Cuánto es?"
+        },
+        {
+          "speaker": "Camarera",
+          "text": "Son dieciocho euros."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "es_es_u4_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿Dónde están Clara y Javier?",
+          "options": [
+            "En una cafetería o restaurante",
+            "En una farmacia",
+            "En una estación"
+          ],
+          "answer": 0,
+          "explanation": "Están hablando con una camarera y piden comida y bebidas."
+        },
+        {
+          "id": "es_es_u4_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Qué pide Javier?",
+          "options": [
+            "Una ensalada y agua",
+            "Un bocadillo de tortilla y un zumo",
+            "Una sopa y un café"
+          ],
+          "answer": 1,
+          "explanation": "Javier pide un bocadillo de tortilla y un zumo de naranja."
+        },
+        {
+          "id": "es_es_u4_e3",
+          "skill": "vocabulary",
+          "type": "choice",
+          "prompt": "В Испании «zumo» — это…",
+          "options": [
+            "Сок",
+            "Суп",
+            "Соус"
+          ],
+          "answer": 0,
+          "explanation": "Zumo — обычное слово для фруктового сока в Испании."
+        },
+        {
+          "id": "es_es_u4_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «A Clara ___ las ensaladas».",
+          "options": [
+            "gusta",
+            "gustan",
+            "gusto"
+          ],
+          "answer": 1,
+          "explanation": "Ensaladas — множественное число, поэтому используем gustan: A Clara le gustan las ensaladas."
+        },
+        {
+          "id": "es_es_u4_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "Что обычно означает «la comida» в контексте распорядка дня в Испании?",
+          "options": [
+            "Основной дневной прием пищи — обед",
+            "Только легкий вечерний перекус",
+            "Только праздничный ужин"
+          ],
+          "answer": 0,
+          "explanation": "В Испании comida часто обозначает основной дневной прием пищи, обычно в середине дня. Время и привычки различаются."
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "vocabulary": [
+        {
+          "es": "desayuno",
+          "ru": "завтрак"
+        },
+        {
+          "es": "comida",
+          "ru": "обед; еда"
+        },
+        {
+          "es": "cena",
+          "ru": "ужин"
+        },
+        {
+          "es": "jugo",
+          "ru": "сок"
+        },
+        {
+          "es": "torta",
+          "ru": "сэндвич в булочке"
+        },
+        {
+          "es": "frijoles",
+          "ru": "фасоль"
+        },
+        {
+          "es": "jitomate",
+          "ru": "томат (слово, распространенное в центральной Мексике)"
+        },
+        {
+          "es": "elote",
+          "ru": "кукуруза в початке"
+        },
+        {
+          "es": "la cuenta",
+          "ru": "счет"
+        },
+        {
+          "es": "¿Me da…?",
+          "ru": "Дайте, пожалуйста…"
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "Mesera",
+          "text": "¡Buenas tardes! ¿Qué les doy?"
+        },
+        {
+          "speaker": "Sofía",
+          "text": "Para mí, unos tacos de pollo y un agua de jamaica, por favor."
+        },
+        {
+          "speaker": "Diego",
+          "text": "Yo quiero una torta de milanesa y un jugo de naranja."
+        },
+        {
+          "speaker": "Mesera",
+          "text": "Claro. ¿Algo más?"
+        },
+        {
+          "speaker": "Sofía",
+          "text": "¿Me da también una botella de agua?"
+        },
+        {
+          "speaker": "Mesera",
+          "text": "Sí, cómo no. ¿Van a querer postre?"
+        },
+        {
+          "speaker": "Diego",
+          "text": "No, gracias. ¿Nos trae la cuenta?"
+        },
+        {
+          "speaker": "Mesera",
+          "text": "Por supuesto. Son doscientos veinte pesos."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "es_mx_u4_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿Dónde están Sofía y Diego?",
+          "options": [
+            "En un restaurante",
+            "En una biblioteca",
+            "En una tienda de ropa"
+          ],
+          "answer": 0,
+          "explanation": "Piden tacos, una torta y bebidas a una mesera."
+        },
+        {
+          "id": "es_mx_u4_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Qué bebida pide Sofía?",
+          "options": [
+            "Un café",
+            "Un agua de jamaica",
+            "Un té"
+          ],
+          "answer": 1,
+          "explanation": "Sofía pide un agua de jamaica."
+        },
+        {
+          "id": "es_mx_u4_e3",
+          "skill": "vocabulary",
+          "type": "choice",
+          "prompt": "В Мексике «jugo» в этом контексте означает…",
+          "options": [
+            "Сок",
+            "Кофе",
+            "Минеральную воду"
+          ],
+          "answer": 0,
+          "explanation": "Jugo — распространенное слово для сока в Мексике; в Испании обычно говорят zumo."
+        },
+        {
+          "id": "es_mx_u4_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «Me ___ los tacos».",
+          "options": [
+            "gusta",
+            "gustan",
+            "gusto"
+          ],
+          "answer": 1,
+          "explanation": "Tacos — множественное число, поэтому нужна форма gustan."
+        },
+        {
+          "id": "es_mx_u4_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "Что такое «una torta» в мексиканском контексте еды?",
+          "options": [
+            "Сладкий пирог",
+            "Сэндвич в булочке",
+            "Тортилья из кукурузы"
+          ],
+          "answer": 1,
+          "explanation": "В Мексике torta обычно означает сэндвич в разрезанной булочке. Значение слова в других странах может отличаться."
+        }
+      ]
+    }
+  ],
+  "teacher_notes": [
+    "В испанском варианте zumo — типичная лексема Испании; в мексиканском jugo — типичная лексема Мексики.",
+    "Jitomate особенно характерно для центральной Мексики; в других регионах часто говорят tomate. Не выдавать jitomate за единственный мексиканский вариант.",
+    "Torta в Мексике — сэндвич в булочке; в других странах значение может быть иным.",
+    "Не обобщать время приемов пищи на всех жителей Испании или Мексики.",
+    "Диалоги и задания оригинальные."
+  ]
+}

@@ -6,33 +6,93 @@
   "unit_id": "es_b1_u03_medios_opinion",
   "title": "Medios, información y opinión",
   "learning_goals": [
-    "Обсуждать новости и источники информации",
-    "Выражать мнение, сомнение и степень уверенности",
-    "Различать indicativo и subjuntivo после конструкций мнения"
+    "Distinguir entre hechos, interpretaciones y opiniones al leer o escuchar noticias",
+    "Evaluar la fiabilidad de una publicación y localizar la fuente original de los datos",
+    "Expresar acuerdo, desacuerdo, duda y distintos grados de certeza",
+    "Construir argumentos y matizar una opinión mediante conectores",
+    "Usar indicativo y subjuntivo con expresiones de opinión, duda y valoración"
   ],
+  "editorial_intro": {
+    "title": "No todo lo que circula es información",
+    "text": "Un titular puede llamar la atención, una cifra puede parecer concluyente y una publicación puede acumular miles de reacciones. Pero ninguna de esas señales garantiza que la información sea completa o fiable. Leer críticamente no significa desconfiar de todo: significa preguntarse quién publica, de dónde salen los datos, qué contexto falta y qué parte del mensaje es una interpretación. En este material vas a analizar publicaciones, contrastar fuentes y defender una opinión sin confundir una impresión personal con un hecho comprobado.",
+    "opening_question": "Cuando encuentras una noticia que confirma lo que ya pensabas, ¿qué haces antes de compartirla?",
+    "objective": "Al terminar, podrás resumir una noticia, valorar sus fuentes y defender una postura con argumentos, matices y expresiones adecuadas de certeza o duda.",
+    "estimated_time": "45–55 minutos",
+    "route": [
+      "Lee una conversación sobre una noticia viral",
+      "Observa cómo se expresan opiniones, dudas y argumentos",
+      "Analiza la fiabilidad de una publicación",
+      "Construye y comunica una opinión razonada"
+    ]
+  },
   "grammar": [
     {
       "topic": "opinion_indicativo_subjuntivo",
-      "explanation_ru": "После creo que / pienso que обычно используется indicativo при утверждении мнения. После no creo que / no pienso que часто используется subjuntivo, так как выражается сомнение или отрицание.",
+      "title": "Opinión, afirmación y duda: indicativo o subjuntivo",
+      "explanation_ru": "После creo que, pienso que, me parece que в утвердительной форме обычно используется indicativo, поскольку говорящий представляет содержание как свою позицию: Creo que el titular exagera. При отрицании no creo que / no pienso que и при выражении сомнения часто используется subjuntivo: No creo que el dato sea correcto; Dudo que la fuente tenga toda la información. Сравните: Es evidente que hay un error (говорящий утверждает) и No es evidente que haya un error (говорящий не считает это установленным). После выражений уверенности в утвердительной форме обычно indicativo; после отрицания уверенности часто subjuntivo. Это не механическое правило: учитывайте смысл и степень уверенности.",
       "examples": [
-        "Creo que la noticia es importante.",
-        "No creo que sea una fuente fiable."
+        "Creo que el artículo necesita más contexto.",
+        "No me parece que la conclusión esté bien fundamentada.",
+        "Es probable que publiquen una corrección.",
+        "Estoy segura de que los datos son públicos."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "No creo que la cifra es exacta.",
+          "correct": "No creo que la cifra sea exacta.",
+          "explanation": "Отрицание creo que выражает сомнение; обычно требуется subjuntivo."
+        },
+        {
+          "incorrect": "Creo que la fuente sea fiable.",
+          "correct": "Creo que la fuente es fiable.",
+          "explanation": "Утвердительное creo que обычно вводит мнение с indicativo."
+        }
       ]
     },
     {
       "topic": "conectores_argumentacion",
-      "explanation_ru": "Для аргументации используйте por un lado / por otro lado, sin embargo, además, por eso, aunque. Они обозначают контраст, причину и дополнительный аргумент.",
+      "title": "Conectores para organizar y matizar argumentos",
+      "explanation_ru": "Для построения аргумента используйте además и asimismo для добавления, sin embargo и no obstante для контраста, por eso / por lo tanto для следствия, ya que / puesto que для причины. Aunque может вводить реальный факт с indicativo (Aunque el informe es reciente, utiliza una muestra pequeña) или гипотетическое/неподтвержденное обстоятельство с subjuntivo (Aunque parezca convincente, conviene comprobarlo). Для баланса аргументов подойдут por un lado… por otro; для уточнения — es decir, en concreto. Не выбирайте связку только по переводу: проверяйте логическую связь между частями.",
       "examples": [
-        "La propuesta es útil; sin embargo, cuesta mucho.",
-        "Además, faltan datos."
+        "El medio cita el estudio; sin embargo, no enlaza con el documento original.",
+        "La muestra es limitada, por lo tanto no permite generalizar.",
+        "Aunque el titular parezca claro, falta información sobre el contexto.",
+        "Por un lado, la encuesta ofrece datos útiles; por otro, deja preguntas abiertas."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "La muestra es pequeña, sin embargo no podemos generalizar por eso.",
+          "correct": "La muestra es pequeña; por eso no podemos generalizar.",
+          "explanation": "Por eso вводит следствие, а sin embargo — контраст; важно не смешивать логические отношения."
+        },
+        {
+          "incorrect": "Aunque parece convincente, habría que verificarlo. (если говорящий подает впечатление как гипотетическое)",
+          "correct": "Aunque parezca convincente, habría que verificarlo.",
+          "explanation": "Subjuntivo возможен, когда оценка представлена как уступительное предположение, а не установленный факт."
+        }
       ]
     },
     {
-      "topic": "fuentes_verificacion",
-      "explanation_ru": "Для обсуждения достоверности подходят según el informe, la fuente afirma que, los datos indican que, comprobar la información. Различайте факт, мнение и предположение.",
+      "topic": "fuentes_y_reporte",
+      "title": "Atribuir información y marcar el grado de certeza",
+      "explanation_ru": "Чтобы отделить собственное мнение от чужих слов, используйте según + источник (Según el informe…), el medio afirma que…, los datos muestran/indican que… Для передачи сообщения подходит se ha informado de que…; для осторожного вывода — parece que, podría tratarse de, es posible que. Различайте источник утверждения и доказательство: «un periódico afirma que» сообщает, кто это сказал, но само по себе не подтверждает истинность. В испанском косвенная речь часто сохраняет indicativo, если содержание передается как сообщение; subjuntivo появляется в конструкциях сомнения, оценки и вероятности.",
       "examples": [
-        "Según el informe, el uso ha aumentado.",
-        "Conviene comprobar la fecha."
+        "Según el informe, la participación aumentó un 12 %.",
+        "La publicación afirma que el cambio ya está en marcha.",
+        "Los datos podrían indicar una tendencia, pero no demuestran una causa.",
+        "Es posible que el titular simplifique los resultados."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Según de la encuesta, participaron 500 personas.",
+          "correct": "Según la encuesta, participaron 500 personas.",
+          "explanation": "Según употребляется без de."
+        },
+        {
+          "incorrect": "Los datos demuestran que quizá hay una relación.",
+          "correct": "Los datos sugieren que podría haber una relación.",
+          "explanation": "Сочетайте силу глагола с силой доказательств: sugerir / podría быть осторожнее, чем demostrar."
+        }
       ]
     }
   ],
@@ -40,53 +100,167 @@
     {
       "id": "es_es",
       "name": "Español de España",
-      "pronunciation_note": "Лексика и речевые модели Испании.",
+      "pronunciation_note": "Practica la entonación de las opiniones y la pronunciación clara de conectores; el vocabulario sigue usos habituales de España.",
       "dialogue": [
         {
-          "speaker": "Irene",
-          "text": "¿Has leído el artículo sobre la inteligencia artificial?"
+          "speaker": "Lucía",
+          "text": "¿Has visto el reportaje sobre el uso de móviles en clase?"
         },
         {
-          "speaker": "Álvaro",
-          "text": "Sí. Creo que puede ser una herramienta útil."
+          "speaker": "Diego",
+          "text": "Sí. El titular dice que los móviles perjudican el aprendizaje, pero el texto es bastante más matizado."
         },
         {
-          "speaker": "Irene",
-          "text": "Estoy de acuerdo, aunque no creo que resuelva todos los problemas."
+          "speaker": "Lucía",
+          "text": "A mí me parece que pueden distraer, aunque no creo que sean perjudiciales en cualquier situación."
         },
         {
-          "speaker": "Álvaro",
-          "text": "Además, el artículo no explica de dónde vienen los datos."
+          "speaker": "Diego",
+          "text": "Estoy de acuerdo. Según el reportaje, el estudio se hizo en cuatro centros y durante un trimestre."
         },
         {
-          "speaker": "Irene",
-          "text": "Por eso conviene comprobar quién lo ha publicado."
+          "speaker": "Lucía",
+          "text": "Entonces, ¿podemos aplicar esos resultados a todos los colegios?"
         },
         {
-          "speaker": "Álvaro",
-          "text": "Según el texto, la encuesta se hizo entre estudiantes universitarios."
+          "speaker": "Diego",
+          "text": "No necesariamente. La muestra es limitada y no sabemos si los centros fueron elegidos al azar."
         },
         {
-          "speaker": "Irene",
-          "text": "La muestra puede no representar a toda la población."
+          "speaker": "Lucía",
+          "text": "Además, el artículo enlaza con una noticia, pero no con el informe original."
         },
         {
-          "speaker": "Álvaro",
-          "text": "Por un lado, los resultados son interesantes; por otro, tienen límites."
+          "speaker": "Diego",
+          "text": "Eso es importante. Dudo que podamos valorar la metodología sin consultar el documento completo."
         },
         {
-          "speaker": "Irene",
-          "text": "¿Compartirías la noticia?"
+          "speaker": "Lucía",
+          "text": "Por otro lado, tampoco deberíamos descartar los resultados solo porque sean limitados."
         },
         {
-          "speaker": "Álvaro",
-          "text": "Sí, pero añadiría una nota sobre esas limitaciones."
+          "speaker": "Diego",
+          "text": "Claro. Podrían servir como punto de partida, siempre que expliquemos sus límites."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "¿Compartirías el reportaje?"
+        },
+        {
+          "speaker": "Diego",
+          "text": "Sí, pero añadiría el enlace al estudio y aclararía que no demuestra que todos los móviles afecten igual."
         }
       ],
-      "context_note": "В Испании новости получают из общественных и частных СМИ, цифровых изданий, радио и социальных сетей. При сравнении публикаций полезно проверять дату, автора, первоисточник данных и методологию.",
-      "reading": {
-        "title": "Leer antes de compartir",
-        "text": "Un informe sobre hábitos digitales se difundió rápidamente en redes sociales. El titular afirmaba que casi todos los jóvenes preferían informarse mediante vídeos cortos. Sin embargo, el estudio se había realizado con un grupo reducido de estudiantes de una sola universidad. Los especialistas recomendaron consultar la metodología antes de generalizar los resultados. Una cifra puede ser correcta y, aun así, ofrecer una imagen incompleta de la realidad."
+      "context_note": "En España conviven medios públicos y privados de ámbito estatal, autonómico y local, además de proyectos digitales y plataformas sociales. Una misma noticia puede aparecer con enfoques distintos. Comparar titulares y acudir al documento original ayuda a distinguir la información disponible de la interpretación editorial.",
+      "vocabulary_in_context": [
+        {
+          "term": "fuente primaria",
+          "meaning": "documento o testimonio original del que procede la información",
+          "example": "El informe completo es la fuente primaria de la cifra."
+        },
+        {
+          "term": "titular",
+          "meaning": "texto que encabeza una noticia y resume o destaca su contenido",
+          "example": "El titular no refleja todos los matices del reportaje."
+        },
+        {
+          "term": "muestra",
+          "meaning": "grupo de personas o casos que participa en un estudio",
+          "example": "La muestra incluye cuatro centros educativos."
+        },
+        {
+          "term": "sesgo",
+          "meaning": "tendencia que puede influir en la selección o interpretación de información",
+          "example": "Hay que considerar un posible sesgo en la encuesta."
+        },
+        {
+          "term": "contrastar fuentes",
+          "meaning": "comparar información procedente de distintos lugares",
+          "example": "Antes de publicar, la periodista contrastó varias fuentes."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          {
+            "expression": "No lo daría por hecho.",
+            "function": "Expresar que una conclusión todavía no está suficientemente demostrada."
+          },
+          {
+            "expression": "Habría que ver el estudio original.",
+            "function": "Proponer una comprobación antes de aceptar una afirmación."
+          },
+          {
+            "expression": "El titular se queda corto / exagera.",
+            "function": "Valorar si el encabezado representa bien el contenido."
+          },
+          {
+            "expression": "No es lo mismo que…",
+            "function": "Introducir una distinción importante entre dos ideas."
+          }
+        ],
+        "regional_note": "En España son habituales términos como «reportaje», «titular» y «centro educativo». El lenguaje de los medios cambia según el formato: una noticia informa de hechos, mientras que un editorial o una columna presenta una interpretación."
+      },
+      "guided_practice": {
+        "notice": {
+          "instruction": "Vuelve al diálogo y observa cómo los hablantes separan lo que saben, lo que interpretan y lo que ponen en duda.",
+          "tasks": [
+            "Localiza dos expresiones que introducen una opinión y explica por qué llevan indicativo o subjuntivo.",
+            "Identifica una limitación concreta del estudio y la frase que evita generalizar sus resultados.",
+            "Encuentra dos conectores que organicen el contraste o la consecuencia; explica la relación entre las ideas."
+          ]
+        },
+        "practice": {
+          "instruction": "Completa cada frase con la forma verbal o el conector que mantenga el sentido lógico.",
+          "tasks": [
+            "No creo que el titular ___ (reflejar) todos los datos.",
+            "Según el informe, la muestra ___ (incluir) cuatro centros.",
+            "La encuesta se hizo en una sola ciudad; ___, no representa necesariamente a todo el país.",
+            "Aunque el resultado ___ (parecer) convincente, conviene consultar la metodología."
+          ],
+          "answers": [
+            "refleje",
+            "incluye",
+            "por eso",
+            "parezca"
+          ]
+        },
+        "communicate": {
+          "instruction": "En parejas, comentad una publicación o noticia que hayáis visto recientemente. No hace falta compartir datos personales ni elegir un tema polémico.",
+          "tasks": [
+            "Resume la afirmación principal sin añadir tu valoración.",
+            "Explica qué fuente o evidencia la respalda y qué información falta.",
+            "Expresa tu grado de acuerdo o duda con al menos una construcción de subjuntivo.",
+            "Presenta un contraargumento con aunque, sin embargo o por otro lado y termina con una conclusión prudente."
+          ]
+        }
+      },
+      "personal_application": {
+        "scenario": "Un compañero te envía un reportaje viral y te pregunta si merece la pena compartirlo.",
+        "task": "Escribe o graba una respuesta de 8–10 frases. Resume la afirmación, distingue un hecho de una opinión, valora la fuente y explica qué comprobarías antes de compartirla. Incluye una objeción o un matiz.",
+        "support": [
+          "Según la publicación…",
+          "No creo que…",
+          "Por un lado…, por otro…",
+          "Aunque…, conviene…",
+          "Con la información disponible, diría que…"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "La entonación al expresar acuerdo, reserva y desacuerdo; la articulación de conectores y de formas de subjuntivo.",
+        "steps": [
+          "Lee en voz alta: «No creo que sea una conclusión definitiva» y «Aunque parezca convincente, faltan datos».",
+          "Practica una pausa breve antes de sin embargo y por lo tanto para hacer visible la estructura del argumento.",
+          "Graba una opinión de 30–40 segundos y comprueba que la entonación diferencia los hechos citados de tu valoración."
+        ],
+        "audio_model_status": "pending"
+      },
+      "reflection": {
+        "can_do": [
+          "Puedo distinguir la afirmación principal de una noticia y resumirla sin deformarla.",
+          "Puedo identificar límites básicos de una encuesta o de una fuente.",
+          "Puedo expresar opinión, duda y distintos grados de certeza usando indicativo y subjuntivo.",
+          "Puedo organizar argumentos, introducir un contraste y formular una conclusión matizada."
+        ]
       },
       "exercises": [
         {
@@ -95,117 +269,235 @@
           "skill": "gist",
           "prompt": "¿Cuál es la idea principal del texto?",
           "options": [
-            "Antes de compartir una noticia, conviene revisar la metodología y los límites del estudio.",
-            "Los vídeos cortos son siempre la fuente más fiable para informarse.",
-            "Una encuesta pequeña permite describir sin límites a toda la población."
+            "Una cifra puede inducir a error si se presenta sin explicar cómo se obtuvo.",
+            "Las encuestas no sirven para estudiar hábitos de lectura.",
+            "Los jóvenes han dejado de consultar cualquier medio de comunicación."
           ],
           "answer": 0,
-          "explanation": "El texto advierte sobre los riesgos de generalizar resultados de una muestra limitada."
+          "explanation": "El texto explica que el dato necesitaba contexto sobre la muestra y la pregunta."
         },
         {
           "id": "es_es_b1_u3_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué propone Álvaro hacer si comparte la noticia?",
+          "prompt": "¿Qué limitación tenía la encuesta?",
           "options": [
-            "Eliminar todos los datos del artículo.",
-            "Presentarla como una conclusión definitiva.",
-            "Añadir una nota sobre las limitaciones del estudio."
+            "Se realizó en varios países y durante diez años.",
+            "Se hizo en una sola ciudad y preguntaba por el uso diario.",
+            "No incluía ninguna pregunta sobre medios digitales."
           ],
-          "answer": 2,
-          "explanation": "Álvaro propone contextualizar la noticia."
+          "answer": 1,
+          "explanation": "El texto menciona una sola ciudad y una pregunta sobre la frecuencia diaria."
         },
         {
           "id": "es_es_b1_u3_e3",
           "type": "choice",
-          "skill": "grammar",
-          "prompt": "Completa: «No creo que esta fuente ___ fiable».",
+          "skill": "vocabulary",
+          "prompt": "En el diálogo, ¿qué significa «la muestra es limitada»?",
           "options": [
-            "sea",
-            "es",
-            "será"
+            "Que el estudio no incluye suficientes casos o variedad para generalizar con seguridad.",
+            "Que los resultados se publicaron en un formato demasiado breve.",
+            "Que todas las personas participantes respondieron lo mismo."
           ],
           "answer": 0,
-          "explanation": "Después de no creo que se usa subjuntivo."
+          "explanation": "Una muestra limitada reduce el alcance de las conclusiones que pueden extraerse."
         },
         {
           "id": "es_es_b1_u3_e4",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Elige el conector adecuado: «El estudio tiene una muestra pequeña; ___, sus resultados deben interpretarse con cautela».",
+          "prompt": "Completa: «No creo que el titular ___ todos los matices del informe».",
           "options": [
-            "sin embargo",
-            "por eso",
-            "además"
+            "refleja",
+            "refleje",
+            "reflejará"
           ],
           "answer": 1,
-          "explanation": "Por eso introduce la consecuencia lógica: la muestra es pequeña, por lo que los resultados deben interpretarse con cautela."
+          "explanation": "Después de no creo que se utiliza normalmente subjuntivo."
         },
         {
           "id": "es_es_b1_u3_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué conviene comprobar antes de compartir una noticia?",
+          "prompt": "¿Qué práctica ayuda a interpretar responsablemente una noticia?",
           "options": [
-            "Solo el número de veces que se ha compartido.",
-            "La fuente original, la fecha y la metodología.",
-            "Únicamente la imagen del titular."
+            "Compartirla si muchas personas ya lo han hecho.",
+            "Leer únicamente el titular y los comentarios.",
+            "Consultar la fuente original y comparar la información con otras publicaciones."
           ],
-          "answer": 1,
-          "explanation": "La verificación requiere revisar el origen y el contexto."
+          "answer": 2,
+          "explanation": "Contrastar fuentes y revisar el documento original ayuda a identificar contexto y posibles omisiones."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Una cifra fuera de contexto",
+        "text": "Una publicación muy compartida aseguró que el 80 % de los jóvenes había dejado de leer noticias en medios tradicionales. El dato procedía de una encuesta, pero el titular omitía dos detalles: las respuestas se habían recogido en una sola ciudad y la pregunta se refería al uso diario, no a cualquier forma de consulta. Al revisar el informe original, una periodista comprobó que muchos participantes seguían leyendo prensa varias veces por semana. La cifra no era necesariamente falsa; se había presentado sin el contexto necesario. El caso muestra por qué conviene consultar la metodología, la fecha y la formulación exacta de una pregunta antes de sacar conclusiones."
+      }
     },
     {
       "id": "es_mx",
       "name": "Español de México",
-      "pronunciation_note": "Мексиканский вариант как основа латиноамериканского маршрута.",
+      "pronunciation_note": "Practica la entonación de las opiniones y la pronunciación clara de conectores; el vocabulario sigue usos habituales de México.",
       "dialogue": [
         {
-          "speaker": "Irene",
-          "text": "¿Leíste la nota sobre la inteligencia artificial?"
+          "speaker": "Lucía",
+          "text": "¿Viste la nota sobre el uso del celular en el salón de clases?"
         },
         {
-          "speaker": "Álvaro",
-          "text": "Sí. Creo que puede ser una herramienta útil."
+          "speaker": "Diego",
+          "text": "Sí. El encabezado dice que los celulares perjudican el aprendizaje, pero la nota tiene más matices."
         },
         {
-          "speaker": "Irene",
-          "text": "Estoy de acuerdo, aunque no creo que resuelva todos los problemas."
+          "speaker": "Lucía",
+          "text": "A mí me parece que pueden distraer, aunque no creo que sean perjudiciales en cualquier situación."
         },
         {
-          "speaker": "Álvaro",
-          "text": "Además, la nota no explica de dónde salen los datos."
+          "speaker": "Diego",
+          "text": "Estoy de acuerdo. Según la nota, el estudio se realizó en cuatro escuelas y durante un trimestre."
         },
         {
-          "speaker": "Irene",
-          "text": "Por eso conviene revisar quién la publicó."
+          "speaker": "Lucía",
+          "text": "Entonces, ¿podemos aplicar esos resultados a todas las escuelas?"
         },
         {
-          "speaker": "Álvaro",
-          "text": "Según el texto, la encuesta se hizo entre estudiantes universitarios."
+          "speaker": "Diego",
+          "text": "No necesariamente. La muestra es limitada y no sabemos si las escuelas se eligieron al azar."
         },
         {
-          "speaker": "Irene",
-          "text": "La muestra puede no representar a toda la población."
+          "speaker": "Lucía",
+          "text": "Además, la publicación enlaza a otra nota, pero no al informe original."
         },
         {
-          "speaker": "Álvaro",
-          "text": "Por un lado, los resultados son interesantes; por otro, tienen límites."
+          "speaker": "Diego",
+          "text": "Eso importa. Dudo que podamos evaluar la metodología sin consultar el documento completo."
         },
         {
-          "speaker": "Irene",
-          "text": "¿Compartirías la noticia?"
+          "speaker": "Lucía",
+          "text": "Por otro lado, tampoco deberíamos descartar los resultados solo porque sean limitados."
         },
         {
-          "speaker": "Álvaro",
-          "text": "Sí, pero agregaría una nota sobre esas limitaciones."
+          "speaker": "Diego",
+          "text": "Claro. Podrían servir como punto de partida, siempre que expliquemos sus límites."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "¿Compartirías la nota?"
+        },
+        {
+          "speaker": "Diego",
+          "text": "Sí, pero agregaría el enlace al estudio y aclararía que no demuestra que todos los celulares afecten igual."
         }
       ],
-      "context_note": "В Мексике медиасреда включает национальные и региональные издания, радио, телевидение и цифровые проекты. Для проверки новости важно находить первоисточник и сопоставлять независимые публикации.",
-      "reading": {
-        "title": "Leer antes de compartir",
-        "text": "Un informe sobre hábitos digitales circuló rápidamente en redes sociales. El encabezado afirmaba que casi todos los jóvenes preferían informarse mediante videos cortos. Sin embargo, el estudio se había realizado con un grupo pequeño de estudiantes de una sola universidad. Los especialistas recomendaron revisar la metodología antes de generalizar los resultados. Una cifra puede ser correcta y, aun así, ofrecer una imagen incompleta de la realidad."
+      "context_note": "En México conviven medios públicos y privados, proyectos nacionales y locales, periodismo digital y plataformas sociales. La cobertura puede variar según la región y el medio. Comparar publicaciones y buscar documentos originales permite distinguir los datos de la interpretación editorial.",
+      "vocabulary_in_context": [
+        {
+          "term": "fuente original",
+          "meaning": "documento o testimonio del que procede directamente la información",
+          "example": "Busquemos la fuente original de la cifra."
+        },
+        {
+          "term": "encabezado",
+          "meaning": "texto que aparece al inicio de una nota y resume su contenido",
+          "example": "El encabezado no refleja todos los matices del reportaje."
+        },
+        {
+          "term": "muestra",
+          "meaning": "grupo de personas o casos que participa en un estudio",
+          "example": "La muestra incluye cuatro escuelas."
+        },
+        {
+          "term": "sesgo",
+          "meaning": "tendencia que puede influir en la selección o interpretación de información",
+          "example": "Hay que considerar un posible sesgo en la encuesta."
+        },
+        {
+          "term": "contrastar fuentes",
+          "meaning": "comparar información de distintos medios o documentos",
+          "example": "Antes de publicar, la periodista contrastó varias fuentes."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          {
+            "expression": "No lo daría por hecho.",
+            "function": "Expresar que una conclusión todavía no está suficientemente demostrada."
+          },
+          {
+            "expression": "Habría que revisar el estudio original.",
+            "function": "Proponer una comprobación antes de aceptar una afirmación."
+          },
+          {
+            "expression": "El encabezado exagera.",
+            "function": "Valorar si el encabezado representa bien el contenido."
+          },
+          {
+            "expression": "No es lo mismo que…",
+            "function": "Introducir una distinción importante entre dos ideas."
+          }
+        ],
+        "regional_note": "En México se usan con frecuencia «nota», «encabezado» y «celular». El vocabulario puede variar entre medios y regiones; una nota informativa busca presentar hechos, mientras que una columna desarrolla una postura."
+      },
+      "guided_practice": {
+        "notice": {
+          "instruction": "Vuelve al diálogo y observa cómo los hablantes separan lo que saben, lo que interpretan y lo que ponen en duda.",
+          "tasks": [
+            "Localiza dos expresiones que introducen una opinión y explica por qué llevan indicativo o subjuntivo.",
+            "Identifica una limitación concreta del estudio y la frase que evita generalizar sus resultados.",
+            "Encuentra dos conectores que organicen el contraste o la consecuencia; explica la relación entre las ideas."
+          ]
+        },
+        "practice": {
+          "instruction": "Completa cada frase con la forma verbal o el conector que mantenga el sentido lógico.",
+          "tasks": [
+            "No creo que el titular ___ (reflejar) todos los datos.",
+            "Según el informe, la muestra ___ (incluir) cuatro centros.",
+            "La encuesta se hizo en una sola ciudad; ___, no representa necesariamente a todo el país.",
+            "Aunque el resultado ___ (parecer) convincente, conviene consultar la metodología."
+          ],
+          "answers": [
+            "refleje",
+            "incluye",
+            "por eso",
+            "parezca"
+          ]
+        },
+        "communicate": {
+          "instruction": "En parejas, comenten una publicación o noticia que hayan visto recientemente. No hace falta compartir datos personales ni elegir un tema polémico.",
+          "tasks": [
+            "Resume la afirmación principal sin añadir tu valoración.",
+            "Explica qué fuente o evidencia la respalda y qué información falta.",
+            "Expresa tu grado de acuerdo o duda con al menos una construcción de subjuntivo.",
+            "Presenta un contraargumento con aunque, sin embargo o por otro lado y termina con una conclusión prudente."
+          ]
+        }
+      },
+      "personal_application": {
+        "scenario": "Un compañero te manda una nota viral y te pregunta si vale la pena compartirla.",
+        "task": "Escribe o graba una respuesta de 8–10 frases. Resume la afirmación, distingue un hecho de una opinión, valora la fuente y explica qué comprobarías antes de compartirla. Incluye una objeción o un matiz.",
+        "support": [
+          "Según la publicación…",
+          "No creo que…",
+          "Por un lado…, por otro…",
+          "Aunque…, conviene…",
+          "Con la información disponible, diría que…"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "La entonación al expresar acuerdo, reserva y desacuerdo; la articulación de conectores y de formas de subjuntivo.",
+        "steps": [
+          "Lee en voz alta: «No creo que sea una conclusión definitiva» y «Aunque parezca convincente, faltan datos».",
+          "Practica una pausa breve antes de sin embargo y por lo tanto para hacer visible la estructura del argumento.",
+          "Graba una opinión de 30–40 segundos y comprueba que la entonación diferencia los hechos citados de tu valoración."
+        ],
+        "audio_model_status": "pending"
+      },
+      "reflection": {
+        "can_do": [
+          "Puedo distinguir la afirmación principal de una noticia y resumirla sin deformarla.",
+          "Puedo identificar límites básicos de una encuesta o de una fuente.",
+          "Puedo expresar opinión, duda y distintos grados de certeza usando indicativo y subjuntivo.",
+          "Puedo organizar argumentos, introducir un contraste y formular una conclusión matizada."
+        ]
       },
       "exercises": [
         {
@@ -214,66 +506,79 @@
           "skill": "gist",
           "prompt": "¿Cuál es la idea principal del texto?",
           "options": [
-            "Una noticia debe revisarse con atención porque los resultados de una muestra pequeña no siempre son generalizables.",
-            "Los encabezados de redes sociales siempre reflejan todos los datos de una investigación.",
-            "Una encuesta universitaria representa automáticamente a toda la población."
+            "Una cifra puede inducir a error si se presenta sin explicar cómo se obtuvo.",
+            "Las encuestas no sirven para estudiar hábitos de lectura.",
+            "Los jóvenes han dejado de consultar cualquier medio de comunicación."
           ],
           "answer": 0,
-          "explanation": "El texto destaca la importancia de revisar la metodología y el alcance de un estudio."
+          "explanation": "El texto explica que el dato necesitaba contexto sobre la muestra y la pregunta."
         },
         {
           "id": "es_mx_b1_u3_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué haría Álvaro al compartir la noticia?",
+          "prompt": "¿Qué limitación tenía la encuesta?",
           "options": [
-            "Cambiaría los resultados de la encuesta.",
-            "Afirmaría que la conclusión es universal.",
-            "Agregaría una nota sobre las limitaciones."
+            "Se realizó en varios países y durante diez años.",
+            "Se hizo en una sola ciudad y preguntaba por el uso diario.",
+            "No incluía ninguna pregunta sobre medios digitales."
           ],
-          "answer": 2,
-          "explanation": "Álvaro quiere explicar los límites de la investigación."
+          "answer": 1,
+          "explanation": "El texto menciona una sola ciudad y una pregunta sobre la frecuencia diaria."
         },
         {
           "id": "es_mx_b1_u3_e3",
           "type": "choice",
-          "skill": "grammar",
-          "prompt": "Completa: «No creo que esta fuente ___ fiable».",
+          "skill": "vocabulary",
+          "prompt": "En el diálogo, ¿qué significa «la muestra es limitada»?",
           "options": [
-            "sea",
-            "es",
-            "será"
+            "Que el estudio no incluye suficientes casos o variedad para generalizar con seguridad.",
+            "Que los resultados se publicaron en un formato demasiado breve.",
+            "Que todas las personas participantes respondieron lo mismo."
           ],
           "answer": 0,
-          "explanation": "Después de no creo que se usa subjuntivo."
+          "explanation": "Una muestra limitada reduce el alcance de las conclusiones que pueden extraerse."
         },
         {
           "id": "es_mx_b1_u3_e4",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Elige el conector adecuado: «El estudio tiene una muestra pequeña; ___, sus resultados deben interpretarse con cautela».",
+          "prompt": "Completa: «No creo que el titular ___ todos los matices del informe».",
           "options": [
-            "sin embargo",
-            "por eso",
-            "además"
+            "refleja",
+            "refleje",
+            "reflejará"
           ],
           "answer": 1,
-          "explanation": "Por eso introduce la consecuencia lógica: la muestra es pequeña, por lo que los resultados deben interpretarse con cautela."
+          "explanation": "Después de no creo que se utiliza normalmente subjuntivo."
         },
         {
           "id": "es_mx_b1_u3_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué conviene comprobar antes de compartir una noticia?",
+          "prompt": "¿Qué práctica ayuda a interpretar responsablemente una noticia?",
           "options": [
-            "Solo el número de reacciones.",
-            "La fuente original, la fecha y la metodología.",
-            "Únicamente el titular."
+            "Compartirla si muchas personas ya lo han hecho.",
+            "Leer únicamente el titular y los comentarios.",
+            "Consultar la fuente original y comparar la información con otras publicaciones."
           ],
-          "answer": 1,
-          "explanation": "La verificación exige localizar el origen y el contexto."
+          "answer": 2,
+          "explanation": "Contrastar fuentes y revisar el documento original ayuda a identificar contexto y posibles omisiones."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Un dato sin contexto",
+        "text": "Una publicación muy compartida aseguró que el 80 % de los jóvenes había dejado de leer noticias en medios tradicionales. El dato provenía de una encuesta, pero el encabezado omitía dos detalles: las respuestas se habían recopilado en una sola ciudad y la pregunta se refería al uso diario, no a cualquier forma de consulta. Al revisar el informe original, una periodista comprobó que muchos participantes seguían leyendo noticias varias veces por semana. La cifra no era necesariamente falsa; se había presentado sin el contexto necesario. El caso muestra por qué conviene consultar la metodología, la fecha y la redacción exacta de una pregunta antes de sacar conclusiones."
+      }
     }
+  ],
+  "teacher_notes": [
+    "No añadir una sección independiente de Vocabulary: el léxico aparece contextualizado en diálogo, lectura, explicación y práctica.",
+    "Distinguir fuente, evidencia, interpretación y opinión; atribuir una afirmación a un medio no equivale a verificarla.",
+    "El indicativo y el subjuntivo tras expresiones de opinión dependen del grado de afirmación, duda o valoración; evitar presentar la selección como una regla mecánica.",
+    "Los conectores deben enseñarse por la relación lógica que expresan: adición, contraste, causa, consecuencia y concesión.",
+    "Las tareas abiertas pertenecen a guided practice y personal application; exercises contiene cinco preguntas cerradas por variante.",
+    "Las diferencias léxicas entre España y México son orientativas y no exclusivas; existe variación regional y editorial dentro de cada país.",
+    "No integrar hasta completar la revisión de todo el catálogo español."
   ]
 }

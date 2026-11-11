@@ -42,10 +42,12 @@
     },
     {
       "topic": "polite_requests",
-      "explanation_ru": "Для простого вежливого заказа подойдут «Quisiera…» и «¿Me pone…?» в Испании; «¿Me da…?» и «Quisiera…» употребляются в Мексике. На A1 достаточно освоить одну-две формулы.",
+      "explanation_ru": "Для простого вежливого заказа подойдут «Quisiera…» и «¿Me pone…?» в Испании; «¿Me da…?» и «Quisiera…» употребляются в Мексике. На A1 достаточно освоить одну-две формулы. В Испании при обращении к нескольким людям часто используется vosotros: vais, queréis. В Мексике в аналогичной ситуации обычно используется ustedes: van, quieren.",
       "examples": [
         "Quisiera un té, por favor.",
-        "¿Me pone una tostada?"
+        "¿Me pone una tostada?",
+        "¿Qué vais a tomar?",
+        "¿Queréis compartir un postre?"
       ]
     }
   ],
@@ -53,48 +55,6 @@
     {
       "id": "es_es",
       "name": "Español de España",
-      "vocabulary": [
-        {
-          "es": "desayuno",
-          "ru": "завтрак"
-        },
-        {
-          "es": "comida",
-          "ru": "обед; еда"
-        },
-        {
-          "es": "cena",
-          "ru": "ужин"
-        },
-        {
-          "es": "zumo",
-          "ru": "сок"
-        },
-        {
-          "es": "tostada",
-          "ru": "тост; поджаренный хлеб"
-        },
-        {
-          "es": "bocadillo",
-          "ru": "сэндвич в багете"
-        },
-        {
-          "es": "patatas",
-          "ru": "картофель"
-        },
-        {
-          "es": "gambas",
-          "ru": "креветки"
-        },
-        {
-          "es": "la cuenta",
-          "ru": "счет"
-        },
-        {
-          "es": "¿Me pone…?",
-          "ru": "Не могли бы вы мне…? (заказ)"
-        }
-      ],
       "dialogue": [
         {
           "speaker": "Camarera",
@@ -200,48 +160,6 @@
     {
       "id": "es_mx",
       "name": "Español de México",
-      "vocabulary": [
-        {
-          "es": "desayuno",
-          "ru": "завтрак"
-        },
-        {
-          "es": "comida",
-          "ru": "обед; еда"
-        },
-        {
-          "es": "cena",
-          "ru": "ужин"
-        },
-        {
-          "es": "jugo",
-          "ru": "сок"
-        },
-        {
-          "es": "torta",
-          "ru": "сэндвич в булочке"
-        },
-        {
-          "es": "frijoles",
-          "ru": "фасоль"
-        },
-        {
-          "es": "jitomate",
-          "ru": "томат (слово, распространенное в центральной Мексике)"
-        },
-        {
-          "es": "elote",
-          "ru": "кукуруза в початке"
-        },
-        {
-          "es": "la cuenta",
-          "ru": "счет"
-        },
-        {
-          "es": "¿Me da…?",
-          "ru": "Дайте, пожалуйста…"
-        }
-      ],
       "dialogue": [
         {
           "speaker": "Mesera",

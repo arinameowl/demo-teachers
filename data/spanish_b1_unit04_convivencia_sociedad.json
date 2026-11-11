@@ -131,15 +131,15 @@
         {
           "id": "es_es_b1_u4_e4",
           "type": "choice",
-          "skill": "vocabulary",
-          "prompt": "¿Qué significa «poner en marcha un proyecto»?",
+          "skill": "grammar",
+          "prompt": "Completa la frase impersonal: «En esta ciudad ___ vivir sin coche».",
           "options": [
-            "Cancelarlo definitivamente.",
-            "Evaluarlo sin llevarlo a cabo.",
-            "Iniciarlo o hacerlo comenzar."
+            "se puede",
+            "se pueden",
+            "puede se"
           ],
-          "answer": 2,
-          "explanation": "Poner en marcha significa iniciar o implementar."
+          "answer": 0,
+          "explanation": "En la construcción impersonal con se, el verbo aparece en tercera persona del singular: se puede vivir."
         },
         {
           "id": "es_es_b1_u4_e5",
@@ -250,15 +250,15 @@
         {
           "id": "es_mx_b1_u4_e4",
           "type": "choice",
-          "skill": "vocabulary",
-          "prompt": "¿Qué significa «poner en marcha un proyecto»?",
+          "skill": "grammar",
+          "prompt": "Completa la frase impersonal: «En esta ciudad ___ vivir sin coche».",
           "options": [
-            "Cancelarlo definitivamente.",
-            "Dejarlo sin planificación.",
-            "Iniciarlo o hacerlo comenzar."
+            "se puede",
+            "se pueden",
+            "puede se"
           ],
-          "answer": 2,
-          "explanation": "La expresión significa iniciar o implementar un proyecto."
+          "answer": 0,
+          "explanation": "En la construcción impersonal con se, el verbo aparece en tercera persona del singular: se puede vivir."
         },
         {
           "id": "es_mx_b1_u4_e5",

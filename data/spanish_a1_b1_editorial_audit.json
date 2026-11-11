@@ -28,7 +28,8 @@
       "All exercise IDs are unique within their variant.",
       "A2 and B1 units contain ten dialogue turns and one original reading text per dialect variant.",
       "A1 lesson variants contain 8–10 dialogue turns; A1 reading is supplied separately in spanish_a1_books.json.",
-      "No standalone vocabulary arrays remain in A1 lesson variants; vocabulary is embedded in context."
+      "No standalone vocabulary arrays remain in A1 lesson variants; vocabulary is embedded in context.",
+      "B1 correct-answer positions are distributed across options rather than fixed in the first position."
     ]
   },
   "editorial_changes": [
@@ -58,7 +59,8 @@
         "Aligned dialogues and reading passages with the grammar actually taught, removing or explaining unintroduced subjunctive and reported-speech forms.",
         "Expanded the reported-speech explanation to include future → conditional and temporal-marker shifts.",
         "Replaced generic comprehension and vocabulary questions with unit-specific questions grounded in each dialogue, reading and cultural note.",
-        "Corrected dialect-specific comprehension prompts and ensured the final dialogue turns are complete."
+        "Corrected dialect-specific comprehension prompts and ensured the final dialogue turns are complete.",
+        "Distributed correct-answer positions across the three options to avoid a predictable answer pattern in B1 tests."
       ]
     }
   ],

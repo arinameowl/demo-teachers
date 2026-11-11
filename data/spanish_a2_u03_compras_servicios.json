@@ -6,37 +6,41 @@
   "unit_id": "es_a2_u03_compras_servicios",
   "title": "Compras y servicios",
   "learning_goals": [
-    "Покупать одежду и повседневные товары, уточняя размер, цвет и цену",
-    "Сравнивать товары и объяснять, почему один вариант подходит лучше",
-    "Попросить обменять или вернуть товар и описать проблему",
-    "Использовать прямые местоимения lo, la, los, las в простых ситуациях"
+    "Comprar ropa y productos cotidianos, preguntando por tallas, colores, precios y características",
+    "Comparar productos y explicar por qué una opción resulta más adecuada",
+    "Describir un problema con un producto y solicitar un cambio o una devolución",
+    "Usar los pronombres de objeto directo lo, la, los y las en situaciones de compra",
+    "Formular peticiones corteses en tiendas y establecimientos"
   ],
   "grammar": [
     {
-      "topic": "direct_object_pronouns",
-      "explanation_ru": "Прямые местоимения lo, la, los, las заменяют уже упомянутое прямое дополнение и обычно ставятся перед спрягаемым глаголом: ¿Tienes la talla? Sí, la tengo. ¿Compras los zapatos? Sí, los compro.",
+      "topic": "pronombres_de_objeto_directo",
+      "explanation_ru": "Прямые местоимения lo, la, los, las заменяют уже известное прямое дополнение и обычно ставятся перед спрягаемым глаголом: ¿Tienes la talla? Sí, la tengo. ¿Compras los zapatos? Sí, los compro. Если после глагола стоит инфинитив, местоимение можно поставить перед спрягаемым глаголом или присоединить к инфинитиву: Los quiero probar / Quiero probarlos. Род и число местоимения согласуются с заменяемым существительным.",
       "examples": [
         "¿Tienes la camisa azul? Sí, la tengo.",
         "Los zapatos son bonitos; me los pruebo.",
-        "No lo necesito."
+        "No lo necesito.",
+        "Quiero cambiarla / La quiero cambiar."
       ]
     },
     {
-      "topic": "comparatives_superlatives",
-      "explanation_ru": "Для сравнения используем más/menos… que и tan… como. Чтобы выделить самый подходящий предмет в группе, можно использовать el/la más + прилагательное: Es la opción más cómoda.",
+      "topic": "comparativos_y_superlativo_relativo",
+      "explanation_ru": "Для сравнения используем más/menos + прилагательное + que и tan + прилагательное + como. С существительными: más/menos + sustantivo + que; tanto/a/os/as + sustantivo + como. Чтобы выделить предмет среди группы, используем el/la/los/las más + прилагательное: Es la opción más cómoda. Прилагательное согласуется с существительным.",
       "examples": [
         "Este abrigo es más barato que aquel.",
         "La falda es tan cómoda como el vestido.",
-        "Es el modelo más práctico."
+        "Es el modelo más práctico.",
+        "Esta tienda tiene menos tallas que la otra."
       ]
     },
     {
-      "topic": "polite_requests",
-      "explanation_ru": "В магазине просьбы часто формулируют через ¿Podría…? (вежливо, usted), ¿Me puede…? и Quisiera… . Эти формы помогают звучать естественно и вежливо.",
+      "topic": "peticiones_corteses_y_compras",
+      "explanation_ru": "В магазине можно вежливо попросить о помощи с помощью ¿Podría…? (usted), ¿Me puede…? и Quisiera…: ¿Podría traerme otra talla? Для уточнения цены: ¿Cuánto cuesta? / ¿Cuánto cuestan? Чтобы описать посадку одежды или обуви, используйте quedar: Me queda grande, me quedan pequeños, me queda bien. Для обмена и возврата: Quisiera cambiarlo; ¿Puedo devolverlo? Условия зависят от магазина и законодательства страны.",
       "examples": [
-        "¿Me puede traer otra talla?",
+        "¿Me puede traer otra talla, por favor?",
         "Quisiera cambiar esta camisa.",
-        "¿Podría darme el recibo?"
+        "¿Podría darme el recibo?",
+        "Estos zapatos me quedan pequeños."
       ]
     }
   ],
@@ -51,11 +55,11 @@
         },
         {
           "speaker": "Nuria",
-          "text": "Sí, necesito unos zapatos cómodos para caminar."
+          "text": "Sí, necesito unos zapatos cómodos para caminar bastante. Estoy preparando un viaje."
         },
         {
           "speaker": "Dependienta",
-          "text": "Tenemos estos modelos. Los negros son más ligeros que los marrones."
+          "text": "Tenemos estos dos modelos. Los negros son más ligeros, pero los marrones tienen una suela más resistente."
         },
         {
           "speaker": "Nuria",
@@ -67,97 +71,225 @@
         },
         {
           "speaker": "Nuria",
-          "text": "Sí, gracias. Me quedan un poco grandes. ¿Hay medio número menos?"
+          "text": "Sí, gracias. Me quedan un poco grandes. ¿Podrías traerme medio número menos?"
         },
         {
           "speaker": "Dependienta",
-          "text": "Lo siento, no tenemos ese número. Puedes probarte estos."
+          "text": "Claro. Aquí tienes el treinta y siete y medio."
         },
         {
           "speaker": "Nuria",
-          "text": "Estos son más cómodos. Me los llevo."
+          "text": "Estos me quedan mucho mejor. ¿Cuánto cuestan?"
         },
         {
           "speaker": "Dependienta",
-          "text": "Perfecto. ¿Necesitas el tique?"
+          "text": "Setenta y cinco euros. Además, si conservas el tique, puedes cambiarlos dentro de treinta días."
         },
         {
           "speaker": "Nuria",
-          "text": "Sí, por favor. ¿Puedo cambiarlos si no me quedan bien?"
+          "text": "Perfecto, me los llevo. ¿Y si se despega la suela después de unos días?"
+        },
+        {
+          "speaker": "Dependienta",
+          "text": "En ese caso, vuelve con el tique y revisaremos el producto según las condiciones de garantía."
+        },
+        {
+          "speaker": "Nuria",
+          "text": "De acuerdo. ¿Me puede dar el tique, por favor?"
         }
       ],
-      "context_note": "En España se usa tique o ticket para el comprobante de compra; también es frecuente recibo. Las políticas de cambio y devolución dependen de la tienda y de las condiciones de compra.",
+      "context_note": "En España se usa tique o ticket para el comprobante de compra; también es frecuente recibo. Las condiciones de cambio, devolución y garantía dependen del establecimiento, del producto y de la normativa aplicable. La talla de calzado suele expresarse con números como 37, 38 o 39.",
       "exercises": [
         {
           "id": "es_es_a2_u3_e1",
           "skill": "gist",
           "type": "choice",
-          "prompt": "¿Qué busca Nuria?",
+          "prompt": "¿Qué intenta hacer Nuria en la tienda?",
           "options": [
-            "Unos zapatos cómodos para caminar",
-            "Un vestido para una boda",
-            "Una mochila para el trabajo"
+            "Elegir unos zapatos para un viaje y consultar las condiciones de compra",
+            "Devolver un abrigo que compró hace un año",
+            "Buscar un regalo para la dependienta"
           ],
           "answer": 0,
-          "explanation": "Nuria explica que necesita zapatos cómodos para caminar."
+          "explanation": "Nuria compara zapatos para caminar, elige una talla y pregunta por cambios y garantía."
         },
         {
           "id": "es_es_a2_u3_e2",
           "skill": "detail",
           "type": "choice",
-          "prompt": "¿Por qué no compra el primer par?",
+          "prompt": "¿Por qué Nuria prefiere el segundo par?",
           "options": [
-            "Es demasiado caro",
-            "Le queda un poco grande",
-            "No le gusta el color"
+            "Porque es de otro color",
+            "Porque le queda mejor",
+            "Porque cuesta menos"
           ],
           "answer": 1,
-          "explanation": "Nuria dice que los zapatos le quedan un poco grandes."
+          "explanation": "Nuria dice que el segundo par le queda mucho mejor."
         },
         {
           "id": "es_es_a2_u3_e3",
-          "skill": "grammar",
+          "skill": "vocabulary",
           "type": "choice",
-          "prompt": "Completa: «¿Tienes los zapatos negros? Sí, ___ tengo».",
+          "prompt": "En este contexto, ¿qué significa «la suela»?",
           "options": [
-            "los",
-            "la",
-            "lo"
+            "La parte inferior del zapato que toca el suelo",
+            "La etiqueta con el precio",
+            "El material de los cordones"
           ],
           "answer": 0,
-          "explanation": "Zapatos es masculino plural, por eso se sustituye por los."
+          "explanation": "La suela es la parte inferior del calzado."
         },
         {
           "id": "es_es_a2_u3_e4",
           "skill": "grammar",
           "type": "choice",
-          "prompt": "Elige la petición más cortés.",
+          "prompt": "Sustituye «los zapatos» por el pronombre correcto: «Quiero probar ___»",
           "options": [
-            "¿Podría darme el tique, por favor?",
-            "Dame el tique ahora.",
-            "Tú das el tique."
+            "la",
+            "los",
+            "lo"
           ],
-          "answer": 0,
-          "explanation": "¿Podría…? es una fórmula de petición cortés."
+          "answer": 1,
+          "explanation": "Zapatos es masculino plural; el pronombre de objeto directo es los: quiero probarlos."
         },
         {
           "id": "es_es_a2_u3_e5",
           "skill": "culture",
           "type": "choice",
-          "prompt": "En una tienda de España, ¿qué suele ser «el tique»?",
+          "prompt": "¿Para qué conviene conservar el tique después de una compra?",
           "options": [
-            "El comprobante de compra",
-            "La etiqueta con la talla",
-            "La tarjeta de fidelidad"
+            "Para poder consultar o gestionar un cambio, devolución o garantía",
+            "Para conseguir siempre un descuento automático",
+            "Para cambiar el precio del producto"
           ],
           "answer": 0,
-          "explanation": "El tique es el comprobante que se entrega después de pagar."
+          "explanation": "El comprobante puede ser necesario para gestionar cambios, devoluciones o garantías según las condiciones aplicables."
         }
       ],
       "reading": {
-        "title": "Una compra necesaria",
-        "text": "El sábado, Isabel fue al centro para buscar un abrigo. Primero entró en una tienda pequeña y se probó dos modelos. El abrigo azul era más ligero, pero el gris le quedaba mejor. La dependienta le explicó que podía cambiarlo si conservaba el tique y la etiqueta. Isabel decidió comprar el gris porque era cómodo y tenía un precio razonable. Antes de salir, guardó el recibo en su bolso."
-      }
+        "title": "Unas botas para la lluvia",
+        "text": "Clara necesitaba unas botas para los días de lluvia. En una tienda se probó dos modelos: unas negras y otras marrones. Las negras eran más elegantes, pero las marrones tenían una suela más gruesa y le quedaban mejor. La dependienta le explicó las condiciones de cambio y Clara decidió llevárselas. Guardó el tique en el bolso porque quería conservar el comprobante por si surgía algún problema."
+      },
+      "editorial_introduction": {
+        "hook": "Comprar algo que realmente te sirve no siempre es cuestión de elegir el color: hay que comparar opciones, comprobar la talla, preguntar por las condiciones y saber qué hacer si el producto no funciona",
+        "opening_question": "Cuando compras ropa o un producto cotidiano, ¿qué valoras más: el precio, la calidad, la comodidad o la posibilidad de cambiarlo?",
+        "purpose": "Aprenderás a comparar productos, preguntar por tallas y precios, pedir ayuda y explicar que quieres cambiar o devolver una compra",
+        "estimated_time_minutes": 45,
+        "route": [
+          "Lee una conversación realista en una tienda",
+          "Observa cómo se sustituyen los objetos con pronombres",
+          "Practica comparaciones y peticiones corteses",
+          "Resuelve una situación de compra y devolución"
+        ],
+        "local_context": "Una clienta compara dos modelos de zapatos, pregunta por la talla y consulta las condiciones de cambio y garantía"
+      },
+      "vocabulary_in_context": [
+        {
+          "term": "probarse",
+          "meaning_ru": "примерять",
+          "example": "¿Quieres probarte estos zapatos?"
+        },
+        {
+          "term": "quedar bien/grande/pequeño",
+          "meaning_ru": "хорошо сидеть / быть большим или маленьким",
+          "example": "Estos zapatos me quedan grandes."
+        },
+        {
+          "term": "suela",
+          "meaning_ru": "подошва",
+          "example": "Este modelo tiene una suela resistente."
+        },
+        {
+          "term": "despegarse",
+          "meaning_ru": "отклеиваться",
+          "example": "Se ha despegado la suela."
+        },
+        {
+          "term": "tique",
+          "meaning_ru": "кассовый чек",
+          "example": "Guarda el tique por si necesitas cambiar el producto."
+        },
+        {
+          "term": "garantía",
+          "meaning_ru": "гарантия",
+          "example": "El producto está cubierto por la garantía."
+        },
+        {
+          "term": "cambiar / devolver",
+          "meaning_ru": "обменять / вернуть",
+          "example": "Quisiera cambiar estos zapatos."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          "¿Buscas algo en particular? — Вы ищете что-то конкретное?",
+          "Me quedan grandes — Они мне велики",
+          "Me los llevo — Я их беру",
+          "¿Y si…? — А что, если…?"
+        ],
+        "regional_note": "В Испании можно услышать tique, ticket и recibo для подтверждения покупки. Для обуви обычно называют размер: el treinta y ocho. Глагол quedar используется для описания посадки: me queda bien, me quedan pequeños. Условия обмена и гарантии нужно уточнять у конкретного продавца."
+      },
+      "guided_practice": [
+        {
+          "stage": "notice",
+          "title": "Заметьте закономерность",
+          "instruction": "Найдите в диалоге местоимения los и me los. Определите, какие предметы они заменяют. Сравните Los negros son más ligeros que los marrones и Estos me quedan mejor.",
+          "tasks": [
+            "Найдите в диалоге прямые местоимения и определите, какое существительное они заменяют",
+            "Найдите две сравнительные конструкции и объясните, что именно сравнивается",
+            "Выпишите вежливую просьбу и формулу уточнения условий покупки"
+          ]
+        },
+        {
+          "stage": "practice",
+          "title": "Потренируйтесь самостоятельно",
+          "instruction": "Замените выделенное дополнение местоимением: Tengo la factura → La tengo; Quiero probar los zapatos → Quiero probarlos / Los quiero probar; Necesito cambiar la camisa → Necesito cambiarla / La necesito cambiar. Затем выберите подходящую форму: Estos zapatos me queda/quedan bien.",
+          "tasks": [
+            "Замените повторяющееся существительное подходящим местоимением lo/la/los/las",
+            "Составьте сравнение двух товаров",
+            "Сформулируйте вежливую просьбу о другом размере или обмене"
+          ]
+        },
+        {
+          "stage": "communicate",
+          "title": "Используйте язык в разговоре",
+          "instruction": "Представьте, что вы выбираете обувь для поездки. Спросите о размере и цене, сравните два варианта, уточните условия обмена и опишите проблему с товаром.",
+          "tasks": [
+            "Объясните продавцу, что именно вы ищете",
+            "Сравните два товара и обоснуйте выбор",
+            "Попросите обменять товар или уточните условия возврата"
+          ]
+        }
+      ],
+      "personal_application": {
+        "scenario": "Вы купили обувь или одежду, но дома обнаружили, что размер не подходит. Вернитесь в магазин, объясните ситуацию, попросите обменять товар и уточните условия.",
+        "deliverable": "Подготовьте диалог из 10–12 реплик или запишите голосовое сообщение на 60–90 секунд.",
+        "prompts": [
+          "¿Qué compraste y cuándo?",
+          "¿Qué problema tiene el producto?",
+          "¿Tienes el tique o recibo?",
+          "¿Qué cambio o solución quieres pedir?",
+          "¿Qué condiciones necesitas confirmar?"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "Произношение местоимений в связной речи: me los llevo, quiero probarlos, la tengo. В вопросах о цене сохраняйте четкую интонацию: ¿Cuánto cuesta? / ¿Cuánto cuestan?",
+        "steps": [
+          "Прочитайте вслух фразы Me los llevo и Quiero probarlos",
+          "Сравните произношение ¿Cuánto cuesta? и ¿Cuánto cuestan?",
+          "Запишите короткую просьбу об обмене и проверьте четкость местоимений и интонацию"
+        ]
+      },
+      "reflection": {
+        "can_do": [
+          "Я могу спросить о размере, цвете и цене товара",
+          "Я могу сравнить два товара и объяснить свой выбор",
+          "Я могу использовать lo, la, los и las, чтобы не повторять существительные",
+          "Я могу вежливо попросить об обмене и уточнить условия гарантии"
+        ],
+        "self_check": "Отметьте, что уже получается самостоятельно, а что требует дополнительной практики."
+      },
+      "pronunciation_note": "В варианте Испании используются tique, talla, probárselos и me los llevo. Обратите внимание на связное произношение местоимений и на различие между cuesta и cuestan."
     },
     {
       "id": "es_mx",
@@ -169,7 +301,7 @@
         },
         {
           "speaker": "Camila",
-          "text": "Busco unos tenis para caminar. Estos me gustan, pero quiero ver otros."
+          "text": "Busco unos tenis para caminar. Estos me gustan, pero quisiera comparar otros modelos."
         },
         {
           "speaker": "Vendedor",
@@ -185,11 +317,11 @@
         },
         {
           "speaker": "Camila",
-          "text": "Sí. Me quedan un poco apretados."
+          "text": "Sí, gracias. Estos me quedan un poco apretados. ¿Me puede traer medio número más?"
         },
         {
           "speaker": "Vendedor",
-          "text": "Tenemos medio número más. Se los traigo."
+          "text": "Por supuesto. Aquí tiene el veinticuatro y medio."
         },
         {
           "speaker": "Camila",
@@ -197,57 +329,52 @@
         },
         {
           "speaker": "Vendedor",
-          "text": "Cuestan mil doscientos pesos."
+          "text": "Cuestan mil doscientos pesos. Si necesita hacer un cambio, puede venir con el recibo y la caja."
         },
         {
           "speaker": "Camila",
-          "text": "Perfecto, me los llevo. ¿Me da el recibo, por favor?"
+          "text": "Perfecto, me los llevo. ¿Y si se rompe una costura?"
+        },
+        {
+          "speaker": "Vendedor",
+          "text": "Puede traerlos para que revisemos el defecto y le expliquemos las opciones disponibles."
+        },
+        {
+          "speaker": "Camila",
+          "text": "Muchas gracias. ¿Me da el recibo, por favor?"
         }
       ],
-      "context_note": "En México es común llamar tenis al calzado deportivo y usar talla para indicar el número. Los precios en pesos mexicanos suelen expresarse con la palabra pesos en conversaciones cotidianas.",
+      "context_note": "En México es común llamar tenis al calzado deportivo y usar talla para indicar el número. El comprobante de compra suele llamarse recibo o ticket. Las condiciones de cambio, devolución y garantía dependen del establecimiento, del producto y de la normativa aplicable.",
       "exercises": [
         {
           "id": "es_mx_a2_u3_e1",
           "skill": "gist",
           "type": "choice",
-          "prompt": "¿Qué quiere comprar Camila?",
+          "prompt": "¿Qué quiere hacer Camila en la tienda?",
           "options": [
-            "Unos tenis para caminar",
-            "Unos zapatos de fiesta",
-            "Una chamarra para la lluvia"
+            "Elegir unos tenis para caminar y consultar qué hacer si aparece un defecto",
+            "Comprar una computadora para estudiar",
+            "Devolver unos zapatos que no ha usado"
           ],
           "answer": 0,
-          "explanation": "Camila busca tenis cómodos para caminar."
+          "explanation": "Camila compara tenis, elige una talla y pregunta por las opciones si aparece un defecto."
         },
         {
           "id": "es_mx_a2_u3_e2",
           "skill": "detail",
           "type": "choice",
-          "prompt": "¿Qué problema tiene el primer par que se prueba?",
+          "prompt": "¿Por qué Camila pide otro número?",
           "options": [
-            "Le queda apretado",
-            "Es demasiado ligero",
-            "Cuesta demasiado"
+            "Porque los primeros le quedan apretados",
+            "Porque los primeros son demasiado ligeros",
+            "Porque no le gusta el color"
           ],
           "answer": 0,
-          "explanation": "Camila dice que los tenis le quedan un poco apretados."
+          "explanation": "Camila dice que los primeros tenis le quedan un poco apretados."
         },
         {
           "id": "es_mx_a2_u3_e3",
-          "skill": "grammar",
-          "type": "choice",
-          "prompt": "Completa: «¿Tienes los tenis grises? Sí, ___ tengo».",
-          "options": [
-            "los",
-            "la",
-            "lo"
-          ],
-          "answer": 0,
-          "explanation": "Tenis se usa aquí en plural masculino; el pronombre correspondiente es los."
-        },
-        {
-          "id": "es_mx_a2_u3_e4",
-          "skill": "vocabulary_in_context",
+          "skill": "vocabulary",
           "type": "choice",
           "prompt": "En México, ¿qué significa «tenis» en esta conversación?",
           "options": [
@@ -259,29 +386,165 @@
           "explanation": "En México, tenis es una palabra habitual para el calzado deportivo."
         },
         {
+          "id": "es_mx_a2_u3_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «Quiero probar los tenis. Quiero probar___»",
+          "options": [
+            "la",
+            "los",
+            "lo"
+          ],
+          "answer": 1,
+          "explanation": "Tenis es masculino plural; el pronombre correspondiente es los: quiero probarlos."
+        },
+        {
           "id": "es_mx_a2_u3_e5",
           "skill": "culture",
           "type": "choice",
-          "prompt": "¿Qué palabra usa Camila para pedir el comprobante de compra?",
+          "prompt": "¿Qué comprobante menciona el vendedor para gestionar un cambio?",
           "options": [
-            "Recibo",
-            "Tique",
-            "Billete"
+            "El recibo",
+            "El boleto de autobús",
+            "La tarjeta de transporte"
           ],
           "answer": 0,
-          "explanation": "En México se usa recibo para el comprobante de compra; también puede decirse ticket."
+          "explanation": "El vendedor indica que para hacer un cambio se debe acudir con el recibo y la caja."
         }
       ],
       "reading": {
-        "title": "Elegir unos tenis",
-        "text": "El viernes, Fernanda fue a una plaza comercial porque necesitaba unos tenis para caminar. Vio varios modelos y comparó los precios. Unos eran muy bonitos, pero le apretaban; otros eran más cómodos y costaban un poco menos. El vendedor le mostró otro color y Fernanda se probó el nuevo par. Al final, los compró y pidió el recibo por si necesitaba hacer un cambio."
-      }
+        "title": "Unos tenis para caminar",
+        "text": "Fernanda fue a una tienda porque necesitaba unos tenis para caminar todos los días. Comparó varios modelos: unos eran más baratos, pero no tenían buen soporte. Se probó otro par y le quedó muy bien. El vendedor le explicó que podía solicitar un cambio si conservaba el recibo y la caja. Fernanda decidió comprarlos y guardó el comprobante en su bolsa."
+      },
+      "editorial_introduction": {
+        "hook": "Comprar algo que realmente te sirve no siempre es cuestión de elegir el color: hay que comparar opciones, comprobar la talla, preguntar por las condiciones y saber qué hacer si el producto no funciona",
+        "opening_question": "Cuando compras ropa o un producto cotidiano, ¿qué valoras más: el precio, la calidad, la comodidad o la posibilidad de cambiarlo?",
+        "purpose": "Aprenderás a comparar productos, preguntar por tallas y precios, pedir ayuda y explicar que quieres cambiar o devolver una compra",
+        "estimated_time_minutes": 45,
+        "route": [
+          "Lee una conversación realista en una tienda",
+          "Observa cómo se sustituyen los objetos con pronombres",
+          "Practica comparaciones y peticiones corteses",
+          "Resuelve una situación de compra y devolución"
+        ],
+        "local_context": "Una clienta busca tenis para caminar, compara modelos y consulta cómo gestionar un posible defecto"
+      },
+      "vocabulary_in_context": [
+        {
+          "term": "tenis",
+          "meaning_ru": "кроссовки, спортивная обувь",
+          "example": "Busco unos tenis para caminar."
+        },
+        {
+          "term": "talla",
+          "meaning_ru": "размер",
+          "example": "¿Los tiene en talla veinticuatro?"
+        },
+        {
+          "term": "quedar apretado",
+          "meaning_ru": "быть тесным",
+          "example": "Estos tenis me quedan apretados."
+        },
+        {
+          "term": "soporte",
+          "meaning_ru": "поддержка, фиксация",
+          "example": "Este modelo tiene mejor soporte."
+        },
+        {
+          "term": "costura",
+          "meaning_ru": "шов",
+          "example": "Se rompió una costura."
+        },
+        {
+          "term": "recibo",
+          "meaning_ru": "чек, квитанция",
+          "example": "Guarda el recibo por si necesitas hacer un cambio."
+        },
+        {
+          "term": "hacer un cambio",
+          "meaning_ru": "обменять товар",
+          "example": "Puedo hacer un cambio con el recibo."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          "¿En qué le puedo ayudar? — Чем могу вам помочь?",
+          "Me quedan apretados — Они мне тесны",
+          "Me los llevo — Я их беру",
+          "¿Y si se rompe…? — А если сломается…?"
+        ],
+        "regional_note": "В Мексике для спортивной обуви обычно используют tenis, для подтверждения покупки — recibo или ticket. Talla обозначает размер, а quedar apretado — быть тесным. Условия обмена и гарантии следует уточнять у конкретного продавца."
+      },
+      "guided_practice": [
+        {
+          "stage": "notice",
+          "title": "Заметьте закономерность",
+          "instruction": "Найдите местоимения los и se los в диалоге. Определите, какие товары они заменяют. Обратите внимание на сочетание ¿Se los quiere probar? и на форму вежливого обращения usted.",
+          "tasks": [
+            "Найдите в диалоге прямые местоимения и определите, какое существительное они заменяют",
+            "Найдите две сравнительные конструкции и объясните, что именно сравнивается",
+            "Выпишите вежливую просьбу и формулу уточнения условий покупки"
+          ]
+        },
+        {
+          "stage": "practice",
+          "title": "Потренируйтесь самостоятельно",
+          "instruction": "Замените существительное местоимением: Tengo los tenis → Los tengo; Quiero probar los tenis → Quiero probarlos / Los quiero probar; Necesito cambiar la camisa → Necesito cambiarla / La necesito cambiar. Выберите правильную форму: Estos tenis me queda/quedan apretados.",
+          "tasks": [
+            "Замените повторяющееся существительное подходящим местоимением lo/la/los/las",
+            "Составьте сравнение двух товаров",
+            "Сформулируйте вежливую просьбу о другом размере или обмене"
+          ]
+        },
+        {
+          "stage": "communicate",
+          "title": "Используйте язык в разговоре",
+          "instruction": "Выберите обувь для прогулок. Спросите о размере и цене, сравните два варианта, объясните, что первый размер тесен, и уточните, что делать при обнаружении дефекта.",
+          "tasks": [
+            "Объясните продавцу, что именно вы ищете",
+            "Сравните два товара и обоснуйте выбор",
+            "Попросите обменять товар или уточните условия возврата"
+          ]
+        }
+      ],
+      "personal_application": {
+        "scenario": "Вы купили товар, но заметили дефект или неподходящий размер. Обратитесь к продавцу, объясните проблему и спросите о доступных вариантах обмена или решения.",
+        "deliverable": "Подготовьте диалог из 10–12 реплик или запишите голосовое сообщение на 60–90 секунд.",
+        "prompts": [
+          "¿Qué compraste y cuándo?",
+          "¿Qué problema encontraste?",
+          "¿Conservaste el recibo y la caja?",
+          "¿Qué solución quieres pedir?",
+          "¿Qué condiciones necesitas conocer?"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "Произношение местоимений в связной речи: se los quiere probar, me los llevo, los tengo. Следите за интонацией вежливых вопросов с usted.",
+        "steps": [
+          "Прочитайте вслух ¿Se los quiere probar? и Me los llevo",
+          "Произнесите фразы ¿Cuánto cuestan? и ¿Me da el recibo?",
+          "Запишите короткую просьбу продавцу и проверьте четкость местоимений и вежливую интонацию"
+        ]
+      },
+      "reflection": {
+        "can_do": [
+          "Я могу спросить о размере, цвете и цене товара",
+          "Я могу сравнить модели и объяснить, какая подходит лучше",
+          "Я могу использовать lo, la, los и las с существительными",
+          "Я могу описать дефект и вежливо уточнить условия обмена"
+        ],
+        "self_check": "Отметьте, что уже получается самостоятельно, а что требует дополнительной практики."
+      },
+      "pronunciation_note": "В мексиканском варианте используются tenis, talla, recibo и выражение me quedan apretados. Обратите внимание на местоимения в сочетаниях se los quiere probar и me los llevo."
     }
   ],
   "teacher_notes": [
-    "Не добавлять отдельный раздел Vocabulary.",
-    "Прямые местоимения lo/la/los/las в этом блоке заменяют предмет, а не человека; пока не вводить косвенные местоимения.",
-    "Лексические различия: España — zapatos, tique; México — tenis, recibo. Не представлять их как единственно возможные слова во всех регионах.",
-    "Материал — часть лид-магнита. Не интегрировать до завершения всего испанского каталога."
+    "Не добавлять отдельный раздел Vocabulary: лексику вводить в контексте диалогов, пояснений и упражнений.",
+    "Прямые местоимения lo/la/los/las заменяют предметы в рамках этого блока; не смешивать их с косвенными местоимениями le/les.",
+    "Показывать обе допустимые позиции местоимения с инфинитивом: Quiero probarlos / Los quiero probar. Не утверждать, что местоимение всегда стоит только перед спрягаемым глаголом.",
+    "Лексические различия: España — zapatos, tique; México — tenis, recibo. Не представлять эти слова как единственно возможные во всех регионах.",
+    "Условия обмена, возврата и гарантии зависят от магазина, товара и применимого законодательства; не давать универсальных обещаний.",
+    "Материал — часть лид-магнита. Не интегрировать до завершения всего испанского каталога.",
+    "Внешние аудио- и видеоматериалы требуют отдельной проверки доступности, соответствия CEFR и прав использования; задания к ним создавать только после просмотра или прослушивания."
   ]
 }

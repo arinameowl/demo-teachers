@@ -10,6 +10,13 @@ import config
 from texts import GOAL_LABELS, TRIAL_CANCEL_BUTTON, TRIAL_SHARE_BUTTON
 
 
+def language_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="Английский", callback_data="language:en")],
+        [InlineKeyboardButton(text="Испанский", callback_data="language:es")],
+    ])
+
+
 def goal_keyboard() -> InlineKeyboardMarkup:
     options = ("travel", "work", "series", "personal")
     return InlineKeyboardMarkup(inline_keyboard=[

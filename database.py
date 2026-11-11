@@ -44,6 +44,7 @@ _MIGRATIONS = (
     "ALTER TABLE users ADD COLUMN unsubscribed INTEGER DEFAULT 0",
     "ALTER TABLE users ADD COLUMN last_broadcast_at TEXT",
     "ALTER TABLE users ADD COLUMN quiz_state TEXT",
+    "ALTER TABLE users ADD COLUMN language TEXT DEFAULT 'en'",
 )
 
 _BROADCAST_SCHEMA = """

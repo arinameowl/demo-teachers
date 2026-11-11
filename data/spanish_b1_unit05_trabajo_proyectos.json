@@ -96,11 +96,11 @@
           "skill": "gist",
           "prompt": "¿Cómo organizó la responsable el trabajo?",
           "options": [
-            "Asignó una tarea a cada persona.",
             "Pidió que todos cambiaran de departamento.",
+            "Asignó una tarea a cada persona.",
             "Canceló el proyecto."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "La lectura indica que la responsable asignó tareas individuales."
         },
         {
@@ -109,11 +109,11 @@
           "skill": "detail",
           "prompt": "¿Qué dato adicional necesitaba el departamento financiero?",
           "options": [
-            "Datos adicionales para preparar la propuesta.",
             "Una nueva oficina para el equipo.",
-            "Una lista de vacaciones."
+            "Una lista de vacaciones.",
+            "Datos adicionales para preparar la propuesta."
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "El texto indica que finanzas necesitaba información adicional."
         },
         {
@@ -135,11 +135,11 @@
           "skill": "vocabulary",
           "prompt": "¿Qué petición suena más cortés en un contexto profesional?",
           "options": [
-            "¿Podrías revisar esta versión, por favor?",
             "Revisa esto ahora mismo.",
-            "Tienes que hacerlo ya."
+            "Tienes que hacerlo ya.",
+            "¿Podrías revisar esta versión, por favor?"
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "Podrías suaviza la petición."
         },
         {
@@ -148,11 +148,11 @@
           "skill": "culture",
           "prompt": "¿Qué influye en el estilo de comunicación laboral?",
           "options": [
-            "La empresa, el sector y la relación entre interlocutores.",
             "Una regla idéntica para todas las empresas.",
+            "La empresa, el sector y la relación entre interlocutores.",
             "Solo la edad de los trabajadores."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "El registro depende del contexto profesional."
         }
       ]
@@ -215,11 +215,11 @@
           "skill": "gist",
           "prompt": "¿Cómo organizó la responsable el trabajo?",
           "options": [
-            "Asignó una tarea a cada persona.",
             "Pidió que todos cambiaran de departamento.",
+            "Asignó una tarea a cada persona.",
             "Canceló el proyecto."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "La lectura indica que la responsable asignó tareas individuales."
         },
         {
@@ -228,11 +228,11 @@
           "skill": "detail",
           "prompt": "¿Qué necesitaba el área de finanzas?",
           "options": [
-            "Datos adicionales.",
             "Un nuevo edificio.",
-            "Un cambio de proveedor."
+            "Un cambio de proveedor.",
+            "Datos adicionales."
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "El texto señala que finanzas necesitaba datos adicionales."
         },
         {
@@ -254,11 +254,11 @@
           "skill": "vocabulary",
           "prompt": "¿Qué petición suena más cortés en un contexto profesional?",
           "options": [
-            "¿Podrías revisar esta versión, por favor?",
             "Revisa esto ahora mismo.",
-            "Hazlo de una vez."
+            "Hazlo de una vez.",
+            "¿Podrías revisar esta versión, por favor?"
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "Podrías suaviza la petición."
         },
         {
@@ -267,11 +267,11 @@
           "skill": "culture",
           "prompt": "¿Qué influye en el estilo de comunicación laboral?",
           "options": [
-            "La empresa, el sector y la relación entre interlocutores.",
             "Una regla idéntica para todas las empresas.",
+            "La empresa, el sector y la relación entre interlocutores.",
             "Solo el cargo de la persona."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "El registro depende de la cultura de empresa y de la situación."
         }
       ]

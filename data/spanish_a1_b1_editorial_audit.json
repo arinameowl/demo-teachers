@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "language": "es",
+  "title": "Spanish A1–B1 Editorial Audit — The Teachers School",
+  "audit_status": "editorial_revision_applied_pending_final_native_language_proofreading",
+  "scope": {
+    "levels": [
+      "A1",
+      "A2",
+      "B1"
+    ],
+    "lesson_units": 18,
+    "dialect_tracks": [
+      "es_es",
+      "es_mx"
+    ],
+    "dialect_variants": 36,
+    "closed_choice_lesson_exercises": 180,
+    "original_reading_books_A1": 2,
+    "book_comprehension_exercises": 10
+  },
+  "structural_validation": {
+    "status": "passed",
+    "checks": [
+      "All 18 lesson JSON files parse successfully.",
+      "Each unit contains two dialect variants.",
+      "Each unit variant contains five closed-choice exercises with valid answer indices.",
+      "All exercise IDs are unique within their variant.",
+      "A2 and B1 units contain ten dialogue turns and one original reading text per dialect variant.",
+      "A1 lesson variants contain 8–10 dialogue turns; A1 reading is supplied separately in spanish_a1_books.json.",
+      "No standalone vocabulary arrays remain in A1 lesson variants; vocabulary is embedded in context."
+    ]
+  },
+  "editorial_changes": [
+    {
+      "level": "A1",
+      "items": [
+        "Corrected the Spain A1 family exercise to match the dialogue's singular sister reference and corrected the answer index.",
+        "Added merendar to the Spain daily-routine dialogue so the related comprehension item is grounded in context.",
+        "Added an explicit explanation of vosotros forms in the Spain food-ordering context; contrasted with ustedes in the Mexico route.",
+        "Simplified the Spain leisure dialogue and reduced consecutive Mexican colloquialisms in the Mexico dialogue.",
+        "Removed standalone vocabulary lists from all six A1 lesson units; vocabulary remains embedded in dialogues, grammar examples and exercises."
+      ]
+    },
+    {
+      "level": "A2",
+      "items": [
+        "Corrected the Spain travel reading's temporal marker so pretérito perfecto is used with an unfinished current period.",
+        "Adjusted the Mexico travel dialogue to reflect the common use of pretérito indefinido for completed events while retaining pretérito perfecto for life experience.",
+        "Corrected an explanation that incorrectly attributed a visit with a sister to the Mexico travel dialogue.",
+        "Removed an unintroduced subjunctive construction from the Mexico health dialogue and simplified the corresponding Spain dialogue."
+      ]
+    },
+    {
+      "level": "B1",
+      "items": [
+        "Made the hypothetical si + imperfecto de subjuntivo + condicional pattern explicit because it appears in the dialogue.",
+        "Aligned dialogues and reading passages with the grammar actually taught, removing or explaining unintroduced subjunctive and reported-speech forms.",
+        "Expanded the reported-speech explanation to include future → conditional and temporal-marker shifts.",
+        "Replaced generic comprehension and vocabulary questions with unit-specific questions grounded in each dialogue, reading and cultural note.",
+        "Corrected dialect-specific comprehension prompts and ensured the final dialogue turns are complete."
+      ]
+    }
+  ],
+  "level_progression": {
+    "A1": "Foundational introductions, family, routine, food, city and leisure; present tense, descriptions, basic requests and plans.",
+    "A2": "Travel experience, household obligations, shopping, health, work and stories; perfect and past tenses, pronouns, comparisons and advice.",
+    "B1": "Decisions, personal change, media literacy, community, work projects and cultural identity; conditional hypotheses, pluscuamperfecto, subjunctive, se constructions and reported speech."
+  },
+  "outstanding_work": [
+    "Complete a final line-by-line language proofread by a qualified Spanish editor or native speaker for both dialect tracks.",
+    "Preview every selected A1 video/audio resource end-to-end and verify actual CEFR difficulty, regional language, availability in intended student regions and mobile playback.",
+    "Confirm commercial teaching, linking and embedding rights for each third-party media resource before any product integration.",
+    "Create media-specific original exercises only after reviewing the actual clips or recordings; do not infer answers from titles or summaries.",
+    "Record original Mexican Spanish audio for A1 units where no sufficiently clear and level-appropriate external source is confirmed."
+  ],
+  "integration": {
+    "status": "not_integrated",
+    "rule": "Do not connect Spanish content to the Telegram bot or Learning Space until the complete Spanish catalog is finished, approved and media rights are checked.",
+    "english_section": "unchanged"
+  },
+  "positioning": "These materials are a premium lead-magnet sample designed to demonstrate teaching quality and create motivation to book a trial lesson. They are not a complete CEFR course at each level."
+}

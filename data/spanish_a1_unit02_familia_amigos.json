@@ -1,0 +1,362 @@
+{
+  "schema_version": 1,
+  "level": "A1",
+  "category": "lesson",
+  "language": "es",
+  "unit_id": "es_a1_u02_familia_amigos",
+  "title": "La familia y los amigos",
+  "learning_goals": [
+    "Назвать основных членов семьи и близких людей",
+    "Рассказать о семье и друзьях простыми предложениями",
+    "Описать человека по внешности и характеру",
+    "Задавать вопросы о родственниках и отношениях",
+    "Использовать притяжательные прилагательные и согласовывать прилагательные по роду и числу"
+  ],
+  "grammar": [
+    {
+      "topic": "possessives",
+      "explanation_ru": "Притяжательные прилагательные согласуются с существительным по числу. Формы mi/tu/su используются с существительными в единственном числе, mis/tus/sus — во множественном.",
+      "examples": [
+        "mi hermana",
+        "mis amigos",
+        "tu padre",
+        "sus primas"
+      ]
+    },
+    {
+      "topic": "adjective_agreement",
+      "explanation_ru": "Прилагательное обычно согласуется с существительным в роде и числе. У многих прилагательных есть формы на -o/-a и множественное число на -s.",
+      "examples": [
+        "un hermano alto",
+        "una hermana alta",
+        "dos amigos simpáticos",
+        "dos amigas simpáticas"
+      ]
+    },
+    {
+      "topic": "ser_description",
+      "explanation_ru": "Глагол ser используется для устойчивых характеристик и описания внешности или характера.",
+      "examples": [
+        "Mi madre es paciente.",
+        "Mis amigos son divertidos.",
+        "Mi hermano es alto."
+      ]
+    },
+    {
+      "topic": "tener_description",
+      "explanation_ru": "Глагол tener используется для возраста и некоторых характеристик внешности, например tener el pelo…",
+      "examples": [
+        "Tengo veinte años.",
+        "Tiene el pelo largo.",
+        "Mi abuelo tiene los ojos marrones."
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "vocabulary": [
+        {
+          "es": "madre / padre",
+          "ru": "мать / отец"
+        },
+        {
+          "es": "hermano / hermana",
+          "ru": "брат / сестра"
+        },
+        {
+          "es": "abuelo / abuela",
+          "ru": "дедушка / бабушка"
+        },
+        {
+          "es": "primo / prima",
+          "ru": "двоюродный брат / двоюродная сестра"
+        },
+        {
+          "es": "pareja",
+          "ru": "партнер / партнерша"
+        },
+        {
+          "es": "pelo",
+          "ru": "волосы"
+        },
+        {
+          "es": "castaño/a",
+          "ru": "каштановый / каштановая"
+        },
+        {
+          "es": "simpático/a",
+          "ru": "приятный в общении"
+        },
+        {
+          "es": "cariñoso/a",
+          "ru": "ласковый / заботливый"
+        },
+        {
+          "es": "quedar con amigos",
+          "ru": "встречаться с друзьями"
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "Elena",
+          "text": "¿Tienes hermanos, Marcos?"
+        },
+        {
+          "speaker": "Marcos",
+          "text": "Sí, tengo una hermana. Se llama Paula y tiene treinta años."
+        },
+        {
+          "speaker": "Elena",
+          "text": "¿Cómo es?"
+        },
+        {
+          "speaker": "Marcos",
+          "text": "Es alta, tiene el pelo castaño y es muy divertida."
+        },
+        {
+          "speaker": "Elena",
+          "text": "¡Qué bien! ¿Vive cerca de ti?"
+        },
+        {
+          "speaker": "Marcos",
+          "text": "No, vive en Bilbao. Pero nos vemos algunos fines de semana."
+        },
+        {
+          "speaker": "Elena",
+          "text": "Yo tengo una familia pequeña. Vivo con mi pareja y tenemos un perro."
+        },
+        {
+          "speaker": "Marcos",
+          "text": "¡Qué bonito! ¿Cómo se llama?"
+        },
+        {
+          "speaker": "Elena",
+          "text": "Se llama Leo. Es muy cariñoso."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "es_es_u2_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿De qué hablan Elena y Marcos?",
+          "options": [
+            "De sus familias y personas cercanas",
+            "De sus trabajos",
+            "De sus vacaciones"
+          ],
+          "answer": 0,
+          "explanation": "La conversación trata de hermanos, pareja y otros miembros de la familia."
+        },
+        {
+          "id": "es_es_u2_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Dónde vive Paula?",
+          "options": [
+            "En Madrid",
+            "En Bilbao",
+            "En Valencia"
+          ],
+          "answer": 1,
+          "explanation": "Marcos explica que su hermana Paula vive en Bilbao."
+        },
+        {
+          "id": "es_es_u2_e3",
+          "skill": "vocabulary",
+          "type": "choice",
+          "prompt": "¿Qué significa «quedar con amigos»?",
+          "options": [
+            "Ссориться с друзьями",
+            "Встречаться с друзьями",
+            "Работать с друзьями"
+          ],
+          "answer": 1,
+          "explanation": "Quedar con alguien significa договориться о встрече и встретиться с этим человеком."
+        },
+        {
+          "id": "es_es_u2_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «Marcos tiene dos hermanas. ___ hermanas viven en Bilbao».",
+          "options": [
+            "Su",
+            "Sus",
+            "Mi"
+          ],
+          "answer": 1,
+          "explanation": "Перед существительным во множественном числе используем sus: sus hermanas."
+        },
+        {
+          "id": "es_es_u2_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "В диалоге Elena говорит «mi pareja». Что важно понимать об этом слове?",
+          "options": [
+            "Оно обозначает только мужа",
+            "Оно может обозначать партнера независимо от брака и пола",
+            "Оно обозначает коллегу"
+          ],
+          "answer": 1,
+          "explanation": "Pareja — нейтральное слово для партнера или партнерши; оно не означает автоматически, что люди состоят в браке."
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "vocabulary": [
+        {
+          "es": "mamá / papá",
+          "ru": "мама / папа"
+        },
+        {
+          "es": "hermano / hermana",
+          "ru": "брат / сестра"
+        },
+        {
+          "es": "abuelito / abuelita",
+          "ru": "дедушка / бабушка (ласкательно)"
+        },
+        {
+          "es": "primo / prima",
+          "ru": "двоюродный брат / двоюродная сестра"
+        },
+        {
+          "es": "pareja",
+          "ru": "партнер / партнерша"
+        },
+        {
+          "es": "cabello",
+          "ru": "волосы"
+        },
+        {
+          "es": "chino/a",
+          "ru": "кудрявый / кудрявая (о волосах)"
+        },
+        {
+          "es": "buena onda",
+          "ru": "приятный, дружелюбный (разговорное)"
+        },
+        {
+          "es": "platicar",
+          "ru": "разговаривать, беседовать"
+        },
+        {
+          "es": "pasar tiempo juntos",
+          "ru": "проводить время вместе"
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "Sofía",
+          "text": "¿Tienes hermanos, Daniel?"
+        },
+        {
+          "speaker": "Daniel",
+          "text": "Sí, tengo dos hermanos. Mi hermano mayor se llama Andrés y mi hermana menor se llama Camila."
+        },
+        {
+          "speaker": "Sofía",
+          "text": "¿Cómo son?"
+        },
+        {
+          "speaker": "Daniel",
+          "text": "Andrés es alto y tiene el cabello corto. Camila es muy alegre y tiene el cabello chino."
+        },
+        {
+          "speaker": "Sofía",
+          "text": "¿Viven contigo?"
+        },
+        {
+          "speaker": "Daniel",
+          "text": "No, viven con mis papás. Yo vivo cerca y los visito los domingos."
+        },
+        {
+          "speaker": "Sofía",
+          "text": "Qué bonito. Yo vivo con mi abuelita. Siempre platicamos después de cenar."
+        },
+        {
+          "speaker": "Daniel",
+          "text": "¡Qué padre! Mi abuela también es muy buena onda."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "es_mx_u2_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿De qué hablan Sofía y Daniel?",
+          "options": [
+            "De sus familias",
+            "De sus estudios",
+            "De un viaje"
+          ],
+          "answer": 0,
+          "explanation": "Hablan de sus hermanos, sus papás y sus abuelas."
+        },
+        {
+          "id": "es_mx_u2_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Cuándo visita Daniel a su familia?",
+          "options": [
+            "Los lunes",
+            "Los domingos",
+            "Los viernes"
+          ],
+          "answer": 1,
+          "explanation": "Daniel dice: «los visito los domingos»."
+        },
+        {
+          "id": "es_mx_u2_e3",
+          "skill": "vocabulary",
+          "type": "choice",
+          "prompt": "В мексиканском диалоге «platicar» означает…",
+          "options": [
+            "Готовить",
+            "Разговаривать",
+            "Путешествовать"
+          ],
+          "answer": 1,
+          "explanation": "Platicar — распространенный в Мексике глагол со значением «разговаривать, беседовать»."
+        },
+        {
+          "id": "es_mx_u2_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «Daniel tiene dos hermanos. ___ hermanos viven con sus papás».",
+          "options": [
+            "Su",
+            "Sus",
+            "Tus"
+          ],
+          "answer": 1,
+          "explanation": "С существительным во множественном числе hermanos используется sus."
+        },
+        {
+          "id": "es_mx_u2_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "В разговоре Daniel говорит «¡Qué padre!». Как лучше понять это выражение в мексиканском испанском?",
+          "options": [
+            "Как «Как здорово!»",
+            "Как «Какой отец!»",
+            "Как «До свидания!»"
+          ],
+          "answer": 0,
+          "explanation": "В разговорной мексиканской речи qué padre означает «как здорово», «классно». Значение зависит от контекста."
+        }
+      ]
+    }
+  ],
+  "teacher_notes": [
+    "В испанском варианте используется преимущественно нейтральная общеупотребительная лексика Испании.",
+    "В мексиканском варианте добавлены platicar, cabello, buena onda и qué padre как региональные примеры; объяснять их как разговорные, а не универсальные формальные выражения.",
+    "Не представлять diminutivos abuelito/abuelita как обязательную форму: это ласкательные варианты, степень употребления зависит от семьи и ситуации.",
+    "Слово pareja не сводить к браку; оно может обозначать партнера или партнершу.",
+    "Все диалоги и упражнения оригинальные и созданы для The Teachers School."
+  ]
+}

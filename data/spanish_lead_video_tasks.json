@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "language": "es",
-  "purpose": "Spanish lead-magnet audiovisual materials: one external YouTube video for Spain Spanish and one for Mexican Spanish.",
-  "selection_rule": "Exactly one video per pronunciation variant. Tasks are original The Teachers materials. Open videos on their original YouTube pages; do not download, rehost, reproduce transcripts, or reuse third-party worksheets.",
+  "purpose": "Spanish lead-magnet content: one external listening video for Spain Spanish, one for Mexican Spanish, and one series episode. All learner tasks use closed response formats with answer keys.",
+  "selection_rule": "One video per pronunciation variant and one series episode. Use original external YouTube links only; do not download or rehost third-party videos, transcripts, or worksheets.",
   "resources": {
     "es_es": {
       "id": "es_es_a1_la_familia_del_rey",
@@ -18,7 +18,7 @@
       "tasks": {
         "before_watching": [
           {
-            "type": "vocabulary_match",
+            "type": "matching",
             "instruction": "Соедините испанские слова с переводом.",
             "pairs": [
               {
@@ -51,9 +51,15 @@
             ]
           },
           {
-            "type": "prediction",
-            "instruction": "Посмотрите на название видео. Как вы думаете, о каких членах семьи пойдет речь?",
-            "response_type": "open"
+            "type": "multiple_choice",
+            "instruction": "Выберите, о чем, вероятнее всего, будет видео с названием La familia del Rey.",
+            "question": "¿De qué trata el vídeo?",
+            "options": [
+              "De una familia real",
+              "De una familia que viaja",
+              "De una familia que vive en una granja"
+            ],
+            "answer": 0
           }
         ],
         "while_watching": [
@@ -118,14 +124,50 @@
         ],
         "after_watching": [
           {
-            "type": "language_focus",
-            "instruction": "Найдите в видео примеры su и sus. Объясните, почему в одном случае используется su, а в другом sus.",
-            "expected": "su перед существительным в единственном числе; sus перед существительным во множественном числе."
+            "type": "multiple_choice",
+            "instruction": "Выберите правильную форму притяжательного прилагательного.",
+            "questions": [
+              {
+                "question": "Felipe está casado. ___ esposa se llama Letizia.",
+                "options": [
+                  "Su",
+                  "Sus"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "Felipe y Letizia tienen dos hijas. ___ hijas se llaman Leonor y Sofía.",
+                "options": [
+                  "Su",
+                  "Sus"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Juan Carlos y Sofía tienen nietas. Leonor y Sofía son ___ nietas.",
+                "options": [
+                  "su",
+                  "sus"
+                ],
+                "answer": 1
+              }
+            ],
+            "answer_key": [
+              0,
+              1,
+              1
+            ]
           },
           {
-            "type": "production",
-            "instruction": "Составьте 3–4 предложения о семье одного из персонажей, используя слова hijo, hija, hermano, hermana, abuelo или primo и притяжательные su/sus.",
-            "response_type": "open"
+            "type": "multiple_choice",
+            "instruction": "Выберите грамматически правильное предложение.",
+            "question": "¿Cuál es correcta?",
+            "options": [
+              "Leonor es la hija mayor de Felipe y Letizia.",
+              "Leonor son la hija mayor de Felipe y Letizia.",
+              "Leonor es las hija mayor de Felipe y Letizia."
+            ],
+            "answer": 0
           }
         ]
       },
@@ -145,82 +187,351 @@
       "tasks": {
         "before_watching": [
           {
-            "type": "prediction",
-            "instruction": "Какие темы, по вашему мнению, могут появиться в видео о Мексике? Выберите две и объясните свой выбор.",
-            "options": [
-              "la comida",
-              "la historia",
-              "la vida cotidiana",
-              "el transporte",
-              "la música"
+            "type": "multiple_choice",
+            "instruction": "Выберите правильный перевод слов из описания выпуска.",
+            "questions": [
+              {
+                "question": "La comida significa…",
+                "options": [
+                  "еда",
+                  "история",
+                  "обычай"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "La historia significa…",
+                "options": [
+                  "язык",
+                  "история",
+                  "повседневная жизнь"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Una costumbre significa…",
+                "options": [
+                  "выражение",
+                  "обычай",
+                  "страна"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "La vida cotidiana significa…",
+                "options": [
+                  "повседневная жизнь",
+                  "музыка",
+                  "еда"
+                ],
+                "answer": 0
+              }
             ],
-            "response_type": "open"
-          },
-          {
-            "type": "vocabulary_activation",
-            "instruction": "Перед просмотром вспомните или найдите значение слов: la cultura, la historia, la comida, una costumbre, una expresión.",
-            "response_type": "self_check"
+            "answer_key": [
+              0,
+              1,
+              1,
+              0
+            ]
           }
         ],
         "while_watching": [
           {
-            "type": "gist",
-            "instruction": "Посмотрите видео целиком первый раз. Сформулируйте главную тему одним предложением на русском или простом испанском.",
-            "response_type": "open",
-            "evaluation": "Ответ должен отражать, что это рассказ о фактах, культуре и повседневной жизни Мексики."
-          },
-          {
-            "type": "detail_notes",
-            "instruction": "Посмотрите второй раз и заполните заметки. Запишите только то, что действительно услышали.",
-            "fields": [
+            "type": "multiple_choice",
+            "instruction": "Посмотрите выпуск и выберите ответы, соответствующие его теме и описанию издателя.",
+            "questions": [
               {
-                "label": "Un dato sobre la historia",
-                "prompt": "Один факт об истории"
+                "question": "¿De qué país habla el episodio?",
+                "options": [
+                  "De México",
+                  "De España",
+                  "De Argentina"
+                ],
+                "answer": 0
               },
               {
-                "label": "Un dato sobre la comida",
-                "prompt": "Один факт о еде"
+                "question": "¿Qué tipo de contenido presenta?",
+                "options": [
+                  "Datos y aspectos culturales",
+                  "Una historia de detectives",
+                  "Una entrevista de trabajo"
+                ],
+                "answer": 0
               },
               {
-                "label": "Un dato sobre la vida cotidiana o la cultura",
-                "prompt": "Один факт о повседневной жизни или культуре"
+                "question": "¿Qué áreas forman parte de los temas anunciados por el editor?",
+                "options": [
+                  "Cultura, historia, comida y vida cotidiana",
+                  "Deporte, moda y tecnología únicamente",
+                  "Política internacional y economía únicamente"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "¿Qué puedes encontrar además de información cultural?",
+                "options": [
+                  "Expresiones y aspectos del idioma",
+                  "Instrucciones para conducir",
+                  "Una receta completa paso a paso"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "¿Cuál es el objetivo más adecuado al escuchar este episodio?",
+                "options": [
+                  "Reconocer información sobre México y su cultura",
+                  "Aprender una lista de verbos irregulares sin contexto",
+                  "Seguir una conversación sobre una reserva de hotel"
+                ],
+                "answer": 0
               }
             ],
-            "response_type": "open",
-            "evaluation": "Проверяется по содержанию ролика; готовые факты и ответы заранее не подставлять."
-          },
-          {
-            "type": "vocabulary_in_context",
-            "instruction": "Запишите две незнакомые фразы или выражения из видео. Попробуйте догадаться об их значении по контексту.",
-            "response_type": "open"
+            "answer_key": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
           }
         ],
         "after_watching": [
           {
-            "type": "retell",
-            "instruction": "Выберите самый интересный факт из видео и перескажите его в 2–3 простых предложениях на испанском.",
-            "response_type": "open"
-          },
-          {
-            "type": "personal_response",
-            "instruction": "¿Es parecido a tu país? Сравните один факт из видео с привычками или культурой вашей страны, используя En mi país… / En México…",
-            "response_type": "open"
+            "type": "multiple_choice",
+            "instruction": "Проверьте, правильно ли вы определили основную тему выпуска.",
+            "question": "¿Cuál es el mejor resumen del episodio?",
+            "options": [
+              "Una introducción a distintos aspectos de México: cultura, historia, comida, idioma y vida diaria.",
+              "Una clase sobre las reglas de tráfico en Ciudad de México.",
+              "Una conversación sobre la vida de una familia en España."
+            ],
+            "answer": 0
           }
         ]
       },
-      "rights_note": "Публичное видео YouTube; открытая лицензия Creative Commons не подтверждена. Использовать только оригинальную ссылку/официальный плеер при доступном встраивании; не скачивать, не копировать и не распространять видео или транскрипт. Коммерческий сценарий встраивания требует отдельной проверки."
+      "rights_note": "Публичное видео YouTube; открытая лицензия Creative Commons не подтверждена. Использовать только оригинальную ссылку/официальный плеер при доступном встраивании; не скачивать, не копировать и не распространять видео или транскрипт. Коммерческий сценарий встраивания требует отдельной проверки.",
+      "task_quality_note": "Полная расшифровка и сквозное прослушивание не подтверждены. Поэтому закрытые вопросы проверяют только темы, прямо перечисленные издателем, а не вымышленные факты из содержания."
+    },
+    "series": {
+      "id": "es_mx_a1_buena_gente_s1e1",
+      "variant": "Español de México",
+      "title": "Buena Gente — Season 1, Episode 1",
+      "creator": "Spanish Playground",
+      "level": "Beginner / A1",
+      "youtube_url": "https://www.youtube.com/watch?v=LtCorVH5ukU",
+      "publisher_page": "https://www.spanishplayground.net/spanish-video-series-buena-gente/",
+      "duration": "6 minutes",
+      "content_summary": "Sofía and Mateo move into a new apartment and find a box left by the previous tenant. They try to identify its owner and discover that the contents are important.",
+      "chapters": [
+        "Nuestro nuevo departamento",
+        "Desempacando",
+        "Serás un excelente romie",
+        "Alguien dejó una cajita",
+        "La caja no está vacía",
+        "Voy a llamar al dueño",
+        "¿Tienes dónde escribir?",
+        "Parecen muy importantes",
+        "Hay una nota",
+        "Diego se va a casar"
+      ],
+      "tasks": {
+        "before_watching": [
+          {
+            "type": "multiple_choice",
+            "instruction": "Посмотрите на название сериала и выберите подходящий вариант.",
+            "question": "¿Qué significa Buena Gente?",
+            "options": [
+              "Хорошие люди",
+              "Большой город",
+              "Новая квартира"
+            ],
+            "answer": 0
+          },
+          {
+            "type": "multiple_choice",
+            "instruction": "Выберите правильный перевод слов, которые помогут понять сюжет.",
+            "questions": [
+              {
+                "question": "Un departamento",
+                "options": [
+                  "квартира",
+                  "магазин",
+                  "парк"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "Una caja",
+                "options": [
+                  "сумка",
+                  "коробка",
+                  "фотография"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "El dueño",
+                "options": [
+                  "сосед",
+                  "владелец",
+                  "друг"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "Una nota",
+                "options": [
+                  "записка",
+                  "ключ",
+                  "телефон"
+                ],
+                "answer": 0
+              }
+            ],
+            "answer_key": [
+              0,
+              1,
+              1,
+              0
+            ]
+          }
+        ],
+        "while_watching": [
+          {
+            "type": "multiple_choice",
+            "instruction": "Посмотрите эпизод и выберите правильный ответ.",
+            "questions": [
+              {
+                "question": "¿Quiénes son los protagonistas?",
+                "options": [
+                  "Sofía y Mateo",
+                  "Diego y Leticia",
+                  "Ana y Lucía"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "¿Adónde llegan Sofía y Mateo?",
+                "options": [
+                  "A un hotel",
+                  "A un departamento nuevo",
+                  "A una escuela"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "¿Qué encuentran los protagonistas?",
+                "options": [
+                  "Una bicicleta",
+                  "Una cajita",
+                  "Un perro"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "¿Qué hacen cuando encuentran la cajita?",
+                "options": [
+                  "La tiran a la basura",
+                  "Intentan encontrar al dueño",
+                  "La llevan a la escuela"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "¿Cómo contacta Sofía al posible dueño?",
+                "options": [
+                  "Por teléfono",
+                  "Por correo postal",
+                  "En persona en un café"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "¿Qué encuentran dentro de la caja, además de fotos y recetas?",
+                "options": [
+                  "Un mensaje y un objeto importante",
+                  "Ropa nueva",
+                  "Dinero para el alquiler"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "¿Qué descubren al final del episodio sobre Diego?",
+                "options": [
+                  "Se va a casar",
+                  "Se muda a Madrid",
+                  "Es el hermano de Mateo"
+                ],
+                "answer": 0
+              }
+            ],
+            "answer_key": [
+              0,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "after_watching": [
+          {
+            "type": "multiple_choice",
+            "instruction": "Расположите события в правильной последовательности. Выберите правильный вариант.",
+            "question": "¿Cuál es el orden correcto?",
+            "options": [
+              "Llegan al departamento → encuentran la cajita → Sofía llama al dueño → descubren una nota.",
+              "Sofía llama al dueño → llegan al departamento → descubren una nota → encuentran la cajita.",
+              "Encuentran una nota → llegan al departamento → encuentran la cajita → Sofía llama al dueño."
+            ],
+            "answer": 0
+          },
+          {
+            "type": "multiple_choice",
+            "instruction": "Выберите правильное значение выражений из эпизода.",
+            "questions": [
+              {
+                "question": "«Voy a llamar al dueño» significa…",
+                "options": [
+                  "Я собираюсь позвонить владельцу",
+                  "Я ищу новый дом",
+                  "Я хочу купить телефон"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "«Nuestro nuevo departamento» significa…",
+                "options": [
+                  "Их старая школа",
+                  "Наша новая квартира",
+                  "Их новый магазин"
+                ],
+                "answer": 1
+              }
+            ],
+            "answer_key": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "rights_note": "Использовать оригинальную ссылку YouTube; не скачивать и не распространять видео, субтитры или сторонние учебные материалы."
     }
   },
   "audit": {
     "checked_on": "2026-11-11",
     "verified": {
-      "es_es": "Official publisher page, A1 label, YouTube video ID and publisher transcript verified. The transcript was used to write the original comprehension questions and answer key.",
-      "es_mx": "Publisher episode listing confirms episode #37, A2 label, 5-minute duration and stated topic areas. Full transcript and end-to-end audio playback were not verified; tasks therefore use open responses and do not invent factual answer keys."
+      "es_es": "Official publisher page, A1 label, YouTube video ID and publisher transcript verified. Questions and answer keys are grounded in the reviewed publisher transcript.",
+      "es_mx": "Publisher episode listing confirms episode #37, A2 label, 5-minute duration and stated topic areas. Full transcript and end-to-end playback were not verified; quiz questions are deliberately limited to the publisher-stated themes.",
+      "series": "Official Spanish Playground YouTube video verified: Buena Gente S1 E1, about six minutes, chapter list and storyline visible in video description. Official series page describes slow, clear Spanish, repetition and strong visual support."
     },
     "limitations": [
-      "No claim is made that either video has been fully listened to end-to-end in this environment.",
-      "The Mexico worksheet requires the learner to extract facts directly from the video; there are no guessed answer keys.",
-      "The Spain resource has a CC BY-NC-ND notice; commercial use must be cleared before inclusion in the lead magnet."
+      "No claim is made that the Mexico audio has been fully listened to end-to-end; its quiz tests only publisher-stated topics.",
+      "VideoEle CC BY-NC-ND notice means commercial use must be cleared before inclusion in the lead magnet.",
+      "Series tasks are based on the official episode description and chapter list; review the video once in the final lead-magnet interface before release."
     ]
   }
 }

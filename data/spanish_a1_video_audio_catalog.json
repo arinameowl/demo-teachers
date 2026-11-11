@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "language": "es",
+  "level": "A1",
+  "category": "video_audio_library",
+  "status": "curated_external_resources_not_integrated",
+  "integration_policy": "Do not connect Spanish content to the Telegram bot or Learning Space until the complete Spanish program is finished and approved. Existing English content must remain unchanged.",
+  "usage_policy": [
+    "Store links and original learning notes only; do not copy full transcripts, audio, video, screenshots, or third-party worksheets into the repository.",
+    "Open videos and podcasts on their original platforms or use an officially provided embed where permitted.",
+    "Before using paid third-party material inside a paid school product, confirm the license covers commercial teaching use and embedding or linking.",
+    "Create The Teachers School comprehension exercises independently; do not reproduce the provider's worksheets."
+  ],
+  "exercise_framework": [
+    {
+      "skill": "gist",
+      "task": "Choose the best summary of the clip or recording."
+    },
+    {
+      "skill": "detail",
+      "task": "Answer two or three questions about clearly audible facts."
+    },
+    {
+      "skill": "vocabulary",
+      "task": "Match or choose meanings of 4–6 words heard in context."
+    },
+    {
+      "skill": "language",
+      "task": "Notice one A1 structure or useful phrase from the material."
+    },
+    {
+      "skill": "culture",
+      "task": "Identify one regional word, social convention, food, place, or cultural detail without generalizing it to everyone."
+    }
+  ],
+  "dialects": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "primary_video_series": {
+        "id": "spanish_sitcom_a1",
+        "title": "Spanish Sitcom — A1",
+        "publisher": "Habla con Eñe",
+        "url": "https://www.hablaconene.com/producto/spanish-sitcom-nivel-a1/",
+        "format": "15 episodes, Spanish subtitles, downloadable video, companion PDF and dialogue transcripts",
+        "price_checked_eur": "29.90",
+        "access": "Paid",
+        "suitability": "Designed specifically around A1 CEFR content with progressive sequence",
+        "licensing_note": "Do not redistribute the videos or transcripts. Confirm commercial classroom/app license before embedding in The Teachers School.",
+        "topic_mapping": [
+          {
+            "episode": 1,
+            "unit": "es_a1_u01_presentaciones",
+            "topic": "Introductions, greetings and farewells"
+          },
+          {
+            "episode": 4,
+            "unit": "es_a1_u02_familia_amigos",
+            "topic": "Family members and descriptions"
+          },
+          {
+            "episode": 8,
+            "unit": "es_a1_u03_un_dia_normal",
+            "topic": "Time and daily schedules"
+          },
+          {
+            "episode": 13,
+            "unit": "es_a1_u04_la_alimentacion",
+            "topic": "Food and food shops, meals, prices"
+          },
+          {
+            "episode": 14,
+            "unit": "es_a1_u04_la_alimentacion",
+            "topic": "Restaurant food and drink, expressing preferences"
+          },
+          {
+            "episode": 11,
+            "unit": "es_a1_u05_la_ciudad_transporte",
+            "topic": "Weather, transport and preferences"
+          },
+          {
+            "episode": 9,
+            "unit": "es_a1_u06_el_tiempo_libre",
+            "topic": "Plans, obligations and leisure"
+          }
+        ]
+      },
+      "audio_collection": {
+        "id": "podcasts_in_spanish_level1",
+        "title": "Podcasts in Spanish — Level 1",
+        "publisher": "The PINS Team",
+        "url": "https://www.podcastsinspanish.org/pages/level1.shtml",
+        "format": "Short audio episodes, usually around 1.5–4 minutes",
+        "access": "Audio free; transcripts, worksheets and vocabulary tasks require membership",
+        "dialect": "Spanish from Spain",
+        "caution": "Level 1 is labelled elementary/pre-intermediate, not strictly CEFR A1. Check the transcript and audio of each chosen episode before assigning it to A1 learners.",
+        "selected_episodes": [
+          {
+            "episode": 8,
+            "title": "Foto de familia",
+            "unit": "es_a1_u02_familia_amigos",
+            "duration": "1:39",
+            "role": "Supplemental listening"
+          },
+          {
+            "episode": 4,
+            "title": "La rutina diaria",
+            "unit": "es_a1_u03_un_dia_normal",
+            "duration": "2:12",
+            "role": "Core listening candidate"
+          },
+          {
+            "episode": 15,
+            "title": "Supermercado",
+            "unit": "es_a1_u04_la_alimentacion",
+            "duration": "3:09",
+            "role": "Core listening candidate"
+          },
+          {
+            "episode": 10,
+            "title": "Medios de transporte",
+            "unit": "es_a1_u05_la_ciudad_transporte",
+            "duration": "3:22",
+            "role": "Supplemental listening; level-check first"
+          },
+          {
+            "episode": 2,
+            "title": "Tiempo libre",
+            "unit": "es_a1_u06_el_tiempo_libre",
+            "duration": "2:02",
+            "role": "Core listening candidate"
+          },
+          {
+            "episode": 1,
+            "title": "Visita a una ciudad castellana",
+            "unit": "es_a1_u05_la_ciudad_transporte",
+            "duration": "1:38",
+            "role": "Core listening candidate"
+          }
+        ]
+      },
+      "extra_audio": {
+        "id": "copycat_cafe_spain_a1",
+        "title": "Copycat Cafe — Spanish Audio Course (Spain)",
+        "url": "https://copycatcafe.com/spanish-audio-course-spain",
+        "format": "Five A1 episodes, 10–11 minutes, MP3 and transcript",
+        "access": "Free, no signup",
+        "caveat": "Voices are AI-generated and characters are fictional. Use for repetition and pronunciation practice, not as a model of natural spontaneous speech.",
+        "episodes": [
+          "Meeting your language partner",
+          "Going up?",
+          "Is this table free?",
+          "Are there any sandwiches?",
+          "Where is the metro?"
+        ]
+      }
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "primary_video_collection": {
+        "id": "spanish_playground_video_collection",
+        "title": "Spanish Playground — Beginner Video Conversations",
+        "publisher": "Spanish Playground",
+        "url": "https://www.spanishplayground.net/spanish-conversation-videos-activities/",
+        "format": "Short conversations, natural context, visual support and repetition; many clips aimed at novice learners",
+        "access": "Many videos available on YouTube; accompanying activity packs vary by title",
+        "dialect": "Mexican Spanish",
+        "suitability": "Useful adult-friendly situational dialogues are available, but select individual clips carefully; some other resources on the site are child-focused.",
+        "selected_videos": [
+          {
+            "title": "Presentaciones y saludos",
+            "url": "https://espanol.yabla.com/Spanish-Playground-series-4811",
+            "unit": "es_a1_u01_presentaciones",
+            "duration": "1:36",
+            "role": "Beginner listening/video; transcript listed on Yabla"
+          },
+          {
+            "title": "Buena Gente — Season 1, Episode 1",
+            "url": "https://www.youtube.com/watch?v=LtCorVH5ukU",
+            "unit": "es_a1_u02_familia_amigos",
+            "duration": "about 6 minutes",
+            "role": "Core story listening; siblings and new apartment; Mexican setting"
+          },
+          {
+            "title": "Mi rutina diaria",
+            "url": "https://www.spanishplayground.net/spanish-daily-routines-reflexive-verbs/",
+            "unit": "es_a1_u03_un_dia_normal",
+            "role": "Short conversation with reflexive verbs; video and listening activities"
+          },
+          {
+            "title": "En un restaurante",
+            "url": "https://youtu.be/DSg-KsbnGpQ",
+            "unit": "es_a1_u04_la_alimentacion",
+            "role": "Core situational video about ordering in a Mexican restaurant; free PDF activities"
+          },
+          {
+            "title": "Buena Gente — Season 1 playlist",
+            "url": "https://www.youtube.com/playlist?list=PLHWAe4rFdBzy69XpSbjA5BuDwfE64Y_8U",
+            "unit": "es_a1_u05_la_ciudad_transporte",
+            "role": "Supplemental narrative listening; use only scenes with clear place/route language after preview"
+          },
+          {
+            "title": "¿Nos conocemos? — five-episode mini-series",
+            "url": "https://www.spanishplayground.net/learn-spanish-mini-series-nos-conocemos/",
+            "unit": "es_a1_u06_el_tiempo_libre",
+            "role": "Core listening candidate; conversations include work, sports and cooking hobbies"
+          }
+        ]
+      },
+      "audio_collection": {
+        "id": "mexiglot_beginner",
+        "title": "Learn Mexican Spanish with Mexiglot",
+        "publisher": "Mexiglot",
+        "url": "https://podcasts.apple.com/us/podcast/learn-mexican-spanish-with-mexiglot/id1710835571",
+        "format": "Short beginner episodes around 3–4 minutes; transcript with English translation, vocabulary and exercises advertised",
+        "access": "Podcast available; accompanying PDFs offered via Buy Me a Coffee",
+        "selected_episodes": [
+          {
+            "title": "Episode 1: What are your Hobbies?",
+            "unit": "es_a1_u06_el_tiempo_libre",
+            "duration": "3 minutes",
+            "role": "A1 listening candidate"
+          },
+          {
+            "title": "Episode 2: Let's talk about food",
+            "unit": "es_a1_u04_la_alimentacion",
+            "duration": "4 minutes",
+            "role": "A1 listening candidate"
+          },
+          {
+            "title": "Story 1: My Weird Neighbor Tania",
+            "unit": "es_a1_u02_familia_amigos",
+            "duration": "4 minutes",
+            "role": "Supplemental listening; check vocabulary load before use"
+          }
+        ],
+        "caution": "Confirm the current availability of each PDF and preview the accent and language load before including in the core path."
+      },
+      "additional_series": {
+        "id": "buena_gente",
+        "title": "Buena Gente",
+        "publisher": "Spanish Playground; filmed in Guanajuato, Mexico",
+        "url": "https://www.spanishplayground.net/spanish-video-series-buena-gente/",
+        "format": "Five standalone seasons on YouTube; short episodes, slow clear Spanish, subtitles; transcripts and learning packs available, some paid",
+        "access": "Videos on YouTube; some supporting materials free, full episode packs paid",
+        "suitability": "Created for language learners; publisher notes use in high-school classes and adult classes",
+        "licensing_note": "Use original YouTube links or permitted embeds only; do not copy or redistribute video/transcripts."
+      },
+      "cultural_audio_reserve": {
+        "id": "cafecito_con_mextalki",
+        "title": "Cafecito con Mextalki",
+        "url": "https://www.mextalki.com/podcast",
+        "level_label": "A1–A2 according to publisher",
+        "format": "Mexican cultural stories, legends and everyday topics, slow-paced",
+        "caution": "Do not assign all episodes automatically to A1: episode lengths and vocabulary vary, and transcripts may require Patreon. Preview individual episodes first."
+      }
+    }
+  ],
+  "unit_resource_status": [
+    {
+      "unit": "es_a1_u01_presentaciones",
+      "es_es": "Spanish Sitcom episode 1; Copycat Cafe episode 1 optional pronunciation",
+      "es_mx": "Spanish Playground Presentaciones y saludos; Copycat Cafe Latin America episode 2 optional, AI voice"
+    },
+    {
+      "unit": "es_a1_u02_familia_amigos",
+      "es_es": "Spanish Sitcom episode 4; Podcasts in Spanish episode 8 optional",
+      "es_mx": "Buena Gente S1E1; Mexiglot Story 1 optional after level check"
+    },
+    {
+      "unit": "es_a1_u03_un_dia_normal",
+      "es_es": "Spanish Sitcom episode 8; Podcasts in Spanish episode 4",
+      "es_mx": "Spanish Playground Mi rutina diaria; create/record original audio dialogue if a podcast is required"
+    },
+    {
+      "unit": "es_a1_u04_la_alimentacion",
+      "es_es": "Spanish Sitcom episodes 13–14; Podcasts in Spanish episode 15",
+      "es_mx": "Spanish Playground En un restaurante; Mexiglot episode 2"
+    },
+    {
+      "unit": "es_a1_u05_la_ciudad_transporte",
+      "es_es": "Spanish Sitcom episode 11; Podcasts in Spanish episodes 1 and 10",
+      "es_mx": "Buena Gente scenes only after preview; Copycat Cafe Latin America episode 3 is a non-Mexico-specific AI-voice supplement"
+    },
+    {
+      "unit": "es_a1_u06_el_tiempo_libre",
+      "es_es": "Spanish Sitcom episode 9; Podcasts in Spanish episode 2",
+      "es_mx": "¿Nos conocemos? mini-series; Mexiglot episode 1"
+    }
+  ],
+  "outstanding_work": [
+    "Preview selected video and audio episodes end-to-end and verify exact language load against A1.",
+    "Check every linked resource is accessible in the intended student regions and on mobile.",
+    "Check commercial-use and embedding permissions for any paid course integration.",
+    "Write original five-question exercise sets per selected media after reviewing the actual media/transcripts; do not guess answers from titles or summaries.",
+    "Record original Mexican Spanish audio for any A1 unit without a sufficiently clear and level-appropriate external audio source."
+  ]
+}

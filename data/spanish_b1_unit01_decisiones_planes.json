@@ -95,11 +95,11 @@
           "skill": "gist",
           "prompt": "¿Qué hará Marina si no consigue la beca?",
           "options": [
-            "Trabajará unos meses más y volverá a intentarlo.",
             "Abandonará sus estudios definitivamente.",
+            "Trabajará unos meses más y volverá a intentarlo.",
             "Se mudará antes de presentar la solicitud."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "La lectura explica el plan alternativo de Marina."
         },
         {
@@ -108,11 +108,11 @@
           "skill": "detail",
           "prompt": "¿Qué opción propone Diego para reducir los gastos iniciales?",
           "options": [
-            "Compartir piso.",
             "Cambiar de universidad.",
-            "Dejar de trabajar."
+            "Dejar de trabajar.",
+            "Compartir piso."
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "Diego sugiere compartir piso al principio."
         },
         {
@@ -134,11 +134,11 @@
           "skill": "vocabulary",
           "prompt": "Elige el conector de consecuencia: «No consigue la beca; ___, tendrá que trabajar unos meses más».",
           "options": [
-            "por eso",
             "aunque",
-            "por un lado"
+            "por un lado",
+            "por eso"
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "Por eso introduce una consecuencia."
         },
         {
@@ -147,11 +147,11 @@
           "skill": "culture",
           "prompt": "Según la nota cultural, ¿qué puede cubrir una beca en España?",
           "options": [
-            "La matrícula y, en algunos casos, alojamiento o manutención.",
             "Siempre todos los gastos sin excepción.",
+            "La matrícula y, en algunos casos, alojamiento o manutención.",
             "Únicamente viajes turísticos."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "La cobertura depende del programa."
         }
       ]
@@ -214,11 +214,11 @@
           "skill": "gist",
           "prompt": "¿Qué hará Mariana si no consigue la beca?",
           "options": [
-            "Trabajará unos meses más y volverá a intentarlo.",
             "Cancelará todos sus planes de estudio.",
+            "Trabajará unos meses más y volverá a intentarlo.",
             "Se irá sin comparar programas."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "La lectura presenta esta alternativa."
         },
         {
@@ -227,11 +227,11 @@
           "skill": "detail",
           "prompt": "¿Qué opción propone Luis para reducir los gastos al principio?",
           "options": [
-            "Compartir departamento.",
             "Cambiar de carrera.",
-            "Dejar de estudiar español."
+            "Dejar de estudiar español.",
+            "Compartir departamento."
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "Luis propone compartir departamento."
         },
         {
@@ -253,11 +253,11 @@
           "skill": "vocabulary",
           "prompt": "Elige el conector de consecuencia: «No consigue la beca; ___, tendrá que trabajar unos meses más».",
           "options": [
-            "por eso",
             "aunque",
-            "por un lado"
+            "por un lado",
+            "por eso"
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "Por eso introduce una consecuencia."
         },
         {
@@ -266,11 +266,11 @@
           "skill": "culture",
           "prompt": "Según la nota cultural, ¿qué debe comprobarse al solicitar una beca en México?",
           "options": [
-            "Si cubre solo los estudios o también los gastos de vida.",
             "Si garantiza empleo permanente.",
+            "Si cubre solo los estudios o también los gastos de vida.",
             "Si permite viajar sin documentos."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "Conviene revisar qué gastos cubre el apoyo."
         }
       ]

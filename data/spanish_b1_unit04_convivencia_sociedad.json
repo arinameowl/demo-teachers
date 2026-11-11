@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "level": "B1",
+  "category": "lesson",
+  "language": "es",
+  "unit_id": "es_b1_u04_convivencia_sociedad",
+  "title": "Convivencia y vida en sociedad",
+  "learning_goals": [
+    "Описывать городские и общественные проблемы",
+    "Говорить об услугах и коллективных инициативах",
+    "Использовать конструкции se и придаточные с que"
+  ],
+  "grammar": [
+    {
+      "topic": "pasiva_refleja",
+      "explanation_ru": "Se + глагол в 3-м лице используется, когда важнее действие или результат, чем исполнитель. Глагол согласуется с существительным: Se organizan talleres; Se necesita personal.",
+      "examples": [
+        "Se venden entradas en línea.",
+        "Se han renovado varias plazas."
+      ]
+    },
+    {
+      "topic": "impersonal_se",
+      "explanation_ru": "Безличная se-конструкция обобщает действия людей: Se vive bien aquí; En esta ciudad se trabaja mucho. Глагол обычно стоит в 3-м лице единственного числа.",
+      "examples": [
+        "En este barrio se puede caminar.",
+        "Aquí se come tarde."
+      ]
+    },
+    {
+      "topic": "relativas_que",
+      "explanation_ru": "Que связывает существительное с уточняющей информацией. Оно может относиться к людям, предметам и местам.",
+      "examples": [
+        "Es un barrio que tiene parques.",
+        "Busco una asociación que organice actividades."
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "pronunciation_note": "Лексика и речевые модели Испании.",
+      "dialogue": [
+        {
+          "speaker": "Nuria",
+          "text": "¿Qué tal el nuevo barrio?"
+        },
+        {
+          "speaker": "Sergio",
+          "text": "Me gusta. Se puede ir andando a casi todas partes."
+        },
+        {
+          "speaker": "Nuria",
+          "text": "¿Hay espacios para hacer deporte?"
+        },
+        {
+          "speaker": "Sergio",
+          "text": "Sí, han abierto un centro que ofrece clases para vecinos."
+        },
+        {
+          "speaker": "Nuria",
+          "text": "¿Y cómo se llega al trabajo?"
+        },
+        {
+          "speaker": "Sergio",
+          "text": "Hay una línea de autobús que pasa cada diez minutos."
+        },
+        {
+          "speaker": "Nuria",
+          "text": "En mi zona se tarda muchísimo."
+        },
+        {
+          "speaker": "Sergio",
+          "text": "Aquí también hay problemas: se necesitan más zonas verdes."
+        },
+        {
+          "speaker": "Nuria",
+          "text": "¿Se ha hablado del tema en el ayuntamiento?"
+        },
+        {
+          "speaker": "Sergio",
+          "text": "Sí, se ha organizado una reunión para escuchar propuestas."
+        }
+      ],
+      "context_note": "В Испании муниципалитеты отвечают за многие локальные услуги и общественные пространства. Жители некоторых городов могут участвовать в обсуждениях бюджета и районных инициатив.",
+      "reading": {
+        "title": "Un barrio que cambia",
+        "text": "En el distrito se ha puesto en marcha un proyecto para mejorar los espacios públicos. Se han plantado árboles, se han instalado bancos y se han organizado actividades para distintas edades. También se ha creado una plataforma donde los vecinos pueden comunicar problemas. El proyecto todavía tiene dificultades: algunas calles necesitan reparaciones y se pide mejorar el transporte. La participación vecinal será importante para decidir las próximas medidas."
+      },
+      "exercises": [
+        {
+          "id": "es_es_b1_u4_e1",
+          "type": "choice",
+          "skill": "gist",
+          "prompt": "¿Para qué sirve la plataforma vecinal?",
+          "options": [
+            "Para comunicar problemas.",
+            "Que la actividad se canceló sin explicación",
+            "Que todos rechazaron la propuesta"
+          ],
+          "answer": 0,
+          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+        },
+        {
+          "id": "es_es_b1_u4_e2",
+          "type": "choice",
+          "skill": "detail",
+          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "options": [
+            "El texto presenta una situación relacionada con el tema y sus matices",
+            "El texto afirma que todas las situaciones son idénticas",
+            "El texto no ofrece información concreta"
+          ],
+          "answer": 0,
+          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+        },
+        {
+          "id": "es_es_b1_u4_e3",
+          "type": "choice",
+          "skill": "grammar",
+          "prompt": "En este barrio ___ actividades culturales.",
+          "options": [
+            "se organizan",
+            "se organiza",
+            "organiza se"
+          ],
+          "answer": 0,
+          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+        },
+        {
+          "id": "es_es_b1_u4_e4",
+          "type": "choice",
+          "skill": "vocabulary",
+          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "options": [
+            "Sin embargo",
+            "Por la mañana",
+            "Al lado de"
+          ],
+          "answer": 0,
+          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+        },
+        {
+          "id": "es_es_b1_u4_e5",
+          "type": "choice",
+          "skill": "culture",
+          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "options": [
+            "Que puede variar según la región y las familias",
+            "Que se practica igual en todos los lugares",
+            "Que nunca cambia con el tiempo"
+          ],
+          "answer": 0,
+          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "pronunciation_note": "Мексиканский вариант как основа латиноамериканского маршрута.",
+      "dialogue": [
+        {
+          "speaker": "Nuria",
+          "text": "¿Qué tal la nueva colonia?"
+        },
+        {
+          "speaker": "Sergio",
+          "text": "Me gusta. Se puede llegar caminando a casi todos lados."
+        },
+        {
+          "speaker": "Nuria",
+          "text": "¿Hay espacios para hacer deporte?"
+        },
+        {
+          "speaker": "Sergio",
+          "text": "Sí, abrieron un centro que ofrece clases para los vecinos."
+        },
+        {
+          "speaker": "Nuria",
+          "text": "¿Y cómo te vas al trabajo?"
+        },
+        {
+          "speaker": "Sergio",
+          "text": "Hay una ruta de camión que pasa cada diez minutos."
+        },
+        {
+          "speaker": "Nuria",
+          "text": "En mi zona se tarda muchísimo en llegar."
+        },
+        {
+          "speaker": "Sergio",
+          "text": "Aquí también hay problemas: se necesitan más áreas verdes."
+        },
+        {
+          "speaker": "Nuria",
+          "text": "¿Se ha hablado del tema en la alcaldía?"
+        },
+        {
+          "speaker": "Sergio",
+          "text": "Sí, se organizó una reunión para escuchar propuestas."
+        }
+      ],
+      "context_note": "В Мексике городские вопросы могут решаться на уровне муниципалитета, alcaldía (в Мехико) или других местных органов — в зависимости от территории.",
+      "reading": {
+        "title": "Una colonia que cambia",
+        "text": "En la colonia comenzó un proyecto para mejorar los espacios públicos. Se plantaron árboles, se instalaron bancas y se organizaron actividades para distintas edades. También se creó una plataforma donde los vecinos pueden reportar problemas. El proyecto todavía tiene dificultades: algunas calles necesitan reparaciones y se pide mejorar el transporte. La participación de los vecinos será importante para decidir las siguientes medidas."
+      },
+      "exercises": [
+        {
+          "id": "es_mx_b1_u4_e1",
+          "type": "choice",
+          "skill": "gist",
+          "prompt": "¿Qué medidas incluye el proyecto?",
+          "options": [
+            "Plantar árboles, instalar bancas y organizar actividades.",
+            "Que la actividad se canceló sin explicación",
+            "Que todos rechazaron la propuesta"
+          ],
+          "answer": 0,
+          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+        },
+        {
+          "id": "es_mx_b1_u4_e2",
+          "type": "choice",
+          "skill": "detail",
+          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "options": [
+            "El texto presenta una situación relacionada con el tema y sus matices",
+            "El texto afirma que todas las situaciones son idénticas",
+            "El texto no ofrece información concreta"
+          ],
+          "answer": 0,
+          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+        },
+        {
+          "id": "es_mx_b1_u4_e3",
+          "type": "choice",
+          "skill": "grammar",
+          "prompt": "En este barrio ___ actividades culturales.",
+          "options": [
+            "se organizan",
+            "se organiza",
+            "organiza se"
+          ],
+          "answer": 0,
+          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+        },
+        {
+          "id": "es_mx_b1_u4_e4",
+          "type": "choice",
+          "skill": "vocabulary",
+          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "options": [
+            "Sin embargo",
+            "Por la mañana",
+            "Al lado de"
+          ],
+          "answer": 0,
+          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+        },
+        {
+          "id": "es_mx_b1_u4_e5",
+          "type": "choice",
+          "skill": "culture",
+          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "options": [
+            "Que puede variar según la región y las familias",
+            "Que se practica igual en todos los lugares",
+            "Que nunca cambia con el tiempo"
+          ],
+          "answer": 0,
+          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+        }
+      ]
+    }
+  ]
+}

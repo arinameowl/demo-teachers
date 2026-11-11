@@ -6,45 +6,138 @@
   "unit_id": "es_a1_u05_la_ciudad_transporte",
   "title": "La ciudad y el transporte",
   "learning_goals": [
-    "Назвать основные места и объекты городской инфраструктуры",
-    "Спросить и объяснить, как пройти к нужному месту",
-    "Назвать распространенные виды транспорта",
-    "Понимать простые указания направления",
-    "Использовать hay, estar, ir и предлоги места"
+    "Назвать распространенные места и объекты городской инфраструктуры",
+    "Спросить, где находится нужное место, и уточнить, далеко ли оно",
+    "Понять и дать простые указания маршрута",
+    "Назвать распространенные виды транспорта и способы передвижения",
+    "Сказать, как добраться до места и сколько времени это займет",
+    "Различать hay и estar в описании города",
+    "Использовать основные предлоги места и направления",
+    "Понимать некоторые различия городской лексики Испании и Мексики"
   ],
   "grammar": [
     {
       "topic": "hay_and_estar",
-      "explanation_ru": "Hay вводит наличие объекта: «в городе есть…». Estar указывает местоположение конкретного объекта: «аптека находится…».",
+      "title_ru": "Hay и estar: есть ли объект и где он находится?",
+      "explanation_ru": "Hay используют, чтобы сообщить о наличии или существовании объекта: в городе есть парк, рядом есть аптека. Estar используют, чтобы указать местоположение конкретного объекта: аптека находится рядом с рынком. После hay часто стоит un/una или неопределенное количество; с estar обычно говорим о конкретном объекте с определенным артиклем или названием.",
+      "contrast": [
+        {
+          "hay": "Hay una farmacia cerca.",
+          "estar": "La farmacia está al lado del mercado.",
+          "meaning_ru": "Рядом есть аптека. / Аптека находится рядом с рынком."
+        }
+      ],
       "examples": [
-        "Hay un banco cerca.",
-        "La farmacia está al lado del mercado."
-      ]
+        "En mi barrio hay un parque.",
+        "¿Hay una parada de autobús por aquí?",
+        "La estación está enfrente del museo."
+      ],
+      "common_mistake_ru": "Не говорите La farmacia hay al lado… Если вы указываете, где находится конкретная аптека, используйте está."
     },
     {
       "topic": "prepositions_of_place",
-      "explanation_ru": "Предлоги и выражения места помогают описать расположение: cerca de, lejos de, al lado de, enfrente de, detrás de, entre.",
+      "title_ru": "Предлоги и выражения места",
+      "explanation_ru": "Эти выражения помогают описать расположение объекта относительно другого места. Обратите внимание на de: al lado de, cerca de, enfrente de. Перед определенным артиклем el предлог de образует del, а a + el образует al.",
+      "forms": [
+        {
+          "form": "cerca de",
+          "meaning": "рядом с / недалеко от"
+        },
+        {
+          "form": "lejos de",
+          "meaning": "далеко от"
+        },
+        {
+          "form": "al lado de",
+          "meaning": "рядом с"
+        },
+        {
+          "form": "enfrente de",
+          "meaning": "напротив"
+        },
+        {
+          "form": "detrás de",
+          "meaning": "за / позади"
+        },
+        {
+          "form": "entre",
+          "meaning": "между"
+        },
+        {
+          "form": "a la derecha de",
+          "meaning": "справа от"
+        },
+        {
+          "form": "a la izquierda de",
+          "meaning": "слева от"
+        }
+      ],
       "examples": [
+        "La farmacia está al lado del mercado.",
         "El banco está enfrente del parque.",
-        "La tienda está al lado de la farmacia."
-      ]
+        "La parada está entre el hotel y la estación."
+      ],
+      "note_ru": "del = de + el, al = a + el: cerca del banco, voy al centro."
     },
     {
-      "topic": "ir_and_directions",
-      "explanation_ru": "Ir используется для движения: voy, vas, va, vamos, vais, van. Для простых указаний используют imperativo в готовых формулах: sigue, gira, cruza.",
+      "topic": "asking_and_giving_directions",
+      "title_ru": "Как спросить дорогу и объяснить маршрут",
+      "explanation_ru": "Чтобы спросить дорогу, используйте ¿Dónde está…? или ¿Cómo llego a…? В ответе часто встречаются короткие команды: sigue todo recto, gira a la derecha, cruza la calle. В Испании в неформальном обращении к одному человеку обычно услышите tú-формы (sigue, gira); в вежливом обращении — usted-формы (siga, gire). В Мексике вежливое обращение на usted очень обычно в разговоре с незнакомым человеком: siga, dé vuelta.",
       "examples": [
-        "Voy al centro en metro.",
-        "Sigue todo recto.",
-        "Gira a la derecha."
-      ]
+        "Perdona, ¿dónde está la estación?",
+        "Disculpe, ¿cómo llego al museo?",
+        "Sigue todo recto y gira a la izquierda.",
+        "Siga dos cuadras y dé vuelta a la derecha."
+      ],
+      "note_ru": "Imperativo здесь изучается как готовые полезные формулы. Не требуется осваивать всю систему повелительного наклонения."
     },
     {
-      "topic": "a_and_transport",
-      "explanation_ru": "С ir указываем направление через a: voy al centro, voy a la estación. Для транспорта часто используется en: en autobús, en metro, en coche.",
+      "topic": "ir_and_transport",
+      "title_ru": "Ir: куда вы направляетесь и на чем едете",
+      "explanation_ru": "С ir направление обозначается предлогом a: voy al centro, vamos a la estación. Способ передвижения обычно вводится через en: en metro, en autobús, en coche. Если вы идете пешком, используйте a pie.",
+      "forms": [
+        {
+          "form": "voy",
+          "meaning": "я иду / еду"
+        },
+        {
+          "form": "vas",
+          "meaning": "ты идешь / едешь"
+        },
+        {
+          "form": "va",
+          "meaning": "он / она идет / едет"
+        },
+        {
+          "form": "vamos",
+          "meaning": "мы идем / едем"
+        },
+        {
+          "form": "vais",
+          "meaning": "вы идете / едете (Испания, неформально, мн. ч.)"
+        },
+        {
+          "form": "van",
+          "meaning": "они / вы идете / едете"
+        }
+      ],
       "examples": [
-        "Voy al trabajo en autobús.",
-        "Vamos a la estación."
-      ]
+        "Voy al trabajo en metro.",
+        "Vamos al centro en autobús.",
+        "La estación está a diez minutos a pie."
+      ],
+      "common_mistake_ru": "Не путайте направление и транспорт: voy al centro en metro — al centro отвечает на вопрос «куда?», en metro — «на чем?»."
+    },
+    {
+      "topic": "transport_and_time",
+      "title_ru": "Как сказать, сколько времени займет дорога",
+      "explanation_ru": "Для простой оценки времени используйте estar a + расстояние/время или tardar + время. На A1 достаточно узнавать и использовать готовые модели: está a diez minutos, tardo veinte minutos.",
+      "examples": [
+        "La estación está a cinco minutos a pie.",
+        "El museo está a dos paradas de metro.",
+        "Tardo veinte minutos en autobús."
+      ],
+      "note_ru": "Число остановок, время в пути и расстояния зависят от города и маршрута; примеры здесь учебные."
     }
   ],
   "variants": [
@@ -78,11 +171,11 @@
         },
         {
           "speaker": "Turista",
-          "text": "Perfecto. ¿Puedo comprar el billete allí?"
+          "text": "Perfecto. ¿Puedo comprar el billete allí? ¿Y hay trenes de cercanías en esta estación?"
         },
         {
           "speaker": "Vecina",
-          "text": "Sí, en la estación hay máquinas para comprar billetes."
+          "text": "Sí, en la estación hay máquinas para comprar billetes y puedes consultar los trenes de cercanías."
         }
       ],
       "exercises": [
@@ -149,7 +242,7 @@
             "Такси"
           ],
           "answer": 0,
-          "explanation": "Cercanías — название пригородных железнодорожных сетей в ряде испанских городов."
+          "explanation": "La vecina menciona los trenes de cercanías: servicios ferroviarios que conectan una ciudad con localidades cercanas."
         }
       ]
     },
@@ -221,14 +314,14 @@
           "id": "es_mx_u5_e3",
           "skill": "vocabulary",
           "type": "choice",
-          "prompt": "В Мексике «banqueta» означает…",
+          "prompt": "В мексиканском диалоге «dos cuadras» означает…",
           "options": [
-            "Тротуар",
-            "Билет",
-            "Остановку"
+            "Два городских квартала",
+            "Два билета",
+            "Две станции метро"
           ],
           "answer": 0,
-          "explanation": "Banqueta — распространенное мексиканское слово для тротуара; в Испании обычно acera."
+          "explanation": "Cuadra — городской квартал; выражение dos cuadras прямо используется в указании маршрута в диалоге."
         },
         {
           "id": "es_mx_u5_e4",
@@ -263,7 +356,368 @@
     "Диалог мексиканского варианта ориентирован на городской контекст Мехико, но отдельные слова имеют региональные различия.",
     "Banqueta типично для Мексики; acera — стандартный вариант Испании.",
     "Camión как автобус употребляется во многих, но не во всех регионах Мексики; также возможно autobús.",
-    "Не учить учащегося воспринимать все транспортные системы Мексики как одинаковые: инфраструктура зависит от города.",
-    "Диалоги и задания оригинальные."
-  ]
+    "Вежливые формы siga и dé vuelta подходят для обращения к незнакомому человеку; не требовать на A1 полного освоения императива.",
+    "В Испании в неформальном обращении к одному человеку используются sigue/gira; для usted — siga/gire. В Мексике usted часто используется в сервисных и незнакомых контактах.",
+    "Billete широко используется в Испании; в Мексике названия билетов и карт зависят от города и транспортной системы.",
+    "Cercanías — название пригородных железнодорожных сетей в ряде городов Испании, а не универсальное название пригородного транспорта во всех странах.",
+    "Cuadra — городской квартал; длина квартала не фиксирована и зависит от городской планировки.",
+    "Не обобщать транспортную инфраструктуру Мексики на все города: системы и способы оплаты сильно различаются.",
+    "Все диалоги и упражнения оригинальные. Материал требует финальной вычитки носителями испанского Испании и Мексики; текстовые подсказки по произношению не заменяют аудиомодель."
+  ],
+  "editorial_intro": {
+    "headline": "Perderse también es parte del viaje",
+    "hook": "Вы вышли из метро в незнакомом районе. На карте нужная улица совсем рядом, но куда идти — направо или налево? Умение спросить дорогу, понять короткий ответ и сориентироваться в городе превращает испанский из набора слов в полезный навык.",
+    "opening_question": "Как бы вы спросили на испанском, где находится ближайшая станция метро?",
+    "purpose": "Вы научитесь спрашивать, где находится нужное место, понимать простые указания маршрута, говорить о транспорте и объяснять, как добраться до точки назначения.",
+    "estimated_time_minutes": 40,
+    "route": [
+      "Прочитайте два диалога и сравните, как спрашивают дорогу в Испании и Мексике.",
+      "Разберитесь в hay и estar, предлогах места и формулах направления.",
+      "Освойте городскую лексику и региональные названия транспорта.",
+      "Потренируйтесь объяснять маршрут и составьте собственный городской диалог."
+    ]
+  },
+  "vocabulary_in_context": {
+    "places": [
+      {
+        "es": "la farmacia",
+        "ru": "аптека"
+      },
+      {
+        "es": "la panadería",
+        "ru": "пекарня"
+      },
+      {
+        "es": "el mercado",
+        "ru": "рынок"
+      },
+      {
+        "es": "el banco",
+        "ru": "банк"
+      },
+      {
+        "es": "el parque",
+        "ru": "парк"
+      },
+      {
+        "es": "el museo",
+        "ru": "музей"
+      },
+      {
+        "es": "el ayuntamiento",
+        "ru": "мэрия / здание муниципалитета"
+      },
+      {
+        "es": "la estación",
+        "ru": "станция / вокзал"
+      },
+      {
+        "es": "la parada",
+        "ru": "остановка"
+      },
+      {
+        "es": "la calle",
+        "ru": "улица"
+      },
+      {
+        "es": "la avenida",
+        "ru": "проспект"
+      }
+    ],
+    "directions": [
+      {
+        "es": "todo recto",
+        "ru": "все время прямо"
+      },
+      {
+        "es": "a la derecha",
+        "ru": "направо"
+      },
+      {
+        "es": "a la izquierda",
+        "ru": "налево"
+      },
+      {
+        "es": "cruzar la calle",
+        "ru": "перейти улицу"
+      },
+      {
+        "es": "seguir",
+        "ru": "продолжать идти / следовать"
+      },
+      {
+        "es": "girar",
+        "ru": "поворачивать"
+      },
+      {
+        "es": "la esquina",
+        "ru": "угол улицы"
+      },
+      {
+        "es": "la cuadra",
+        "ru": "городской квартал"
+      }
+    ],
+    "transport": [
+      {
+        "es": "el metro",
+        "ru": "метро"
+      },
+      {
+        "es": "el autobús",
+        "ru": "автобус"
+      },
+      {
+        "es": "el tren",
+        "ru": "поезд"
+      },
+      {
+        "es": "el tranvía",
+        "ru": "трамвай"
+      },
+      {
+        "es": "el taxi",
+        "ru": "такси"
+      },
+      {
+        "es": "la bicicleta",
+        "ru": "велосипед"
+      },
+      {
+        "es": "a pie",
+        "ru": "пешком"
+      },
+      {
+        "es": "el billete",
+        "ru": "билет (часто в Испании)"
+      },
+      {
+        "es": "el abono de transporte",
+        "ru": "проездной (Испания, термин зависит от города)"
+      },
+      {
+        "es": "la tarjeta de transporte",
+        "ru": "транспортная карта"
+      }
+    ],
+    "useful_chunks": [
+      {
+        "es": "¿Hay… por aquí?",
+        "ru": "Здесь поблизости есть…?"
+      },
+      {
+        "es": "¿Cómo llego a…?",
+        "ru": "Как мне добраться до…?"
+      },
+      {
+        "es": "¿Está lejos?",
+        "ru": "Это далеко?"
+      },
+      {
+        "es": "Sigue todo recto.",
+        "ru": "Идите все время прямо."
+      },
+      {
+        "es": "Gira a la derecha.",
+        "ru": "Поверните направо."
+      },
+      {
+        "es": "Está a cinco minutos a pie.",
+        "ru": "Это в пяти минутах ходьбы."
+      },
+      {
+        "es": "Voy en metro.",
+        "ru": "Я еду на метро."
+      }
+    ],
+    "usage_note_ru": "В Испании часто говорят billete, а в Мексике для транспортной оплаты могут использовать tarjeta, boleto или другие названия в зависимости от города и системы. В Мексике camión часто означает автобус, но употребление регионально."
+  },
+  "language_in_real_life": {
+    "es_es": {
+      "title": "Moverse por una ciudad en España",
+      "items": [
+        {
+          "expression": "coger el metro / el autobús",
+          "meaning_ru": "сесть на метро / автобус",
+          "context": "Cojo el metro para ir al centro.",
+          "note_ru": "Обычная нейтральная формулировка в Испании. В некоторых странах Латинской Америки coger имеет дополнительные разговорные значения."
+        },
+        {
+          "expression": "billete",
+          "meaning_ru": "билет",
+          "context": "¿Puedo comprar el billete en la estación?",
+          "note_ru": "Распространенное слово для билета на транспорт в Испании."
+        },
+        {
+          "expression": "acera",
+          "meaning_ru": "тротуар",
+          "context": "Camina por la acera.",
+          "note_ru": "Обычное слово в Испании; в Мексике часто используют banqueta."
+        },
+        {
+          "expression": "cercanías",
+          "meaning_ru": "пригородные поезда / пригородная железнодорожная сеть",
+          "context": "Hay trenes de cercanías en esta estación.",
+          "note_ru": "Название пригородных железнодорожных сетей в ряде испанских городов; не универсальное название для всех регионов."
+        }
+      ],
+      "listening_tip_ru": "Сравните tú-формы sigue и gira с вежливыми siga и gire. В разговоре с незнакомым человеком интонация и обращение тоже помогают понять степень формальности."
+    },
+    "es_mx": {
+      "title": "Moverse por una ciudad en México",
+      "items": [
+        {
+          "expression": "camión",
+          "meaning_ru": "автобус",
+          "context": "¿El camión también pasa por aquí?",
+          "note_ru": "Во многих регионах Мексики так называют автобус; значение и употребление могут отличаться по региону."
+        },
+        {
+          "expression": "cuadra",
+          "meaning_ru": "городской квартал",
+          "context": "Siga derecho dos cuadras.",
+          "note_ru": "Удобная единица для объяснения маршрута в городах Мексики и многих странах Латинской Америки."
+        },
+        {
+          "expression": "banqueta",
+          "meaning_ru": "тротуар",
+          "context": "Camina por la banqueta.",
+          "note_ru": "Типичное мексиканское слово; в Испании обычно acera."
+        },
+        {
+          "expression": "dar vuelta",
+          "meaning_ru": "поворачивать",
+          "context": "Dé vuelta a la derecha.",
+          "note_ru": "Распространенная формулировка в Мексике; в Испании часто услышите girar или doblar."
+        }
+      ],
+      "listening_tip_ru": "В мексиканском диалоге обратите внимание на вежливые формы siga и dé vuelta, а также на выражение dos cuadras."
+    }
+  },
+  "guided_practice": [
+    {
+      "stage": "notice",
+      "title": "1. Заметьте, как устроен маршрут",
+      "instruction_ru": "Вернитесь к диалогам. Найдите слова и выражения, которые помогают понять, где находится объект и как до него добраться.",
+      "tasks": [
+        {
+          "prompt_ru": "Найдите пример с hay и пример с está. Чем отличаются функции этих форм?",
+          "hint_ru": "Hay сообщает, что объект есть; está указывает, где находится конкретный объект."
+        },
+        {
+          "prompt_ru": "Найдите два выражения места и определите, относительно чего описывается объект.",
+          "hint_ru": "Например, al lado de la panadería и enfrente del mercado."
+        },
+        {
+          "prompt_ru": "Найдите указания направления. Какие из них обращены к одному человеку на tú, а какие — на usted?",
+          "hint_ru": "Сравните sigue/gira и siga/dé vuelta."
+        },
+        {
+          "prompt_ru": "Найдите слова о транспорте и оплате проезда в обоих вариантах.",
+          "hint_ru": "Сравните billete, tarjeta, camión и metro."
+        }
+      ],
+      "check_ru": "Вы должны уметь пересказать маршрут своими словами и объяснить, где находится нужный объект."
+    },
+    {
+      "stage": "practice",
+      "title": "2. Постройте маршрут",
+      "instruction_ru": "Представьте, что вы объясняете дорогу от станции до одного из городских объектов. Заполните модели своими вариантами.",
+      "tasks": [
+        {
+          "prompt": "Desde la estación, sigue _____.",
+          "focus_ru": "Направление движения"
+        },
+        {
+          "prompt": "Después, gira a _____.",
+          "focus_ru": "Поворот"
+        },
+        {
+          "prompt": "La farmacia está _____ del mercado.",
+          "focus_ru": "Расположение объекта"
+        },
+        {
+          "prompt": "Está a _____ minutos _____.",
+          "focus_ru": "Время и способ передвижения"
+        }
+      ],
+      "model_answers_after_attempt": [
+        "Desde la estación, sigue todo recto.",
+        "Después, gira a la derecha.",
+        "La farmacia está al lado del mercado.",
+        "Está a cinco minutos a pie."
+      ]
+    },
+    {
+      "stage": "communicate",
+      "title": "3. Спросите дорогу и объясните ее",
+      "instruction_ru": "Работайте в парах или сыграйте обе роли самостоятельно. Один человек — посетитель незнакомого района, второй — местный житель.",
+      "prompts": [
+        "Pregunta dónde está un lugar: una farmacia, un museo o una estación.",
+        "Pregunta cómo llegar y si está lejos.",
+        "Da dos o tres indicaciones sencillas.",
+        "Explica cómo llegar en transporte público o a pie."
+      ],
+      "success_criteria_ru": "В разговоре есть вопрос о местоположении, минимум два указания маршрута, одно выражение места и одна фраза о транспорте или времени в пути."
+    }
+  ],
+  "personal_application": {
+    "title": "Mi ruta por la ciudad",
+    "scenario_ru": "Вы находитесь в незнакомом городе и хотите добраться от станции до интересующего вас места. Нужно спросить дорогу, понять ответ и при необходимости уточнить детали.",
+    "task_ru": "Составьте диалог из 8–10 реплик между посетителем и местным жителем. Выберите Испанию или Мексику и используйте соответствующие региональные слова.",
+    "include": [
+      "Вежливо обратиться к собеседнику",
+      "Спросить, есть ли нужное место поблизости или как до него добраться",
+      "Уточнить, далеко ли оно",
+      "Получить два или три указания направления",
+      "Узнать, можно ли добраться пешком или на транспорте",
+      "Уточнить, где купить билет или транспортную карту"
+    ],
+    "stretch_task_ru": "Добавьте альтернативный маршрут: например, если идти пешком далеко, спросите, какой автобус или поезд подойдет.",
+    "self_check_ru": [
+      "Я различаю hay и está",
+      "Я правильно использую al и del в знакомых выражениях",
+      "Я могу спросить ¿Cómo llego a…?",
+      "Я понимаю направления направо, налево и прямо",
+      "Я могу сказать, на чем еду и сколько времени займет путь",
+      "Я использую лексику выбранного регионального варианта"
+    ]
+  },
+  "pronunciation_practice": {
+    "status": "text_based_practice_audio_model_pending",
+    "instruction_ru": "Прочитайте фразы вслух и запишите себя. Старайтесь сохранять естественную интонацию вопроса и четко произносить указания маршрута.",
+    "phrases": [
+      {
+        "text": "Perdona, ¿hay una farmacia cerca de aquí?",
+        "focus_ru": "Интонация вежливого вопроса; произнесите cerca de aquí плавно."
+      },
+      {
+        "text": "Sigue todo recto y gira a la izquierda.",
+        "focus_ru": "Сохраните ритм последовательных указаний."
+      },
+      {
+        "text": "Disculpe, ¿cómo llego al metro?",
+        "focus_ru": "Выделите ударение в cómo и произнесите слитно llego al."
+      },
+      {
+        "text": "Siga derecho dos cuadras y dé vuelta a la derecha.",
+        "focus_ru": "Отработайте ритм мексиканского указания маршрута и ударения derecho, cuadras, vuelta."
+      }
+    ],
+    "reflection_ru": "Можете ли вы произнести указания так, чтобы собеседник успел понять последовательность действий? Попробуйте записать маршрут дважды — медленно и в естественном темпе."
+  },
+  "reflection": {
+    "title": "Lo que ya puedes hacer",
+    "instruction_ru": "Отметьте только те навыки, которые можете выполнить без подсказки.",
+    "can_do": [
+      "Я могу назвать несколько мест в городе",
+      "Я могу спросить, где находится нужный объект",
+      "Я могу объяснить простой маршрут из двух или трех шагов",
+      "Я могу использовать hay для наличия и estar для местоположения",
+      "Я могу сказать, как добраться на транспорте или пешком",
+      "Я могу уточнить, далеко ли нужное место и сколько времени идти",
+      "Я узнаю несколько региональных слов о транспорте и городской среде"
+    ],
+    "next_step_ru": "Если сложно объяснить маршрут, нарисуйте простую схему из трех объектов и проговорите путь между ними, используя todo recto, a la derecha, a la izquierda и al lado de."
+  }
 }

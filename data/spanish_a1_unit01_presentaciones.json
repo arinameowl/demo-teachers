@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "level": "A1",
+  "category": "lesson",
+  "language": "es",
+  "unit_id": "es_a1_u01_presentaciones",
+  "title": "Primeros contactos",
+  "learning_goals": [
+    "Saludar y despedirse en situaciones cotidianas",
+    "Presentarse y dar información personal básica",
+    "Preguntar por el nombre, la edad, la profesión y el lugar de residencia",
+    "Usar ser, llamarse y tener en presente"
+  ],
+  "grammar": [
+    {
+      "topic": "ser",
+      "explanation_ru": "Используем ser для имени, национальности и профессии.",
+      "examples": [
+        "Soy Laura.",
+        "Soy mexicana.",
+        "Soy diseñadora."
+      ]
+    },
+    {
+      "topic": "llamarse",
+      "explanation_ru": "Возвратный глагол llamarse — «называться». Форма зависит от лица.",
+      "examples": [
+        "Me llamo Laura.",
+        "¿Cómo te llamas?",
+        "Se llama Pablo."
+      ]
+    },
+    {
+      "topic": "tener",
+      "explanation_ru": "Используем tener, чтобы назвать возраст. По-испански возраст буквально выражается как «иметь лет».",
+      "examples": [
+        "Tengo 27 años.",
+        "¿Cuántos años tienes?"
+      ]
+    },
+    {
+      "topic": "presentaciones",
+      "explanation_ru": "В неформальной беседе обычно используют tú; в более формальной — usted.",
+      "examples": [
+        "¿Cómo te llamas?",
+        "¿Cómo se llama usted?"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "pronunciation_note": "В примерах используется произношение центральной части Испании: c перед e/i и z произносятся как /θ/.",
+      "vocabulary": [
+        {
+          "es": "móvil",
+          "ru": "мобильный телефон"
+        },
+        {
+          "es": "ordenador",
+          "ru": "компьютер"
+        },
+        {
+          "es": "¿Qué tal?",
+          "ru": "Как дела?"
+        },
+        {
+          "es": "encantado/a",
+          "ru": "очень приятно"
+        },
+        {
+          "es": "trabajo en…",
+          "ru": "я работаю в…"
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "Clara",
+          "text": "¡Hola! Me llamo Clara. ¿Y tú?"
+        },
+        {
+          "speaker": "Diego",
+          "text": "Soy Diego. Encantado."
+        },
+        {
+          "speaker": "Clara",
+          "text": "Igualmente. ¿De dónde eres?"
+        },
+        {
+          "speaker": "Diego",
+          "text": "Soy de Zaragoza, pero vivo en Madrid. ¿Y tú?"
+        },
+        {
+          "speaker": "Clara",
+          "text": "Soy de Valencia. Tengo veintiséis años y trabajo en una editorial."
+        },
+        {
+          "speaker": "Diego",
+          "text": "¡Qué interesante! Yo trabajo en una empresa de tecnología."
+        },
+        {
+          "speaker": "Clara",
+          "text": "Bueno, Diego, tengo que irme. ¡Hasta luego!"
+        },
+        {
+          "speaker": "Diego",
+          "text": "¡Hasta luego! ¡Que vaya bien!"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "es_es_u1_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿Dónde vive Diego ahora?",
+          "options": [
+            "En Zaragoza",
+            "En Madrid",
+            "En Valencia"
+          ],
+          "answer": 1,
+          "explanation": "Diego es de Zaragoza, pero dice que ahora vive en Madrid."
+        },
+        {
+          "id": "es_es_u1_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Dónde trabaja Clara?",
+          "options": [
+            "En una editorial",
+            "En un restaurante",
+            "En una empresa de tecnología"
+          ],
+          "answer": 0,
+          "explanation": "Clara dice: «trabajo en una editorial»."
+        },
+        {
+          "id": "es_es_u1_e3",
+          "skill": "vocabulary",
+          "type": "choice",
+          "prompt": "En España, ¿qué palabra se usa habitualmente para «мобильный телефон»?",
+          "options": [
+            "Celular",
+            "Móvil",
+            "Computadora"
+          ],
+          "answer": 1,
+          "explanation": "Móvil es la palabra habitual en España. Celular se usa en México y en otros países."
+        },
+        {
+          "id": "es_es_u1_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «Yo ___ de Valencia».",
+          "options": [
+            "es",
+            "soy",
+            "eres"
+          ],
+          "answer": 1,
+          "explanation": "Con yo usamos soy: yo soy."
+        },
+        {
+          "id": "es_es_u1_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "¿Qué expresión del diálogo sirve para despedirse de manera informal?",
+          "options": [
+            "Encantado",
+            "¿De dónde eres?",
+            "¡Hasta luego!"
+          ],
+          "answer": 2,
+          "explanation": "¡Hasta luego! es una despedida cotidiana e informal."
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "pronunciation_note": "В примерах используется распространенное центральномексиканское произношение: s, z и c перед e/i произносятся как /s/.",
+      "vocabulary": [
+        {
+          "es": "celular",
+          "ru": "мобильный телефон"
+        },
+        {
+          "es": "computadora",
+          "ru": "компьютер"
+        },
+        {
+          "es": "¿Qué onda?",
+          "ru": "Как дела? / Что нового? (разговорное)"
+        },
+        {
+          "es": "mucho gusto",
+          "ru": "очень приятно"
+        },
+        {
+          "es": "trabajo en…",
+          "ru": "я работаю в…"
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "Mariana",
+          "text": "¡Hola! Soy Mariana. ¿Cómo te llamas?"
+        },
+        {
+          "speaker": "Luis",
+          "text": "Me llamo Luis. Mucho gusto."
+        },
+        {
+          "speaker": "Mariana",
+          "text": "Igualmente. ¿De dónde eres?"
+        },
+        {
+          "speaker": "Luis",
+          "text": "Soy de Puebla, pero vivo en Ciudad de México. ¿Y tú?"
+        },
+        {
+          "speaker": "Mariana",
+          "text": "Soy de aquí. Tengo veintiocho años y trabajo en una agencia de diseño."
+        },
+        {
+          "speaker": "Luis",
+          "text": "¡Qué bien! Yo trabajo en una universidad."
+        },
+        {
+          "speaker": "Mariana",
+          "text": "Oye, Luis, ya me voy. ¡Nos vemos!"
+        },
+        {
+          "speaker": "Luis",
+          "text": "¡Claro! ¡Hasta pronto!"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "es_mx_u1_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿Dónde vive Luis?",
+          "options": [
+            "En Puebla",
+            "En Ciudad de México",
+            "En Guadalajara"
+          ],
+          "answer": 1,
+          "explanation": "Luis es de Puebla, pero actualmente vive en Ciudad de México."
+        },
+        {
+          "id": "es_mx_u1_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Dónde trabaja Mariana?",
+          "options": [
+            "En una universidad",
+            "En una agencia de diseño",
+            "En un hospital"
+          ],
+          "answer": 1,
+          "explanation": "Mariana dice que trabaja en una agencia de diseño."
+        },
+        {
+          "id": "es_mx_u1_e3",
+          "skill": "vocabulary",
+          "type": "choice",
+          "prompt": "En México, ¿qué palabra se usa habitualmente para «мобильный телефон»?",
+          "options": [
+            "Móvil",
+            "Ordenador",
+            "Celular"
+          ],
+          "answer": 2,
+          "explanation": "Celular es la palabra habitual en México. Móvil se usa comúnmente en España."
+        },
+        {
+          "id": "es_mx_u1_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «Yo ___ veintiocho años».",
+          "options": [
+            "tengo",
+            "tiene",
+            " tienes"
+          ],
+          "answer": 0,
+          "explanation": "Для возраста используется tener: yo tengo veintiocho años."
+        },
+        {
+          "id": "es_mx_u1_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "В диалоге Mariana говорит «¡Nos vemos!». Что это означает?",
+          "options": [
+            "Увидимся!",
+            "Доброе утро!",
+            "Очень приятно!"
+          ],
+          "answer": 0,
+          "explanation": "¡Nos vemos! — распространенная неформальная фраза прощания в Мексике и других испаноязычных странах."
+        }
+      ]
+    }
+  ],
+  "teacher_notes": [
+    "Не вводить vosotros в мексиканском маршруте; во множественном числе использовать ustedes.",
+    "В испанском маршруте форму vosotros можно вводить позже отдельным блоком, не перегружая первый урок.",
+    "Не представлять разговорные выражения ¿Qué onda? как нейтральный универсальный приветственный шаблон: это неформальная мексиканская речь.",
+    "Все диалоги и задания оригинальные и созданы для The Teachers School."
+  ]
+}

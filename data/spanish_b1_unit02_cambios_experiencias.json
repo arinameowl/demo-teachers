@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "level": "B1",
+  "category": "lesson",
+  "language": "es",
+  "unit_id": "es_b1_u02_cambios_experiencias",
+  "title": "Cambios y experiencias personales",
+  "learning_goals": [
+    "Рассказывать о жизненных изменениях и личном опыте",
+    "Обозначать длительность ситуации и последовательность событий",
+    "Различать pluscuamperfecto и другие формы прошедшего времени"
+  ],
+  "grammar": [
+    {
+      "topic": "pluscuamperfecto",
+      "explanation_ru": "Pretérito pluscuamperfecto: había/habías/había/habíamos/habíais/habían + participio. Обозначает действие, которое произошло раньше другого момента в прошлом.",
+      "examples": [
+        "Cuando llegué, la reunión ya había empezado.",
+        "Nunca había vivido sola."
+      ]
+    },
+    {
+      "topic": "llevar_desde_hace",
+      "explanation_ru": "Llevar + период + gerundio подчеркивает длительность: Llevo dos años trabajando aquí. Desde hace + период также обозначает, как давно длится ситуация.",
+      "examples": [
+        "Llevaba meses buscando piso.",
+        "Vivo aquí desde hace dos años."
+      ]
+    },
+    {
+      "topic": "ya_todavia_aun",
+      "explanation_ru": "Ya указывает на свершившееся действие или изменение; todavía/aún часто обозначают, что действие не произошло или ситуация сохраняется. В отрицании: todavía no.",
+      "examples": [
+        "Ya he encontrado trabajo.",
+        "Todavía no he terminado."
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "pronunciation_note": "Лексика и речевые модели Испании.",
+      "dialogue": [
+        {
+          "speaker": "Marta",
+          "text": "¿Te acuerdas de cuando llegaste a Valencia?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Claro. Antes de mudarme, nunca había vivido fuera de mi ciudad."
+        },
+        {
+          "speaker": "Marta",
+          "text": "¿Te costó adaptarte?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Al principio sí. No conocía a nadie y todavía no entendía bien el acento."
+        },
+        {
+          "speaker": "Marta",
+          "text": "¿Cuánto tiempo llevas aquí?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Llevo casi tres años trabajando en una empresa de tecnología."
+        },
+        {
+          "speaker": "Marta",
+          "text": "Has cambiado mucho desde entonces."
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Sí. Ya he hecho buenos amigos y conozco mejor la ciudad."
+        },
+        {
+          "speaker": "Marta",
+          "text": "¿Sigues pensando en volver?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Todavía no. Ahora me siento bastante en casa."
+        }
+      ],
+      "context_note": "В Испании переезд между автономными сообществами может означать знакомство с другим языковым контекстом: в некоторых регионах наряду с испанским широко используются другие официальные языки.",
+      "reading": {
+        "title": "Una ciudad nueva",
+        "text": "Cuando Elena se trasladó a Bilbao, había vivido siempre en un pueblo pequeño. Los primeros meses fueron difíciles: no conocía las calles y echaba de menos a su familia. Poco a poco encontró actividades que le interesaban y empezó a hacer amistades. Lleva dos años viviendo allí y ya considera la ciudad parte de su vida. Aún visita su pueblo con frecuencia, pero no tiene planes de regresar definitivamente."
+      },
+      "exercises": [
+        {
+          "id": "es_es_b1_u2_e1",
+          "type": "choice",
+          "skill": "gist",
+          "prompt": "¿Qué había hecho Elena antes de trasladarse a Bilbao?",
+          "options": [
+            "Había vivido siempre en un pueblo pequeño.",
+            "Que la actividad se canceló sin explicación",
+            "Que todos rechazaron la propuesta"
+          ],
+          "answer": 0,
+          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+        },
+        {
+          "id": "es_es_b1_u2_e2",
+          "type": "choice",
+          "skill": "detail",
+          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "options": [
+            "El texto presenta una situación relacionada con el tema y sus matices",
+            "El texto afirma que todas las situaciones son idénticas",
+            "El texto no ofrece información concreta"
+          ],
+          "answer": 0,
+          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+        },
+        {
+          "id": "es_es_b1_u2_e3",
+          "type": "choice",
+          "skill": "grammar",
+          "prompt": "Cuando llegué, la reunión ya ___.",
+          "options": [
+            "había empezado",
+            "ha empezado",
+            "empezaría"
+          ],
+          "answer": 0,
+          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+        },
+        {
+          "id": "es_es_b1_u2_e4",
+          "type": "choice",
+          "skill": "vocabulary",
+          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "options": [
+            "Sin embargo",
+            "Por la mañana",
+            "Al lado de"
+          ],
+          "answer": 0,
+          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+        },
+        {
+          "id": "es_es_b1_u2_e5",
+          "type": "choice",
+          "skill": "culture",
+          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "options": [
+            "Que puede variar según la región y las familias",
+            "Que se practica igual en todos los lugares",
+            "Que nunca cambia con el tiempo"
+          ],
+          "answer": 0,
+          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "pronunciation_note": "Мексиканский вариант как основа латиноамериканского маршрута.",
+      "dialogue": [
+        {
+          "speaker": "Marta",
+          "text": "¿Te acuerdas de cuando llegaste a Guadalajara?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Claro. Antes de mudarme, nunca había vivido fuera de mi ciudad."
+        },
+        {
+          "speaker": "Marta",
+          "text": "¿Te costó adaptarte?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Al principio sí. No conocía a nadie y todavía no me acostumbraba al ritmo de la ciudad."
+        },
+        {
+          "speaker": "Marta",
+          "text": "¿Cuánto tiempo llevas aquí?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Llevo casi tres años trabajando en una empresa de tecnología."
+        },
+        {
+          "speaker": "Marta",
+          "text": "Has cambiado mucho desde entonces."
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Sí. Ya hice buenos amigos y aprendí a moverme por la ciudad."
+        },
+        {
+          "speaker": "Marta",
+          "text": "¿Sigues pensando en regresar?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Todavía no. Ahora me siento bastante en casa."
+        }
+      ],
+      "context_note": "В Мексике переезд в другой штат может сопровождаться различиями в климате, кухне, темпе жизни и местных выражениях. Даже в пределах одного региона опыт жителей разных городов неодинаков.",
+      "reading": {
+        "title": "Una ciudad nueva",
+        "text": "Cuando Elena se mudó a Guadalajara, siempre había vivido en un pueblo pequeño. Los primeros meses fueron difíciles: no conocía las calles y extrañaba a su familia. Poco a poco encontró actividades que le interesaban y empezó a hacer amistades. Lleva dos años viviendo allí y ya considera la ciudad parte de su vida. Todavía visita su pueblo con frecuencia, pero no piensa regresar definitivamente."
+      },
+      "exercises": [
+        {
+          "id": "es_mx_b1_u2_e1",
+          "type": "choice",
+          "skill": "gist",
+          "prompt": "¿Cómo se siente Elena después de dos años?",
+          "options": [
+            "Considera la ciudad parte de su vida.",
+            "Que la actividad se canceló sin explicación",
+            "Que todos rechazaron la propuesta"
+          ],
+          "answer": 0,
+          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+        },
+        {
+          "id": "es_mx_b1_u2_e2",
+          "type": "choice",
+          "skill": "detail",
+          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "options": [
+            "El texto presenta una situación relacionada con el tema y sus matices",
+            "El texto afirma que todas las situaciones son idénticas",
+            "El texto no ofrece información concreta"
+          ],
+          "answer": 0,
+          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+        },
+        {
+          "id": "es_mx_b1_u2_e3",
+          "type": "choice",
+          "skill": "grammar",
+          "prompt": "Cuando llegué, la reunión ya ___.",
+          "options": [
+            "había empezado",
+            "ha empezado",
+            "empezaría"
+          ],
+          "answer": 0,
+          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+        },
+        {
+          "id": "es_mx_b1_u2_e4",
+          "type": "choice",
+          "skill": "vocabulary",
+          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "options": [
+            "Sin embargo",
+            "Por la mañana",
+            "Al lado de"
+          ],
+          "answer": 0,
+          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+        },
+        {
+          "id": "es_mx_b1_u2_e5",
+          "type": "choice",
+          "skill": "culture",
+          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "options": [
+            "Que puede variar según la región y las familias",
+            "Que se practica igual en todos los lugares",
+            "Que nunca cambia con el tiempo"
+          ],
+          "answer": 0,
+          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+        }
+      ]
+    }
+  ]
+}

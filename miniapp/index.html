@@ -52,7 +52,6 @@
   const tg = window.Telegram?.WebApp;
   tg?.ready(); tg?.expand();
   if (tg?.themeParams) { document.documentElement.style.setProperty('--tg-bg', tg.themeParams.bg_color || '#F5F1EB'); }
-  const headers = {'Authorization': 'tma ' + (tg?.initData || '')};
   const defaultLanguages = {en:{name:'Английский',available:true},es:{name:'Испанский',available:true},zh:{name:'Китайский',available:false},ko:{name:'Корейский',available:false}};
   let state = {languages:defaultLanguages, profile:{}, materials:[], progress:[], library:{books:[],worksheets:[]}, bot_username:'TheTeachersEng_bot', spanishLead:null}, selectedLanguage = 'en', selectedSpanishVariant = 'es_es';
   const $ = id => document.getElementById(id);
@@ -66,7 +65,9 @@
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), 12000);
       try {
-        const response = await fetch(url, { ...options, signal: controller.signal, cache: 'no-store', headers: {...headers, ...(options.headers||{})} });
+        const initData = window.Telegram?.WebApp?.initData || '';
+        const requestHeaders = {'Authorization': 'tma ' + initData, ...(options.headers||{})};
+        const response = await fetch(url, { ...options, signal: controller.signal, cache: 'no-store', headers: requestHeaders });
         if (!response.ok) {
           const err = await response.json().catch(()=>({}));
           const failure = new Error(err.detail || (response.status >= 500 ? `Сервер временно не смог обработать запрос (HTTP ${response.status}).` : 'Не удалось загрузить данные'));

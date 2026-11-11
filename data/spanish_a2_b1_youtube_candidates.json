@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "language": "es",
+  "levels": [
+    "A2",
+    "B1"
+  ],
+  "status": "research_candidates_not_approved",
+  "policy": {
+    "user_requirement": "Только бесплатные материалы на YouTube; не покупать курсы, подписки, DVD или платные учебные пакеты.",
+    "selection": "Сначала сверять точный ролик, содержание, транскрипт, скорость речи, лексику, грамматику и регион; задания создавать только после проверки.",
+    "commercial_rights": "Бесплатный просмотр не означает разрешение на коммерческое использование. VideoEle указывает CC BY-NC-ND 4.0 (некоммерческое использование, без производных работ). Не встраивать в платный продукт и не копировать материалы без отдельного разрешения; пока рассматривать только как внешние необязательные ссылки, до юридической проверки.",
+    "dialect": "VideoEle Latino — озвучка носителем из одной из стран Латинской Америки, не обязательно Мексика. Не маркировать как es_mx без подтверждения конкретного говорящего/страны."
+  },
+  "primary_source": {
+    "title": "VideoEle — бесплатные видео по уровням A1–B2",
+    "url": "https://www.videoele.com/youtube.html",
+    "youtube": "https://www.youtube.com/@videoele",
+    "evidence": "Официальная страница перечисляет плейлисты A1, A2, B1, B2 и отдельный плейлист Latino. На страницах роликов доступны YouTube-плеер и транскрипты; материалы бесплатны без регистрации.",
+    "access": "Бесплатно",
+    "rights": "CC BY-NC-ND 4.0 — ограничение коммерческого использования."
+  },
+  "A2": [
+    {
+      "unit": "es_a2_u01_viajes_experiencias",
+      "topic": "Viajes y experiencias",
+      "candidates": [
+        {
+          "title": "¿Qué has hecho este verano?",
+          "fit": "Поездка, места, впечатления и действия в pretérito perfecto; есть отдельная Latino-версия с indefinido.",
+          "source": "https://videoele.com/menu-contenidos-A2.html",
+          "status": "candidate_page_link_to_confirm"
+        },
+        {
+          "title": "Un viaje en avión",
+          "fit": "Покупка авиабилетов, аэропорт, планы и обязательства; точное тематическое совпадение.",
+          "source": "https://videoele.com/menu-contenidos-A2.html",
+          "status": "candidate_page_link_to_confirm"
+        },
+        {
+          "title": "Una casa rural",
+          "fit": "Жилье и туристические поездки; дополнительный вариант.",
+          "source": "https://videoele.com/menu-contenidos-A2.html",
+          "status": "candidate_page_link_to_confirm"
+        }
+      ]
+    },
+    {
+      "unit": "es_a2_u02_la_vida_en_casa",
+      "topic": "La vida en casa",
+      "candidates": [
+        {
+          "title": "Sola en casa",
+          "fit": "Домашние дела и повседневные действия; pretérito perfecto, ya/todavía no.",
+          "source": "https://videoele.com/menu-contenidos-A2.html",
+          "status": "candidate_page_link_to_confirm"
+        },
+        {
+          "title": "Sube a mi casa",
+          "fit": "Жилье, комнаты и предметы дома; hay/estar и приглашение.",
+          "source": "https://videoele.com/menu-contenidos-A2.html",
+          "status": "candidate_page_link_to_confirm"
+        }
+      ]
+    },
+    {
+      "unit": "es_a2_u03_compras_servicios",
+      "topic": "Compras y servicios",
+      "candidates": [
+        {
+          "title": "A comprar",
+          "fit": "Магазины, товары, услуги и цены; есть отдельная Latino-версия.",
+          "source": "https://videoele.com/A2-A-comprar.html",
+          "status": "page_verified"
+        },
+        {
+          "title": "En el mercado",
+          "fit": "Продукты, рынок, покупки и цены; есть отдельная Latino-версия.",
+          "source": "https://videoele.com/menu-contenidos-A2.html",
+          "status": "candidate_page_link_to_confirm"
+        },
+        {
+          "title": "Envases, medidas y etiquetas",
+          "fit": "Упаковки, количество, единицы измерения и продукты; опубликована Latino-транскрипция с лексикой Мексики/Латинской Америки (carro, jugo, departamento).",
+          "source": "https://videoele.com/menu-contenidos-A2.html",
+          "status": "candidate_regional_version_to_preview"
+        }
+      ]
+    },
+    {
+      "unit": "es_a2_u04_salud_bienestar",
+      "topic": "Salud y bienestar",
+      "candidates": [
+        {
+          "title": "¿Qué le duele?",
+          "fit": "Части тела, болезни, недомогания и глагол doler; точное совпадение по теме.",
+          "source": "https://videoele.com/menu-contenidos-A2.html",
+          "status": "candidate_page_link_to_confirm"
+        }
+      ]
+    },
+    {
+      "unit": "es_a2_u05_trabajo_estudios",
+      "topic": "Trabajo y estudios",
+      "candidates": [
+        {
+          "title": "Ir al trabajo",
+          "fit": "Рабочий день, расписание, дорога на работу и транспорт; уровень A2 подтвержден.",
+          "source": "https://videoele.com/A2-Ir-al-trabajo.html",
+          "status": "page_verified"
+        },
+        {
+          "title": "Utilizar el ordenador",
+          "fit": "Компьютер, приложения и цифровые действия; может дополнить тему учебы/работы.",
+          "source": "https://videoele.com/menu-contenidos-A2.html",
+          "status": "candidate_page_link_to_confirm"
+        }
+      ]
+    },
+    {
+      "unit": "es_a2_u06_historias_tradiciones",
+      "topic": "Historias y celebraciones",
+      "candidates": [
+        {
+          "title": "Cuando era pequeña...",
+          "fit": "Воспоминания о прошлом и привычки в детстве; imperfecto.",
+          "source": "https://videoele.com/menu-contenidos-A2.html",
+          "status": "candidate_page_link_to_confirm"
+        },
+        {
+          "title": "El fin de semana pasado",
+          "fit": "Рассказ о недавних событиях и местах; pretérito indefinido.",
+          "source": "https://videoele.com/menu-contenidos-A2.html",
+          "status": "candidate_page_link_to_confirm"
+        }
+      ]
+    }
+  ],
+  "B1": [
+    {
+      "unit": "es_b1_unit01_decisiones_planes",
+      "topic": "Decisiones y nuevos planes",
+      "candidates": [
+        {
+          "title": "¿Qué harías en Bilbao?",
+          "fit": "Советы, гипотетические решения и условное наклонение; городской контекст.",
+          "source": "https://www.videoele.com/menu-B1.html",
+          "status": "candidate_page_link_to_confirm"
+        },
+        {
+          "title": "Consejos para ser feliz",
+          "fit": "Советы и рекомендации, отрицательный императив; bienestar emocional.",
+          "source": "https://www.videoele.com/menu-B1.html",
+          "status": "candidate_page_link_to_confirm"
+        }
+      ]
+    },
+    {
+      "unit": "es_b1_unit02_cambios_experiencias",
+      "topic": "Cambios y experiencias personales",
+      "candidates": [
+        {
+          "title": "Antes y ahora",
+          "fit": "Изменения с течением времени, сравнения и perífrasis verbales.",
+          "source": "https://www.videoele.com/menu-B1.html",
+          "status": "candidate_page_link_to_confirm"
+        },
+        {
+          "title": "Algo inesperado",
+          "fit": "Рассказ о неожиданном событии, связное повествование и прошедшие времена.",
+          "source": "https://www.videoele.com/menu-B1.html",
+          "status": "candidate_page_link_to_confirm"
+        }
+      ]
+    },
+    {
+      "unit": "es_b1_unit03_medios_opinion",
+      "topic": "Medios, información y opinión",
+      "candidates": [
+        {
+          "title": "Supersticiones y suerte",
+          "fit": "Выражение мнения и сомнения с subjuntivo; социальные убеждения.",
+          "source": "https://www.videoele.com/menu-B1.html",
+          "status": "candidate_page_link_to_confirm"
+        },
+        {
+          "title": "Me relaja... pero me preocupa...",
+          "fit": "Выражение обеспокоенности, отношения и оценки; экологические и социальные проблемы.",
+          "source": "https://www.videoele.com/menu-B1.html",
+          "status": "candidate_page_link_to_confirm"
+        }
+      ]
+    },
+    {
+      "unit": "es_b1_unit04_convivencia_sociedad",
+      "topic": "Convivencia y vida en sociedad",
+      "candidates": [
+        {
+          "title": "Sin palabras",
+          "fit": "Невербальная коммуникация и значение жестов в испаноязычном общении.",
+          "source": "https://www.videoele.com/menu-B1.html",
+          "status": "candidate_page_link_to_confirm"
+        },
+        {
+          "title": "Me da vergüenza... me da igual...",
+          "fit": "Выражение эмоций, отношения и безразличия; социальные ситуации.",
+          "source": "https://www.videoele.com/menu-B1.html",
+          "status": "candidate_page_link_to_confirm"
+        }
+      ]
+    },
+    {
+      "unit": "es_b1_unit05_trabajo_proyectos",
+      "topic": "Trabajo, colaboración y proyectos",
+      "candidates": [
+        {
+          "title": "¿Cuánto tiempo llevan?",
+          "fit": "Опыт работы и биографии; duración con llevar + gerundio.",
+          "source": "https://videoele.com/B1-Cuanto-tiempo-llevan.html",
+          "status": "page_verified"
+        }
+      ]
+    },
+    {
+      "unit": "es_b1_unit06_cultura_memoria",
+      "topic": "Cultura, memoria e identidad",
+      "candidates": [
+        {
+          "title": "Me trajo este recuerdo",
+          "fit": "Воспоминания, культура и традиция Las Fallas; pretérito indefinido; есть Latino-версия.",
+          "source": "https://www.videoele.com/B1-Me-trajo-este-recuerdo.html",
+          "status": "page_verified"
+        },
+        {
+          "title": "¡Vaya memoria!",
+          "fit": "Поездка по Севилье и Кордове, воспоминания и выражение удивления.",
+          "source": "https://videoele.com/B1-Vaya-memoria.html",
+          "status": "page_verified"
+        },
+        {
+          "title": "Las Fallas de Valencia",
+          "fit": "Традиции, культурная память и участие в празднике.",
+          "source": "https://www.videoele.com/menu-B1.html",
+          "status": "candidate_page_link_to_confirm"
+        }
+      ]
+    }
+  ],
+  "mexican_sources_for_screening": [
+    {
+      "title": "Spanish Playground",
+      "url": "https://www.youtube.com/@SpanishPlayground",
+      "region": "Mexico (Guanajuato) for selected series",
+      "note": "Отбирать только конкретные видео с подтвержденным мексиканским контекстом и взрослой тематикой; часть контента детская."
+    },
+    {
+      "title": "Spanish with CJ",
+      "url": "https://spanishwithcj.com/",
+      "region": "Multiple Latin American countries including Mexico",
+      "note": "Есть интервью с реальными говорящими и транскрипты; для es_mx нужно выбирать только интервью с мексиканскими участниками. Уровень и доступность каждого видео проверять отдельно."
+    },
+    {
+      "title": "Spring Spanish",
+      "url": "https://www.youtube.com/@SpringSpanish",
+      "region": "Mexican / mixed Latin American",
+      "note": "Кандидат для разговорных конструкций и реальных сценариев; подтверждать мексиканский вариант на уровне каждого видео."
+    }
+  ],
+  "next_actions": [
+    "Подтвердить точные YouTube URL для каждого кандидата A2/B1 и просмотреть/проверить транскрипты.",
+    "Проверить мексиканские источники отдельно, не подменяя es_mx общим Latino.",
+    "Исключить материалы с платным доступом к обязательному содержанию.",
+    "Не создавать упражнения к видео до проверки самого видео и транскрипта."
+  ]
+}

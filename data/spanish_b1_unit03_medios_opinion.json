@@ -93,14 +93,14 @@
           "id": "es_es_b1_u3_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Por qué los especialistas recomendaron consultar la metodología?",
+          "prompt": "¿Cuál es la idea principal del texto?",
           "options": [
-            "Porque el informe no tenía fecha.",
-            "Porque el estudio se hizo con un grupo reducido de una sola universidad.",
-            "Porque la encuesta se realizó en varios países."
+            "Antes de compartir una noticia, conviene revisar la metodología y los límites del estudio.",
+            "Los vídeos cortos son siempre la fuente más fiable para informarse.",
+            "Una encuesta pequeña permite describir sin límites a toda la población."
           ],
-          "answer": 1,
-          "explanation": "Una muestra limitada no permite generalizar los resultados."
+          "answer": 0,
+          "explanation": "El texto advierte sobre los riesgos de generalizar resultados de una muestra limitada."
         },
         {
           "id": "es_es_b1_u3_e2",
@@ -212,14 +212,14 @@
           "id": "es_mx_b1_u3_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Por qué los especialistas recomendaron revisar la metodología?",
+          "prompt": "¿Cuál es la idea principal del texto?",
           "options": [
-            "Porque la noticia no tenía título.",
-            "Porque el estudio se hizo con un grupo pequeño de una sola universidad.",
-            "Porque participaron personas de todos los estados."
+            "Una noticia debe revisarse con atención porque los resultados de una muestra pequeña no siempre son generalizables.",
+            "Los encabezados de redes sociales siempre reflejan todos los datos de una investigación.",
+            "Una encuesta universitaria representa automáticamente a toda la población."
           ],
-          "answer": 1,
-          "explanation": "La muestra limitada no representa necesariamente a toda la población."
+          "answer": 0,
+          "explanation": "El texto destaca la importancia de revisar la metodología y el alcance de un estudio."
         },
         {
           "id": "es_mx_b1_u3_e2",

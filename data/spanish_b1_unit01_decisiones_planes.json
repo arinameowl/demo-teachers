@@ -6,33 +6,86 @@
   "unit_id": "es_b1_u01_decisiones_planes",
   "title": "Decisiones y nuevos planes",
   "learning_goals": [
-    "Обсуждать планы и возможные последствия решений",
-    "Формулировать условия и гипотезы",
-    "Использовать condicional simple и si + presente"
+    "Expresar planes, deseos y prioridades relacionados con decisiones personales o académicas",
+    "Explicar las consecuencias posibles de una decisión y proponer alternativas",
+    "Distinguir entre condiciones reales y situaciones hipotéticas",
+    "Formular hipótesis con si + imperfecto de subjuntivo y condicional simple",
+    "Utilizar el condicional simple para expresar posibilidades, consejos y peticiones corteses"
   ],
+  "editorial_intro": {
+    "title": "Una decisión, varios caminos",
+    "text": "Cambiar de ciudad, solicitar una beca, aceptar un trabajo o empezar a estudiar algo nuevo: algunas decisiones abren varias posibilidades y también exigen pensar en los riesgos. Para hablar de ellas, necesitamos expresar lo que haremos si se cumple una condición y lo que haríamos en una situación hipotética. En este material vas a comparar opciones, explicar tus razones y construir planes alternativos con precisión.",
+    "opening_question": "Si pudieras cambiar una cosa de tu vida académica o profesional durante el próximo año, ¿qué elegirías y por qué?",
+    "objective": "Al terminar, podrás hablar de planes posibles, plantear escenarios hipotéticos y justificar decisiones con argumentos sencillos y conectados.",
+    "estimated_time": "40–50 minutos",
+    "route": [
+      "Analiza dos conversaciones sobre decisiones",
+      "Compara condiciones reales e hipotéticas",
+      "Practica cómo justificar alternativas",
+      "Aplica las estructuras a una decisión propia"
+    ]
+  },
   "grammar": [
     {
       "topic": "condicional_simple",
-      "explanation_ru": "Condicional simple образуется от инфинитива с окончаниями -ía, -ías, -ía, -íamos, -íais, -ían. Используется для гипотетических ситуаций, вежливых просьб и советов.",
+      "title": "Condicional simple: posibilidades, deseos y consejos",
+      "explanation_ru": "Condicional simple образуется от полного инфинитива с окончаниями -ía, -ías, -ía, -íamos, -íais, -ían. Он используется для гипотетических последствий, желаний и вежливых просьб или советов. У ряда частотных глаголов меняется основа, но окончания остаются теми же: tener → tendría, poder → podría, hacer → haría, salir → saldría, venir → vendría, decir → diría.",
       "examples": [
-        "Me gustaría estudiar fuera.",
-        "¿Podrías ayudarme?"
+        "Me gustaría estudiar en otra ciudad.",
+        "Con más información, elegiría otro programa.",
+        "¿Podrías explicarme las condiciones de la beca?",
+        "Yo hablaría primero con la coordinadora."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Me gustaría estudiaré en el extranjero.",
+          "correct": "Me gustaría estudiar en el extranjero.",
+          "explanation": "Después de gustar en condicional, se usa infinitivo."
+        },
+        {
+          "incorrect": "Yo podería aceptar la oferta.",
+          "correct": "Yo podría aceptar la oferta.",
+          "explanation": "Poder tiene la raíz irregular podr-."
+        }
       ]
     },
     {
       "topic": "si_presente_futuro",
-      "explanation_ru": "Для реального или вполне возможного условия используется si + presente, а в главной части — presente, futuro или imperativo. После si в такой конструкции futuro не ставится.",
+      "title": "Condiciones reales o posibles",
+      "explanation_ru": "Когда условие реально и его выполнение возможно, используется si + presente de indicativo, а в главной части — presente, futuro или imperativo. После si в этой конструкции нельзя ставить futuro. Выбор времени в главной части зависит от смысла: Si tengo tiempo, te llamo; Si consigo la beca, me mudaré; Si necesitas ayuda, avísame.",
       "examples": [
         "Si consigo una beca, estudiaré en Madrid.",
-        "Si tienes tiempo, podemos hablar."
+        "Si tienes tiempo, podemos revisar el presupuesto.",
+        "Si recibes una respuesta, avísame."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Si conseguiré la beca, me mudaré.",
+          "correct": "Si consigo la beca, me mudaré.",
+          "explanation": "После si в реальном условии используется presente, а не futuro."
+        }
       ]
     },
     {
       "topic": "si_imperfecto_subjuntivo_condicional",
-      "explanation_ru": "Для гипотетической или маловероятной ситуации используется si + imperfecto de subjuntivo, а в главной части — condicional simple. В придаточной части после si не используется condicional. Формула: Si + consiguiera…, buscaría….",
+      "title": "Hipótesis: si + imperfecto de subjuntivo",
+      "explanation_ru": "Для воображаемой, маловероятной или далекой от текущей реальности ситуации используется si + imperfecto de subjuntivo, а в главной части — condicional simple: Si consiguiera la beca, me mudaría. Формы imperfecto de subjuntivo часто образуются от основы третьего лица множественного числа indefinido, заменяя -ron на -ra: tuvieron → tuviera, pudieron → pudiera, hicieron → hiciera. В придаточной части после si не используется condicional.",
       "examples": [
-        "Si no consiguiera la beca, buscaría trabajo.",
-        "Si tuviera más tiempo, viajaría."
+        "Si tuviera más ahorros, aceptaría la oferta.",
+        "Si no consiguiera la beca, buscaría otra opción.",
+        "Si pudiéramos elegir, viviríamos cerca de la universidad."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Si tendría más tiempo, estudiaría otro idioma.",
+          "correct": "Si tuviera más tiempo, estudiaría otro idioma.",
+          "explanation": "В гипотетической части после si используется imperfecto de subjuntivo."
+        },
+        {
+          "incorrect": "Si conseguiría la beca, me mudaría.",
+          "correct": "Si consiguiera la beca, me mudaría.",
+          "explanation": "Не используйте condicional в придаточной части с si."
+        }
       ]
     }
   ],
@@ -40,138 +93,252 @@
     {
       "id": "es_es",
       "name": "Español de España",
-      "pronunciation_note": "Лексика и речевые модели Испании.",
       "dialogue": [
         {
           "speaker": "Clara",
-          "text": "Estoy pensando en pedir una beca para estudiar fuera."
+          "text": "Estoy pensando en solicitar una beca para hacer un máster fuera de España."
         },
         {
           "speaker": "Diego",
-          "text": "¡Qué buena idea! ¿A qué país te irías?"
+          "text": "¡Qué buena oportunidad! ¿Tienes ya algún destino en mente?"
         },
         {
           "speaker": "Clara",
-          "text": "Me gustaría vivir en Portugal, aunque también consideraría Alemania."
+          "text": "Me atrae Portugal, aunque también consideraría Alemania por sus programas."
         },
         {
           "speaker": "Diego",
-          "text": "¿Y qué harías si no consiguieras la beca?"
+          "text": "¿Y qué harías si no te concedieran la beca?"
         },
         {
           "speaker": "Clara",
-          "text": "Buscaría un trabajo a tiempo parcial y ahorraría durante un año."
+          "text": "Buscaría un trabajo a tiempo parcial y ahorraría durante unos meses."
         },
         {
           "speaker": "Diego",
-          "text": "Con una buena organización, podrías hacerlo."
+          "text": "¿Has calculado cuánto necesitarías para el alquiler y los gastos diarios?"
         },
         {
           "speaker": "Clara",
-          "text": "Sí, pero tendría que reducir algunos gastos."
+          "text": "Sí. Si consigo una ayuda que cubra parte del alojamiento, me iré el próximo otoño."
         },
         {
           "speaker": "Diego",
-          "text": "Podrías compartir piso al principio."
+          "text": "También podrías compartir piso al principio para reducir los gastos."
         },
         {
           "speaker": "Clara",
-          "text": "No estaría mal. Si termino los documentos esta semana, presentaré la solicitud el lunes."
+          "text": "Es verdad. Si tuviera que pagarlo todo por mi cuenta, quizá aplazaría el máster un año."
         },
         {
           "speaker": "Diego",
-          "text": "¡Perfecto! Ojalá salga bien."
+          "text": "¿Y qué necesitas hacer ahora?"
+        },
+        {
+          "speaker": "Clara",
+          "text": "Revisar los requisitos y pedir una carta de recomendación. ¿Podrías echarle un vistazo a mi solicitud?"
+        },
+        {
+          "speaker": "Diego",
+          "text": "Claro. Si me la envías esta tarde, la reviso mañana."
         }
       ],
-      "context_note": "В Испании стипендии могут предоставлять университеты, государственные учреждения и частные фонды. Условия различаются: одни покрывают обучение, другие также помогают с жильем и повседневными расходами.",
-      "reading": {
-        "title": "Una decisión importante",
-        "text": "Marina lleva meses pensando en estudiar un máster en el extranjero. Le atrae conocer otro sistema educativo, pero sabe que tendrá que planificar los gastos. Si consigue una beca, se marchará el próximo otoño. Si no la consigue, trabajará unos meses más y volverá a intentarlo. Está comparando programas, ciudades y posibilidades de alojamiento."
+      "context_note": "En España existen becas públicas, ayudas universitarias y convocatorias de fundaciones privadas. La cobertura depende de cada programa: puede incluir matrícula, alojamiento, manutención o solo una parte de esos gastos. Es importante revisar los requisitos, los plazos y las condiciones antes de presentar la solicitud.",
+      "vocabulary_in_context": [
+        {
+          "term": "solicitar una beca",
+          "meaning": "presentar una candidatura para recibir apoyo económico destinado a estudios",
+          "example": "Voy a solicitar una beca para hacer un máster."
+        },
+        {
+          "term": "conceder una beca",
+          "meaning": "aprobar y otorgar una ayuda económica",
+          "example": "La universidad puede conceder una beca parcial."
+        },
+        {
+          "term": "a tiempo parcial",
+          "meaning": "con una jornada de trabajo reducida",
+          "example": "Buscaría un trabajo a tiempo parcial."
+        },
+        {
+          "term": "aplazar",
+          "meaning": "dejar algo para una fecha posterior",
+          "example": "Si no ahorro suficiente, aplazaría el máster."
+        },
+        {
+          "term": "echar un vistazo",
+          "meaning": "revisar algo rápidamente",
+          "example": "¿Podrías echarle un vistazo a mi solicitud?"
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          {
+            "expression": "Tener algo en mente",
+            "function": "Indicar que ya se considera una opción concreta."
+          },
+          {
+            "expression": "No me importaría…",
+            "function": "Expresar que una posibilidad resulta aceptable o atractiva."
+          },
+          {
+            "expression": "Echarle un vistazo a algo",
+            "function": "Pedir a alguien que revise algo de manera informal."
+          }
+        ],
+        "regional_note": "En España se usa habitualmente «hacer un máster» y «compartir piso». «Conceder una beca» es una expresión formal frecuente en convocatorias y comunicaciones universitarias."
+      },
+      "guided_practice": {
+        "notice": {
+          "instruction": "Vuelve al diálogo y observa cómo cambia la forma verbal según el grado de posibilidad de cada situación.",
+          "tasks": [
+            "Localiza dos condiciones reales introducidas por si + presente y explica qué consecuencia expresan.",
+            "Encuentra dos hipótesis con si + imperfecto de subjuntivo y condicional; ¿qué situaciones imaginan?",
+            "Identifica una petición cortés en condicional y explica por qué suena menos directa."
+          ]
+        },
+        "practice": {
+          "instruction": "Completa cada frase con la forma adecuada. Fíjate en si la situación se presenta como posible o hipotética.",
+          "tasks": [
+            "Si Clara ___ (conseguir) la beca, se irá el próximo otoño.",
+            "Si no le ___ (conceder) la ayuda, buscaría un trabajo temporal.",
+            "Si yo ___ (tener) más ahorros, aceptaría esa oportunidad.",
+            "¿___ (poder, tú) revisar esta carta de motivación?",
+            "Si recibes una respuesta hoy, me ___ (avisar)."
+          ],
+          "answers": [
+            "consigue",
+            "concedieran",
+            "tuviera",
+            "Podrías",
+            "avisarás"
+          ]
+        },
+        "communicate": {
+          "instruction": "En grupos de dos o tres, analizad una decisión: aceptar una oferta de trabajo en otra ciudad, estudiar un máster o hacer una pausa para ahorrar.",
+          "tasks": [
+            "Expón tu opción preferida y explica dos razones.",
+            "Formula una condición realista con si + presente y una consecuencia futura.",
+            "Imagina una dificultad y plantea una alternativa con si + imperfecto de subjuntivo y condicional.",
+            "Haz una petición cortés a otra persona para pedir consejo o ayuda."
+          ]
+        }
+      },
+      "personal_application": {
+        "scenario": "Te han ofrecido una oportunidad de estudiar o trabajar en otra ciudad, pero todavía no sabes si puedes asumir el coste.",
+        "task": "Prepara una intervención de 8–10 frases. Explica qué opción te interesa, qué harás si se cumplen las condiciones y qué harías si el plan no fuera posible. Justifica tu decisión con al menos dos razones.",
+        "support": [
+          "Me gustaría… porque…",
+          "Si consigo…, haré…",
+          "Si no pudiera…, buscaría…",
+          "Una alternativa sería…",
+          "¿Podrías aconsejarme sobre…?"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "La acentuación de las terminaciones del condicional (-ía) y la claridad de las formas del imperfecto de subjuntivo.",
+        "steps": [
+          "Lee en voz alta: estudiaría, podría, tendría, consiguiera, tuviera.",
+          "Compara «consigue» y «consiguiera», y después «podrá» y «podría».",
+          "Graba cuatro frases: dos condiciones posibles y dos hipótesis. Comprueba que las terminaciones se distinguen."
+        ],
+        "audio_model_status": "pending"
+      },
+      "reflection": {
+        "can_do": [
+          "Puedo explicar una decisión y justificar por qué me interesa.",
+          "Puedo hablar de una condición posible y de su consecuencia futura.",
+          "Puedo formular una hipótesis con imperfecto de subjuntivo y condicional.",
+          "Puedo proponer una alternativa y pedir consejo de forma cortés."
+        ]
       },
       "exercises": [
         {
           "id": "es_es_b1_u1_e1",
-          "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cuál es la idea principal del texto?",
+          "type": "choice",
+          "prompt": "¿Qué está intentando decidir Clara?",
           "options": [
-            "Marina compara opciones para estudiar un máster en el extranjero y prepara un plan según consiga o no una beca.",
-            "Marina ya ha decidido quedarse en su país y descarta estudiar fuera.",
-            "Marina busca un empleo permanente sin intención de continuar sus estudios."
+            "Si solicita una beca para estudiar un máster en el extranjero y cómo financiaría el plan",
+            "Si deja definitivamente sus estudios para viajar",
+            "Si compra una vivienda antes de terminar la universidad"
           ],
           "answer": 0,
-          "explanation": "El texto se centra en la planificación de estudios en el extranjero y las alternativas económicas."
+          "explanation": "Clara compara destinos, calcula los gastos y piensa en alternativas si no obtiene la beca."
         },
         {
           "id": "es_es_b1_u1_e2",
-          "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué opción propone Diego para reducir los gastos iniciales?",
+          "type": "choice",
+          "prompt": "¿Qué haría Clara si tuviera que pagar todos los gastos por su cuenta?",
           "options": [
-            "Cambiar de universidad.",
-            "Dejar de trabajar.",
-            "Compartir piso."
+            "Aplazaría el máster un año",
+            "Se mudaría inmediatamente",
+            "Dejaría de buscar información sobre el programa"
           ],
-          "answer": 2,
-          "explanation": "Diego sugiere compartir piso al principio."
+          "answer": 0,
+          "explanation": "Clara dice que quizá aplazaría el máster un año si tuviera que asumir todos los gastos."
         },
         {
           "id": "es_es_b1_u1_e3",
+          "skill": "vocabulary",
           "type": "choice",
-          "skill": "grammar",
-          "prompt": "Completa la hipótesis: «Si Clara no consiguiera la beca, ___ durante un año».",
+          "prompt": "En el diálogo, ¿qué significa «aplazar el máster»?",
           "options": [
-            "buscaría trabajo y ahorraría",
-            "buscará trabajo y ahorrará",
-            "buscaba trabajo y ahorraba"
+            "Dejarlo para una fecha posterior",
+            "Cambiarlo por otro programa",
+            "Terminarlo antes de lo previsto"
           ],
           "answer": 0,
-          "explanation": "Para una hipótesis: si + imperfecto de subjuntivo, condicional simple."
+          "explanation": "Aplazar significa posponer algo, es decir, hacerlo más adelante."
         },
         {
           "id": "es_es_b1_u1_e4",
-          "type": "choice",
           "skill": "grammar",
-          "prompt": "Completa la condición real: «Si termino los documentos esta semana, ___ la solicitud el lunes».",
+          "type": "choice",
+          "prompt": "Completa la hipótesis: «Si ___ más ahorros, aceptaría la oportunidad»",
           "options": [
-            "presentaré",
-            "presentaría",
-            "presentara"
+            "tuviera",
+            "tendría",
+            "tengo"
           ],
           "answer": 0,
-          "explanation": "En una condición real o posible se usa si + presente y futuro en la oración principal."
+          "explanation": "La hipótesis se forma con si + imperfecto de subjuntivo y condicional simple."
         },
         {
           "id": "es_es_b1_u1_e5",
-          "type": "choice",
           "skill": "culture",
-          "prompt": "Según la nota cultural, ¿qué puede cubrir una beca en España?",
+          "type": "choice",
+          "prompt": "Según la nota contextual, ¿qué puede cubrir una beca en España?",
           "options": [
-            "Siempre todos los gastos sin excepción.",
-            "La matrícula y, en algunos casos, alojamiento o manutención.",
-            "Únicamente viajes turísticos."
+            "La matrícula y, según el programa, también alojamiento o manutención",
+            "Siempre todos los gastos sin condiciones",
+            "Únicamente los billetes de avión"
           ],
-          "answer": 1,
-          "explanation": "La cobertura depende del programa."
+          "answer": 0,
+          "explanation": "La cobertura depende de cada convocatoria y puede incluir distintos conceptos."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Un plan con alternativas",
+        "text": "Nuria quiere cursar un máster en otra ciudad, pero antes está comparando los gastos y las opciones de financiación. Ha encontrado una convocatoria que podría cubrir parte de la matrícula. Si obtiene la ayuda, se mudará en septiembre y buscará una habitación cerca del campus. Si no se la concedieran, seguiría trabajando durante unos meses y ahorraría más dinero. También ha hablado con antiguos estudiantes para conocer sus experiencias. No quiere tomar una decisión demasiado rápido: prefiere revisar los requisitos, calcular un presupuesto realista y tener una alternativa preparada."
+      }
     },
     {
       "id": "es_mx",
       "name": "Español de México",
-      "pronunciation_note": "Мексиканский вариант как основа латиноамериканского маршрута.",
       "dialogue": [
         {
           "speaker": "Sofía",
-          "text": "Estoy pensando en solicitar una beca para estudiar fuera."
+          "text": "Estoy pensando en solicitar una beca para estudiar un posgrado en el extranjero."
         },
         {
           "speaker": "Luis",
-          "text": "¡Qué buena idea! ¿A dónde te gustaría ir?"
+          "text": "¡Suena muy bien! ¿Ya sabes a qué país te gustaría ir?"
         },
         {
           "speaker": "Sofía",
-          "text": "Me gustaría vivir en España, aunque también consideraría Chile."
+          "text": "Me interesa España, aunque también consideraría Chile por sus programas."
         },
         {
           "speaker": "Luis",
@@ -179,101 +346,226 @@
         },
         {
           "speaker": "Sofía",
-          "text": "Buscaría un trabajo de medio tiempo y ahorraría durante un año."
+          "text": "Buscaría un trabajo de medio tiempo y ahorraría durante unos meses."
         },
         {
           "speaker": "Luis",
-          "text": "Si organizas bien tu presupuesto, podrás hacerlo."
+          "text": "¿Ya revisaste cuánto necesitarías para la renta y los gastos diarios?"
         },
         {
           "speaker": "Sofía",
-          "text": "Sí, pero tendría que reducir algunos gastos."
+          "text": "Sí. Si consigo un apoyo que cubra parte del alojamiento, me iré el próximo otoño."
         },
         {
           "speaker": "Luis",
-          "text": "Podrías compartir departamento al principio."
+          "text": "También podrías compartir departamento al principio para gastar menos."
         },
         {
           "speaker": "Sofía",
-          "text": "No estaría mal. Si termino los documentos esta semana, voy a mandar la solicitud el lunes."
+          "text": "Es una opción. Si tuviera que pagar todo por mi cuenta, quizá esperaría un año."
         },
         {
           "speaker": "Luis",
-          "text": "¡Perfecto! Ojalá salga bien."
+          "text": "¿Qué necesitas hacer primero?"
+        },
+        {
+          "speaker": "Sofía",
+          "text": "Revisar los requisitos y pedir una carta de recomendación. ¿Podrías ayudarme a revisar la solicitud?"
+        },
+        {
+          "speaker": "Luis",
+          "text": "Claro. Si me la mandas hoy, la reviso mañana."
         }
       ],
-      "context_note": "В Мексике поддержку для учебы можно искать через государственные программы, университеты и частные фонды. Нужно проверять, покрывает ли стипендия только обучение или также проживание.",
-      "reading": {
-        "title": "Una decisión importante",
-        "text": "Mariana lleva meses pensando en estudiar un posgrado en el extranjero. Le interesa conocer otro sistema educativo, pero sabe que tendrá que planear sus gastos. Si consigue una beca, se irá el próximo otoño. Si no la consigue, trabajará unos meses más y volverá a intentarlo. Está comparando programas, ciudades y opciones de alojamiento."
+      "context_note": "En México hay apoyos para estudios ofrecidos por instituciones públicas, universidades y organizaciones privadas. Las condiciones cambian según la convocatoria: algunos apoyos cubren colegiatura y otros pueden incluir manutención o gastos adicionales. Conviene revisar quién puede solicitarlo, qué documentos se necesitan y qué conceptos cubre.",
+      "vocabulary_in_context": [
+        {
+          "term": "solicitar una beca",
+          "meaning": "presentar una candidatura para recibir apoyo económico para estudiar",
+          "example": "Voy a solicitar una beca para un posgrado."
+        },
+        {
+          "term": "apoyo",
+          "meaning": "ayuda económica o institucional",
+          "example": "El apoyo puede cubrir parte de la colegiatura."
+        },
+        {
+          "term": "trabajo de medio tiempo",
+          "meaning": "empleo con una jornada reducida",
+          "example": "Buscaría un trabajo de medio tiempo."
+        },
+        {
+          "term": "renta",
+          "meaning": "pago por vivir en una vivienda alquilada",
+          "example": "Ya calculé cuánto necesito para la renta."
+        },
+        {
+          "term": "carta de recomendación",
+          "meaning": "documento en el que alguien respalda una candidatura",
+          "example": "Necesito pedir una carta de recomendación."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          {
+            "expression": "¿Ya sabes a dónde…?",
+            "function": "Preguntar si alguien ha elegido un destino o una opción."
+          },
+          {
+            "expression": "Por mi cuenta",
+            "function": "Indicar que una persona asume algo sin ayuda de otras."
+          },
+          {
+            "expression": "Mandar la solicitud",
+            "function": "Expresión cotidiana para enviar una candidatura o formulario."
+          }
+        ],
+        "regional_note": "En México son frecuentes «posgrado», «renta», «colegiatura» y «trabajo de medio tiempo». En otros países pueden preferirse términos distintos, como máster, alquiler o matrícula."
+      },
+      "guided_practice": {
+        "notice": {
+          "instruction": "Observa cómo los hablantes distinguen entre un plan posible y una situación imaginaria.",
+          "tasks": [
+            "Encuentra las condiciones reales con si + presente y explica qué pasará si se cumplen.",
+            "Localiza las hipótesis con si + imperfecto de subjuntivo y condicional.",
+            "Identifica la petición cortés que Sofía hace a Luis."
+          ]
+        },
+        "practice": {
+          "instruction": "Completa las frases con la forma verbal adecuada según el sentido de la situación.",
+          "tasks": [
+            "Si Sofía ___ (conseguir) el apoyo, se irá el próximo otoño.",
+            "Si no le ___ (dar) la beca, buscaría un empleo temporal.",
+            "Si yo ___ (tener) más tiempo, estudiaría otro idioma.",
+            "¿___ (poder, tú) ayudarme con los documentos?",
+            "Si mandas la solicitud hoy, la universidad la ___ (recibir) mañana."
+          ],
+          "answers": [
+            "consigue",
+            "dieran",
+            "tuviera",
+            "Podrías",
+            "recibirá"
+          ]
+        },
+        "communicate": {
+          "instruction": "En parejas, conversen sobre una decisión importante: estudiar un posgrado, aceptar un empleo o mudarse a otra ciudad.",
+          "tasks": [
+            "Explica qué opción te interesa y por qué.",
+            "Formula una condición posible con si + presente.",
+            "Imagina qué harías si el plan no funcionara.",
+            "Pide una recomendación de manera cortés y responde a la de tu compañero/a."
+          ]
+        }
+      },
+      "personal_application": {
+        "scenario": "Te interesa estudiar un posgrado fuera de tu ciudad, pero todavía estás revisando el presupuesto y los requisitos.",
+        "task": "Prepara una intervención de 8–10 frases. Explica qué programa te interesa, qué harás si consigues el apoyo y qué alternativa elegirías si no lo recibieras. Incluye razones y una petición de consejo.",
+        "support": [
+          "Me interesa… porque…",
+          "Si consigo…, me iré…",
+          "Si no me dieran…, buscaría…",
+          "Otra posibilidad sería…",
+          "¿Podrías recomendarme…?"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "La pronunciación de las terminaciones del condicional (-ía) y de las formas del imperfecto de subjuntivo.",
+        "steps": [
+          "Lee: estudiaría, podría, tendría, consiguiera, tuviera.",
+          "Compara «consigo» y «consiguiera», y después «podrá» y «podría».",
+          "Graba cuatro frases, alternando condiciones posibles e hipótesis, y revisa la claridad de las terminaciones."
+        ],
+        "audio_model_status": "pending"
+      },
+      "reflection": {
+        "can_do": [
+          "Puedo explicar por qué me interesa una opción académica o profesional.",
+          "Puedo describir qué haré si se cumple una condición posible.",
+          "Puedo imaginar una situación alternativa usando imperfecto de subjuntivo y condicional.",
+          "Puedo pedir ayuda o consejo con una fórmula cortés."
+        ]
       },
       "exercises": [
         {
           "id": "es_mx_b1_u1_e1",
-          "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cuál es la idea principal del texto?",
+          "type": "choice",
+          "prompt": "¿Qué está planeando Sofía?",
           "options": [
-            "Mariana compara opciones para estudiar un posgrado en el extranjero y prepara un plan alternativo si no consigue la beca.",
-            "Mariana ya decidió abandonar sus estudios y buscar empleo permanente.",
-            "Mariana viaja al extranjero sin comparar programas ni gastos."
+            "Solicitar una beca para estudiar un posgrado en el extranjero y preparar alternativas",
+            "Dejar sus estudios y buscar un empleo permanente",
+            "Mudarse sin revisar los costos ni los requisitos"
           ],
           "answer": 0,
-          "explanation": "El texto presenta su planificación y las alternativas en función de la beca."
+          "explanation": "Sofía está comparando destinos, gastos y opciones de apoyo para estudiar fuera."
         },
         {
           "id": "es_mx_b1_u1_e2",
-          "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué opción propone Luis para reducir los gastos al principio?",
+          "type": "choice",
+          "prompt": "¿Qué haría Sofía si tuviera que pagar todos los gastos por su cuenta?",
           "options": [
-            "Cambiar de carrera.",
-            "Dejar de estudiar español.",
-            "Compartir departamento."
+            "Esperaría un año antes de irse",
+            "Cancelaría definitivamente sus estudios",
+            "Solicitaría dos empleos de tiempo completo"
           ],
-          "answer": 2,
-          "explanation": "Luis propone compartir departamento."
+          "answer": 0,
+          "explanation": "Sofía dice que quizá esperaría un año si tuviera que pagar todo por su cuenta."
         },
         {
           "id": "es_mx_b1_u1_e3",
+          "skill": "vocabulary",
           "type": "choice",
-          "skill": "grammar",
-          "prompt": "Completa la hipótesis: «Si Sofía no recibiera la beca, ___ durante un año».",
+          "prompt": "En el contexto del diálogo, ¿qué significa «por mi cuenta»?",
           "options": [
-            "buscaría trabajo y ahorraría",
-            "buscará trabajo y ahorrará",
-            "buscaba trabajo y ahorraba"
+            "Asumiendo el gasto o la responsabilidad sin ayuda de otras personas",
+            "Con el apoyo económico de la universidad",
+            "En nombre de otra persona"
           ],
           "answer": 0,
-          "explanation": "Si + imperfecto de subjuntivo se combina con condicional simple."
+          "explanation": "«Por mi cuenta» indica que la persona se hace cargo de algo sin ayuda."
         },
         {
           "id": "es_mx_b1_u1_e4",
-          "type": "choice",
           "skill": "grammar",
-          "prompt": "Completa la condición real: «Si termino los documentos esta semana, ___ la solicitud el lunes».",
+          "type": "choice",
+          "prompt": "Completa la hipótesis: «Si ___ más ahorros, aceptaría la oportunidad»",
           "options": [
-            "presentaré",
-            "presentaría",
-            "presentara"
+            "tuviera",
+            "tendría",
+            "tengo"
           ],
           "answer": 0,
-          "explanation": "En una condición real o posible se usa si + presente y futuro en la oración principal."
+          "explanation": "La hipótesis utiliza si + imperfecto de subjuntivo y condicional simple."
         },
         {
           "id": "es_mx_b1_u1_e5",
-          "type": "choice",
           "skill": "culture",
-          "prompt": "Según la nota cultural, ¿qué debe comprobarse al solicitar una beca en México?",
+          "type": "choice",
+          "prompt": "Según la nota contextual, ¿qué conviene revisar antes de solicitar un apoyo en México?",
           "options": [
-            "Si garantiza empleo permanente.",
-            "Si cubre solo los estudios o también los gastos de vida.",
-            "Si permite viajar sin documentos."
+            "Qué gastos cubre y cuáles son los requisitos de la convocatoria",
+            "Si garantiza un empleo permanente",
+            "Si permite viajar sin presentar documentos"
           ],
-          "answer": 1,
-          "explanation": "Conviene revisar qué gastos cubre el apoyo."
+          "answer": 0,
+          "explanation": "Las condiciones y la cobertura varían según la institución y la convocatoria."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Una decisión bien pensada",
+        "text": "Diego quiere estudiar un posgrado en otra ciudad, pero primero está revisando cuánto tendría que gastar. Encontró una convocatoria que podría cubrir parte de la colegiatura. Si recibe el apoyo, se mudará en septiembre y buscará un departamento compartido. Si no se lo dieran, seguiría trabajando y ahorraría durante unos meses. También está preguntando a personas que ya estudiaron ese programa. Prefiere comparar las opciones con calma y preparar un plan alternativo antes de tomar una decisión."
+      }
     }
+  ],
+  "teacher_notes": [
+    "No añadir una sección independiente de Vocabulary: introducir el léxico en diálogos, lecturas, explicaciones y ejercicios.",
+    "Distinguir claramente las condiciones posibles (si + presente con presente, futuro o imperativo en la principal) de las hipótesis (si + imperfecto de subjuntivo y condicional simple).",
+    "El condicional simple también se practica para peticiones corteses, consejos y posibilidades.",
+    "Las variantes regionales reflejan preferencias léxicas frecuentes, no fronteras absolutas: máster/posgrado, piso/departamento, alquiler/renta y matrícula/colegiatura.",
+    "Los ejercicios son cerrados y de opción múltiple; las tareas abiertas se limitan a guided practice y personal application.",
+    "El contenido cultural es contextual y general; las convocatorias de becas cambian según institución, programa y año.",
+    "No integrar hasta completar la revisión de todo el catálogo español."
   ]
 }

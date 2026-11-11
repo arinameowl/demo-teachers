@@ -93,14 +93,14 @@
           "id": "es_es_b1_u6_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué cambió cuando llegaron nuevos vecinos?",
+          "prompt": "¿Cuál es la idea principal del texto?",
           "options": [
-            "La celebración dejó de existir inmediatamente.",
-            "Propusieron actividades diferentes para la fiesta.",
-            "Las familias dejaron de reunirse."
+            "Una fiesta local incorpora nuevas propuestas y mantiene su función como espacio de encuentro.",
+            "La llegada de nuevos vecinos hace que desaparezcan todas las tradiciones.",
+            "La comunidad decide celebrar únicamente actividades antiguas."
           ],
-          "answer": 1,
-          "explanation": "La lectura cuenta que los nuevos vecinos aportaron otras actividades."
+          "answer": 0,
+          "explanation": "El texto explica cómo una tradición puede evolucionar sin perder su función comunitaria."
         },
         {
           "id": "es_es_b1_u6_e2",
@@ -212,14 +212,14 @@
           "id": "es_mx_b1_u6_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué cambió cuando llegaron nuevos vecinos?",
+          "prompt": "¿Cuál es la idea principal del texto?",
           "options": [
-            "La fiesta se canceló para siempre.",
-            "Propusieron actividades diferentes para la celebración.",
-            "Dejaron de organizarse actividades."
+            "Una celebración comunitaria cambia con la llegada de nuevos vecinos, pero sigue reuniendo a las personas.",
+            "La comunidad cancela la celebración para evitar nuevas ideas.",
+            "Las familias dejan de participar en las actividades tradicionales."
           ],
-          "answer": 1,
-          "explanation": "La lectura indica que los nuevos vecinos propusieron otras actividades."
+          "answer": 0,
+          "explanation": "El texto presenta la evolución de una celebración y su continuidad como punto de encuentro."
         },
         {
           "id": "es_mx_b1_u6_e2",

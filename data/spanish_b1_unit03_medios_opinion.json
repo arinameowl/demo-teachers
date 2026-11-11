@@ -319,14 +319,14 @@
           "id": "es_es_b1_u3_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué práctica ayuda a interpretar responsablemente una noticia?",
+          "prompt": "Según la nota contextual, ¿qué caracteriza el panorama mediático de España?",
           "options": [
-            "Compartirla si muchas personas ya lo han hecho.",
-            "Leer únicamente el titular y los comentarios.",
-            "Consultar la fuente original y comparar la información con otras publicaciones."
+            "La convivencia de medios estatales, autonómicos y locales, junto con proyectos digitales y plataformas sociales.",
+            "La existencia de un único medio público que ofrece toda la información.",
+            "La ausencia de diferencias de enfoque entre las publicaciones."
           ],
-          "answer": 2,
-          "explanation": "Contrastar fuentes y revisar el documento original ayuda a identificar contexto y posibles omisiones."
+          "answer": 0,
+          "explanation": "La nota describe medios de distintos ámbitos y formatos; por eso comparar enfoques y consultar documentos originales resulta útil."
         }
       ],
       "reading": {
@@ -556,14 +556,14 @@
           "id": "es_mx_b1_u3_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué práctica ayuda a interpretar responsablemente una noticia?",
+          "prompt": "Según la nota contextual, ¿qué caracteriza el panorama mediático de México?",
           "options": [
-            "Compartirla si muchas personas ya lo han hecho.",
-            "Leer únicamente el titular y los comentarios.",
-            "Consultar la fuente original y comparar la información con otras publicaciones."
+            "La convivencia de medios públicos y privados, proyectos nacionales y locales, periodismo digital y plataformas sociales.",
+            "La existencia de una sola fuente nacional para todas las noticias.",
+            "La ausencia de medios locales y de proyectos digitales."
           ],
-          "answer": 2,
-          "explanation": "Contrastar fuentes y revisar el documento original ayuda a identificar contexto y posibles omisiones."
+          "answer": 0,
+          "explanation": "La nota destaca la diversidad de medios y la variación regional; comparar publicaciones ayuda a distinguir datos e interpretación."
         }
       ],
       "reading": {

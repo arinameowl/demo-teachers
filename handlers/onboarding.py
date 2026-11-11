@@ -96,7 +96,9 @@ async def level_manual(callback: CallbackQuery, state: FSMContext):
 async def level_set(callback: CallbackQuery, state: FSMContext):
     await state.clear()
     level = callback.data.split(":")[1]
-    user_before = await db.get_user(callback.from_user.id) or {}\n    language = user_before.get("language") or "en"\n    await db.update_user(callback.from_user.id, level=level, language=language, level_source="manual", stage="onboarded", quiz_state=None)
+    user_before = await db.get_user(callback.from_user.id) or {}
+    language = user_before.get("language") or "en"
+    await db.update_user(callback.from_user.id, level=level, language=language, level_source="manual", stage="onboarded", quiz_state=None)
     await db.log_funnel_event(callback.from_user.id, "level_selected", f"manual:{level}")
     user = await db.get_user(callback.from_user.id) or {}
     await callback.message.edit_text(

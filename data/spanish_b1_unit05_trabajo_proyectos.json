@@ -94,66 +94,66 @@
           "id": "es_es_b1_u5_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué cambió cuando llegaron nuevos vecinos?",
+          "prompt": "¿Qué pidió la responsable al equipo en la primera reunión?",
           "options": [
-            "Propusieron actividades diferentes para la fiesta.",
-            "La celebración dejó de existir inmediatamente.",
-            "Las familias dejaron de reunirse."
+            "Que cada persona definiera sus tareas.",
+            "Que todos cambiaran de departamento.",
+            "Que se cancelara el proyecto."
           ],
           "answer": 0,
-          "explanation": "La lectura cuenta que los nuevos vecinos aportaron otras actividades."
+          "explanation": "La lectura explica que la responsable pidió definir las tareas individuales."
         },
         {
           "id": "es_es_b1_u5_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué es lo que más valora Mateo de la fiesta?",
+          "prompt": "¿Qué dato adicional necesitaba el departamento financiero?",
           "options": [
-            "Que las personas se reúnan y recuerden sus orígenes.",
-            "Que no participe gente joven.",
-            "Que la celebración nunca cambie."
+            "Datos adicionales para preparar la propuesta.",
+            "Una nueva oficina para el equipo.",
+            "Una lista de vacaciones."
           ],
           "answer": 0,
-          "explanation": "Mateo destaca el encuentro y la memoria compartida."
+          "explanation": "El texto indica que finanzas necesitaba información adicional."
         },
         {
           "id": "es_es_b1_u5_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Completa: «Me alegra que estas celebraciones se ___».",
+          "prompt": "Pasa al estilo indirecto: «El proveedor dijo: “Enviaré la oferta mañana”».",
           "options": [
-            "mantengan",
-            "mantienen",
-            "mantuvieron"
+            "El proveedor dijo que enviaría la oferta al día siguiente.",
+            "El proveedor dijo que envía la oferta ayer.",
+            "El proveedor dijo que enviará la oferta mañana."
           ],
           "answer": 0,
-          "explanation": "Después de me alegra que se usa subjuntivo."
+          "explanation": "El futuro pasa normalmente a condicional y mañana a al día siguiente."
         },
         {
           "id": "es_es_b1_u5_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué expresión sirve para hablar de una evolución gradual?",
+          "prompt": "¿Qué petición suena más cortés en un contexto profesional?",
           "options": [
-            "Con el tiempo",
-            "De repente, sin relación",
-            "A pesar de ayer"
+            "¿Podrías revisar esta versión, por favor?",
+            "Revisa esto ahora mismo.",
+            "Tienes que hacerlo ya."
           ],
           "answer": 0,
-          "explanation": "Con el tiempo presenta un cambio progresivo."
+          "explanation": "Podrías suaviza la petición."
         },
         {
           "id": "es_es_b1_u5_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "Según la nota cultural de México, ¿qué afirmación sobre Día de Muertos es adecuada?",
+          "prompt": "¿Qué influye en el estilo de comunicación laboral?",
           "options": [
-            "Las prácticas y los símbolos varían entre regiones y familias.",
-            "Todas las familias lo celebran exactamente igual.",
-            "Es la única tradición cultural del país."
+            "La empresa, el sector y la relación entre interlocutores.",
+            "Una regla idéntica para todas las empresas.",
+            "Solo la edad de los trabajadores."
           ],
           "answer": 0,
-          "explanation": "La nota evita generalizar una celebración diversa."
+          "explanation": "El registro depende del contexto profesional."
         }
       ]
     },
@@ -213,66 +213,66 @@
           "id": "es_mx_b1_u5_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué cambió cuando llegaron nuevos vecinos?",
+          "prompt": "¿Qué pidió la responsable al equipo en la primera reunión?",
           "options": [
-            "Propusieron actividades diferentes para la celebración.",
-            "La fiesta se canceló para siempre.",
-            "Dejaron de organizarse actividades."
+            "Que cada persona definiera sus tareas.",
+            "Que todos cambiaran de área.",
+            "Que se suspendiera el proyecto."
           ],
           "answer": 0,
-          "explanation": "La lectura indica que los nuevos vecinos propusieron otras actividades."
+          "explanation": "La lectura explica que la responsable pidió definir las tareas."
         },
         {
           "id": "es_mx_b1_u5_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué valora Mateo de la celebración?",
+          "prompt": "¿Qué necesitaba el área de finanzas?",
           "options": [
-            "Que las personas se reúnan y recuerden sus orígenes.",
-            "Que no haya cambios ni nuevas ideas.",
-            "Que solo participen los mayores."
+            "Datos adicionales.",
+            "Un nuevo edificio.",
+            "Un cambio de proveedor."
           ],
           "answer": 0,
-          "explanation": "Mateo destaca el encuentro y la memoria compartida."
+          "explanation": "El texto señala que finanzas necesitaba datos adicionales."
         },
         {
           "id": "es_mx_b1_u5_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Completa: «Me da gusto que estas celebraciones se ___».",
+          "prompt": "Pasa al estilo indirecto: «El proveedor dijo: “Enviaré la cotización mañana”».",
           "options": [
-            "mantengan",
-            "mantienen",
-            "mantuvieron"
+            "El proveedor dijo que enviaría la cotización al día siguiente.",
+            "El proveedor dijo que envía la cotización ayer.",
+            "El proveedor dijo que enviará la cotización mañana."
           ],
           "answer": 0,
-          "explanation": "Después de me da gusto que se usa subjuntivo."
+          "explanation": "El futuro en estilo directo suele pasar a condicional al depender de un verbo pasado."
         },
         {
           "id": "es_mx_b1_u5_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué expresión sirve para hablar de una evolución gradual?",
+          "prompt": "¿Qué petición suena más cortés en un contexto profesional?",
           "options": [
-            "Con el tiempo",
-            "De repente, sin relación",
-            "A pesar de ayer"
+            "¿Podrías revisar esta versión, por favor?",
+            "Revisa esto ahora mismo.",
+            "Hazlo de una vez."
           ],
           "answer": 0,
-          "explanation": "Con el tiempo presenta un cambio progresivo."
+          "explanation": "Podrías suaviza la petición."
         },
         {
           "id": "es_mx_b1_u5_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "Según la nota cultural, ¿qué afirmación sobre Día de Muertos es adecuada?",
+          "prompt": "¿Qué influye en el estilo de comunicación laboral?",
           "options": [
-            "Las prácticas y los símbolos varían entre regiones y familias.",
-            "Todas las familias lo celebran exactamente igual.",
-            "Es la única tradición cultural del país."
+            "La empresa, el sector y la relación entre interlocutores.",
+            "Una regla idéntica para todas las empresas.",
+            "Solo el cargo de la persona."
           ],
           "answer": 0,
-          "explanation": "La nota destaca la diversidad regional y familiar."
+          "explanation": "El registro depende de la cultura de empresa y de la situación."
         }
       ]
     }

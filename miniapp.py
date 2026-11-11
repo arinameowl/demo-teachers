@@ -15,7 +15,7 @@ from fastapi import FastAPI, Header, HTTPException, Depends
 from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
-from spanish_lead_content import load_spanish_lead, questions_for, strip_answers
+from spanish_lead_content import load_spanish_lead, load_spanish_level_units, spanish_unit_questions, questions_for, strip_answers
 
 import config
 import database as db
@@ -50,6 +50,12 @@ class SpanishQuizSubmission(BaseModel):
     resource_id: str = Field(pattern="^(book|video|series)$")
     section: str = Field(pattern="^(before_watching|while_watching|after_watching)$")
     answers: list = Field(default_factory=list, max_length=30)
+
+
+class SpanishUnitSubmission(BaseModel):
+    variant: str = Field(pattern="^(es_es|es_mx)$")
+    unit_id: str = Field(pattern="^es_(a1|a2|b1)_[a-z0-9_]+$")
+    answers: list = Field(default_factory=list, max_length=10)
 
 
 class AppEvent(BaseModel):
@@ -213,10 +219,10 @@ async def bootstrap(user: dict = Depends(authorized_user)):
         await db.log_funnel_event(user["id"], "learning_space_opened")
     return {
         "profile": {"first_name": profile.get("first_name"), "goal": profile.get("goal"),
-                    "level": profile.get("level"), "level_source": profile.get("level_source")},
+                    "level": profile.get("level"), "level_source": profile.get("level_source"), "language": profile.get("language") or "en"},
         "bot_username": config.BOT_USERNAME,
         "languages": LANGUAGES,
-        "selected_language": "en",
+        "selected_language": profile.get("language") or "en",
         "materials": _material_cards(profile.get("level")),
         "progress": progress,
         "notice": "",
@@ -247,6 +253,68 @@ async def get_spanish_lead(variant: str, user: dict = Depends(authorized_user)):
         "series": strip_answers(series),
         "level_note": ("Видео на мексиканском испанском рассчитано на A2; книга и сериал — A1." if variant == "es_mx" else "Книга, видео и сериал в этой подборке рассчитаны на A1."),
     }
+
+
+@app.get("/api/app/spanish-library/{variant}")
+async def get_spanish_library(variant: str, user: dict = Depends(authorized_user)):
+    async with aiosqlite.connect(config.DB_PATH) as conn:
+        cur = await conn.execute("SELECT level, language FROM users WHERE user_id = ?", (user["id"],))
+        row = await cur.fetchone()
+    if not row or row[1] != "es" or row[0] not in {"A1", "A2", "B1"}:
+        raise HTTPException(status_code=409, detail="Сначала выберите испанский и определите уровень в боте")
+    try:
+        units = load_spanish_level_units(row[0], variant)
+    except (ValueError, OSError, json.JSONDecodeError, KeyError):
+        log.exception("Spanish curriculum load failed")
+        raise HTTPException(status_code=500, detail="Не удалось загрузить программу испанского")
+    safe_units = []
+    for unit in units:
+        safe_units.append({
+            **unit,
+            "variant": {**unit["variant"], "exercises": [
+                {k: v for k, v in q.items() if k != "answer"}
+                for q in unit["variant"].get("exercises", [])
+            ]},
+        })
+    return {"language": "es", "level": row[0], "variant": variant, "units": safe_units}
+
+
+@app.post("/api/app/spanish-unit/submit")
+async def submit_spanish_unit(payload: SpanishUnitSubmission, user: dict = Depends(authorized_user)):
+    async with aiosqlite.connect(config.DB_PATH) as conn:
+        cur = await conn.execute("SELECT level, language FROM users WHERE user_id = ?", (user["id"],))
+        row = await cur.fetchone()
+    if not row or row[1] != "es" or row[0] not in {"A1", "A2", "B1"}:
+        raise HTTPException(status_code=409, detail="Сначала выберите испанский и определите уровень в боте")
+    questions = spanish_unit_questions(row[0], payload.variant, payload.unit_id)
+    if not questions:
+        raise HTTPException(status_code=404, detail="Упражнения к этому уроку не найдены")
+    if len(payload.answers) != len(questions):
+        raise HTTPException(status_code=422, detail="Ответьте на все задания")
+    results = []
+    correct = 0
+    for index, (question, given) in enumerate(zip(questions, payload.answers)):
+        expected = question["answer"]
+        ok = isinstance(given, int) and not isinstance(given, bool) and given == expected
+        correct += int(ok)
+        results.append({
+            "index": index,
+            "correct": ok,
+            "expected": question["options"][expected],
+            "explanation": question.get("explanation", ""),
+            "given": question["options"][given] if isinstance(given, int) and 0 <= given < len(question["options"]) else "",
+        })
+    total = len(questions)
+    await db.log_funnel_event(user["id"], "exercise_submitted", f"es:{row[0]}:{payload.unit_id}:{correct}/{total}")
+    if correct == total:
+        async with aiosqlite.connect(config.DB_PATH) as conn:
+            await conn.execute(
+                "INSERT INTO learning_progress (user_id, language, material_id, status, updated_at) VALUES (?, 'es', ?, 'completed', datetime('now')) "
+                "ON CONFLICT(user_id, language, material_id) DO UPDATE SET status='completed', updated_at=excluded.updated_at",
+                (user["id"], payload.unit_id),
+            )
+            await conn.commit()
+    return {"correct": correct, "total": total, "results": results, "completed": correct == total}
 
 
 @app.post("/api/app/spanish-lead/submit")

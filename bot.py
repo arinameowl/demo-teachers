@@ -54,7 +54,7 @@ async def main():
     scheduler = start_scheduler(bot)
     server = uvicorn.Server(uvicorn.Config(
         "miniapp:app", host=config.WEBAPP_HOST, port=config.WEBAPP_PORT,
-        log_level="info", access_log=False,
+        log_level="info", access_log=True,
     ))
     web_task = asyncio.create_task(server.serve(), name="miniapp-server")
 

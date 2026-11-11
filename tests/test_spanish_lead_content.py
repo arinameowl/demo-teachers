@@ -1,63 +1,63 @@
-import pytest
+import unittest
 
 from spanish_lead_content import load_spanish_lead, questions_for, strip_answers
 
 
-@pytest.mark.parametrize("variant", ["es_es", "es_mx"])
-def test_spanish_variant_has_one_a1_book(variant):
-    data = load_spanish_lead(variant)
-    books = data["book"]["books"]
-    assert len(books) == 1
-    assert books[0]["level"] == "A1"
-    assert books[0]["pages"]
-    assert len(books[0]["questions"]) == 5
+class SpanishLeadContentTest(unittest.TestCase):
+    def test_each_variant_has_one_a1_book(self):
+        for variant in ("es_es", "es_mx"):
+            with self.subTest(variant=variant):
+                data = load_spanish_lead(variant)
+                books = data["book"]["books"]
+                self.assertEqual(len(books), 1)
+                self.assertEqual(books[0]["level"], "A1")
+                self.assertTrue(books[0]["pages"])
+                self.assertEqual(len(books[0]["questions"]), 5)
+
+    def test_video_levels_and_listening_question_counts(self):
+        expected = {"es_es": ("A1", 9), "es_mx": ("A2 (publisher-labelled)", 5)}
+        for variant, (level, count) in expected.items():
+            with self.subTest(variant=variant):
+                data = load_spanish_lead(variant)
+                self.assertEqual(data["video"]["level"], level)
+                self.assertEqual(len(questions_for(data["video"], "while_watching")), count)
+
+    def test_each_variant_includes_the_a1_series(self):
+        for variant in ("es_es", "es_mx"):
+            with self.subTest(variant=variant):
+                data = load_spanish_lead(variant)
+                self.assertEqual(data["series"]["level"], "Beginner / A1")
+                self.assertTrue(data["series"]["youtube_url"].startswith("https://www.youtube.com/"))
+
+    def test_public_payload_does_not_expose_answer_keys(self):
+        public = strip_answers(load_spanish_lead("es_es"))
+
+        def assert_no_keys(value):
+            if isinstance(value, dict):
+                self.assertNotIn("answer", value)
+                self.assertNotIn("answer_key", value)
+                for child in value.values():
+                    assert_no_keys(child)
+            elif isinstance(value, list):
+                for child in value:
+                    assert_no_keys(child)
+
+        assert_no_keys(public)
+
+    def test_task_sections_flatten_into_closed_questions(self):
+        data = load_spanish_lead("es_es")
+        expected = {
+            ("video", "before_watching"): 1,
+            ("video", "while_watching"): 9,
+            ("video", "after_watching"): 4,
+            ("series", "before_watching"): 5,
+            ("series", "while_watching"): 7,
+            ("series", "after_watching"): 3,
+        }
+        for (resource, section), count in expected.items():
+            with self.subTest(resource=resource, section=section):
+                self.assertEqual(len(questions_for(data[resource], section)), count)
 
 
-@pytest.mark.parametrize(
-    ("variant", "video_level", "video_while_count"),
-    [("es_es", "A1", 9), ("es_mx", "A2 (publisher-labelled)", 5)],
-)
-def test_video_level_and_closed_listening_tasks(variant, video_level, video_while_count):
-    data = load_spanish_lead(variant)
-    assert data["video"]["level"] == video_level
-    assert len(questions_for(data["video"], "while_watching")) == video_while_count
-
-
-@pytest.mark.parametrize("variant", ["es_es", "es_mx"])
-def test_each_variant_includes_the_same_a1_series(variant):
-    data = load_spanish_lead(variant)
-    assert data["series"]["level"] == "Beginner / A1"
-    assert data["series"]["youtube_url"].startswith("https://www.youtube.com/")
-
-
-def test_public_payload_does_not_expose_answer_keys():
-    data = load_spanish_lead("es_es")
-    public = strip_answers(data)
-    
-    def assert_no_keys(value):
-        if isinstance(value, dict):
-            assert "answer" not in value
-            assert "answer_key" not in value
-            for child in value.values():
-                assert_no_keys(child)
-        elif isinstance(value, list):
-            for child in value:
-                assert_no_keys(child)
-
-    assert_no_keys(public)
-
-
-@pytest.mark.parametrize(
-    ("resource_key", "section", "expected_count"),
-    [
-        ("video", "before_watching", 1),
-        ("video", "while_watching", 9),
-        ("video", "after_watching", 4),
-        ("series", "before_watching", 5),
-        ("series", "while_watching", 7),
-        ("series", "after_watching", 3),
-    ],
-)
-def test_spanish_tasks_flatten_into_closed_questions(resource_key, section, expected_count):
-    data = load_spanish_lead("es_es")
-    assert len(questions_for(data[resource_key], section)) == expected_count
+if __name__ == "__main__":
+    unittest.main()

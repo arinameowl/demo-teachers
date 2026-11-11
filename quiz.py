@@ -100,7 +100,7 @@ def score_to_level(answers: dict[int, int], questions: list[dict] | None = None)
             correct_by_level[q["level"]] += 1
 
     questions_by_level = {
-        level: sum(1 for q in QUESTIONS if q["level"] == level)
+        level: sum(1 for q in questions if q["level"] == level)
         for level in correct_by_level
     }
 

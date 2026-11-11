@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "level": "A1",
+  "category": "lesson",
+  "language": "es",
+  "unit_id": "es_a1_u05_la_ciudad_transporte",
+  "title": "La ciudad y el transporte",
+  "learning_goals": [
+    "Назвать основные места и объекты городской инфраструктуры",
+    "Спросить и объяснить, как пройти к нужному месту",
+    "Назвать распространенные виды транспорта",
+    "Понимать простые указания направления",
+    "Использовать hay, estar, ir и предлоги места"
+  ],
+  "grammar": [
+    {
+      "topic": "hay_and_estar",
+      "explanation_ru": "Hay вводит наличие объекта: «в городе есть…». Estar указывает местоположение конкретного объекта: «аптека находится…».",
+      "examples": [
+        "Hay un banco cerca.",
+        "La farmacia está al lado del mercado."
+      ]
+    },
+    {
+      "topic": "prepositions_of_place",
+      "explanation_ru": "Предлоги и выражения места помогают описать расположение: cerca de, lejos de, al lado de, enfrente de, detrás de, entre.",
+      "examples": [
+        "El banco está enfrente del parque.",
+        "La tienda está al lado de la farmacia."
+      ]
+    },
+    {
+      "topic": "ir_and_directions",
+      "explanation_ru": "Ir используется для движения: voy, vas, va, vamos, vais, van. Для простых указаний используют imperativo в готовых формулах: sigue, gira, cruza.",
+      "examples": [
+        "Voy al centro en metro.",
+        "Sigue todo recto.",
+        "Gira a la derecha."
+      ]
+    },
+    {
+      "topic": "a_and_transport",
+      "explanation_ru": "С ir указываем направление через a: voy al centro, voy a la estación. Для транспорта часто используется en: en autobús, en metro, en coche.",
+      "examples": [
+        "Voy al trabajo en autobús.",
+        "Vamos a la estación."
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "vocabulary": [
+        {
+          "es": "acera",
+          "ru": "тротуар"
+        },
+        {
+          "es": "cercanías",
+          "ru": "пригородная электричка"
+        },
+        {
+          "es": "metro",
+          "ru": "метро"
+        },
+        {
+          "es": "autobús",
+          "ru": "автобус"
+        },
+        {
+          "es": "estación",
+          "ru": "станция; вокзал"
+        },
+        {
+          "es": "farmacia",
+          "ru": "аптека"
+        },
+        {
+          "es": "ayuntamiento",
+          "ru": "мэрия"
+        },
+        {
+          "es": "girar",
+          "ru": "поворачивать"
+        },
+        {
+          "es": "todo recto",
+          "ru": "все время прямо"
+        },
+        {
+          "es": "billete",
+          "ru": "билет"
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "Turista",
+          "text": "Perdona, ¿hay una farmacia cerca de aquí?"
+        },
+        {
+          "speaker": "Vecina",
+          "text": "Sí. Sigue todo recto hasta el semáforo."
+        },
+        {
+          "speaker": "Turista",
+          "text": "¿Y después?"
+        },
+        {
+          "speaker": "Vecina",
+          "text": "Gira a la izquierda. La farmacia está al lado de la panadería."
+        },
+        {
+          "speaker": "Turista",
+          "text": "Muchas gracias. ¿Está lejos la estación de metro?"
+        },
+        {
+          "speaker": "Vecina",
+          "text": "No, está a cinco minutos a pie."
+        },
+        {
+          "speaker": "Turista",
+          "text": "Perfecto. ¿Puedo comprar el billete allí?"
+        },
+        {
+          "speaker": "Vecina",
+          "text": "Sí, en la estación hay máquinas para comprar billetes."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "es_es_u5_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿Qué busca el turista?",
+          "options": [
+            "Una farmacia y la estación de metro",
+            "Un restaurante y un hotel",
+            "Un museo y un parque"
+          ],
+          "answer": 0,
+          "explanation": "Pregunta cómo llegar a una farmacia y después por la estación de metro."
+        },
+        {
+          "id": "es_es_u5_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Dónde está la farmacia?",
+          "options": [
+            "Detrás de la estación",
+            "Al lado de la panadería",
+            "Enfrente del ayuntamiento"
+          ],
+          "answer": 1,
+          "explanation": "La vecina dice que está al lado de la panadería."
+        },
+        {
+          "id": "es_es_u5_e3",
+          "skill": "vocabulary",
+          "type": "choice",
+          "prompt": "В Испании «billete» в диалоге — это…",
+          "options": [
+            "Билет",
+            "Карта города",
+            "Расписание"
+          ],
+          "answer": 0,
+          "explanation": "Billete — билет на транспорт; конкретные слова могут различаться по виду транспорта и региону."
+        },
+        {
+          "id": "es_es_u5_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «La farmacia ___ al lado de la panadería».",
+          "options": [
+            "hay",
+            "está",
+            "es"
+          ],
+          "answer": 1,
+          "explanation": "Для местоположения конкретного объекта используем estar: la farmacia está."
+        },
+        {
+          "id": "es_es_u5_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "Что такое «cercanías» в Испании?",
+          "options": [
+            "Пригородные железнодорожные поезда",
+            "Международные авиарейсы",
+            "Такси"
+          ],
+          "answer": 0,
+          "explanation": "Cercanías — название пригородных железнодорожных сетей в ряде испанских городов."
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "vocabulary": [
+        {
+          "es": "banqueta",
+          "ru": "тротуар"
+        },
+        {
+          "es": "metro",
+          "ru": "метро"
+        },
+        {
+          "es": "camión",
+          "ru": "автобус (в ряде регионов)"
+        },
+        {
+          "es": "estación",
+          "ru": "станция"
+        },
+        {
+          "es": "farmacia",
+          "ru": "аптека"
+        },
+        {
+          "es": "alcaldía",
+          "ru": "администрация района / мэрия в контексте CDMX"
+        },
+        {
+          "es": "cruzar",
+          "ru": "переходить"
+        },
+        {
+          "es": "dar vuelta",
+          "ru": "поворачивать"
+        },
+        {
+          "es": "derecho",
+          "ru": "прямо"
+        },
+        {
+          "es": "tarjeta de transporte",
+          "ru": "транспортная карта"
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "Visitante",
+          "text": "Disculpe, ¿cómo llego al metro?"
+        },
+        {
+          "speaker": "Vecino",
+          "text": "Siga derecho dos cuadras y dé vuelta a la derecha."
+        },
+        {
+          "speaker": "Visitante",
+          "text": "¿Está cerca del mercado?"
+        },
+        {
+          "speaker": "Vecino",
+          "text": "Sí, la entrada está enfrente del mercado."
+        },
+        {
+          "speaker": "Visitante",
+          "text": "Muchas gracias. ¿Puedo comprar una tarjeta de transporte ahí?"
+        },
+        {
+          "speaker": "Vecino",
+          "text": "Sí, en algunas estaciones hay máquinas y taquillas."
+        },
+        {
+          "speaker": "Visitante",
+          "text": "Perfecto. ¿Y el camión también pasa por aquí?"
+        },
+        {
+          "speaker": "Vecino",
+          "text": "Sí, la parada está en la avenida."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "es_mx_u5_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿Qué quiere encontrar el visitante?",
+          "options": [
+            "La estación del metro",
+            "Un hospital",
+            "Una cafetería"
+          ],
+          "answer": 0,
+          "explanation": "Pregunta cómo llegar al metro y dónde comprar una tarjeta de transporte."
+        },
+        {
+          "id": "es_mx_u5_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Dónde está la entrada del metro?",
+          "options": [
+            "Detrás del mercado",
+            "Enfrente del mercado",
+            "Al lado de la farmacia"
+          ],
+          "answer": 1,
+          "explanation": "El vecino dice que la entrada está enfrente del mercado."
+        },
+        {
+          "id": "es_mx_u5_e3",
+          "skill": "vocabulary",
+          "type": "choice",
+          "prompt": "В Мексике «banqueta» означает…",
+          "options": [
+            "Тротуар",
+            "Билет",
+            "Остановку"
+          ],
+          "answer": 0,
+          "explanation": "Banqueta — распространенное мексиканское слово для тротуара; в Испании обычно acera."
+        },
+        {
+          "id": "es_mx_u5_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «La entrada ___ enfrente del mercado».",
+          "options": [
+            "hay",
+            "está",
+            "son"
+          ],
+          "answer": 1,
+          "explanation": "Для местоположения конкретного объекта используется está."
+        },
+        {
+          "id": "es_mx_u5_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "В диалоге «dos cuadras» — это…",
+          "options": [
+            "Два квартала",
+            "Два билета",
+            "Две остановки метро"
+          ],
+          "answer": 0,
+          "explanation": "Cuadra — городской квартал; выражение широко используется в Мексике и многих странах Латинской Америки."
+        }
+      ]
+    }
+  ],
+  "teacher_notes": [
+    "Диалог мексиканского варианта ориентирован на городской контекст Мехико, но отдельные слова имеют региональные различия.",
+    "Banqueta типично для Мексики; acera — стандартный вариант Испании.",
+    "Camión как автобус употребляется во многих, но не во всех регионах Мексики; также возможно autobús.",
+    "Не учить учащегося воспринимать все транспортные системы Мексики как одинаковые: инфраструктура зависит от города.",
+    "Диалоги и задания оригинальные."
+  ]
+}

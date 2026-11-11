@@ -340,14 +340,14 @@
           "id": "es_mx_u5_e5",
           "skill": "culture",
           "type": "choice",
-          "prompt": "В диалоге «dos cuadras» — это…",
+          "prompt": "¿Por qué el visitante usa «Disculpe» al hablar con el vecino?",
           "options": [
-            "Два квартала",
-            "Два билета",
-            "Две остановки метро"
+            "Para dirigirse a él de manera cortés",
+            "Porque está hablando con un amigo íntimo",
+            "Para despedirse"
           ],
           "answer": 0,
-          "explanation": "Cuadra — городской квартал; выражение широко используется в Мексике и многих странах Латинской Америки."
+          "explanation": "Disculpe es una forma cortés de llamar la atención de una persona desconocida; combina con el trato formal de usted."
         }
       ]
     }

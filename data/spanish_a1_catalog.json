@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "language": "es",
+  "level": "A1",
+  "title": "Spanish A1 — The Teachers School",
+  "status": "content_prepared_not_integrated",
+  "dialects": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "description": "Кастильский вариант Испании; произношение и лексика Испании."
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "description": "Мексиканский вариант как базовая разновидность латиноамериканского маршрута; культурные материалы других стран Латинской Америки могут добавляться отдельно."
+    }
+  ],
+  "units": [
+    {
+      "order": 1,
+      "id": "es_a1_u01_presentaciones",
+      "title": "Primeros contactos",
+      "path": "data/spanish_a1_unit01_presentaciones.json"
+    },
+    {
+      "order": 2,
+      "id": "es_a1_u02_familia_amigos",
+      "title": "La familia y los amigos",
+      "path": "data/spanish_a1_unit02_familia_amigos.json"
+    },
+    {
+      "order": 3,
+      "id": "es_a1_u03_un_dia_normal",
+      "title": "Un día normal",
+      "path": "data/spanish_a1_unit03_un_dia_normal.json"
+    },
+    {
+      "order": 4,
+      "id": "es_a1_u04_la_alimentacion",
+      "title": "La alimentación",
+      "path": "data/spanish_a1_unit04_la_alimentacion.json"
+    },
+    {
+      "order": 5,
+      "id": "es_a1_u05_la_ciudad_transporte",
+      "title": "La ciudad y el transporte",
+      "path": "data/spanish_a1_unit05_la_ciudad_transporte.json"
+    },
+    {
+      "order": 6,
+      "id": "es_a1_u06_el_tiempo_libre",
+      "title": "El tiempo libre",
+      "path": "data/spanish_a1_unit06_el_tiempo_libre.json"
+    }
+  ],
+  "reading_materials": {
+    "path": "data/spanish_a1_books.json",
+    "description": "Оригинальные короткие тексты для двух вариантов испанского."
+  },
+  "exercise_standard": {
+    "per_unit": 5,
+    "skills": [
+      "gist",
+      "detail",
+      "vocabulary",
+      "grammar",
+      "culture"
+    ]
+  },
+  "integration_note": "Файлы являются отдельным слоем контента. Не подключены к miniapp и не меняют существующий английский раздел."
+}

@@ -154,7 +154,11 @@
           "answer": 0,
           "explanation": "Piso es una palabra habitual en España para referirse a una vivienda en un edificio."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Compartir piso",
+        "text": "Lucía comparte piso con dos compañeras en Valencia. Cada una tiene su habitación, pero comparten la cocina y el salón. Los domingos suelen organizar las tareas de casa: una limpia el baño, otra pone la lavadora y Lucía hace la compra. Este mes han decidido ahorrar agua y electricidad. También han hablado con el propietario porque una ventana no cierra bien. El piso no es muy grande, pero está bien situado y todas están contentas."
+      }
     },
     {
       "id": "es_mx",
@@ -268,7 +272,11 @@
           "answer": 0,
           "explanation": "El dueño es la persona que posee la vivienda; también puede decirse propietario."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Un departamento para compartir",
+        "text": "Mariana vive con una amiga en un departamento de Guadalajara. El lugar tiene dos recámaras, una cocina y un balcón pequeño. Para mantener todo en orden, las dos se reparten los quehaceres. Mariana cocina entre semana y su amiga limpia la sala. Los sábados hacen el súper y después descansan. Hace poco, una llave empezó a gotear, así que hablaron con el dueño para pedir una reparación."
+      }
     }
   ],
   "teacher_notes": [

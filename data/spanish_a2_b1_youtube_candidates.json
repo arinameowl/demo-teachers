@@ -106,6 +106,17 @@
           "fit": "Упаковки, единицы измерения, продукты и этикетки. Хороший дополнительный материал для покупок и услуг.",
           "transcript": "listed_on_publisher_page",
           "status": "exact_video_page_and_youtube_id_not_yet_verified"
+        },
+        {
+          "title": "Speak Like a Mexican — #36 Spanish Listening Practice: Conversation about Food",
+          "level": "A2 (publisher-labelled; exact CEFR not independently confirmed)",
+          "region": "Mexico; filmed in the creator's kitchen in Mexico",
+          "youtube": "https://www.youtube.com/watch?v=6b6zrrprgGg",
+          "publisher_page": "https://www.youtube.com/watch?v=6b6zrrprgGg",
+          "fit": "Food, groceries, pantry items, meals and Mexican food culture. A practical extension to shopping/food vocabulary; not a direct market transaction dialogue. Creator describes it as a relaxed conversation for learners and explicitly labels it A2.",
+          "transcript": "not verified",
+          "status": "video_identity_topic_region_and_publisher_level_verified_audio_preview_and_transcript_pending",
+          "rights": "Free YouTube viewing. No Creative Commons license identified. Use only original player if embedding is enabled and legal review approves the paid-course context; no copying, downloading or redistribution."
         }
       ]
     },
@@ -380,6 +391,7 @@
     }
   ],
   "next_actions": [
+    "Preview Speak Like a Mexican #36 end-to-end and verify whether speech, vocabulary and duration are appropriate for A2; check captions/transcript before writing original tasks.",
     "Select a short list of exact Spanish-with-CJ interviews featuring a confirmed Mexican speaker; verify speaker, level, duration and transcript.",
     "Check individual Mextalki and Easy Spanish video captions/transcripts and screen full content, including the NSFW flag on Mextalki #118.",
     "Where the clip is too long, define a time-bounded listening segment but keep playback in the original YouTube player; do not cut or redistribute the clip.",
@@ -404,7 +416,8 @@
     "new_mexican_candidates": "Added one Easy Spanish Mexico City street-interview candidate and three Mextalki Mexico episodes. Exact video IDs and topical metadata were identified; no claim of end-to-end audio preview.",
     "level_method": "Channel-level or third-party subtitle difficulty scores are screening signals only, not CEFR certification. All added Mextalki levels remain provisional and must be checked against the full clip/transcript before lesson tasks are written.",
     "commercial_use": "A public YouTube URL or enabled embed is not treated as a blanket commercial license. Candidate status remains conditional pending review of embedding, platform terms and the paid-course context.",
-    "audio_integrity": "No audio candidate is marked listened-to unless actual playback was completed. Metadata, descriptions and subtitle-score summaries do not verify accent quality, speed, intonation or sound quality."
+    "audio_integrity": "No audio candidate is marked listened-to unless actual playback was completed. Metadata, descriptions and subtitle-score summaries do not verify accent quality, speed, intonation or sound quality.",
+    "new_a2_candidate": "Added Speak Like a Mexican #36, a Mexico-based A2-labelled food/grocery listening candidate for A2 compras y servicios. Exact audio and transcript still need preview."
   },
   "removed_or_corrected": [
     "Removed claim that VideoEle video catalogue is cleared for use in The Teachers paid product: NC-ND licence explicitly prohibits commercial use and derivative redistribution.",

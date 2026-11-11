@@ -95,11 +95,11 @@
           "skill": "gist",
           "prompt": "¿Qué cambió cuando llegaron nuevos vecinos?",
           "options": [
-            "Propusieron actividades diferentes para la fiesta.",
             "La celebración dejó de existir inmediatamente.",
+            "Propusieron actividades diferentes para la fiesta.",
             "Las familias dejaron de reunirse."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "La lectura cuenta que los nuevos vecinos aportaron otras actividades."
         },
         {
@@ -108,11 +108,11 @@
           "skill": "detail",
           "prompt": "¿Qué es lo que más valora Mateo de la fiesta?",
           "options": [
-            "Que las personas se reúnan y recuerden sus orígenes.",
             "Que no participe gente joven.",
-            "Que la celebración nunca cambie."
+            "Que la celebración nunca cambie.",
+            "Que las personas se reúnan y recuerden sus orígenes."
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "Mateo destaca el encuentro y la memoria compartida."
         },
         {
@@ -134,11 +134,11 @@
           "skill": "vocabulary",
           "prompt": "¿Qué expresión sirve para hablar de una evolución gradual?",
           "options": [
-            "Con el tiempo",
             "De repente, sin relación",
-            "A pesar de ayer"
+            "A pesar de ayer",
+            "Con el tiempo"
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "Con el tiempo presenta un cambio progresivo."
         },
         {
@@ -147,11 +147,11 @@
           "skill": "culture",
           "prompt": "Según la nota cultural de España, ¿qué afirmación sobre las fiestas locales es adecuada?",
           "options": [
-            "Pueden incluir música, actividades en la calle y gastronomía, y varían según la región.",
             "Se celebran siempre de la misma manera en todo el país.",
+            "Pueden incluir música, actividades en la calle y gastronomía, y varían según la región.",
             "Solo tienen lugar en grandes ciudades."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "La nota explica que las fiestas locales pueden tener formatos distintos según la historia y las costumbres de cada región."
         }
       ]
@@ -214,11 +214,11 @@
           "skill": "gist",
           "prompt": "¿Qué cambió cuando llegaron nuevos vecinos?",
           "options": [
-            "Propusieron actividades diferentes para la celebración.",
             "La fiesta se canceló para siempre.",
+            "Propusieron actividades diferentes para la celebración.",
             "Dejaron de organizarse actividades."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "La lectura indica que los nuevos vecinos propusieron otras actividades."
         },
         {
@@ -227,11 +227,11 @@
           "skill": "detail",
           "prompt": "¿Qué valora Mateo de la celebración?",
           "options": [
-            "Que las personas se reúnan y recuerden sus orígenes.",
             "Que no haya cambios ni nuevas ideas.",
-            "Que solo participen los mayores."
+            "Que solo participen los mayores.",
+            "Que las personas se reúnan y recuerden sus orígenes."
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "Mateo destaca el encuentro y la memoria compartida."
         },
         {
@@ -253,11 +253,11 @@
           "skill": "vocabulary",
           "prompt": "¿Qué expresión sirve para hablar de una evolución gradual?",
           "options": [
-            "Con el tiempo",
             "De repente, sin relación",
-            "A pesar de ayer"
+            "A pesar de ayer",
+            "Con el tiempo"
           ],
-          "answer": 0,
+          "answer": 2,
           "explanation": "Con el tiempo presenta un cambio progresivo."
         },
         {
@@ -266,11 +266,11 @@
           "skill": "culture",
           "prompt": "Según la nota cultural, ¿qué afirmación sobre Día de Muertos es adecuada?",
           "options": [
-            "Las prácticas y los símbolos varían entre regiones y familias.",
             "Todas las familias lo celebran exactamente igual.",
+            "Las prácticas y los símbolos varían entre regiones y familias.",
             "Es la única tradición cultural del país."
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "La nota destaca la diversidad regional y familiar."
         }
       ]

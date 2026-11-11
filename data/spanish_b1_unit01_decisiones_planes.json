@@ -21,18 +21,18 @@
     },
     {
       "topic": "si_presente_futuro",
-      "explanation_ru": "Для реального или возможного условия используется si + presente, а в главной части — presente, futuro или imperativo. В таком условии после si не ставится futuro.",
+      "explanation_ru": "Для реального или вполне возможного условия используется si + presente, а в главной части — presente, futuro или imperativo. После si в такой конструкции futuro не ставится.",
       "examples": [
         "Si consigo una beca, estudiaré en Madrid.",
         "Si tienes tiempo, podemos hablar."
       ]
     },
     {
-      "topic": "hipotesis_consecuencias",
-      "explanation_ru": "Для обсуждения последствий используйте depender de, en ese caso, por eso, de lo contrario. Связывайте условие и результат логически.",
+      "topic": "si_imperfecto_subjuntivo_condicional",
+      "explanation_ru": "Для гипотетической или маловероятной ситуации используется si + imperfecto de subjuntivo, а в главной части — condicional simple. В придаточной части после si не используется condicional. Формула: Si + consiguiera…, buscaría….",
       "examples": [
-        "Si el alquiler sube, buscaré otra opción.",
-        "En ese caso, cambiaría de ciudad."
+        "Si no consiguiera la beca, buscaría trabajo.",
+        "Si tuviera más tiempo, viajaría."
       ]
     }
   ],
@@ -64,7 +64,7 @@
         },
         {
           "speaker": "Diego",
-          "text": "Si organizas bien el presupuesto, quizá puedas hacerlo."
+          "text": "Con una buena organización, podrás hacerlo."
         },
         {
           "speaker": "Clara",
@@ -93,66 +93,66 @@
           "id": "es_es_b1_u1_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué haría Marina si no consiguiera la beca?",
+          "prompt": "¿Qué hará Marina si no consigue la beca?",
           "options": [
-            "Trabajaría unos meses más y volvería a intentarlo.",
-            "Que la actividad se canceló sin explicación",
-            "Que todos rechazaron la propuesta"
+            "Trabajará unos meses más y volverá a intentarlo.",
+            "Abandonará sus estudios definitivamente.",
+            "Se mudará antes de presentar la solicitud."
           ],
           "answer": 0,
-          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+          "explanation": "La lectura explica el plan alternativo de Marina."
         },
         {
           "id": "es_es_b1_u1_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "prompt": "¿Qué opción propone Diego para reducir los gastos iniciales?",
           "options": [
-            "El texto presenta una situación relacionada con el tema y sus matices",
-            "El texto afirma que todas las situaciones son idénticas",
-            "El texto no ofrece información concreta"
+            "Compartir piso.",
+            "Cambiar de universidad.",
+            "Dejar de trabajar."
           ],
           "answer": 0,
-          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+          "explanation": "Diego sugiere compartir piso al principio."
         },
         {
           "id": "es_es_b1_u1_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Si consigo una beca, ___ en Madrid.",
+          "prompt": "Completa la hipótesis: «Si Clara no consiguiera la beca, ___ durante un año».",
           "options": [
-            "estudiaré",
-            "estudiaría",
-            "estudié"
+            "buscaría trabajo y ahorraría",
+            "buscará trabajo y ahorrará",
+            "buscaba trabajo y ahorraba"
           ],
           "answer": 0,
-          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+          "explanation": "Para una hipótesis poco probable: si + imperfecto de subjuntivo, condicional simple."
         },
         {
           "id": "es_es_b1_u1_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "prompt": "Elige el conector que expresa consecuencia: «No consigue la beca; ___, tendrá que trabajar unos meses más».",
           "options": [
-            "Sin embargo",
-            "Por la mañana",
-            "Al lado de"
+            "por eso",
+            "aunque",
+            "por un lado"
           ],
           "answer": 0,
-          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+          "explanation": "Por eso introduce una consecuencia."
         },
         {
           "id": "es_es_b1_u1_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "prompt": "Según la nota cultural, ¿qué puede cubrir una beca en España?",
           "options": [
-            "Que puede variar según la región y las familias",
-            "Que se practica igual en todos los lugares",
-            "Que nunca cambia con el tiempo"
+            "La matrícula y, en algunos casos, gastos de alojamiento o manutención.",
+            "Siempre todos los gastos sin excepción.",
+            "Únicamente los viajes turísticos."
           ],
           "answer": 0,
-          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+          "explanation": "La cobertura depende del programa y puede incluir manutención o alojamiento."
         }
       ]
     },
@@ -215,63 +215,63 @@
           "prompt": "¿Qué hará Mariana si no consigue la beca?",
           "options": [
             "Trabajará unos meses más y volverá a intentarlo.",
-            "Que la actividad se canceló sin explicación",
-            "Que todos rechazaron la propuesta"
+            "Cancelará todos sus planes de estudio.",
+            "Se irá inmediatamente sin comparar programas."
           ],
           "answer": 0,
-          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+          "explanation": "La lectura presenta esta alternativa de forma explícita."
         },
         {
           "id": "es_mx_b1_u1_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "prompt": "¿Qué opción propone Luis para reducir los gastos al principio?",
           "options": [
-            "El texto presenta una situación relacionada con el tema y sus matices",
-            "El texto afirma que todas las situaciones son idénticas",
-            "El texto no ofrece información concreta"
+            "Compartir departamento.",
+            "Cambiar de carrera.",
+            "Dejar de estudiar español."
           ],
           "answer": 0,
-          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+          "explanation": "Luis propone compartir departamento."
         },
         {
           "id": "es_mx_b1_u1_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Si consigo una beca, ___ en Madrid.",
+          "prompt": "Completa la hipótesis: «Si Sofía no recibiera la beca, ___ durante un año».",
           "options": [
-            "estudiaré",
-            "estudiaría",
-            "estudié"
+            "buscaría trabajo y ahorraría",
+            "buscará trabajo y ahorrará",
+            "buscaba trabajo y ahorraba"
           ],
           "answer": 0,
-          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+          "explanation": "Si + imperfecto de subjuntivo se combina con condicional simple para expresar una hipótesis."
         },
         {
           "id": "es_mx_b1_u1_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "prompt": "Elige el conector que expresa consecuencia: «No consigue la beca; ___, tendrá que trabajar unos meses más».",
           "options": [
-            "Sin embargo",
-            "Por la mañana",
-            "Al lado de"
+            "por eso",
+            "aunque",
+            "por un lado"
           ],
           "answer": 0,
-          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+          "explanation": "Por eso introduce una consecuencia."
         },
         {
           "id": "es_mx_b1_u1_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "prompt": "Según la nota cultural, ¿qué debe comprobarse al solicitar una beca en México?",
           "options": [
-            "Que puede variar según la región y las familias",
-            "Que se practica igual en todos los lugares",
-            "Que nunca cambia con el tiempo"
+            "Si cubre solo los estudios o también los gastos de vida.",
+            "Si garantiza empleo permanente.",
+            "Si permite viajar sin documentos."
           ],
           "answer": 0,
-          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+          "explanation": "La nota recomienda revisar exactamente qué gastos cubre el apoyo."
         }
       ]
     }

@@ -126,13 +126,13 @@
             "buscaba trabajo y ahorraba"
           ],
           "answer": 0,
-          "explanation": "Para una hipótesis poco probable: si + imperfecto de subjuntivo, condicional simple."
+          "explanation": "Para una hipótesis: si + imperfecto de subjuntivo, condicional simple."
         },
         {
           "id": "es_es_b1_u1_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "Elige el conector que expresa consecuencia: «No consigue la beca; ___, tendrá que trabajar unos meses más».",
+          "prompt": "Elige el conector de consecuencia: «No consigue la beca; ___, tendrá que trabajar unos meses más».",
           "options": [
             "por eso",
             "aunque",
@@ -147,12 +147,12 @@
           "skill": "culture",
           "prompt": "Según la nota cultural, ¿qué puede cubrir una beca en España?",
           "options": [
-            "La matrícula y, en algunos casos, gastos de alojamiento o manutención.",
+            "La matrícula y, en algunos casos, alojamiento o manutención.",
             "Siempre todos los gastos sin excepción.",
-            "Únicamente los viajes turísticos."
+            "Únicamente viajes turísticos."
           ],
           "answer": 0,
-          "explanation": "La cobertura depende del programa y puede incluir manutención o alojamiento."
+          "explanation": "La cobertura depende del programa."
         }
       ]
     },
@@ -216,10 +216,10 @@
           "options": [
             "Trabajará unos meses más y volverá a intentarlo.",
             "Cancelará todos sus planes de estudio.",
-            "Se irá inmediatamente sin comparar programas."
+            "Se irá sin comparar programas."
           ],
           "answer": 0,
-          "explanation": "La lectura presenta esta alternativa de forma explícita."
+          "explanation": "La lectura presenta esta alternativa."
         },
         {
           "id": "es_mx_b1_u1_e2",
@@ -245,13 +245,13 @@
             "buscaba trabajo y ahorraba"
           ],
           "answer": 0,
-          "explanation": "Si + imperfecto de subjuntivo se combina con condicional simple para expresar una hipótesis."
+          "explanation": "Si + imperfecto de subjuntivo se combina con condicional simple."
         },
         {
           "id": "es_mx_b1_u1_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "Elige el conector que expresa consecuencia: «No consigue la beca; ___, tendrá que trabajar unos meses más».",
+          "prompt": "Elige el conector de consecuencia: «No consigue la beca; ___, tendrá que trabajar unos meses más».",
           "options": [
             "por eso",
             "aunque",
@@ -271,7 +271,7 @@
             "Si permite viajar sin documentos."
           ],
           "answer": 0,
-          "explanation": "La nota recomienda revisar exactamente qué gastos cubre el apoyo."
+          "explanation": "Conviene revisar qué gastos cubre el apoyo."
         }
       ]
     }

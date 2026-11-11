@@ -93,14 +93,14 @@
           "id": "es_es_b1_u4_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué se ha creado para comunicar problemas?",
+          "prompt": "¿Cuál es la idea principal del texto?",
           "options": [
-            "Una nueva línea de tren.",
-            "Una plataforma.",
-            "Una oficina de turismo."
+            "Un proyecto vecinal mejora los espacios públicos, aunque todavía quedan problemas por resolver.",
+            "El distrito ha terminado todas las obras y ya no necesita nuevas medidas.",
+            "Los vecinos han decidido eliminar las actividades comunitarias."
           ],
-          "answer": 1,
-          "explanation": "La lectura menciona una plataforma vecinal."
+          "answer": 0,
+          "explanation": "El texto presenta avances del proyecto y algunos retos que siguen pendientes."
         },
         {
           "id": "es_es_b1_u4_e2",
@@ -212,14 +212,14 @@
           "id": "es_mx_b1_u4_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué se ha creado para comunicar problemas?",
+          "prompt": "¿Cuál es la idea principal del texto?",
           "options": [
-            "Una estación de autobuses.",
-            "Una plataforma.",
-            "Una asociación deportiva privada."
+            "Una iniciativa en la colonia mejora los espacios públicos, pero todavía hay necesidades de transporte y reparación.",
+            "La colonia ha resuelto todos sus problemas de infraestructura.",
+            "Los vecinos se oponen a cualquier cambio en los espacios públicos."
           ],
-          "answer": 1,
-          "explanation": "La lectura menciona una plataforma para reportar problemas."
+          "answer": 0,
+          "explanation": "El texto combina los avances de la iniciativa con los problemas que continúan."
         },
         {
           "id": "es_mx_b1_u4_e2",

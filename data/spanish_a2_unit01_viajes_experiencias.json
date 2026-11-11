@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "level": "A2",
+  "category": "lesson",
+  "language": "es",
+  "unit_id": "es_a2_u01_viajes_experiencias",
+  "title": "Viajes y experiencias",
+  "learning_goals": [
+    "Hablar de viajes y experiencias recientes",
+    "Preguntar si alguien ha visitado un lugar o ha hecho una actividad",
+    "Describir problemas sencillos durante un viaje y explicar qué ha pasado",
+    "Usar el pretérito perfecto para hablar de experiencias y hechos recientes"
+  ],
+  "grammar": [
+    {
+      "topic": "preterito_perfecto",
+      "explanation_ru": "Pretérito perfecto образуется с настоящим временем haber и причастием прошедшего времени. Используем его, чтобы говорить об опыте или событиях, связанных с настоящим моментом. Формула: he/has/ha/hemos/habéis/han + participio.",
+      "examples": [
+        "He visitado Sevilla.",
+        "¿Has viajado alguna vez en tren?",
+        "Este año hemos conocido una ciudad nueva."
+      ]
+    },
+    {
+      "topic": "participios_regulares_irregulares",
+      "explanation_ru": "У правильных глаголов причастие обычно образуется с окончаниями -ado для глаголов на -ar и -ido для глаголов на -er/-ir. У некоторых частотных глаголов причастия неправильные: hacer → hecho, ver → visto, escribir → escrito, abrir → abierto.",
+      "examples": [
+        "reservar → reservado",
+        "conocer → conocido",
+        "hacer → hecho",
+        "ver → visto"
+      ]
+    },
+    {
+      "topic": "marcadores_temporales",
+      "explanation_ru": "Pretérito perfecto часто употребляется с выражениями, которые связывают событие с настоящим: hoy, esta semana, este mes, este año, últimamente, alguna vez, nunca.",
+      "examples": [
+        "Hoy hemos llegado temprano.",
+        "¿Has estado alguna vez en México?",
+        "Nunca he viajado en avión."
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "pronunciation_note": "В диалогах используется лексика, характерная для Испании. Вопросы о жизненном опыте и недавних событиях естественно сочетаются с pretérito perfecto.",
+      "dialogue": [
+        {
+          "speaker": "Lucía",
+          "text": "¿Has estado alguna vez en Granada, Andrés?"
+        },
+        {
+          "speaker": "Andrés",
+          "text": "Sí, he estado allí este año. Fui con dos amigos durante un puente."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "¡Qué bien! ¿Dónde os habéis alojado?"
+        },
+        {
+          "speaker": "Andrés",
+          "text": "En un pequeño hotel cerca del centro. La ubicación ha sido perfecta."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "¿Habéis visitado la Alhambra?"
+        },
+        {
+          "speaker": "Andrés",
+          "text": "Sí, pero tuvimos que reservar las entradas con antelación. Había mucha gente."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "¿Y qué tal el viaje en tren?"
+        },
+        {
+          "speaker": "Andrés",
+          "text": "Bastante bien, aunque el tren ha llegado con media hora de retraso."
+        },
+        {
+          "speaker": "Lucía",
+          "text": "Vaya. ¿Aun así te ha gustado la ciudad?"
+        },
+        {
+          "speaker": "Andrés",
+          "text": "Muchísimo. He probado platos típicos y he hecho un montón de fotos."
+        }
+      ],
+      "context_note": "В Испании для поездок между крупными городами часто используют скоростные поезда AVE. Билеты на популярные маршруты и посещение известных достопримечательностей лучше покупать заранее.",
+      "exercises": [
+        {
+          "id": "es_es_a2_u1_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿De qué experiencia hablan Lucía y Andrés?",
+          "options": [
+            "De un viaje a Granada",
+            "De una mudanza a Madrid",
+            "De un curso de cocina"
+          ],
+          "answer": 0,
+          "explanation": "Andrés cuenta que ha estado en Granada con dos amigos."
+        },
+        {
+          "id": "es_es_a2_u1_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Qué problema tuvo Andrés durante el viaje?",
+          "options": [
+            "Perdió la reserva del hotel",
+            "El tren llegó con retraso",
+            "No pudo visitar la Alhambra"
+          ],
+          "answer": 1,
+          "explanation": "Andrés explica que el tren llegó con media hora de retraso."
+        },
+        {
+          "id": "es_es_a2_u1_e3",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «Este año Andrés ___ en Granada».",
+          "options": [
+            "ha estado",
+            "ha estar",
+            "ha estando"
+          ],
+          "answer": 0,
+          "explanation": "Pretérito perfecto se forma con haber + participio: ha + estado."
+        },
+        {
+          "id": "es_es_a2_u1_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Elige el participio correcto del verbo «hacer».",
+          "options": [
+            "hacido",
+            "hecho",
+            "haciendo"
+          ],
+          "answer": 1,
+          "explanation": "Hacer tiene un participio irregular: hecho."
+        },
+        {
+          "id": "es_es_a2_u1_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "¿Qué es el AVE en España?",
+          "options": [
+            "Un servicio de trenes de alta velocidad",
+            "Una tarjeta para el transporte urbano",
+            "Un tipo de alojamiento rural"
+          ],
+          "answer": 0,
+          "explanation": "AVE es el servicio de trenes de alta velocidad que conecta numerosas ciudades españolas."
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "pronunciation_note": "В диалоге используется мексиканская лексика для путешествий. Pretérito perfecto встречается в вопросах об опыте, хотя в разговорной речи Мексики pretérito indefinido во многих подобных контекстах также очень распространен.",
+      "dialogue": [
+        {
+          "speaker": "Valeria",
+          "text": "¿Has estado alguna vez en Oaxaca, Diego?"
+        },
+        {
+          "speaker": "Diego",
+          "text": "Sí, he estado allí dos veces. La última vez fui con mi hermana."
+        },
+        {
+          "speaker": "Valeria",
+          "text": "¡Qué padre! ¿Dónde se hospedaron?"
+        },
+        {
+          "speaker": "Diego",
+          "text": "En un hotelito en el centro. Hemos caminado mucho por la ciudad."
+        },
+        {
+          "speaker": "Valeria",
+          "text": "¿Han visitado Monte Albán?"
+        },
+        {
+          "speaker": "Diego",
+          "text": "Sí. Compramos los boletos por internet porque había bastante gente."
+        },
+        {
+          "speaker": "Valeria",
+          "text": "¿Y cómo estuvo el viaje en autobús?"
+        },
+        {
+          "speaker": "Diego",
+          "text": "Bien, aunque el autobús salió con una hora de retraso."
+        },
+        {
+          "speaker": "Valeria",
+          "text": "¡Qué lástima! ¿Te ha gustado Oaxaca?"
+        },
+        {
+          "speaker": "Diego",
+          "text": "Muchísimo. He probado el mole y he comprado unas artesanías para mi familia."
+        }
+      ],
+      "context_note": "Oaxaca es conocida por su patrimonio cultural, sus mercados, su gastronomía y sus tradiciones artesanales. Monte Albán es un importante sitio arqueológico de la región. En México son habituales palabras como boleto y hospedarse en contextos de viaje.",
+      "exercises": [
+        {
+          "id": "es_mx_a2_u1_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿De qué experiencia hablan Valeria y Diego?",
+          "options": [
+            "De un viaje a Oaxaca",
+            "De una visita a Monterrey",
+            "De un viaje de trabajo a Puebla"
+          ],
+          "answer": 0,
+          "explanation": "Diego cuenta sus experiencias en Oaxaca y menciona una visita con su hermana."
+        },
+        {
+          "id": "es_mx_a2_u1_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Qué compró Diego para su familia?",
+          "options": [
+            "Unos boletos de autobús",
+            "Unas artesanías",
+            "Unos libros de cocina"
+          ],
+          "answer": 1,
+          "explanation": "Al final del diálogo, Diego dice que ha comprado artesanías para su familia."
+        },
+        {
+          "id": "es_mx_a2_u1_e3",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «Yo ___ estado dos veces en Oaxaca».",
+          "options": [
+            "he",
+            "ha",
+            "han"
+          ],
+          "answer": 0,
+          "explanation": "Con el sujeto yo usamos he: yo he estado."
+        },
+        {
+          "id": "es_mx_a2_u1_e4",
+          "skill": "vocabulary_in_context",
+          "type": "choice",
+          "prompt": "En el diálogo, ¿qué significa «hospedarse»?",
+          "options": [
+            "Alojarse en un lugar",
+            "Comprar comida para el viaje",
+            "Visitar un museo"
+          ],
+          "answer": 0,
+          "explanation": "Hospedarse significa alojarse temporalmente en un hotel, hostal u otro lugar."
+        },
+        {
+          "id": "es_mx_a2_u1_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "¿Por qué es conocida la región de Oaxaca?",
+          "options": [
+            "Por su patrimonio cultural y su gastronomía",
+            "Por sus estaciones de esquí",
+            "Por sus canales y góndolas"
+          ],
+          "answer": 0,
+          "explanation": "Oaxaca destaca por sus tradiciones culturales, mercados, artesanías y gastronomía."
+        }
+      ]
+    }
+  ],
+  "teacher_notes": [
+    "Не добавлять отдельный раздел Vocabulary: новую лексику вводить в контексте диалогов, пояснений и упражнений.",
+    "Pretérito perfecto вводится как форма для опыта и событий, связанных с настоящим; при дальнейшем развитии мексиканского варианта отдельно учитывать более частое употребление pretérito indefinido в ряде контекстов.",
+    "В испанском варианте использовать os habéis alojado как естественную форму vosotros; в мексиканском варианте использовать ustedes и формы третьего лица множественного числа.",
+    "Все диалоги и задания оригинальные и созданы для The Teachers School.",
+    "Материал является частью лид-магнита, а не полноценным курсом A2. Не подключать к боту или Learning Space до завершения и проверки всего испанского каталога."
+  ]
+}

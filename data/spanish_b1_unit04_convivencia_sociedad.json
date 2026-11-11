@@ -6,33 +6,90 @@
   "unit_id": "es_b1_u04_convivencia_sociedad",
   "title": "Convivencia y vida en sociedad",
   "learning_goals": [
-    "Описывать городские и общественные проблемы",
-    "Говорить об услугах и коллективных инициативах",
-    "Использовать конструкции se и придаточные с que"
+    "Describir problemas de convivencia y explicar sus causas y consecuencias",
+    "Hablar de servicios públicos, normas compartidas e iniciativas comunitarias",
+    "Distinguir entre construcciones impersonales con se y pasivas reflejas",
+    "Describir lugares y servicios mediante oraciones de relativo",
+    "Proponer soluciones, expresar acuerdos y negociar prioridades"
   ],
+  "editorial_intro": {
+    "title": "Vivir juntos también se aprende",
+    "text": "La vida en un barrio, una ciudad o una comunidad depende de muchas decisiones pequeñas: cómo se comparten los espacios, qué normas se respetan, cómo se resuelven los conflictos y quién participa en las mejoras. A veces hay intereses distintos: unas personas quieren más zonas verdes, otras necesitan mejor transporte o espacios tranquilos. En este material vas a analizar situaciones de convivencia, hablar de servicios y propuestas colectivas y defender soluciones teniendo en cuenta distintos puntos de vista.",
+    "opening_question": "Si pudieras mejorar una cosa de tu barrio o comunidad, ¿qué cambiarías y a quién afectaría esa decisión?",
+    "objective": "Al terminar, podrás describir una situación comunitaria, explicar necesidades y negociar propuestas utilizando construcciones con se y oraciones de relativo.",
+    "estimated_time": "45–55 minutos",
+    "route": [
+      "Lee una conversación sobre una iniciativa vecinal",
+      "Observa cómo se habla de normas, servicios y responsabilidades",
+      "Practica las construcciones con se y las oraciones de relativo",
+      "Propón una solución y defiéndela ante otras personas"
+    ]
+  },
   "grammar": [
     {
       "topic": "pasiva_refleja_se",
-      "explanation_ru": "Se + глагол в 3-м лице используется, когда важнее действие или результат, чем исполнитель. Глагол согласуется с существительным: Se organizan talleres; Se necesita personal.",
+      "title": "Pasiva refleja: qué se organiza, ofrece o necesita",
+      "explanation_ru": "Пассивная конструкция se + глагол в 3-м лице используется, когда исполнитель не важен или неизвестен, а существительное обозначает то, что подвергается действию. Глагол согласуется с ним: Se organiza una reunión / Se organizan reuniones; Se ha abierto un centro / Se han abierto dos centros. Часто встречается в объявлениях, описании услуг и общественных инициатив. Сравните с активной формой: El ayuntamiento organiza talleres → Se organizan talleres.",
       "examples": [
-        "Se venden entradas en línea.",
-        "Se han renovado varias plazas."
+        "Se han instalado nuevos contenedores.",
+        "En el centro se ofrecen actividades gratuitas.",
+        "Se necesita una solución que beneficie a todo el barrio."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Se organiza varias actividades.",
+          "correct": "Se organizan varias actividades.",
+          "explanation": "В пассивной конструкции глагол согласуется с существительным во множественном числе."
+        },
+        {
+          "incorrect": "Se han abierto una biblioteca nueva.",
+          "correct": "Se ha abierto una biblioteca nueva.",
+          "explanation": "В составной форме haber согласуется с единственным числом существительного."
+        }
       ]
     },
     {
       "topic": "impersonal_se",
-      "explanation_ru": "Безличная se-конструкция обобщает действия людей: Se vive bien aquí; En esta ciudad se trabaja mucho. Глагол обычно стоит в 3-м лице единственного числа.",
+      "title": "Безличная конструкция se: общие правила и опыт",
+      "explanation_ru": "Безличная se-конструкция описывает общие действия, правила или опыт без конкретного исполнителя. Глагол обычно стоит в 3-м лице единственного числа: En este barrio se vive bien; Aquí se puede aparcar; Se trabaja mejor con buena iluminación. Если после se стоит существительное, важно различать безличную конструкцию и пассивную se: Se busca a los responsables (личный объект с a, безличная конструкция) и Se buscan voluntarios (пассивная конструкция, согласование с plural).",
       "examples": [
-        "En este barrio se puede caminar.",
-        "Aquí se come tarde."
+        "En esta plaza se puede descansar.",
+        "En mi comunidad se habla de los problemas en las reuniones.",
+        "Se busca a una persona responsable del proyecto."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "En esta zona se pueden vivir tranquilamente.",
+          "correct": "En esta zona se puede vivir tranquilamente.",
+          "explanation": "При инфинитиве vivir безличная конструкция se + poder остается в единственном числе."
+        },
+        {
+          "incorrect": "Se necesitan mejorar el transporte.",
+          "correct": "Se necesita mejorar el transporte.",
+          "explanation": "Когда se + necesitar сопровождается инфинитивом, глагол стоит в единственном числе."
+        }
       ]
     },
     {
-      "topic": "relativas_que",
-      "explanation_ru": "Que связывает существительное с уточняющей информацией. В этом блоке используются утвердительные описания, где que относится к конкретному объекту или месту.",
+      "topic": "oraciones_relativo_que_donde",
+      "title": "Oraciones de relativo: уточняем людей, места и услуги",
+      "explanation_ru": "Que вводит придаточное определительное и уточняет существительное: un centro que ofrece talleres. Donde относится к месту: una plaza donde se organizan actividades. Если существительное обозначает человека, можно использовать que: las personas que participan. В этом материале рассматриваются определительные придаточные, которые помогают точно описывать объекты и избегать повторов. Обратите внимание на границы придаточного и на то, к какому существительному относится местоимение.",
       "examples": [
-        "Es un barrio que tiene parques.",
-        "Hay un centro que ofrece clases."
+        "Buscamos una asociación que trabaje con jóvenes.",
+        "Es un espacio donde se celebran reuniones.",
+        "Conozco a una vecina que coordina el proyecto."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Es un centro donde ofrece clases.",
+          "correct": "Es un centro que ofrece clases. / Es un centro donde se ofrecen clases.",
+          "explanation": "Que относится к центру, который предлагает занятия; donde указывает на место действия."
+        },
+        {
+          "incorrect": "La plaza que se reúnen los vecinos es pequeña.",
+          "correct": "La plaza donde se reúnen los vecinos es pequeña.",
+          "explanation": "Для места, в котором происходит действие, используется donde."
+        }
       ]
     }
   ],
@@ -40,240 +97,485 @@
     {
       "id": "es_es",
       "name": "Español de España",
-      "pronunciation_note": "Лексика и речевые модели Испании.",
+      "pronunciation_note": "Practica la entonación de propuestas y desacuerdos parciales; presta atención a barrio, acera y residuos.",
       "dialogue": [
         {
-          "speaker": "Nuria",
-          "text": "¿Qué tal el nuevo barrio?"
+          "speaker": "Paola",
+          "text": "¿Cómo va el proyecto para mejorar el barrio?"
         },
         {
-          "speaker": "Sergio",
-          "text": "Me gusta. Se puede ir andando a casi todas partes."
+          "speaker": "Andrés",
+          "text": "Va avanzando, aunque todavía hay desacuerdos sobre qué hacer primero."
         },
         {
-          "speaker": "Nuria",
-          "text": "¿Hay espacios para hacer deporte?"
+          "speaker": "Paola",
+          "text": "Yo empezaría por las aceras. Hay tramos por donde no se puede caminar con seguridad."
         },
         {
-          "speaker": "Sergio",
-          "text": "Sí, han abierto un centro que ofrece clases para vecinos."
+          "speaker": "Andrés",
+          "text": "Tiene sentido, pero también se necesitan espacios donde puedan reunirse los jóvenes."
         },
         {
-          "speaker": "Nuria",
-          "text": "¿Y cómo se llega al trabajo?"
+          "speaker": "Paola",
+          "text": "¿No hay un centro cívico que ofrezca talleres?"
         },
         {
-          "speaker": "Sergio",
-          "text": "Hay una línea de autobús que pasa cada diez minutos."
+          "speaker": "Andrés",
+          "text": "Sí, pero cierra pronto y casi no hay actividades los fines de semana."
         },
         {
-          "speaker": "Nuria",
-          "text": "En mi zona se tarda muchísimo."
+          "speaker": "Paola",
+          "text": "Entonces se podría ampliar el horario y organizar actividades con los vecinos."
         },
         {
-          "speaker": "Sergio",
-          "text": "Aquí también hay problemas: se necesitan más zonas verdes."
+          "speaker": "Andrés",
+          "text": "De acuerdo. También se han recibido quejas por los residuos que se acumulan junto al mercado."
         },
         {
-          "speaker": "Nuria",
-          "text": "¿Se ha hablado del tema en el ayuntamiento?"
+          "speaker": "Paola",
+          "text": "Quizá se necesiten más contenedores y una campaña para separar los residuos."
         },
         {
-          "speaker": "Sergio",
-          "text": "Sí, se ha organizado una reunión para escuchar propuestas."
+          "speaker": "Andrés",
+          "text": "Podríamos presentar las propuestas en la reunión del ayuntamiento. ¿Quién puede participar?"
+        },
+        {
+          "speaker": "Paola",
+          "text": "Cualquier residente del barrio puede asistir; se escuchan propuestas antes de decidir."
+        },
+        {
+          "speaker": "Andrés",
+          "text": "Perfecto. Lo importante es que se acuerden prioridades y que después se informe de los avances."
         }
       ],
-      "context_note": "В Испании муниципалитеты отвечают за многие локальные услуги и общественные пространства. Жители некоторых городов могут участвовать в обсуждениях бюджета и районных инициатив.",
-      "reading": {
-        "title": "Un barrio que cambia",
-        "text": "En el distrito se ha puesto en marcha un proyecto para mejorar los espacios públicos. Se han plantado árboles, se han instalado bancos y se han organizado actividades para distintas edades. También se ha creado una plataforma donde los vecinos pueden comunicar problemas. El proyecto todavía tiene dificultades: algunas calles necesitan reparaciones y se pide mejorar el transporte. La participación vecinal será importante para decidir las próximas medidas."
+      "context_note": "En España, muchos servicios y espacios de proximidad dependen de los ayuntamientos, aunque las competencias también pueden corresponder a comunidades autónomas u otras administraciones. Los barrios pueden organizar asociaciones vecinales y participar en procesos locales. Son habituales términos como barrio, acera, centro cívico y ayuntamiento.",
+      "vocabulary_in_context": [
+        {
+          "term": "acera",
+          "meaning": "parte de la calle reservada para caminar",
+          "example": "Hay tramos de la acera que necesitan reparación."
+        },
+        {
+          "term": "barrio",
+          "meaning": "zona de una ciudad con identidad y vida comunitaria",
+          "example": "El barrio organizó una reunión."
+        },
+        {
+          "term": "residuos",
+          "meaning": "materiales que se desechan y pueden requerir separación o tratamiento",
+          "example": "Se acumulan residuos junto al mercado."
+        },
+        {
+          "term": "dar seguimiento",
+          "meaning": "continuar revisando el desarrollo de una propuesta o tarea",
+          "example": "Un grupo dará seguimiento al mantenimiento."
+        },
+        {
+          "term": "repartir responsabilidades",
+          "meaning": "asignar tareas entre varias personas",
+          "example": "Es importante repartir responsabilidades."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          {
+            "expression": "¿Qué hace más falta?",
+            "function": "Preguntar qué necesidad requiere atención prioritaria."
+          },
+          {
+            "expression": "Se podría empezar por…",
+            "function": "Proponer una primera medida sin presentarla como única opción."
+          },
+          {
+            "expression": "Estoy de acuerdo, pero…",
+            "function": "Mostrar acuerdo parcial e introducir una reserva."
+          },
+          {
+            "expression": "Hacer seguimiento de una propuesta",
+            "function": "Explicar que alguien revisará su avance."
+          }
+        ],
+        "regional_note": "En España, barrio y acera son términos habituales. Ayuntamiento suele referirse al gobierno municipal; las competencias concretas pueden compartirse con otras administraciones."
+      },
+      "guided_practice": {
+        "notice": {
+          "instruction": "Relee el diálogo y observa cómo se describen servicios y necesidades sin mencionar siempre a quien realiza la acción.",
+          "tasks": [
+            "Localiza dos ejemplos de pasiva refleja y explica con qué sustantivo concuerda el verbo.",
+            "Encuentra una construcción impersonal con se y explica por qué el verbo está en singular.",
+            "Identifica dos oraciones de relativo: una introducida por que y otra por donde. ¿Qué información añaden?"
+          ]
+        },
+        "practice": {
+          "instruction": "Completa las frases con la forma o el relativo adecuados. Comprueba la concordancia y el sentido.",
+          "tasks": [
+            "En el centro ___ (organizar) actividades gratuitas cada semana.",
+            "En esta zona se ___ (poder) caminar con tranquilidad.",
+            "Buscamos una asociación ___ trabaje con jóvenes.",
+            "Es un espacio ___ se celebran reuniones vecinales."
+          ],
+          "answers": [
+            "se organizan",
+            "puede",
+            "que",
+            "donde"
+          ]
+        },
+        "communicate": {
+          "instruction": "En equipos, imaginad que formáis parte de una asociación vecinal. Elegid dos necesidades del barrio y negociad qué atender primero.",
+          "tasks": [
+            "Describid dos problemas concretos y a quién afectan.",
+            "Proponed una medida para cada problema usando se podría / se necesita / se organizaría.",
+            "Explicad qué servicio o espacio podría ayudar, con una oración introducida por que o donde.",
+            "Llegad a un acuerdo sobre prioridades y asignad responsabilidades."
+          ]
+        }
+      },
+      "personal_application": {
+        "scenario": "El ayuntamiento invita a residentes a presentar propuestas para mejorar su barrio.",
+        "task": "Prepara una intervención de 8–10 frases para una reunión comunitaria. Describe una necesidad, explica a quién afecta, propone una solución viable y señala cómo se podría evaluar su resultado. Incluye al menos dos construcciones con se y dos oraciones de relativo.",
+        "support": [
+          "En esta zona se necesita…",
+          "Se podrían organizar…",
+          "Es un espacio donde…",
+          "Conozco una asociación que…",
+          "La propuesta permitiría…"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "La pronunciación fluida de las construcciones con se y la entonación al formular propuestas, reservas y acuerdos.",
+        "steps": [
+          "Lee en voz alta: «Se organizan actividades en un centro que abre los fines de semana».",
+          "Compara «Se necesita una solución» y «Se necesitan más soluciones», marcando la concordancia.",
+          "Graba una propuesta de 30–40 segundos y comprueba que las pausas separan el problema, la medida y su justificación."
+        ],
+        "audio_model_status": "pending"
+      },
+      "reflection": {
+        "can_do": [
+          "Puedo describir un problema de convivencia y explicar a quién afecta.",
+          "Puedo hablar de servicios y propuestas usando pasiva refleja e impersonal se.",
+          "Puedo describir personas, espacios y servicios con que y donde.",
+          "Puedo negociar prioridades y presentar una propuesta teniendo en cuenta otros puntos de vista."
+        ]
       },
       "exercises": [
         {
           "id": "es_es_b1_u4_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cuál es la idea principal del texto?",
+          "prompt": "¿Cuál es el propósito principal del proyecto descrito en el texto?",
           "options": [
-            "Un proyecto vecinal mejora los espacios públicos, aunque todavía quedan problemas por resolver.",
-            "El distrito ha terminado todas las obras y ya no necesita nuevas medidas.",
-            "Los vecinos han decidido eliminar las actividades comunitarias."
+            "Recuperar un espacio sin uso mediante una decisión que tenga en cuenta distintas necesidades.",
+            "Construir exclusivamente una instalación deportiva.",
+            "Eliminar la participación de residentes y comerciantes."
           ],
           "answer": 0,
-          "explanation": "El texto presenta avances del proyecto y algunos retos que siguen pendientes."
+          "explanation": "El proyecto busca un uso compartido y surge de un proceso de consulta."
         },
         {
           "id": "es_es_b1_u4_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué problema sigue pendiente en el barrio?",
+          "prompt": "¿Qué se decidió después de la reunión?",
           "options": [
-            "No hay ningún espacio público.",
-            "Se han cerrado todos los centros deportivos.",
-            "Algunas calles necesitan reparaciones y se pide mejorar el transporte."
+            "Dejar el terreno sin cambios.",
+            "Crear un espacio mixto para actividades deportivas y culturales.",
+            "Vender el terreno a un comercio privado."
           ],
-          "answer": 2,
-          "explanation": "La lectura señala reparaciones y transporte como asuntos pendientes."
+          "answer": 1,
+          "explanation": "El acuerdo combina actividades deportivas y culturales."
         },
         {
           "id": "es_es_b1_u4_e3",
           "type": "choice",
-          "skill": "grammar",
-          "prompt": "Completa: «En esta zona ___ actividades para distintas edades».",
+          "skill": "vocabulary",
+          "prompt": "En el texto, ¿qué significa «dar seguimiento al mantenimiento»?",
           "options": [
-            "se organizan",
-            "se organiza",
-            "organiza se"
+            "Dejar de ocuparse del espacio.",
+            "Cambiar el diseño cada semana.",
+            "Continuar comprobando que el espacio se conserve en buenas condiciones."
           ],
-          "answer": 0,
-          "explanation": "En la pasiva refleja el verbo concuerda con el sujeto plural actividades."
+          "answer": 2,
+          "explanation": "Dar seguimiento implica revisar cómo avanza una tarea o responsabilidad."
         },
         {
           "id": "es_es_b1_u4_e4",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Completa la frase impersonal: «En esta ciudad ___ vivir sin coche».",
+          "prompt": "Completa: «Es un centro ___ se organizan actividades para jóvenes».",
           "options": [
-            "se puede",
-            "se pueden",
-            "puede se"
+            "que",
+            "donde",
+            "quien"
           ],
-          "answer": 0,
-          "explanation": "En la construcción impersonal con se, el verbo aparece en tercera persona del singular: se puede vivir."
+          "answer": 1,
+          "explanation": "Donde introduce el lugar en el que ocurre la acción."
         },
         {
           "id": "es_es_b1_u4_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué nivel administrativo se menciona en la nota sobre España?",
+          "prompt": "¿Qué administración se menciona en la nota contextual como responsable de muchos servicios de proximidad?",
           "options": [
-            "La Unión Europea como única autoridad local.",
-            "El municipio.",
-            "La administración de otro país."
+            "El ayuntamiento, aunque algunas competencias corresponden a otras administraciones.",
+            "Únicamente el gobierno estatal.",
+            "Una institución privada internacional."
           ],
-          "answer": 1,
-          "explanation": "La nota sitúa muchos servicios locales en el ámbito municipal."
+          "answer": 0,
+          "explanation": "La nota menciona los ayuntamientos y matiza que las competencias pueden repartirse entre administraciones."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Un barrio que decide en común",
+        "text": "En un barrio de Zaragoza, varias personas propusieron recuperar un solar que llevaba años sin utilizarse. Al principio surgieron opiniones distintas: algunas familias querían una pista deportiva, mientras que otras preferían un jardín con árboles y bancos. Se organizó una reunión en la que participaron residentes, comerciantes y representantes municipales. Después de revisar las necesidades de la zona, se acordó crear un espacio mixto, donde se puedan realizar actividades deportivas y culturales. También se formó un grupo que dará seguimiento al mantenimiento. La propuesta no resolvió todos los problemas del barrio, pero permitió establecer prioridades y repartir responsabilidades."
+      }
     },
     {
       "id": "es_mx",
       "name": "Español de México",
-      "pronunciation_note": "Мексиканский вариант как основа латиноамериканского маршрута.",
+      "pronunciation_note": "Practica la entonación de propuestas y desacuerdos parciales; presta atención a colonia, banqueta y residuos.",
       "dialogue": [
         {
-          "speaker": "Nuria",
-          "text": "¿Qué tal la nueva colonia?"
+          "speaker": "Paola",
+          "text": "¿Cómo va el proyecto para mejorar la colonia?"
         },
         {
-          "speaker": "Sergio",
-          "text": "Me gusta. Se puede llegar caminando a casi todos lados."
+          "speaker": "Andrés",
+          "text": "Va avanzando, aunque todavía hay desacuerdos sobre qué hacer primero."
         },
         {
-          "speaker": "Nuria",
-          "text": "¿Hay espacios para hacer deporte?"
+          "speaker": "Paola",
+          "text": "Yo empezaría por las banquetas. Hay tramos por donde no se puede caminar con seguridad."
         },
         {
-          "speaker": "Sergio",
-          "text": "Sí, abrieron un centro que ofrece clases para los vecinos."
+          "speaker": "Andrés",
+          "text": "Tiene sentido, pero también se necesitan espacios donde puedan reunirse los jóvenes."
         },
         {
-          "speaker": "Nuria",
-          "text": "¿Y cómo te vas al trabajo?"
+          "speaker": "Paola",
+          "text": "¿No hay un centro comunitario que ofrezca talleres?"
         },
         {
-          "speaker": "Sergio",
-          "text": "Hay una ruta de camión que pasa cada diez minutos."
+          "speaker": "Andrés",
+          "text": "Sí, pero cierra temprano y casi no hay actividades los fines de semana."
         },
         {
-          "speaker": "Nuria",
-          "text": "En mi zona se tarda muchísimo en llegar."
+          "speaker": "Paola",
+          "text": "Entonces se podría ampliar el horario y organizar actividades con los vecinos."
         },
         {
-          "speaker": "Sergio",
-          "text": "Aquí también hay problemas: se necesitan más áreas verdes."
+          "speaker": "Andrés",
+          "text": "De acuerdo. También se han recibido quejas por la basura que se acumula junto al mercado."
         },
         {
-          "speaker": "Nuria",
-          "text": "¿Se habló del tema en el ayuntamiento?"
+          "speaker": "Paola",
+          "text": "Quizá se necesiten más contenedores y una campaña para separar los residuos."
         },
         {
-          "speaker": "Sergio",
-          "text": "Sí, se organizó una reunión para escuchar propuestas."
+          "speaker": "Andrés",
+          "text": "Podríamos presentar las propuestas en la reunión de la alcaldía. ¿Quién puede participar?"
+        },
+        {
+          "speaker": "Paola",
+          "text": "Cualquier persona de la colonia puede asistir; se escuchan propuestas antes de decidir."
+        },
+        {
+          "speaker": "Andrés",
+          "text": "Perfecto. Lo importante es que se acuerden prioridades y que después se informe de los avances."
         }
       ],
-      "context_note": "В Мексике городские вопросы могут решаться на уровне муниципалитета; в Мехико административные единицы называются alcaldías. Термины и полномочия местных органов различаются в зависимости от территории.",
-      "reading": {
-        "title": "Una colonia que cambia",
-        "text": "En la colonia comenzó un proyecto para mejorar los espacios públicos. Se plantaron árboles, se instalaron bancas y se organizaron actividades para distintas edades. También se creó una plataforma donde los vecinos pueden reportar problemas. El proyecto todavía tiene dificultades: algunas calles necesitan reparaciones y se pide mejorar el transporte. La participación de los vecinos será importante para decidir las siguientes medidas."
+      "context_note": "En México, muchos asuntos cotidianos se gestionan desde gobiernos municipales; en la Ciudad de México existen alcaldías. La organización y las competencias varían según la entidad y el tipo de servicio. En el habla cotidiana son frecuentes colonia, banqueta, camión y ayuntamiento/alcaldía según el contexto.",
+      "vocabulary_in_context": [
+        {
+          "term": "banqueta",
+          "meaning": "parte de la calle reservada para caminar",
+          "example": "Hay tramos de la banqueta que necesitan reparación."
+        },
+        {
+          "term": "colonia",
+          "meaning": "zona o barrio de una ciudad",
+          "example": "La colonia organizó una reunión."
+        },
+        {
+          "term": "residuos",
+          "meaning": "materiales que se desechan y pueden requerir separación o tratamiento",
+          "example": "Se acumulan residuos junto al mercado."
+        },
+        {
+          "term": "dar seguimiento",
+          "meaning": "continuar revisando el desarrollo de una propuesta o tarea",
+          "example": "Un grupo dará seguimiento al mantenimiento."
+        },
+        {
+          "term": "repartir responsabilidades",
+          "meaning": "asignar tareas entre varias personas",
+          "example": "Es importante repartir responsabilidades."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          {
+            "expression": "¿Qué urge más?",
+            "function": "Preguntar qué necesidad requiere atención prioritaria."
+          },
+          {
+            "expression": "Se podría empezar por…",
+            "function": "Proponer una primera medida sin presentarla como única opción."
+          },
+          {
+            "expression": "Estoy de acuerdo, pero…",
+            "function": "Mostrar acuerdo parcial e introducir una reserva."
+          },
+          {
+            "expression": "Dar seguimiento a una propuesta",
+            "function": "Explicar que alguien revisará su avance."
+          }
+        ],
+        "regional_note": "En México, colonia y banqueta son frecuentes para hablar de zonas urbanas y espacios peatonales. En la Ciudad de México se usa alcaldía para una demarcación territorial; en otros lugares la organización local puede tener otra denominación."
+      },
+      "guided_practice": {
+        "notice": {
+          "instruction": "Relee el diálogo y observa cómo se describen servicios y necesidades sin mencionar siempre a quien realiza la acción.",
+          "tasks": [
+            "Localiza dos ejemplos de pasiva refleja y explica con qué sustantivo concuerda el verbo.",
+            "Encuentra una construcción impersonal con se y explica por qué el verbo está en singular.",
+            "Identifica dos oraciones de relativo: una introducida por que y otra por donde. ¿Qué información añaden?"
+          ]
+        },
+        "practice": {
+          "instruction": "Completa las frases con la forma o el relativo adecuados. Comprueba la concordancia y el sentido.",
+          "tasks": [
+            "En el centro ___ (organizar) actividades gratuitas cada semana.",
+            "En esta zona se ___ (poder) caminar con tranquilidad.",
+            "Buscamos una asociación ___ trabaje con jóvenes.",
+            "Es un espacio ___ se celebran reuniones vecinales."
+          ],
+          "answers": [
+            "se organizan",
+            "puede",
+            "que",
+            "donde"
+          ]
+        },
+        "communicate": {
+          "instruction": "En equipos, imaginen que forman parte de un grupo vecinal. Elijan dos necesidades de la colonia y negocien qué atender primero.",
+          "tasks": [
+            "Describid dos problemas concretos y a quién afectan.",
+            "Proponed una medida para cada problema usando se podría / se necesita / se organizaría.",
+            "Explicad qué servicio o espacio podría ayudar, con una oración introducida por que o donde.",
+            "Llegad a un acuerdo sobre prioridades y asignad responsabilidades."
+          ]
+        }
+      },
+      "personal_application": {
+        "scenario": "La administración local invita a residentes a presentar propuestas para mejorar su colonia.",
+        "task": "Prepara una intervención de 8–10 frases para una reunión comunitaria. Describe una necesidad, explica a quién afecta, propone una solución viable y señala cómo se podría evaluar su resultado. Incluye al menos dos construcciones con se y dos oraciones de relativo.",
+        "support": [
+          "En esta zona se necesita…",
+          "Se podrían organizar…",
+          "Es un espacio donde…",
+          "Conozco una asociación que…",
+          "La propuesta permitiría…"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "La pronunciación fluida de las construcciones con se y la entonación al formular propuestas, reservas y acuerdos.",
+        "steps": [
+          "Lee en voz alta: «Se organizan actividades en un centro que abre los fines de semana».",
+          "Compara «Se necesita una solución» y «Se necesitan más soluciones», marcando la concordancia.",
+          "Graba una propuesta de 30–40 segundos y comprueba que las pausas separan el problema, la medida y su justificación."
+        ],
+        "audio_model_status": "pending"
+      },
+      "reflection": {
+        "can_do": [
+          "Puedo describir un problema de convivencia y explicar a quién afecta.",
+          "Puedo hablar de servicios y propuestas usando pasiva refleja e impersonal se.",
+          "Puedo describir personas, espacios y servicios con que y donde.",
+          "Puedo negociar prioridades y presentar una propuesta teniendo en cuenta otros puntos de vista."
+        ]
       },
       "exercises": [
         {
           "id": "es_mx_b1_u4_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cuál es la idea principal del texto?",
+          "prompt": "¿Cuál es el propósito principal del proyecto descrito en el texto?",
           "options": [
-            "Una iniciativa en la colonia mejora los espacios públicos, pero todavía hay necesidades de transporte y reparación.",
-            "La colonia ha resuelto todos sus problemas de infraestructura.",
-            "Los vecinos se oponen a cualquier cambio en los espacios públicos."
+            "Recuperar un espacio sin uso mediante una decisión que tenga en cuenta distintas necesidades.",
+            "Construir exclusivamente una instalación deportiva.",
+            "Eliminar la participación de residentes y comerciantes."
           ],
           "answer": 0,
-          "explanation": "El texto combina los avances de la iniciativa con los problemas que continúan."
+          "explanation": "El proyecto busca un uso compartido y surge de un proceso de consulta."
         },
         {
           "id": "es_mx_b1_u4_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué necesidad sigue pendiente en la colonia?",
+          "prompt": "¿Qué se decidió después de la reunión?",
           "options": [
-            "Eliminar todas las áreas verdes.",
-            "Cerrar los espacios comunitarios.",
-            "Reparar algunas calles y mejorar el transporte."
+            "Dejar el terreno sin cambios.",
+            "Crear un espacio mixto para actividades deportivas y culturales.",
+            "Vender el terreno a un comercio privado."
           ],
-          "answer": 2,
-          "explanation": "La lectura señala calles y transporte como asuntos por mejorar."
+          "answer": 1,
+          "explanation": "El acuerdo combina actividades deportivas y culturales."
         },
         {
           "id": "es_mx_b1_u4_e3",
           "type": "choice",
-          "skill": "grammar",
-          "prompt": "Completa: «En esta colonia ___ actividades para distintas edades».",
+          "skill": "vocabulary",
+          "prompt": "En el texto, ¿qué significa «dar seguimiento al mantenimiento»?",
           "options": [
-            "se organizan",
-            "se organiza",
-            "organiza se"
+            "Dejar de ocuparse del espacio.",
+            "Cambiar el diseño cada semana.",
+            "Continuar comprobando que el espacio se conserve en buenas condiciones."
           ],
-          "answer": 0,
-          "explanation": "El verbo concuerda en plural con actividades."
+          "answer": 2,
+          "explanation": "Dar seguimiento implica revisar cómo avanza una tarea o responsabilidad."
         },
         {
           "id": "es_mx_b1_u4_e4",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "Completa la frase impersonal: «En esta ciudad ___ vivir sin coche».",
+          "prompt": "Completa: «Es un centro ___ se organizan actividades para jóvenes».",
           "options": [
-            "se puede",
-            "se pueden",
-            "puede se"
+            "que",
+            "donde",
+            "quien"
           ],
-          "answer": 0,
-          "explanation": "En la construcción impersonal con se, el verbo aparece en tercera persona del singular: se puede vivir."
+          "answer": 1,
+          "explanation": "Donde introduce el lugar en el que ocurre la acción."
         },
         {
           "id": "es_mx_b1_u4_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué término administrativo se menciona para la Ciudad de México?",
+          "prompt": "¿Qué nivel de gobierno se menciona en la nota contextual como responsable de muchos asuntos cotidianos?",
           "options": [
-            "Comunidad autónoma.",
-            "Alcaldía.",
-            "Diputación provincial."
+            "El gobierno municipal.",
+            "La Unión Europea.",
+            "Una administración extranjera."
           ],
-          "answer": 1,
-          "explanation": "Alcaldía se usa en el contexto de la CDMX."
+          "answer": 0,
+          "explanation": "La nota señala el ámbito municipal y aclara que la organización varía según el territorio."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Una colonia que decide en conjunto",
+        "text": "En una colonia de Guadalajara, varias personas propusieron recuperar un terreno que llevaba años sin utilizarse. Al principio surgieron opiniones distintas: algunas familias querían una cancha, mientras que otras preferían un jardín con árboles y bancas. Se organizó una reunión en la que participaron residentes, comerciantes y representantes municipales. Después de revisar las necesidades de la zona, se acordó crear un espacio mixto, donde se puedan realizar actividades deportivas y culturales. También se formó un grupo que dará seguimiento al mantenimiento. La propuesta no resolvió todos los problemas de la colonia, pero permitió establecer prioridades y repartir responsabilidades."
+      }
     }
+  ],
+  "teacher_notes": [
+    "No añadir una sección independiente de Vocabulary: el léxico se introduce en diálogos, lecturas y tareas comunicativas.",
+    "Distinguir pasiva refleja y construcción impersonal con se; trabajar concordancia y presencia de complemento personal con a.",
+    "Que introduce una relativa que caracteriza al antecedente; donde se refiere a un lugar. Evitar intercambiarlos sin revisar la estructura.",
+    "Los ejemplos de organización local son orientativos: competencias y denominaciones administrativas varían según el territorio.",
+    "Las tareas abiertas pertenecen a guided practice y personal application; exercises contiene cinco preguntas cerradas por variante.",
+    "Las diferencias léxicas entre España y México son orientativas y no exclusivas.",
+    "No integrar hasta completar la revisión de todo el catálogo español."
   ]
 }

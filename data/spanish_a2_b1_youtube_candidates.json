@@ -116,25 +116,18 @@
       "candidates": [
         {
           "title": "Ir al trabajo",
-          "level": "A2",
-          "region": "Spain (Barcelona)",
+          "creator": "VideoEle — Agustín Iruela",
+          "level": "A2 (publisher-labelled)",
+          "region": "Spain",
           "youtube": "https://www.youtube.com/watch?v=uhTt1Caw2wM",
-          "publisher_page": "https://www.videoele.com/A2-Ir-al-trabajo.html",
-          "fit": "Рабочие и школьные расписания, дорога на работу, транспорт, метро и городская пресса. Содержательно подходит; транскрипт содержит сложные императивы vosotros и насыщенную лексику транспорта — использовать как дополнительное видео с подготовкой, не как легкое аудирование.",
-          "transcript": "reviewed",
-          "status": "content_metadata_and_transcript_verified_audio_preview_pending"
-        },
-        {
-          "title": "Utilizar el ordenador",
-          "level": "A2",
-          "region": "Spain version; Latino answer key exists, audio version needs confirmation",
-          "youtube": null,
-          "publisher_page": "https://www.videoele.com/menu-A2.html",
-          "fit": "Компьютер, приложения и цифровые действия; хорошее дополнение к теме учебы/работы.",
-          "transcript": "listed_on_publisher_page",
-          "status": "exact_video_page_and_youtube_id_not_yet_verified"
+          "publisher_page": "https://videoele.com/A2-Ir-al-trabajo.html",
+          "fit": "Тема работы и учебы через рабочее и школьное расписание, дорогу на работу и транспорт. Официальная страница подтверждает A2; видео включает субтитры. Содержательная нагрузка выше базового A2 из-за транспортной лексики и нескольких грамматических конструкций, поэтому использовать с короткой подготовкой к просмотру.",
+          "transcript": "available_on_publisher_page",
+          "status": "selected_single_video_page_level_topic_and_youtube_id_verified_audio_preview_pending",
+          "rights": "VideoEle CC BY-NC-ND 4.0. Бесплатный просмотр на YouTube; лицензия запрещает коммерческое использование и распространение производных материалов. Не включать в коммерческий лид-магнит без отдельного письменного разрешения; не копировать видео или транскрипт."
         }
-      ]
+      ],
+      "selection_note": "Выбран один ролик, точно связанный с расписанием работы/учебы и дорогой на работу. Он заявлен издателем как A2, но лексически плотный; перед созданием заданий нужен просмотр. Лицензия CC BY-NC-ND ограничивает коммерческое использование."
     },
     {
       "unit": "es_a2_u06_historias_tradiciones",
@@ -398,7 +391,7 @@
       "Mextalki #139 Gentrificación 2.0 and #145 Los Niños Héroes are excluded from the core learner path after reviewing official glossaries containing extensive strong vulgar/sexual expressions. #118 Periódicos mexicanos is excluded because publisher marks it NSFW and discusses nota roja."
     ],
     "last_unit_selection_update": "2026-11-11",
-    "last_unit_selection_note": "Для A2 Salud y bienestar выбран VideoEle ¿Qué le duele? Страница издателя подтверждает A2, тему doler/части тела/недомогания, ссылку на YouTube и транскрипт. Лицензия CC BY-NC-ND исключает коммерческое использование без отдельного разрешения. Прослушивание остается pending."
+    "last_unit_selection_note": "Для A2 Trabajo y estudios выбран VideoEle Ir al trabajo. Проверены точный YouTube ID, издательская страница, уровень A2, содержание и наличие субтитров/транскрипта. Прослушивание не подтверждено; лицензия CC BY-NC-ND не допускает коммерческое использование без отдельного разрешения."
   },
   "removed_or_corrected": [
     "Removed claim that VideoEle video catalogue is cleared for use in The Teachers paid product: NC-ND licence explicitly prohibits commercial use and derivative redistribution.",

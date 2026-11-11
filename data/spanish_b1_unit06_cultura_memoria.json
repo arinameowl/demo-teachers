@@ -145,14 +145,14 @@
           "id": "es_es_b1_u6_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "Según la nota cultural de México, ¿qué afirmación sobre Día de Muertos es adecuada?",
+          "prompt": "Según la nota cultural de España, ¿qué afirmación sobre las fiestas locales es adecuada?",
           "options": [
-            "Las prácticas y los símbolos varían entre regiones y familias.",
-            "Todas las familias lo celebran exactamente igual.",
-            "Es la única tradición cultural del país."
+            "Pueden incluir música, actividades en la calle y gastronomía, y varían según la región.",
+            "Se celebran siempre de la misma manera en todo el país.",
+            "Solo tienen lugar en grandes ciudades."
           ],
           "answer": 0,
-          "explanation": "La nota evita generalizar una celebración diversa."
+          "explanation": "La nota explica que las fiestas locales pueden tener formatos distintos según la historia y las costumbres de cada región."
         }
       ]
     },

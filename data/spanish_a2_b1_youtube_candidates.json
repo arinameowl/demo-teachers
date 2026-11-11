@@ -353,11 +353,11 @@
           "title": "¡Vaya memoria!",
           "level": "B1",
           "region": "Spain (Andalucía)",
-          "youtube": "https://www.youtube.com/watch?v=...",
+          "youtube": "https://www.youtube.com/watch?v=WKImB0zlWWg",
           "publisher_page": "https://www.videoele.com/B1-Vaya-memoria.html",
           "fit": "Воспоминания о поездке по Севилье и Кордове, культурные места, гастрономия, исправление ошибочной памяти. Сильное тематическое совпадение.",
           "transcript": "reviewed",
-          "status": "content_metadata_and_transcript_verified_youtube_id_pending"
+          "status": "content_metadata_and_transcript_verified_audio_preview_pending"
         }
       ]
     }
@@ -383,11 +383,12 @@
     "Find YouTube sources whose licence or written permission allows commercial educational use, or obtain free written permission from creators.",
     "Continue Mexican-specific search with verified Mexican speakers, avoiding generic Latino labels.",
     "Do not build comprehension exercises until exact video has been listened to and transcript checked.",
-    "Use VideoEle only for internal research / candidate evaluation unless written commercial permission is obtained."
+    "Use VideoEle only for internal research / candidate evaluation unless written commercial permission is obtained.",
+    "Для es_mx искать не просто Latino: требуется страна говорящего (México) и подходящий уровень каждого конкретного ролика."
   ],
   "audit": {
     "checked_on": "2026-11-11",
-    "method": "Сверены официальные каталоги VideoEle, отдельные страницы видео, заявленные CEFR-цели и доступные транскрипты. Прослушивание самих видеодорожек не подтверждено: YouTube embed блокирует автоматическое воспроизведение в среде проверки. Поэтому аудиотемп, интонация и качество произношения остаются pending.",
+    "method": "Сверены официальные каталоги VideoEle, отдельные страницы видео, заявленные CEFR-цели и доступные транскрипты. Прослушивание самих видеодорожек не подтверждено: YouTube embed блокирует автоматическое воспроизведение в среде проверки. Поэтому аудиотемп, интонация и качество произношения остаются pending. Дополнительно подтверждена отдельная версия B1 Me trajo este recuerdo с диктором Jorge Carrillo из Мексики; сам сюжет и культурные реалии остаются испанскими (Валенсия).",
     "key_finding": "VideoEle бесплатно предоставляет видео и учебные PDF, но официальная лицензия запрещает коммерческое использование и распространение производных материалов. Для платного продукта The Teachers нельзя включать эти видео/транскрипты/задания без отдельного письменного разрешения.",
     "license_source": "https://videoele.com/legal.html",
     "license_summary": "CC BY-NC-ND 4.0: требуется атрибуция; запрещено коммерческое использование; запрещено распространять адаптированные/производные материалы.",
@@ -406,6 +407,45 @@
     "Removed 'El fin de semana pasado' from A2 unit06 stories as a traditions match; it is a past-tense city narrative about Madrid, only a partial stories fit.",
     "Removed 'Cuando era pequeña...' as a celebrations resource; it is a childhood memory/nature story.",
     "Removed 'Me relaja... pero me preocupa...' and 'Supersticiones y suerte' as direct matches for media literacy; both concern opinions/feelings and social topics, not news/media.",
-    "Marked all audio preview statuses pending because actual sound playback was blocked during this check; transcript and publisher metadata are not a substitute for listening."
-  ]
+    "Marked all audio preview statuses pending because actual sound playback was blocked during this check; transcript and publisher metadata are not a substitute for listening.",
+    "Подтверждено, что Me trajo este recuerdo (latino) озвучен Jorge Carrillo (México). Это мексиканский голос, но не мексиканская культурная тема."
+  ],
+  "mexican_candidates": {
+    "es_mx": [
+      {
+        "unit": "es_b1_unit06_cultura_memoria",
+        "title": "Me trajo este recuerdo (latino)",
+        "level": "B1",
+        "speaker_region": "Mexico",
+        "speaker": "Jorge Carrillo (México)",
+        "youtube": null,
+        "publisher_page": "https://www.videoele.com/B1-Me-trajo-este-recuerdo-latino.html",
+        "transcript": "https://www.videoele.com/Archivos/B1_Me-trajo-recuerdo-latino-transcripcion.pdf",
+        "fit": "Мексиканский диктор озвучивает материал о Las Fallas в Валенсии. Лексика и культурное содержание относятся к Испании, но вариант полезен именно как образец мексиканского произношения в рамках темы культуры/памяти. Транскрипт проверен.",
+        "status": "mexican_voice_confirmed_youtube_id_and_audio_preview_pending",
+        "license": "CC BY-NC-ND 4.0 — не включать в платный продукт без письменного разрешения."
+      },
+      {
+        "unit": "cross_level",
+        "title": "Spanish with CJ — real interviews",
+        "level": "A2–B2 varies by speaker and episode",
+        "speaker_region": "Mexico among several countries",
+        "youtube": "https://www.youtube.com/@SpanishwithCJ",
+        "publisher_page": "https://spanishwithcj.com/",
+        "fit": "Бесплатные интервью с реальными говорящими из Чили, Венесуэлы, Мексики и Аргентины; на сайте заявлены транскрипты и уровни A1–C1. Отбирать только интервью с подтвержденным мексиканским участником и конкретным уровнем.",
+        "status": "source_verified_specific_mexican_episode_not_yet_selected",
+        "access": "Сайт заявляет бесплатный доступ без регистрации."
+      },
+      {
+        "unit": "cross_level",
+        "title": "Spanish Playground — Mexican beginner videos",
+        "level": "Principiante/A1, not yet confirmed A2/B1",
+        "speaker_region": "Mexico",
+        "youtube": "https://www.youtube.com/@SpanishPlayground",
+        "publisher_page": "https://espanol.yabla.com/Spanish-Playground-series-4811",
+        "fit": "Yabla подтверждает мексиканский вариант и beginner-level у отдельных роликов, включая Presentaciones y saludos и Buena Gente S1E1. Это полезно для начального мексиканского аудирования, но не следует маркировать как A2/B1 без проверки конкретного видео.",
+        "status": "region_and_beginner_level_verified_access_and_adult_suitability_pending"
+      }
+    ]
+  }
 }

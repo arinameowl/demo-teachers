@@ -193,7 +193,7 @@
             "Sus planes de vacaciones",
             "Sus comidas favoritas"
           ],
-          "answer": 1,
+          "answer": 0,
           "explanation": "Durante la conversación se presentan, hablan de dónde son, dónde viven y en qué trabajan."
         },
         {
@@ -307,7 +307,7 @@
             "De sus planes para viajar",
             "De sus familias y mascotas"
           ],
-          "answer": 1,
+          "answer": 0,
           "explanation": "Al conocerse, Mariana y Luis comparten información básica sobre su origen y su trabajo."
         },
         {

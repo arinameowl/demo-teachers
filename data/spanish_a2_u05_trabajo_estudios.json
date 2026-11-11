@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "level": "A2",
+  "category": "lesson",
+  "language": "es",
+  "unit_id": "es_a2_u05_trabajo_estudios",
+  "title": "Trabajo y estudios",
+  "learning_goals": [
+    "Рассказывать о завершенных рабочих и учебных событиях",
+    "Описывать, что произошло на встрече, занятии или собеседовании",
+    "Уточнять последовательность событий и задавать вопросы о прошлом",
+    "Образовывать и употреблять pretérito indefinido правильных и частотных неправильных глаголов"
+  ],
+  "grammar": [
+    {
+      "topic": "preterito_indefinido_regular",
+      "explanation_ru": "Pretérito indefinido используется для завершенных событий в прошлом, часто с указанием конкретного времени. У правильных глаголов окончания зависят от группы: -ar (hablé, hablaste, habló…) и -er/-ir (comí, viviste, escribieron…).",
+      "examples": [
+        "Ayer terminé un informe.",
+        "El lunes asistimos a una reunión.",
+        "La semana pasada aprendí una herramienta nueva."
+      ]
+    },
+    {
+      "topic": "preterito_indefinido_irregular",
+      "explanation_ru": "У частотных глаголов есть неправильные формы: tener → tuve, estar → estuve, hacer → hice, ir/ser → fui, poder → pude. Их нужно запоминать как отдельные формы.",
+      "examples": [
+        "Tuve una entrevista ayer.",
+        "Hice una presentación.",
+        "Fui a la universidad."
+      ]
+    },
+    {
+      "topic": "sequence_markers_past",
+      "explanation_ru": "Чтобы рассказать о последовательности событий, используйте primero, después, luego, más tarde и al final. Эти слова помогают сделать рассказ понятным.",
+      "examples": [
+        "Primero revisé los datos.",
+        "Después hablé con mi equipo.",
+        "Al final envié el informe."
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "dialogue": [
+        {
+          "speaker": "Clara",
+          "text": "¿Qué tal te fue la entrevista de ayer, Pablo?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Bastante bien. Llegué a la oficina a las nueve y hablé con la responsable del equipo."
+        },
+        {
+          "speaker": "Clara",
+          "text": "¿Te preguntaron por tu experiencia?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Sí. Les conté que trabajé dos años en una empresa pequeña y que coordiné varios proyectos."
+        },
+        {
+          "speaker": "Clara",
+          "text": "¿Tuviste que hacer alguna prueba?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Sí, preparé una presentación breve y después respondí a unas preguntas."
+        },
+        {
+          "speaker": "Clara",
+          "text": "¿Y qué te pareció el ambiente?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Muy profesional. También conocí a dos personas del departamento."
+        },
+        {
+          "speaker": "Clara",
+          "text": "¿Cuándo te darán una respuesta?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Me dijeron que decidirán la próxima semana. Ahora toca esperar."
+        }
+      ],
+      "context_note": "En España es habitual llamar entrevista de trabajo al proceso de selección y departamento a un área de la empresa. En muchos procesos se combina una conversación con una prueba o presentación.",
+      "exercises": [
+        {
+          "id": "es_es_a2_u5_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿Qué cuenta Pablo?",
+          "options": [
+            "Cómo fue una entrevista de trabajo",
+            "Cómo organizó unas vacaciones",
+            "Cómo cambió de universidad"
+          ],
+          "answer": 0,
+          "explanation": "Pablo describe su entrevista de trabajo del día anterior."
+        },
+        {
+          "id": "es_es_a2_u5_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Qué hizo Pablo durante la entrevista?",
+          "options": [
+            "Preparó una presentación y respondió preguntas",
+            "Firmó un contrato inmediatamente",
+            "Visitó tres oficinas"
+          ],
+          "answer": 0,
+          "explanation": "Pablo preparó una presentación breve y después respondió a unas preguntas."
+        },
+        {
+          "id": "es_es_a2_u5_e3",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «Ayer yo ___ a la oficina a las nueve».",
+          "options": [
+            "llegué",
+            "llego",
+            "llegaba"
+          ],
+          "answer": 0,
+          "explanation": "Ayer señala un momento terminado; usamos pretérito indefinido: llegué."
+        },
+        {
+          "id": "es_es_a2_u5_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Elige la forma correcta de tener en pretérito indefinido: «Yo ___ una entrevista».",
+          "options": [
+            "tenía",
+            "tuve",
+            "tengo"
+          ],
+          "answer": 1,
+          "explanation": "La forma de yo del pretérito indefinido de tener es tuve."
+        },
+        {
+          "id": "es_es_a2_u5_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "En el contexto laboral, ¿qué significa «departamento»?",
+          "options": [
+            "Un área o división de una empresa",
+            "Un apartamento",
+            "Una oficina de correos"
+          ],
+          "answer": 0,
+          "explanation": "En una empresa, departamento es un área con funciones específicas, por ejemplo, recursos humanos."
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "dialogue": [
+        {
+          "speaker": "Sofía",
+          "text": "¿Cómo te fue en tu primera semana en la empresa, Mateo?"
+        },
+        {
+          "speaker": "Mateo",
+          "text": "Muy bien. El lunes conocí al equipo y el martes tuve una capacitación."
+        },
+        {
+          "speaker": "Sofía",
+          "text": "¿Qué aprendiste en la capacitación?"
+        },
+        {
+          "speaker": "Mateo",
+          "text": "Aprendí a usar el sistema de ventas y preparé mi primer reporte."
+        },
+        {
+          "speaker": "Sofía",
+          "text": "¿Tuviste mucho trabajo?"
+        },
+        {
+          "speaker": "Mateo",
+          "text": "Un poco. También fui a una reunión con mi supervisora."
+        },
+        {
+          "speaker": "Sofía",
+          "text": "¿Te explicaron tus responsabilidades?"
+        },
+        {
+          "speaker": "Mateo",
+          "text": "Sí. Me dieron una lista de tareas y resolví algunas dudas."
+        },
+        {
+          "speaker": "Sofía",
+          "text": "¡Qué bueno! ¿Te gustó el equipo?"
+        },
+        {
+          "speaker": "Mateo",
+          "text": "Sí, todos fueron muy amables y me ayudaron bastante."
+        }
+      ],
+      "context_note": "En México se usa capacitación para formación relacionada con el trabajo y reporte para un informe o documento de resultados. Supervisora es una forma habitual de referirse a la persona que coordina el trabajo de un equipo.",
+      "exercises": [
+        {
+          "id": "es_mx_a2_u5_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿De qué habla Mateo?",
+          "options": [
+            "De su primera semana en una empresa",
+            "De un examen de conducir",
+            "De un viaje de negocios"
+          ],
+          "answer": 0,
+          "explanation": "Mateo cuenta qué hizo y qué aprendió durante su primera semana de trabajo."
+        },
+        {
+          "id": "es_mx_a2_u5_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Qué aprendió Mateo en la capacitación?",
+          "options": [
+            "A usar el sistema de ventas",
+            "A preparar comida",
+            "A conducir un autobús"
+          ],
+          "answer": 0,
+          "explanation": "Mateo dice que aprendió a usar el sistema de ventas."
+        },
+        {
+          "id": "es_mx_a2_u5_e3",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «El martes yo ___ una capacitación».",
+          "options": [
+            "tuve",
+            "tengo",
+            "tenía"
+          ],
+          "answer": 0,
+          "explanation": "El martes se presenta como un evento terminado; la forma de indefinido es tuve."
+        },
+        {
+          "id": "es_mx_a2_u5_e4",
+          "skill": "vocabulary_in_context",
+          "type": "choice",
+          "prompt": "En México, ¿qué significa «capacitación» en el diálogo?",
+          "options": [
+            "Formación para aprender tareas o habilidades del trabajo",
+            "Una reunión para celebrar un cumpleaños",
+            "Un permiso para salir temprano"
+          ],
+          "answer": 0,
+          "explanation": "Capacitación es formación para desarrollar conocimientos y habilidades, especialmente en el trabajo."
+        },
+        {
+          "id": "es_mx_a2_u5_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "¿Quién es la «supervisora» de Mateo?",
+          "options": [
+            "La persona que coordina o revisa su trabajo",
+            "Una clienta de la empresa",
+            "La directora de su antigua escuela"
+          ],
+          "answer": 0,
+          "explanation": "La supervisora coordina, orienta o revisa el trabajo de otras personas."
+        }
+      ]
+    }
+  ],
+  "teacher_notes": [
+    "Не добавлять отдельный раздел Vocabulary.",
+    "Pretérito indefinido вводится для завершенных событий с временными маркерами: ayer, el lunes, la semana pasada.",
+    "В мексиканском диалоге использовать capacitación и reporte; в испанском — entrevista de trabajo, departamento. Это различия частотности, а не жесткие запреты.",
+    "Материал — часть лид-магнита. Не интегрировать до завершения всего испанского каталога."
+  ]
+}

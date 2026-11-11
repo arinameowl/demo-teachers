@@ -264,40 +264,40 @@
           "id": "es_es_b1_u4_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cuál es el propósito principal del proyecto descrito en el texto?",
+          "prompt": "¿Qué objetivo persiguen Paola y Andrés con sus propuestas?",
           "options": [
-            "Recuperar un espacio sin uso mediante una decisión que tenga en cuenta distintas necesidades.",
-            "Construir exclusivamente una instalación deportiva.",
-            "Eliminar la participación de residentes y comerciantes."
+            "Mejorar la convivencia del barrio o la colonia atendiendo distintas necesidades del espacio público.",
+            "Construir únicamente un centro deportivo sin consultar a nadie.",
+            "Trasladar todos los servicios municipales a otra zona."
           ],
           "answer": 0,
-          "explanation": "El proyecto busca un uso compartido y surge de un proceso de consulta."
+          "explanation": "Hablan de mejorar la seguridad peatonal, crear espacios para jóvenes y atender los residuos."
         },
         {
           "id": "es_es_b1_u4_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué se decidió después de la reunión?",
+          "prompt": "¿Dónde proponen presentar las propuestas vecinales?",
           "options": [
-            "Dejar el terreno sin cambios.",
-            "Crear un espacio mixto para actividades deportivas y culturales.",
-            "Vender el terreno a un comercio privado."
+            "En la reunión del ayuntamiento.",
+            "En una reunión escolar.",
+            "En una oficina privada."
           ],
-          "answer": 1,
-          "explanation": "El acuerdo combina actividades deportivas y culturales."
+          "answer": 0,
+          "explanation": "Andrés propone presentar las propuestas en la reunión del ayuntamiento."
         },
         {
           "id": "es_es_b1_u4_e3",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "En el texto, ¿qué significa «dar seguimiento al mantenimiento»?",
+          "prompt": "En la conversación, ¿qué significa «se escuchan propuestas antes de decidir»?",
           "options": [
-            "Dejar de ocuparse del espacio.",
-            "Cambiar el diseño cada semana.",
-            "Continuar comprobando que el espacio se conserve en buenas condiciones."
+            "Las personas pueden presentar sus ideas y estas se consideran antes de tomar una decisión.",
+            "Las propuestas se rechazan automáticamente.",
+            "Solo una persona puede expresar su opinión."
           ],
-          "answer": 2,
-          "explanation": "Dar seguimiento implica revisar cómo avanza una tarea o responsabilidad."
+          "answer": 0,
+          "explanation": "La expresión indica que se reciben y consideran las ideas de las personas participantes."
         },
         {
           "id": "es_es_b1_u4_e4",
@@ -501,40 +501,40 @@
           "id": "es_mx_b1_u4_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cuál es el propósito principal del proyecto descrito en el texto?",
+          "prompt": "¿Qué objetivo persiguen Paola y Andrés con sus propuestas?",
           "options": [
-            "Recuperar un espacio sin uso mediante una decisión que tenga en cuenta distintas necesidades.",
-            "Construir exclusivamente una instalación deportiva.",
-            "Eliminar la participación de residentes y comerciantes."
+            "Mejorar la convivencia del barrio o la colonia atendiendo distintas necesidades del espacio público.",
+            "Construir únicamente un centro deportivo sin consultar a nadie.",
+            "Trasladar todos los servicios municipales a otra zona."
           ],
           "answer": 0,
-          "explanation": "El proyecto busca un uso compartido y surge de un proceso de consulta."
+          "explanation": "Hablan de mejorar la seguridad peatonal, crear espacios para jóvenes y atender los residuos."
         },
         {
           "id": "es_mx_b1_u4_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué se decidió después de la reunión?",
+          "prompt": "¿Dónde proponen presentar las propuestas de la colonia?",
           "options": [
-            "Dejar el terreno sin cambios.",
-            "Crear un espacio mixto para actividades deportivas y culturales.",
-            "Vender el terreno a un comercio privado."
+            "En la reunión de la alcaldía.",
+            "En una reunión escolar.",
+            "En una oficina privada."
           ],
-          "answer": 1,
-          "explanation": "El acuerdo combina actividades deportivas y culturales."
+          "answer": 0,
+          "explanation": "Andrés propone presentar las propuestas en la reunión de la alcaldía."
         },
         {
           "id": "es_mx_b1_u4_e3",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "En el texto, ¿qué significa «dar seguimiento al mantenimiento»?",
+          "prompt": "En la conversación, ¿qué significa «se escuchan propuestas antes de decidir»?",
           "options": [
-            "Dejar de ocuparse del espacio.",
-            "Cambiar el diseño cada semana.",
-            "Continuar comprobando que el espacio se conserve en buenas condiciones."
+            "Las personas pueden presentar sus ideas y estas se consideran antes de tomar una decisión.",
+            "Las propuestas se rechazan automáticamente.",
+            "Solo una persona puede expresar su opinión."
           ],
-          "answer": 2,
-          "explanation": "Dar seguimiento implica revisar cómo avanza una tarea o responsabilidad."
+          "answer": 0,
+          "explanation": "La expresión indica que se reciben y consideran las ideas de las personas participantes."
         },
         {
           "id": "es_mx_b1_u4_e4",

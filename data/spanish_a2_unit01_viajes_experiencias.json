@@ -14,7 +14,7 @@
   "grammar": [
     {
       "topic": "pretérito_perfecto",
-      "explanation_ru": "Pretérito perfecto образуется по схеме haber в настоящем времени + participio: he, has, ha, hemos, habéis, han + причастие. В Испании форму часто используют для опыта без точной даты и событий в незавершенном временном периоде: alguna vez, nunca, hoy, esta semana, este año.",
+      "explanation_ru": "Pretérito perfecto образуется по схеме haber в настоящем времени + participio: he, has, ha, hemos, habéis, han + причастие. В Испании форму часто используют для опыта без точной даты и событий в незавершенном временном периоде: alguna vez, nunca, hoy, esta semana, este año. В варианте Испании в диалоге встречаются местоимения os и формы vosotros: os habéis alojado, ¿habéis visitado…?, ¿os ha dado tiempo…? Os относится к vosotros и здесь используется с возвратными или другими глагольными конструкциями. В мексиканском варианте для обращения к нескольким людям используется ustedes. В этом материале формы vosotros/os важны для понимания испанского диалога.",
       "examples": [
         "¿Has viajado alguna vez solo/a?",
         "Este año hemos visitado dos ciudades.",
@@ -28,7 +28,8 @@
         "España: Esta semana he visitado Toledo.",
         "México: Esta semana visité Puebla.",
         "En 2022 viajé a Perú."
-      ]
+      ],
+      "note_ru": "В диалоге также встречаются формы imperfecto (teníamos, había, estaban) для описания фона и состояния. Здесь их нужно понимать по контексту; подробное изучение imperfecto предусмотрено в отдельном материале."
     },
     {
       "topic": "participios_regulares_e_irregulares",

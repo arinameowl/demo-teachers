@@ -51,48 +51,6 @@
     {
       "id": "es_es",
       "name": "Español de España",
-      "vocabulary": [
-        {
-          "es": "acera",
-          "ru": "тротуар"
-        },
-        {
-          "es": "cercanías",
-          "ru": "пригородная электричка"
-        },
-        {
-          "es": "metro",
-          "ru": "метро"
-        },
-        {
-          "es": "autobús",
-          "ru": "автобус"
-        },
-        {
-          "es": "estación",
-          "ru": "станция; вокзал"
-        },
-        {
-          "es": "farmacia",
-          "ru": "аптека"
-        },
-        {
-          "es": "ayuntamiento",
-          "ru": "мэрия"
-        },
-        {
-          "es": "girar",
-          "ru": "поворачивать"
-        },
-        {
-          "es": "todo recto",
-          "ru": "все время прямо"
-        },
-        {
-          "es": "billete",
-          "ru": "билет"
-        }
-      ],
       "dialogue": [
         {
           "speaker": "Turista",
@@ -198,48 +156,6 @@
     {
       "id": "es_mx",
       "name": "Español de México",
-      "vocabulary": [
-        {
-          "es": "banqueta",
-          "ru": "тротуар"
-        },
-        {
-          "es": "metro",
-          "ru": "метро"
-        },
-        {
-          "es": "camión",
-          "ru": "автобус (в ряде регионов)"
-        },
-        {
-          "es": "estación",
-          "ru": "станция"
-        },
-        {
-          "es": "farmacia",
-          "ru": "аптека"
-        },
-        {
-          "es": "alcaldía",
-          "ru": "администрация района / мэрия в контексте CDMX"
-        },
-        {
-          "es": "cruzar",
-          "ru": "переходить"
-        },
-        {
-          "es": "dar vuelta",
-          "ru": "поворачивать"
-        },
-        {
-          "es": "derecho",
-          "ru": "прямо"
-        },
-        {
-          "es": "tarjeta de transporte",
-          "ru": "транспортная карта"
-        }
-      ],
       "dialogue": [
         {
           "speaker": "Visitante",

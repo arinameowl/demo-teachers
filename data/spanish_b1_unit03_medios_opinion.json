@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "level": "B1",
+  "category": "lesson",
+  "language": "es",
+  "unit_id": "es_b1_u03_medios_opinion",
+  "title": "Medios, información y opinión",
+  "learning_goals": [
+    "Обсуждать новости и источники информации",
+    "Выражать мнение, сомнение и степень уверенности",
+    "Различать indicativo и subjuntivo после конструкций мнения"
+  ],
+  "grammar": [
+    {
+      "topic": "opinion_indicativo_subjuntivo",
+      "explanation_ru": "После creo que / pienso que обычно используется indicativo при утверждении мнения. После no creo que / no pienso que часто используется subjuntivo, так как выражается сомнение или отрицание.",
+      "examples": [
+        "Creo que la noticia es importante.",
+        "No creo que sea una fuente fiable."
+      ]
+    },
+    {
+      "topic": "conectores_argumentacion",
+      "explanation_ru": "Для аргументации используйте por un lado / por otro lado, sin embargo, además, por eso, aunque. Они обозначают контраст, причину и дополнительный аргумент.",
+      "examples": [
+        "La propuesta es útil; sin embargo, cuesta mucho.",
+        "Además, faltan datos."
+      ]
+    },
+    {
+      "topic": "fuentes_verificacion",
+      "explanation_ru": "Для обсуждения достоверности подходят según el informe, la fuente afirma que, los datos indican que, comprobar la información. Различайте факт, мнение и предположение.",
+      "examples": [
+        "Según el informe, el uso ha aumentado.",
+        "Conviene comprobar la fecha."
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "pronunciation_note": "Лексика и речевые модели Испании.",
+      "dialogue": [
+        {
+          "speaker": "Irene",
+          "text": "¿Has leído el artículo sobre la inteligencia artificial?"
+        },
+        {
+          "speaker": "Álvaro",
+          "text": "Sí. Creo que puede ser una herramienta útil."
+        },
+        {
+          "speaker": "Irene",
+          "text": "Estoy de acuerdo, aunque no creo que resuelva todos los problemas."
+        },
+        {
+          "speaker": "Álvaro",
+          "text": "Además, el artículo no explica de dónde vienen los datos."
+        },
+        {
+          "speaker": "Irene",
+          "text": "Por eso conviene comprobar quién lo ha publicado."
+        },
+        {
+          "speaker": "Álvaro",
+          "text": "Según el texto, la encuesta se hizo entre estudiantes universitarios."
+        },
+        {
+          "speaker": "Irene",
+          "text": "La muestra quizá no represente a toda la población."
+        },
+        {
+          "speaker": "Álvaro",
+          "text": "Por un lado, los resultados son interesantes; por otro, tienen límites."
+        },
+        {
+          "speaker": "Irene",
+          "text": "¿Compartirías la noticia?"
+        },
+        {
+          "speaker": "Álvaro",
+          "text": "Sí, pero añadiría una nota sobre esas limitaciones."
+        }
+      ],
+      "context_note": "В Испании новости получают из общественных и частных СМИ, цифровых изданий, радио и социальных сетей. При сравнении публикаций полезно проверять дату, автора, первоисточник данных и методологию.",
+      "reading": {
+        "title": "Leer antes de compartir",
+        "text": "Un informe sobre hábitos digitales se difundió rápidamente en redes sociales. El titular afirmaba que casi todos los jóvenes preferían informarse mediante vídeos cortos. Sin embargo, el estudio se había realizado con un grupo reducido de estudiantes de una sola universidad. Los especialistas recomendaron consultar la metodología antes de generalizar los resultados. Una cifra puede ser correcta y, aun así, ofrecer una imagen incompleta de la realidad."
+      },
+      "exercises": [
+        {
+          "id": "es_es_b1_u3_e1",
+          "type": "choice",
+          "skill": "gist",
+          "prompt": "¿Qué limitación tenía el estudio?",
+          "options": [
+            "Se había realizado con un grupo reducido de estudiantes de una sola universidad.",
+            "Que la actividad se canceló sin explicación",
+            "Que todos rechazaron la propuesta"
+          ],
+          "answer": 0,
+          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+        },
+        {
+          "id": "es_es_b1_u3_e2",
+          "type": "choice",
+          "skill": "detail",
+          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "options": [
+            "El texto presenta una situación relacionada con el tema y sus matices",
+            "El texto afirma que todas las situaciones son idénticas",
+            "El texto no ofrece información concreta"
+          ],
+          "answer": 0,
+          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+        },
+        {
+          "id": "es_es_b1_u3_e3",
+          "type": "choice",
+          "skill": "grammar",
+          "prompt": "No creo que esa información ___ completa.",
+          "options": [
+            "sea",
+            "es",
+            "será"
+          ],
+          "answer": 0,
+          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+        },
+        {
+          "id": "es_es_b1_u3_e4",
+          "type": "choice",
+          "skill": "vocabulary",
+          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "options": [
+            "Sin embargo",
+            "Por la mañana",
+            "Al lado de"
+          ],
+          "answer": 0,
+          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+        },
+        {
+          "id": "es_es_b1_u3_e5",
+          "type": "choice",
+          "skill": "culture",
+          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "options": [
+            "Que puede variar según la región y las familias",
+            "Que se practica igual en todos los lugares",
+            "Que nunca cambia con el tiempo"
+          ],
+          "answer": 0,
+          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "pronunciation_note": "Мексиканский вариант как основа латиноамериканского маршрута.",
+      "dialogue": [
+        {
+          "speaker": "Irene",
+          "text": "¿Leíste la nota sobre la inteligencia artificial?"
+        },
+        {
+          "speaker": "Álvaro",
+          "text": "Sí. Creo que puede ser una herramienta útil."
+        },
+        {
+          "speaker": "Irene",
+          "text": "Estoy de acuerdo, aunque no creo que resuelva todos los problemas."
+        },
+        {
+          "speaker": "Álvaro",
+          "text": "Además, la nota no explica de dónde salen los datos."
+        },
+        {
+          "speaker": "Irene",
+          "text": "Por eso conviene revisar quién la publicó."
+        },
+        {
+          "speaker": "Álvaro",
+          "text": "Según el texto, la encuesta se hizo entre estudiantes universitarios."
+        },
+        {
+          "speaker": "Irene",
+          "text": "La muestra quizá no represente a toda la población."
+        },
+        {
+          "speaker": "Álvaro",
+          "text": "Por un lado, los resultados son interesantes; por otro, tienen límites."
+        },
+        {
+          "speaker": "Irene",
+          "text": "¿Compartirías la noticia?"
+        },
+        {
+          "speaker": "Álvaro",
+          "text": "Sí, pero agregaría una nota sobre esas limitaciones."
+        }
+      ],
+      "context_note": "В Мексике медиасреда включает национальные и региональные издания, радио, телевидение и цифровые проекты. Для проверки новости важно находить первоисточник и сопоставлять независимые публикации.",
+      "reading": {
+        "title": "Leer antes de compartir",
+        "text": "Un informe sobre hábitos digitales circuló rápidamente en redes sociales. El encabezado afirmaba que casi todos los jóvenes preferían informarse mediante videos cortos. Sin embargo, el estudio se había realizado con un grupo pequeño de estudiantes de una sola universidad. Los especialistas recomendaron revisar la metodología antes de generalizar los resultados. Una cifra puede ser correcta y, aun así, ofrecer una imagen incompleta de la realidad."
+      },
+      "exercises": [
+        {
+          "id": "es_mx_b1_u3_e1",
+          "type": "choice",
+          "skill": "gist",
+          "prompt": "¿Qué recomendaron los especialistas?",
+          "options": [
+            "Revisar la metodología antes de generalizar los resultados.",
+            "Que la actividad se canceló sin explicación",
+            "Que todos rechazaron la propuesta"
+          ],
+          "answer": 0,
+          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+        },
+        {
+          "id": "es_mx_b1_u3_e2",
+          "type": "choice",
+          "skill": "detail",
+          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "options": [
+            "El texto presenta una situación relacionada con el tema y sus matices",
+            "El texto afirma que todas las situaciones son idénticas",
+            "El texto no ofrece información concreta"
+          ],
+          "answer": 0,
+          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+        },
+        {
+          "id": "es_mx_b1_u3_e3",
+          "type": "choice",
+          "skill": "grammar",
+          "prompt": "No creo que esa información ___ completa.",
+          "options": [
+            "sea",
+            "es",
+            "será"
+          ],
+          "answer": 0,
+          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+        },
+        {
+          "id": "es_mx_b1_u3_e4",
+          "type": "choice",
+          "skill": "vocabulary",
+          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "options": [
+            "Sin embargo",
+            "Por la mañana",
+            "Al lado de"
+          ],
+          "answer": 0,
+          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+        },
+        {
+          "id": "es_mx_b1_u3_e5",
+          "type": "choice",
+          "skill": "culture",
+          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "options": [
+            "Que puede variar según la región y las familias",
+            "Que se practica igual en todos los lugares",
+            "Que nunca cambia con el tiempo"
+          ],
+          "answer": 0,
+          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+        }
+      ]
+    }
+  ]
+}

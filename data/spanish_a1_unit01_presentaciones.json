@@ -187,14 +187,14 @@
           "id": "es_es_u1_e1",
           "skill": "gist",
           "type": "choice",
-          "prompt": "¿Dónde vive Diego ahora?",
+          "prompt": "¿Qué información comparten Clara y Diego durante la conversación?",
           "options": [
-            "En Zaragoza",
-            "En Madrid",
-            "En Valencia"
+            "Sus nombres, su origen y a qué se dedican",
+            "Sus planes de vacaciones",
+            "Sus comidas favoritas"
           ],
           "answer": 1,
-          "explanation": "Diego es de Zaragoza, pero dice que ahora vive en Madrid."
+          "explanation": "Durante la conversación se presentan, hablan de dónde son, dónde viven y en qué trabajan."
         },
         {
           "id": "es_es_u1_e2",
@@ -301,14 +301,14 @@
           "id": "es_mx_u1_e1",
           "skill": "gist",
           "type": "choice",
-          "prompt": "¿Dónde vive Luis?",
+          "prompt": "¿De qué hablan Mariana y Luis cuando se conocen?",
           "options": [
-            "En Puebla",
-            "En Ciudad de México",
-            "En Guadalajara"
+            "De sus nombres, su origen y su trabajo",
+            "De sus planes para viajar",
+            "De sus familias y mascotas"
           ],
           "answer": 1,
-          "explanation": "Luis es de Puebla, pero actualmente vive en Ciudad de México."
+          "explanation": "Al conocerse, Mariana y Luis comparten información básica sobre su origen y su trabajo."
         },
         {
           "id": "es_mx_u1_e2",

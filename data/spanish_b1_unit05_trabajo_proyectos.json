@@ -21,10 +21,11 @@
     },
     {
       "topic": "estilo_indirecto_pasado",
-      "explanation_ru": "Если вводный глагол стоит в прошедшем времени, настоящее часто сдвигается в imperfecto, а pretérito perfecto — в pluscuamperfecto.",
+      "explanation_ru": "Если вводный глагол стоит в прошедшем времени, время часто сдвигается назад: presente → imperfecto, pretérito perfecto → pluscuamperfecto, futuro → condicional. Временные указатели также меняются: mañana → al día siguiente.",
       "examples": [
         "Dijo que estaba ocupado.",
-        "Comentaron que ya habían enviado el informe."
+        "Comentaron que ya habían enviado el informe.",
+        "El proveedor dijo que enviaría la oferta al día siguiente."
       ]
     },
     {
@@ -32,7 +33,7 @@
       "explanation_ru": "Для вежливых просьб используйте ¿Podrías…?, ¿Te importaría…? и ¿Sería posible…? Эти формы смягчают просьбу и подходят для рабочих ситуаций.",
       "examples": [
         "¿Podrías revisar este documento?",
-        "¿Sería posible cambiar la fecha?"
+        "¿Te importaría enviarme la versión final?"
       ]
     }
   ],
@@ -76,7 +77,7 @@
         },
         {
           "speaker": "Elena",
-          "text": "Claro. ¿Sería posible que me la enviaras antes de las tres?"
+          "text": "Claro. ¿Podrías enviármela antes de las tres?"
         },
         {
           "speaker": "Raúl",
@@ -86,73 +87,73 @@
       "context_note": "В испанских компаниях формат коммуникации зависит от отрасли и корпоративной культуры. Во внешней переписке часто используют нейтральные вежливые формулировки, даже если внутри команды общаются менее формально.",
       "reading": {
         "title": "Un proyecto compartido",
-        "text": "El equipo recibió el encargo de preparar una propuesta para un cliente nuevo. En la primera reunión, la responsable explicó que el plazo era de tres semanas y pidió que cada persona definiera sus tareas. Dos días después, el departamento financiero comunicó que necesitaba datos adicionales. El equipo reorganizó el calendario y acordó revisar los avances cada viernes. La claridad en las responsabilidades evitó duplicar trabajo."
+        "text": "El equipo recibió el encargo de preparar una propuesta para un cliente nuevo. En la primera reunión, la responsable explicó que el plazo era de tres semanas y asignó una tarea a cada persona. Dos días después, el departamento financiero comunicó que necesitaba datos adicionales. El equipo reorganizó el calendario y acordó revisar los avances cada viernes. La claridad en las responsabilidades evitó duplicar trabajo."
       },
       "exercises": [
         {
           "id": "es_es_b1_u5_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué pidió la responsable en la primera reunión?",
+          "prompt": "¿Qué cambió cuando llegaron nuevos vecinos?",
           "options": [
-            "Que cada persona definiera sus tareas.",
-            "Que la actividad se canceló sin explicación",
-            "Que todos rechazaron la propuesta"
+            "Propusieron actividades diferentes para la fiesta.",
+            "La celebración dejó de existir inmediatamente.",
+            "Las familias dejaron de reunirse."
           ],
           "answer": 0,
-          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+          "explanation": "La lectura cuenta que los nuevos vecinos aportaron otras actividades."
         },
         {
           "id": "es_es_b1_u5_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "prompt": "¿Qué es lo que más valora Mateo de la fiesta?",
           "options": [
-            "El texto presenta una situación relacionada con el tema y sus matices",
-            "El texto afirma que todas las situaciones son idénticas",
-            "El texto no ofrece información concreta"
+            "Que las personas se reúnan y recuerden sus orígenes.",
+            "Que no participe gente joven.",
+            "Que la celebración nunca cambie."
           ],
           "answer": 0,
-          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+          "explanation": "Mateo destaca el encuentro y la memoria compartida."
         },
         {
           "id": "es_es_b1_u5_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "La directora dijo que el plazo ___.",
+          "prompt": "Completa: «Me alegra que estas celebraciones se ___».",
           "options": [
-            "era flexible",
-            "es flexible",
-            "será flexible"
+            "mantengan",
+            "mantienen",
+            "mantuvieron"
           ],
           "answer": 0,
-          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+          "explanation": "Después de me alegra que se usa subjuntivo."
         },
         {
           "id": "es_es_b1_u5_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "prompt": "¿Qué expresión sirve para hablar de una evolución gradual?",
           "options": [
-            "Sin embargo",
-            "Por la mañana",
-            "Al lado de"
+            "Con el tiempo",
+            "De repente, sin relación",
+            "A pesar de ayer"
           ],
           "answer": 0,
-          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+          "explanation": "Con el tiempo presenta un cambio progresivo."
         },
         {
           "id": "es_es_b1_u5_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "prompt": "Según la nota cultural de México, ¿qué afirmación sobre Día de Muertos es adecuada?",
           "options": [
-            "Que puede variar según la región y las familias",
-            "Que se practica igual en todos los lugares",
-            "Que nunca cambia con el tiempo"
+            "Las prácticas y los símbolos varían entre regiones y familias.",
+            "Todas las familias lo celebran exactamente igual.",
+            "Es la única tradición cultural del país."
           ],
           "answer": 0,
-          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+          "explanation": "La nota evita generalizar una celebración diversa."
         }
       ]
     },
@@ -195,7 +196,7 @@
         },
         {
           "speaker": "Elena",
-          "text": "Claro. ¿Sería posible que me la mandaras antes de las tres?"
+          "text": "Claro. ¿Podrías mandármela antes de las tres?"
         },
         {
           "speaker": "Raúl",
@@ -205,73 +206,73 @@
       "context_note": "В мексиканских рабочих командах стиль общения зависит от отрасли и корпоративной культуры. Внешняя переписка часто начинается с приветствия и короткого контекста, а просьбы смягчаются формами вроде ¿Podrías…? и ¿Sería posible…?",
       "reading": {
         "title": "Un proyecto compartido",
-        "text": "El equipo recibió el encargo de preparar una propuesta para un cliente nuevo. En la primera reunión, la responsable explicó que el plazo era de tres semanas y pidió que cada persona definiera sus tareas. Dos días después, el área de finanzas comunicó que necesitaba datos adicionales. El equipo reorganizó el calendario y acordó revisar los avances cada viernes. La claridad en las responsabilidades evitó repetir trabajo."
+        "text": "El equipo recibió el encargo de preparar una propuesta para un cliente nuevo. En la primera reunión, la responsable explicó que el plazo era de tres semanas y asignó una tarea a cada persona. Dos días después, el área de finanzas comunicó que necesitaba datos adicionales. El equipo reorganizó el calendario y acordó revisar los avances cada viernes. La claridad en las responsabilidades evitó repetir trabajo."
       },
       "exercises": [
         {
           "id": "es_mx_b1_u5_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Con qué frecuencia acordó reunirse el equipo?",
+          "prompt": "¿Qué cambió cuando llegaron nuevos vecinos?",
           "options": [
-            "Cada viernes.",
-            "Que la actividad se canceló sin explicación",
-            "Que todos rechazaron la propuesta"
+            "Propusieron actividades diferentes para la celebración.",
+            "La fiesta se canceló para siempre.",
+            "Dejaron de organizarse actividades."
           ],
           "answer": 0,
-          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+          "explanation": "La lectura indica que los nuevos vecinos propusieron otras actividades."
         },
         {
           "id": "es_mx_b1_u5_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "prompt": "¿Qué valora Mateo de la celebración?",
           "options": [
-            "El texto presenta una situación relacionada con el tema y sus matices",
-            "El texto afirma que todas las situaciones son idénticas",
-            "El texto no ofrece información concreta"
+            "Que las personas se reúnan y recuerden sus orígenes.",
+            "Que no haya cambios ni nuevas ideas.",
+            "Que solo participen los mayores."
           ],
           "answer": 0,
-          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+          "explanation": "Mateo destaca el encuentro y la memoria compartida."
         },
         {
           "id": "es_mx_b1_u5_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "La directora dijo que el plazo ___.",
+          "prompt": "Completa: «Me da gusto que estas celebraciones se ___».",
           "options": [
-            "era flexible",
-            "es flexible",
-            "será flexible"
+            "mantengan",
+            "mantienen",
+            "mantuvieron"
           ],
           "answer": 0,
-          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+          "explanation": "Después de me da gusto que se usa subjuntivo."
         },
         {
           "id": "es_mx_b1_u5_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "prompt": "¿Qué expresión sirve para hablar de una evolución gradual?",
           "options": [
-            "Sin embargo",
-            "Por la mañana",
-            "Al lado de"
+            "Con el tiempo",
+            "De repente, sin relación",
+            "A pesar de ayer"
           ],
           "answer": 0,
-          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+          "explanation": "Con el tiempo presenta un cambio progresivo."
         },
         {
           "id": "es_mx_b1_u5_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "prompt": "Según la nota cultural, ¿qué afirmación sobre Día de Muertos es adecuada?",
           "options": [
-            "Que puede variar según la región y las familias",
-            "Que se practica igual en todos los lugares",
-            "Que nunca cambia con el tiempo"
+            "Las prácticas y los símbolos varían entre regiones y familias.",
+            "Todas las familias lo celebran exactamente igual.",
+            "Es la única tradición cultural del país."
           ],
           "answer": 0,
-          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+          "explanation": "La nota destaca la diversidad regional y familiar."
         }
       ]
     }

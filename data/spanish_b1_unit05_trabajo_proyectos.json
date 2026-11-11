@@ -132,15 +132,15 @@
         {
           "id": "es_es_b1_u5_e4",
           "type": "choice",
-          "skill": "vocabulary",
-          "prompt": "¿Qué petición suena más cortés en un contexto profesional?",
+          "skill": "grammar",
+          "prompt": "Elige la petición más adecuada para un correo profesional: «___ enviarme el informe antes del viernes?»",
           "options": [
-            "Revisa esto ahora mismo.",
-            "Tienes que hacerlo ya.",
-            "¿Podrías revisar esta versión, por favor?"
+            "¿Te importaría",
+            "¿Te importa que",
+            "¿Importas"
           ],
-          "answer": 2,
-          "explanation": "Podrías suaviza la petición."
+          "answer": 0,
+          "explanation": "¿Te importaría + infinitivo? es una fórmula cortés para hacer una petición."
         },
         {
           "id": "es_es_b1_u5_e5",
@@ -251,15 +251,15 @@
         {
           "id": "es_mx_b1_u5_e4",
           "type": "choice",
-          "skill": "vocabulary",
-          "prompt": "¿Qué petición suena más cortés en un contexto profesional?",
+          "skill": "grammar",
+          "prompt": "Elige la petición más adecuada para un correo profesional: «___ enviarme el informe antes del viernes?»",
           "options": [
-            "Revisa esto ahora mismo.",
-            "Hazlo de una vez.",
-            "¿Podrías revisar esta versión, por favor?"
+            "¿Te importaría",
+            "¿Te importa que",
+            "¿Importas"
           ],
-          "answer": 2,
-          "explanation": "Podrías suaviza la petición."
+          "answer": 0,
+          "explanation": "¿Te importaría + infinitivo? es una fórmula cortés para hacer una petición."
         },
         {
           "id": "es_mx_b1_u5_e5",

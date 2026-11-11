@@ -93,7 +93,7 @@
           "id": "es_es_b1_u4_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué se ha creado para que los vecinos comuniquen problemas?",
+          "prompt": "¿Qué se ha creado para comunicar problemas?",
           "options": [
             "Una plataforma.",
             "Una nueva línea de tren.",
@@ -212,7 +212,7 @@
           "id": "es_mx_b1_u4_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué se creó para que los vecinos reporten problemas?",
+          "prompt": "¿Qué se ha creado para comunicar problemas?",
           "options": [
             "Una plataforma.",
             "Una estación de autobuses.",

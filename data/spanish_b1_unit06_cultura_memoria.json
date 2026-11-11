@@ -131,15 +131,15 @@
         {
           "id": "es_es_b1_u6_e4",
           "type": "choice",
-          "skill": "vocabulary",
-          "prompt": "¿Qué expresión sirve para hablar de una evolución gradual?",
+          "skill": "grammar",
+          "prompt": "Completa con la forma adecuada: «Aunque ___ difícil, merece la pena conservar la tradición».",
           "options": [
-            "De repente, sin relación",
-            "A pesar de ayer",
-            "Con el tiempo"
+            "sea",
+            "es",
+            "será"
           ],
-          "answer": 2,
-          "explanation": "Con el tiempo presenta un cambio progresivo."
+          "answer": 0,
+          "explanation": "El subjuntivo se usa aquí para presentar una dificultad hipotética o no confirmada."
         },
         {
           "id": "es_es_b1_u6_e5",
@@ -250,15 +250,15 @@
         {
           "id": "es_mx_b1_u6_e4",
           "type": "choice",
-          "skill": "vocabulary",
-          "prompt": "¿Qué expresión sirve para hablar de una evolución gradual?",
+          "skill": "grammar",
+          "prompt": "Completa con la forma adecuada: «Aunque ___ difícil, merece la pena conservar la tradición».",
           "options": [
-            "De repente, sin relación",
-            "A pesar de ayer",
-            "Con el tiempo"
+            "sea",
+            "es",
+            "será"
           ],
-          "answer": 2,
-          "explanation": "Con el tiempo presenta un cambio progresivo."
+          "answer": 0,
+          "explanation": "El subjuntivo se usa aquí para presentar una dificultad hipotética o no confirmada."
         },
         {
           "id": "es_mx_b1_u6_e5",

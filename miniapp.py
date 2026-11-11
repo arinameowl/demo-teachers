@@ -157,7 +157,12 @@ def _material_cards(level: str | None) -> list[dict]:
 
 @app.get("/")
 async def index():
-    return FileResponse(APP_DIR / "index.html")
+    # The Mini App is updated alongside API code; prevent clients/proxies from
+    # keeping an older HTML shell after a deployment.
+    return FileResponse(
+        APP_DIR / "index.html",
+        headers={"Cache-Control": "no-store, no-cache, must-revalidate, max-age=0"},
+    )
 
 
 @app.get("/health")

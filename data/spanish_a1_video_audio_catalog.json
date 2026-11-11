@@ -283,32 +283,32 @@
   "unit_resource_status": [
     {
       "unit": "es_a1_u01_presentaciones",
-      "es_es": "Spanish Sitcom episode 1; Copycat Cafe episode 1 optional pronunciation",
+      "es_es": "VideoEle «¿Cómo se llama?» — бесплатный YouTube-кандидат, audio preview pending; не включать до проверки звучания и прав использования.",
       "es_mx": "Spanish Playground Presentaciones y saludos; Copycat Cafe Latin America episode 2 optional, AI voice"
     },
     {
       "unit": "es_a1_u02_familia_amigos",
-      "es_es": "Spanish Sitcom episode 4; Podcasts in Spanish episode 8 optional",
+      "es_es": "VideoEle «La familia del Rey» и Podcasts in Spanish, episode 8 «Foto de familia» — бесплатные кандидаты; проверить фактический уровень и аудио перед интеграцией.",
       "es_mx": "Buena Gente S1E1; Mexiglot Story 1 optional after level check"
     },
     {
       "unit": "es_a1_u03_un_dia_normal",
-      "es_es": "Spanish Sitcom episode 8; Podcasts in Spanish episode 4",
+      "es_es": "Podcasts in Spanish, episode 4 «La rutina diaria» — бесплатный аудиокандидат; VideoEle «Mi casa» только дополнительный контекст, не замена аудированию о распорядке дня.",
       "es_mx": "Spanish Playground Mi rutina diaria; create/record original audio dialogue if a podcast is required"
     },
     {
       "unit": "es_a1_u04_la_alimentacion",
-      "es_es": "Spanish Sitcom episodes 13–14; Podcasts in Spanish episode 15",
+      "es_es": "VideoEle «La comida» и Podcasts in Spanish, episode 15 «Supermercado» — бесплатные кандидаты; audio preview pending.",
       "es_mx": "Spanish Playground En un restaurante; Mexiglot episode 2"
     },
     {
       "unit": "es_a1_u05_la_ciudad_transporte",
-      "es_es": "Spanish Sitcom episode 11; Podcasts in Spanish episodes 1 and 10",
+      "es_es": "VideoEle «En mi barrio hay...» и «Medios de transporte»; Podcasts in Spanish, episodes 1 и 10 — бесплатные кандидаты, audio preview pending.",
       "es_mx": "Buena Gente scenes only after preview; Copycat Cafe Latin America episode 3 is a non-Mexico-specific AI-voice supplement"
     },
     {
       "unit": "es_a1_u06_el_tiempo_libre",
-      "es_es": "Spanish Sitcom episode 9; Podcasts in Spanish episode 2",
+      "es_es": "VideoEle «¡Buen fin de semana!» и Podcasts in Spanish, episode 2 «Tiempo libre» — бесплатные кандидаты; audio preview pending.",
       "es_mx": "¿Nos conocemos? mini-series; Mexiglot episode 1"
     }
   ],
@@ -318,5 +318,9 @@
     "Check commercial-use and embedding permissions for any paid course integration.",
     "Write original five-question exercise sets per selected media after reviewing the actual media/transcripts; do not guess answers from titles or summaries.",
     "Record original Mexican Spanish audio for any A1 unit without a sufficiently clear and level-appropriate external audio source."
+  ],
+  "audit_notes": [
+    "Проверка согласованности 11.11.2026: все упоминания платного Spanish Sitcom удалены из unit_resource_status. Ресурс оставлен только в excluded_paid_resources как исключенный; в учебных маршрутах указаны бесплатные кандидаты с пометкой preview pending.",
+    "Ни один внешний кандидат не считается окончательно одобренным для коммерческой интеграции до проверки конкретного аудио/видео, условий использования и соответствия уровню. Внешние упражнения создаются The Teachers самостоятельно."
   ]
 }

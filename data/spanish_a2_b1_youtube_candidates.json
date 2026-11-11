@@ -447,5 +447,39 @@
         "status": "region_and_beginner_level_verified_access_and_adult_suitability_pending"
       }
     ]
+  },
+  "license_audit": {
+    "checked_at": "2026-11-11",
+    "scope": "Проверка дополнительных бесплатных источников для аудирования A2–B1 с приоритетом YouTube и пригодностью для коммерческой библиотеки The Teachers.",
+    "findings": [
+      {
+        "source": "The LEAF Project — Spanish Listening Selection Archive",
+        "url": "https://www.leaflanguages.org/language-lessons/spanish-language-lessons/spanish-listening-selections/",
+        "platform": "YouTube audio links",
+        "license": "CC BY-NC 4.0",
+        "evidence": "Официальная страница прямо указывает CC Attribution-NonCommercial 4.0 для аудиозаписей, скриптов и заданий; содержит YouTube-ссылки для Spanish 101, 102, 201 и 202.",
+        "decision": "excluded_from_commercial_library",
+        "reason": "Ограничение NonCommercial несовместимо с коммерческой библиотекой The Teachers. Не копировать и не интегрировать как контент курса."
+      },
+      {
+        "source": "Spanish Proficiency Exercises — University of Texas at Austin",
+        "url": "https://www.laits.utexas.edu/spe/index.html",
+        "platform": "Legacy embedded QuickTime video clips; YouTube hosting not verified",
+        "license": "CC BY (as listed by COERLL)",
+        "evidence": "COERLL lists the collection under CC BY. The project page describes scripted simplified clips and unscripted native-speaker clips from different Spanish-speaking regions, organized by proficiency difficulty, with transcripts, vocabulary and grammar support.",
+        "decision": "not_selected_for_youtube_library",
+        "reason": "Potentially useful open-licensed source, but it does not currently meet the project's YouTube-first requirement; current playback/access and individual asset rights still require verification before any use."
+      },
+      {
+        "source": "Spanish Listening",
+        "url": "https://www.spanishlistening.org/",
+        "platform": "Vimeo embeds and site audio, not YouTube",
+        "license": "No open reuse license identified on the reviewed pages; copyright notice present",
+        "evidence": "The site offers more than 400 short videos by speakers from Spanish-speaking countries, with speaker country, beginner/intermediate/advanced labels, transcript, quiz and vocabulary. Individual pages show Vimeo embeds and site copyright notice.",
+        "decision": "not_selected_pending_permission",
+        "reason": "Strong pedagogical fit and explicit Mexican speakers are available, but it is not YouTube and no commercial reuse license was identified. Do not copy, embed or integrate without permission."
+      }
+    ],
+    "current_conclusion": "В этой проверке не найден новый источник YouTube с подтвержденной лицензией, допускающей коммерческое использование. Источники с NC исключены. Открытая CC BY коллекция UT Austin заслуживает отдельной проверки как резерв вне YouTube, но не добавляется в основной видеопул без изменения требования платформы. Для текущей библиотеки продолжаем проверять конкретные YouTube-ролики и используем только оригинальные ссылки/официальный embed без копирования чужих файлов и транскриптов; юридический режим коммерческого использования конкретных роликов проверяется отдельно."
   }
 }

@@ -59,35 +59,35 @@
       "dialogue": [
         {
           "speaker": "Marta",
-          "text": "¿Qué quieres hacer este sábado, Pablo?"
+          "text": "¿Qué te gusta hacer en tu tiempo libre, Pablo?"
         },
         {
           "speaker": "Pablo",
-          "text": "Quiero ir al cine. Hay una película nueva."
+          "text": "Me gusta mucho ir al cine y también montar en bici. ¿Y a ti?"
         },
         {
           "speaker": "Marta",
-          "text": "¡Qué bien! ¿A qué hora empieza?"
+          "text": "A mí me encanta quedar con amigos. ¿Te apetece ir al cine este sábado?"
         },
         {
           "speaker": "Pablo",
-          "text": "A las seis y media."
+          "text": "¡Sí, claro! ¿Qué película quieres ver?"
         },
         {
           "speaker": "Marta",
-          "text": "Vale. Antes podemos tomar un café."
+          "text": "Hay una comedia nueva. Empieza a las seis y media."
         },
         {
           "speaker": "Pablo",
-          "text": "Perfecto. ¿Quedamos a las cinco?"
+          "text": "Perfecto. Podemos tomar un café antes. ¿Quedamos a las cinco?"
         },
         {
           "speaker": "Marta",
-          "text": "Sí, nos vemos delante del cine."
+          "text": "Vale. Nos vemos delante del cine."
         },
         {
           "speaker": "Pablo",
-          "text": "¡Hasta el sábado!"
+          "text": "Genial. ¡Hasta el sábado!"
         }
       ],
       "exercises": [
@@ -128,7 +128,7 @@
             "Где ты живешь?"
           ],
           "answer": 0,
-          "explanation": "Te apetece? — естественный способ предложить занятие или спросить о желании."
+          "explanation": "¿Te apetece…? — естественный способ предложить занятие или спросить, хочется ли собеседнику; выражение особенно характерно для повседневной речи Испании."
         },
         {
           "id": "es_es_u6_e4",
@@ -156,7 +156,43 @@
           "answer": 0,
           "explanation": "Quedar con amigos — договориться о встрече и увидеться с друзьями."
         }
-      ]
+      ],
+      "language_in_real_life": {
+        "heading_ru": "Как это звучит в повседневной речи",
+        "expressions": [
+          {
+            "spanish": "¿Qué te gusta hacer?",
+            "meaning_ru": "Что тебе нравится делать?",
+            "use_ru": "Нейтральный вопрос, чтобы узнать об интересах собеседника.",
+            "example": "¿Qué te gusta hacer los fines de semana?"
+          },
+          {
+            "spanish": "Me encanta…",
+            "meaning_ru": "Я обожаю…",
+            "use_ru": "Более эмоциональный вариант, чем me gusta.",
+            "example": "Me encanta bailar."
+          },
+          {
+            "spanish": "¿Te apetece…?",
+            "meaning_ru": "Хочешь…? / Тебе хочется…?",
+            "use_ru": "Распространенное в Испании приглашение или предложение.",
+            "example": "¿Te apetece tomar un café?"
+          },
+          {
+            "spanish": "Quedar con alguien",
+            "meaning_ru": "Договориться о встрече с кем-либо",
+            "use_ru": "Очень полезный глагол для планов с друзьями.",
+            "example": "Quedo con mis amigos el sábado."
+          },
+          {
+            "spanish": "¿A qué hora quedamos?",
+            "meaning_ru": "Во сколько встречаемся?",
+            "use_ru": "Помогает перейти от идеи к конкретной договоренности.",
+            "example": "¿A qué hora quedamos delante del cine?"
+          }
+        ],
+        "register_note_ru": "Фразы подходят для повседневного неформального общения. В официальной ситуации приглашение лучше сформулировать нейтральнее."
+      }
     },
     {
       "id": "es_mx",
@@ -164,35 +200,35 @@
       "dialogue": [
         {
           "speaker": "Ana",
-          "text": "¿Qué vas a hacer este sábado, Luis?"
+          "text": "¿Qué te gusta hacer en tu tiempo libre, Luis?"
         },
         {
           "speaker": "Luis",
-          "text": "Quiero ir al cine. Hay una película de acción."
+          "text": "Me gusta jugar al fútbol y escuchar música. ¿Y a ti?"
         },
         {
           "speaker": "Ana",
-          "text": "¡Suena bien! ¿A qué hora?"
+          "text": "Me encanta cocinar. ¿Te late si vamos al cine este sábado?"
         },
         {
           "speaker": "Luis",
-          "text": "A las siete."
+          "text": "¡Sale! ¿A qué hora empieza la película?"
         },
         {
           "speaker": "Ana",
-          "text": "¿Te late si cenamos algo después?"
+          "text": "A las siete. Podemos cenar algo después."
         },
         {
           "speaker": "Luis",
-          "text": "¡Claro! Podemos ir por unos tacos."
+          "text": "¡Qué buena idea! Me gustan mucho los tacos."
         },
         {
           "speaker": "Ana",
-          "text": "De acuerdo. Nos vemos afuera del cine a las seis y media."
+          "text": "Entonces nos vemos afuera del cine a las seis y media."
         },
         {
           "speaker": "Luis",
-          "text": "¡Hasta el sábado!"
+          "text": "Perfecto. ¡Nos vemos el sábado!"
         }
       ],
       "exercises": [
@@ -252,22 +288,382 @@
           "id": "es_mx_u6_e5",
           "skill": "culture",
           "type": "choice",
-          "prompt": "В диалоге Luis отвечает «¡Sale!». Как понять это разговорное выражение в данном контексте?",
+          "prompt": "Luis responde «¡Sale!». Как понять это разговорное выражение в данном контексте?",
           "options": [
             "Договорились! / Хорошо!",
             "Уходи!",
             "Сколько стоит?"
           ],
           "answer": 0,
-          "explanation": "В разговорной мексиканской речи sale может выражать согласие или подтверждение договоренности. Значение зависит от контекста."
+          "explanation": "В разговорной мексиканской речи ¡Sale! может выражать согласие или подтверждение договоренности. Значение зависит от контекста."
         }
-      ]
+      ],
+      "language_in_real_life": {
+        "heading_ru": "Как это звучит в повседневной речи",
+        "expressions": [
+          {
+            "spanish": "¿Qué te gusta hacer?",
+            "meaning_ru": "Что тебе нравится делать?",
+            "use_ru": "Нейтральный вопрос об интересах.",
+            "example": "¿Qué te gusta hacer los fines de semana?"
+          },
+          {
+            "spanish": "Me late… / ¿Te late…?",
+            "meaning_ru": "Мне нравится… / Как тебе идея…?",
+            "use_ru": "Разговорное выражение, характерное для Мексики; уместно в неформальном общении.",
+            "example": "¿Te late si vamos al cine?"
+          },
+          {
+            "spanish": "¡Sale!",
+            "meaning_ru": "Договорились! / Хорошо!",
+            "use_ru": "Разговорное подтверждение договоренности в Мексике.",
+            "example": "— ¿Nos vemos a las seis? — ¡Sale!"
+          },
+          {
+            "spanish": "¡Qué buena idea!",
+            "meaning_ru": "Какая хорошая идея!",
+            "use_ru": "Позитивная реакция на предложение.",
+            "example": "¡Qué buena idea! Podemos cenar después."
+          },
+          {
+            "spanish": "Nos vemos…",
+            "meaning_ru": "Увидимся…",
+            "use_ru": "Обычный способ завершить договоренность о встрече.",
+            "example": "Nos vemos afuera del cine."
+          }
+        ],
+        "register_note_ru": "Me late и ¡Sale! — разговорные выражения. Для нейтрального общения можно использовать ¿Te parece bien…? и De acuerdo."
+      }
     }
   ],
   "teacher_notes": [
     "Не представлять te apetece как исключительно испанскую форму: она понятна и за пределами Испании, но особенно характерна для повседневной речи Испании.",
     "Te late, va и sale — разговорные мексиканские выражения; давать их как контекстные дополнения, а не как обязательную формальную речь.",
     "В испанском варианте boleto может быть понятно, но entrada или billete уместнее в зависимости от типа билета; в Мексике boleto распространено.",
-    "Диалоги и задания оригинальные."
-  ]
+    "Диалоги и задания оригинальные.",
+    "В пилотной версии добавлены editorial introduction, contextual language layer, guided practice, personal application и reflection; эти слои не заменяют основной грамматический и лексический материал.",
+    "В диалоге es_mx реплика ¡Sale! теперь действительно присутствует в тексте и проверяется в задании; не задавать вопросы о выражениях, которых нет в исходном материале.",
+    "В диалоге es_es выражение ¿Te apetece…? теперь употреблено в контексте приглашения; не маркировать его как непонятное за пределами Испании.",
+    "Медиа-кандидаты пока не считаются проверенными или разрешенными для коммерческой интеграции. Не создавать задания на понимание конкретного выпуска до end-to-end просмотра/прослушивания."
+  ],
+  "editorial_intro": {
+    "title_ru": "Свободное время — это не только то, что вы делаете. Это то, чем вы делитесь",
+    "body_ru": "Кто-то начинает субботу с пробежки, кто-то идет за кофе, выбирает фильм или остается дома с книгой. В испанском разговоре о свободном времени быстро появляются темы, которые помогают узнавать людей: что им нравится, чем они увлекаются и как они предлагают провести день вместе. В этом материале вы научитесь не просто перечислять хобби, а поддерживать небольшой разговор и договариваться о планах.",
+    "opening_question_ru": "Как вы обычно проводите свободное время — и какое занятие давно хотите попробовать?",
+    "real_life_situation_ru": "Вы переписываетесь с новым знакомым и хотите предложить встретиться в выходные. Нужно рассказать о своих интересах, спросить о его планах, выбрать время и договориться о месте встречи.",
+    "estimated_time_minutes": 35,
+    "note_ru": "Это ориентир, а не ограничение: можно пройти материал за один подход или возвращаться к отдельным частям."
+  },
+  "vocabulary_in_context": {
+    "heading_ru": "Лексика, которая помогает говорить о себе",
+    "groups": [
+      {
+        "title_ru": "Занятия и увлечения",
+        "items": [
+          {
+            "spanish": "leer",
+            "ru": "читать"
+          },
+          {
+            "spanish": "ver series",
+            "ru": "смотреть сериалы"
+          },
+          {
+            "spanish": "escuchar música",
+            "ru": "слушать музыку"
+          },
+          {
+            "spanish": "montar en bici",
+            "ru": "кататься на велосипеде"
+          },
+          {
+            "spanish": "jugar al fútbol",
+            "ru": "играть в футбол"
+          },
+          {
+            "spanish": "cocinar",
+            "ru": "готовить"
+          },
+          {
+            "spanish": "bailar",
+            "ru": "танцевать"
+          },
+          {
+            "spanish": "hacer senderismo",
+            "ru": "ходить в походы"
+          }
+        ]
+      },
+      {
+        "title_ru": "Планируем встречу",
+        "items": [
+          {
+            "spanish": "este sábado",
+            "ru": "в эту субботу"
+          },
+          {
+            "spanish": "el fin de semana",
+            "ru": "на выходных"
+          },
+          {
+            "spanish": "quedar",
+            "ru": "договориться о встрече"
+          },
+          {
+            "spanish": "delante de",
+            "ru": "перед, напротив"
+          },
+          {
+            "spanish": "afuera de",
+            "ru": "снаружи, у входа в"
+          },
+          {
+            "spanish": "a las seis y media",
+            "ru": "в половине седьмого"
+          },
+          {
+            "spanish": "antes / después",
+            "ru": "до / после"
+          }
+        ]
+      },
+      {
+        "title_ru": "Выражаем предпочтения",
+        "items": [
+          {
+            "spanish": "Me gusta…",
+            "ru": "Мне нравится…"
+          },
+          {
+            "spanish": "Me encanta…",
+            "ru": "Я обожаю…"
+          },
+          {
+            "spanish": "Prefiero…",
+            "ru": "Я предпочитаю…"
+          },
+          {
+            "spanish": "No me gusta mucho…",
+            "ru": "Мне не очень нравится…"
+          },
+          {
+            "spanish": "¿Y a ti?",
+            "ru": "А тебе?"
+          }
+        ]
+      }
+    ],
+    "regional_note_ru": "В Испании часто говорят montar en bici, а в Мексике также распространено andar en bicicleta. Варианты могут различаться по регионам и ситуациям."
+  },
+  "grammar_support": {
+    "heading_ru": "Разберитесь в конструкции — и используйте ее самостоятельно",
+    "focus_points": [
+      {
+        "topic": "gustar_encantar",
+        "contrast_ru": "В испанском «нравится» строится не так, как в русском: me gusta буквально ближе к «мне нравится». Форма gusta используется с существительным в единственном числе и с инфинитивом; gustan — с существительным во множественном числе.",
+        "examples": [
+          {
+            "spanish": "Me gusta la música.",
+            "ru": "Мне нравится музыка."
+          },
+          {
+            "spanish": "Me gustan las películas.",
+            "ru": "Мне нравятся фильмы."
+          },
+          {
+            "spanish": "A Ana le encanta cocinar.",
+            "ru": "Ана обожает готовить."
+          }
+        ],
+        "common_error_ru": "Не согласовывайте gusta с человеком: правильно Me gustan los libros, а не Me gusta los libros."
+      },
+      {
+        "topic": "ir_a_infinitive",
+        "contrast_ru": "После формы ir + a используется инфинитив. Спрягается ir, а второй глагол остается в начальной форме.",
+        "examples": [
+          {
+            "spanish": "Voy a salir.",
+            "ru": "Я собираюсь выйти."
+          },
+          {
+            "spanish": "Vamos a ver una película.",
+            "ru": "Мы собираемся посмотреть фильм."
+          }
+        ],
+        "common_error_ru": "Не ставьте второй глагол в личную форму: правильно voy a salir, а не voy a salgo."
+      },
+      {
+        "topic": "days_and_time",
+        "contrast_ru": "El sábado обычно обозначает конкретную ближайшую субботу; los sábados — повторяющееся действие по субботам. Для времени используйте a la una, но a las dos / a las seis.",
+        "examples": [
+          {
+            "spanish": "El sábado voy al cine.",
+            "ru": "В эту субботу я иду в кино."
+          },
+          {
+            "spanish": "Los sábados juego al fútbol.",
+            "ru": "По субботам я играю в футбол."
+          },
+          {
+            "spanish": "Quedamos a las siete.",
+            "ru": "Встречаемся в семь."
+          }
+        ]
+      }
+    ]
+  },
+  "guided_practice": [
+    {
+      "id": "es_a1_u06_gp1",
+      "stage": "notice",
+      "title_ru": "Заметьте закономерность",
+      "instruction_ru": "Сравните пары и выберите правильную форму. Объясните себе, почему меняется окончание.",
+      "items": [
+        {
+          "prompt": "Me ___ la música.",
+          "options": [
+            "gusta",
+            "gustan"
+          ],
+          "answer": 0,
+          "explanation_ru": "La música — существительное в единственном числе."
+        },
+        {
+          "prompt": "Me ___ las películas.",
+          "options": [
+            "gusta",
+            "gustan"
+          ],
+          "answer": 1,
+          "explanation_ru": "Las películas — множественное число."
+        },
+        {
+          "prompt": "Nosotros ___ a salir el sábado.",
+          "options": [
+            "voy",
+            "vamos"
+          ],
+          "answer": 1,
+          "explanation_ru": "Для nosotros используется vamos a + infinitivo."
+        }
+      ]
+    },
+    {
+      "id": "es_a1_u06_gp2",
+      "stage": "build",
+      "title_ru": "Соберите приглашение",
+      "instruction_ru": "Дополните реплики так, чтобы получился естественный короткий разговор.",
+      "prompts": [
+        {
+          "situation_ru": "Спросите друга, хочет ли он сходить в кино.",
+          "model_es": "¿Te apetece ir al cine? / ¿Te late si vamos al cine?"
+        },
+        {
+          "situation_ru": "Предложите встретиться в шесть.",
+          "model_es": "¿Quedamos a las seis? / Nos vemos a las seis."
+        },
+        {
+          "situation_ru": "Скажите, что не можете в субботу, но можете в воскресенье.",
+          "model_es": "Lo siento, el sábado no puedo. ¿El domingo?"
+        },
+        {
+          "situation_ru": "Скажите, что обожаете танцевать.",
+          "model_es": "Me encanta bailar."
+        }
+      ],
+      "note_ru": "Выберите формулировку, которая подходит выбранному региональному варианту, и попробуйте произнести ее вслух."
+    },
+    {
+      "id": "es_a1_u06_gp3",
+      "stage": "personalize",
+      "title_ru": "Расскажите о своем свободном времени",
+      "instruction_ru": "Подготовьте короткое сообщение из 5–7 предложений. Используйте минимум две конструкции предпочтения, одно занятие в свободное время и один план на выходные.",
+      "prompts_ru": [
+        "Что вы любите делать после учебы или работы?",
+        "Что вы обожаете или, наоборот, не очень любите?",
+        "Чем вы обычно занимаетесь на выходных?",
+        "Что собираетесь делать в ближайшую субботу или воскресенье?"
+      ],
+      "language_checklist": [
+        "Me gusta / Me gustan",
+        "Me encanta",
+        "Prefiero",
+        "Voy a + infinitivo",
+        "El sábado / Los sábados"
+      ],
+      "extension_ru": "Дополнительный вызов: задайте собеседнику два вопроса о его увлечениях и предложите совместный план, согласовав время и место."
+    }
+  ],
+  "personal_application": {
+    "title_ru": "Перенесите испанский в свою жизнь",
+    "scenario_ru": "Представьте, что вы познакомились с человеком, который тоже хочет провести выходные интересно. Начните разговор и договоритесь о совместном занятии.",
+    "core_task_ru": "Напишите диалог из 6–8 реплик: спросите об интересах, расскажите о своих, предложите занятие, согласуйте время и завершите разговор.",
+    "choice_of_context": [
+      "Вы предлагаете сходить в кино",
+      "Вы зовете человека на прогулку и кофе",
+      "Вы хотите вместе заняться спортом",
+      "Вы предлагаете приготовить ужин или попробовать новое кафе"
+    ],
+    "success_criteria": [
+      "Использованы gustar или encantar",
+      "Есть вопрос о предпочтениях собеседника",
+      "Есть приглашение или предложение с ir a + infinitivo",
+      "Согласованы день, время или место",
+      "Выбраны естественные выражения для Испании или Мексики"
+    ],
+    "stretch_task_ru": "Запишите голосовое сообщение на 30–45 секунд о том, как вы обычно проводите выходные и что планируете на следующие. Не читайте готовый текст: используйте только опорные слова."
+  },
+  "real_world_media": {
+    "heading_ru": "Послушайте, как говорят в реальной речи",
+    "note_ru": "Ссылки ниже — кандидаты для самостоятельного знакомства с живой речью. Перед включением в обязательную часть библиотеки необходимо проверить конкретный выпуск целиком, соответствие A1, доступность и условия использования. Упражнения к медиа добавляются только после просмотра или прослушивания.",
+    "es_es": [
+      {
+        "title": "Podcasts in Spanish — Level 1: Tiempo libre",
+        "publisher": "The PINS Team",
+        "url": "https://www.podcastsinspanish.org/pages/level1.shtml",
+        "duration": "2:02",
+        "role_ru": "Кандидат на дополнительное аудирование по теме",
+        "status": "pending_preview",
+        "check_ru": "Проверить лексику, скорость речи, наличие и условия доступа к транскрипту."
+      },
+      {
+        "title": "Spanish Sitcom — episode 9",
+        "publisher": "Habla con Eñe",
+        "url": "https://www.hablaconene.com/producto/spanish-sitcom-nivel-a1/",
+        "role_ru": "Видеокандидат по теме планов и свободного времени",
+        "status": "pending_preview",
+        "check_ru": "Проверить конкретную сцену, языковую нагрузку и коммерческие права."
+      }
+    ],
+    "es_mx": [
+      {
+        "title": "¿Nos conocemos? — mini-series",
+        "publisher": "Spanish Playground",
+        "url": "https://www.spanishplayground.net/learn-spanish-mini-series-nos-conocemos/",
+        "role_ru": "Видеокандидат: разговоры об увлечениях, работе и готовке",
+        "status": "pending_preview",
+        "check_ru": "Выбрать конкретный эпизод, проверить уровень и пригодность для взрослой аудитории."
+      },
+      {
+        "title": "Mexiglot — Episode 1: What are your Hobbies?",
+        "publisher": "Mexiglot",
+        "url": "https://podcasts.apple.com/us/podcast/learn-mexican-spanish-with-mexiglot/id1710835571",
+        "duration": "около 3 минут",
+        "role_ru": "Кандидат на аудирование с мексиканским вариантом",
+        "status": "pending_preview",
+        "check_ru": "Проверить произношение, лексику A1 и доступность дополнительных материалов."
+      }
+    ]
+  },
+  "reflection": {
+    "title_ru": "Проверьте, что уже можете сказать",
+    "prompts_ru": [
+      "Могу рассказать о трех занятиях, которые мне нравятся.",
+      "Могу спросить другого человека о его увлечениях.",
+      "Могу предложить совместный план и ответить на приглашение.",
+      "Могу договориться о дне, времени и месте встречи.",
+      "Могу узнать и использовать несколько разговорных выражений выбранного варианта испанского."
+    ],
+    "final_prompt_ru": "Какое выражение из этого материала вы действительно могли бы использовать на этой неделе?"
+  }
 }

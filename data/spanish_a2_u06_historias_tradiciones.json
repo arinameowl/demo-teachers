@@ -153,7 +153,11 @@
           "answer": 0,
           "explanation": "La plaza suele ser un punto de encuentro para actividades y celebraciones locales."
         }
-      ]
+      ],
+      "reading": {
+        "title": "La fiesta de siempre",
+        "text": "Cuando Elena era niña, pasaba todos los veranos en el pueblo de sus abuelos. Por las tardes, los vecinos se reunían en la plaza y los niños jugaban cerca de la fuente. Un año, durante la fiesta local, empezó a llover justo antes del concierto. Al principio todos buscaron un lugar para protegerse, pero después la lluvia paró. La música volvió a sonar y la celebración continuó hasta tarde."
+      }
     },
     {
       "id": "es_mx",
@@ -267,7 +271,11 @@
           "answer": 0,
           "explanation": "El cempasúchil es una flor muy asociada a las ofrendas del Día de Muertos en México."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Una ofrenda familiar",
+        "text": "Cuando Luis era pequeño, su familia se reunía en casa de su abuela para preparar la ofrenda del Día de Muertos. Su abuela colocaba las fotografías y las flores de cempasúchil, mientras los nietos ponían velas y fruta. El año pasado, Luis llegó temprano y ayudó a preparar todo. Más tarde llegaron sus primos y compartieron pan de muerto. La familia recordó historias y pasó la tarde junta."
+      }
     }
   ],
   "teacher_notes": [

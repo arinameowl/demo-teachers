@@ -391,12 +391,11 @@
     }
   ],
   "next_actions": [
-    "Preview Speak Like a Mexican #36 end-to-end and verify whether speech, vocabulary and duration are appropriate for A2; check captions/transcript before writing original tasks.",
-    "Select a short list of exact Spanish-with-CJ interviews featuring a confirmed Mexican speaker; verify speaker, level, duration and transcript.",
-    "Check individual Mextalki and Easy Spanish video captions/transcripts and screen full content, including the NSFW flag on Mextalki #118.",
-    "Where the clip is too long, define a time-bounded listening segment but keep playback in the original YouTube player; do not cut or redistribute the clip.",
-    "Only after the actual content is reviewed, write original The Teachers pre-listening, gist, detail, vocabulary and post-listening tasks; do not reproduce provider worksheets.",
-    "Obtain permission or legal clearance for any third-party media that will be embedded as part of the paid course; otherwise create original recorded audio for that unit."
+    "Preview #37 and #39 end-to-end; verify speech rate, pronunciation, vocabulary density and captions before writing original A2 exercises.",
+    "Review #38 audio against the surfaced transcript with a competent Spanish reviewer; do not use the third-party transcript as an answer key until corrected.",
+    "Preview Easy Spanish 137 ROMA and verify captions; classify as optional B1+ extension if the actual language load is appropriate.",
+    "Continue looking for Mexican A2-B1 YouTube clips with clean language and accessible captions/transcripts; exclude Mextalki episodes whose glossaries show strong vulgar/sexual language unless a specific clip is confirmed clean.",
+    "Write original The Teachers pre-listening, gist, detail, vocabulary and post-listening tasks only after the selected media has been fully screened."
   ],
   "audit": {
     "checked_on": "2026-11-11",
@@ -417,7 +416,13 @@
     "level_method": "Channel-level or third-party subtitle difficulty scores are screening signals only, not CEFR certification. All added Mextalki levels remain provisional and must be checked against the full clip/transcript before lesson tasks are written.",
     "commercial_use": "A public YouTube URL or enabled embed is not treated as a blanket commercial license. Candidate status remains conditional pending review of embedding, platform terms and the paid-course context.",
     "audio_integrity": "No audio candidate is marked listened-to unless actual playback was completed. Metadata, descriptions and subtitle-score summaries do not verify accent quality, speed, intonation or sound quality.",
-    "new_a2_candidate": "Added Speak Like a Mexican #36, a Mexico-based A2-labelled food/grocery listening candidate for A2 compras y servicios. Exact audio and transcript still need preview."
+    "new_a2_candidate": "Added Speak Like a Mexican #36, a Mexico-based A2-labelled food/grocery listening candidate for A2 compras y servicios. Exact audio and transcript still need preview.",
+    "corrections": [
+      "Speak Like a Mexican #36 Conversation about Food is publisher-labelled B1, not A2. The previously stored YouTube ID could not be matched to the episode and was removed; public Apple Podcasts episode listing is verified.",
+      "Speak Like a Mexican #37 Facts about Mexico and #39 Mexican Holidays have exact YouTube video IDs and publisher A2 labels.",
+      "Speak Like a Mexican #38 Is it safe to travel in Mexico? has exact YouTube video ID and publisher B1 label; a third-party transcript is available but appears to contain ASR errors and is not approved as an answer-key source.",
+      "Mextalki #139 Gentrificación 2.0 and #145 Los Niños Héroes are excluded from the core learner path after reviewing official glossaries containing extensive strong vulgar/sexual expressions. #118 Periódicos mexicanos is excluded because publisher marks it NSFW and discusses nota roja."
+    ]
   },
   "removed_or_corrected": [
     "Removed claim that VideoEle video catalogue is cleared for use in The Teachers paid product: NC-ND licence explicitly prohibits commercial use and derivative redistribution.",
@@ -467,13 +472,13 @@
       {
         "unit": "es_b1_unit03_medios_opinion",
         "title": "Easy Spanish — What do Mexicans think about the film ROMA?",
-        "level": "B1+ provisional; authentic street interviews, exact CEFR level not assigned by publisher",
+        "level": "Supplementary learning resource labels it Spanish Level 3; CEFR equivalence not confirmed",
         "speaker_region": "Mexico City, Mexico",
         "youtube": "https://www.youtube.com/watch?v=5NOqd_OUO3E",
         "publisher_page": "https://www.youtube.com/watch?v=5NOqd_OUO3E",
-        "fit": "Mexican street interviews about the film ROMA, its significance and relevance to Mexican culture and society. Direct thematic fit for expressing opinions about media and cultural representation. Authentic unscripted speech; use as stretch listening with staged gist/detail tasks rather than claiming it is easy B1.",
-        "transcript": "Video description includes a correction at 03:21; full transcript availability not confirmed",
-        "status": "video_identity_topic_and_mexico_location_verified_audio_preview_and_caption_check_pending",
+        "fit": "13m50s street interviews in Mexico City about the film ROMA and its cultural significance. Strong thematic fit for expressing opinions about media/cultural representation, but spontaneous multi-speaker speech is likely a stretch. A third-party teaching resource supplies pre-listening vocabulary and while-listening phrases; do not reuse its worksheet.",
+        "transcript": "third-party worksheet indicates key vocabulary; full transcript/captions not verified",
+        "status": "topic_location_and_supplementary_level_signal_verified_audio_preview_and_caption_check_pending",
         "rights": "YouTube standard terms; use only via original YouTube player if embedding is enabled. No permission to download, copy, edit or redistribute. Commercial course integration requires separate legal review."
       },
       {
@@ -483,9 +488,9 @@
         "speaker_region": "Mexico",
         "youtube": "https://www.youtube.com/watch?v=Em7nTmUUwP0",
         "publisher_page": "https://www.youtube.com/watch?v=Em7nTmUUwP0",
-        "fit": "Explicitly about Mexican newspapers; highly relevant to the media/information unit. The source flags the episode NSFW and the estimated vocabulary range is high, so do not use in the core B1 path unless the full content is screened and suitability confirmed.",
+        "fit": "Publisher explicitly marks the episode NSFW and describes coverage of nota roja newspapers. Exclude from the general learner library.",
         "transcript": "Human-written subtitles reported for 75% of the channel's videos overall; availability on this episode not individually confirmed",
-        "status": "exact_video_and_topic_verified_content_safety_and_audio_preview_pending",
+        "status": "excluded_from_core_learning_path_due_to_nsfw_content",
         "rights": "YouTube standard terms; embed permission and commercial course context require separate review. Do not copy or redistribute."
       },
       {
@@ -495,9 +500,9 @@
         "speaker_region": "Mexico",
         "youtube": "https://www.youtube.com/watch?v=cMJcPXTlJw4",
         "publisher_page": "https://www.youtube.com/watch?v=cMJcPXTlJw4",
-        "fit": "Discussion of gentrification in Mexico; strong thematic fit for urban change, coexistence and social issues. Long-form authentic input; consider only as a selected listening extract with a clear time range after preview, while keeping the original player intact.",
-        "transcript": "Subtitle availability not individually confirmed",
-        "status": "exact_video_and_topic_verified_audio_preview_and_transcript_check_pending",
+        "fit": "The official glossary contains numerous strong vulgarities and sexual expressions, including explicit terms. Despite the thematic fit, exclude from the core B1 library; do not build lesson tasks from this source.",
+        "transcript": "official page states no transcription available",
+        "status": "excluded_from_core_learning_path_due_to_explicit_vulgar_and_sexual_lexicon",
         "rights": "YouTube standard terms; do not download, edit or redistribute. Commercial integration and embedding to be reviewed."
       },
       {
@@ -507,10 +512,49 @@
         "speaker_region": "Mexico",
         "youtube": "https://www.youtube.com/watch?v=Tt8UtL4j3XA",
         "publisher_page": "https://www.youtube.com/watch?v=Tt8UtL4j3XA",
-        "fit": "Mexican historical memory and national narrative; potentially relevant to culture and collective memory. Long and likely lexically dense, so reserve for an optional B1+ extension, not the core unit.",
-        "transcript": "Subtitle availability not individually confirmed",
-        "status": "exact_video_and_topic_verified_audio_preview_and_transcript_check_pending",
+        "fit": "The official glossary contains numerous strong vulgarities and insults. Despite the cultural-history topic, exclude from the core B1 library; do not build lesson tasks from this source.",
+        "transcript": "official page lists a glossary; full transcript not available on reviewed page",
+        "status": "excluded_from_core_learning_path_due_to_explicit_vulgar_lexicon",
         "rights": "YouTube standard terms; do not download, edit or redistribute. Commercial integration and embedding to be reviewed."
+      },
+      {
+        "unit": "es_a2_u06_historias_tradiciones",
+        "title": "Speak Like a Mexican — #37: Facts about Mexico",
+        "level": "A2 (publisher-labelled)",
+        "speaker_region": "Mexico",
+        "youtube": "https://www.youtube.com/watch?v=ZZFCXqCVmiI",
+        "publisher_page": "https://www.youtube.com/watch?v=ZZFCXqCVmiI",
+        "duration": "5 minutes",
+        "fit": "Short cultural listening about Mexican history, food, traditions and contemporary curiosities. Candidate for the A2 history/traditions unit; individual vocabulary and listening load still need checking.",
+        "transcript": "not verified",
+        "status": "exact_youtube_video_topic_region_and_publisher_level_verified_audio_preview_and_transcript_pending",
+        "rights": "No Creative Commons license identified. Free YouTube viewing; use original player only if embedding is enabled and commercial course context is cleared. Do not copy or redistribute."
+      },
+      {
+        "unit": "es_a2_u06_historias_tradiciones",
+        "title": "Speak Like a Mexican — #39: Mexican Holidays",
+        "level": "A2 (publisher-labelled)",
+        "speaker_region": "Mexico",
+        "youtube": "https://www.youtube.com/watch?v=K4puUQ6U6v0",
+        "publisher_page": "https://www.youtube.com/watch?v=K4puUQ6U6v0",
+        "duration": "12 minutes 14 seconds",
+        "fit": "Mexican holidays including Independence Day, Día de Muertos and Día de la Candelaria, with cultural context and personal experiences. Strong thematic match for celebrations and traditions.",
+        "transcript": "not verified",
+        "status": "exact_youtube_video_topic_region_and_publisher_level_verified_audio_preview_and_transcript_pending",
+        "rights": "No Creative Commons license identified. Free YouTube viewing; use original player only if embedding is enabled and commercial course context is cleared. Do not copy or redistribute."
+      },
+      {
+        "unit": "cross_level",
+        "title": "Speak Like a Mexican — #38: Is it safe to travel in Mexico?",
+        "level": "B1 (publisher-labelled)",
+        "speaker_region": "Mexico",
+        "youtube": "https://www.youtube.com/watch?v=kXd7Z5N0yvM",
+        "publisher_page": "https://www.youtube.com/watch?v=kXd7Z5N0yvM",
+        "duration": "9 minutes",
+        "fit": "Conversation about transport options in Mexico City and travel between cities, safety, peak-hour crowds and pickpockets. Could supplement A2 city/transport as a stretch task or be used as B1 authentic listening. Full transcript surfaced on a third-party podcast index but contains likely automatic transcription errors; it must not be used as a reliable answer key.",
+        "transcript": "third-party transcript surfaced; quality questionable and requires native verification",
+        "status": "exact_youtube_video_topic_region_and_publisher_level_verified_transcript_found_unverified_audio_preview_pending",
+        "rights": "No Creative Commons license identified. Free YouTube viewing; use original player only if embedding is enabled and commercial course context is cleared. Do not copy or redistribute."
       }
     ]
   },

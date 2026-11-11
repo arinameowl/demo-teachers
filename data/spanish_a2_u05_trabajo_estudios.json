@@ -153,7 +153,11 @@
           "answer": 0,
           "explanation": "En una empresa, departamento es un área con funciones específicas, por ejemplo, recursos humanos."
         }
-      ]
+      ],
+      "reading": {
+        "title": "El primer proyecto",
+        "text": "El mes pasado, Daniel empezó a trabajar en un proyecto nuevo. Primero habló con su responsable y después conoció al resto del equipo. Durante la primera semana, revisó varios documentos y preparó una presentación. El jueves tuvo una reunión con un cliente y explicó las ideas principales. Al final, el equipo recibió comentarios positivos y decidió continuar con la propuesta. Daniel terminó la semana cansado, pero satisfecho."
+      }
     },
     {
       "id": "es_mx",
@@ -267,7 +271,11 @@
           "answer": 0,
           "explanation": "La supervisora coordina, orienta o revisa el trabajo de otras personas."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Una semana de capacitación",
+        "text": "El lunes, Andrea comenzó un trabajo nuevo en una empresa de tecnología. Durante los primeros días conoció a sus compañeros y recibió una capacitación sobre los programas que iba a utilizar. El miércoles preparó su primer reporte y lo revisó con su supervisora. El viernes participó en una reunión y presentó algunas ideas. Al terminar la semana, Andrea se sintió más segura y entendió mejor sus responsabilidades."
+      }
     }
   ],
   "teacher_notes": [

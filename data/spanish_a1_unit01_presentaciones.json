@@ -213,7 +213,7 @@
           "id": "es_es_u1_e3",
           "skill": "vocabulary",
           "type": "choice",
-          "prompt": "En España, ¿qué palabra se usa habitualmente para «мобильный телефон»?",
+          "prompt": "En España, ¿qué palabra se usa habitualmente para hablar del teléfono móvil?",
           "options": [
             "Celular",
             "Móvil",
@@ -327,7 +327,7 @@
           "id": "es_mx_u1_e3",
           "skill": "vocabulary",
           "type": "choice",
-          "prompt": "En México, ¿qué palabra se usa habitualmente para «мобильный телефон»?",
+          "prompt": "En México, ¿qué palabra se usa habitualmente para hablar del teléfono móvil?",
           "options": [
             "Móvil",
             "Ordenador",
@@ -347,17 +347,17 @@
             "tienes"
           ],
           "answer": 0,
-          "explanation": "Для возраста используется tener: yo tengo veintiocho años."
+          "explanation": "Con yo usamos tengo: yo tengo veintiocho años."
         },
         {
           "id": "es_mx_u1_e5",
           "skill": "culture",
           "type": "choice",
-          "prompt": "В диалоге Mariana говорит «¡Nos vemos!». Что это означает?",
+          "prompt": "¿Qué expresa Mariana con «¡Nos vemos!» al terminar la conversación?",
           "options": [
-            "Увидимся!",
-            "Доброе утро!",
-            "Очень приятно!"
+            "Una despedida informal",
+            "Un saludo por la mañana",
+            "Una presentación"
           ],
           "answer": 0,
           "explanation": "¡Nos vemos! — распространенная неформальная фраза прощания в Мексике и других испаноязычных странах."

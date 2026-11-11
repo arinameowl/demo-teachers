@@ -121,7 +121,7 @@
     });
   }
   function spanishSection(resourceId, resource, section, label) {
-    const questions = resourceId === 'book' ? (resource.questions || []) : flattenSpanishTasks(resource, section);
+    const questions = resourceId === 'book' ? (resource.books?.[0]?.questions || resource.questions || []) : flattenSpanishTasks(resource, section);
     const tasks = resource?.tasks?.[section] || [];
     const vocab = tasks.filter(t => t.type === 'matching' && Array.isArray(t.pairs)).map(t =>
       '<div class="desc">' + t.pairs.map(p => '<p><strong>' + esc(p.spanish) + '</strong> — ' + esc(p.russian) + '</p>').join('') + '</div>'
@@ -360,9 +360,16 @@
     const unanswered=answers.some((a)=>a===null||String(a).trim()==='');
     if(unanswered){tg?.showAlert?.('Пожалуйста, ответьте на все задания.');return;}
     try{
+      if(activeQuiz.spanishUnit){
+        const result=await api('/api/app/spanish-unit/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({variant:activeQuiz.variant,unit_id:activeQuiz.materialId,answers})});
+        const review=result.results.map((r,i)=>'<div class="answer-review '+(r.correct?'good':'bad')+'"><strong>'+(i+1)+'. '+(r.correct?'Верно':'Пока неверно')+'</strong>'+(r.correct?'':'<br>Ваш ответ: '+esc(r.given)+'<br>Правильный ответ: '+esc(r.expected))+(r.explanation?'<br>'+esc(r.explanation):'')+'</div>').join('');
+        $('quiz-result').innerHTML='<div class="result"><strong>Результат: '+result.correct+' из '+result.total+'</strong><br>'+(result.completed?'Отлично! Урок пройден.':'Разберите комментарии и попробуйте еще раз.')+review+'</div>';
+        tg?.HapticFeedback?.notificationOccurred(result.completed?'success':'warning');
+        return;
+      }
       if(activeQuiz.spanish){
         const result=await api('/api/app/spanish-lead/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({variant:activeQuiz.variant,resource_id:activeQuiz.materialId,section:activeQuiz.section,answers})});
-        const review=result.results.map((r,i)=>'<div class="answer-review '+(r.correct?'good':'bad')+'"><strong>'+(i+1)+'. '+(r.correct?'Верно':'Пока неверно')+'</strong>'+(r.correct?'':'<br>Правильный ответ: '+esc(r.expected))+'</div>').join('');
+        const review=result.results.map((r,i)=>'<div class="answer-review '+(r.correct?'good':'bad')+'"><strong>'+(i+1)+'. '+(r.correct?'Верно':'Пока неверно')+'</strong>'+(r.correct?'':'<br>Ваш ответ: '+esc(r.given||'')+'<br>Правильный ответ: '+esc(r.expected))+(r.explanation?'<br>'+esc(r.explanation):'')+'</div>').join('');
         $('quiz-result').innerHTML='<div class="result"><strong>Результат: '+result.correct+' из '+result.total+'</strong><br>'+(result.completed?'Отлично! Все ответы верны.':'Посмотрите правильные ответы и попробуйте ещё раз.')+review+'</div>';
         tg?.HapticFeedback?.notificationOccurred(result.completed?'success':'warning');
         return;
@@ -379,6 +386,7 @@
     renderLanguages();
     try {
       state = await api('/api/app/bootstrap');
+      selectedLanguage = state.selected_language || state.profile?.language || 'en';
       try { state.library = await api('/api/app/library'); }
       catch (libraryError) { state.library = {books:[],worksheets:[],error:libraryError.status===409 ? null : libraryError.message}; }
       renderProfile(); renderLanguages(); renderMaterials();

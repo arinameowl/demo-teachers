@@ -6,48 +6,142 @@
   "unit_id": "es_a1_u03_un_dia_normal",
   "title": "Un día normal",
   "learning_goals": [
-    "Рассказать о своем обычном распорядке дня",
-    "Назвать время и указать, когда происходят повседневные действия",
-    "Описать утренние, дневные и вечерние привычки",
+    "Рассказать о своем обычном дне от утра до вечера",
+    "Назвать время и использовать выражения частей дня",
+    "Описать последовательность повседневных действий",
     "Использовать возвратные глаголы в настоящем времени",
-    "Различать выражения частотности и временные маркеры"
+    "Согласовывать глаголы с подлежащим в настоящем времени",
+    "Описывать частоту привычек с помощью siempre, normalmente, a veces, casi nunca и nunca",
+    "Понимать некоторые различия повседневной лексики Испании и Мексики"
   ],
   "grammar": [
     {
       "topic": "reflexive_verbs",
-      "explanation_ru": "Возвратные глаголы описывают действия, которые человек совершает с собой или в отношении себя. Перед глаголом ставится возвратное местоимение: me, te, se, nos, os, se.",
+      "title_ru": "Возвратные глаголы: что вы делаете с собой?",
+      "explanation_ru": "Возвратные глаголы часто описывают повседневные действия, связанные с самим человеком: просыпаться, вставать, умываться, одеваться, ложиться спать. Перед глаголом ставится возвратное местоимение, которое меняется вместе с лицом.",
+      "forms": [
+        {
+          "subject": "yo",
+          "pronoun": "me",
+          "example": "me levanto"
+        },
+        {
+          "subject": "tú",
+          "pronoun": "te",
+          "example": "te levantas"
+        },
+        {
+          "subject": "él / ella / usted",
+          "pronoun": "se",
+          "example": "se levanta"
+        },
+        {
+          "subject": "nosotros/as",
+          "pronoun": "nos",
+          "example": "nos levantamos"
+        },
+        {
+          "subject": "vosotros/as",
+          "pronoun": "os",
+          "example": "os levantáis"
+        },
+        {
+          "subject": "ellos / ellas / ustedes",
+          "pronoun": "se",
+          "example": "se levantan"
+        }
+      ],
       "examples": [
-        "Me levanto a las siete.",
+        "Me despierto a las siete.",
         "Te duchas por la mañana.",
-        "Se acuesta a las once."
-      ]
+        "Nos acostamos tarde."
+      ],
+      "common_mistake_ru": "Нельзя забывать местоимение: для yo нужно me levanto, а не просто levanto, если вы хотите сказать «я встаю»."
+    },
+    {
+      "topic": "reflexive_meaning_and_pairs",
+      "title_ru": "Despertarse и levantarse — не одно и то же",
+      "explanation_ru": "Despertarse — проснуться, перестать спать. Levantarse — встать с кровати. Между этими действиями может пройти время: Me despierto a las seis, pero me levanto a las siete.",
+      "examples": [
+        "Me despierto a las seis y media.",
+        "Me levanto a las siete.",
+        "Me acuesto a las once."
+      ],
+      "note_ru": "У некоторых возвратных глаголов меняется гласная в основе: despertarse → me despierto; acostarse → me acuesto. На этом этапе запомните эти частотные формы как готовые модели."
     },
     {
       "topic": "present_tense_routine",
-      "explanation_ru": "Для описания привычек используем настоящее время. Важно согласовывать форму глагола с подлежащим.",
+      "title_ru": "Настоящее время для привычек",
+      "explanation_ru": "Чтобы описывать то, что вы делаете обычно, используйте настоящее время. Форма глагола зависит от того, кто выполняет действие. В этом материале важно узнавать и использовать частотные формы yo, tú, él/ella и nosotros.",
       "examples": [
         "Trabajo de lunes a viernes.",
         "Desayunamos en casa.",
-        "Mis amigos salen por la noche."
-      ]
+        "Mis amigos salen por la noche.",
+        "Mi hermana estudia por la tarde."
+      ],
+      "note_ru": "Не все действия возвратные: trabajo, desayuno, estudio и salgo употребляются без возвратного местоимения."
     },
     {
       "topic": "time_expressions",
-      "explanation_ru": "Для указания времени используем a la una и a las dos/tres/etc. Для частей дня — por la mañana, por la tarde, por la noche.",
+      "title_ru": "Как назвать время",
+      "explanation_ru": "Для точного времени используйте a la una в час дня и a las + число в остальные часы. Части дня обычно вводятся выражениями por la mañana, por la tarde и por la noche. Для половины часа часто используется y media, для четверти до часа — menos cuarto.",
       "examples": [
         "Me despierto a las siete.",
-        "Estudio por la tarde.",
-        "Ceno a las nueve."
-      ]
+        "La clase empieza a la una.",
+        "Como a las dos y media.",
+        "Salgo a las ocho menos cuarto."
+      ],
+      "note_ru": "В испанском языке время 7:45 можно выразить как las ocho menos cuarto. В повседневной речи также встречаются цифровые формулировки."
     },
     {
       "topic": "frequency_adverbs",
-      "explanation_ru": "Наречия частотности помогают описывать привычки: siempre, normalmente, a veces, casi nunca, nunca.",
+      "title_ru": "Как часто вы это делаете?",
+      "explanation_ru": "Наречия частотности помогают уточнить, насколько регулярно происходит действие. Обычно они стоят перед смысловым глаголом: normalmente desayuno en casa. A veces часто ставится перед глаголом или в начале предложения.",
+      "scale": [
+        {
+          "form": "siempre",
+          "meaning": "всегда"
+        },
+        {
+          "form": "normalmente",
+          "meaning": "обычно"
+        },
+        {
+          "form": "a menudo",
+          "meaning": "часто"
+        },
+        {
+          "form": "a veces",
+          "meaning": "иногда"
+        },
+        {
+          "form": "casi nunca",
+          "meaning": "почти никогда"
+        },
+        {
+          "form": "nunca",
+          "meaning": "никогда"
+        }
+      ],
       "examples": [
-        "Siempre desayuno.",
-        "A veces camino al trabajo.",
-        "Nunca tomo café por la noche."
-      ]
+        "Siempre desayuno en casa.",
+        "Normalmente voy al trabajo en autobús.",
+        "A veces hago ejercicio.",
+        "Casi nunca ceno tarde."
+      ],
+      "note_ru": "В испанском отрицание nunca может стоять перед глаголом: Nunca tomo café por la noche."
+    },
+    {
+      "topic": "sequence_connectors",
+      "title_ru": "Как связать действия в рассказ",
+      "explanation_ru": "Чтобы рассказ не звучал как список отдельных слов, используйте простые связки: primero (сначала), después / luego (затем), antes de (до того как), por último (в конце).",
+      "examples": [
+        "Primero me ducho.",
+        "Después desayuno.",
+        "Luego voy al trabajo.",
+        "Por último, vuelvo a casa."
+      ],
+      "note_ru": "После antes de перед глаголом используется инфинитив: antes de salir. Для этого уровня достаточно узнавать конструкцию целиком."
     }
   ],
   "variants": [
@@ -280,10 +374,333 @@
   ],
   "teacher_notes": [
     "Не преподавать распорядок дня как универсальный график: время подъема, обеда и ужина зависит от человека, работы и региона.",
-    "В испанском варианте использовать coger el autobús как нейтральный пример для Испании; объяснить, что в Мексике это слово может восприниматься иначе в разговорной речи.",
+    "В испанском варианте использовать coger el autobús как нейтральный пример для Испании; объяснить, что в Мексике coger может восприниматься иначе в разговорной речи.",
     "В мексиканском варианте tomar el camión — регионально распространенная форма; в других регионах и ситуациях могут употребляться tomar el autobús или tomar el transporte público.",
-    "Bañarse в Мексике может обозначать мытье/принятие душа; ducharse также понятно и употребляется.",
-    "Форму vosotros не включать в мексиканский маршрут; в обращении к нескольким людям использовать ustedes.",
-    "Все диалоги и упражнения оригинальные и созданы для The Teachers School."
-  ]
+    "Bañarse в Мексике может обозначать мытье или принятие душа; ducharse также понятно и употребляется.",
+    "Форму vosotros показывать в общей таблице как характерную для Испании; в мексиканском маршруте активное обращение к нескольким людям строить с ustedes.",
+    "Despertarse и acostarse имеют изменение гласной в основе в некоторых формах настоящего времени: me despierto, me acuesto. На A1 достаточно освоить частотные формы в контексте.",
+    "Не смешивать despertar(se) и levantar(se): первое означает проснуться, второе — встать.",
+    "Merendar — полезная лексема для испанского варианта; не утверждать, что такой прием пищи отсутствует в других странах.",
+    "Все диалоги и упражнения оригинальные и созданы для The Teachers School.",
+    "Материал требует финальной вычитки носителями испанского Испании и Мексики; текстовые подсказки по произношению не заменяют аудиомодель."
+  ],
+  "editorial_intro": {
+    "headline": "Un día, muchas pequeñas rutinas",
+    "hook": "¿Cómo empieza tu mañana? ¿Qué haces antes de salir de casa? Hablar de un día normal parece sencillo, pero именно такие разговоры помогают перейти от отдельных слов к настоящему общению.",
+    "opening_question": "Si alguien te pregunta cómo es un día normal para ti, ¿qué tres cosas contarías primero?",
+    "purpose": "Вы научитесь рассказывать о повседневных привычках, называть время, описывать последовательность действий и говорить, как часто что-то делаете.",
+    "estimated_time_minutes": 40,
+    "route": [
+      "Сравните распорядок двух героев и найдите знакомые действия.",
+      "Разберитесь, как работают возвратные глаголы и формы настоящего времени.",
+      "Посмотрите, как о повседневной жизни говорят в Испании и Мексике.",
+      "Составьте рассказ о собственном обычном дне и проверьте, что уже можете сказать самостоятельно."
+    ]
+  },
+  "vocabulary_in_context": {
+    "daily_actions": [
+      {
+        "es": "despertarse",
+        "ru": "просыпаться"
+      },
+      {
+        "es": "levantarse",
+        "ru": "вставать"
+      },
+      {
+        "es": "ducharse / bañarse",
+        "ru": "принимать душ / мыться"
+      },
+      {
+        "es": "vestirse",
+        "ru": "одеваться"
+      },
+      {
+        "es": "desayunar",
+        "ru": "завтракать"
+      },
+      {
+        "es": "salir de casa",
+        "ru": "выходить из дома"
+      },
+      {
+        "es": "ir al trabajo / a clase",
+        "ru": "идти на работу / на занятия"
+      },
+      {
+        "es": "comer",
+        "ru": "обедать; есть"
+      },
+      {
+        "es": "merendar",
+        "ru": "полдничать; перекусывать во второй половине дня"
+      },
+      {
+        "es": "hacer ejercicio",
+        "ru": "заниматься физическими упражнениями"
+      },
+      {
+        "es": "volver a casa",
+        "ru": "возвращаться домой"
+      },
+      {
+        "es": "cenar",
+        "ru": "ужинать"
+      },
+      {
+        "es": "acostarse",
+        "ru": "ложиться спать"
+      }
+    ],
+    "time_and_frequency": [
+      {
+        "es": "por la mañana",
+        "ru": "утром"
+      },
+      {
+        "es": "por la tarde",
+        "ru": "днем / во второй половине дня"
+      },
+      {
+        "es": "por la noche",
+        "ru": "вечером / ночью"
+      },
+      {
+        "es": "entre semana",
+        "ru": "в будние дни"
+      },
+      {
+        "es": "los fines de semana",
+        "ru": "по выходным"
+      },
+      {
+        "es": "a las siete y media",
+        "ru": "в половине восьмого"
+      },
+      {
+        "es": "a las ocho menos cuarto",
+        "ru": "без четверти восемь"
+      },
+      {
+        "es": "normalmente",
+        "ru": "обычно"
+      },
+      {
+        "es": "a veces",
+        "ru": "иногда"
+      },
+      {
+        "es": "casi nunca",
+        "ru": "почти никогда"
+      }
+    ],
+    "useful_chunks": [
+      {
+        "es": "¿A qué hora…?",
+        "ru": "Во сколько…?"
+      },
+      {
+        "es": "¿Qué haces después?",
+        "ru": "Что ты делаешь потом?"
+      },
+      {
+        "es": "Antes de salir…",
+        "ru": "Перед выходом…"
+      },
+      {
+        "es": "Después vuelvo a casa.",
+        "ru": "Потом я возвращаюсь домой."
+      },
+      {
+        "es": "Mi día empieza a…",
+        "ru": "Мой день начинается в…"
+      },
+      {
+        "es": "Termino de trabajar a…",
+        "ru": "Я заканчиваю работу в…"
+      }
+    ],
+    "usage_note_ru": "Некоторые слова обозначают не только действие, но и прием пищи или время суток. Например, merendar — типичный перекус во второй половине дня, особенно в Испании; точное время и состав еды зависят от привычек человека."
+  },
+  "language_in_real_life": {
+    "es_es": {
+      "title": "Así se habla en España",
+      "items": [
+        {
+          "expression": "coger el autobús",
+          "meaning_ru": "сесть на автобус / поехать на автобусе",
+          "context": "Cojo el autobús a las ocho menos cuarto.",
+          "note_ru": "Обычная нейтральная формулировка в Испании. В некоторых странах Латинской Америки coger может иметь другое разговорное значение."
+        },
+        {
+          "expression": "merendar",
+          "meaning_ru": "перекусить во второй половине дня",
+          "context": "Antes de ir al gimnasio, meriendo algo.",
+          "note_ru": "В Испании это привычное название отдельного приема пищи или перекуса между обедом и ужином."
+        },
+        {
+          "expression": "comer a las dos",
+          "meaning_ru": "обедать в два часа",
+          "context": "Normalmente como a las dos.",
+          "note_ru": "В Испании обед часто бывает позже, чем в некоторых других странах; это не универсальное расписание для всех."
+        }
+      ],
+      "listening_tip_ru": "Послушайте, как звучат связки coger el autobús и a las ocho menos cuarto. Попробуйте повторить их как цельные речевые группы."
+    },
+    "es_mx": {
+      "title": "Así se habla en México",
+      "items": [
+        {
+          "expression": "tomar el camión",
+          "meaning_ru": "ехать на автобусе",
+          "context": "Tomo el camión y después camino diez minutos.",
+          "note_ru": "Распространенное выражение во многих регионах Мексики. В зависимости от места также можно услышать autobús или transporte público."
+        },
+        {
+          "expression": "bañarse",
+          "meaning_ru": "мыться, принимать душ или ванну",
+          "context": "Me baño, desayuno y preparo mi mochila.",
+          "note_ru": "В Мексике это обычный повседневный глагол. Ducharse тоже понятно и используется."
+        },
+        {
+          "expression": "desayunar / comer / cenar",
+          "meaning_ru": "завтракать / обедать / ужинать",
+          "context": "Desayuno en casa y como con mis amigos.",
+          "note_ru": "Названия приемов пищи в целом понятны в испаноязычном мире, но время и привычный распорядок различаются."
+        }
+      ],
+      "listening_tip_ru": "Сравните me baño и me despierto: в обоих случаях местоимение me относится к Andrés. Отдельно обратите внимание на tomar el camión."
+    }
+  },
+  "guided_practice": [
+    {
+      "stage": "notice",
+      "title": "1. Заметьте структуру дня",
+      "instruction_ru": "Перечитайте диалоги и найдите языковые модели. Сначала ответьте без подсказок, затем сверьтесь с грамматической справкой.",
+      "tasks": [
+        {
+          "prompt_ru": "Найдите в каждом диалоге по три возвратных глагола. Какие местоимения стоят перед ними?",
+          "hint_ru": "Например: me levanto, te despiertas, me acuesto."
+        },
+        {
+          "prompt_ru": "Найдите две фразы с точным временем и одну фразу с частью дня.",
+          "hint_ru": "Сравните a las siete, a las dos и por la tarde."
+        },
+        {
+          "prompt_ru": "Найдите наречия, которые показывают регулярность действий. Расположите их от «всегда» до «почти никогда».",
+          "hint_ru": "Вспомните siempre, normalmente, a veces и casi nunca."
+        },
+        {
+          "prompt_ru": "Найдите слова, которые связывают действия по порядку.",
+          "hint_ru": "Обратите внимание на después и antes de."
+        }
+      ],
+      "check_ru": "Вы должны уметь объяснить, почему Pablo говорит me levanto, а Andrés — me despierto, и чем эти действия отличаются."
+    },
+    {
+      "stage": "practice",
+      "title": "2. Постройте свой распорядок",
+      "instruction_ru": "Заполните модели информацией о себе. Сначала составьте собственные варианты, затем сравните их с примерами.",
+      "tasks": [
+        {
+          "prompt": "Normalmente me despierto a las ____.",
+          "focus_ru": "Время пробуждения"
+        },
+        {
+          "prompt": "Después me levanto y ____.",
+          "focus_ru": "Следующее действие"
+        },
+        {
+          "prompt": "Por la mañana normalmente ____.",
+          "focus_ru": "Одна привычка"
+        },
+        {
+          "prompt": "Por la tarde a veces ____.",
+          "focus_ru": "Действие и частотность"
+        },
+        {
+          "prompt": "Por la noche ____ a las ____.",
+          "focus_ru": "Вечерняя привычка и время"
+        }
+      ],
+      "model_answers_after_attempt": [
+        "Normalmente me despierto a las siete.",
+        "Después me levanto y me ducho.",
+        "Por la mañana normalmente desayuno en casa.",
+        "Por la tarde a veces hago ejercicio.",
+        "Por la noche ceno a las ocho."
+      ]
+    },
+    {
+      "stage": "communicate",
+      "title": "3. Расскажите о своем обычном дне",
+      "instruction_ru": "Ответьте на вопросы так, как если бы собеседник действительно хотел узнать ваш распорядок.",
+      "prompts": [
+        "¿A qué hora te despiertas y te levantas?",
+        "¿Qué haces por la mañana?",
+        "¿Cómo vas al trabajo o a clase?",
+        "¿Qué haces por la tarde?",
+        "¿A qué hora te acuestas?"
+      ],
+      "success_criteria_ru": "В ответах есть не менее трех возвратных глаголов, два обозначения времени, одно наречие частотности и одна связка последовательности."
+    }
+  ],
+  "personal_application": {
+    "title": "Un día en mi vida",
+    "scenario_ru": "Новый знакомый спрашивает, как проходит ваш обычный будний день. Подготовьте рассказ, который можно произнести вслух или отправить в сообщении.",
+    "task_ru": "Напишите 8–10 коротких предложений о своем типичном дне — от пробуждения до сна. Необязательно описывать идеальный или одинаковый каждый день: расскажите о реальных привычках.",
+    "include": [
+      "Во сколько вы просыпаетесь и встаете",
+      "Что делаете утром перед выходом из дома",
+      "Как добираетесь до работы, учебы или других занятий",
+      "Что обычно делаете днем",
+      "Одна привычка, которая бывает только иногда",
+      "Что делаете вечером и во сколько ложитесь спать"
+    ],
+    "stretch_task_ru": "Сравните будний день и выходной с помощью entre semana и los fines de semana. Добавьте одну фразу о том, что вы почти никогда не делаете.",
+    "self_check_ru": [
+      "Я использовал(а) возвратные местоимения с нужными глаголами",
+      "Я правильно назвал(а) время",
+      "Я использовал(а) минимум одно наречие частотности",
+      "Я связал(а) действия словами después, luego или primero",
+      "Мой рассказ описывает привычный день, а не случайный набор действий"
+    ]
+  },
+  "pronunciation_practice": {
+    "status": "text_based_practice_audio_model_pending",
+    "instruction_ru": "Прочитайте фразы вслух, затем запишите себя. Сравните первую и вторую попытки: цель — произнести фразу плавно и сохранить ударение, а не говорить быстро.",
+    "phrases": [
+      {
+        "text": "Me despierto a las seis y media.",
+        "focus_ru": "Следите за ударением в despierto и не теряйте окончание -o."
+      },
+      {
+        "text": "Después me levanto y me ducho.",
+        "focus_ru": "Попробуйте произнести перечисление как одну последовательность действий."
+      },
+      {
+        "text": "Cojo el autobús a las ocho menos cuarto.",
+        "focus_ru": "Сохраните четкость звуков и ритм длинной фразы."
+      },
+      {
+        "text": "Normalmente me acuesto a las diez y media.",
+        "focus_ru": "Обратите внимание на ударение в normalmente и acuesto."
+      }
+    ],
+    "reflection_ru": "Удалось ли вам произнести фразу целиком, не останавливаясь после каждого слова? Какие два слова пока труднее всего?"
+  },
+  "reflection": {
+    "title": "Lo que ya puedes hacer",
+    "instruction_ru": "Отметьте только те навыки, которые вы можете выполнить без грамматической подсказки.",
+    "can_do": [
+      "Я могу рассказать о своем обычном дне в нескольких предложениях",
+      "Я могу сказать, во сколько просыпаюсь, встаю и ложусь спать",
+      "Я могу использовать me, te и se с частотными возвратными глаголами",
+      "Я могу назвать время и части дня",
+      "Я могу сказать, как часто выполняю привычное действие",
+      "Я могу связать несколько действий в последовательный рассказ",
+      "Я понимаю разницу между despertarse и levantarse"
+    ],
+    "next_step_ru": "Если рассказ пока получается как список действий, повторите его, добавив primero, después, luego и por último. Если сложно с формами, вернитесь к таблице возвратных местоимений и проговорите примеры вслух."
+  }
 }

@@ -52,28 +52,6 @@
       "id": "es_es",
       "name": "Español de España",
       "pronunciation_note": "В примерах используется произношение центральной части Испании: c перед e/i и z произносятся как /θ/.",
-      "vocabulary": [
-        {
-          "es": "móvil",
-          "ru": "мобильный телефон"
-        },
-        {
-          "es": "ordenador",
-          "ru": "компьютер"
-        },
-        {
-          "es": "¿Qué tal?",
-          "ru": "Как дела?"
-        },
-        {
-          "es": "encantado/a",
-          "ru": "очень приятно"
-        },
-        {
-          "es": "trabajo en…",
-          "ru": "я работаю в…"
-        }
-      ],
       "dialogue": [
         {
           "speaker": "Clara",
@@ -180,28 +158,6 @@
       "id": "es_mx",
       "name": "Español de México",
       "pronunciation_note": "В примерах используется распространенное центральномексиканское произношение: s, z и c перед e/i произносятся как /s/.",
-      "vocabulary": [
-        {
-          "es": "celular",
-          "ru": "мобильный телефон"
-        },
-        {
-          "es": "computadora",
-          "ru": "компьютер"
-        },
-        {
-          "es": "¿Qué onda?",
-          "ru": "Как дела? / Что нового? (разговорное)"
-        },
-        {
-          "es": "mucho gusto",
-          "ru": "очень приятно"
-        },
-        {
-          "es": "trabajo en…",
-          "ru": "я работаю в…"
-        }
-      ],
       "dialogue": [
         {
           "speaker": "Mariana",

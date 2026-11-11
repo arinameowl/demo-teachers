@@ -94,14 +94,14 @@
           "id": "es_es_b1_u5_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué pidió la responsable al equipo en la primera reunión?",
+          "prompt": "¿Cómo organizó la responsable el trabajo?",
           "options": [
-            "Que cada persona definiera sus tareas.",
-            "Que todos cambiaran de departamento.",
-            "Que se cancelara el proyecto."
+            "Asignó una tarea a cada persona.",
+            "Pidió que todos cambiaran de departamento.",
+            "Canceló el proyecto."
           ],
           "answer": 0,
-          "explanation": "La lectura explica que la responsable pidió definir las tareas individuales."
+          "explanation": "La lectura indica que la responsable asignó tareas individuales."
         },
         {
           "id": "es_es_b1_u5_e2",
@@ -213,14 +213,14 @@
           "id": "es_mx_b1_u5_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué pidió la responsable al equipo en la primera reunión?",
+          "prompt": "¿Cómo organizó la responsable el trabajo?",
           "options": [
-            "Que cada persona definiera sus tareas.",
-            "Que todos cambiaran de área.",
-            "Que se suspendiera el proyecto."
+            "Asignó una tarea a cada persona.",
+            "Pidió que todos cambiaran de departamento.",
+            "Canceló el proyecto."
           ],
           "answer": 0,
-          "explanation": "La lectura explica que la responsable pidió definir las tareas."
+          "explanation": "La lectura indica que la responsable asignó tareas individuales."
         },
         {
           "id": "es_mx_b1_u5_e2",

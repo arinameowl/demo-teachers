@@ -91,10 +91,22 @@
       <button class="lang ${selectedLanguage===code?'active':''}" data-lang="${code}" ${item.available?'':'aria-disabled="true"'}>
         ${esc(item.name)}<small>${item.available?'Подборка доступна':'Задания в скором времени будут добавлены'}</small>
       </button>`).join('');
-    document.querySelectorAll('[data-lang]').forEach(btn => btn.addEventListener('click', () => {
-      const code = btn.dataset.lang;
-      selectedLanguage = code; renderLanguages(); $('spanish-variant').hidden = code !== 'es'; if(code === 'es') loadSpanishLead(); else renderMaterials();
-    }));
+  }
+  $('languages').addEventListener('click', event => {
+    const btn = event.target.closest('[data-lang]');
+    if (!btn) return;
+    const code = btn.dataset.lang;
+    if (!state.languages?.[code]?.available) return;
+    selectedLanguage = code;
+    renderLanguages();
+    $('spanish-variant').hidden = code !== 'es';
+    if (code === 'es') {
+      state.spanishLead = null;
+      loadSpanishLead();
+    } else {
+      renderMaterials();
+    }
+  });
   }
   document.querySelectorAll('[data-variant]').forEach(btn => btn.addEventListener('click', () => {
     selectedSpanishVariant = btn.dataset.variant;
@@ -118,16 +130,23 @@
     const button = questions.length ? '<button class="action secondary" data-spanish-quiz="' + esc(resourceId) + '" data-section="' + esc(section) + '">Выполнить задания (' + questions.length + ')</button>' : '';
     return '<div class="quiz-q"><strong>' + esc(label) + '</strong>' + vocab + '<div class="actions">' + button + '</div></div>';
   }
+  let spanishLoadId = 0;
   async function loadSpanishLead() {
+    const requestId = ++spanishLoadId;
+    const variant = selectedSpanishVariant;
     $('spanish-variant').hidden = false;
     $('materials').classList.remove('loading'); $('library').classList.remove('loading');
     $('materials').innerHTML = '<div class="loading">Загружаем материалы по испанскому…</div>';
     $('library').innerHTML = '';
     try {
-      state.spanishLead = await api('/api/app/spanish-lead/' + selectedSpanishVariant);
+      const data = await api('/api/app/spanish-lead/' + variant);
+      if (requestId !== spanishLoadId || selectedLanguage !== 'es' || variant !== selectedSpanishVariant) return;
+      state.spanishLead = data;
       renderSpanishMaterials();
     } catch(e) {
-      $('materials').innerHTML = '<div class="empty">' + esc(e.message) + '</div>';
+      if (requestId !== spanishLoadId || selectedLanguage !== 'es') return;
+      $('materials').innerHTML = '<div class="empty">Не удалось загрузить испанские материалы: ' + esc(e.message) + '</div>';
+      $('library').innerHTML = '';
     }
   }
   function renderSpanishMaterials() {

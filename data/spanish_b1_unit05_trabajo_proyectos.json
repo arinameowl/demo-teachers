@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "level": "B1",
+  "category": "lesson",
+  "language": "es",
+  "unit_id": "es_b1_u05_trabajo_proyectos",
+  "title": "Trabajo, colaboración y proyectos",
+  "learning_goals": [
+    "Рассказывать о рабочих задачах и результатах",
+    "Передавать чужие слова в простых ситуациях",
+    "Использовать косвенную речь и вежливые просьбы"
+  ],
+  "grammar": [
+    {
+      "topic": "estilo_indirecto_presente",
+      "explanation_ru": "При передаче чужих слов после decir, explicar, comentar используется que. Если вводный глагол стоит в настоящем времени, время обычно сохраняется.",
+      "examples": [
+        "Mi jefa dice que el plazo es flexible.",
+        "El equipo explica que necesita tiempo."
+      ]
+    },
+    {
+      "topic": "estilo_indirecto_pasado",
+      "explanation_ru": "Если вводный глагол стоит в прошедшем времени, настоящее часто сдвигается в imperfecto, а pretérito perfecto — в pluscuamperfecto.",
+      "examples": [
+        "Dijo que estaba ocupado.",
+        "Comentaron que ya habían enviado el informe."
+      ]
+    },
+    {
+      "topic": "peticiones_formales",
+      "explanation_ru": "Для вежливых просьб используйте ¿Podrías…?, ¿Te importaría…? и ¿Sería posible…? Эти формы смягчают просьбу и подходят для рабочих ситуаций.",
+      "examples": [
+        "¿Podrías revisar este documento?",
+        "¿Sería posible cambiar la fecha?"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "pronunciation_note": "Лексика и речевые модели Испании.",
+      "dialogue": [
+        {
+          "speaker": "Elena",
+          "text": "¿Cómo fue la reunión con el equipo?"
+        },
+        {
+          "speaker": "Raúl",
+          "text": "La directora dijo que el proyecto avanzaba según lo previsto."
+        },
+        {
+          "speaker": "Elena",
+          "text": "¿Mencionó algún problema?"
+        },
+        {
+          "speaker": "Raúl",
+          "text": "Sí, comentó que necesitábamos revisar el presupuesto."
+        },
+        {
+          "speaker": "Elena",
+          "text": "¿Ya habían recibido todas las propuestas?"
+        },
+        {
+          "speaker": "Raúl",
+          "text": "No. Dos proveedores dijeron que enviarían sus ofertas al día siguiente."
+        },
+        {
+          "speaker": "Elena",
+          "text": "Entonces habrá que actualizar el calendario."
+        },
+        {
+          "speaker": "Raúl",
+          "text": "¿Podrías revisar la nueva versión cuando la tenga?"
+        },
+        {
+          "speaker": "Elena",
+          "text": "Claro. ¿Sería posible que me la enviaras antes de las tres?"
+        },
+        {
+          "speaker": "Raúl",
+          "text": "Sí, te la mandaré en cuanto la reciba."
+        }
+      ],
+      "context_note": "В испанских компаниях формат коммуникации зависит от отрасли и корпоративной культуры. Во внешней переписке часто используют нейтральные вежливые формулировки, даже если внутри команды общаются менее формально.",
+      "reading": {
+        "title": "Un proyecto compartido",
+        "text": "El equipo recibió el encargo de preparar una propuesta para un cliente nuevo. En la primera reunión, la responsable explicó que el plazo era de tres semanas y pidió que cada persona definiera sus tareas. Dos días después, el departamento financiero comunicó que necesitaba datos adicionales. El equipo reorganizó el calendario y acordó revisar los avances cada viernes. La claridad en las responsabilidades evitó duplicar trabajo."
+      },
+      "exercises": [
+        {
+          "id": "es_es_b1_u5_e1",
+          "type": "choice",
+          "skill": "gist",
+          "prompt": "¿Qué pidió la responsable en la primera reunión?",
+          "options": [
+            "Que cada persona definiera sus tareas.",
+            "Que la actividad se canceló sin explicación",
+            "Que todos rechazaron la propuesta"
+          ],
+          "answer": 0,
+          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+        },
+        {
+          "id": "es_es_b1_u5_e2",
+          "type": "choice",
+          "skill": "detail",
+          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "options": [
+            "El texto presenta una situación relacionada con el tema y sus matices",
+            "El texto afirma que todas las situaciones son idénticas",
+            "El texto no ofrece información concreta"
+          ],
+          "answer": 0,
+          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+        },
+        {
+          "id": "es_es_b1_u5_e3",
+          "type": "choice",
+          "skill": "grammar",
+          "prompt": "La directora dijo que el plazo ___.",
+          "options": [
+            "era flexible",
+            "es flexible",
+            "será flexible"
+          ],
+          "answer": 0,
+          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+        },
+        {
+          "id": "es_es_b1_u5_e4",
+          "type": "choice",
+          "skill": "vocabulary",
+          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "options": [
+            "Sin embargo",
+            "Por la mañana",
+            "Al lado de"
+          ],
+          "answer": 0,
+          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+        },
+        {
+          "id": "es_es_b1_u5_e5",
+          "type": "choice",
+          "skill": "culture",
+          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "options": [
+            "Que puede variar según la región y las familias",
+            "Que se practica igual en todos los lugares",
+            "Que nunca cambia con el tiempo"
+          ],
+          "answer": 0,
+          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "pronunciation_note": "Мексиканский вариант как основа латиноамериканского маршрута.",
+      "dialogue": [
+        {
+          "speaker": "Elena",
+          "text": "¿Cómo estuvo la reunión con el equipo?"
+        },
+        {
+          "speaker": "Raúl",
+          "text": "La directora dijo que el proyecto avanzaba según lo planeado."
+        },
+        {
+          "speaker": "Elena",
+          "text": "¿Mencionó algún problema?"
+        },
+        {
+          "speaker": "Raúl",
+          "text": "Sí, comentó que necesitábamos revisar el presupuesto."
+        },
+        {
+          "speaker": "Elena",
+          "text": "¿Ya habían recibido todas las propuestas?"
+        },
+        {
+          "speaker": "Raúl",
+          "text": "No. Dos proveedores dijeron que mandarían sus cotizaciones al día siguiente."
+        },
+        {
+          "speaker": "Elena",
+          "text": "Entonces habrá que actualizar el calendario."
+        },
+        {
+          "speaker": "Raúl",
+          "text": "¿Podrías revisar la nueva versión cuando la tenga?"
+        },
+        {
+          "speaker": "Elena",
+          "text": "Claro. ¿Sería posible que me la mandaras antes de las tres?"
+        },
+        {
+          "speaker": "Raúl",
+          "text": "Sí, te la envío en cuanto la reciba."
+        }
+      ],
+      "context_note": "В мексиканских рабочих командах стиль общения зависит от отрасли и корпоративной культуры. Внешняя переписка часто начинается с приветствия и короткого контекста, а просьбы смягчаются формами вроде ¿Podrías…? и ¿Sería posible…?",
+      "reading": {
+        "title": "Un proyecto compartido",
+        "text": "El equipo recibió el encargo de preparar una propuesta para un cliente nuevo. En la primera reunión, la responsable explicó que el plazo era de tres semanas y pidió que cada persona definiera sus tareas. Dos días después, el área de finanzas comunicó que necesitaba datos adicionales. El equipo reorganizó el calendario y acordó revisar los avances cada viernes. La claridad en las responsabilidades evitó repetir trabajo."
+      },
+      "exercises": [
+        {
+          "id": "es_mx_b1_u5_e1",
+          "type": "choice",
+          "skill": "gist",
+          "prompt": "¿Con qué frecuencia acordó reunirse el equipo?",
+          "options": [
+            "Cada viernes.",
+            "Que la actividad se canceló sin explicación",
+            "Que todos rechazaron la propuesta"
+          ],
+          "answer": 0,
+          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+        },
+        {
+          "id": "es_mx_b1_u5_e2",
+          "type": "choice",
+          "skill": "detail",
+          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "options": [
+            "El texto presenta una situación relacionada con el tema y sus matices",
+            "El texto afirma que todas las situaciones son idénticas",
+            "El texto no ofrece información concreta"
+          ],
+          "answer": 0,
+          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+        },
+        {
+          "id": "es_mx_b1_u5_e3",
+          "type": "choice",
+          "skill": "grammar",
+          "prompt": "La directora dijo que el plazo ___.",
+          "options": [
+            "era flexible",
+            "es flexible",
+            "será flexible"
+          ],
+          "answer": 0,
+          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+        },
+        {
+          "id": "es_mx_b1_u5_e4",
+          "type": "choice",
+          "skill": "vocabulary",
+          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "options": [
+            "Sin embargo",
+            "Por la mañana",
+            "Al lado de"
+          ],
+          "answer": 0,
+          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+        },
+        {
+          "id": "es_mx_b1_u5_e5",
+          "type": "choice",
+          "skill": "culture",
+          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "options": [
+            "Que puede variar según la región y las familias",
+            "Que se practica igual en todos los lugares",
+            "Que nunca cambia con el tiempo"
+          ],
+          "answer": 0,
+          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+        }
+      ]
+    }
+  ]
+}

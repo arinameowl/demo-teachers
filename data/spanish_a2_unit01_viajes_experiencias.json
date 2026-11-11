@@ -6,10 +6,10 @@
   "unit_id": "es_a2_u01_viajes_experiencias",
   "title": "Viajes y experiencias",
   "learning_goals": [
-    "Preguntar y responder sobre experiencias de viaje",
-    "Narrar una поездку завершенную в прошлом и описывать впечатления",
-    "Описывать простые проблемы в путешествии и объяснять, что произошло",
-    "Различать типичные контексты pretérito perfecto и pretérito indefinido с учетом регионального употребления"
+    "Preguntar y responder sobre experiencias de viaje y lugares visitados",
+    "Narrar un viaje terminado en el pasado y describir las impresiones que ha dejado",
+    "Describir problemas sencillos durante un viaje y explicar qué ocurrió",
+    "Distinguir los contextos habituales del pretérito perfecto y el pretérito indefinido teniendo en cuenta las diferencias regionales"
   ],
   "grammar": [
     {
@@ -248,11 +248,13 @@
         {
           "stage": "practice",
           "title": "Потренируйтесь самостоятельно",
-          "instruction": "Выберите форму по временному маркеру: Este año ___ (visitar) Granada — he visitado; Ayer el tren ___ (llegar) tarde — llegó; ¿Alguna vez ___ (perder, tú) una maleta? — has perdido; El verano pasado ___ (viajar, nosotros) a Galicia — viajamos.",
+          "instruction": "Completa las frases con la forma adecuada del verbo entre paréntesis. Decide si el contexto requiere pretérito perfecto o pretérito indefinido.",
           "tasks": [
-            "Дополните предложения подходящими формами глаголов",
-            "Составьте два собственных предложения о поездке",
-            "Прочитайте ответы вслух и проверьте согласование haber + participio"
+            "Este año ___ (visitar) Granada dos veces",
+            "Ayer el tren ___ (llegar) tarde",
+            "¿Alguna vez ___ (perder, tú) una maleta?",
+            "El verano pasado nosotros ___ (viajar) a Galicia",
+            "Por suerte, el hotel ___ (tener) una habitación libre"
           ]
         },
         {
@@ -488,11 +490,13 @@
         {
           "stage": "practice",
           "title": "Потренируйтесь самостоятельно",
-          "instruction": "Поставьте глагол в нужную форму: El año pasado ___ (viajar) a Oaxaca — viajamos; ¿Alguna vez ___ (visitar, tú) Monte Albán? — has visitado; Ayer el autobús ___ (salir) tarde — salió; Esta semana yo ___ (comprar) los boletos — he comprado; En 2023 mi familia ___ (conocer) Mérida — conoció.",
+          "instruction": "Completa las frases con la forma adecuada. Fíjate en si el periodo está terminado y en cómo suele narrarse ese contexto en el español de México.",
           "tasks": [
-            "Дополните предложения подходящими формами глаголов",
-            "Составьте два собственных предложения о поездке",
-            "Прочитайте ответы вслух и проверьте согласование haber + participio"
+            "El año pasado nosotros ___ (viajar) a Oaxaca",
+            "¿Alguna vez ___ (visitar, tú) Monte Albán?",
+            "Ayer el autobús ___ (salir) tarde",
+            "Esta semana yo ___ (comprar) los boletos",
+            "En 2023 mi familia ___ (conocer) Mérida"
           ]
         },
         {

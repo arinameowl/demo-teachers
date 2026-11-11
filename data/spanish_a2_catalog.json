@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "language": "es",
+  "level": "A2",
+  "title": "Spanish A2 — The Teachers School",
+  "status": "content_prepared_not_integrated",
+  "dialects": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "description": "Вариант испанского, ориентированный на употребление в Испании."
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "description": "Мексиканский вариант как основа латиноамериканского маршрута."
+    }
+  ],
+  "units": [
+    {
+      "order": 1,
+      "id": "es_a2_u01_viajes_experiencias",
+      "title": "Viajes y experiencias",
+      "path": "data/spanish_a2_unit01_viajes_experiencias.json"
+    },
+    {
+      "order": 2,
+      "id": "es_a2_u02_la_vida_en_casa",
+      "title": "La vida en casa",
+      "path": "data/spanish_a2_u02_la_vida_en_casa.json"
+    },
+    {
+      "order": 3,
+      "id": "es_a2_u03_compras_servicios",
+      "title": "Compras y servicios",
+      "path": "data/spanish_a2_u03_compras_servicios.json"
+    },
+    {
+      "order": 4,
+      "id": "es_a2_u04_salud_bienestar",
+      "title": "Salud y bienestar",
+      "path": "data/spanish_a2_u04_salud_bienestar.json"
+    },
+    {
+      "order": 5,
+      "id": "es_a2_u05_trabajo_estudios",
+      "title": "Trabajo y estudios",
+      "path": "data/spanish_a2_u05_trabajo_estudios.json"
+    },
+    {
+      "order": 6,
+      "id": "es_a2_u06_historias_tradiciones",
+      "title": "Historias y celebraciones",
+      "path": "data/spanish_a2_u06_historias_tradiciones.json"
+    }
+  ],
+  "content_standard": {
+    "per_unit_per_dialect": {
+      "grammar_topics": 3,
+      "dialogue_lines": 10,
+      "original_reading_texts": 1,
+      "closed_choice_exercises": 5
+    },
+    "vocabulary_policy": "No separate vocabulary section. Vocabulary is introduced in dialogues, reading texts, explanations and exercises.",
+    "exercise_policy": "Closed-choice exercises only. No open-ended written-response tasks."
+  },
+  "integration_note": "Испанский контент не подключать к Telegram-боту или Learning Space до завершения всего испанского каталога и общего аудита. Английский раздел остается без изменений."
+}

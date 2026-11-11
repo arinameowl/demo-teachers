@@ -12,7 +12,7 @@
   ],
   "grammar": [
     {
-      "topic": "pasiva_refleja",
+      "topic": "pasiva_refleja_se",
       "explanation_ru": "Se + глагол в 3-м лице используется, когда важнее действие или результат, чем исполнитель. Глагол согласуется с существительным: Se organizan talleres; Se necesita personal.",
       "examples": [
         "Se venden entradas en línea.",
@@ -29,10 +29,10 @@
     },
     {
       "topic": "relativas_que",
-      "explanation_ru": "Que связывает существительное с уточняющей информацией. Оно может относиться к людям, предметам и местам.",
+      "explanation_ru": "Que связывает существительное с уточняющей информацией. В этом блоке используются утвердительные описания, где que относится к конкретному объекту или месту.",
       "examples": [
         "Es un barrio que tiene parques.",
-        "Busco una asociación que organice actividades."
+        "Hay un centro que ofrece clases."
       ]
     }
   ],
@@ -93,66 +93,66 @@
           "id": "es_es_b1_u4_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Para qué sirve la plataforma vecinal?",
+          "prompt": "¿Qué pidió la responsable al equipo en la primera reunión?",
           "options": [
-            "Para comunicar problemas.",
-            "Que la actividad se canceló sin explicación",
-            "Que todos rechazaron la propuesta"
+            "Que cada persona definiera sus tareas.",
+            "Que todos cambiaran de departamento.",
+            "Que se cancelara el proyecto."
           ],
           "answer": 0,
-          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+          "explanation": "La lectura explica que la responsable pidió definir las tareas individuales."
         },
         {
           "id": "es_es_b1_u4_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "prompt": "¿Qué dato adicional necesitaba el departamento financiero?",
           "options": [
-            "El texto presenta una situación relacionada con el tema y sus matices",
-            "El texto afirma que todas las situaciones son idénticas",
-            "El texto no ofrece información concreta"
+            "Datos adicionales para preparar la propuesta.",
+            "Una nueva oficina para el equipo.",
+            "Una lista de vacaciones."
           ],
           "answer": 0,
-          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+          "explanation": "El texto indica que finanzas necesitaba información adicional."
         },
         {
           "id": "es_es_b1_u4_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "En este barrio ___ actividades culturales.",
+          "prompt": "Pasa al estilo indirecto: «El proveedor dijo: “Enviaré la oferta mañana”».",
           "options": [
-            "se organizan",
-            "se organiza",
-            "organiza se"
+            "El proveedor dijo que enviaría la oferta al día siguiente.",
+            "El proveedor dijo que envía la oferta ayer.",
+            "El proveedor dijo que enviará la oferta mañana."
           ],
           "answer": 0,
-          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+          "explanation": "Al trasladar al pasado, futuro pasa normalmente a condicional y mañana a al día siguiente."
         },
         {
           "id": "es_es_b1_u4_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "prompt": "¿Qué petición suena más cortés en un contexto profesional?",
           "options": [
-            "Sin embargo",
-            "Por la mañana",
-            "Al lado de"
+            "¿Podrías revisar esta versión, por favor?",
+            "Revisa esto ahora mismo.",
+            "Tienes que hacerlo ya."
           ],
           "answer": 0,
-          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+          "explanation": "Podrías suaviza la petición."
         },
         {
           "id": "es_es_b1_u4_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "prompt": "Según la nota cultural, ¿qué influye en el estilo de comunicación laboral?",
           "options": [
-            "Que puede variar según la región y las familias",
-            "Que se practica igual en todos los lugares",
-            "Que nunca cambia con el tiempo"
+            "La empresa, el sector y la relación entre interlocutores.",
+            "Una regla idéntica para todas las empresas.",
+            "Solo la edad de los trabajadores."
           ],
           "answer": 0,
-          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+          "explanation": "La nota destaca que el registro depende del contexto profesional."
         }
       ]
     },
@@ -212,66 +212,66 @@
           "id": "es_mx_b1_u4_e1",
           "type": "choice",
           "skill": "gist",
-          "prompt": "¿Qué medidas incluye el proyecto?",
+          "prompt": "¿Qué pidió la responsable al equipo en la primera reunión?",
           "options": [
-            "Plantar árboles, instalar bancas y organizar actividades.",
-            "Que la actividad se canceló sin explicación",
-            "Que todos rechazaron la propuesta"
+            "Que cada persona definiera sus tareas.",
+            "Que todos cambiaran de área.",
+            "Que se suspendiera el proyecto."
           ],
           "answer": 0,
-          "explanation": "La información aparece de forma explícita en el diálogo o en el texto."
+          "explanation": "La lectura explica que la responsable pidió definir las tareas."
         },
         {
           "id": "es_mx_b1_u4_e2",
           "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué afirmación coincide con el contenido de la lectura?",
+          "prompt": "¿Qué necesitaba el área de finanzas?",
           "options": [
-            "El texto presenta una situación relacionada con el tema y sus matices",
-            "El texto afirma que todas las situaciones son idénticas",
-            "El texto no ofrece información concreta"
+            "Datos adicionales.",
+            "Un nuevo edificio.",
+            "Un cambio de proveedor."
           ],
           "answer": 0,
-          "explanation": "La lectura desarrolla una situación concreta y sus consecuencias."
+          "explanation": "El texto señala que finanzas necesitaba datos adicionales."
         },
         {
           "id": "es_mx_b1_u4_e3",
           "type": "choice",
           "skill": "grammar",
-          "prompt": "En este barrio ___ actividades culturales.",
+          "prompt": "Pasa al estilo indirecto: «El proveedor dijo: “Enviaré la cotización mañana”».",
           "options": [
-            "se organizan",
-            "se organiza",
-            "organiza se"
+            "El proveedor dijo que enviaría la cotización al día siguiente.",
+            "El proveedor dijo que envía la cotización ayer.",
+            "El proveedor dijo que enviará la cotización mañana."
           ],
           "answer": 0,
-          "explanation": "La opción correcta aplica la estructura gramatical central de esta unidad."
+          "explanation": "El futuro en estilo directo suele pasar a condicional al depender de un verbo introductorio pasado."
         },
         {
           "id": "es_mx_b1_u4_e4",
           "type": "choice",
           "skill": "vocabulary",
-          "prompt": "¿Qué expresión se utiliza para introducir un contraste?",
+          "prompt": "¿Qué petición suena más cortés en un contexto profesional?",
           "options": [
-            "Sin embargo",
-            "Por la mañana",
-            "Al lado de"
+            "¿Podrías revisar esta versión, por favor?",
+            "Revisa esto ahora mismo.",
+            "Hazlo de una vez."
           ],
           "answer": 0,
-          "explanation": "Sin embargo introduce una oposición o contraste entre ideas."
+          "explanation": "Podrías suaviza la petición."
         },
         {
           "id": "es_mx_b1_u4_e5",
           "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué debemos tener en cuenta al hablar de una tradición?",
+          "prompt": "Según la nota cultural, ¿qué influye en el estilo de comunicación laboral?",
           "options": [
-            "Que puede variar según la región y las familias",
-            "Que se practica igual en todos los lugares",
-            "Que nunca cambia con el tiempo"
+            "La empresa, el sector y la relación entre interlocutores.",
+            "Una regla idéntica para todas las empresas.",
+            "Solo el cargo de la persona."
           ],
           "answer": 0,
-          "explanation": "Las prácticas culturales pueden variar y evolucionar según el contexto."
+          "explanation": "El registro depende de la cultura de empresa y de la situación."
         }
       ]
     }

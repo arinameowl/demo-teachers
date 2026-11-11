@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "level": "A2",
+  "category": "lesson",
+  "language": "es",
+  "unit_id": "es_a2_u04_salud_bienestar",
+  "title": "Salud y bienestar",
+  "learning_goals": [
+    "Описывать простые симптомы и говорить о самочувствии",
+    "Записываться на прием и отвечать на вопросы врача",
+    "Понимать простые рекомендации по уходу за собой",
+    "Использовать sentirse, doler и повелительные формы в распространенных рекомендациях"
+  ],
+  "grammar": [
+    {
+      "topic": "sentirse_and_reflexive_verbs",
+      "explanation_ru": "Sentirse — возвратный глагол со значением «чувствовать себя». Местоимение меняется по лицам: me siento, te sientes, se siente, nos sentimos. Другие полезные глаголы: cuidarse, descansar, acostarse.",
+      "examples": [
+        "Hoy me siento cansada.",
+        "¿Cómo te sientes?",
+        "Debes cuidarte y descansar."
+      ]
+    },
+    {
+      "topic": "doler",
+      "explanation_ru": "Doler строится похоже на gustar: me duele + существительное в единственном числе; me duelen + существительное во множественном числе. Название части тела обычно используется с определенным артиклем.",
+      "examples": [
+        "Me duele la cabeza.",
+        "Me duelen los ojos.",
+        "A Marta le duele la espalda."
+      ]
+    },
+    {
+      "topic": "affirmative_imperative_advice",
+      "explanation_ru": "Для простых советов используются формы повелительного наклонения: descansa, bebe, toma, duerme. Вежливые рекомендации врачу или незнакомому человеку можно формулировать через debe/debería + infinitivo.",
+      "examples": [
+        "Descansa un poco.",
+        "Bebe más agua.",
+        "Deberías dormir ocho horas."
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "es_es",
+      "name": "Español de España",
+      "dialogue": [
+        {
+          "speaker": "Recepcionista",
+          "text": "Centro de salud, buenos días. ¿En qué puedo ayudarte?"
+        },
+        {
+          "speaker": "Elena",
+          "text": "Buenos días. Quería pedir cita con el médico. Desde ayer me duele la garganta."
+        },
+        {
+          "speaker": "Recepcionista",
+          "text": "¿Tienes fiebre o tos?"
+        },
+        {
+          "speaker": "Elena",
+          "text": "Tengo un poco de fiebre y me siento bastante cansada."
+        },
+        {
+          "speaker": "Recepcionista",
+          "text": "Hay una cita mañana a las diez y cuarto."
+        },
+        {
+          "speaker": "Elena",
+          "text": "Me viene bien. ¿Tengo que llevar la tarjeta sanitaria?"
+        },
+        {
+          "speaker": "Recepcionista",
+          "text": "Sí, tráela, por favor. Y llega diez minutos antes."
+        },
+        {
+          "speaker": "Elena",
+          "text": "De acuerdo. ¿Debo tomar algo antes de la consulta?"
+        },
+        {
+          "speaker": "Recepcionista",
+          "text": "Si tienes dudas, es mejor que consultes con el médico."
+        },
+        {
+          "speaker": "Elena",
+          "text": "Perfecto, muchas gracias."
+        }
+      ],
+      "context_note": "En España, muchas personas acuden al centro de salud para una consulta de atención primaria. La tarjeta sanitaria se utiliza para acceder a los servicios del sistema público de salud; los procedimientos pueden variar según la comunidad autónoma.",
+      "exercises": [
+        {
+          "id": "es_es_a2_u4_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿Por qué llama Elena al centro de salud?",
+          "options": [
+            "Quiere pedir cita porque se encuentra mal",
+            "Quiere cambiar de domicilio",
+            "Necesita comprar medicamentos"
+          ],
+          "answer": 0,
+          "explanation": "Elena quiere pedir cita porque le duele la garganta y tiene algo de fiebre."
+        },
+        {
+          "id": "es_es_a2_u4_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿Cuándo es la cita?",
+          "options": [
+            "Hoy a las diez",
+            "Mañana a las diez y cuarto",
+            "El viernes por la tarde"
+          ],
+          "answer": 1,
+          "explanation": "La recepcionista ofrece una cita para mañana a las diez y cuarto."
+        },
+        {
+          "id": "es_es_a2_u4_e3",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «A Elena ___ duele la garganta».",
+          "options": [
+            "le",
+            "la",
+            "lo"
+          ],
+          "answer": 0,
+          "explanation": "Con doler usamos un pronombre indirecto: a Elena le duele la garganta."
+        },
+        {
+          "id": "es_es_a2_u4_e4",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Elige la forma correcta: «Hoy yo ___ bastante cansada».",
+          "options": [
+            "me siento",
+            "me siente",
+            "se siento"
+          ],
+          "answer": 0,
+          "explanation": "Con yo, sentirse se conjuga me siento."
+        },
+        {
+          "id": "es_es_a2_u4_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "¿Para qué sirve normalmente la tarjeta sanitaria en España?",
+          "options": [
+            "Para acceder a servicios del sistema público de salud",
+            "Para viajar en tren",
+            "Para pagar en supermercados"
+          ],
+          "answer": 0,
+          "explanation": "La tarjeta sanitaria identifica al usuario dentro del sistema público de salud."
+        }
+      ]
+    },
+    {
+      "id": "es_mx",
+      "name": "Español de México",
+      "dialogue": [
+        {
+          "speaker": "Recepcionista",
+          "text": "Consultorio médico, buenos días."
+        },
+        {
+          "speaker": "Diego",
+          "text": "Buenos días. Quisiera hacer una cita. Desde anoche me duele el estómago."
+        },
+        {
+          "speaker": "Recepcionista",
+          "text": "¿Tiene otros síntomas?"
+        },
+        {
+          "speaker": "Diego",
+          "text": "Sí, me siento débil y también tengo náuseas."
+        },
+        {
+          "speaker": "Recepcionista",
+          "text": "Podemos darle una cita hoy a las cuatro."
+        },
+        {
+          "speaker": "Diego",
+          "text": "Muchas gracias. ¿Necesito llevar algún documento?"
+        },
+        {
+          "speaker": "Recepcionista",
+          "text": "Traiga una identificación y, si tiene, sus estudios anteriores."
+        },
+        {
+          "speaker": "Diego",
+          "text": "De acuerdo. ¿Debo comer antes de ir?"
+        },
+        {
+          "speaker": "Recepcionista",
+          "text": "Es mejor que pregunte al médico cuando llegue."
+        },
+        {
+          "speaker": "Diego",
+          "text": "Está bien. Nos vemos por la tarde."
+        }
+      ],
+      "context_note": "En México se usa con frecuencia consultorio para el espacio donde atiende un médico. Para pedir una cita también se dice hacer una cita. Los requisitos y documentos dependen del centro médico.",
+      "exercises": [
+        {
+          "id": "es_mx_a2_u4_e1",
+          "skill": "gist",
+          "type": "choice",
+          "prompt": "¿Por qué llama Diego?",
+          "options": [
+            "Quiere hacer una cita médica",
+            "Quiere cancelar un viaje",
+            "Busca una farmacia abierta"
+          ],
+          "answer": 0,
+          "explanation": "Diego llama porque tiene molestias en el estómago y quiere consultar a un médico."
+        },
+        {
+          "id": "es_mx_a2_u4_e2",
+          "skill": "detail",
+          "type": "choice",
+          "prompt": "¿A qué hora puede ir Diego?",
+          "options": [
+            "A las diez de la mañana",
+            "A las cuatro de la tarde",
+            "A las ocho de la noche"
+          ],
+          "answer": 1,
+          "explanation": "La recepcionista le ofrece una cita a las cuatro."
+        },
+        {
+          "id": "es_mx_a2_u4_e3",
+          "skill": "grammar",
+          "type": "choice",
+          "prompt": "Completa: «A Diego ___ duele el estómago».",
+          "options": [
+            "le",
+            "lo",
+            "la"
+          ],
+          "answer": 0,
+          "explanation": "Con doler usamos le para la tercera persona singular: a Diego le duele."
+        },
+        {
+          "id": "es_mx_a2_u4_e4",
+          "skill": "vocabulary_in_context",
+          "type": "choice",
+          "prompt": "En el diálogo, ¿qué es un «consultorio»?",
+          "options": [
+            "El lugar donde atiende un médico",
+            "Una sala de espera de aeropuerto",
+            "Una tienda de productos deportivos"
+          ],
+          "answer": 0,
+          "explanation": "Consultorio es el espacio profesional donde un médico recibe a sus pacientes."
+        },
+        {
+          "id": "es_mx_a2_u4_e5",
+          "skill": "culture",
+          "type": "choice",
+          "prompt": "¿Qué documento le piden a Diego que lleve?",
+          "options": [
+            "Una identificación",
+            "Un boleto de avión",
+            "Una tarjeta de transporte"
+          ],
+          "answer": 0,
+          "explanation": "La recepcionista le pide una identificación y, si tiene, estudios anteriores."
+        }
+      ]
+    }
+  ],
+  "teacher_notes": [
+    "Не добавлять отдельный раздел Vocabulary.",
+    "Doler объяснять через me/te/le + duele/duelen; согласование зависит от части тела, а не от человека.",
+    "Повелительные формы вводить как готовые частотные рекомендации, без полной парадигмы императива.",
+    "Не давать медицинских советов от лица школы: диалоги только тренируют язык; реальные симптомы требуют консультации специалиста.",
+    "Материал — часть лид-магнита. Не интегрировать до завершения всего испанского каталога."
+  ]
+}

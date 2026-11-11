@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "language": "es",
+  "purpose": "Spanish lead-magnet audiovisual materials: one external YouTube video for Spain Spanish and one for Mexican Spanish.",
+  "selection_rule": "Exactly one video per pronunciation variant. Tasks are original The Teachers materials. Open videos on their original YouTube pages; do not download, rehost, reproduce transcripts, or reuse third-party worksheets.",
+  "resources": {
+    "es_es": {
+      "id": "es_es_a1_la_familia_del_rey",
+      "variant": "Español de España",
+      "title": "La familia del Rey",
+      "creator": "VideoEle — Agustín Iruela",
+      "level": "A1",
+      "youtube_url": "https://www.youtube.com/watch?v=RRwG7Nd2_E4",
+      "publisher_page": "https://www.videoele.com/A1-La-familia-rey.html",
+      "transcript_source": "https://www.videoele.com/Archivos/A1_La-familia-del-rey-transcripcion.pdf",
+      "transcript_status": "publisher_transcript_reviewed",
+      "content_summary": "Family members and relationships in the Spanish royal family; possessives su/sus; identifying relatives.",
+      "tasks": {
+        "before_watching": [
+          {
+            "type": "vocabulary_match",
+            "instruction": "Соедините испанские слова с переводом.",
+            "pairs": [
+              {
+                "spanish": "el rey",
+                "russian": "король"
+              },
+              {
+                "spanish": "la reina",
+                "russian": "королева"
+              },
+              {
+                "spanish": "la hija mayor",
+                "russian": "старшая дочь"
+              },
+              {
+                "spanish": "los abuelos",
+                "russian": "бабушка и дедушка"
+              },
+              {
+                "spanish": "los primos",
+                "russian": "двоюродные братья и сестры"
+              }
+            ],
+            "answer_key": [
+              "el rey — король",
+              "la reina — королева",
+              "la hija mayor — старшая дочь",
+              "los abuelos — бабушка и дедушка",
+              "los primos — двоюродные братья и сестры"
+            ]
+          },
+          {
+            "type": "prediction",
+            "instruction": "Посмотрите на название видео. Как вы думаете, о каких членах семьи пойдет речь?",
+            "response_type": "open"
+          }
+        ],
+        "while_watching": [
+          {
+            "type": "multiple_choice",
+            "instruction": "Посмотрите видео и выберите правильный ответ.",
+            "questions": [
+              {
+                "question": "¿Con quién está casado el rey Felipe?",
+                "options": [
+                  "Con la princesa Leonor",
+                  "Con la reina Letizia",
+                  "Con la reina Sofía"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "¿Cuántas hijas tienen Felipe y Letizia?",
+                "options": [
+                  "Una",
+                  "Dos",
+                  "Tres"
+                ],
+                "answer": 1
+              },
+              {
+                "question": "¿Quién es la hija mayor?",
+                "options": [
+                  "Sofía",
+                  "Elena",
+                  "Leonor"
+                ],
+                "answer": 2
+              },
+              {
+                "question": "¿Cómo se llaman los padres del rey Felipe?",
+                "options": [
+                  "Juan Carlos y Sofía",
+                  "Felipe y Letizia",
+                  "Elena y Cristina"
+                ],
+                "answer": 0
+              },
+              {
+                "question": "¿Qué relación tienen Leonor y los hijos de Elena y Cristina?",
+                "options": [
+                  "Son hermanos",
+                  "Son primos",
+                  "Son tíos"
+                ],
+                "answer": 1
+              }
+            ],
+            "answer_key": [
+              1,
+              1,
+              2,
+              0,
+              1
+            ]
+          }
+        ],
+        "after_watching": [
+          {
+            "type": "language_focus",
+            "instruction": "Найдите в видео примеры su и sus. Объясните, почему в одном случае используется su, а в другом sus.",
+            "expected": "su перед существительным в единственном числе; sus перед существительным во множественном числе."
+          },
+          {
+            "type": "production",
+            "instruction": "Составьте 3–4 предложения о семье одного из персонажей, используя слова hijo, hija, hermano, hermana, abuelo или primo и притяжательные su/sus.",
+            "response_type": "open"
+          }
+        ]
+      },
+      "rights_note": "Страница VideoEle указывает CC BY-NC-ND 4.0. Не скачивать, не перерабатывать и не копировать видео/транскрипт. Для использования в коммерческом контексте лид-магнита требуется отдельная проверка/разрешение; пока сохранять только оригинальную ссылку."
+    },
+    "es_mx": {
+      "id": "es_mx_a2_facts_about_mexico",
+      "variant": "Español de México",
+      "title": "Facts about Mexico — Spanish Listening Practice A2",
+      "creator": "Speak Like a Mexican",
+      "level": "A2 (publisher-labelled)",
+      "duration": "5 minutes",
+      "youtube_url": "https://www.youtube.com/watch?v=ZZFCXqCVmiI",
+      "publisher_episode": "https://podcasts.apple.com/be/podcast/37-spanish-listening-practice-a2-mexican-spanish-facts/id1534042861?i=1000724455275",
+      "transcript_status": "full_transcript_not_verified",
+      "content_summary": "Publisher description says the episode covers Mexican culture, language, history, food and everyday life, with cultural tips and expressions.",
+      "tasks": {
+        "before_watching": [
+          {
+            "type": "prediction",
+            "instruction": "Какие темы, по вашему мнению, могут появиться в видео о Мексике? Выберите две и объясните свой выбор.",
+            "options": [
+              "la comida",
+              "la historia",
+              "la vida cotidiana",
+              "el transporte",
+              "la música"
+            ],
+            "response_type": "open"
+          },
+          {
+            "type": "vocabulary_activation",
+            "instruction": "Перед просмотром вспомните или найдите значение слов: la cultura, la historia, la comida, una costumbre, una expresión.",
+            "response_type": "self_check"
+          }
+        ],
+        "while_watching": [
+          {
+            "type": "gist",
+            "instruction": "Посмотрите видео целиком первый раз. Сформулируйте главную тему одним предложением на русском или простом испанском.",
+            "response_type": "open",
+            "evaluation": "Ответ должен отражать, что это рассказ о фактах, культуре и повседневной жизни Мексики."
+          },
+          {
+            "type": "detail_notes",
+            "instruction": "Посмотрите второй раз и заполните заметки. Запишите только то, что действительно услышали.",
+            "fields": [
+              {
+                "label": "Un dato sobre la historia",
+                "prompt": "Один факт об истории"
+              },
+              {
+                "label": "Un dato sobre la comida",
+                "prompt": "Один факт о еде"
+              },
+              {
+                "label": "Un dato sobre la vida cotidiana o la cultura",
+                "prompt": "Один факт о повседневной жизни или культуре"
+              }
+            ],
+            "response_type": "open",
+            "evaluation": "Проверяется по содержанию ролика; готовые факты и ответы заранее не подставлять."
+          },
+          {
+            "type": "vocabulary_in_context",
+            "instruction": "Запишите две незнакомые фразы или выражения из видео. Попробуйте догадаться об их значении по контексту.",
+            "response_type": "open"
+          }
+        ],
+        "after_watching": [
+          {
+            "type": "retell",
+            "instruction": "Выберите самый интересный факт из видео и перескажите его в 2–3 простых предложениях на испанском.",
+            "response_type": "open"
+          },
+          {
+            "type": "personal_response",
+            "instruction": "¿Es parecido a tu país? Сравните один факт из видео с привычками или культурой вашей страны, используя En mi país… / En México…",
+            "response_type": "open"
+          }
+        ]
+      },
+      "rights_note": "Публичное видео YouTube; открытая лицензия Creative Commons не подтверждена. Использовать только оригинальную ссылку/официальный плеер при доступном встраивании; не скачивать, не копировать и не распространять видео или транскрипт. Коммерческий сценарий встраивания требует отдельной проверки."
+    }
+  },
+  "audit": {
+    "checked_on": "2026-11-11",
+    "verified": {
+      "es_es": "Official publisher page, A1 label, YouTube video ID and publisher transcript verified. The transcript was used to write the original comprehension questions and answer key.",
+      "es_mx": "Publisher episode listing confirms episode #37, A2 label, 5-minute duration and stated topic areas. Full transcript and end-to-end audio playback were not verified; tasks therefore use open responses and do not invent factual answer keys."
+    },
+    "limitations": [
+      "No claim is made that either video has been fully listened to end-to-end in this environment.",
+      "The Mexico worksheet requires the learner to extract facts directly from the video; there are no guessed answer keys.",
+      "The Spain resource has a CC BY-NC-ND notice; commercial use must be cleared before inclusion in the lead magnet."
+    ]
+  }
+}

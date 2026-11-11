@@ -78,47 +78,18 @@
       "topic": "Compras y servicios",
       "candidates": [
         {
-          "title": "En el mercado",
-          "level": "A2",
-          "region": "Spain; separate Latino version available",
-          "youtube": "https://www.youtube.com/watch?v=etd0-GwJJ0Y",
-          "publisher_page": "https://www.videoele.com/A2-En-el-mercado.html",
-          "fit": "Покупка фруктов и овощей, вопросы о цене, настоящее время с изменением корневой гласной. Очень точное тематическое совпадение.",
-          "transcript": "available",
-          "status": "content_metadata_verified_audio_preview_pending"
-        },
-        {
-          "title": "A comprar",
-          "level": "A2",
-          "region": "Spain; separate Latino version available",
-          "youtube": null,
-          "publisher_page": "https://www.videoele.com/menu-contenidos-A2.html",
-          "fit": "Магазины, товары, услуги и цены. Точное совпадение.",
-          "transcript": "listed_on_publisher_page",
-          "status": "exact_video_page_and_youtube_id_not_yet_verified"
-        },
-        {
-          "title": "Envases, medidas y etiquetas",
-          "level": "A2",
-          "region": "Spain; separate Latino version available",
-          "youtube": null,
-          "publisher_page": "https://www.videoele.com/menu-contenidos-A2.html",
-          "fit": "Упаковки, единицы измерения, продукты и этикетки. Хороший дополнительный материал для покупок и услуг.",
-          "transcript": "listed_on_publisher_page",
-          "status": "exact_video_page_and_youtube_id_not_yet_verified"
-        },
-        {
-          "title": "Speak Like a Mexican — #36 Spanish Listening Practice: Conversation about Food",
-          "level": "A2 (publisher-labelled; exact CEFR not independently confirmed)",
-          "region": "Mexico; filmed in the creator's kitchen in Mexico",
-          "youtube": "https://www.youtube.com/watch?v=6b6zrrprgGg",
-          "publisher_page": "https://www.youtube.com/watch?v=6b6zrrprgGg",
-          "fit": "Food, groceries, pantry items, meals and Mexican food culture. A practical extension to shopping/food vocabulary; not a direct market transaction dialogue. Creator describes it as a relaxed conversation for learners and explicitly labels it A2.",
-          "transcript": "not verified",
-          "status": "video_identity_topic_region_and_publisher_level_verified_audio_preview_and_transcript_pending",
-          "rights": "Free YouTube viewing. No Creative Commons license identified. Use only original player if embedding is enabled and legal review approves the paid-course context; no copying, downloading or redistribution."
+          "title": "Going to a Mexican Supermarket | Intermediate Spanish",
+          "creator": "Español con Ali",
+          "level": "A2–B1 (creator describes it as intermediate and suitable for A2–B1)",
+          "region": "Mexico",
+          "youtube": "https://www.youtube.com/watch?v=mMsOE0pJCpU",
+          "fit": "Authentic visit to a supermarket in Mexico: products, grocery shopping and food vocabulary. Direct thematic match for Compras y servicios; suitable as A2 challenge listening with visual support.",
+          "transcript": "partial transcript excerpt available via Glasp; full transcript not reviewed",
+          "status": "selected_single_video_metadata_and_topic_verified_audio_preview_pending",
+          "rights": "Free public YouTube video; no Creative Commons license identified. Use original YouTube player only; do not download, rehost or copy transcript. Commercial embedding context requires separate review."
         }
-      ]
+      ],
+      "selection_note": "Выбран один основной ролик для юнита. Другие варианты не сохраняются. Задания The Teachers создавать только после полной проверки ролика."
     },
     {
       "unit": "es_a2_u04_salud_bienestar",
@@ -422,7 +393,9 @@
       "Speak Like a Mexican #37 Facts about Mexico and #39 Mexican Holidays have exact YouTube video IDs and publisher A2 labels.",
       "Speak Like a Mexican #38 Is it safe to travel in Mexico? has exact YouTube video ID and publisher B1 label; a third-party transcript is available but appears to contain ASR errors and is not approved as an answer-key source.",
       "Mextalki #139 Gentrificación 2.0 and #145 Los Niños Héroes are excluded from the core learner path after reviewing official glossaries containing extensive strong vulgar/sexual expressions. #118 Periódicos mexicanos is excluded because publisher marks it NSFW and discusses nota roja."
-    ]
+    ],
+    "last_unit_selection_update": "2026-11-11",
+    "last_unit_selection_note": "Для A2 Compras y servicios выбран один мексиканский YouTube-ролик Español con Ali. Проверены автор, тема, регион и частичный текстовый фрагмент; полное прослушивание не подтверждено."
   },
   "removed_or_corrected": [
     "Removed claim that VideoEle video catalogue is cleared for use in The Teachers paid product: NC-ND licence explicitly prohibits commercial use and derivative redistribution.",

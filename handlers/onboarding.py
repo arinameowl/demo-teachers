@@ -127,11 +127,17 @@ async def level_b2_plus(callback: CallbackQuery, state: FSMContext):
 @router.callback_query(F.data == "levelmode:quiz")
 async def level_quiz_start(callback: CallbackQuery, state: FSMContext):
     await state.clear()
-    await db.set_quiz_state(callback.from_user.id, {"current": 0, "answers": {}})
+    user = await db.get_user(callback.from_user.id) or {}
+    language = user.get("language") or "en"
+    questions = quiz.spanish_questions("es_es") if language == "es" else quiz.QUESTIONS
+    await db.set_quiz_state(callback.from_user.id, {
+        "current": 0, "answers": {}, "language": language, "questions": questions
+    })
     await callback.message.edit_text(texts.QUIZ_INTRO)
-    q = quiz.QUESTIONS[0]
+    q = questions[0]
     await callback.message.answer(q["prompt"], reply_markup=kb.quiz_options_keyboard(0, q["options"]))
     await callback.answer()
+
 
 # Пропуск теста на любом вопросе. Без фильтра по состоянию FSM — так кнопка
 # работает и после перезапуска бота, когда состояние квиза уже потеряно.
@@ -151,29 +157,31 @@ async def quiz_answer(callback: CallbackQuery):
     except (ValueError, TypeError):
         await callback.answer("Этот вариант ответа больше не активен.", show_alert=True)
         return
-    saved = await db.get_quiz_state(callback.from_user.id)\n    questions = saved.get("questions") if saved else None\n    if not questions:\n        questions = quiz.QUESTIONS\n    if not 0 <= q_index < len(questions) or not 0 <= opt_index < len(questions[q_index]["options"]):
-        await callback.answer("Этот вариант ответа больше не активен.", show_alert=True)
-        return
 
     saved = await db.get_quiz_state(callback.from_user.id)
     if not saved or saved.get("current") != q_index:
         await callback.answer("Этот вопрос уже неактивен. Начните тест заново.", show_alert=True)
         return
+    questions = saved.get("questions") or quiz.QUESTIONS
+    if not 0 <= q_index < len(questions) or not 0 <= opt_index < len(questions[q_index]["options"]):
+        await callback.answer("Этот вариант ответа больше не активен.", show_alert=True)
+        return
 
     answers = saved.get("answers", {})
     answers[str(q_index)] = opt_index
     next_index = q_index + 1
-    if next_index < len(quiz.QUESTIONS):
-        await db.set_quiz_state(callback.from_user.id, {"current": next_index, "answers": answers})
-        q = quiz.QUESTIONS[next_index]
+    if next_index < len(questions):
+        await db.set_quiz_state(callback.from_user.id, {**saved, "current": next_index, "answers": answers})
+        q = questions[next_index]
         await callback.message.edit_text(q["prompt"], reply_markup=kb.quiz_options_keyboard(next_index, q["options"]))
         await callback.answer()
         return
 
-    level = quiz.score_to_level({int(k): v for k, v in answers.items()})
+    language = saved.get("language", "en")
+    level = quiz.score_to_level({int(k): v for k, v in answers.items()}, questions)
     await db.clear_quiz_state(callback.from_user.id)
-    await db.update_user(callback.from_user.id, level=level, level_source="quiz", stage="onboarded")
-    await db.log_funnel_event(callback.from_user.id, "level_selected", f"quiz:{level}")
+    await db.update_user(callback.from_user.id, language=language, level=level, level_source="quiz", stage="onboarded")
+    await db.log_funnel_event(callback.from_user.id, "level_selected", f"{language}:quiz:{level}")
     user = await db.get_user(callback.from_user.id) or {}
     await callback.message.edit_text(
         _level_result_text(level, user.get("goal")),

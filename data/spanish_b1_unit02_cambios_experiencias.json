@@ -6,33 +6,90 @@
   "unit_id": "es_b1_u02_cambios_experiencias",
   "title": "Cambios y experiencias personales",
   "learning_goals": [
-    "Рассказывать о жизненных изменениях и личном опыте",
-    "Обозначать длительность ситуации и последовательность событий",
-    "Различать pluscuamperfecto и другие формы прошедшего времени"
+    "Narrar cambios personales y explicar cómo ha evolucionado una situación con el tiempo",
+    "Situar una experiencia en relación con otro momento del pasado",
+    "Expresar cuánto tiempo lleva durando una actividad o una situación",
+    "Distinguir entre ya, todavía y todavía no para hablar de cambios y expectativas",
+    "Combinar distintos tiempos del pasado para construir un relato coherente"
   ],
+  "editorial_intro": {
+    "title": "Antes y después: cómo cambian las personas",
+    "text": "Mudarse, empezar un trabajo, aprender una lengua o adaptarse a una ciudad nueva son procesos que no ocurren de un día para otro. Cuando contamos esos cambios, a veces necesitamos explicar qué había pasado antes, cuánto tiempo llevábamos en una situación y qué cosas ya han cambiado. En este material vas a organizar experiencias personales con más perspectiva y precisión.",
+    "opening_question": "Piensa en un cambio importante de tu vida. ¿Qué había ocurrido antes y cuánto tiempo necesitaste para adaptarte?",
+    "objective": "Al terminar, podrás narrar un cambio personal, situar acontecimientos en el pasado y explicar qué ha cambiado y qué sigue pendiente.",
+    "estimated_time": "40–50 minutos",
+    "route": [
+      "Lee dos experiencias de cambio",
+      "Observa cómo se relacionan los tiempos verbales",
+      "Practica duración y cambios pendientes",
+      "Cuenta una experiencia con perspectiva"
+    ]
+  },
   "grammar": [
     {
       "topic": "pluscuamperfecto",
-      "explanation_ru": "Pretérito pluscuamperfecto: había/habías/había/habíamos/habíais/habían + participio. Обозначает действие, которое произошло раньше другого момента в прошлом.",
+      "title": "Pretérito pluscuamperfecto: lo que había pasado antes",
+      "explanation_ru": "Pretérito pluscuamperfecto образуется из imperfecto глагола haber + причастие: había, habías, había, habíamos, habíais, habían + participio. Он обозначает действие или ситуацию, которые произошли раньше другого момента в прошлом. Сравните: Cuando llegué, la reunión empezó (я пришел, и встреча началась) и Cuando llegué, la reunión ya había empezado (к моему приходу встреча уже началась). Причастие в этой конструкции не согласуется с подлежащим.",
       "examples": [
-        "Cuando llegué, la reunión ya había empezado.",
-        "Nunca había vivido sola."
+        "Cuando llegué a la ciudad, nunca había vivido sola.",
+        "Ya habían cerrado la oficina cuando recibí el correo.",
+        "Antes de cambiar de trabajo, había estudiado otra especialidad."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Cuando llegué, la reunión ya ha empezado.",
+          "correct": "Cuando llegué, la reunión ya había empezado.",
+          "explanation": "Оба события относятся к прошлому; pluscuamperfecto показывает, что одно произошло раньше другого."
+        },
+        {
+          "incorrect": "Había escribida una carta.",
+          "correct": "Había escrito una carta.",
+          "explanation": "В составном времени используется неизменяемое причастие: escrito."
+        }
       ]
     },
     {
       "topic": "llevar_desde_hace",
-      "explanation_ru": "Llevar + период + gerundio подчеркивает длительность: Llevo dos años trabajando aquí. Desde hace + период также обозначает, как давно длится ситуация.",
+      "title": "Duración: desde hace y llevar + gerundio",
+      "explanation_ru": "Чтобы сказать, как долго длится ситуация, используйте desde hace + период: Vivo aquí desde hace dos años. Конструкция llevar + период + gerundio подчеркивает продолжительность действия до настоящего или до определенного момента в прошлом: Llevo dos años trabajando aquí; Cuando nos conocimos, llevaba seis meses viviendo en Madrid. Если действие уже завершилось, gerundio не подходит: Llevé dos años trabajando allí antes de mudarme. Не путайте desde hace (как давно) и desde (с какого момента): desde 2022.",
       "examples": [
-        "Llevaba meses buscando piso.",
-        "Vivo aquí desde hace dos años."
+        "Vivo en esta ciudad desde hace tres años.",
+        "Llevo seis meses aprendiendo portugués.",
+        "Cuando la conocí, llevaba un año trabajando en esa empresa."
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Vivo aquí desde hace 2022.",
+          "correct": "Vivo aquí desde 2022.",
+          "explanation": "С конкретным годом используется desde; desde hace сочетается с периодом."
+        },
+        {
+          "incorrect": "Llevo dos años trabajar aquí.",
+          "correct": "Llevo dos años trabajando aquí.",
+          "explanation": "После llevar + период используется gerundio."
+        }
       ]
     },
     {
       "topic": "ya_todavia_aun",
-      "explanation_ru": "Ya указывает на свершившееся действие или изменение; todavía/aún часто обозначают, что действие не произошло или ситуация сохраняется. В отрицании: todavía no.",
+      "title": "Ya, todavía y todavía no: cambios y expectativas",
+      "explanation_ru": "Ya показывает, что действие произошло или ситуация изменилась: Ya he encontrado trabajo / Ya encontré trabajo. Todavía или aún указывают, что ситуация продолжается: Todavía vivo allí; Aún estoy buscando. Todavía no / aún no означает, что ожидаемое действие пока не произошло: Todavía no he terminado. Выбор между pretérito perfecto и indefinido зависит от временной перспективы и регионального употребления; в Мексике indefinido часто используется в контекстах, где в Испании возможен perfecto.",
       "examples": [
-        "Ya he encontrado trabajo.",
-        "Todavía no he terminado."
+        "Ya he encontrado un piso, pero todavía no me he mudado.",
+        "Todavía trabajo en la misma empresa.",
+        "En España: ¿Ya has comido? En muchos contextos de México: ¿Ya comiste?"
+      ],
+      "common_mistakes": [
+        {
+          "incorrect": "Todavía he terminado el proyecto.",
+          "correct": "Todavía no he terminado el proyecto.",
+          "explanation": "Чтобы сказать, что действие пока не завершилось, используйте todavía no."
+        },
+        {
+          "incorrect": "Ya todavía vivo en Valencia.",
+          "correct": "Todavía vivo en Valencia.",
+          "explanation": "Ya и todavía выполняют разные функции; в этой фразе речь идет о продолжающейся ситуации."
+        }
       ]
     }
   ],
@@ -40,7 +97,6 @@
     {
       "id": "es_es",
       "name": "Español de España",
-      "pronunciation_note": "Лексика и речевые модели Испании.",
       "dialogue": [
         {
           "speaker": "Marta",
@@ -48,19 +104,19 @@
         },
         {
           "speaker": "Pablo",
-          "text": "Claro. Antes de mudarme, nunca había vivido fuera de mi ciudad."
+          "text": "¡Claro! Antes de mudarme, nunca había vivido fuera de mi ciudad."
         },
         {
           "speaker": "Marta",
-          "text": "¿Te costó adaptarte?"
+          "text": "¿Qué fue lo que más te costó al principio?"
         },
         {
           "speaker": "Pablo",
-          "text": "Al principio sí. No conocía a nadie y todavía no entendía bien el acento."
+          "text": "No conocía a nadie y todavía no entendía bien algunas expresiones locales."
         },
         {
           "speaker": "Marta",
-          "text": "¿Cuánto tiempo llevas aquí?"
+          "text": "¿Cuánto tiempo llevas viviendo allí?"
         },
         {
           "speaker": "Pablo",
@@ -68,98 +124,211 @@
         },
         {
           "speaker": "Marta",
-          "text": "Has cambiado mucho desde entonces."
+          "text": "¿Y ya te sientes como en casa?"
         },
         {
           "speaker": "Pablo",
-          "text": "Sí. Ya he hecho buenos amigos y conozco mejor la ciudad."
+          "text": "Sí, ya he hecho buenos amigos y conozco mucho mejor la ciudad."
         },
         {
           "speaker": "Marta",
-          "text": "¿Sigues pensando en volver?"
+          "text": "¿Qué hiciste para adaptarte?"
         },
         {
           "speaker": "Pablo",
-          "text": "Todavía no. Ahora me siento bastante en casa."
+          "text": "Me apunté a un club de senderismo y empecé a quedar con mis compañeros."
+        },
+        {
+          "speaker": "Marta",
+          "text": "¿Sigues pensando en volver a tu ciudad?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Todavía no. Ahora tengo aquí mi trabajo y una vida que me gusta."
         }
       ],
-      "context_note": "В Испании переезд между автономными сообществами может означать знакомство с другим языковым контекстом: в некоторых регионах наряду с испанским широко используются другие официальные языки.",
-      "reading": {
-        "title": "Una ciudad nueva",
-        "text": "Antes de trasladarse a Bilbao, Elena había vivido siempre en un pueblo pequeño. Los primeros meses fueron difíciles: no conocía las calles y echaba de menos a su familia. Poco a poco encontró actividades que le interesaban y empezó a hacer amistades. Lleva dos años viviendo allí y ya considera la ciudad parte de su vida. Aún visita su pueblo con frecuencia, pero no tiene planes de regresar definitivamente."
+      "context_note": "En España, cambiar de comunidad autónoma puede implicar conocer otras costumbres y, en algunas zonas, convivir con lenguas cooficiales además del castellano. La experiencia depende de la ciudad, del entorno y de la situación personal; no todas las personas viven el cambio de la misma manera.",
+      "vocabulary_in_context": [
+        {
+          "term": "mudarse",
+          "meaning": "cambiar de vivienda o trasladar el lugar de residencia",
+          "example": "Me mudé a Valencia hace tres años."
+        },
+        {
+          "term": "costar adaptarse",
+          "meaning": "resultar difícil acostumbrarse a una situación nueva",
+          "example": "Al principio me costó adaptarme."
+        },
+        {
+          "term": "expresiones locales",
+          "meaning": "palabras o formas de hablar propias de una zona",
+          "example": "Aprendí algunas expresiones locales."
+        },
+        {
+          "term": "apuntarse a",
+          "meaning": "inscribirse o empezar a participar en una actividad",
+          "example": "Me apunté a un club de senderismo."
+        },
+        {
+          "term": "quedar con alguien",
+          "meaning": "acordar un encuentro con otra persona",
+          "example": "Empecé a quedar con mis compañeros."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          {
+            "expression": "¿Te acuerdas de cuando…?",
+            "function": "Invitar a otra persona a recordar una experiencia compartida."
+          },
+          {
+            "expression": "Al principio me costó…",
+            "function": "Explicar qué fue difícil durante una etapa inicial."
+          },
+          {
+            "expression": "Ya me he hecho a la ciudad.",
+            "function": "Decir que uno se ha acostumbrado a un lugar o a una nueva rutina."
+          }
+        ],
+        "regional_note": "En España se oye «apuntarse a una actividad» y «quedar con alguien» en conversaciones cotidianas. En algunas comunidades hay más de una lengua oficial, pero la realidad lingüística varía mucho según el territorio."
+      },
+      "guided_practice": {
+        "notice": {
+          "instruction": "Lee el diálogo y observa cómo Pablo relaciona su vida antes de la mudanza con su situación actual.",
+          "tasks": [
+            "Localiza el pluscuamperfecto y explica qué experiencia anterior a la mudanza expresa.",
+            "Encuentra la construcción llevar + tiempo + gerundio y señala desde cuándo dura la situación.",
+            "Identifica una frase con ya y otra con todavía; ¿qué diferencia de significado presentan?"
+          ]
+        },
+        "practice": {
+          "instruction": "Completa las frases con la forma adecuada. Presta atención a la relación temporal y a la duración.",
+          "tasks": [
+            "Cuando llegué a Valencia, nunca ___ (vivir) fuera de mi ciudad.",
+            "Llevo tres años ___ (trabajar) en esta empresa.",
+            "Vivo aquí ___ hace dos años.",
+            "Todavía no ___ (encontrar) un piso, pero ya ___ (visitar) varios."
+          ],
+          "answers": [
+            "había vivido",
+            "trabajando",
+            "desde",
+            "he encontrado; he visitado"
+          ]
+        },
+        "communicate": {
+          "instruction": "En parejas, entrevistad a alguien que haya vivido un cambio importante: una mudanza, un nuevo trabajo o el comienzo de unos estudios.",
+          "tasks": [
+            "Pregunta qué había hecho o vivido antes del cambio.",
+            "Pregunta cuánto tiempo lleva en la nueva situación.",
+            "Pregunta qué ya ha conseguido y qué todavía no ha hecho.",
+            "Resume la experiencia de tu compañero/a usando al menos dos tiempos verbales."
+          ]
+        }
+      },
+      "personal_application": {
+        "scenario": "Un amigo te pregunta cómo ha cambiado tu vida desde que te mudaste, empezaste un trabajo o comenzaste a estudiar algo nuevo.",
+        "task": "Cuenta la experiencia en 8–10 frases. Explica cómo era tu vida antes, qué había ocurrido previamente, cuánto tiempo llevas en la nueva situación y qué cambios ya se han producido o siguen pendientes.",
+        "support": [
+          "Antes de…, nunca había…",
+          "Cuando llegué…",
+          "Llevo… trabajando/viviendo…",
+          "Ya he…",
+          "Todavía no he…"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "La pronunciación fluida de las formas compuestas: había vivido, había empezado, he encontrado; y la terminación de los gerundios.",
+        "steps": [
+          "Lee en voz alta: había cambiado, habían llegado, llevo viviendo, he encontrado.",
+          "Practica la unión natural de las palabras en «ya he encontrado» sin eliminar la claridad de cada forma.",
+          "Graba un relato de cinco frases y comprueba que se distinguen las acciones anteriores, la duración y los cambios recientes."
+        ],
+        "audio_model_status": "pending"
+      },
+      "reflection": {
+        "can_do": [
+          "Puedo explicar qué había ocurrido antes de un cambio en mi vida.",
+          "Puedo expresar cuánto tiempo llevo haciendo algo o viviendo en un lugar.",
+          "Puedo explicar qué ya ha cambiado y qué todavía no ha ocurrido.",
+          "Puedo organizar una experiencia personal con referencias claras al pasado y al presente."
+        ]
       },
       "exercises": [
         {
           "id": "es_es_b1_u2_e1",
-          "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cuál es la idea principal del texto?",
+          "type": "choice",
+          "prompt": "¿Qué cuenta Pablo sobre su vida en Valencia?",
           "options": [
-            "Elena se adapta poco a poco a una nueva ciudad, aunque mantiene el vínculo con su pueblo.",
-            "Elena decide regresar a su pueblo porque no consigue adaptarse a Bilbao.",
-            "Elena descubre que vivir en una ciudad pequeña es siempre más fácil."
+            "Cómo se adaptó a la ciudad después de mudarse",
+            "Por qué decidió dejar su trabajo inmediatamente",
+            "Cómo organizó unas vacaciones con su familia"
           ],
           "answer": 0,
-          "explanation": "El texto describe un proceso de adaptación y el vínculo con el lugar de origen."
+          "explanation": "Pablo recuerda las dificultades iniciales y explica cómo ha construido una nueva vida en Valencia."
         },
         {
           "id": "es_es_b1_u2_e2",
-          "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué le resultó difícil al principio?",
+          "type": "choice",
+          "prompt": "¿Qué hizo Pablo para conocer gente?",
           "options": [
-            "No encontraba trabajo en el extranjero.",
-            "No podía usar el transporte público.",
-            "No conocía las calles y echaba de menos a su familia."
+            "Se apuntó a un club de senderismo y quedó con sus compañeros",
+            "Cambió de empresa varias veces",
+            "Volvió a vivir con su familia"
           ],
-          "answer": 2,
-          "explanation": "La lectura menciona las calles y la distancia de su familia."
+          "answer": 0,
+          "explanation": "Pablo menciona el club de senderismo y los encuentros con sus compañeros."
         },
         {
           "id": "es_es_b1_u2_e3",
+          "skill": "vocabulary",
           "type": "choice",
-          "skill": "grammar",
-          "prompt": "Completa: «Cuando llegué, la reunión ya ___».",
+          "prompt": "En el diálogo, ¿qué significa «apuntarse a un club»?",
           "options": [
-            "había empezado",
-            "ha empezado",
-            "empezaría"
+            "Inscribirse para participar en sus actividades",
+            "Cerrar el club durante una temporada",
+            "Trabajar como responsable del club"
           ],
           "answer": 0,
-          "explanation": "Pluscuamperfecto marca la acción anterior a otro momento pasado."
+          "explanation": "Apuntarse significa inscribirse o empezar a participar en una actividad."
         },
         {
           "id": "es_es_b1_u2_e4",
-          "type": "choice",
           "skill": "grammar",
-          "prompt": "Completa: «Elena se ha adaptado a Bilbao y ___ considera la ciudad parte de su vida».",
+          "type": "choice",
+          "prompt": "Completa: «Cuando Pablo llegó a Valencia, nunca ___ fuera de su ciudad»",
           "options": [
-            "ya",
-            "todavía no",
-            "aún no"
+            "había vivido",
+            "ha vivido",
+            "vivirá"
           ],
           "answer": 0,
-          "explanation": "Ya indica que el cambio o resultado esperado se ha producido."
+          "explanation": "El pluscuamperfecto expresa una experiencia anterior a otro momento del pasado."
         },
         {
           "id": "es_es_b1_u2_e5",
-          "type": "choice",
           "skill": "culture",
-          "prompt": "¿Qué refleja la nota cultural sobre los idiomas en algunas comunidades de España?",
+          "type": "choice",
+          "prompt": "¿Qué puede ocurrir al mudarse a otra comunidad autónoma de España?",
           "options": [
-            "En todas las comunidades se habla únicamente una lengua.",
-            "Además del español, pueden utilizarse otras lenguas oficiales.",
-            "Las lenguas regionales solo se usan en documentos antiguos."
+            "En algunas zonas, se puede encontrar otra lengua cooficial además del castellano",
+            "En todas las comunidades se deja de hablar castellano",
+            "Las costumbres son idénticas en todo el país"
           ],
-          "answer": 1,
-          "explanation": "La situación lingüística varía entre comunidades."
+          "answer": 0,
+          "explanation": "La realidad lingüística y cultural varía entre comunidades autónomas."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Una vida entre dos ciudades",
+        "text": "Antes de trasladarse a Bilbao, Elena había vivido siempre en un pueblo pequeño. Los primeros meses fueron complicados: no conocía las calles y echaba de menos a su familia. Para conocer gente, se apuntó a un grupo de fotografía y empezó a participar en actividades del barrio. Lleva dos años viviendo allí y ya considera Bilbao una parte importante de su vida. Todavía visita su pueblo con frecuencia, pero no tiene planes de regresar definitivamente. Dice que mudarse le ha permitido descubrir otras costumbres y ganar independencia."
+      }
     },
     {
       "id": "es_mx",
       "name": "Español de México",
-      "pronunciation_note": "Мексиканский вариант как основа латиноамериканского маршрута.",
       "dialogue": [
         {
           "speaker": "Marta",
@@ -167,19 +336,19 @@
         },
         {
           "speaker": "Pablo",
-          "text": "Claro. Antes de mudarme, nunca había vivido fuera de mi ciudad."
+          "text": "¡Claro! Antes de mudarme, nunca había vivido fuera de mi ciudad."
         },
         {
           "speaker": "Marta",
-          "text": "¿Te costó adaptarte?"
+          "text": "¿Qué fue lo más difícil al principio?"
         },
         {
           "speaker": "Pablo",
-          "text": "Al principio sí. No conocía a nadie y todavía no me acostumbraba al ritmo de la ciudad."
+          "text": "No conocía a nadie y todavía no me acostumbraba al ritmo de la ciudad."
         },
         {
           "speaker": "Marta",
-          "text": "¿Cuánto tiempo llevas aquí?"
+          "text": "¿Cuánto tiempo llevas viviendo allá?"
         },
         {
           "speaker": "Pablo",
@@ -187,93 +356,216 @@
         },
         {
           "speaker": "Marta",
-          "text": "Has cambiado mucho desde entonces."
+          "text": "¿Y ya te sientes como en casa?"
         },
         {
           "speaker": "Pablo",
-          "text": "Sí. Ya hice buenos amigos y aprendí a moverme por la ciudad."
+          "text": "Sí, ya hice buenos amigos y conozco mucho mejor la ciudad."
         },
         {
           "speaker": "Marta",
-          "text": "¿Sigues pensando en regresar?"
+          "text": "¿Qué hiciste para adaptarte?"
         },
         {
           "speaker": "Pablo",
-          "text": "Todavía no. Ahora me siento bastante en casa."
+          "text": "Me inscribí a un grupo de ciclismo y empecé a salir con mis compañeros."
+        },
+        {
+          "speaker": "Marta",
+          "text": "¿Todavía piensas regresar a tu ciudad?"
+        },
+        {
+          "speaker": "Pablo",
+          "text": "Todavía no. Ahora tengo aquí mi trabajo y una vida que disfruto."
         }
       ],
-      "context_note": "В Мексике переезд в другой штат может сопровождаться различиями в климате, кухне, темпе жизни и местных выражениях. Даже в пределах одного региона опыт жителей разных городов неодинаков.",
-      "reading": {
-        "title": "Una ciudad nueva",
-        "text": "Antes de mudarse a Guadalajara, Elena había vivido siempre en un pueblo pequeño. Los primeros meses fueron difíciles: no conocía las calles y extrañaba a su familia. Poco a poco encontró actividades que le interesaban y empezó a hacer amistades. Lleva dos años viviendo allí y ya considera la ciudad parte de su vida. Todavía visita su pueblo con frecuencia, pero no piensa regresar definitivamente."
+      "context_note": "Mudarse a otro estado de México puede implicar cambios de clima, comida, expresiones y ritmo de vida. Las diferencias dependen de las ciudades y de las experiencias personales; no existe una sola manera de vivir o adaptarse a cada región.",
+      "vocabulary_in_context": [
+        {
+          "term": "mudarse",
+          "meaning": "cambiar de vivienda o trasladar el lugar de residencia",
+          "example": "Me mudé a Guadalajara hace tres años."
+        },
+        {
+          "term": "acostumbrarse a",
+          "meaning": "adaptarse poco a poco a una situación o una rutina",
+          "example": "Me costó acostumbrarme al ritmo de la ciudad."
+        },
+        {
+          "term": "inscribirse a",
+          "meaning": "registrarse para participar en una actividad o un programa",
+          "example": "Me inscribí a un grupo de ciclismo."
+        },
+        {
+          "term": "salir con compañeros",
+          "meaning": "pasar tiempo o hacer actividades con personas del trabajo o los estudios",
+          "example": "Empecé a salir con mis compañeros."
+        },
+        {
+          "term": "ritmo de vida",
+          "meaning": "la velocidad y la organización de las actividades cotidianas",
+          "example": "El ritmo de vida era muy diferente."
+        }
+      ],
+      "language_in_real_life": {
+        "expressions": [
+          {
+            "expression": "¿Te acuerdas de cuando…?",
+            "function": "Invitar a recordar una experiencia anterior."
+          },
+          {
+            "expression": "Me costó acostumbrarme a…",
+            "function": "Explicar que una nueva situación necesitó tiempo de adaptación."
+          },
+          {
+            "expression": "Ya me siento como en casa.",
+            "function": "Expresar que uno se siente cómodo y parte de un lugar."
+          }
+        ],
+        "regional_note": "En México se escucha «inscribirse a un curso o grupo» y «rentar un departamento». El uso de pretérito perfecto e indefinido también varía: en muchos contextos mexicanos se prefiere el indefinido para experiencias recientes ya terminadas, como «ya hice amigos»."
+      },
+      "guided_practice": {
+        "notice": {
+          "instruction": "Observa cómo Pablo habla de su vida antes de la mudanza, de la duración de su estancia y de los cambios que ya ha vivido.",
+          "tasks": [
+            "Encuentra el pluscuamperfecto y explica qué ocurrió antes de la mudanza.",
+            "Localiza llevar + tiempo + gerundio y señala cuánto tiempo lleva Pablo en Guadalajara.",
+            "Identifica el uso de ya y todavía; explica qué cambio se ha producido y qué situación continúa."
+          ]
+        },
+        "practice": {
+          "instruction": "Completa las frases con la forma adecuada. Fíjate en si expresan anterioridad, duración o un cambio.",
+          "tasks": [
+            "Antes de mudarme, nunca ___ (vivir) fuera de mi ciudad.",
+            "Llevo dos años ___ (estudiar) en Guadalajara.",
+            "Vivo aquí ___ hace tres años.",
+            "Todavía no ___ (conocer) toda la ciudad, pero ya ___ (hacer) varios amigos."
+          ],
+          "answers": [
+            "había vivido",
+            "estudiando",
+            "desde",
+            "conozco; hice"
+          ]
+        },
+        "communicate": {
+          "instruction": "En parejas, conversen sobre una mudanza, un cambio de trabajo o el inicio de una nueva etapa. Una persona cuenta su experiencia y la otra hace preguntas para aclarar los detalles.",
+          "tasks": [
+            "Pregunta cómo era la vida antes del cambio.",
+            "Pregunta cuánto tiempo lleva la persona en la nueva situación.",
+            "Pregunta qué ya consiguió y qué todavía le falta hacer.",
+            "Resume la historia usando pluscuamperfecto y expresiones de duración."
+          ]
+        }
+      },
+      "personal_application": {
+        "scenario": "Una persona que no te ha visto desde hace tiempo quiere saber cómo ha cambiado tu vida después de mudarte, cambiar de trabajo o comenzar una nueva etapa.",
+        "task": "Cuenta la experiencia en 8–10 frases. Explica qué había pasado antes, cuánto tiempo llevas en la nueva situación, qué cambios ya hiciste y qué todavía está pendiente.",
+        "support": [
+          "Antes de mudarme…",
+          "Nunca había…",
+          "Llevo… viviendo/trabajando…",
+          "Ya hice…",
+          "Todavía no…"
+        ]
+      },
+      "pronunciation_practice": {
+        "focus": "La pronunciación de las formas compuestas y la diferencia entre había + participio y llevar + gerundio.",
+        "steps": [
+          "Lee: había vivido, había conocido, llevo trabajando, ya hice.",
+          "Compara «había cambiado» y «ya cambié»: identifica cómo cambia la referencia temporal.",
+          "Graba un relato corto y comprueba que se entienden las acciones anteriores y la duración."
+        ],
+        "audio_model_status": "pending"
+      },
+      "reflection": {
+        "can_do": [
+          "Puedo contar qué había ocurrido antes de un cambio personal.",
+          "Puedo expresar cuánto tiempo llevo viviendo o trabajando en un lugar.",
+          "Puedo explicar qué ya cambió y qué todavía no he hecho.",
+          "Puedo narrar una experiencia personal con una secuencia temporal clara."
+        ]
       },
       "exercises": [
         {
           "id": "es_mx_b1_u2_e1",
-          "type": "choice",
           "skill": "gist",
-          "prompt": "¿Cuál es la idea principal del texto?",
+          "type": "choice",
+          "prompt": "¿De qué habla Pablo?",
           "options": [
-            "Elena construye una nueva vida en Guadalajara sin perder el vínculo con su lugar de origen.",
-            "Elena decide regresar inmediatamente porque no se adapta a Guadalajara.",
-            "Elena deja de visitar a su familia después de mudarse."
+            "De cómo se adaptó a Guadalajara después de mudarse",
+            "De un viaje corto por motivos de trabajo",
+            "De cómo decidió estudiar en otro país"
           ],
           "answer": 0,
-          "explanation": "El texto describe su adaptación gradual a la nueva ciudad."
+          "explanation": "Pablo recuerda su llegada a Guadalajara y los cambios que ha vivido desde entonces."
         },
         {
           "id": "es_mx_b1_u2_e2",
-          "type": "choice",
           "skill": "detail",
-          "prompt": "¿Qué echaba de menos durante los primeros meses?",
+          "type": "choice",
+          "prompt": "¿Qué hizo Pablo para conocer gente?",
           "options": [
-            "Su antiguo trabajo en una universidad.",
-            "El clima de la costa.",
-            "A su familia."
+            "Se inscribió a un grupo de ciclismo y empezó a salir con sus compañeros",
+            "Regresó a vivir con sus padres",
+            "Cambió de trabajo cada mes"
           ],
-          "answer": 2,
-          "explanation": "La lectura dice que extrañaba a su familia."
+          "answer": 0,
+          "explanation": "Pablo menciona el grupo de ciclismo y las actividades con sus compañeros."
         },
         {
           "id": "es_mx_b1_u2_e3",
+          "skill": "vocabulary",
           "type": "choice",
-          "skill": "grammar",
-          "prompt": "Completa: «Cuando llegué, la reunión ya ___».",
+          "prompt": "¿Qué significa «acostumbrarse al ritmo de la ciudad»?",
           "options": [
-            "había empezado",
-            "ha empezado",
-            "empezaría"
+            "Adaptarse a la manera y velocidad de la vida cotidiana",
+            "Aprender a conducir por todas las calles",
+            "Cambiar el horario de todos los comercios"
           ],
           "answer": 0,
-          "explanation": "Pluscuamperfecto expresa la acción anterior a otro momento pasado."
+          "explanation": "Acostumbrarse significa adaptarse gradualmente a una situación o rutina."
         },
         {
           "id": "es_mx_b1_u2_e4",
-          "type": "choice",
           "skill": "grammar",
-          "prompt": "Completa: «Antes de mudarse a Guadalajara, Elena ___ siempre en un pueblo pequeño».",
+          "type": "choice",
+          "prompt": "Completa: «Antes de mudarme, nunca ___ fuera de mi ciudad»",
           "options": [
             "había vivido",
-            "ha vivido",
+            "he vivido",
             "viviría"
           ],
           "answer": 0,
-          "explanation": "El pluscuamperfecto expresa una situación anterior al momento pasado de la mudanza."
+          "explanation": "El pluscuamperfecto señala una experiencia anterior al momento pasado de la mudanza."
         },
         {
           "id": "es_mx_b1_u2_e5",
-          "type": "choice",
           "skill": "culture",
-          "prompt": "Según la nota cultural, ¿qué puede cambiar al mudarse a otro estado de México?",
+          "type": "choice",
+          "prompt": "Según la nota contextual, ¿qué puede cambiar al mudarse a otro estado de México?",
           "options": [
-            "La lengua oficial de todo el país.",
-            "El clima, la comida y las expresiones locales.",
-            "Las fronteras nacionales."
+            "El clima, la comida, las expresiones y el ritmo de vida",
+            "La lengua oficial de todo el país",
+            "Las fronteras nacionales"
           ],
-          "answer": 1,
-          "explanation": "La experiencia puede variar según el estado y la ciudad."
+          "answer": 0,
+          "explanation": "La experiencia de mudarse puede variar según la región y la ciudad."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Empezar de nuevo en Guadalajara",
+        "text": "Antes de mudarse a Guadalajara, Elena había vivido siempre en una ciudad más pequeña. Al principio extrañaba a su familia y le costaba acostumbrarse al tráfico y al ritmo de vida. Después se inscribió a un taller de fotografía y conoció a varias personas. Lleva dos años viviendo allí y ya hizo buenos amigos. Todavía visita a su familia cada mes, pero ahora siente que tiene dos lugares a los que puede llamar casa."
+      }
     }
+  ],
+  "teacher_notes": [
+    "No añadir una sección independiente de Vocabulary: introducir el léxico en diálogos, lecturas, explicaciones y ejercicios.",
+    "El pluscuamperfecto expresa anterioridad respecto de otro momento pasado; no debe confundirse con el pretérito perfecto compuesto.",
+    "Llevar + periodo + gerundio expresa duración de una actividad; desde hace + periodo indica cuánto tiempo lleva vigente una situación; desde + fecha indica el punto de inicio.",
+    "Ya, todavía y todavía no se enseñan por su valor discursivo. La selección entre perfecto e indefinido debe considerar el contexto y las preferencias regionales.",
+    "En México, el indefinido es frecuente en muchos contextos donde en España se usa el perfecto compuesto; no presentar la diferencia como una regla absoluta.",
+    "Las tareas abiertas pertenecen a guided practice y personal application; exercises contiene cinco preguntas cerradas por variante.",
+    "No integrar hasta completar la revisión de todo el catálogo español."
   ]
 }

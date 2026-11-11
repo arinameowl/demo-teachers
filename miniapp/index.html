@@ -389,7 +389,7 @@
       selectedLanguage = state.selected_language || state.profile?.language || 'en';
       try { state.library = await api('/api/app/library'); }
       catch (libraryError) { state.library = {books:[],worksheets:[],error:libraryError.status===409 ? null : libraryError.message}; }
-      renderProfile(); renderLanguages(); renderMaterials();
+      renderProfile(); renderLanguages();\n      if (selectedLanguage === 'es') { $('spanish-variant').hidden = false; loadSpanishLead(); } else { $('spanish-variant').hidden = true; renderMaterials(); }
     } catch(e) {
       renderProfile(); renderLanguages();
       $('materials').classList.remove('loading');

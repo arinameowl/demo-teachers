@@ -155,7 +155,11 @@
           "answer": 0,
           "explanation": "AVE es el servicio de trenes de alta velocidad que conecta numerosas ciudades españolas."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Un fin de semana en Granada",
+        "text": "El mes pasado, Irene ha pasado un fin de semana en Granada con su hermana. Han llegado en tren el viernes por la tarde y se han alojado en un hotel cerca del centro. El sábado han visitado la Alhambra y han paseado por el Albaicín. Había mucha gente, pero el día ha sido muy agradable. Por la noche han cenado en un restaurante pequeño y han probado platos típicos. Irene ha vuelto a casa cansada, pero muy contenta con el viaje."
+      }
     },
     {
       "id": "es_mx",
@@ -270,7 +274,11 @@
           "answer": 0,
           "explanation": "Oaxaca destaca por sus tradiciones culturales, mercados, artesanías y gastronomía."
         }
-      ]
+      ],
+      "reading": {
+        "title": "Unos días en Oaxaca",
+        "text": "Este año, Daniel ha viajado a Oaxaca con dos amigos. Se han quedado en un hotel pequeño cerca del centro y han recorrido la ciudad a pie. También han visitado Monte Albán y han aprendido un poco sobre la historia de la región. Por las tardes han ido al mercado: Daniel ha probado el mole y ha comprado una pieza de barro negro para su mamá. El viaje ha sido corto, pero los tres han conocido lugares y sabores nuevos."
+      }
     }
   ],
   "teacher_notes": [

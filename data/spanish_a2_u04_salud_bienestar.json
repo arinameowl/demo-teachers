@@ -21,7 +21,8 @@
         "¿Cómo te encuentras?",
         "Se cuida mucho y descansa bien.",
         "Nos sentimos mejor."
-      ]
+      ],
+      "title_ru": "Sentirse и возвратные глаголы"
     },
     {
       "topic": "doler_y_describir_síntomas",
@@ -31,7 +32,8 @@
         "A Diego le duele el estómago.",
         "Me duelen las piernas.",
         "Tengo tos y un poco de fiebre."
-      ]
+      ],
+      "title_ru": "Doler: как описать симптомы"
     },
     {
       "topic": "imperativo_y_recomendaciones",
@@ -41,7 +43,8 @@
         "Beba agua con frecuencia.",
         "Deberías hablar con un profesional sanitario.",
         "No tomes medicamentos sin consultar a un profesional."
-      ]
+      ],
+      "title_ru": "Повелительное наклонение и рекомендации"
     }
   ],
   "variants": [

@@ -33,7 +33,10 @@
       "A1 lesson variants contain 8–10 dialogue turns; A1 reading is supplied separately in spanish_a1_books.json.",
       "A1 units contain 5–6 grammar topics; A2 units contain 3–4; B1 units contain 3.",
       "No standalone vocabulary arrays remain in A1 lesson variants; vocabulary is embedded in context.",
-      "B1 correct-answer positions are distributed across options rather than fixed in the first position."
+      "B1 correct-answer positions are distributed across options rather than fixed in the first position.",
+      "All curriculum choice-option strings are unique within each exercise.",
+      "A1 book comprehension questions have unique options, valid answer indexes and explanatory feedback.",
+      "A1 daily-routine exercises with two blanks provide complete paired-form options."
     ]
   },
   "editorial_changes": [
@@ -44,7 +47,12 @@
         "Added merendar to the Spain daily-routine dialogue so the related comprehension item is grounded in context.",
         "Added an explicit explanation of vosotros forms in the Spain food-ordering context; contrasted with ustedes in the Mexico route.",
         "Simplified the Spain leisure dialogue and reduced consecutive Mexican colloquialisms in the Mexico dialogue.",
-        "Removed standalone vocabulary lists from all six A1 lesson units; vocabulary remains embedded in dialogues, grammar examples and exercises."
+        "Removed standalone vocabulary lists from all six A1 lesson units; vocabulary remains embedded in dialogues, grammar examples and exercises.",
+        "Reviewed all six A1 lesson units in both Spain and Mexico variants, including dialogues, grammar notes, five exercise items per unit and answer explanations.",
+        "Reworked both daily-routine two-gap questions so each option supplies a complete, internally consistent pair of verb forms.",
+        "Removed overlapping translations from the Spain «¿Te apetece…?» and Mexico «¿Te late…?» vocabulary questions so each has one defensible correct answer.",
+        "Specified Ciudad de México instead of the context-dependent «aquí» in the Mexico introductions dialogue.",
+        "Clarified that the Mexico city-directions dialogue asks for the estación del metro, aligning the dialogue, answer option and feedback."
       ]
     },
     {
@@ -75,6 +83,7 @@
   },
   "outstanding_work": [
     "Complete a final line-by-line language proofread by a qualified Spanish editor or native speaker for both dialect tracks.",
+    "Find and verify a genuinely A1 Mexican Spanish video to replace the current A2-labelled lead-magnet video; do not show the A2 item to A1 learners.",
     "Preview every selected A1 video/audio resource end-to-end and verify actual CEFR difficulty, regional language, availability in intended student regions and mobile playback.",
     "Confirm commercial teaching, linking and embedding rights for each third-party media resource before any product integration.",
     "Create media-specific original exercises only after reviewing the actual clips or recordings; do not infer answers from titles or summaries.",
@@ -85,5 +94,27 @@
     "rule": "The Spanish curriculum is connected to the Learning Space in code. Do not present it as fully editorially approved or promote external media as cleared until native-language proofreading, media level/accessibility review and commercial-use/linking/embedding rights checks are complete.",
     "english_section": "unchanged"
   },
-  "positioning": "These materials are a premium lead-magnet sample designed to demonstrate teaching quality and create motivation to book a trial lesson. They are not a complete CEFR course at each level."
+  "positioning": "These materials are a premium lead-magnet sample designed to demonstrate teaching quality and create motivation to book a trial lesson. They are not a complete CEFR course at each level.",
+  "a1_internal_editorial_review": {
+    "status": "first_internal_review_completed_pending_native_speaker_signoff",
+    "scope": "Six A1 units, both dialect variants, both A1 book variants, exercise answer options and feedback.",
+    "confirmed_strengths": [
+      "Both dialect variants have six distinct topic units and five closed-choice exercises per unit.",
+      "The two A1 reading books are short, present-tense texts with five comprehension/grammar questions each.",
+      "Spain/Mexico lexical distinctions are used contextually (móvil/celular, coger el autobús/tomar el camión, zumo/jugo, ordenador/computadora, and selected regional expressions).",
+      "Grammar progression is coherent across introductions, family, routines, food, directions and leisure."
+    ],
+    "corrections_committed": [
+      "Daily-routine paired-gap answer options now present complete pairs of forms rather than a single answer for two blanks.",
+      "Ambiguous duplicate translations in the leisure expressions exercises have been removed.",
+      "The Mexico introductions dialogue identifies Ciudad de México explicitly.",
+      "The Mexico directions dialogue explicitly asks for the metro station."
+    ],
+    "remaining_findings": [
+      "The A1 Mexico lead-magnet video is not yet level-matched: the current Mexico video is publisher-labelled A2. The Learning Space filters it out for A1 learners; only the A1 Mexico series is currently available as the external video/series extra. Do not relabel the A2 video as A1.",
+      "The A1 Spain lead video is publisher-labelled A1, but end-to-end audio preview and commercial-use/embedding review remain outstanding.",
+      "The A1 Mexico series is labelled Beginner/A1 by its publisher, but final audio preview and rights review remain outstanding.",
+      "A final native-speaker proofread is still required for both dialect tracks; this internal review is not a substitute for that sign-off."
+    ]
+  }
 }

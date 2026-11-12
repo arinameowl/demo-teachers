@@ -47,7 +47,8 @@
           "correct": "Comentaron que habían terminado la primera fase.",
           "explanation": "Pluscuamperfecto показывает, что завершение произошло до момента сообщения."
         }
-      ]
+      ],
+      "title_ru": "Косвенная речь в настоящем и прошедшем времени"
     },
     {
       "topic": "cambios_referencias_temporales_y_deicticas",
@@ -69,7 +70,8 @@
           "correct": "Afirmó que ese documento era urgente.",
           "explanation": "Ese может отражать смену точки отсчета; выбор зависит от того, остается ли предмет актуально близким."
         }
-      ]
+      ],
+      "title_ru": "Изменение временных и указательных маркеров"
     },
     {
       "topic": "peticiones_propuestas_y_condicional",
@@ -92,7 +94,8 @@
           "correct": "¿Podrías enviarme el archivo?",
           "explanation": "После poder en condicional используется инфинитив без que."
         }
-      ]
+      ],
+      "title_ru": "Просьбы, предложения и condicional"
     }
   ],
   "variants": [

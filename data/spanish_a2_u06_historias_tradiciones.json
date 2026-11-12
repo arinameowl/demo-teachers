@@ -46,7 +46,8 @@
           "correct": "Antes, cada domingo comía con mis abuelos.",
           "explanation": "Повторяющаяся привычка в прошлом выражается imperfecto."
         }
-      ]
+      ],
+      "title_ru": "Pretérito imperfecto: правильные глаголы"
     },
     {
       "topic": "imperfecto_irregular",
@@ -63,7 +64,8 @@
           "correct": "De niña iba al pueblo todos los veranos.",
           "explanation": "Повторяющееся действие в прошлом обычно требует imperfecto: iba."
         }
-      ]
+      ],
+      "title_ru": "Pretérito imperfecto: неправильные глаголы"
     },
     {
       "topic": "indefinido_vs_imperfecto",
@@ -85,7 +87,8 @@
           "correct": "Ayer hice una tarta y la llevé a casa de mi abuela.",
           "explanation": "При рассказе о двух завершенных действиях используйте indefinido."
         }
-      ]
+      ],
+      "title_ru": "Pretérito indefinido и imperfecto: различия в употреблении"
     }
   ],
   "variants": [

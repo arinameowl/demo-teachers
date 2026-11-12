@@ -2,7 +2,7 @@
   "schema_version": 1,
   "language": "es",
   "title": "Spanish A1–B1 Editorial Audit — The Teachers School",
-  "audit_status": "editorial_revision_applied_pending_final_native_language_proofreading",
+  "audit_status": "editorial_revision_applied_pending_final_native_language_proofreading_and_media_rights_review",
   "scope": {
     "levels": [
       "A1",
@@ -17,17 +17,21 @@
     "dialect_variants": 36,
     "closed_choice_lesson_exercises": 180,
     "original_reading_books_A1": 2,
-    "book_comprehension_exercises": 10
+    "book_comprehension_exercises": 10,
+    "closed_choice_lesson_exercises_per_dialect_track": 90,
+    "closed_choice_lesson_exercises_per_level_per_dialect": 30
   },
   "structural_validation": {
     "status": "passed",
     "checks": [
       "All 18 lesson JSON files parse successfully.",
-      "Each unit contains two dialect variants.",
-      "Each unit variant contains five closed-choice exercises with valid answer indices.",
-      "All exercise IDs are unique within their variant.",
-      "A2 and B1 units contain ten dialogue turns and one original reading text per dialect variant.",
+      "Each of the 18 units contains two dialect variants: es_es and es_mx.",
+      "Each unit variant contains exactly five closed-choice exercises, for 90 exercises per dialect track and 180 variant-specific exercise instances in total.",
+      "All exercise IDs are present and unique within each unit variant.",
+      "All choice exercises have at least two options, a valid answer index and an explanatory feedback field.",
+      "A2 and B1 unit variants contain 12 dialogue turns and one original reading text each.",
       "A1 lesson variants contain 8–10 dialogue turns; A1 reading is supplied separately in spanish_a1_books.json.",
+      "A1 units contain 5–6 grammar topics; A2 units contain 3–4; B1 units contain 3.",
       "No standalone vocabulary arrays remain in A1 lesson variants; vocabulary is embedded in context.",
       "B1 correct-answer positions are distributed across options rather than fixed in the first position."
     ]
@@ -77,8 +81,8 @@
     "Record original Mexican Spanish audio for A1 units where no sufficiently clear and level-appropriate external source is confirmed."
   ],
   "integration": {
-    "status": "not_integrated",
-    "rule": "Do not connect Spanish content to the Telegram bot or Learning Space until the complete Spanish catalog is finished, approved and media rights are checked.",
+    "status": "integrated_in_learning_space_pending_editorial_and_media_approval",
+    "rule": "The Spanish curriculum is connected to the Learning Space in code. Do not present it as fully editorially approved or promote external media as cleared until native-language proofreading, media level/accessibility review and commercial-use/linking/embedding rights checks are complete.",
     "english_section": "unchanged"
   },
   "positioning": "These materials are a premium lead-magnet sample designed to demonstrate teaching quality and create motivation to book a trial lesson. They are not a complete CEFR course at each level."

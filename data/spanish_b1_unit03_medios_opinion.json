@@ -47,7 +47,8 @@
           "correct": "Creo que la fuente es fiable.",
           "explanation": "Утвердительное creo que обычно вводит мнение с indicativo."
         }
-      ]
+      ],
+      "title_ru": "Indicativo и subjuntivo при выражении мнения"
     },
     {
       "topic": "conectores_argumentacion",
@@ -70,7 +71,8 @@
           "correct": "Aunque parezca convincente, habría que verificarlo.",
           "explanation": "Subjuntivo возможен, когда оценка представлена как уступительное предположение, а не установленный факт."
         }
-      ]
+      ],
+      "title_ru": "Связки для аргументации"
     },
     {
       "topic": "fuentes_y_reporte",
@@ -93,7 +95,8 @@
           "correct": "Los datos sugieren que podría haber una relación.",
           "explanation": "Сочетайте силу глагола с силой доказательств: sugerir / podría быть осторожнее, чем demostrar."
         }
-      ]
+      ],
+      "title_ru": "Ссылки на источники и передача информации"
     }
   ],
   "variants": [

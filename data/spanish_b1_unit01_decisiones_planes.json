@@ -47,7 +47,8 @@
           "correct": "Yo podría aceptar la oferta.",
           "explanation": "Poder tiene la raíz irregular podr-."
         }
-      ]
+      ],
+      "title_ru": "Condicional simple: условное наклонение"
     },
     {
       "topic": "si_presente_futuro",
@@ -64,7 +65,8 @@
           "correct": "Si consigo la beca, me mudaré.",
           "explanation": "После si в реальном условии используется presente, а не futuro."
         }
-      ]
+      ],
+      "title_ru": "Реальные условия: si + presente / futuro"
     },
     {
       "topic": "si_imperfecto_subjuntivo_condicional",
@@ -86,7 +88,8 @@
           "correct": "Si consiguiera la beca, me mudaría.",
           "explanation": "Не используйте condicional в придаточной части с si."
         }
-      ]
+      ],
+      "title_ru": "Гипотезы: si + imperfecto de subjuntivo + condicional"
     }
   ],
   "variants": [

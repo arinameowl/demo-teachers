@@ -241,7 +241,7 @@
             "te levantas / te duchas"
           ],
           "answer": 0,
-          "explanation": "С местоимением yo используем me: me levanto, me ducho."
+          "explanation": "Con yo usamos el pronombre me y las formas de primera persona: me levanto y me ducho."
         },
         {
           "id": "es_es_u3_e5",
@@ -354,7 +354,7 @@
             "te despiertas / te acuestas"
           ],
           "answer": 1,
-          "explanation": "С ella используется возвратное местоимение se: se despierta, se acuesta."
+          "explanation": "Con ella usamos el pronombre se y las formas de tercera persona: se despierta y se acuesta."
         },
         {
           "id": "es_mx_u3_e5",

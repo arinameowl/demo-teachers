@@ -3,7 +3,7 @@
   "language": "es",
   "level": "A2",
   "title": "Spanish A2 — The Teachers School",
-  "status": "content_prepared_not_integrated",
+  "status": "integrated_in_learning_space_pending_final_editorial_review",
   "dialects": [
     {
       "id": "es_es",
@@ -56,13 +56,13 @@
   ],
   "content_standard": {
     "per_unit_per_dialect": {
-      "grammar_topics": 3,
-      "dialogue_lines": 10,
+      "grammar_topics": "3–4",
+      "dialogue_lines": 12,
       "original_reading_texts": 1,
       "closed_choice_exercises": 5
     },
     "vocabulary_policy": "No separate vocabulary section. Vocabulary is introduced in dialogues, reading texts, explanations and exercises.",
     "exercise_policy": "Closed-choice exercises only. No open-ended written-response tasks."
   },
-  "integration_note": "Испанский контент не подключать к Telegram-боту или Learning Space до завершения всего испанского каталога и общего аудита. Английский раздел остается без изменений."
+  "integration_note": "Уроки A2 подключены к Learning Space; требуется финальная редакторская вычитка обоих диалектных вариантов."
 }

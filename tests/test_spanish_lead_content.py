@@ -91,6 +91,11 @@ class SpanishCurriculumTest(unittest.TestCase):
                             if exercise.get("type") != "choice":
                                 continue
                             self.assertGreaterEqual(len(exercise.get("options", [])), 2)
+                            self.assertEqual(
+                                len(exercise["options"]),
+                                len(set(exercise["options"])),
+                                f"{exercise.get('id')} has duplicate answer options",
+                            )
                             self.assertIsInstance(exercise.get("answer"), int)
                             self.assertGreaterEqual(exercise["answer"], 0)
                             self.assertLess(exercise["answer"], len(exercise["options"]))
@@ -124,6 +129,34 @@ class SpanishCurriculumTest(unittest.TestCase):
                                 self.assertLessEqual(grammar_topics, 4)
                             else:
                                 self.assertEqual(grammar_topics, 3)
+
+    def test_a1_two_blank_exercises_offer_complete_answer_pairs(self):
+        from spanish_lead_content import load_spanish_level_units
+
+        units = load_spanish_level_units("A1", "es_es") + load_spanish_level_units("A1", "es_mx")
+        by_id = {
+            exercise["id"]: exercise
+            for unit in units
+            for exercise in unit["variant"].get("exercises", [])
+        }
+        expected = {
+            "es_es_u3_e4": ["me levanto / me ducho", "se levanta / se ducha", "te levantas / te duchas"],
+            "es_mx_u3_e4": ["me despierto / me acuesto", "se despierta / se acuesta", "te despiertas / te acuestas"],
+        }
+        for exercise_id, options in expected.items():
+            with self.subTest(exercise=exercise_id):
+                self.assertEqual(by_id[exercise_id]["options"], options)
+                self.assertIn("/", options[by_id[exercise_id]["answer"]])
+
+    def test_a1_book_questions_have_unique_options_and_explanations(self):
+        for variant in ("es_es", "es_mx"):
+            with self.subTest(variant=variant):
+                book = load_spanish_lead(variant)["book"]["books"][0]
+                for question in book["questions"]:
+                    self.assertEqual(len(question["options"]), len(set(question["options"])))
+                    self.assertTrue(question.get("explanation"))
+                    self.assertGreaterEqual(question["answer"], 0)
+                    self.assertLess(question["answer"], len(question["options"]))
 
     def test_spanish_placement_quiz_covers_all_three_levels(self):
         import quiz

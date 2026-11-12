@@ -19,7 +19,8 @@
         "¿Has viajado alguna vez solo/a?",
         "Este año hemos visitado dos ciudades.",
         "Nunca he perdido una maleta."
-      ]
+      ],
+      "title_ru": "Pretérito perfecto: опыт и незавершенный период"
     },
     {
       "topic": "pretérito_indefinido_y_contraste_regional",
@@ -29,7 +30,8 @@
         "México: Esta semana visité Puebla.",
         "En 2022 viajé a Perú."
       ],
-      "note_ru": "В диалоге также встречаются формы imperfecto (teníamos, había, estaban) для описания фона и состояния. Здесь их нужно понимать по контексту; подробное изучение imperfecto предусмотрено в отдельном материале."
+      "note_ru": "В диалоге также встречаются формы imperfecto (teníamos, había, estaban) для описания фона и состояния. Здесь их нужно понимать по контексту; подробное изучение imperfecto предусмотрено в отдельном материале.",
+      "title_ru": "Pretérito indefinido: завершенные события и региональные различия"
     },
     {
       "topic": "participios_regulares_e_irregulares",
@@ -42,7 +44,8 @@
         "escribir → escrito",
         "abrir → abierto",
         "volver → vuelto"
-      ]
+      ],
+      "title_ru": "Правильные и неправильные причастия"
     },
     {
       "topic": "secuencia_y_reacciones",
@@ -51,7 +54,8 @@
         "Primero visitamos el centro y después fuimos al mercado.",
         "Lo mejor fue la excursión.",
         "¿Y qué pasó después?"
-      ]
+      ],
+      "title_ru": "Последовательность событий и реакции"
     }
   ],
   "variants": [

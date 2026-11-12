@@ -46,7 +46,8 @@
           "correct": "Se ha abierto una biblioteca nueva.",
           "explanation": "В составной форме haber согласуется с единственным числом существительного."
         }
-      ]
+      ],
+      "title_ru": "Pasiva refleja с se"
     },
     {
       "topic": "impersonal_se",
@@ -68,7 +69,8 @@
           "correct": "Se necesita mejorar el transporte.",
           "explanation": "Когда se + necesitar сопровождается инфинитивом, глагол стоит в единственном числе."
         }
-      ]
+      ],
+      "title_ru": "Безличные конструкции с se"
     },
     {
       "topic": "oraciones_relativo_que_donde",
@@ -90,7 +92,8 @@
           "correct": "La plaza donde se reúnen los vecinos es pequeña.",
           "explanation": "Для места, в котором происходит действие, используется donde."
         }
-      ]
+      ],
+      "title_ru": "Относительные придаточные с que и donde"
     }
   ],
   "variants": [

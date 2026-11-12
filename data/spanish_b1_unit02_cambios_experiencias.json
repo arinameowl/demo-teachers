@@ -46,7 +46,8 @@
           "correct": "Había escrito una carta.",
           "explanation": "В составном времени используется неизменяемое причастие: escrito."
         }
-      ]
+      ],
+      "title_ru": "Pluscuamperfecto: действие до другого события в прошлом"
     },
     {
       "topic": "llevar_desde_hace",
@@ -68,7 +69,8 @@
           "correct": "Llevo dos años trabajando aquí.",
           "explanation": "После llevar + период используется gerundio."
         }
-      ]
+      ],
+      "title_ru": "Llevar, desde и hace: как говорить о длительности"
     },
     {
       "topic": "ya_todavia_aun",
@@ -90,7 +92,8 @@
           "correct": "Todavía vivo en Valencia.",
           "explanation": "Ya и todavía выполняют разные функции; в этой фразе речь идет о продолжающейся ситуации."
         }
-      ]
+      ],
+      "title_ru": "Ya, todavía и aún: уже, еще и до сих пор"
     }
   ],
   "variants": [

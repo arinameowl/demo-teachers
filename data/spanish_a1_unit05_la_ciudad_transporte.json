@@ -252,7 +252,7 @@
       "dialogue": [
         {
           "speaker": "Visitante",
-          "text": "Disculpe, ¿cómo llego al metro?"
+          "text": "Visitante: Disculpe, ¿cómo llego a la estación del metro?"
         },
         {
           "speaker": "Vecino",
@@ -295,7 +295,7 @@
             "Una cafetería"
           ],
           "answer": 0,
-          "explanation": "Pregunta cómo llegar al metro y dónde comprar una tarjeta de transporte."
+          "explanation": "Pregunta cómo llegar a la estación del metro y dónde comprar una tarjeta de transporte."
         },
         {
           "id": "es_mx_u5_e2",

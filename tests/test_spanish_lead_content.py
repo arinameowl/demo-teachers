@@ -106,6 +106,10 @@ class SpanishCurriculumTest(unittest.TestCase):
                     for unit in units:
                         dialogue_turns = len(unit["variant"].get("dialogue", []))
                         grammar_topics = len(unit.get("grammar", []))
+                        self.assertTrue(
+                            all(topic.get("title_ru") for topic in unit.get("grammar", [])),
+                            f"{unit['id']} has a grammar topic without a learner-facing Russian title",
+                        )
                         if level == "A1":
                             self.assertGreaterEqual(dialogue_turns, 8)
                             self.assertLessEqual(dialogue_turns, 10)

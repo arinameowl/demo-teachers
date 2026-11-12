@@ -96,6 +96,31 @@ class SpanishCurriculumTest(unittest.TestCase):
                             self.assertLess(exercise["answer"], len(exercise["options"]))
                             self.assertTrue(exercise.get("explanation"))
 
+    def test_dialogue_reading_and_grammar_structure_matches_level(self):
+        from spanish_lead_content import load_spanish_level_units
+
+        for level in ("A1", "A2", "B1"):
+            for variant in ("es_es", "es_mx"):
+                with self.subTest(level=level, variant=variant):
+                    units = load_spanish_level_units(level, variant)
+                    for unit in units:
+                        dialogue_turns = len(unit["variant"].get("dialogue", []))
+                        grammar_topics = len(unit.get("grammar", []))
+                        if level == "A1":
+                            self.assertGreaterEqual(dialogue_turns, 8)
+                            self.assertLessEqual(dialogue_turns, 10)
+                            self.assertGreaterEqual(grammar_topics, 5)
+                            self.assertLessEqual(grammar_topics, 6)
+                            self.assertFalse(unit["variant"].get("reading"))
+                        else:
+                            self.assertEqual(dialogue_turns, 12)
+                            self.assertTrue(unit["variant"].get("reading"))
+                            if level == "A2":
+                                self.assertGreaterEqual(grammar_topics, 3)
+                                self.assertLessEqual(grammar_topics, 4)
+                            else:
+                                self.assertEqual(grammar_topics, 3)
+
     def test_spanish_placement_quiz_covers_all_three_levels(self):
         import quiz
 

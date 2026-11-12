@@ -47,7 +47,8 @@
           "correct": "Es importante conservar la memoria. / Es importante que conservemos la memoria.",
           "explanation": "Если подлежащее общее, используется инфинитив; если выражено отдельное подлежащее, que + subjuntivo."
         }
-      ]
+      ],
+      "title_ru": "Subjuntivo после выражений эмоций и оценки"
     },
     {
       "topic": "aunque_indicativo_subjuntivo",
@@ -70,7 +71,8 @@
           "correct": "Aunque es una costumbre antigua, todavía se practica.",
           "explanation": "Indicativo представляет возраст традиции как установленный факт."
         }
-      ]
+      ],
+      "title_ru": "Aunque с indicativo и subjuntivo"
     },
     {
       "topic": "marcadores_relato_y_memoria",
@@ -93,7 +95,8 @@
           "correct": "Desde entonces preparo la receta cada año.",
           "explanation": "Для повторяющегося действия после определенного момента используйте подходящий маркер частотности."
         }
-      ]
+      ],
+      "title_ru": "Маркеры повествования и воспоминаний"
     }
   ],
   "variants": [

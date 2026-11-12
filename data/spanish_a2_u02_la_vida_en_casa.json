@@ -21,7 +21,8 @@
         "En este edificio hay que separar la basura.",
         "Debes avisar al propietario.",
         "Tenemos que repartir las tareas."
-      ]
+      ],
+      "title_ru": "Обязанность, необходимость и совет"
     },
     {
       "topic": "comparativos",
@@ -31,7 +32,8 @@
         "Mi habitación es tan grande como la tuya.",
         "Tenemos menos espacio que antes.",
         "Hay tantas ventanas como puertas."
-      ]
+      ],
+      "title_ru": "Сравнительные конструкции"
     },
     {
       "topic": "peticiones_y_favores",
@@ -41,7 +43,8 @@
         "¿Podrías llamar al propietario?",
         "¿Te importa limpiar la mesa?",
         "Claro, ahora lo hago."
-      ]
+      ],
+      "title_ru": "Просьбы и просьбы об услуге"
     },
     {
       "topic": "tareas_domésticas_y_averías",
@@ -51,7 +54,8 @@
         "La llave del lavabo gotea.",
         "La calefacción no funciona.",
         "¿Podría venir alguien a revisar la fuga?"
-      ]
+      ],
+      "title_ru": "Домашние дела и бытовые неисправности"
     }
   ],
   "variants": [

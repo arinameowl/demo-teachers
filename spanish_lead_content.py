@@ -73,6 +73,8 @@ def load_spanish_level_units(level: str, variant: str) -> list[dict]:
         if path.parent != DATA_DIR.resolve():
             raise ValueError("Invalid Spanish unit path")
         unit = json.loads(path.read_text(encoding="utf-8"))
+        if unit.get("level") != level:
+            raise ValueError(f"Spanish unit {entry['path']} is tagged {unit.get('level')}, expected {level}")
         dialect = next((item for item in unit.get("variants", []) if item.get("id") == variant), None)
         if dialect is None:
             continue

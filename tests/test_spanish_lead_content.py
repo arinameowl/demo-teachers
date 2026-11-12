@@ -67,9 +67,16 @@ class SpanishCurriculumTest(unittest.TestCase):
             for variant in ("es_es", "es_mx"):
                 with self.subTest(level=level, variant=variant):
                     units = load_spanish_level_units(level, variant)
-                    self.assertTrue(units, f"No units found for {level}/{variant}")
+                    self.assertEqual(len(units), 6, f"Expected six {level} units for {variant}")
                     self.assertTrue(all(unit["level"] == level for unit in units))
                     self.assertEqual(len({unit["id"] for unit in units}), len(units))
+                    self.assertEqual(sum(len(unit["variant"].get("exercises", [])) for unit in units), 30)
+                    for unit in units:
+                        exercises = [e for e in unit["variant"].get("exercises", []) if e.get("type") == "choice"]
+                        self.assertEqual(len(exercises), 5, f"{unit['id']} must contain five exercises for {variant}")
+                        exercise_ids = [e.get("id") for e in exercises]
+                        self.assertTrue(all(exercise_ids), f"{unit['id']} has an exercise without an ID")
+                        self.assertEqual(len(set(exercise_ids)), len(exercise_ids), f"Duplicate exercise IDs in {unit['id']}")
 
     def test_curriculum_choice_exercises_have_valid_answer_keys(self):
         from spanish_lead_content import load_spanish_level_units

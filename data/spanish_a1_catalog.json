@@ -3,7 +3,7 @@
   "language": "es",
   "level": "A1",
   "title": "Spanish A1 — The Teachers School",
-  "status": "content_prepared_not_integrated",
+  "status": "integrated_in_learning_space_pending_final_editorial_and_media_review",
   "dialects": [
     {
       "id": "es_es",
@@ -68,9 +68,15 @@
       "culture"
     ]
   },
-  "integration_note": "Испанский контент (включая видео и аудио) не подключать к Telegram-боту или Learning Space до завершения всего испанского каталога и проверки лицензий. Английский раздел остается без изменений.",
+  "integration_note": "Основные уроки A1 подключены к Learning Space. Внешние видео и аудио требуют отдельной проверки уровня, доступности и прав перед продвижением.",
   "video_audio_materials": {
     "path": "data/spanish_a1_video_audio_catalog.json",
     "status": "curated_external_resources_not_integrated"
+  },
+  "content_standard": {
+    "grammar_topics_per_unit": "5–6",
+    "dialogue_turns_per_dialect_variant": "8–10",
+    "original_reading_texts_in_unit": 0,
+    "reading_materials": "Отдельная подборка коротких текстов; см. spanish_a1_books.json"
   }
 }

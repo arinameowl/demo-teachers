@@ -46,7 +46,8 @@
           "correct": "El lunes nosotros aprendimos mucho.",
           "explanation": "La terminación de nosotros para -er/-ir es -imos."
         }
-      ]
+      ],
+      "title_ru": "Pretérito indefinido: правильные глаголы"
     },
     {
       "topic": "pretérito_indefinido_irregular",
@@ -69,7 +70,8 @@
           "correct": "El viernes hice un examen.",
           "explanation": "La forma de yo de hacer es hice."
         }
-      ]
+      ],
+      "title_ru": "Pretérito indefinido: неправильные глаголы"
     },
     {
       "topic": "sequence_markers_past",
@@ -86,7 +88,8 @@
           "correct": "Primero revisé el texto y después hablé con mi tutora.",
           "explanation": "Используйте маркеры в логичной последовательности."
         }
-      ]
+      ],
+      "title_ru": "Маркеры последовательности в рассказе о прошлом"
     }
   ],
   "variants": [

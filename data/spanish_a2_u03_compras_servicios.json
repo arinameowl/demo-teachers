@@ -21,7 +21,8 @@
         "Los zapatos son bonitos; me los pruebo.",
         "No lo necesito.",
         "Quiero cambiarla / La quiero cambiar."
-      ]
+      ],
+      "title_ru": "Местоимения прямого дополнения"
     },
     {
       "topic": "comparativos_y_superlativo_relativo",
@@ -31,7 +32,8 @@
         "La falda es tan cómoda como el vestido.",
         "Es el modelo más práctico.",
         "Esta tienda tiene menos tallas que la otra."
-      ]
+      ],
+      "title_ru": "Сравнительная и превосходная степень"
     },
     {
       "topic": "peticiones_corteses_y_compras",
@@ -41,7 +43,8 @@
         "Quisiera cambiar esta camisa.",
         "¿Podría darme el recibo?",
         "Estos zapatos me quedan pequeños."
-      ]
+      ],
+      "title_ru": "Вежливые просьбы и покупки"
     }
   ],
   "variants": [

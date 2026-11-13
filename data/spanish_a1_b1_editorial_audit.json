@@ -83,11 +83,12 @@
   },
   "outstanding_work": [
     "Complete a final line-by-line language proofread by a qualified Spanish editor or native speaker for both dialect tracks.",
-    "Find and verify a genuinely A1 Mexican Spanish video to replace the current A2-labelled lead-magnet video; do not show the A2 item to A1 learners.",
     "Preview every selected A1 video/audio resource end-to-end and verify actual CEFR difficulty, regional language, availability in intended student regions and mobile playback.",
     "Confirm commercial teaching, linking and embedding rights for each third-party media resource before any product integration.",
     "Create media-specific original exercises only after reviewing the actual clips or recordings; do not infer answers from titles or summaries.",
-    "Record original Mexican Spanish audio for A1 units where no sufficiently clear and level-appropriate external source is confirmed."
+    "Record original Mexican Spanish audio for A1 units where no sufficiently clear and level-appropriate external source is confirmed.",
+    "Complete end-to-end audio preview and transcript verification for the newly selected A1 Mexican Spanish video; confirm its spoken language load matches A1.",
+    "Confirm commercial teaching, linking and embedding rights for the Mexican Spanish A1 video before product integration."
   ],
   "integration": {
     "status": "integrated_in_learning_space_pending_editorial_and_media_approval",
@@ -111,10 +112,10 @@
       "The Mexico directions dialogue explicitly asks for the metro station."
     ],
     "remaining_findings": [
-      "The A1 Mexico lead-magnet video is not yet level-matched: the current Mexico video is publisher-labelled A2. The Learning Space filters it out for A1 learners; only the A1 Mexico series is currently available as the external video/series extra. Do not relabel the A2 video as A1.",
       "The A1 Spain lead video is publisher-labelled A1, but end-to-end audio preview and commercial-use/embedding review remain outstanding.",
       "The A1 Mexico series is labelled Beginner/A1 by its publisher, but final audio preview and rights review remain outstanding.",
-      "A final native-speaker proofread is still required for both dialect tracks; this internal review is not a substitute for that sign-off."
+      "A final native-speaker proofread is still required for both dialect tracks; this internal review is not a substitute for that sign-off.",
+      "A publisher-labelled A1 Mexican Spanish video by a Mexican teacher has now been selected for the introductions unit. Its full audio preview/transcript and commercial-use/embedding rights still require verification; current original exercises are limited to the lesson outline confirmed by the publisher description and chapter markers."
     ]
   }
 }

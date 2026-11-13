@@ -187,15 +187,16 @@
         "url": "https://www.spanishplayground.net/spanish-conversation-videos-activities/",
         "format": "Short conversations, natural context, visual support and repetition; many clips aimed at novice learners",
         "access": "Many videos available on YouTube; accompanying activity packs vary by title",
-        "dialect": "Mexican Spanish",
+        "dialect": "Mexican Spanish; selected teacher identifies as Mexican and explicitly teaches the Spanish spoken in Mexico.",
         "suitability": "Useful adult-friendly situational dialogues are available, but select individual clips carefully; some other resources on the site are child-focused.",
         "selected_videos": [
           {
-            "title": "Presentaciones y saludos",
-            "url": "https://espanol.yabla.com/Spanish-Playground-series-4811",
+            "title": "Introduce yourself in Spanish | A1",
+            "url": "https://www.youtube.com/watch?v=Y_0ZdjUwxj4",
             "unit": "es_a1_u01_presentaciones",
-            "duration": "1:36",
-            "role": "Beginner listening/video; transcript listed on Yabla"
+            "duration": "about 9 minutes",
+            "role": "A1 Mexican Spanish lesson by a Mexican native-speaking teacher; formal/informal introductions, personal information and a model introduction",
+            "status": "publisher_level_and_mx_creator_verified_audio_preview_pending"
           },
           {
             "title": "Buena Gente — Season 1, Episode 1",
@@ -284,7 +285,7 @@
     {
       "unit": "es_a1_u01_presentaciones",
       "es_es": "VideoEle «¿Cómo se llama?» — бесплатный YouTube-кандидат, audio preview pending; не включать до проверки звучания и прав использования.",
-      "es_mx": "Spanish Playground Presentaciones y saludos; Copycat Cafe Latin America episode 2 optional, AI voice"
+      "es_mx": "Mexican Spanish channel video «Introduce yourself in Spanish | A1» by Mexican teacher Lulú; A1 label and topic outline verified from publisher description/chapter markers. Full audio preview, transcript and commercial-use/embedding rights still pending."
     },
     {
       "unit": "es_a1_u02_familia_amigos",
@@ -317,10 +318,13 @@
     "Check every linked resource is accessible in the intended student regions and on mobile.",
     "Check commercial-use and embedding permissions for any paid course integration.",
     "Write original five-question exercise sets per selected media after reviewing the actual media/transcripts; do not guess answers from titles or summaries.",
-    "Record original Mexican Spanish audio for any A1 unit without a sufficiently clear and level-appropriate external audio source."
+    "Record original Mexican Spanish audio for any A1 unit without a sufficiently clear and level-appropriate external audio source.",
+    "Complete an end-to-end audio preview and transcript check for Mexican Spanish A1 video «Introduce yourself in Spanish | A1»; confirm that the full spoken language load matches A1.",
+    "Confirm commercial teaching, linking and embedding rights for the Mexican Spanish A1 video before product integration."
   ],
   "audit_notes": [
     "Проверка согласованности 11.11.2026: все упоминания платного Spanish Sitcom удалены из unit_resource_status. Ресурс оставлен только в excluded_paid_resources как исключенный; в учебных маршрутах указаны бесплатные кандидаты с пометкой preview pending.",
-    "Ни один внешний кандидат не считается окончательно одобренным для коммерческой интеграции до проверки конкретного аудио/видео, условий использования и соответствия уровню. Внешние упражнения создаются The Teachers самостоятельно."
+    "Ни один внешний кандидат не считается окончательно одобренным для коммерческой интеграции до проверки конкретного аудио/видео, условий использования и соответствия уровню. Внешние упражнения создаются The Teachers самостоятельно.",
+    "13.11.2026: Replaced the A1 Mexican Spanish video candidate with «Introduce yourself in Spanish | A1» by Mexican Spanish (Lulú). The creator identifies as Mexican, the video is publisher-labelled A1, and its description/chapter markers cover beginner self-introductions. Audio preview, transcript and rights review remain pending."
   ]
 }

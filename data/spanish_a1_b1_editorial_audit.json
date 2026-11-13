@@ -117,5 +117,17 @@
       "A final native-speaker proofread is still required for both dialect tracks; this internal review is not a substitute for that sign-off.",
       "A publisher-labelled A1 Mexican Spanish video by a Mexican teacher has now been selected for the introductions unit. Its full audio preview/transcript and commercial-use/embedding rights still require verification; current original exercises are limited to the lesson outline confirmed by the publisher description and chapter markers."
     ]
+  },
+  "mexico_a1_video_selection": {
+    "status": "approved_as_primary_A1_introductions_video_pending_audio_and_rights_verification",
+    "video_title": "Introduce yourself in Spanish | A1",
+    "creator": "Mexican Spanish — Lulú",
+    "url": "https://www.youtube.com/watch?v=Y_0ZdjUwxj4",
+    "approval_scope": "The selected publisher-labelled A1 Mexican Spanish video is approved as the primary candidate for the A1 introductions unit.",
+    "limitations": [
+      "Full audio preview and transcript have not yet been verified; the spoken content and exact quiz-answer alignment remain subject to review.",
+      "Commercial teaching, linking and embedding rights have not been confirmed.",
+      "Current original exercises are based on the publisher description and chapter markers, not a verified full transcript."
+    ]
   }
 }

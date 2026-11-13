@@ -214,63 +214,67 @@
       "rights_note": "Страница VideoEle указывает CC BY-NC-ND 4.0. Не скачивать, не перерабатывать и не копировать видео/транскрипт. Для использования в коммерческом контексте лид-магнита требуется отдельная проверка/разрешение; пока сохранять только оригинальную ссылку."
     },
     "es_mx": {
-      "id": "es_mx_a2_facts_about_mexico",
+      "id": "es_mx_a1_introduce_yourself_mexican_spanish",
       "variant": "Español de México",
-      "title": "Facts about Mexico — Spanish Listening Practice A2",
-      "creator": "Speak Like a Mexican",
-      "level": "A2 (publisher-labelled)",
-      "duration": "5 minutes",
-      "youtube_url": "https://www.youtube.com/watch?v=ZZFCXqCVmiI",
-      "publisher_episode": "https://podcasts.apple.com/be/podcast/37-spanish-listening-practice-a2-mexican-spanish-facts/id1534042861?i=1000724455275",
+      "title": "Introduce yourself in Spanish | A1",
+      "creator": "Mexican Spanish — Lulú",
+      "level": "A1 (publisher-labelled)",
+      "duration": "about 9 minutes",
+      "youtube_url": "https://www.youtube.com/watch?v=Y_0ZdjUwxj4",
+      "publisher_page": "https://www.youtube.com/watch?v=Y_0ZdjUwxj4",
       "transcript_status": "full_transcript_not_verified",
-      "content_summary": "Publisher description says the episode covers Mexican culture, language, history, food and everyday life, with cultural tips and expressions.",
+      "content_summary": "A Mexican Spanish teacher introduces basic self-presentation. The published description and chapter markers confirm formal and informal tú/usted questions and answers, and sections on name, nationality, place of residence, age, profession, saying nice to meet you, and a model introduction.",
       "tasks": {
         "before_watching": [
           {
             "type": "multiple_choice",
-            "instruction": "Перед просмотром проверьте ключевую лексику выпуска.",
+            "instruction": "Перед просмотром вспомните слова, которые помогут понять тему знакомства.",
             "questions": [
               {
-                "question": "Una tradición es…",
+                "question": "El nombre es…",
                 "options": [
-                  "обычай / традиция",
-                  "современная технология",
-                  "путешествие"
+                  "имя",
+                  "возраст",
+                  "профессия"
                 ],
-                "answer": 0
+                "answer": 0,
+                "explanation": "El nombre — имя человека."
               },
               {
-                "question": "Una curiosidad es…",
+                "question": "La edad es…",
                 "options": [
-                  "расписание",
-                  "интересный или необычный факт",
-                  "рецепт"
+                  "национальность",
+                  "возраст",
+                  "место жительства"
                 ],
-                "answer": 1
+                "answer": 1,
+                "explanation": "La edad — возраст."
               },
               {
-                "question": "La vida cotidiana es…",
+                "question": "Vivir significa…",
                 "options": [
-                  "древняя история",
-                  "повседневная жизнь",
-                  "география"
+                  "работать",
+                  "называться",
+                  "жить"
                 ],
-                "answer": 1
+                "answer": 2,
+                "explanation": "Vivir — жить."
               },
               {
-                "question": "Una expresión es…",
+                "question": "La profesión es…",
                 "options": [
-                  "выражение",
-                  "праздник",
-                  "еда"
+                  "профессия",
+                  "страна",
+                  "фамилия"
                 ],
-                "answer": 0
+                "answer": 0,
+                "explanation": "La profesión — профессия."
               }
             ],
             "answer_key": [
               0,
               1,
-              1,
+              2,
               0
             ]
           }
@@ -278,52 +282,57 @@
         "while_watching": [
           {
             "type": "multiple_choice",
-            "instruction": "Посмотрите выпуск и выберите ответы. Во время первого просмотра сосредоточьтесь на общей информации, во время второго — на конкретных темах и языковых элементах.",
+            "instruction": "Посмотрите видео и отметьте, какие темы преподаватель разбирает. Вопросы проверяют структуру урока, заявленную автором, а не отдельные детали неподтвержденной расшифровки.",
             "questions": [
               {
-                "question": "¿Qué tipo de información presenta el episodio?",
+                "question": "¿Qué diferencia explica Lulú al principio?",
                 "options": [
-                  "Datos curiosos y sorprendentes sobre México",
-                  "Una guía para buscar trabajo en México",
-                  "Una historia personal sobre vivir en España"
+                  "La diferencia entre tú y usted",
+                  "La diferencia entre ser y estar",
+                  "La diferencia entre México y España"
                 ],
-                "answer": 0
+                "answer": 0,
+                "explanation": "В начале урока автор отдельно объясняет разницу между tú и usted — неформальным и формальным обращением."
               },
               {
-                "question": "¿Qué dos aspectos aparecen en la descripción del episodio?",
+                "question": "¿De qué puedes hablar después de ver el video?",
                 "options": [
-                  "Tradiciones antiguas y curiosidades modernas",
-                  "Deportes antiguos y tecnologías modernas",
-                  "Ciudades europeas y tradiciones asiáticas"
+                  "De tu nombre, nacionalidad, lugar de residencia, edad y profesión",
+                  "Solo de tu familia y tus vacaciones",
+                  "De comida y transporte"
                 ],
-                "answer": 0
+                "answer": 0,
+                "explanation": "В описании урока перечислены имя, национальность, место проживания, возраст и профессия."
               },
               {
-                "question": "¿Qué temas sobre México se mencionan específicamente?",
+                "question": "¿Qué dos tipos de preguntas presenta la profesora?",
                 "options": [
-                  "La comida, la historia y la vida diaria",
-                  "La moda, el cine y el deporte",
-                  "La política, la economía y la educación"
+                  "Preguntas formales e informales",
+                  "Preguntas en pasado y futuro",
+                  "Preguntas sobre gustos y preferencias"
                 ],
-                "answer": 0
+                "answer": 0,
+                "explanation": "Автор показывает формальные и неформальные варианты вопросов и ответов."
               },
               {
-                "question": "Además de datos culturales, ¿qué puedes aprender?",
+                "question": "¿Qué expresión se incluye para conocer a alguien?",
                 "options": [
-                  "Expresiones y vocabulario en español",
-                  "Reglas gramaticales del inglés",
-                  "Nombres de monumentos europeos"
+                  "Mucho gusto",
+                  "Tengo hambre",
+                  "Hasta mañana"
                 ],
-                "answer": 0
+                "answer": 0,
+                "explanation": "В отдельном разделе урока разбирается, как сказать «приятно познакомиться»."
               },
               {
-                "question": "¿Para quién está pensado este episodio?",
+                "question": "¿Qué aparece al final del video?",
                 "options": [
-                  "Para estudiantes de español, viajeros y personas interesadas en otras culturas",
-                  "Solo para historiadores profesionales",
-                  "Solo para hablantes nativos de México"
+                  "Un ejemplo de presentación personal",
+                  "Una conversación en un restaurante",
+                  "Una descripción de la ciudad"
                 ],
-                "answer": 0
+                "answer": 0,
+                "explanation": "В таймкодах отмечен заключительный пример знакомства."
               }
             ],
             "answer_key": [
@@ -338,25 +347,27 @@
         "after_watching": [
           {
             "type": "multiple_choice",
-            "instruction": "После просмотра выберите наиболее точное резюме выпуска.",
+            "instruction": "Выберите наиболее точное резюме урока.",
             "questions": [
               {
-                "question": "¿Cuál es el mejor resumen del episodio?",
+                "question": "¿Cuál es el objetivo principal del video?",
                 "options": [
-                  "Presenta datos interesantes de México y combina cultura con práctica de español.",
-                  "Explica cómo organizar un viaje de negocios a México.",
-                  "Cuenta la historia de una familia que se muda a otro país."
+                  "Aprender a presentarse y hacer preguntas personales básicas en situaciones formales e informales",
+                  "Aprender a pedir comida en un restaurante",
+                  "Contar una experiencia pasada"
                 ],
-                "answer": 0
+                "answer": 0,
+                "explanation": "Урок посвящен базовому знакомству и формулировкам для двух типов общения."
               },
               {
-                "question": "¿Qué combinación describe mejor el contenido anunciado?",
+                "question": "¿Qué debes tener en cuenta al elegir entre tú y usted?",
                 "options": [
-                  "Historia, comida, vida cotidiana y expresiones culturales",
-                  "Gramática avanzada, literatura y poesía",
-                  "Deportes, moda y tecnología"
+                  "Si la situación es informal o formal",
+                  "La edad exacta de la otra persona",
+                  "La ciudad donde vive la persona"
                 ],
-                "answer": 0
+                "answer": 0,
+                "explanation": "Выбор tú или usted связан с формальностью ситуации и отношениями между собеседниками."
               }
             ],
             "answer_key": [
@@ -366,8 +377,8 @@
           }
         ]
       },
-      "rights_note": "Публичное видео YouTube; открытая лицензия Creative Commons не подтверждена. Использовать только оригинальную ссылку/официальный плеер при доступном встраивании; не скачивать, не копировать и не распространять видео или транскрипт. Коммерческий сценарий встраивания требует отдельной проверки.",
-      "task_quality_note": "Las preguntas son cerradas y se limitan a los datos explícitos de la descripción oficial del episodio. No se presentan como comprobación de detalles concretos de audio: el transcript completo no está disponible en las fuentes consultadas. Para crear un test de comprensión auditiva de detalle con claves fiables, hace falta verificar el audio completo o disponer de su transcripción."
+      "rights_note": "Открытая лицензия Creative Commons не подтверждена. Использовать только оригинальную ссылку/официальный плеер; не скачивать, не копировать и не распространять видео или материалы автора. Коммерческий сценарий встраивания требует отдельной проверки.",
+      "task_quality_note": "Уровень A1, мексиканский автор и содержание подтверждены опубликованным описанием и таймкодами. Полная расшифровка и сквозной просмотр аудио здесь не подтверждены, поэтому задания проверяют темы и структуру урока, прямо заявленные автором, а не точные детали звучащей речи. Перед коммерческой интеграцией нужен ручной просмотр и проверка прав."
     },
     "series": {
       "id": "es_mx_a1_buena_gente_s1e1",

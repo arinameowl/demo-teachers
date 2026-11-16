@@ -179,11 +179,9 @@
 
     if (d.series) {
       const series = d.series;
-      const seriesId = (series.youtube_url || '').match(/[?&]v=([^&]+)/)?.[1] || '';
-      const player = seriesId ? '<iframe class="player" src="https://www.youtube-nocookie.com/embed/' + esc(seriesId) + '?playsinline=1&rel=0" title="' + esc(series.title) + '" allowfullscreen loading="lazy"></iframe>' : '';
       cards.push('<article class="card"><div class="card-top"><span class="tag">Сериал · ' + esc(level) + '</span><span class="status">' + esc(variantName) + '</span></div><h3>' + esc(series.title) + '</h3>' +
-        (series.content_summary ? '<p class="desc">' + esc(series.content_summary) + '</p>' : '') + player +
-        '<div class="actions"><a class="action secondary" href="' + esc(series.youtube_url) + '" target="_blank" rel="noopener">Открыть сериал</a></div>' +
+        (series.content_summary ? '<p class="desc">' + esc(series.content_summary) + '</p>' : '') +
+        '<div class="actions"><a class="action secondary" href="' + esc(series.youtube_url) + '" target="_blank" rel="noopener">Открыть на YouTube</a></div>' +
         spanishSection('series', series, 'after_watching', 'Задания после просмотра') + '</article>');
     } else cards.push(spanishPlaceholder('Сериал · ' + level));
 
@@ -224,6 +222,7 @@
       cards.push('<article class="card"><div class="card-top"><span class="tag">Книга · A1</span><span class="status">' + esc(d.variant === 'es_es' ? 'Español de España' : 'Español de México') + '</span></div><h3>' + esc(book.title) + '</h3><p class="desc">Оригинальный текст The Teachers School · 4 страницы · 5 заданий</p><div class="actions"><button class="action" id="spanish-read" type="button">Читать книгу</button></div>' +
         spanishSection('book', {books:[book]}, 'after_watching', 'Задания по книге') + '</article>');
     } else {
+      cards.push(spanishPlaceholder('Книга · ' + level));
       (library.units || []).forEach(unit => {
         const reading = unit.variant?.reading;
         if (!reading?.text) return;

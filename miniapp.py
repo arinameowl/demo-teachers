@@ -48,7 +48,7 @@ class QuizSubmission(BaseModel):
 class SpanishQuizSubmission(BaseModel):
     variant: str = Field(pattern="^(es_es|es_mx)$")
     resource_id: str = Field(pattern="^(book|series)$")
-    section: str = Field(pattern="^(before_watching|while_watching|after_watching)$")
+    section: str = Field(pattern="^after_watching$")
     answers: list = Field(default_factory=list, max_length=30)
 
 

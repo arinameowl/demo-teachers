@@ -22,12 +22,14 @@ class SpanishLeadContentTest(unittest.TestCase):
                 self.assertEqual(data["video"]["level"], level)
                 self.assertEqual(len(questions_for(data["video"], "while_watching")), count)
 
-    def test_each_variant_includes_the_a1_series(self):
-        for variant in ("es_es", "es_mx"):
-            with self.subTest(variant=variant):
-                data = load_spanish_lead(variant)
-                self.assertEqual(data["series"]["level"], "Beginner / A1")
-                self.assertTrue(data["series"]["youtube_url"].startswith("https://www.youtube.com/"))
+    def test_podcast_and_series_are_region_specific(self):
+        spain = load_spanish_lead("es_es")
+        mexico = load_spanish_lead("es_mx")
+        self.assertTrue(spain["podcast"]["url"].startswith("https://"))
+        self.assertTrue(mexico["podcast"]["url"].startswith("https://"))
+        self.assertIsNone(spain["series"])
+        self.assertEqual(mexico["series"]["level"], "Beginner / A1")
+        self.assertTrue(mexico["series"]["youtube_url"].startswith("https://www.youtube.com/"))
 
     def test_public_payload_does_not_expose_answer_keys(self):
         public = strip_answers(load_spanish_lead("es_es"))
@@ -158,20 +160,28 @@ class SpanishCurriculumTest(unittest.TestCase):
                     self.assertGreaterEqual(question["answer"], 0)
                     self.assertLess(question["answer"], len(question["options"]))
 
-    def test_spanish_placement_quiz_covers_all_three_levels(self):
+    def test_spanish_placement_quiz_is_original_and_covers_all_three_levels(self):
         import quiz
+        from spanish_lead_content import load_spanish_level_units
 
         for variant in ("es_es", "es_mx"):
             with self.subTest(variant=variant):
                 questions = quiz.spanish_questions(variant)
-                self.assertEqual(len(questions), 6)
-                self.assertEqual([q["level"] for q in questions], ["A1", "A1", "A2", "A2", "B1", "B1"])
+                self.assertEqual(len(questions), 9)
+                self.assertEqual([q["level"] for q in questions], ["A1"] * 3 + ["A2"] * 3 + ["B1"] * 3)
+                curriculum_prompts = {
+                    exercise["prompt"]
+                    for level in ("A1", "A2", "B1")
+                    for unit in load_spanish_level_units(level, variant)
+                    for exercise in unit["variant"].get("exercises", [])
+                }
                 for question in questions:
                     self.assertGreaterEqual(len(question["options"]), 2)
                     self.assertIsInstance(question["correct"], int)
                     self.assertGreaterEqual(question["correct"], 0)
                     self.assertLess(question["correct"], len(question["options"]))
                     self.assertTrue(question["explanation"])
+                    self.assertNotIn(question["prompt"].split(". ", 1)[-1], curriculum_prompts)
 
     def test_spanish_placement_scoring_uses_passed_question_bank(self):
         import quiz

@@ -224,14 +224,24 @@
       (library.units || []).forEach(unit => {
         const reading = unit.variant?.reading;
         if (!reading?.text) return;
-        const id = 'spanish-reading-' + unit.id;
-        cards.push('<article class="card"><div class="card-top"><span class="tag">Чтение · ' + esc(level) + '</span><span class="status">' + esc(d.variant === 'es_es' ? 'Español de España' : 'Español de México') + '</span></div><h3>' + esc(reading.title || unit.title) + '</h3><p class="desc">' + esc(unit.title) + '</p><details><summary>Открыть текст</summary><div class="reading-text">' + esc(reading.text) + '</div></details></article>');
+        cards.push('<article class="card"><div class="card-top"><span class="tag">Чтение · ' + esc(level) + '</span><span class="status">' + esc(d.variant === 'es_es' ? 'Español de España' : 'Español de México') + '</span></div><h3>' + esc(reading.title || unit.title) + '</h3><p class="desc">' + esc(unit.title) + '</p><details><summary>Открыть текст</summary><div class="reading-text">' + esc(reading.text) + '</div></details><div class="actions"><button class="action secondary" data-spanish-unit="' + esc(unit.id) + '">Задания к тексту</button></div></article>');
       });
     }
     $('library').innerHTML = '<h2 class="section-title">Библиотека для чтения</h2>' + (cards.length ? cards.join('') : spanishPlaceholder('Книга и тексты · ' + level));
     $('spanish-read')?.addEventListener('click', () => {
       activeBook = d.book; bookPage = 0; renderBookPage(); $('reader').classList.add('open');
     });
+    document.querySelectorAll('[data-spanish-unit]').forEach(btn => btn.addEventListener('click', () => {
+      const unit = (library.units || []).find(item => item.id === btn.dataset.spanishUnit);
+      if (!unit) return;
+      const questions = (unit.variant?.exercises || []).filter(q => q.type === 'choice' && q.options);
+      if (!questions.length) return;
+      activeQuiz = {materialId:unit.id, spanishUnit:true, variant:selectedSpanishVariant, data:{questions}, answers:[]};
+      $('quiz-title').textContent = 'Испанский · ' + unit.title;
+      $('quiz-result').innerHTML = '';
+      $('quiz-body').innerHTML = questions.map((q,i)=>'<div class="quiz-q"><p>'+(i+1)+'. '+esc(q.prompt || '')+'</p>'+q.options.map((o,j)=>'<label><input type="radio" name="q'+i+'" value="'+j+'"> '+esc(o)+'</label>').join('')+'</div>').join('');
+      $('quiz').classList.add('open');
+    }));
   }
   async function openSpanishQuiz(resourceId, section, questions) {
     if (!questions?.length) return;

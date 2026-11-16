@@ -122,13 +122,8 @@
   }
   function spanishSection(resourceId, resource, section, label) {
     const questions = resourceId === 'book' ? (resource.books?.[0]?.questions || resource.questions || []) : flattenSpanishTasks(resource, section);
-    const tasks = resource?.tasks?.[section] || [];
-    const vocab = tasks.filter(t => t.type === 'matching' && Array.isArray(t.pairs)).map(t =>
-      '<div class="desc">' + t.pairs.map(p => '<p><strong>' + esc(p.spanish) + '</strong> — ' + esc(p.russian) + '</p>').join('') + '</div>'
-    ).join('');
-    if (!questions.length && !vocab) return '';
-    const button = questions.length ? '<button class="action secondary" data-spanish-quiz="' + esc(resourceId) + '" data-section="' + esc(section) + '">Открыть задания</button>' : '';
-    return '<div class="quiz-q"><strong>' + esc(label) + '</strong>' + vocab + '<div class="actions">' + button + '</div></div>';
+    if (!questions.length) return '';
+    return '<div class="actions"><button class="action secondary" data-spanish-quiz="' + esc(resourceId) + '" data-section="' + esc(section) + '">' + esc(label) + '</button></div>';
   }
   let spanishLoadId = 0;
   async function loadSpanishLead() {
@@ -179,55 +174,39 @@
 
     if (d.series) {
       const series = d.series;
+      const seriesId = (series.youtube_url || '').match(/[?&]v=([^&]+)/)?.[1] || '';
+      const player = seriesId ? '<div class="player-wrap"><iframe class="player" src="https://www.youtube-nocookie.com/embed/' + esc(seriesId) + '?playsinline=1&rel=0" title="' + esc(series.title) + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>' : '';
       cards.push('<article class="card"><div class="card-top"><span class="tag">Сериал · ' + esc(level) + '</span><span class="status">' + esc(variantName) + '</span></div><h3>' + esc(series.title) + '</h3>' +
-        (series.content_summary ? '<p class="desc">' + esc(series.content_summary) + '</p>' : '') +
-        '<div class="actions"><a class="action secondary" href="' + esc(series.youtube_url) + '" target="_blank" rel="noopener">Открыть на YouTube</a></div>' +
+        (series.content_summary ? '<p class="desc">' + esc(series.content_summary) + '</p>' : '') + player +
         spanishSection('series', series, 'after_watching', 'Задания после просмотра') + '</article>');
     } else cards.push(spanishPlaceholder('Сериал · ' + level));
 
-    const standalone = [];
-    if (d.video) standalone.push(d.video);
-    (d.videos || []).forEach(v => standalone.push(v));
-    if (standalone.length) {
-      standalone.forEach(video => {
-        const url = video.youtube_url || video.url || '';
-        const title = video.title || 'Видео на испанском';
-        const isTaskVideo = Boolean(video.tasks);
-        cards.push('<article class="card"><div class="card-top"><span class="tag">Видео · ' + esc(level) + '</span><span class="status">' + esc(variantName) + '</span></div><h3>' + esc(title) + '</h3>' +
-          (video.content_summary || video.topic ? '<p class="desc">' + esc(video.content_summary || video.topic) + '</p>' : '') +
-          (video.status || video.rights_note ? '<p class="desc">Внешний материал · требуется финальная проверка уровня и условий использования</p>' : '') +
-          '<div class="actions"><a class="action secondary" href="' + esc(url) + '" target="_blank" rel="noopener">Открыть на YouTube</a></div>' +
-          (isTaskVideo ? spanishSection('video', video, 'after_watching', 'Задания после просмотра') : '') + '</article>');
-      });
-    } else cards.push(spanishPlaceholder('Видео · ' + level));
+    // A1 has one listening format (podcast) and one video format (series).
+    // A2/B1 may show the existing curated video candidates.
+    if (level !== 'A1') {
+      const videos = d.videos || [];
+      if (videos.length) {
+        videos.forEach(video => {
+          const url = video.url || '';
+          const title = video.title || 'Видео на испанском';
+          const videoId = url.match(/[?&]v=([^&]+)/)?.[1] || '';
+          const player = videoId ? '<div class="player-wrap"><iframe class="player" src="https://www.youtube-nocookie.com/embed/' + esc(videoId) + '?playsinline=1&rel=0" title="' + esc(title) + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>' : '';
+          cards.push('<article class="card"><div class="card-top"><span class="tag">Видео · ' + esc(level) + '</span><span class="status">' + esc(variantName) + '</span></div><h3>' + esc(title) + '</h3>' +
+            (video.topic ? '<p class="desc">' + esc(video.topic) + '</p>' : '') + player + '</article>');
+        });
+      } else cards.push(spanishPlaceholder('Видео · ' + level));
+    }
 
+    cards.push(renderSpanishLibrary());
     $('materials').innerHTML = '<div class="tag">Подборка материалов · ' + esc(level) + ' · ' + esc(variantName) + '</div>' + cards.join('');
-    renderSpanishLibrary();
+    $('library').innerHTML = '';
+
     document.querySelectorAll('[data-spanish-quiz]').forEach(btn => btn.addEventListener('click', () => {
       const resourceId = btn.dataset.spanishQuiz, section = btn.dataset.section;
-      const resource = resourceId === 'book' ? {books:[d.book]} : resourceId === 'video' ? d.video : d.series;
+      const resource = resourceId === 'book' ? {books:[d.book]} : d.series;
       const questions = resourceId === 'book' ? (d.book?.questions || []) : flattenSpanishTasks(resource, section);
       openSpanishQuiz(resourceId, section, questions);
     }));
-  }
-  function renderSpanishLibrary() {
-    const d = state.spanishLead, library = state.spanishLibrary;
-    if (!d || !library) return;
-    const level = library.level;
-    const cards = [];
-    if (level === 'A1' && d.book) {
-      const book = d.book;
-      cards.push('<article class="card"><div class="card-top"><span class="tag">Книга · A1</span><span class="status">' + esc(d.variant === 'es_es' ? 'Español de España' : 'Español de México') + '</span></div><h3>' + esc(book.title) + '</h3><p class="desc">Оригинальный текст The Teachers School · 4 страницы · 5 заданий</p><div class="actions"><button class="action" id="spanish-read" type="button">Читать книгу</button></div>' +
-        spanishSection('book', {books:[book]}, 'after_watching', 'Задания по книге') + '</article>');
-    } else {
-      cards.push(spanishPlaceholder('Книга · ' + level));
-      (library.units || []).forEach(unit => {
-        const reading = unit.variant?.reading;
-        if (!reading?.text) return;
-        cards.push('<article class="card"><div class="card-top"><span class="tag">Чтение · ' + esc(level) + '</span><span class="status">' + esc(d.variant === 'es_es' ? 'Español de España' : 'Español de México') + '</span></div><h3>' + esc(reading.title || unit.title) + '</h3><p class="desc">' + esc(unit.title) + '</p><details><summary>Открыть текст</summary><div class="reading-text">' + esc(reading.text) + '</div></details><div class="actions"><button class="action secondary" data-spanish-unit="' + esc(unit.id) + '">Задания к тексту</button></div></article>');
-      });
-    }
-    $('library').innerHTML = '<h2 class="section-title">Библиотека для чтения</h2>' + (cards.length ? cards.join('') : spanishPlaceholder('Книга и тексты · ' + level));
     $('spanish-read')?.addEventListener('click', () => {
       activeBook = d.book; bookPage = 0; renderBookPage(); $('reader').classList.add('open');
     });
@@ -243,10 +222,29 @@
       $('quiz').classList.add('open');
     }));
   }
+  function renderSpanishLibrary() {
+    const d = state.spanishLead, library = state.spanishLibrary;
+    if (!d || !library) return '';
+    const level = library.level;
+    const cards = [];
+    if (level === 'A1' && d.book) {
+      const book = d.book;
+      cards.push('<article class="card"><div class="card-top"><span class="tag">Книга · A1</span><span class="status">' + esc(d.variant === 'es_es' ? 'Español de España' : 'Español de México') + '</span></div><h3>' + esc(book.title) + '</h3><p class="desc">Оригинальный текст The Teachers School · 4 страницы · 5 заданий</p><div class="actions"><button class="action secondary" id="spanish-read" type="button">Читать книгу</button></div>' +
+        spanishSection('book', {books:[book]}, 'after_watching', 'Задания к книге') + '</article>');
+    } else {
+      cards.push(spanishPlaceholder('Книга · ' + level));
+      (library.units || []).forEach(unit => {
+        const reading = unit.variant?.reading;
+        if (!reading?.text) return;
+        cards.push('<article class="card"><div class="card-top"><span class="tag">Чтение · ' + esc(level) + '</span><span class="status">' + esc(d.variant === 'es_es' ? 'Español de España' : 'Español de México') + '</span></div><h3>' + esc(reading.title || unit.title) + '</h3><p class="desc">' + esc(unit.title) + '</p><details><summary>Открыть текст</summary><div class="reading-text">' + esc(reading.text) + '</div></details><div class="actions"><button class="action secondary" data-spanish-unit="' + esc(unit.id) + '">Задания к тексту</button></div></article>');
+      });
+    }
+    return cards.join('');
+  }
   async function openSpanishQuiz(resourceId, section, questions) {
     if (!questions?.length) return;
     activeQuiz = {materialId:resourceId, spanish:true, variant:selectedSpanishVariant, section, data:{questions}, answers:[]};
-    $('quiz-title').textContent = 'Испанский · ' + (resourceId === 'book' ? 'книга' : resourceId === 'video' ? 'видео' : 'сериал');
+    $('quiz-title').textContent = 'Испанский · ' + (resourceId === 'book' ? 'книга' : 'сериал');
     $('quiz-result').innerHTML = '';
     $('quiz-body').innerHTML = questions.map((q,i)=>'<div class="quiz-q"><p>'+(i+1)+'. '+esc(q.prompt || q.question || '')+'</p>'+q.options.map((o,j)=>'<label><input type="radio" name="q'+i+'" value="'+j+'"> '+esc(o)+'</label>').join('')+'</div>').join('');
     $('quiz').classList.add('open');

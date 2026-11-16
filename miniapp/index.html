@@ -23,7 +23,7 @@
     footer{margin-top:34px;padding-top:16px;border-top:1px solid var(--line);font:12px Georgia,serif;letter-spacing:.12em;color:var(--muted)}
     .loading{padding:42px 0;text-align:center;color:var(--muted)}.next-step{margin-top:26px;background:#f0e8e1}
     .player{width:100%;aspect-ratio:16/9;border:0;border-radius:10px;background:#171717;margin:8px 0 12px}.quiz{position:fixed;inset:0;background:rgba(30,24,22,.55);z-index:20;display:none;overflow:auto;padding:18px}.quiz.open{display:block}.quiz-panel{max-width:640px;margin:20px auto;background:var(--cream);border-radius:16px;padding:20px}.quiz-head{display:flex;justify-content:space-between;align-items:center;gap:12px}.quiz-q{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0}.quiz-q p{margin:0 0 10px;font-weight:600}.quiz-q label{display:block;padding:7px 0;font-size:14px}.quiz-q input[type=text]{width:100%;padding:11px;border:1px solid var(--line);border-radius:8px;font:inherit;background:white}.result{padding:13px;background:#eee7df;border-radius:10px;margin:12px 0;font-size:14px}.answer-review{padding:10px 0;border-top:1px solid var(--line);font-size:13px}.answer-review.good{color:#286347}.answer-review.bad{color:#8b2935}.quiz-q:focus-within{border-color:var(--burgundy)}.quiz-q input:focus{outline:2px solid #c9aeb0;outline-offset:1px}
-  </style>
+  .reading-text{white-space:pre-wrap;font:16px/1.8 Georgia,serif;padding:12px 2px;color:var(--ink)}details{border-top:1px solid var(--line);margin-top:12px;padding-top:10px}details summary{cursor:pointer;font-weight:600}</style>
 </head>
 <body><main class="wrap">
   <div class="eyebrow">The Teachers · Learning Space</div>
@@ -209,8 +209,8 @@
     renderSpanishLibrary();
     document.querySelectorAll('[data-spanish-quiz]').forEach(btn => btn.addEventListener('click', () => {
       const resourceId = btn.dataset.spanishQuiz, section = btn.dataset.section;
-      const resource = resourceId === 'video' ? d.video : d.series;
-      const questions = flattenSpanishTasks(resource, section);
+      const resource = resourceId === 'book' ? {books:[d.book]} : resourceId === 'video' ? d.video : d.series;
+      const questions = resourceId === 'book' ? (d.book?.questions || []) : flattenSpanishTasks(resource, section);
       openSpanishQuiz(resourceId, section, questions);
     }));
   }

@@ -20,11 +20,15 @@ def load_spanish_lead(variant: str) -> dict:
     if not book_variant:
         raise ValueError("Spanish book variant not found")
     resources = tasks["resources"]
+    audio_catalog = _read("spanish_a1_video_audio_catalog.json")
+    audio_variant = next((x for x in audio_catalog.get("dialects", []) if x.get("id") == variant), {})
     return {
         "variant": variant,
         "book": book_variant,
+        "podcast": audio_variant.get("audio_collection"),
         "video": resources[variant],
-        "series": resources["series"],
+        # Buena Gente is a Mexican series; never show it in the Spain track.
+        "series": resources["series"] if variant == "es_mx" else None,
     }
 
 

@@ -1,6 +1,6 @@
 import unittest
 
-from spanish_lead_content import load_spanish_lead, questions_for, strip_answers
+from spanish_lead_content import load_spanish_lead, load_spanish_media, questions_for, strip_answers
 
 
 class SpanishLeadContentTest(unittest.TestCase):
@@ -32,6 +32,27 @@ class SpanishLeadContentTest(unittest.TestCase):
         self.assertIsNone(spain["series"])
         self.assertEqual(mexico["series"]["level"], "Beginner / A1")
         self.assertTrue(mexico["series"]["youtube_url"].startswith("https://www.youtube.com/"))
+
+    def test_existing_media_is_returned_by_level_and_dialect(self):
+        spain_a1 = load_spanish_media("A1", "es_es")
+        mexico_a1 = load_spanish_media("A1", "es_mx")
+        self.assertTrue(spain_a1["podcast"]["url"].startswith("https://"))
+        self.assertTrue(mexico_a1["podcast"]["url"].startswith("https://"))
+        self.assertIsNone(spain_a1["series"])
+        self.assertIsNotNone(mexico_a1["series"])
+        self.assertIsNotNone(spain_a1["video"])
+        self.assertIsNotNone(mexico_a1["video"])
+
+        spain_a2 = load_spanish_media("A2", "es_es")
+        mexico_a2 = load_spanish_media("A2", "es_mx")
+        spain_b1 = load_spanish_media("B1", "es_es")
+        mexico_b1 = load_spanish_media("B1", "es_mx")
+        self.assertTrue(spain_a2["videos"])
+        self.assertTrue(mexico_a2["videos"])
+        self.assertTrue(spain_b1["videos"])
+        self.assertEqual(mexico_b1["videos"], [])
+        self.assertTrue(all("Spain" in item["region"] for item in spain_a2["videos"] + spain_b1["videos"]))
+        self.assertTrue(all("Mexico" in item["region"] for item in mexico_a2["videos"]))
 
     def test_public_payload_does_not_expose_answer_keys(self):
         public = strip_answers(load_spanish_lead("es_es"))

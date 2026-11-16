@@ -220,16 +220,6 @@
       openSpanishQuiz(resourceId, section, questions);
     }));
   }
-  async function openSpanishUnitQuiz(unitId) {
-    const unit = state.spanishLibrary?.units?.find(x => x.id === unitId);
-    const questions = unit?.variant?.exercises || [];
-    if (!questions.length) return;
-    activeQuiz = {materialId:unitId, spanishUnit:true, variant:selectedSpanishVariant, data:{questions}};
-    $('quiz-title').textContent = 'Испанский · ' + unit.title;
-    $('quiz-result').innerHTML = '';
-    $('quiz-body').innerHTML = questions.map((q,i)=>'<div class="quiz-q"><p>'+(i+1)+'. '+esc(q.prompt || '')+'</p>'+q.options.map((o,j)=>'<label><input type="radio" name="q'+i+'" value="'+j+'"> '+esc(o)+'</label>').join('')+'</div>').join('');
-    $('quiz').classList.add('open');
-  }
   async function openSpanishQuiz(resourceId, section, questions) {
     if (!questions?.length) return;
     activeQuiz = {materialId:resourceId, spanish:true, variant:selectedSpanishVariant, section, data:{questions}, answers:[]};

@@ -15,12 +15,14 @@ class SpanishLeadContentTest(unittest.TestCase):
                 self.assertEqual(len(books[0]["questions"]), 5)
 
     def test_video_levels_and_listening_question_counts(self):
-        expected = {"es_es": ("A1", 9), "es_mx": ("A2 (publisher-labelled)", 5)}
+        expected = {"es_es": ("A1", 4), "es_mx": ("A1 (publisher-labelled)", 2)}
         for variant, (level, count) in expected.items():
             with self.subTest(variant=variant):
                 data = load_spanish_lead(variant)
                 self.assertEqual(data["video"]["level"], level)
-                self.assertEqual(len(questions_for(data["video"], "while_watching")), count)
+                self.assertEqual(len(questions_for(data["video"], "after_watching")), count)
+                self.assertEqual(questions_for(data["video"], "before_watching"), [])
+                self.assertEqual(questions_for(data["video"], "while_watching"), [])
 
     def test_podcast_and_series_are_region_specific(self):
         spain = load_spanish_lead("es_es")
@@ -46,19 +48,16 @@ class SpanishLeadContentTest(unittest.TestCase):
 
         assert_no_keys(public)
 
-    def test_task_sections_flatten_into_closed_questions(self):
-        data = load_spanish_lead("es_es")
-        expected = {
-            ("video", "before_watching"): 1,
-            ("video", "while_watching"): 9,
-            ("video", "after_watching"): 4,
-            ("series", "before_watching"): 5,
-            ("series", "while_watching"): 7,
-            ("series", "after_watching"): 3,
-        }
-        for (resource, section), count in expected.items():
-            with self.subTest(resource=resource, section=section):
-                self.assertEqual(len(questions_for(data[resource], section)), count)
+    def test_media_exercises_are_available_only_after_viewing(self):
+        for variant in ("es_es", "es_mx"):
+            data = load_spanish_lead(variant)
+            self.assertEqual(questions_for(data["video"], "before_watching"), [])
+            self.assertEqual(questions_for(data["video"], "while_watching"), [])
+            self.assertTrue(questions_for(data["video"], "after_watching"))
+        mexico = load_spanish_lead("es_mx")
+        self.assertEqual(len(questions_for(mexico["series"], "after_watching")), 3)
+        self.assertEqual(questions_for(mexico["series"], "before_watching"), [])
+        self.assertEqual(questions_for(mexico["series"], "while_watching"), [])
 
 
 class SpanishCurriculumTest(unittest.TestCase):
@@ -189,9 +188,9 @@ class SpanishCurriculumTest(unittest.TestCase):
         questions = quiz.spanish_questions("es_es")
         answers = {index: question["correct"] for index, question in enumerate(questions)}
         self.assertEqual(quiz.score_to_level(answers, questions), "B1")
-        answers.pop(5)
+        answers.pop(8)
         self.assertEqual(quiz.score_to_level(answers, questions), "A2")
-        answers.pop(3)
+        answers.pop(5)
         self.assertEqual(quiz.score_to_level(answers, questions), "A1")
 
 

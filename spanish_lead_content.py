@@ -123,8 +123,11 @@ def load_spanish_media(level: str, variant: str) -> dict:
             region = item.get("region", "")
             if not url or not any(marker.lower() in region.lower() for marker in region_markers):
                 continue
-            # "Latino" or mixed-country material is not automatically Mexican Spanish.
-            if variant == "es_mx" and any(word in region.lower() for word in ("mixed", "unspecified")):
+            # Mixed-country and unspecified Latino material must not be assigned
+            # to a regional track as if it represented one specific variety.
+            if "mixed" in region.lower():
+                continue
+            if variant == "es_mx" and "unspecified" in region.lower():
                 continue
             result["videos"].append({
                 "title": item.get("title", ""),

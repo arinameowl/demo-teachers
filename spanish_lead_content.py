@@ -98,3 +98,40 @@ def spanish_unit_questions(level: str, variant: str, unit_id: str) -> list[dict]
         if unit.get("id") == unit_id:
             return [q for q in unit["variant"].get("exercises", []) if q.get("type") == "choice"]
     return []
+
+
+def load_spanish_media(level: str, variant: str) -> dict:
+    """Collect only resources already present in the Spanish content catalogues."""
+    if level not in {"A1", "A2", "B1"} or variant not in {"es_es", "es_mx"}:
+        raise ValueError("Unknown Spanish level or dialect")
+    result = {"podcast": None, "series": None, "video": None, "videos": []}
+    if level == "A1":
+        audio = _read("spanish_a1_video_audio_catalog.json")
+        dialect = next((x for x in audio.get("dialects", []) if x.get("id") == variant), {})
+        result["podcast"] = dialect.get("audio_collection")
+        tasks = _read("spanish_lead_video_tasks.json")
+        resources = tasks.get("resources", {})
+        result["video"] = resources.get(variant)
+        result["series"] = resources.get("series") if variant == "es_mx" else None
+        return result
+
+    candidates = _read("spanish_a2_b1_youtube_candidates.json")
+    region_markers = ("Spain",) if variant == "es_es" else ("Mexico",)
+    for unit in candidates.get(level, []):
+        for item in unit.get("candidates", []):
+            url = item.get("youtube")
+            region = item.get("region", "")
+            if not url or not any(marker.lower() in region.lower() for marker in region_markers):
+                continue
+            # "Latino" or mixed-country material is not automatically Mexican Spanish.
+            if variant == "es_mx" and any(word in region.lower() for word in ("mixed", "unspecified")):
+                continue
+            result["videos"].append({
+                "title": item.get("title", ""),
+                "url": url,
+                "region": region,
+                "topic": unit.get("topic", ""),
+                "status": item.get("status", "candidate"),
+                "rights": item.get("rights", ""),
+            })
+    return result

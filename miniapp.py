@@ -15,7 +15,7 @@ from fastapi import FastAPI, Header, HTTPException, Depends
 from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
-from spanish_lead_content import load_spanish_lead, load_spanish_level_units, spanish_unit_questions, questions_for, strip_answers
+from spanish_lead_content import load_spanish_lead, load_spanish_media, load_spanish_level_units, spanish_unit_questions, questions_for, strip_answers
 
 import config
 import database as db
@@ -239,19 +239,25 @@ async def track_app_event(payload: AppEvent, user: dict = Depends(authorized_use
 @app.get("/api/app/spanish-lead/{variant}")
 async def get_spanish_lead(variant: str, user: dict = Depends(authorized_user)):
     """Return the selected Spanish variant without exposing answer keys."""
+    async with aiosqlite.connect(config.DB_PATH) as conn:
+        cur = await conn.execute("SELECT level, language FROM users WHERE user_id = ?", (user["id"],))
+        row = await cur.fetchone()
+    if not row or row[1] != "es" or row[0] not in {"A1", "A2", "B1"}:
+        raise HTTPException(status_code=409, detail="Сначала выберите испанский и определите уровень в боте")
     try:
         data = load_spanish_lead(variant)
-    except (ValueError, OSError, json.JSONDecodeError):
+        media = load_spanish_media(row[0], variant)
+    except (ValueError, OSError, json.JSONDecodeError, KeyError):
         raise HTTPException(status_code=404, detail="Материалы испанского варианта не найдены")
-    book = data["book"]["books"][0]
-    video = data["video"]
-    series = data["series"]
+    book = data["book"]["books"][0] if row[0] == "A1" else None
     return {
         "variant": variant,
-        "book": strip_answers(book),
-        "video": strip_answers(video),
-        "series": strip_answers(series),
-        "level_note": ("Видео на мексиканском испанском рассчитано на A2; книга и сериал — A1." if variant == "es_mx" else "Книга, видео и сериал в этой подборке рассчитаны на A1."),
+        "level": row[0],
+        "book": strip_answers(book) if book else None,
+        "podcast": media.get("podcast"),
+        "video": strip_answers(media.get("video")) if media.get("video") else None,
+        "series": strip_answers(media.get("series")) if media.get("series") else None,
+        "videos": media.get("videos", []),
     }
 
 
@@ -269,13 +275,11 @@ async def get_spanish_library(variant: str, user: dict = Depends(authorized_user
         raise HTTPException(status_code=500, detail="Не удалось загрузить программу испанского")
     safe_units = []
     for unit in units:
-        safe_units.append({
-            **unit,
-            "variant": {**unit["variant"], "exercises": [
-                {k: v for k, v in q.items() if k != "answer"}
-                for q in unit["variant"].get("exercises", [])
-            ]},
-        })
+        safe_variant = {**unit["variant"], "exercises": [
+            {k: v for k, v in q.items() if k != "answer"}
+            for q in unit["variant"].get("exercises", [])
+        ]}
+        safe_units.append({**unit, "variant": safe_variant})
     return {"language": "es", "level": row[0], "variant": variant, "units": safe_units}
 
 

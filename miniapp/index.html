@@ -193,11 +193,9 @@
         const url = video.youtube_url || video.url || '';
         const title = video.title || 'Видео на испанском';
         const isTaskVideo = Boolean(video.tasks);
-        const videoId = url.match(/[?&]v=([^&]+)/)?.[1] || '';
-        const player = isTaskVideo && videoId ? '<iframe class="player" src="https://www.youtube-nocookie.com/embed/' + esc(videoId) + '?playsinline=1&rel=0" title="' + esc(title) + '" allowfullscreen loading="lazy"></iframe>' : '';
         cards.push('<article class="card"><div class="card-top"><span class="tag">Видео · ' + esc(level) + '</span><span class="status">' + esc(variantName) + '</span></div><h3>' + esc(title) + '</h3>' +
           (video.content_summary || video.topic ? '<p class="desc">' + esc(video.content_summary || video.topic) + '</p>' : '') +
-          (video.status ? '<p class="desc">Внешний материал · требуется финальная проверка</p>' : '') + player +
+          (video.status || video.rights_note ? '<p class="desc">Внешний материал · требуется финальная проверка уровня и условий использования</p>' : '') +
           '<div class="actions"><a class="action secondary" href="' + esc(url) + '" target="_blank" rel="noopener">Открыть на YouTube</a></div>' +
           (isTaskVideo ? spanishSection('video', video, 'after_watching', 'Задания после просмотра') : '') + '</article>');
       });

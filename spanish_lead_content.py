@@ -121,6 +121,11 @@ def load_spanish_media(level: str, variant: str) -> dict:
         for item in unit.get("candidates", []):
             url = item.get("youtube")
             region = item.get("region", "")
+            rights = item.get("rights", "")
+            # Do not surface resources whose catalogue explicitly records a
+            # non-commercial/no-derivatives licence in a commercial learning space.
+            if "CC BY-NC-ND" in rights:
+                continue
             if not url or not any(marker.lower() in region.lower() for marker in region_markers):
                 continue
             # Mixed-country and unspecified Latino material must not be assigned

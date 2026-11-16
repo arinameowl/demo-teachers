@@ -60,38 +60,84 @@ QUESTIONS = [
 
 
 def spanish_questions(variant: str = "es_es") -> list[dict]:
-    """Build a six-question placement test from approved A1–B1 unit exercises."""
+    """Return an original Spanish placement bank, independent from library exercises.
+
+    The same CEFR grammar and comprehension targets are used for both regional
+    tracks; the test does not recycle questions from the learning materials.
+    """
+    # Regional variant is accepted for a stable onboarding API. These diagnostic
+    # items use broadly shared Spanish and avoid region-specific vocabulary.
     if variant not in {"es_es", "es_mx"}:
         variant = "es_es"
-    root = Path(__file__).resolve().parent / "data"
-    questions = []
-    for level in ("A1", "A2", "B1"):
-        catalog = json.loads((root / f"spanish_{level.lower()}_catalog.json").read_text(encoding="utf-8"))
-        units = sorted(catalog.get("units", []), key=lambda item: item.get("order", 0))
-        level_questions = []
-        for unit in units:
-            data = json.loads((root / Path(unit["path"]).name).read_text(encoding="utf-8"))
-            dialect = next((item for item in data.get("variants", []) if item.get("id") == variant), None)
-            if not dialect:
-                continue
-            for item in dialect.get("exercises", []):
-                if item.get("type") == "choice" and len(item.get("options", [])) >= 2 and isinstance(item.get("answer"), int):
-                    level_questions.append({
-                        "level": level,
-                        "prompt": item["prompt"],
-                        "options": item["options"],
-                        "correct": item["answer"],
-                        "explanation": item.get("explanation", ""),
-                    })
-        # Two items per CEFR band, selected from different units where possible.
-        if level_questions:
-            questions.extend(level_questions[:1])
-            if len(level_questions) > 1:
-                questions.append(level_questions[min(5, len(level_questions)-1)])
+    bank = [
+        {
+            "level": "A1",
+            "prompt": "Completa: «¿Cómo ___ llamas?»",
+            "options": ["te", "se", "me"],
+            "correct": 0,
+            "explanation": "Для обращения на tú используется форма te: ¿Cómo te llamas?"
+        },
+        {
+            "level": "A1",
+            "prompt": "Elige la frase correcta.",
+            "options": ["Ana vive en Madrid.", "Ana vivo en Madrid.", "Ana vivir en Madrid."],
+            "correct": 0,
+            "explanation": "С местоимением ella / Ana глагол vivir в настоящем времени имеет форму vive."
+        },
+        {
+            "level": "A1",
+            "prompt": "¿De dónde ___ ustedes?",
+            "options": ["son", "están", "tienen"],
+            "correct": 0,
+            "explanation": "Происхождение спрашивают с ser: ¿De dónde son ustedes?"
+        },
+        {
+            "level": "A2",
+            "prompt": "Ayer nosotros ___ al cine después del trabajo.",
+            "options": ["vamos", "fuimos", "íbamos a ir"],
+            "correct": 1,
+            "explanation": "Ayer указывает на завершенное событие в прошлом; для ir используется форма fuimos."
+        },
+        {
+            "level": "A2",
+            "prompt": "Todavía no he ___ el correo electrónico.",
+            "options": ["leído", "leer", "leyendo"],
+            "correct": 0,
+            "explanation": "В pretérito perfecto используется haber + причастие: he leído."
+        },
+        {
+            "level": "A2",
+            "prompt": "Si mañana hace buen tiempo, ___ a la playa.",
+            "options": ["fuimos", "iremos", "íbamos"],
+            "correct": 1,
+            "explanation": "Реальное условие о будущем строится с si + presente и futuro simple."
+        },
+        {
+            "level": "B1",
+            "prompt": "Si tuviera más tiempo, ___ un curso de fotografía.",
+            "options": ["hago", "haré", "haría"],
+            "correct": 2,
+            "explanation": "Гипотеза с si + imperfecto de subjuntivo требует condicional: haría."
+        },
+        {
+            "level": "B1",
+            "prompt": "No creo que Marta ___ la respuesta.",
+            "options": ["sabe", "sepa", "sabrá"],
+            "correct": 1,
+            "explanation": "После выражения сомнения no creo que обычно используется presente de subjuntivo: sepa."
+        },
+        {
+            "level": "B1",
+            "prompt": "Cuando llegué a la estación, el tren ya ___.",
+            "options": ["salía", "ha salido", "había salido"],
+            "correct": 2,
+            "explanation": "Событие, завершившееся до другого момента в прошлом, выражается pluscuamperfecto: había salido."
+        },
+    ]
+    questions = [dict(question) for question in bank]
     for index, question in enumerate(questions, 1):
         question["prompt"] = f"{index}/{len(questions)}. {question['prompt']}"
     return questions
-
 
 def score_to_level(answers: dict[int, int], questions: list[dict] | None = None) -> str:
     """answers: {question_index: chosen_option_index}. Возвращает 'A1' | 'A2' | 'B1'."""

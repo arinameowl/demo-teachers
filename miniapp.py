@@ -47,7 +47,7 @@ class QuizSubmission(BaseModel):
 
 class SpanishQuizSubmission(BaseModel):
     variant: str = Field(pattern="^(es_es|es_mx)$")
-    resource_id: str = Field(pattern="^(book|video|series)$")
+    resource_id: str = Field(pattern="^(book|series)$")
     section: str = Field(pattern="^(before_watching|while_watching|after_watching)$")
     answers: list = Field(default_factory=list, max_length=30)
 
@@ -255,7 +255,6 @@ async def get_spanish_lead(variant: str, user: dict = Depends(authorized_user)):
         "level": row[0],
         "book": strip_answers(book) if book else None,
         "podcast": media.get("podcast"),
-        "video": strip_answers(media.get("video")) if media.get("video") else None,
         "series": strip_answers(media.get("series")) if media.get("series") else None,
         "videos": media.get("videos", []),
     }

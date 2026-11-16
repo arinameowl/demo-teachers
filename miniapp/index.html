@@ -35,8 +35,8 @@
   <div class="language-grid" id="spanish-variant" hidden style="margin-top:10px"><button class="lang active" data-variant="es_es" type="button">Испанский · Испания<small>Европейский вариант</small></button><button class="lang" data-variant="es_mx" type="button">Испанский · Мексика<small>Латиноамериканский вариант</small></button></div>
   <div class="notice" id="notice" hidden></div>
   <h2 class="section-title">Материалы вашего уровня</h2>
-  <div id="materials" class="loading">Загружаем подкасты и видео…</div>
-  <div id="library" class="loading">Загружаем книгу и задания…</div>
+  <div id="materials" class="loading">Загружаем материалы…</div>
+  <div id="library" class="loading">Загружаем библиотеку…</div>
   <section class="card next-step" id="next-step">
     <div class="tag">Следующий шаг</div>
     <h3>Язык становится частью жизни — в практике и общении</h3>
@@ -127,7 +127,7 @@
       '<div class="desc">' + t.pairs.map(p => '<p><strong>' + esc(p.spanish) + '</strong> — ' + esc(p.russian) + '</p>').join('') + '</div>'
     ).join('');
     if (!questions.length && !vocab) return '';
-    const button = questions.length ? '<button class="action secondary" data-spanish-quiz="' + esc(resourceId) + '" data-section="' + esc(section) + '">Выполнить задания (' + questions.length + ')</button>' : '';
+    const button = questions.length ? '<button class="action secondary" data-spanish-quiz="' + esc(resourceId) + '" data-section="' + esc(section) + '">Открыть задания</button>' : '';
     return '<div class="quiz-q"><strong>' + esc(label) + '</strong>' + vocab + '<div class="actions">' + button + '</div></div>';
   }
   let spanishLoadId = 0;
@@ -157,56 +157,68 @@
     const d = state.spanishLead, library = state.spanishLibrary;
     if (!d || !library) return;
     const level = library.level;
-    const units = library.units || [];
-    const unitCards = units.map(unit => {
-      const v = unit.variant || {};
-      const goals = (unit.learning_goals || []).slice(0,4).map(x => '<li>' + esc(x) + '</li>').join('');
-      const grammar = (unit.grammar || []).map(g => '<p><strong>' + esc(g.title_ru || g.topic || '') + '</strong><br>' + esc(g.explanation_ru || '') + '</p>').join('');
-      const dialogue = (v.dialogue || []).map(line => '<p><strong>' + esc(line.speaker || '') + ':</strong> ' + esc(line.text || '') + '</p>').join('');
-      const reading = v.reading ? '<details class="quiz-q"><summary>Текст для чтения</summary><p>' + esc(v.reading.title || '') + '</p><p>' + esc(v.reading.text || v.reading.content || '') + '</p></details>' : '';
-      const exercises = v.exercises || [];
-      return '<article class="card"><div class="card-top"><span class="tag">Урок · ' + esc(level) + '</span><span class="status">' + esc(v.name || '') + '</span></div><h3>' + esc(unit.title) + '</h3>' +
-        (goals ? '<p class="desc">После урока вы сможете:</p><ul>' + goals + '</ul>' : '') +
-        (grammar ? '<details class="quiz-q"><summary>Грамматика и примеры</summary>' + grammar + '</details>' : '') +
-        (dialogue ? '<details class="quiz-q"><summary>Диалог</summary>' + dialogue + '</details>' : '') +
-        reading + '<div class="actions"><button class="action" data-spanish-unit="' + esc(unit.id) + '">Пройти упражнения (' + exercises.length + ')</button></div></article>';
-    }).join('');
-    const book = d.book, video = d.video, series = d.series;
-    const videoLevel = String(video.level || '').match(/A[12]|B1/)?.[0] || '';
-    const extra = [];
+    const variantName = d.variant === 'es_es' ? 'Español de España' : 'Español de México';
+    const cards = [];
+
+    // Spanish is a curated library, not a sequence of lessons or a course.
     if (level === 'A1') {
-      const bookTitle = book.books?.[0]?.title || book.title || 'Книга';
-      extra.push('<article class="card"><div class="card-top"><span class="tag">Чтение · A1</span><span class="status">Дополнительный материал</span></div><h3>' + esc(bookTitle) + '</h3><p class="desc">' + esc(d.variant === 'es_es' ? 'Испанский Испании' : 'Испанский Мексики') + '</p><div class="actions"><button class="action secondary" id="spanish-read" type="button">Читать книгу</button></div>' + spanishSection('book', book, 'after_watching', 'Проверка понимания текста') + '</article>');
+      const book = d.book;
+      const selectedBook = book?.books?.[0];
+      if (selectedBook) {
+        cards.push('<article class="card"><div class="card-top"><span class="tag">Книга · A1</span><span class="status">' + esc(variantName) + '</span></div><h3>' + esc(selectedBook.title) + '</h3><p class="desc">Небольшая история для чтения на испанском</p><div class="actions"><button class="action" id="spanish-read" type="button">Открыть книгу</button></div>' +
+          spanishSection('book', book, 'after_watching', 'Задания после чтения') + '</article>');
+      }
+
+      const podcast = d.podcast;
+      if (podcast) {
+        const episodes = (podcast.selected_episodes || []).map(ep =>
+          '<li><strong>' + esc(ep.title || ('Выпуск ' + (ep.episode || ''))) + '</strong>' +
+          (ep.duration ? ' <span class="status">· ' + esc(ep.duration) + '</span>' : '') +
+          (ep.role ? '<div class="desc">' + esc(ep.role) + '</div>' : '') + '</li>'
+        ).join('');
+        cards.push('<article class="card"><div class="card-top"><span class="tag">Подкаст · A1</span><span class="status">' + esc(variantName) + '</span></div><h3>' + esc(podcast.title || 'Подкаст на испанском') + '</h3>' +
+          (podcast.format ? '<p class="desc">' + esc(podcast.format) + '</p>' : '') +
+          (episodes ? '<ul>' + episodes + '</ul>' : '') +
+          (podcast.caution ? '<p class="desc">' + esc(podcast.caution) + '</p>' : '') +
+          '<div class="actions"><a class="action" href="' + esc(podcast.url) + '" target="_blank" rel="noopener">Слушать подкаст</a></div></article>');
+      }
+
+      const series = d.series;
+      if (series && d.variant === 'es_mx') {
+        const seriesId = (series.youtube_url || '').match(/[?&]v=([^&]+)/)?.[1] || '';
+        const player = seriesId ? '<iframe class="player" src="https://www.youtube-nocookie.com/embed/' + esc(seriesId) + '?playsinline=1&rel=0" title="' + esc(series.title) + '" allowfullscreen loading="lazy"></iframe>' : '';
+        cards.push('<article class="card"><div class="card-top"><span class="tag">Сериал · A1</span><span class="status">' + esc(variantName) + '</span></div><h3>' + esc(series.title) + '</h3>' +
+          (series.content_summary ? '<p class="desc">' + esc(series.content_summary) + '</p>' : '') + player +
+          '<div class="actions"><a class="action secondary" href="' + esc(series.youtube_url) + '" target="_blank" rel="noopener">Открыть сериал</a></div>' +
+          spanishSection('series', series, 'after_watching', 'Задания после просмотра') + '</article>');
+      }
+
+      // A standalone video remains a video resource; it is not relabelled as a series.
+      const video = d.video;
+      const videoLevel = String(video?.level || '').match(/A[12]|B1/)?.[0] || '';
+      if (video && videoLevel === level) {
+        const videoId = (video.youtube_url || '').match(/[?&]v=([^&]+)/)?.[1] || '';
+        const player = videoId ? '<iframe class="player" src="https://www.youtube-nocookie.com/embed/' + esc(videoId) + '?playsinline=1&rel=0" title="' + esc(video.title) + '" allowfullscreen loading="lazy"></iframe>' : '';
+        cards.push('<article class="card"><div class="card-top"><span class="tag">Видео · A1</span><span class="status">' + esc(variantName) + '</span></div><h3>' + esc(video.title) + '</h3>' +
+          (video.content_summary ? '<p class="desc">' + esc(video.content_summary) + '</p>' : '') + player +
+          '<div class="actions"><a class="action secondary" href="' + esc(video.youtube_url) + '" target="_blank" rel="noopener">Открыть видео</a></div>' +
+          spanishSection('video', video, 'after_watching', 'Задания после просмотра') + '</article>');
+      }
     }
-    if (videoLevel === level) {
-      const videoId = (video.youtube_url.match(/[?&]v=([^&]+)/) || [,''])[1];
-      const videoPlayer = videoId ? '<iframe class="player" src="https://www.youtube-nocookie.com/embed/' + esc(videoId) + '?playsinline=1&rel=0" title="' + esc(video.title) + '" allowfullscreen loading="lazy"></iframe>' : '';
-      extra.push('<article class="card"><div class="card-top"><span class="tag">Видео · ' + esc(videoLevel) + '</span><span class="status">Дополнительный материал</span></div><h3>' + esc(video.title) + '</h3><p class="desc">' + esc(video.content_summary || '') + '</p>' +
-        spanishSection('video', video, 'before_watching', 'Лексика перед просмотром') + videoPlayer +
-        '<div class="actions"><a class="action secondary" href="' + esc(video.youtube_url) + '" target="_blank" rel="noopener">Открыть на YouTube</a></div>' +
-        spanishSection('video', video, 'while_watching', 'Во время просмотра') + spanishSection('video', video, 'after_watching', 'После просмотра') + '</article>');
-    }
-    if (level === 'A1' && String(series.level || '').includes('A1')) {
-      const seriesId = (series.youtube_url.match(/[?&]v=([^&]+)/) || [,''])[1];
-      const seriesPlayer = seriesId ? '<iframe class="player" src="https://www.youtube-nocookie.com/embed/' + esc(seriesId) + '?playsinline=1&rel=0" title="' + esc(series.title) + '" allowfullscreen loading="lazy"></iframe>' : '';
-      extra.push('<article class="card"><div class="card-top"><span class="tag">Сериал · A1</span><span class="status">Дополнительный материал</span></div><h3>' + esc(series.title) + '</h3><p class="desc">' + esc(series.content_summary || '') + '</p>' +
-        spanishSection('series', series, 'before_watching', 'Лексика перед просмотром') + seriesPlayer +
-        '<div class="actions"><a class="action secondary" href="' + esc(series.youtube_url) + '" target="_blank" rel="noopener">Открыть на YouTube</a></div>' +
-        spanishSection('series', series, 'while_watching', 'Во время просмотра') + spanishSection('series', series, 'after_watching', 'После просмотра') + '</article>');
-    }
-    $('materials').innerHTML = '<div class="tag">Основная программа · ' + esc(level) + '</div>' + unitCards +
-      (extra.length ? '<h3>Дополнительные материалы</h3>' + extra.join('') : '');
+
+    $('materials').innerHTML = '<div class="tag">Библиотека · ' + esc(level) + ' · ' + esc(variantName) + '</div>' +
+      (cards.length ? cards.join('') : '<div class="empty">Подборка материалов этого уровня готовится. Здесь появятся книги, подкасты и сериалы.</div>');
     $('library').innerHTML = '';
+
     $('spanish-read')?.addEventListener('click', () => {
-      activeBook = book.books?.[0] || book; bookPage = 0; renderBookPage(); $('reader').classList.add('open');
+      activeBook = d.book.books?.[0] || d.book; bookPage = 0; renderBookPage(); $('reader').classList.add('open');
     });
     document.querySelectorAll('[data-spanish-quiz]').forEach(btn => btn.addEventListener('click', () => {
       const resourceId = btn.dataset.spanishQuiz, section = btn.dataset.section;
-      const resource = resourceId === 'book' ? book : resourceId === 'video' ? video : series;
+      const resource = resourceId === 'book' ? d.book : resourceId === 'video' ? d.video : d.series;
       const questions = resourceId === 'book' ? resource.books?.[0]?.questions || [] : flattenSpanishTasks(resource, section);
       openSpanishQuiz(resourceId, section, questions);
     }));
-    document.querySelectorAll('[data-spanish-unit]').forEach(btn => btn.addEventListener('click', () => openSpanishUnitQuiz(btn.dataset.spanishUnit)));
   }
   async function openSpanishUnitQuiz(unitId) {
     const unit = state.spanishLibrary?.units?.find(x => x.id === unitId);

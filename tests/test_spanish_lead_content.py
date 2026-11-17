@@ -54,6 +54,18 @@ class SpanishLeadContentTest(unittest.TestCase):
         self.assertTrue(all("Spain" in item["region"] for item in spain_a2["videos"] + spain_b1["videos"]))
         self.assertTrue(all("Mexico" in item["region"] for item in mexico_a2["videos"]))
 
+    def test_a1_podcasts_have_internal_players_and_post_listening_tasks(self):
+        for variant in ("es_es", "es_mx"):
+            with self.subTest(variant=variant):
+                podcast = load_spanish_lead(variant)["podcast"]
+                self.assertTrue(podcast["player_url"].startswith("https://"))
+                self.assertEqual(podcast["player_type"], "audio" if variant == "es_es" else "youtube")
+                questions = questions_for(podcast, "after_listening")
+                self.assertEqual(len(questions), 3)
+                self.assertTrue(all(q.get("explanation") for q in questions))
+                self.assertEqual(questions_for(podcast, "before_listening"), [])
+                self.assertEqual(questions_for(podcast, "while_listening"), [])
+
     def test_public_payload_does_not_expose_answer_keys(self):
         public = strip_answers(load_spanish_lead("es_es"))
 

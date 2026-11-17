@@ -330,7 +330,7 @@ async def submit_spanish_lead(payload: SpanishQuizSubmission, user: dict = Depen
     if payload.resource_id == "book":
         questions = data["book"]["books"][0].get("questions", [])
     elif payload.resource_id == "podcast":
-        media = load_spanish_media(data["level"], payload.variant)
+        media = load_spanish_media("A1", payload.variant)
         questions = questions_for(media.get("podcast") or {}, payload.section)
     else:
         resource = data["video"] if payload.resource_id == "video" else data["series"]

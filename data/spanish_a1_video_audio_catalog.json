@@ -48,46 +48,11 @@
         "caution": "Level 1 is labelled elementary/pre-intermediate, not strictly CEFR A1. Check the transcript and audio of each chosen episode before assigning it to A1 learners.",
         "selected_episodes": [
           {
-            "episode": 8,
-            "title": "Foto de familia",
-            "unit": "es_a1_u02_familia_amigos",
-            "duration": "1:39",
-            "role": "Supplemental listening"
-          },
-          {
-            "episode": 4,
             "title": "La rutina diaria",
-            "unit": "es_a1_u03_un_dia_normal",
+            "episode": 4,
             "duration": "2:12",
-            "role": "Core listening candidate"
-          },
-          {
-            "episode": 15,
-            "title": "Supermercado",
-            "unit": "es_a1_u04_la_alimentacion",
-            "duration": "3:09",
-            "role": "Core listening candidate"
-          },
-          {
-            "episode": 10,
-            "title": "Medios de transporte",
-            "unit": "es_a1_u05_la_ciudad_transporte",
-            "duration": "3:22",
-            "role": "Supplemental listening; level-check first"
-          },
-          {
-            "episode": 2,
-            "title": "Tiempo libre",
-            "unit": "es_a1_u06_el_tiempo_libre",
-            "duration": "2:02",
-            "role": "Core listening candidate"
-          },
-          {
-            "episode": 1,
-            "title": "Visita a una ciudad castellana",
-            "unit": "es_a1_u05_la_ciudad_transporte",
-            "duration": "1:38",
-            "role": "Core listening candidate"
+            "url": "https://www.podcastsinspanish.org/listen/level1/rutina.mp3",
+            "transcript_url": "https://www.podcastsinspanish.org/wksheets/level1/rutina_trans.pdf"
           }
         ],
         "player_url": "https://www.podcastsinspanish.org/listen/level1/rutina.mp3",
@@ -126,7 +91,7 @@
                   "explanation": "Desayunar — завтракать; это типичное действие из утреннего распорядка."
                 },
                 {
-                  "question": "¿Qué pregunta sirve para узнать о привычном распорядке?",
+                  "question": "¿Qué pregunta sirve para preguntar por la rutina habitual?",
                   "options": [
                     "¿Qué haces normalmente?",
                     "¿Qué hiciste ayer?",
@@ -289,22 +254,9 @@
         "access": "Podcast available; accompanying PDFs offered via Buy Me a Coffee",
         "selected_episodes": [
           {
-            "title": "Episode 1: What are your Hobbies?",
-            "unit": "es_a1_u06_el_tiempo_libre",
-            "duration": "3 minutes",
-            "role": "A1 listening candidate"
-          },
-          {
             "title": "Episode 2: Let's talk about food",
-            "unit": "es_a1_u04_la_alimentacion",
             "duration": "4 minutes",
-            "role": "A1 listening candidate"
-          },
-          {
-            "title": "Story 1: My Weird Neighbor Tania",
-            "unit": "es_a1_u02_familia_amigos",
-            "duration": "4 minutes",
-            "role": "Supplemental listening; check vocabulary load before use"
+            "url": "https://youtu.be/HWGZXfU9JTk"
           }
         ],
         "caution": "Confirm the current availability of each PDF and preview the accent and language load before including in the core path.",
@@ -342,7 +294,7 @@
                   "explanation": "La comida — еда; это ключевое слово темы выпуска."
                 },
                 {
-                  "question": "¿Qué puedes aprender en este episodio?",
+                  "question": "¿Qué tipo de vocabulario puedes practicar en este episodio?",
                   "options": [
                     "Vocabulario de comida y nombres de platillos mexicanos",
                     "Как спросить дорогу",

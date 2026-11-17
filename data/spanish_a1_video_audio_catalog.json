@@ -89,7 +89,56 @@
             "duration": "1:38",
             "role": "Core listening candidate"
           }
-        ]
+        ],
+        "player_url": "https://www.podcastsinspanish.org/listen/level1/rutina.mp3",
+        "player_type": "audio",
+        "selected_episode": {
+          "title": "La rutina diaria",
+          "episode": 4,
+          "duration": "2:12",
+          "url": "https://www.podcastsinspanish.org/listen/level1/rutina.mp3",
+          "transcript_url": "https://www.podcastsinspanish.org/wksheets/level1/rutina_trans.pdf"
+        },
+        "tasks": {
+          "after_listening": [
+            {
+              "type": "multiple_choice",
+              "instruction": "Выберите правильный вариант по теме повседневных привычек.",
+              "questions": [
+                {
+                  "question": "¿Qué significa «la rutina diaria»?",
+                  "options": [
+                    "Повседневный распорядок",
+                    "План путешествия",
+                    "Праздничный ужин"
+                  ],
+                  "answer": 0,
+                  "explanation": "La rutina diaria — это привычные действия, которые человек выполняет каждый день."
+                },
+                {
+                  "question": "¿Cuál de estas acciones suele formar parte de la rutina de la mañana?",
+                  "options": [
+                    "Desayunar",
+                    "Comprar un billete de avión",
+                    "Visitar un museo"
+                  ],
+                  "answer": 0,
+                  "explanation": "Desayunar — завтракать; это типичное действие из утреннего распорядка."
+                },
+                {
+                  "question": "¿Qué pregunta sirve para узнать о привычном распорядке?",
+                  "options": [
+                    "¿Qué haces normalmente?",
+                    "¿Qué hiciste ayer?",
+                    "¿Adónde viajarás mañana?"
+                  ],
+                  "answer": 0,
+                  "explanation": "¿Qué haces normalmente? спрашивает о том, что человек обычно делает."
+                }
+              ]
+            }
+          ]
+        }
       },
       "extra_audio": {
         "id": "copycat_cafe_spain_a1",
@@ -258,7 +307,54 @@
             "role": "Supplemental listening; check vocabulary load before use"
           }
         ],
-        "caution": "Confirm the current availability of each PDF and preview the accent and language load before including in the core path."
+        "caution": "Confirm the current availability of each PDF and preview the accent and language load before including in the core path.",
+        "player_url": "https://www.youtube.com/embed/HWGZXfU9JTk?playsinline=1&rel=0",
+        "player_type": "youtube",
+        "selected_episode": {
+          "title": "Episode 2: Let's talk about food",
+          "duration": "4 minutes",
+          "url": "https://youtu.be/HWGZXfU9JTk"
+        },
+        "tasks": {
+          "after_listening": [
+            {
+              "type": "multiple_choice",
+              "instruction": "Выберите правильный вариант по теме еды и мексиканской кухни.",
+              "questions": [
+                {
+                  "question": "¿De qué trata el episodio?",
+                  "options": [
+                    "De la comida y los platillos mexicanos",
+                    "De los medios de transporte",
+                    "De la rutina de trabajo"
+                  ],
+                  "answer": 0,
+                  "explanation": "В описании выпуска указано, что он посвящен еде, новым словам по теме и мексиканским блюдам."
+                },
+                {
+                  "question": "¿Qué significa «la comida»?",
+                  "options": [
+                    "Еда",
+                    "Погода",
+                    "Одежда"
+                  ],
+                  "answer": 0,
+                  "explanation": "La comida — еда; это ключевое слово темы выпуска."
+                },
+                {
+                  "question": "¿Qué puedes aprender en este episodio?",
+                  "options": [
+                    "Vocabulario de comida y nombres de platillos mexicanos",
+                    "Как спросить дорогу",
+                    "Как рассказать о семье"
+                  ],
+                  "answer": 0,
+                  "explanation": "Описание выпуска обещает лексику о еде и знакомство с мексиканскими блюдами."
+                }
+              ]
+            }
+          ]
+        }
       },
       "additional_series": {
         "id": "buena_gente",

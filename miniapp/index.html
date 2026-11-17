@@ -7,6 +7,7 @@
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <style>
     :root{--cream:#F5F1EB;--paper:#fffdfa;--burgundy:#7A1E2C;--ink:#292522;--muted:#817a73;--line:#e8e0d7;--pink:#ead7d8}
+    body.spanish-theme{--burgundy:#B76545;--pink:#F0DDD2;--accent-soft:#F5E9E1} body.spanish-theme .lang.active{background:#FBF1EA;border-color:var(--burgundy)} body.spanish-theme .profile{background:var(--burgundy)} body.spanish-theme .profile .eyebrow{color:#F7E5D9} body.spanish-theme .profile p{color:#FFF2E9} body.spanish-theme button.secondary,body.spanish-theme a.secondary{border-color:#D8B5A2} body.spanish-theme .quiz-q:focus-within{border-color:var(--burgundy)} body.spanish-theme .quiz-q input:focus{outline-color:#D8B5A2}
     *{box-sizing:border-box} body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:15px;line-height:1.5}
     .wrap{max-width:680px;margin:0 auto;padding:24px 18px 44px}.eyebrow{font:11px Georgia,serif;letter-spacing:.18em;color:var(--burgundy);text-transform:uppercase}
     h1{font:36px/1.05 Georgia,serif;font-weight:400;margin:12px 0 8px;letter-spacing:-.04em}.sub{color:var(--muted);margin:0 0 24px}
@@ -99,6 +100,7 @@
     const code = btn.dataset.lang;
     if (!state.languages?.[code]?.available) return;
     selectedLanguage = code;
+    document.body.classList.toggle('spanish-theme', code === 'es');
     renderLanguages();
     $('spanish-variant').hidden = code !== 'es';
     if (code === 'es') {
@@ -152,6 +154,7 @@
     return '<article class="card"><div class="card-top"><span class="tag">' + esc(label) + '</span></div><p class="desc">Материал будет добавлен позднее</p></article>';
   }
   function renderSpanishMaterials() {
+    document.body.classList.add('spanish-theme');
     const d = state.spanishLead, library = state.spanishLibrary;
     if (!d || !library) return;
     const level = library.level;
@@ -263,6 +266,7 @@
     $('notice').textContent = state.notice || ''; $('notice').hidden = !state.notice;
   }
   function renderMaterials() {
+    document.body.classList.toggle('spanish-theme', selectedLanguage === 'es');
     $('materials').classList.remove('loading');
     if (selectedLanguage === 'es') { renderSpanishMaterials(); return; }
     if (selectedLanguage !== 'en') {

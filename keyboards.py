@@ -52,6 +52,28 @@ def contextual_followup_keyboard() -> InlineKeyboardMarkup:
 
 
 
+
+def reactivation_keyboard(step: int) -> InlineKeyboardMarkup:
+    """One focused CTA for each inactivity milestone."""
+    if step == 2:
+        return InlineKeyboardMarkup(inline_keyboard=[
+            [InlineKeyboardButton(text="Записаться на первый урок", callback_data="menu:trial")]
+        ])
+    if step == 3:
+        return InlineKeyboardMarkup(inline_keyboard=[
+            [InlineKeyboardButton(text="Узнать о форматах обучения", callback_data="menu:school")]
+        ])
+    label = "Открыть Learning Space" if step in (0, 4) else "Перейти к материалам"
+    if config.MINI_APP_URL:
+        return InlineKeyboardMarkup(inline_keyboard=[
+            [InlineKeyboardButton(text=label, web_app=WebAppInfo(url=config.MINI_APP_URL))]
+        ])
+    return InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="Подобрать материал", callback_data="start:materials")]
+    ])
+
+
+
 def nurture_learning_keyboard(label: str) -> InlineKeyboardMarkup:
     rows = []
     if config.MINI_APP_URL:

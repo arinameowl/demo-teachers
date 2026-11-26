@@ -39,6 +39,41 @@ async def _send_segment(bot: Bot, source_event: str, sent_event: str, delay: flo
             log.exception("Не удалось отправить follow-up %s пользователю %s", sent_event, user_id)
 
 
+async def _send_reactivation(bot: Bot) -> None:
+    """Send one inactivity milestone; user activity resets the sequence."""
+    messages = (
+        (texts.REACTIVATION_DAY1, 0),
+        (texts.REACTIVATION_DAY3, 1),
+        (texts.REACTIVATION_DAY7, 2),
+        (texts.REACTIVATION_DAY14, 3),
+        (texts.REACTIVATION_DAY30, 4),
+    )
+    actions = await db.get_due_reactivation_actions()
+    log.info("Reactivation: eligible users=%s", len(actions))
+    for item in actions:
+        user_id = item["user_id"]
+        step = item["step"]
+        message_text, _ = messages[step]
+        try:
+            await bot.send_message(
+                user_id,
+                message_text,
+                parse_mode="HTML",
+                reply_markup=kb.reactivation_keyboard(step),
+            )
+            advanced = await db.mark_reactivation_sent(
+                user_id, step, item["last_active_at"]
+            )
+            if advanced:
+                log.info("Reactivation day %s sent to user %s", (1, 3, 7, 14, 30)[step], user_id)
+            else:
+                log.info("Reactivation state changed during delivery for user %s", user_id)
+        except TelegramForbiddenError:
+            await db.update_user(user_id, blocked=1)
+        except Exception:
+            log.exception("Не удалось отправить reactivation step %s пользователю %s", step, user_id)
+
+
 async def _send_learning_space_feedback(bot: Bot) -> None:
     users = await db.users_due_for_learning_space_feedback(
         config.LEARNING_SPACE_FEEDBACK_HOURS
@@ -111,21 +146,9 @@ async def _tick(bot: Bot) -> None:
         return
 
     jobs = (
-        ("Learning Space feedback", lambda: _send_learning_space_feedback(bot)),
-        ("follow-up без активности", lambda: _send_segment(
-            bot, "learning_space_opened", "followup_no_activity_sent",
-            config.FOLLOWUP_NO_ACTIVITY_HOURS, texts.FOLLOWUP_NO_ACTIVITY,
-            require_no_learning_activity=True,
-        )),
-        ("follow-up после упражнения", lambda: _send_segment(
-            bot, "miniapp_exercise_completed", "followup_after_exercise_sent",
-            config.FOLLOWUP_AFTER_EXERCISE_HOURS, texts.FOLLOWUP_AFTER_EXERCISE,
-        )),
-        ("follow-up после цен", lambda: _send_segment(
-            bot, "prices_viewed", "followup_after_prices_sent",
-            config.FOLLOWUP_AFTER_PRICES_HOURS, texts.FOLLOWUP_AFTER_PRICES,
-        )),
-        ("Day 1–3", lambda: _send_nurture(bot)),
+        ("дожим по последней активности (1/3/7/14/30 дней)", lambda: _send_reactivation(bot)),
+        # Отдельный сценарий незавершенной формы записи сохраняем:
+        # он связан с явным намерением пользователя, а не с общей неактивностью.
         ("восстановление записи", lambda: _send_trial_recovery(bot)),
     )
     for name, job in jobs:

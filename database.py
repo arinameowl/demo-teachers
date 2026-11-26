@@ -584,7 +584,7 @@ async def mark_reactivation_sent(user_id: int, expected_step: int, expected_last
         cur = await conn.execute(
             "UPDATE users SET reactivation_step = ? "
             "WHERE user_id = ? AND COALESCE(reactivation_step, 0) = ? "
-            "AND last_active_at = ? AND COALESCE(trial_requested, 0) = 0 "
+            "AND COALESCE(last_active_at, created_at) = ? AND COALESCE(trial_requested, 0) = 0 "
             "AND COALESCE(awaiting_contact, 0) = 0 AND COALESCE(unsubscribed, 0) = 0 "
             "AND COALESCE(blocked, 0) = 0",
             (expected_step + 1, user_id, expected_step, expected_last_active_at),
@@ -1031,6 +1031,8 @@ async def get_notification_stats(days: int = 30) -> dict:
         "followup_no_activity_sent", "followup_after_exercise_sent",
         "followup_after_prices_sent", "learning_space_feedback_sent",
         "trial_recovery_1_sent", "trial_recovery_2_sent",
+        "reactivation_day1_sent", "reactivation_day3_sent", "reactivation_day7_sent",
+        "reactivation_day14_sent", "reactivation_day30_sent",
     )
     placeholders = ",".join("?" for _ in sent_names)
     async with aiosqlite.connect(DB_PATH) as db:

@@ -91,7 +91,11 @@ def validate_init_data(init_data: str, max_age: int = 86400) -> dict:
 async def authorized_user(authorization: str | None = Header(default=None)) -> dict:
     if not authorization or not authorization.startswith("tma "):
         raise HTTPException(status_code=401, detail="Missing Telegram initData")
-    return validate_init_data(authorization[4:])
+    user = validate_init_data(authorization[4:])
+    # Любой авторизованный запрос из Mini App считается активностью:
+    # это перезапускает таймер reactivation, даже без действий в Telegram-чате.
+    await db.touch_user(user["id"])
+    return user
 
 
 

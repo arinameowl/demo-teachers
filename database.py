@@ -45,6 +45,7 @@ _MIGRATIONS = (
     "ALTER TABLE users ADD COLUMN last_broadcast_at TEXT",
     "ALTER TABLE users ADD COLUMN quiz_state TEXT",
     "ALTER TABLE users ADD COLUMN language TEXT DEFAULT 'en'",
+    "ALTER TABLE users ADD COLUMN reactivation_step INTEGER DEFAULT 0",
 )
 
 _BROADCAST_SCHEMA = """
@@ -180,7 +181,7 @@ async def touch_user(user_id: int) -> None:
     """Любое действие пользователя: обновляем активность и снимаем флаг блокировки."""
     async with aiosqlite.connect(DB_PATH) as db:
         await db.execute(
-            "UPDATE users SET last_active_at = ?, blocked = 0 WHERE user_id = ?",
+            "UPDATE users SET last_active_at = ?, blocked = 0, reactivation_step = 0 WHERE user_id = ?",
             (_now(), user_id),
         )
         await db.commit()
@@ -522,6 +523,80 @@ async def get_due_trial_recovery_actions(first_delay_minutes: int = 45) -> list[
                     actions.append({"user_id": user["user_id"], "action": "recovery_2"})
 
     return actions
+
+
+
+async def get_due_reactivation_actions() -> list[dict]:
+    """Return the next inactivity milestone for eligible users.
+
+    Milestones are measured from last_active_at (1, 3, 7, 14 and 30 days).
+    Any Telegram or Mini App activity resets reactivation_step to zero.
+    """
+    delays_days = (1, 3, 7, 14, 30)
+    now = dt.datetime.utcnow()
+    async with aiosqlite.connect(DB_PATH) as conn:
+        conn.row_factory = aiosqlite.Row
+        cur = await conn.execute(
+            """
+            SELECT user_id, last_active_at, created_at, reactivation_step
+            FROM users
+            WHERE level IN ('A1', 'A2', 'B1')
+              AND COALESCE(trial_requested, 0) = 0
+              AND COALESCE(awaiting_contact, 0) = 0
+              AND COALESCE(unsubscribed, 0) = 0
+              AND COALESCE(blocked, 0) = 0
+              AND COALESCE(reactivation_step, 0) BETWEEN 0 AND 4
+            """
+        )
+        users = [dict(row) for row in await cur.fetchall()]
+
+    due = []
+    for user in users:
+        step = int(user.get("reactivation_step") or 0)
+        last_active = user.get("last_active_at") or user.get("created_at")
+        if not last_active:
+            continue
+        try:
+            active_at = dt.datetime.fromisoformat(last_active)
+        except (TypeError, ValueError):
+            continue
+        if now - active_at >= dt.timedelta(days=delays_days[step]):
+            due.append({
+                "user_id": user["user_id"],
+                "step": step,
+                "last_active_at": last_active,
+            })
+    return due
+
+
+async def mark_reactivation_sent(user_id: int, expected_step: int, expected_last_active_at: str) -> bool:
+    """Advance the sequence only if the user has not become active during delivery."""
+    event_names = (
+        "reactivation_day1_sent",
+        "reactivation_day3_sent",
+        "reactivation_day7_sent",
+        "reactivation_day14_sent",
+        "reactivation_day30_sent",
+    )
+    if not 0 <= expected_step < len(event_names):
+        return False
+    async with aiosqlite.connect(DB_PATH) as conn:
+        cur = await conn.execute(
+            "UPDATE users SET reactivation_step = ? "
+            "WHERE user_id = ? AND COALESCE(reactivation_step, 0) = ? "
+            "AND last_active_at = ? AND COALESCE(trial_requested, 0) = 0 "
+            "AND COALESCE(awaiting_contact, 0) = 0 AND COALESCE(unsubscribed, 0) = 0 "
+            "AND COALESCE(blocked, 0) = 0",
+            (expected_step + 1, user_id, expected_step, expected_last_active_at),
+        )
+        updated = cur.rowcount == 1
+        if updated:
+            await conn.execute(
+                "INSERT INTO funnel_events (user_id, event_name, event_data, created_at) VALUES (?, ?, ?, ?)",
+                (user_id, event_names[expected_step], "", _now()),
+            )
+        await conn.commit()
+        return updated
 
 
 # ---------- Статистика ----------
